@@ -1,0 +1,22 @@
+run_id=20260810T110446Z_6132f71eb1e0_stage07_b06_formal_057f9050
+case_id=cubic__cubic_int32_10e2__617bd716ff8a596e
+operator_name=cubic
+task_name=Task2
+step_name=Step3
+scale_id=cubic_int32_10e2
+requested_dtype=INT32
+input_content=[{'input_name': 'x', 'shape': '[128]', 'dtype': 'INT32', 'element_count': '128', 'generator': 'deterministic_cubic_domain', 'preview_head4_tail2': 'i=0:-3;i=1:-2;i=2:-2;i=3:-2;i=126:2;i=127:3'}]
+case_parameters={'count': 128, 'output_count': 128}
+output_dtype=INT32
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+output_count=128
+actual_input_digest=617bd716ff8a596e3f50e7e6acbbf248ffc4157e60794bd0fe81cb6a6c23afd8
+typed_array_digest=f2041b136c9e4b8c44e945915220b44018086e8e1a38d056094b8b02d41dee97
+status=PASS
+error_code=OK
+mse=0
+rmse=0
+relative_l2=0
+relative_linf=0

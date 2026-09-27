@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+radartools/cfar_alpha             invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: radartools.cfar_alpha.invalid_parameter.set_reference_cells_0
+  abnormal_input: mutation=set reference cells=0
+  error_message: radartools::cfar_alpha检测到非法参数：mutation=set reference cells=0
+  backend_error: code=NA name=NA message=NA
+radartools/cfar_alpha             invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: radartools.cfar_alpha.invalid_shape.provide_nonscalar_reference_count_fixture
+  abnormal_input: mutation=provide nonscalar reference-count fixture
+  error_message: radartools::cfar_alpha检测到非法shape：mutation=provide nonscalar reference-count fixture
+  backend_error: code=NA name=NA message=NA
+radartools/cfar_alpha             invalid_dtype           INVALID_DTYPE            INVALID_DTYPE            INVALID_DTYPE            true       PASS    
+  case_id: radartools.cfar_alpha.invalid_dtype.request_complex_business_input
+  abnormal_input: mutation=request complex business input
+  error_message: radartools::cfar_alpha检测到非法dtype：mutation=request complex business input
+  backend_error: code=NA name=NA message=NA
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

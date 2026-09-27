@@ -1,0 +1,80 @@
+command=build_stage08_b06_lombscargle_ab7484afd8df_developer/stage08_spectral_analysis_lombscargle --dtype INT16 --samples 64 --frequencies 16 --precenter true --normalize false --seed 86340002 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage08_input_preview_b06_lombscargle_9b01dadd36f6/formal/20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a/lombscargle_probe_raw.json
+{"run_id": "20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a", "case_id": "lombscargle__lombscargle_int16_10e3__92bad9b753829b58", "operator_name": "lombscargle", "scale_id": "lombscargle_int16_10e3", "requested_dtype": "INT16", "output_dtype": "FP64", "backend": "not_applicable", "sample_count": 64, "frequency_count": 16, "scientific_work": 1024, "precenter": true, "normalize": false, "warmup_runs": 20, "measured_runs": 100, "mse": 6.26422e-13, "rmse": 7.91468e-07, "relative_l2": 8.27296e-08, "relative_linf": 1.1226e-07, "status": "PASS", "error_code": "OK"}
+[stage08] identity and status
++-------------+------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| target      | scale_id               | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code |
++-------------+------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| lombscargle | lombscargle_int16_10e3 | CPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| lombscargle | lombscargle_int16_10e3 | GPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++-------------+------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage08] timing detail
++--------+--------------------+----------+------------+---------------------+----------+----------+-----------------------+----------------------+---------------------+
+| device | mean_ms            | p50_ms   | p95_ms     | p99_ms              | min_ms   | max_ms   | std_ms                | cv                   | speedup             |
++--------+--------------------+----------+------------+---------------------+----------+----------+-----------------------+----------------------+---------------------+
+| CPU    | 0.05067997         | 0.05058  | 0.05070145 | 0.05096969000000005 | 0.05043  | 0.05975  | 0.0009140409559204661 | 0.018035546507238782 | NA                  |
+| GPU    | 0.5506329999999999 | 0.548068 | 0.5637605  | 0.5717520100000009  | 0.526142 | 0.738964 | 0.020615227562653774  | 0.03743914288219881  | 0.09203947093617709 |
++--------+--------------------+----------+------------+---------------------+----------+----------+-----------------------+----------------------+---------------------+
+
+[stage08] accuracy detail
++------------------------------+-------------+-------------+-------------+---------------+-------------+----------------+-------------------------------------------+--------+
+| accuracy_reference           | mse         | rmse        | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                            | status |
++------------------------------+-------------+-------------+-------------+---------------+-------------+----------------+-------------------------------------------+--------+
+| cpu_lombscargle_fp64_formula | 6.26422e-13 | 7.91468e-07 | 8.27296e-08 | 1.1226e-07    | NA          | NA             | irregular_periodogram_frequency_length=16 | PASS   |
++------------------------------+-------------+-------------+-------------+---------------+-------------+----------------+-------------------------------------------+--------+
+
+[stage08] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1439424      | 1442512     | 1442512    | 3088        |
+| CPU    | rss        | 70598656     | 70598656    | 70598656   | 0           |
+| GPU    | cpu_heap   | 1442512      | 1445936     | 1446240    | 3424        |
+| GPU    | rss        | 70598656     | 70598656    | 70598656   | 0           |
+| GPU    | gpu_memory | 341000192    | 341000192   | 341000192  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage08] input/output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | 92bad9b753829b5880c5d6eff45de1bcf5f0e1ccbb89c048a9019553bd3308a5 | 814948ae91a729792c5ab4c9385ea533058340d630ad0cf77d27e20c78b03884 |
+| GPU    | 92bad9b753829b5880c5d6eff45de1bcf5f0e1ccbb89c048a9019553bd3308a5 | 047210a27fe7c10e3be6c03747f37091e06c217b1c16983fc62de7b555d10753 |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage08] input content
++------------+-------+-------+----------+---------------------------------------------------+-----------------------------------------+
+| input_name | shape | dtype | elements | generator                                         | values(head4/tail2)                     |
++------------+-------+-------+----------+---------------------------------------------------+-----------------------------------------+
+| time       | [64]  | INT16 | 64       | deterministic_sample_times(integral=true)         | i=0:0;i=1:3;i=2:6;i=3:9;i=62:93;i=63:97 |
+| value      | [64]  | INT16 | 64       | modular_observations(seed=86340002,integral=true) | i=0:-4;i=1:2;i=2:-3;i=3:3;i=62:5;i=63:0 |
+| frequency  | [16]  | INT16 | 16       | deterministic_frequency_grid(integral=true)       | i=0:1;i=1:2;i=2:3;i=3:4;i=14:15;i=15:16 |
++------------+-------+-------+----------+---------------------------------------------------+-----------------------------------------+
+
+[stage08] case parameters
++--------------------------------------------------------------------------------------------------------------+
+| parameters                                                                                                   |
++--------------------------------------------------------------------------------------------------------------+
+| {"dtype":"INT16","frequencies":"16","normalize":"false","precenter":"true","samples":"64","seed":"86340002"} |
++--------------------------------------------------------------------------------------------------------------+
+
+[stage08] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| INT16           | NA                 | FP64         | 92bad9b753829b5880c5d6eff45de1bcf5f0e1ccbb89c048a9019553bd3308a5 | PASS   |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+
+[stage08] evidence files
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind           | path                                                                                                                                                                                                                                                      |
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| probe_raw_json | /tmp/ZKX_dev/results/stage08_input_preview_b06_lombscargle_9b01dadd36f6/formal/20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a/lombscargle_probe_raw.json                                                                                       |
+| dtype_csv      | /tmp/ZKX_dev/results/stage08_input_preview_b06_lombscargle_9b01dadd36f6/formal/20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a/operator_dtype_evidence_lombscargle_not_applicable_20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a.csv |
+| full_log       | /tmp/ZKX_dev/results/stage08_input_preview_b06_lombscargle_9b01dadd36f6/formal/20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a/operator_lombscargle_full.log                                                                                    |
+| report_json    | /tmp/ZKX_dev/results/stage08_input_preview_b06_lombscargle_9b01dadd36f6/formal/20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a/operator_lombscargle_report.json                                                                                 |
+| summary_txt    | /tmp/ZKX_dev/results/stage08_input_preview_b06_lombscargle_9b01dadd36f6/formal/20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a/operator_lombscargle_summary.txt                                                                                 |
+| main_csv       | /tmp/ZKX_dev/results/stage08_input_preview_b06_lombscargle_9b01dadd36f6/formal/20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a/operator_main_results_lombscargle_not_applicable_20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a.csv   |
+| memory_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b06_lombscargle_9b01dadd36f6/formal/20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a/operator_spectral_analysis_lombscargle_memory_trace_not_applicable.csv                                           |
+| timing_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b06_lombscargle_9b01dadd36f6/formal/20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a/operator_timing_samples_lombscargle_not_applicable_20260810T085748Z_9b01dadd36f6_stage08_b06_formal_8673000a.csv |
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

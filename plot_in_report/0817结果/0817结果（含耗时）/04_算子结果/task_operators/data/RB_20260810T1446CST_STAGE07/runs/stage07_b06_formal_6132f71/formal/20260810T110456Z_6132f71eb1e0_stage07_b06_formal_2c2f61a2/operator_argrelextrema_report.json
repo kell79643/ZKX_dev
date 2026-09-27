@@ -1,0 +1,38 @@
+{
+  "run_id": "20260810T110456Z_6132f71eb1e0_stage07_b06_formal_2c2f61a2",
+  "case_id": "argrelextrema__argrelextrema_int16_10e2__ac9dfe184087b8be",
+  "operator_name": "argrelextrema",
+  "task_name": "Task2",
+  "step_name": "Step5",
+  "scale_id": "argrelextrema_int16_10e2",
+  "requested_dtype": "INT16",
+  "input_content": [
+    {
+      "input_name": "feature_bundle",
+      "shape": "[128]",
+      "dtype": "INT16",
+      "element_count": "128",
+      "generator": "deterministic_task2_feature_bundle",
+      "preview_head4_tail2": "i=0:2;i=1:2;i=2:2;i=3:3;i=126:-6;i=127:-6"
+    }
+  ],
+  "case_parameters": {
+    "count": 128,
+    "order": 3,
+    "mode": "clip",
+    "comparator": "greater",
+    "output_count": "dynamic_int64_coordinates"
+  },
+  "output_dtype": "INT64_COORDINATES",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "output_count": 2,
+  "actual_input_digest": "ac9dfe184087b8be2b225f35b24a1cd7321fbbb3b6c448ff9252733b2f4e1309",
+  "typed_array_digest": "0c58e951ee95c067048ba76e4876aea02d1ff5b3e2a61eba693b6f00dcd66e40",
+  "status": "PASS",
+  "error_code": "OK",
+  "exact_match": true,
+  "mismatch_count": 0,
+  "semantic_check": true
+}

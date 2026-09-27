@@ -1,0 +1,22 @@
+{
+  "run_id": "20260810T024505Z_5e66669d177a_stage07_b01_formal_b39a8c14",
+  "case_id": "cfar_alpha__alpha_fp16_10e4__54fd4b125831492f",
+  "operator_name": "cfar_alpha",
+  "scale_id": "alpha_fp16_10e4",
+  "requested_dtype": "FP16",
+  "config_input_dtype": "FP16",
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "exact_match": true,
+  "mismatch_count": 0,
+  "semantic_check": true,
+  "actual_input_digest": "54fd4b125831492f464cf32283439869b211267f2ed7b8ff05e17012944c4f78",
+  "status": "PASS",
+  "error_code": "OK"
+}

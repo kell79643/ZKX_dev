@@ -1,0 +1,36 @@
+{
+  "run_id": "20260810T110447Z_6132f71eb1e0_stage07_b06_formal_cf486826",
+  "case_id": "cubic__cubic_int8_10e2__2403a31f280766f0",
+  "operator_name": "cubic",
+  "task_name": "Task2",
+  "step_name": "Step3",
+  "scale_id": "cubic_int8_10e2",
+  "requested_dtype": "INT8",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[128]",
+      "dtype": "INT8",
+      "element_count": "128",
+      "generator": "deterministic_cubic_domain",
+      "preview_head4_tail2": "i=0:-3;i=1:-2;i=2:-2;i=3:-2;i=126:2;i=127:3"
+    }
+  ],
+  "case_parameters": {
+    "count": 128,
+    "output_count": 128
+  },
+  "output_dtype": "INT8",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "output_count": 128,
+  "actual_input_digest": "2403a31f280766f0c36a7a3165aa5cb26c0de6764e4a44f6a6fa4b70b76b6af9",
+  "typed_array_digest": "20b0dd66106d58dd04e95e0db33ffc47819146273ab05721ec75b53a554ec1cb",
+  "status": "PASS",
+  "error_code": "OK",
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0
+}

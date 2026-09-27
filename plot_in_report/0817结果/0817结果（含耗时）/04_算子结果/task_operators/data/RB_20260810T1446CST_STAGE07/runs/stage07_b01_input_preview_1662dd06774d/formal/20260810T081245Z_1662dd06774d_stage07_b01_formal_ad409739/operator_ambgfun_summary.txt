@@ -1,0 +1,22 @@
+run_id=20260810T081245Z_1662dd06774d_stage07_b01_formal_ad409739
+case_id=ambgfun__amb_int8_10e4__a255a0a0a449129e
+operator_name=ambgfun
+scale_id=amb_int8_10e4
+requested_dtype=INT8
+config_input_dtype=ComplexINT8
+input_content=[{'input_name': 'waveform', 'shape': '[64]', 'dtype': 'ComplexINT8', 'element_count': '64', 'generator': 'complex_modular(seed=19,integral=true)', 'preview_head4_tail2': 'i=0:(3,-3);i=1:(5,4);i=2:(-4,2);i=3:(-2,0);i=62:(-5,-1);i=63:(-3,-3)'}]
+case_parameters={'cut': '2d', 'fs': 64, 'prf': 8, 'expected_output_shape': [127, 128]}
+output_dtype=FP64
+backend=fft_thrust
+warmup_runs=20
+measured_runs=100
+mse=1.00351e-15
+rmse=3.16782e-08
+relative_l2=3.56995e-07
+relative_linf=3.57628e-07
+exact_match=True
+mismatch_count=0
+semantic_check=True
+actual_input_digest=a255a0a0a449129e7adac8dc044c1f3edf90b13f88093629838f383f4847346e
+status=PASS
+error_code=OK

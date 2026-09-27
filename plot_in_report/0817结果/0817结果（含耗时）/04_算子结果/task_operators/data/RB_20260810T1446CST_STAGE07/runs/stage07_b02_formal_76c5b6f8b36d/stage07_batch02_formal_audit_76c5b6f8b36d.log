@@ -1,0 +1,10 @@
+[stage07-audit] operator summary
++-------------------+-------+--------+
+| operator          | cases | status |
++-------------------+-------+--------+
+| chirp             |    15 | PASS   |
+| gausspulse        |    15 | PASS   |
+| sawtooth          |    15 | PASS   |
+| square            |    15 | PASS   |
++-------------------+-------+--------+
+STAGE07_BATCH02_AUDIT PASS cases=60 failures=0 output=/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/stage07_batch02_formal_audit_76c5b6f8b36d.json

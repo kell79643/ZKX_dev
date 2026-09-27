@@ -1,0 +1,38 @@
+{
+  "run_id": "20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_c489c3db",
+  "case_id": "gausspulse__gauss_int8_10e3__504e8d9ad8bf42c8",
+  "operator_name": "gausspulse",
+  "task_name": "Task2",
+  "step_name": "Step1",
+  "scale_id": "gauss_int8_10e3",
+  "requested_dtype": "INT8",
+  "config_input_dtype": "INT8",
+  "input_content": [
+    {
+      "input_name": "time",
+      "shape": "[1024]",
+      "dtype": "INT8",
+      "element_count": "1024",
+      "generator": "quantized_centered_time_minus16_to_16(round(32*i/(N-1)-16))",
+      "preview_head4_tail2": "i=0:-16;i=1:-16;i=2:-16;i=3:-16;i=1022:16;i=1023:16"
+    }
+  ],
+  "case_parameters": {
+    "fc": 0.05,
+    "bw": 0.2,
+    "bwr_db": -6,
+    "return_component": "in_phase"
+  },
+  "output_dtype": "INT8",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "actual_input_digest": "504e8d9ad8bf42c8f862a9c8001b6460f03ee3bf6f7e70e38fc4f2d866ddae32",
+  "typed_array_digest": "747564e9dffa8bf8daaa742ea966b0eee2637824935bba98460d2746c93760d2",
+  "status": "PASS",
+  "error_code": "OK"
+}

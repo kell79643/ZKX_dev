@@ -1,0 +1,36 @@
+{
+  "run_id": "20260810T110446Z_6132f71eb1e0_stage07_b06_formal_fa81bf2c",
+  "case_id": "cubic__cubic_fp16_10e2__cb15388a9d7aeedc",
+  "operator_name": "cubic",
+  "task_name": "Task2",
+  "step_name": "Step3",
+  "scale_id": "cubic_fp16_10e2",
+  "requested_dtype": "FP16",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[128]",
+      "dtype": "FP16",
+      "element_count": "128",
+      "generator": "deterministic_cubic_domain",
+      "preview_head4_tail2": "i=0:-2.5;i=1:-2.4609375;i=2:-2.421875;i=3:-2.3828125;i=126:2.4609375;i=127:2.5"
+    }
+  ],
+  "case_parameters": {
+    "count": 128,
+    "output_count": 128
+  },
+  "output_dtype": "FP16",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "output_count": 128,
+  "actual_input_digest": "cb15388a9d7aeedcd9f7d1ca8eee07a63e74399bd146e15c489cd1109905d3fb",
+  "typed_array_digest": "5b1be546b4511b510fe44f9a7fd8aa01a34f3f74ee1e170e6d58ca3d365d2fd5",
+  "status": "PASS",
+  "error_code": "OK",
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0
+}

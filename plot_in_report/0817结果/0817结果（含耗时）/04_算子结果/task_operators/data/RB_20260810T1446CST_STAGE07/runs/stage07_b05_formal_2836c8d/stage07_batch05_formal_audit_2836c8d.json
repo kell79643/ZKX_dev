@@ -1,0 +1,558 @@
+{
+  "schema_version": 1,
+  "audit_kind": "stage07_batch05_formal_evidence",
+  "formal_root": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal",
+  "driver_log_root": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs",
+  "result_git_commit": "2836c8dc200d20a9b8f76b3e8fad9933590364f2",
+  "result_git_dirty": "false",
+  "verifier_git_commit": "2836c8dc200d20a9b8f76b3e8fad9933590364f2",
+  "expected_case_count": 45,
+  "case_count": 45,
+  "selection_records": [
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105109Z_2836c8dc200d_stage07_b05_formal_d6498d18"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105109Z_2836c8dc200d_stage07_b05_formal_bebe1bb2"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105110Z_2836c8dc200d_stage07_b05_formal_62618a74"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105108Z_2836c8dc200d_stage07_b05_formal_d077f0b2"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105108Z_2836c8dc200d_stage07_b05_formal_fd6000dd"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105108Z_2836c8dc200d_stage07_b05_formal_9bdb78f7"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105113Z_2836c8dc200d_stage07_b05_formal_ca36b547"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105113Z_2836c8dc200d_stage07_b05_formal_82308464"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105114Z_2836c8dc200d_stage07_b05_formal_c4160d69"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105112Z_2836c8dc200d_stage07_b05_formal_8d36c685"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105112Z_2836c8dc200d_stage07_b05_formal_1334d7a0"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105112Z_2836c8dc200d_stage07_b05_formal_08865e73"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105115Z_2836c8dc200d_stage07_b05_formal_e6348320"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105115Z_2836c8dc200d_stage07_b05_formal_beb352ef"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/correlate/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105115Z_2836c8dc200d_stage07_b05_formal_a9cb60f5"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105057Z_2836c8dc200d_stage07_b05_formal_a23c73a8"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105057Z_2836c8dc200d_stage07_b05_formal_f8f457e5"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105058Z_2836c8dc200d_stage07_b05_formal_4b6dc00b"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105057Z_2836c8dc200d_stage07_b05_formal_dcf21822"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105057Z_2836c8dc200d_stage07_b05_formal_d783f494"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105057Z_2836c8dc200d_stage07_b05_formal_c7d48895"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105059Z_2836c8dc200d_stage07_b05_formal_8fb1cf30"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105059Z_2836c8dc200d_stage07_b05_formal_96dba455"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105059Z_2836c8dc200d_stage07_b05_formal_ca0e566f"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105058Z_2836c8dc200d_stage07_b05_formal_76051d68"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105058Z_2836c8dc200d_stage07_b05_formal_cf0a3e3d"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105058Z_2836c8dc200d_stage07_b05_formal_33458f79"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105059Z_2836c8dc200d_stage07_b05_formal_4b8bcc09"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105059Z_2836c8dc200d_stage07_b05_formal_f64e35de"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/fm_demod/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105059Z_2836c8dc200d_stage07_b05_formal_5e32c370"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105134Z_2836c8dc200d_stage07_b05_formal_c51cc5da"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105134Z_2836c8dc200d_stage07_b05_formal_178dffe3"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105135Z_2836c8dc200d_stage07_b05_formal_0752c922"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105125Z_2836c8dc200d_stage07_b05_formal_b188221d"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105125Z_2836c8dc200d_stage07_b05_formal_1c6b7986"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105126Z_2836c8dc200d_stage07_b05_formal_e3c27483"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105155Z_2836c8dc200d_stage07_b05_formal_2956e124"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105155Z_2836c8dc200d_stage07_b05_formal_b83dc473"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105156Z_2836c8dc200d_stage07_b05_formal_5446b8ba"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105146Z_2836c8dc200d_stage07_b05_formal_b57f0fe6"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105146Z_2836c8dc200d_stage07_b05_formal_50b827d9"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105147Z_2836c8dc200d_stage07_b05_formal_452df5cc"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105204Z_2836c8dc200d_stage07_b05_formal_e7fea20a"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105204Z_2836c8dc200d_stage07_b05_formal_0d628023"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal_driver_logs/spectrogram/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/formal/20260810T105205Z_2836c8dc200d_stage07_b05_formal_f9c94431"
+    }
+  ],
+  "cases": [
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "dd36386658e0ce53a9a0aae7055da8819ca440d7d8c1e44f61ce9dbbec651cce",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "80c08ca0fe6fbd11b63da0742902531f80b108c18f21f42aeace87b0cb631d57",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "ff7ea695949ec5e7655ec6cdbcf319bdfcd85255211dd7a8edcd0380d0a3d3e4",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "0e9f444ed1e35df50370aa672761e2436a255efb45a14571cf46e288235a1298",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "f6a4680316177de780800133f9b0ff24859ac5cc4edbd5835f6d1b3964a0ba7f",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "3354ab251d38ac1482371b06b7fedd93eed00c954b9612dcdc15dcf700a61606",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_int16_10e2",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "4b391240301790278f7f550fc55bf3272a82ab2e7b39bb17309f7c354a86055e",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_int16_10e3",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "728f8314c14dd09efd5c2a85bcb9a28fb2519664836d5cd5d3978d9898014c92",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_int16_10e4",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "e1e0a7c11a8a304ad4a113ee9ac2ff76be8a686e2290b5e608517e7d4774dda6",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_int32_10e2",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "93b0d488e4ee6afaa296943ad6dce71c754efc769574bcbcb4543bdacffe0336",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_int32_10e3",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "f568f5e20f0542a0292cf4cb20c63840622fac3fb80b16659dfaf5f37cf383d7",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_int32_10e4",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "7c4a20333727d7fc1e5746feb1a495e97220c341125233fdad0c899877f2a431",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_int8_10e2",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "210aa7bc922fecc166e352ccf7dff61f481891f739f2a859b451741db076635a",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_int8_10e3",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "ee630f3cf63ce8d6c35bfbfeeb6dfda8790d02b27ca8f0aeefef185815cce9cd",
+      "status": "PASS"
+    },
+    {
+      "operator": "correlate",
+      "scale_id": "correlate_int8_10e4",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "c0f05046d94ad8354fbd8bc48f8ee2c9c2169d29ac74c2221e125887ae372db5",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "8f40eac5c2bc7520eda627facc770b095f1c9df0db1eddd265cbecf831c19e81",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "fbffbae83d8d999ff18a3e5a8329f1784fe750064c00dabbaa502d218b743c89",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "c72713db771e1223ea6a8da76ea7b840ef13a24c273fd3d4520d44267fe32658",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "aeb0291153803dbd677cf4a331ae82d50ce27f8e073c33588e78e2aa2cd34a4e",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "12e59eebfc559a8c31fc053362b1fa020a4484af74174175a287c8aac595a1a9",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "3587f27cad382fa27d0c56b8bcd2e7ae2ee1052e3244bd2ac2958d7d19dc18c8",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_int16_10e2",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "08f384faa4d8941c56875b641ab7b039dbb68c3bb3150e3104decccff98b04e1",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_int16_10e3",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "cd20e32abc12e48bbd3ad801cdea9462cd0b30dd7909ee66643c03092ae15be8",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_int16_10e4",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "d4b3e06dce6bd96c02483be69290c9f87a17db0ba991e4e21ddba8e6f33d94a9",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_int32_10e2",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "aadeb876c682e2cdc5799ce66932f295d8efae3aaa03a903969be91e1035d7cb",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_int32_10e3",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "d86c860a8a7afaf6caa7b8e88f07fe50bce8309cd522cd89c0c82b10a5b853d4",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_int32_10e4",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "060dbe03a604e8d1fb0318693769486cfbd75d34865a9430288fcc13c019f3ad",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_int8_10e2",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "e2d0510dd0fc741198f10873bd41322325a23671b7a35d887237d53320dcdf9e",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_int8_10e3",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "35c86b2ace8b34b58f1d082f4075ccbc1ac5ad78588876be868c8a8f7328675f",
+      "status": "PASS"
+    },
+    {
+      "operator": "fm_demod",
+      "scale_id": "fm_demod_int8_10e4",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "3bd18c14f02f8af395cd192125d43ac598715d7e73a0ce09e3bf6aedaa6cec74",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "fft_thrust",
+      "input_digest": "d0c6bc4d318ca52ed4c5e813151b07af5f8834227cd7f93872253792f5a644cc",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "fft_thrust",
+      "input_digest": "fd0e0a08349bb2941c64ec833ed41a9f6292e289028155661fb1a1de92f6a95a",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "fft_thrust",
+      "input_digest": "cd0ce797a391cfc8dd116d2790e958c45b1dc215b15bf3a5bbd9f8ed3814885b",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "fft_thrust",
+      "input_digest": "a005e177db47a7207e9ec0774b2752af20dbb4ca6e91e2bb3c2e16f88d8b261f",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "fft_thrust",
+      "input_digest": "36087122a680de0bd6f7b456758023102567c92bfd6a4ca62d73ea3fe2f8ed47",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "fft_thrust",
+      "input_digest": "db87f619ac999abaccef82c0cfc5599e2ae82d79f9be18dcc5cd8f87d134b0a1",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_int16_10e2",
+      "dtype": "INT16",
+      "backend": "fft_thrust",
+      "input_digest": "5f3dcb82b6c1eae2573592ef30a3f78e66fabb80eed7db2a403bf26e169cccb2",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_int16_10e3",
+      "dtype": "INT16",
+      "backend": "fft_thrust",
+      "input_digest": "0cbb2df9e4623f8e5f69eafab26a37f8a815101613fbad85c03820a9447eb726",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_int16_10e4",
+      "dtype": "INT16",
+      "backend": "fft_thrust",
+      "input_digest": "ca76325a5d4c8f91d753ea341cd29f17ccb2a40c2f43593da6880c8eaf46b0d6",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_int32_10e2",
+      "dtype": "INT32",
+      "backend": "fft_thrust",
+      "input_digest": "98a6b39da6edc2435f224901f6d2d9497c6546b20df1c44c4499fb97516e60a5",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_int32_10e3",
+      "dtype": "INT32",
+      "backend": "fft_thrust",
+      "input_digest": "9d88fd253bb8a5e3a87b97ce6f861a347c51375fbcaa3f239dadc2708e5340a1",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_int32_10e4",
+      "dtype": "INT32",
+      "backend": "fft_thrust",
+      "input_digest": "693377e8b81458d82e1aa6d43fb9e11210a73f15060f3573211c92e35f18b48d",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_int8_10e2",
+      "dtype": "INT8",
+      "backend": "fft_thrust",
+      "input_digest": "0471941be3ba460c60f6d6ae3816d7c162a0fce8646cbabbf98107b0afc7d5d7",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_int8_10e3",
+      "dtype": "INT8",
+      "backend": "fft_thrust",
+      "input_digest": "08b9a4cc27423fcf5a000ac2e8d12ad62e997913b98f9ebb8abcb27af4657dc2",
+      "status": "PASS"
+    },
+    {
+      "operator": "spectrogram",
+      "scale_id": "spectrogram_int8_10e4",
+      "dtype": "INT8",
+      "backend": "fft_thrust",
+      "input_digest": "92483c14336e7cb691741a2cf953349053cf298633d38ac98b35f4e90c5750f6",
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "status": "PASS",
+  "output": "/tmp/ZKX_dev/results/stage07_b05_formal_2836c8d/stage07_batch05_formal_audit_2836c8d.json"
+}

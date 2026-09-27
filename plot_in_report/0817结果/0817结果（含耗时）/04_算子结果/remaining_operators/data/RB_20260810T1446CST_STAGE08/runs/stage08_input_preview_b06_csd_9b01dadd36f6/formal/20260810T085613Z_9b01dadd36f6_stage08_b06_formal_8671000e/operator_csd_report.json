@@ -1,0 +1,55 @@
+{
+  "run_id": "20260810T085613Z_9b01dadd36f6_stage08_b06_formal_8671000e",
+  "case_id": "csd__csd_int8_10e4__840d64cc6bb13dc5",
+  "operator_name": "csd",
+  "scale_id": "csd_int8_10e4",
+  "requested_dtype": "INT8",
+  "output_dtype": "ComplexFP32",
+  "backend": "fft_thrust",
+  "nperseg": 128,
+  "noverlap": 64,
+  "nfft": 128,
+  "detrend": "constant",
+  "scaling": "density",
+  "average": "median",
+  "frequency_count": 65,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 2.77297e-17,
+  "rmse": 5.2659e-09,
+  "relative_l2": 3.14727e-11,
+  "relative_linf": 1.19209e-10,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[10000]",
+      "dtype": "INT8",
+      "element_count": "10000",
+      "generator": "spectral_modular_plus_periodic_offset(seed=86150003,integral=true)",
+      "preview_head4_tail2": "i=0:0;i=1:-5;i=2:1;i=3:-4;i=9998:5;i=9999:0"
+    },
+    {
+      "input_name": "y",
+      "shape": "[9000]",
+      "dtype": "INT8",
+      "element_count": "9000",
+      "generator": "spectral_modular_plus_periodic_offset(seed=86150004,integral=true)",
+      "preview_head4_tail2": "i=0:1;i=1:-4;i=2:2;i=3:-3;i=8998:1;i=8999:-4"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT8",
+    "nx": "10000",
+    "ny": "9000",
+    "fs": "1000",
+    "nperseg": "128",
+    "noverlap": "64",
+    "nfft": "128",
+    "detrend": "constant",
+    "scaling": "density",
+    "average": "median",
+    "seed": "86150003"
+  }
+}

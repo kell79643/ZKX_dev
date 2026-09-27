@@ -1,0 +1,51 @@
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/configs/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int16_10e2 dtype=INT16 sym=true backend=fft_thrust
+[stage08-b01] dtype_semantics=actual_typed_scalar_input typed_input_count=1 actual_input_digest=ad4c0b8fac821e0e97b19164bb3fcf2e029dd17253ea50cf20366c2280b48a7a
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.22455642000000001 gpu_mean_ms=1.5761472999999995 speedup=0.14247172202750344
+[stage08-b01] mse=1.3593549496823892e-14 rmse=1.1659137831256603e-07 relative_l2=2.1396127190412897e-07 relative_linf=2.7514908007564287e-07
+[stage08-b01] resources=available cuda_event_ms=1.5848660469055176
+[stage08-b01] status=PASS error_code=OK
+[stage08] identity and status
+target  | scale_id           | device | backend    | dtype | warmup | measured | timing_scope             | status | error_code
+chebwin | chebwin_int16_10e2 | CPU    | fft_thrust | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+chebwin | chebwin_int16_10e2 | GPU    | fft_thrust | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+
+[stage08] timing detail
+device | mean_ms             | p50_ms              | p95_ms    | p99_ms              | min_ms              | max_ms              | std_ms               | cv                   | speedup            
+CPU    | 0.22455642000000001 | 0.22207199999999999 | 0.2296385 | 0.23340172000000101 | 0.22179199999999999 | 0.42543399999999998 | 0.020274261816490381 | 0.090285825791533283 | NA                 
+GPU    | 1.5761472999999995  | 1.5659934999999998  | 1.6321275 | 1.6477206000000004  | 1.543693            | 1.7305440000000001  | 0.028930774478226479 | 0.018355374829640916 | 0.14247172202750344
+
+[stage08] accuracy detail
+accuracy_reference  | mse                    | rmse                   | relative_l2            | relative_linf          | exact_match | mismatch_count | semantic_check                                                                          | status
+cpu_typed_reference | 1.3593549496823892e-14 | 1.1659137831256603e-07 | 2.1396127190412897e-07 | 2.7514908007564287e-07 | NA          | NA             | finite_fp64_window_shape_and_symmetry_policy_match_cpu:shape=[100];finite=true;sym=true | PASS  
+
+[stage08] resource detail
+device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes
+CPU    | cpu_heap   | 2120544      | 2124288     | 2124288    | 3744       
+CPU    | rss        | 72011776     | 72011776    | 72011776   | 0          
+GPU    | cpu_heap   | 2124288      | 2127424     | 2127424    | 3136       
+GPU    | rss        | 72011776     | 72011776    | 72011776   | 0          
+GPU    | gpu_memory | 341000192    | 341000192   | 341000192  | 0          
+
+[stage08] input/output identity
+device | input_digest                                                     | output_digest                                                   
+CPU    | ad4c0b8fac821e0e97b19164bb3fcf2e029dd17253ea50cf20366c2280b48a7a | 93c7bef8782b5024e83d5af1d1f2793c607772bffcaf45924cad873a4fc54596
+GPU    | ad4c0b8fac821e0e97b19164bb3fcf2e029dd17253ea50cf20366c2280b48a7a | 4c69c5860740d766bc1280371ad00efc70e1d0113cbabfff0ee92d8444e5a98e
+
+[stage08] dtype evidence
+requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status
+INT16           | INT16              | FP64         | ad4c0b8fac821e0e97b19164bb3fcf2e029dd17253ea50cf20366c2280b48a7a | PASS  
+
+[stage08] evidence files
+kind        | path                                                                                                                                                                                                                                   
+main_csv    | /tmp/ZKX_dev/results/stage08_table_rerun_chebwin_47ebe13410d3/formal/20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012/operator_main_results_chebwin_fft_thrust_20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012.csv  
+timing_csv  | /tmp/ZKX_dev/results/stage08_table_rerun_chebwin_47ebe13410d3/formal/20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012/operator_timing_samples_chebwin_fft_thrust_20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012.csv
+memory_csv  | /tmp/ZKX_dev/results/stage08_table_rerun_chebwin_47ebe13410d3/formal/20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012/operator_windows_chebwin_memory_trace_fft_thrust.csv                                                    
+dtype_csv   | /tmp/ZKX_dev/results/stage08_table_rerun_chebwin_47ebe13410d3/formal/20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012/operator_dtype_evidence_chebwin_fft_thrust_20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012.csv
+module_csv  | /tmp/ZKX_dev/results/stage08_table_rerun_chebwin_47ebe13410d3/formal/20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012/windows_batch01_module_summary_fft_thrust_20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012.csv 
+report_json | /tmp/ZKX_dev/results/stage08_table_rerun_chebwin_47ebe13410d3/formal/20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012/operator_chebwin_report.json                                                                            
+summary_txt | /tmp/ZKX_dev/results/stage08_table_rerun_chebwin_47ebe13410d3/formal/20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012/operator_chebwin_summary.txt                                                                            
+full_log    | /tmp/ZKX_dev/results/stage08_table_rerun_chebwin_47ebe13410d3/formal/20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012/operator_chebwin_full.log                                                                               
+results_dir | /tmp/ZKX_dev/results/stage08_table_rerun_chebwin_47ebe13410d3/formal/20260810T031917Z_47ebe13410d3_stage08_b01_formal_88100012                                                                                                         

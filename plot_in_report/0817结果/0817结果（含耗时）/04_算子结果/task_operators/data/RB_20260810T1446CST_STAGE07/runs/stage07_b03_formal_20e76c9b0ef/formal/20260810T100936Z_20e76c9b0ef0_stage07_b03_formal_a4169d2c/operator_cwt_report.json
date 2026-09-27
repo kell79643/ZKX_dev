@@ -1,0 +1,57 @@
+{
+  "run_id": "20260810T100936Z_20e76c9b0ef0_stage07_b03_formal_a4169d2c",
+  "case_id": "cwt__cwt_task_fp16_10e4__3c0b92babd517cd4",
+  "operator_name": "cwt",
+  "task_name": "Task2",
+  "step_name": "Step4",
+  "scale_id": "cwt_task_fp16_10e4",
+  "requested_dtype": "FP16",
+  "input_content": [
+    {
+      "input_name": "signal",
+      "shape": "[10000]",
+      "dtype": "FP16",
+      "element_count": "10000",
+      "generator": "sinusoid_mixture_plus_transient",
+      "preview_head4_tail2": "i=0:2;i=1:2.46289062;i=2:2.36132812;i=3:1.9375;i=9998:3.21289062;i=9999:2.78125"
+    },
+    {
+      "input_name": "widths",
+      "shape": "[4]",
+      "dtype": "FP16",
+      "element_count": "4",
+      "generator": "configured_ricker_widths(base=2)",
+      "preview_head4_tail2": "i=0:2;i=1:4;i=2:8;i=3:12"
+    }
+  ],
+  "case_parameters": {
+    "n": 10000,
+    "width_base": 2,
+    "widths": [
+      2,
+      4,
+      8,
+      12
+    ],
+    "wavelet": "ricker_typed_cpu_float",
+    "expected_output_shape": [
+      4,
+      10000
+    ],
+    "output_dtype": "FP64",
+    "backend_truth": "not_applicable_direct_custom_convolution"
+  },
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "task_gpu_call_status": "proved_gpu_cpu",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 1.87897e-12,
+  "rmse": 1.37075e-06,
+  "relative_l2": 1.70859e-07,
+  "relative_linf": 4.28872e-07,
+  "actual_input_digest": "3c0b92babd517cd46ae77411e94279f80f925eda33297e8d21cde7b5d6662660",
+  "typed_array_digest": "e6dcb290bd247c9b1cc346839cbf5e929875350151fcf1a569ee83c5d516ddfe",
+  "status": "PASS",
+  "error_code": "OK"
+}

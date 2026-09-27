@@ -1,0 +1,51 @@
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/configs/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int8_10e3 dtype=INT8 sym=false backend=not_applicable
+[stage08-b01] dtype_semantics=actual_typed_scalar_inputs typed_input_count=2 actual_input_digest=40fc220f97cf5f40821c34700668db354a3ef2da34d79a2f053424018a0599a4
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.051607840000000016 gpu_mean_ms=0.25859611000000021 speedup=0.19956928199731996
+[stage08-b01] mse=1.9981098597446369e-16 rmse=1.4135451389130228e-08 relative_l2=4.1499623318058698e-08 relative_linf=8.0089309073549941e-08
+[stage08-b01] resources=available cuda_event_ms=0.28025001287460327
+[stage08-b01] status=PASS error_code=OK
+[stage08] identity and status
+target           | scale_id                   | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code
+general_gaussian | general_gaussian_int8_10e3 | CPU    | not_applicable | INT8  | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+general_gaussian | general_gaussian_int8_10e3 | GPU    | not_applicable | INT8  | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+
+[stage08] timing detail
+device | mean_ms              | p50_ms               | p95_ms              | p99_ms              | min_ms               | max_ms               | std_ms                 | cv                   | speedup            
+CPU    | 0.051607840000000016 | 0.051464999999999997 | 0.05327755          | 0.05374300000000002 | 0.050560000000000001 | 0.057901000000000001 | 0.00083756836998539986 | 0.016229479280384523 | NA                 
+GPU    | 0.25859611000000021  | 0.25565249999999995  | 0.26973649999999999 | 0.32258870000000012 | 0.24893199999999999  | 0.34097300000000003  | 0.012008534195225495   | 0.046437412361792621 | 0.19956928199731996
+
+[stage08] accuracy detail
+accuracy_reference  | mse                    | rmse                   | relative_l2            | relative_linf          | exact_match | mismatch_count | semantic_check                                                                                 | status
+cpu_typed_reference | 1.9981098597446369e-16 | 1.4135451389130228e-08 | 4.1499623318058698e-08 | 8.0089309073549941e-08 | NA          | NA             | finite_fp64_window_shape_power_width_and_symmetry_match_cpu:shape=[1000];finite=true;sym=false | PASS  
+
+[stage08] resource detail
+device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes
+CPU    | cpu_heap   | 1463616      | 1467472     | 1474368    | 3856       
+CPU    | rss        | 70438912     | 70438912    | 70438912   | 0          
+GPU    | cpu_heap   | 1467472      | 1470112     | 1477184    | 2640       
+GPU    | rss        | 70438912     | 70438912    | 70438912   | 0          
+GPU    | gpu_memory | 357777408    | 357777408   | 357777408  | 0          
+
+[stage08] input/output identity
+device | input_digest                                                     | output_digest                                                   
+CPU    | 40fc220f97cf5f40821c34700668db354a3ef2da34d79a2f053424018a0599a4 | c448f0000473b8e959002765cd0cd538b415739189502a9b100db58a91698fdc
+GPU    | 40fc220f97cf5f40821c34700668db354a3ef2da34d79a2f053424018a0599a4 | 4427c7adcc697e2d36631d8b49ff5c325f60165a6bb4c01e33af142d601c473b
+
+[stage08] dtype evidence
+requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status
+INT8            | INT8               | FP64         | 40fc220f97cf5f40821c34700668db354a3ef2da34d79a2f053424018a0599a4 | PASS  
+
+[stage08] evidence files
+kind        | path                                                                                                                                                                                                                                                         
+main_csv    | /tmp/ZKX_dev/results/stage08_table_rerun_general_gaussian_47ebe13410d3/formal/20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b/operator_main_results_general_gaussian_not_applicable_20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b.csv  
+timing_csv  | /tmp/ZKX_dev/results/stage08_table_rerun_general_gaussian_47ebe13410d3/formal/20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b/operator_timing_samples_general_gaussian_not_applicable_20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b.csv
+memory_csv  | /tmp/ZKX_dev/results/stage08_table_rerun_general_gaussian_47ebe13410d3/formal/20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b/operator_windows_general_gaussian_memory_trace_not_applicable.csv                                                    
+dtype_csv   | /tmp/ZKX_dev/results/stage08_table_rerun_general_gaussian_47ebe13410d3/formal/20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b/operator_dtype_evidence_general_gaussian_not_applicable_20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b.csv
+module_csv  | /tmp/ZKX_dev/results/stage08_table_rerun_general_gaussian_47ebe13410d3/formal/20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b/windows_batch01_module_summary_not_applicable_20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b.csv          
+report_json | /tmp/ZKX_dev/results/stage08_table_rerun_general_gaussian_47ebe13410d3/formal/20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b/operator_general_gaussian_report.json                                                                                
+summary_txt | /tmp/ZKX_dev/results/stage08_table_rerun_general_gaussian_47ebe13410d3/formal/20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b/operator_general_gaussian_summary.txt                                                                                
+full_log    | /tmp/ZKX_dev/results/stage08_table_rerun_general_gaussian_47ebe13410d3/formal/20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b/operator_general_gaussian_full.log                                                                                   
+results_dir | /tmp/ZKX_dev/results/stage08_table_rerun_general_gaussian_47ebe13410d3/formal/20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001b                                                                                                                      

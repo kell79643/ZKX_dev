@@ -1,0 +1,17 @@
+status=PASS
+operator=chebwin
+run_id=20260810T031933Z_47ebe13410d3_stage08_b01_formal_8810001c
+case_id=chebwin__chebwin_int8_10e4__d9fb3c03f5bd4e1e__sym
+scale_id=chebwin_int8_10e4
+dtype=INT8
+sym=true
+dtype_semantics=actual_typed_scalar_input
+typed_input_count=1
+typed_input_manifest=length:INT32=10000|sym:BOOL=true|attenuation_db:INT8:bytes=50
+backend=fft_thrust
+warmup_runs=20
+measured_runs=100
+input_digest=d9fb3c03f5bd4e1ee98846770a6ff91c8c360d24681cb96921d5d72696a5d140
+cpu_output_digest=3249376b0a7a9aa69ca6b54e80624e48b72aefbefb2aa08d5a87f9c346030a34
+gpu_output_digest=2c3434660a30f82efeb1e8745b26cf699bfe0ef9ded47656d65701d8883f4b24
+error_code=OK

@@ -1,0 +1,17 @@
+status=PASS
+operator=kaiser
+run_id=20260810T032006Z_47ebe13410d3_stage08_b01_formal_8813000e
+case_id=kaiser__kaiser_int32_10e3__983fdcb7898b7e0d__sym
+scale_id=kaiser_int32_10e3
+dtype=INT32
+sym=true
+dtype_semantics=actual_typed_scalar_input
+typed_input_count=1
+typed_input_manifest=length:INT32=1000|sym:BOOL=true|beta:INT32:bytes=08000000
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+input_digest=983fdcb7898b7e0d42e0f977aa28bb69ec3cee657bff7a3738084d8c66698da7
+cpu_output_digest=7fa02561634a7aa08dd83cdeb7a4b906d5fc46fe038ad25246b64d3ac7699471
+gpu_output_digest=88d54eb80cb0a025950b06c04d1b111581f59cfe97cb686cf7f97872498f6e39
+error_code=OK

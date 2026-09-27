@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+windows/hamming                   invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: windows.hamming.invalid_shape.set_length_1
+  abnormal_input: mutation=set length=-1
+  error_message: windows::hamming检测到非法shape：mutation=set length=-1
+  backend_error: code=NA name=NA message=NA
+windows/hamming                   invalid_dtype           INVALID_DTYPE            INVALID_DTYPE            INVALID_DTYPE            true       PASS    
+  case_id: windows.hamming.invalid_dtype.request_complex_business_input
+  abnormal_input: mutation=request complex business input
+  error_message: windows::hamming检测到非法dtype：mutation=request complex business input
+  backend_error: code=NA name=NA message=NA
+windows/hamming                   backend_call_failure    CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       true       PASS    
+  case_id: windows.hamming.backend_call_failure.inject_cuda_window_kernel_failure
+  abnormal_input: mutation=inject CUDA window kernel failure
+  error_message: windows::hamming捕获CUDA Runtime失败：mutation=inject CUDA window kernel failure；cudaErrorInvalidDevice（invalid device ordinal）
+  backend_error: code=101 name=cudaErrorInvalidDevice message=invalid device ordinal
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

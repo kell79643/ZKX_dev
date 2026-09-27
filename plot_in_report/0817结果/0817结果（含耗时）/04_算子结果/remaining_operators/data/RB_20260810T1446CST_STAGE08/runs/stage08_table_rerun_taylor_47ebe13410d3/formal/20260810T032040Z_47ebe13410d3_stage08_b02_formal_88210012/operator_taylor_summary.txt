@@ -1,0 +1,17 @@
+status=PASS
+operator=taylor
+run_id=20260810T032040Z_47ebe13410d3_stage08_b02_formal_88210012
+case_id=taylor__taylor_int16_10e2__ba9e90303fbdd4cf__sym
+scale_id=taylor_int16_10e2
+dtype=INT16
+sym=true
+dtype_semantics=actual_typed_scalar_input
+typed_input_count=1
+typed_input_manifest=length:INT32=100|sym:BOOL=true|sidelobe_level_db:INT16:bytes=1e00
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+input_digest=ba9e90303fbdd4cfc247f1950aea40d7146b643672f91b4d71055105db4c35ea
+cpu_output_digest=f9df0d2136e1a4d024714d43cf01ab65d2173fe59184071c0f03b6162fd6cc0d
+gpu_output_digest=c21689a9e382f820de4c2c65863390609247f79961a7bbf3783910da620e351e
+error_code=OK

@@ -1,0 +1,22 @@
+run_id=20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_082e14c2
+case_id=sawtooth__saw_fp32_10e3__63e63d491ddc7d97
+operator_name=sawtooth
+task_name=Task2
+step_name=Step1
+scale_id=saw_fp32_10e3
+requested_dtype=FP32
+config_input_dtype=FP32
+input_content=[{'input_name': 'phase', 'shape': '[1024]', 'dtype': 'FP32', 'element_count': '1024', 'generator': 'periodic_phase_8cycles(16*pi*i/(N-1))', 'preview_head4_tail2': 'i=0:0;i=1:0.0491353683;i=2:0.0982707366;i=3:0.147406101;i=1022:50.2163467;i=1023:50.2654839'}]
+case_parameters={'width': 0.65, 'phase_cycles': 8, 'output_dtype': 'FP64'}
+output_dtype=FP64
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+mse=2.46613e-13
+rmse=4.96602e-07
+relative_l2=8.59298e-07
+relative_linf=1.29303e-06
+actual_input_digest=63e63d491ddc7d971a681b04c56060a54367ecccc84bdcdb1c9ddb6f42b8075a
+typed_array_digest=f35c2383fe4ff9f2310c195dec45da08e36afab4e0428a89797876a633fb6582
+status=PASS
+error_code=OK

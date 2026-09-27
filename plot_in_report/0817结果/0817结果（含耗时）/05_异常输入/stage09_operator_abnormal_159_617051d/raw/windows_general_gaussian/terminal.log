@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+windows/general_gaussian          invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: windows.general_gaussian.invalid_parameter.set_standard_deviation_width_0
+  abnormal_input: mutation=set standard deviation width<=0
+  error_message: windows::general_gaussian检测到非法参数：mutation=set standard deviation width<=0
+  backend_error: code=NA name=NA message=NA
+windows/general_gaussian          invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: windows.general_gaussian.invalid_shape.output_length_differs_from_requested_length
+  abnormal_input: mutation=output length differs from requested length
+  error_message: windows::general_gaussian检测到非法shape：mutation=output length differs from requested length
+  backend_error: code=NA name=NA message=NA
+windows/general_gaussian          backend_call_failure    CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       true       PASS    
+  case_id: windows.general_gaussian.backend_call_failure.inject_cuda_window_kernel_failure
+  abnormal_input: mutation=inject CUDA window kernel failure
+  error_message: windows::general_gaussian捕获CUDA Runtime失败：mutation=inject CUDA window kernel failure；cudaErrorInvalidDevice（invalid device ordinal）
+  backend_error: code=101 name=cudaErrorInvalidDevice message=invalid device ordinal
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

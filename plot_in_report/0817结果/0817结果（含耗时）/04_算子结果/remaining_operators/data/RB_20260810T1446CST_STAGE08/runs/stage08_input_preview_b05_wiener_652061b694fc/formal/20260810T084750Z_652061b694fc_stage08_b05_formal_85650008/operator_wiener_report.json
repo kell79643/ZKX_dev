@@ -1,0 +1,51 @@
+{
+  "run_id": "20260810T084750Z_652061b694fc_stage08_b05_formal_85650008",
+  "case_id": "wiener__wiener_int32_10e4__29351843fa09576b",
+  "operator_name": "wiener",
+  "scale_id": "wiener_int32_10e4",
+  "requested_dtype": "INT32",
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "rank": 2,
+  "shape": [
+    100,
+    100
+  ],
+  "window_mode": "per_dimension",
+  "window_shape": [
+    3,
+    5
+  ],
+  "noise_mode": "automatic",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 3.11258e-14,
+  "rmse": 1.76425e-07,
+  "relative_l2": 1.94889e-07,
+  "relative_linf": 3.44645e-07,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[100x100]",
+      "dtype": "INT32",
+      "element_count": "10000",
+      "generator": "wiener_modular_plus_periodic_offset(seed=85530003,integral=true)",
+      "preview_head4_tail2": "i=0:4;i=1:-1;i=2:5;i=3:0;i=9998:-2;i=9999:4"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT32",
+    "rank": "2",
+    "rows": "100",
+    "cols": "100",
+    "window-mode": "per_dimension",
+    "scalar-window": "0",
+    "w0": "3",
+    "w1": "5",
+    "noise-mode": "automatic",
+    "noise": "0",
+    "seed": "85530003"
+  }
+}

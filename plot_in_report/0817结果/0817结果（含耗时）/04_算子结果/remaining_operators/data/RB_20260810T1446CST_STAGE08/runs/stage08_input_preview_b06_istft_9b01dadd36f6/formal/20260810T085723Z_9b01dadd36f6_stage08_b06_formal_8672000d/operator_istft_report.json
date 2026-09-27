@@ -1,0 +1,47 @@
+{
+  "run_id": "20260810T085723Z_9b01dadd36f6_stage08_b06_formal_8672000d",
+  "case_id": "istft__istft_int8_10e3__f1e7ca597a12f515",
+  "operator_name": "istft",
+  "scale_id": "istft_int8_10e3",
+  "requested_dtype": "INT8",
+  "output_dtype": "FP32",
+  "backend": "fft_thrust",
+  "frequency_count": 32,
+  "time_count": 32,
+  "nperseg": 32,
+  "noverlap": 16,
+  "nfft": 32,
+  "input_onesided": false,
+  "boundary": false,
+  "output_length": 528,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 2.23612e-10,
+  "rmse": 1.49537e-05,
+  "relative_l2": 1.06851e-06,
+  "relative_linf": 1.61859e-06,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "z",
+      "shape": "[32x32]",
+      "dtype": "ComplexINT8",
+      "element_count": "1024",
+      "generator": "frequency_major_complex_modular(seed=86250002,component_dtype=INT8,integral=true)",
+      "preview_head4_tail2": "i=0:(-2,0);i=1:(4,-2);i=2:(-1,-4);i=3:(5,3);i=1022:(3,-1);i=1023:(-2,-3)"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT8",
+    "bins": "32",
+    "frames": "32",
+    "fs": "256",
+    "nperseg": "32",
+    "noverlap": "16",
+    "nfft": "32",
+    "onesided": "false",
+    "boundary": "false",
+    "seed": "86250002"
+  }
+}

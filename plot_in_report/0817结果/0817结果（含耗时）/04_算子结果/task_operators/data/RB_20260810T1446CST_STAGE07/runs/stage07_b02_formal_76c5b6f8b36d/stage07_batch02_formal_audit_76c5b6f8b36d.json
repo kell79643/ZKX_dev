@@ -1,0 +1,862 @@
+{
+  "schema_version": 1,
+  "audit_kind": "stage07_batch02_formal_evidence",
+  "formal_root": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal",
+  "driver_log_root": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs",
+  "result_git_commit": "76c5b6f8b36d91d030e14101c742f259424c26b0",
+  "result_git_dirty": "true",
+  "verifier_git_commit": "76c5b6f8b36d91d030e14101c742f259424c26b0",
+  "expected_case_count": 60,
+  "formal_report_file_count": 60,
+  "selected_report_file_count": 60,
+  "case_count": 60,
+  "selection_records": [
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092018Z_76c5b6f8b36d_stage07_b02_formal_4b613850"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092018Z_76c5b6f8b36d_stage07_b02_formal_9336fb23"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092019Z_76c5b6f8b36d_stage07_b02_formal_3942ce5c"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092018Z_76c5b6f8b36d_stage07_b02_formal_3bf4e4a2"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092018Z_76c5b6f8b36d_stage07_b02_formal_a8241bb1"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092018Z_76c5b6f8b36d_stage07_b02_formal_776b788a"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092019Z_76c5b6f8b36d_stage07_b02_formal_16eaf3b4"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_9d00750e"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_fa191094"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092019Z_76c5b6f8b36d_stage07_b02_formal_7fa114e5"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092019Z_76c5b6f8b36d_stage07_b02_formal_ac27e616"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092019Z_76c5b6f8b36d_stage07_b02_formal_24943170"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_a7a5ca3a"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_a3ccd21c"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/chirp/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_c3852a4b"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092021Z_76c5b6f8b36d_stage07_b02_formal_c9292f7b"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092021Z_76c5b6f8b36d_stage07_b02_formal_af317efa"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092021Z_76c5b6f8b36d_stage07_b02_formal_04902b88"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_e21f8895"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092021Z_76c5b6f8b36d_stage07_b02_formal_320faeca"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092021Z_76c5b6f8b36d_stage07_b02_formal_1ad817f1"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092022Z_76c5b6f8b36d_stage07_b02_formal_0537e8f1"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092022Z_76c5b6f8b36d_stage07_b02_formal_a9089da7"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092022Z_76c5b6f8b36d_stage07_b02_formal_a9712040"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092022Z_76c5b6f8b36d_stage07_b02_formal_ec6f70c6"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092022Z_76c5b6f8b36d_stage07_b02_formal_c7487d97"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092022Z_76c5b6f8b36d_stage07_b02_formal_b450d2b6"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_d26c69e0"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_c489c3db"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/gausspulse/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_051841b4"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092024Z_76c5b6f8b36d_stage07_b02_formal_5a2af18a"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092024Z_76c5b6f8b36d_stage07_b02_formal_b7693de4"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092024Z_76c5b6f8b36d_stage07_b02_formal_3bb7173b"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_7a994adb"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_082e14c2"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_e93f6118"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092025Z_76c5b6f8b36d_stage07_b02_formal_039771ff"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092025Z_76c5b6f8b36d_stage07_b02_formal_66c7d721"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092025Z_76c5b6f8b36d_stage07_b02_formal_2666dbaf"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092024Z_76c5b6f8b36d_stage07_b02_formal_f49261c4"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092024Z_76c5b6f8b36d_stage07_b02_formal_018c69b7"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092025Z_76c5b6f8b36d_stage07_b02_formal_63263178"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092025Z_76c5b6f8b36d_stage07_b02_formal_db5f5240"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_ad68e021"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/sawtooth/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_0c4db795"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_adcaccd0"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092027Z_76c5b6f8b36d_stage07_b02_formal_eed5563c"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092027Z_76c5b6f8b36d_stage07_b02_formal_f9ee4e6e"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_112ecb88"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_42c25fa3"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_475bf893"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_b95b2d92"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_ee922b85"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_253e39a9"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092027Z_76c5b6f8b36d_stage07_b02_formal_cd1d3033"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092027Z_76c5b6f8b36d_stage07_b02_formal_cbfdd652"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092027Z_76c5b6f8b36d_stage07_b02_formal_4c57a1e3"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_e2b190f9"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_64c27d0d"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal_driver_logs/square/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/formal/20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_09f25ff3"
+    }
+  ],
+  "unselected_historical_result_count": 0,
+  "unselected_historical_results": [],
+  "cases": [
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092018Z_76c5b6f8b36d_stage07_b02_formal_4b613850",
+      "case_id": "chirp__chirp_fp16_10e2__149e54e4f898af20",
+      "input_digest": "149e54e4f898af20afbbcdf42284a94a05321a7547716540d51ed85feb173d65",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092018Z_76c5b6f8b36d_stage07_b02_formal_9336fb23",
+      "case_id": "chirp__chirp_fp16_10e3__4cfa4ecf2d3a5abb",
+      "input_digest": "4cfa4ecf2d3a5abb62209f0f9e97dab91c78ff20b03bf0c1e9c7fb4c3517b064",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092019Z_76c5b6f8b36d_stage07_b02_formal_3942ce5c",
+      "case_id": "chirp__chirp_fp16_10e4__511a5368c7b22136",
+      "input_digest": "511a5368c7b221364c1e67856213bfb0c435c1809c1eda636717d976bb6e41fe",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092018Z_76c5b6f8b36d_stage07_b02_formal_3bf4e4a2",
+      "case_id": "chirp__chirp_fp32_10e2__bd6ca618747dbd1d",
+      "input_digest": "bd6ca618747dbd1d5917fc5e5e2f9ca3bdcdd8661936688e3aa04a56fb4db921",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092018Z_76c5b6f8b36d_stage07_b02_formal_a8241bb1",
+      "case_id": "chirp__chirp_fp32_10e3__9d06dd0d1c25502d",
+      "input_digest": "9d06dd0d1c25502d9e1aa9d28558fa9498813592af3e9435f5ecf59a6e045ee7",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092018Z_76c5b6f8b36d_stage07_b02_formal_776b788a",
+      "case_id": "chirp__chirp_fp32_10e4__806c90503c6db1fc",
+      "input_digest": "806c90503c6db1fcfe9ce8609257636085b1d67ca42e2a450749b5abafbed906",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_int16_10e2",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092019Z_76c5b6f8b36d_stage07_b02_formal_16eaf3b4",
+      "case_id": "chirp__chirp_int16_10e2__44c94a8ce0e38935",
+      "input_digest": "44c94a8ce0e389352b7cf3bcd18ebe5caa5e27bd6489c16558dc59e130b4e951",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_int16_10e3",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_9d00750e",
+      "case_id": "chirp__chirp_int16_10e3__6277c7625da7832b",
+      "input_digest": "6277c7625da7832b274dfaf7f50555b110ddf1f6b0cb0ea61e8747d21b203402",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_int16_10e4",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_fa191094",
+      "case_id": "chirp__chirp_int16_10e4__a7d7d709223302a1",
+      "input_digest": "a7d7d709223302a18c21614fa2ff07ecb51360056e88d9d1c2070cba443acd00",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_int32_10e2",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092019Z_76c5b6f8b36d_stage07_b02_formal_7fa114e5",
+      "case_id": "chirp__chirp_int32_10e2__b9da81254ca42354",
+      "input_digest": "b9da81254ca42354c1759198d18600788007e3512cc3626714340edcb15c5be8",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_int32_10e3",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092019Z_76c5b6f8b36d_stage07_b02_formal_ac27e616",
+      "case_id": "chirp__chirp_int32_10e3__bcd7675ed6eaccfb",
+      "input_digest": "bcd7675ed6eaccfbac206be3155a63142779c577c850c17fd37285f2f2d0178e",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_int32_10e4",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092019Z_76c5b6f8b36d_stage07_b02_formal_24943170",
+      "case_id": "chirp__chirp_int32_10e4__676e4ca73c43736d",
+      "input_digest": "676e4ca73c43736d7f5f16935c6c190f6918b4a80426ef5be649a39431fecb9c",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_int8_10e2",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_a7a5ca3a",
+      "case_id": "chirp__chirp_int8_10e2__832993fa8713ef30",
+      "input_digest": "832993fa8713ef30efd7ba92a4095e777029c480cbcc8aeff3c0990ed5f41f93",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_int8_10e3",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_a3ccd21c",
+      "case_id": "chirp__chirp_int8_10e3__ec8ff85e726689ab",
+      "input_digest": "ec8ff85e726689abe2287018202dd16a321a0173b517987361d4c1a4cf981bcc",
+      "status": "PASS"
+    },
+    {
+      "operator": "chirp",
+      "scale_id": "chirp_int8_10e4",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_c3852a4b",
+      "case_id": "chirp__chirp_int8_10e4__2dcecb8b8743312e",
+      "input_digest": "2dcecb8b8743312ed3ce3fc26cc8f6d00c65ebb4f74b5d4dfe974f81899e6e2b",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092021Z_76c5b6f8b36d_stage07_b02_formal_c9292f7b",
+      "case_id": "gausspulse__gauss_fp16_10e2__653482d6ca9ad521",
+      "input_digest": "653482d6ca9ad5213e6fd85acce7aadb68815ae069425d41e9cd04b8edae853c",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092021Z_76c5b6f8b36d_stage07_b02_formal_af317efa",
+      "case_id": "gausspulse__gauss_fp16_10e3__25c59d46c5ac454c",
+      "input_digest": "25c59d46c5ac454ce1316be1e86510d61c8c78a696310a2eafecb227a4b71df1",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092021Z_76c5b6f8b36d_stage07_b02_formal_04902b88",
+      "case_id": "gausspulse__gauss_fp16_10e4__3d22933a6005579d",
+      "input_digest": "3d22933a6005579d95f833039226aa1c27b9a0611e8545a7587931cc61cc0081",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_e21f8895",
+      "case_id": "gausspulse__gauss_fp32_10e2__3f95b2a7c6bf2d39",
+      "input_digest": "3f95b2a7c6bf2d399c595a9f5de84d4502f94d34ce6c24110743def0dc78dcff",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092021Z_76c5b6f8b36d_stage07_b02_formal_320faeca",
+      "case_id": "gausspulse__gauss_fp32_10e3__bb3103492dd59c5f",
+      "input_digest": "bb3103492dd59c5fcdad5c60b131abef98bb4819f84fa6c2aa0b1024e50c6387",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092021Z_76c5b6f8b36d_stage07_b02_formal_1ad817f1",
+      "case_id": "gausspulse__gauss_fp32_10e4__f3b9750f1c4f12af",
+      "input_digest": "f3b9750f1c4f12af147ee9fd0257bddef6f7d6e4f0450162c70bdc0a5a96c851",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_int16_10e2",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092022Z_76c5b6f8b36d_stage07_b02_formal_0537e8f1",
+      "case_id": "gausspulse__gauss_int16_10e2__703fb24ea3847b8e",
+      "input_digest": "703fb24ea3847b8e4e54859b29749c151c76a7ac453d62c882f8c22446dff163",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_int16_10e3",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092022Z_76c5b6f8b36d_stage07_b02_formal_a9089da7",
+      "case_id": "gausspulse__gauss_int16_10e3__81ee13e57bfc72fe",
+      "input_digest": "81ee13e57bfc72fef5364bd4b1c0bb172999b5af814ee1a5350b191ec4a0dbe7",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_int16_10e4",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092022Z_76c5b6f8b36d_stage07_b02_formal_a9712040",
+      "case_id": "gausspulse__gauss_int16_10e4__8e2985b6decbab07",
+      "input_digest": "8e2985b6decbab07156ab32cda417bec05f521b71b81ae0b23e08a9a34d39090",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_int32_10e2",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092022Z_76c5b6f8b36d_stage07_b02_formal_ec6f70c6",
+      "case_id": "gausspulse__gauss_int32_10e2__16d9e71b2d21949b",
+      "input_digest": "16d9e71b2d21949b47589d3b79a5f2689a0d269d014efd991cd6a6a09d4cdb58",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_int32_10e3",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092022Z_76c5b6f8b36d_stage07_b02_formal_c7487d97",
+      "case_id": "gausspulse__gauss_int32_10e3__8f24fa4b259bd906",
+      "input_digest": "8f24fa4b259bd90670782794f28df0f84e8f89a4cc1b21558d93bb9749af2b88",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_int32_10e4",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092022Z_76c5b6f8b36d_stage07_b02_formal_b450d2b6",
+      "case_id": "gausspulse__gauss_int32_10e4__279a96cf469764cd",
+      "input_digest": "279a96cf469764cd3cd2abe7fc4ffd49a0fd1b0bfe0cc89132c6176104eb3385",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_int8_10e2",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_d26c69e0",
+      "case_id": "gausspulse__gauss_int8_10e2__3f01ffe86d1bdbaf",
+      "input_digest": "3f01ffe86d1bdbaf00a6a42ec2bf2da2a4366494c141f806692b524fc14bc2e9",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_int8_10e3",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_c489c3db",
+      "case_id": "gausspulse__gauss_int8_10e3__504e8d9ad8bf42c8",
+      "input_digest": "504e8d9ad8bf42c8f862a9c8001b6460f03ee3bf6f7e70e38fc4f2d866ddae32",
+      "status": "PASS"
+    },
+    {
+      "operator": "gausspulse",
+      "scale_id": "gauss_int8_10e4",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_051841b4",
+      "case_id": "gausspulse__gauss_int8_10e4__5f36f2468c512522",
+      "input_digest": "5f36f2468c5125220764e203b57c1f3594d74ca94533fb0592309030bb06e0c7",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092024Z_76c5b6f8b36d_stage07_b02_formal_5a2af18a",
+      "case_id": "sawtooth__saw_fp16_10e2__7e13490a8c654d5c",
+      "input_digest": "7e13490a8c654d5cd2361653a0953b7eece2021da6fbd01afcd4723492f13b27",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092024Z_76c5b6f8b36d_stage07_b02_formal_b7693de4",
+      "case_id": "sawtooth__saw_fp16_10e3__6aea3bbc598ba79f",
+      "input_digest": "6aea3bbc598ba79fee63727a6a013c59a7d03e6aafe2587194b5969fc03a357b",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092024Z_76c5b6f8b36d_stage07_b02_formal_3bb7173b",
+      "case_id": "sawtooth__saw_fp16_10e4__e93d26d344020b41",
+      "input_digest": "e93d26d344020b4106269af64e21755457e39c566d36eb54db4dc7ea935688c2",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_7a994adb",
+      "case_id": "sawtooth__saw_fp32_10e2__25719f81fb67a3ae",
+      "input_digest": "25719f81fb67a3ae75889056e68a97adb9a89d787ac36f463a4c38e87fc0f0a7",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_082e14c2",
+      "case_id": "sawtooth__saw_fp32_10e3__63e63d491ddc7d97",
+      "input_digest": "63e63d491ddc7d971a681b04c56060a54367ecccc84bdcdb1c9ddb6f42b8075a",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092023Z_76c5b6f8b36d_stage07_b02_formal_e93f6118",
+      "case_id": "sawtooth__saw_fp32_10e4__677ed57f910ac5a9",
+      "input_digest": "677ed57f910ac5a9e2c61634879c3c3c804b1cdac7334e36022b8bf5228db746",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_int16_10e2",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092025Z_76c5b6f8b36d_stage07_b02_formal_039771ff",
+      "case_id": "sawtooth__saw_int16_10e2__b861034e3c3842f4",
+      "input_digest": "b861034e3c3842f41902cfa36639c9b0004c2d36bc3cc7e24f8a0a2a9f9f9a53",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_int16_10e3",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092025Z_76c5b6f8b36d_stage07_b02_formal_66c7d721",
+      "case_id": "sawtooth__saw_int16_10e3__de048e2e25411c9b",
+      "input_digest": "de048e2e25411c9bb6109125077448c0ed6c6c95456f54f86b8cf6a5d15342d6",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_int16_10e4",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092025Z_76c5b6f8b36d_stage07_b02_formal_2666dbaf",
+      "case_id": "sawtooth__saw_int16_10e4__d05f856b5066d62e",
+      "input_digest": "d05f856b5066d62eb7e49789a96a74a2bcfd9eba22d6ced1d8ff99b611c1ef09",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_int32_10e2",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092024Z_76c5b6f8b36d_stage07_b02_formal_f49261c4",
+      "case_id": "sawtooth__saw_int32_10e2__ca42fc1609d522be",
+      "input_digest": "ca42fc1609d522be23a11f02359d8a97218365bc5bfe543586f9da62291100c2",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_int32_10e3",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092024Z_76c5b6f8b36d_stage07_b02_formal_018c69b7",
+      "case_id": "sawtooth__saw_int32_10e3__a519b0d5d48e1fc3",
+      "input_digest": "a519b0d5d48e1fc3b2fb32d03cf19ccca9dac1065f426638c650f3f1dfde343b",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_int32_10e4",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092025Z_76c5b6f8b36d_stage07_b02_formal_63263178",
+      "case_id": "sawtooth__saw_int32_10e4__bc46031dd1876382",
+      "input_digest": "bc46031dd187638224def0407ed017aaece58f82649ea69cbcb0328a9a4b16ea",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_int8_10e2",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T092025Z_76c5b6f8b36d_stage07_b02_formal_db5f5240",
+      "case_id": "sawtooth__saw_int8_10e2__445613d113cb554d",
+      "input_digest": "445613d113cb554d9df244470ba81c67775d157d61dd16f434c39fdb90d5569c",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_int8_10e3",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_ad68e021",
+      "case_id": "sawtooth__saw_int8_10e3__20068ed4f1fdf163",
+      "input_digest": "20068ed4f1fdf1632951c4c02d5a30bce6bc4765bf1abdb9b17ec6c8c1490f81",
+      "status": "PASS"
+    },
+    {
+      "operator": "sawtooth",
+      "scale_id": "saw_int8_10e4",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_0c4db795",
+      "case_id": "sawtooth__saw_int8_10e4__3b35daefd699fb40",
+      "input_digest": "3b35daefd699fb40cc9c2b2da3e59b0221121eca664a57bcd9ea554e52b53297",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_adcaccd0",
+      "case_id": "square__square_fp16_10e2__0a3e46c42aa1223e",
+      "input_digest": "0a3e46c42aa1223e0a134543ac57a47f29175aba8fdb885f046b1fac02f8140e",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092027Z_76c5b6f8b36d_stage07_b02_formal_eed5563c",
+      "case_id": "square__square_fp16_10e3__4846868ee364daaf",
+      "input_digest": "4846868ee364daafb867c02587a823e08d46a5cb170520cbeb99312565e3b690",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092027Z_76c5b6f8b36d_stage07_b02_formal_f9ee4e6e",
+      "case_id": "square__square_fp16_10e4__14fcfcfcbea4bb4c",
+      "input_digest": "14fcfcfcbea4bb4cef49d607dac1edc0dcedec27836162bcdaa81fa37eb5a055",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_112ecb88",
+      "case_id": "square__square_fp32_10e2__47c5777a24bbeae5",
+      "input_digest": "47c5777a24bbeae508340de9a7db90daa2d7a2f0e2044e9ad845aef229355588",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_42c25fa3",
+      "case_id": "square__square_fp32_10e3__a09bf071e35b8537",
+      "input_digest": "a09bf071e35b85373f5dc425014107c49a29815f4d7384a336a676bd50f54424",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_475bf893",
+      "case_id": "square__square_fp32_10e4__d6f8acd973fd5283",
+      "input_digest": "d6f8acd973fd5283439938e5b1741377c500fa391bdaa134baee427e8949fe04",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_int16_10e2",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_b95b2d92",
+      "case_id": "square__square_int16_10e2__578ba79f1c76cb72",
+      "input_digest": "578ba79f1c76cb727fdcc42fa94b643b1e519137a0d60465af1625e06544d4de",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_int16_10e3",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_ee922b85",
+      "case_id": "square__square_int16_10e3__408b67def4df6f3f",
+      "input_digest": "408b67def4df6f3f27cce1f1fa6170ba01bbe7cdfc656ac08df438177ae8b619",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_int16_10e4",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_253e39a9",
+      "case_id": "square__square_int16_10e4__eab0118db1a84a76",
+      "input_digest": "eab0118db1a84a767cf5b0e8af1e5c67118b622503b89d56437f32adc2661655",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_int32_10e2",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092027Z_76c5b6f8b36d_stage07_b02_formal_cd1d3033",
+      "case_id": "square__square_int32_10e2__a24656f8f28e9996",
+      "input_digest": "a24656f8f28e9996e6ed9b44a1ccfb1e22c1fe7650864f71a24beb1251197672",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_int32_10e3",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092027Z_76c5b6f8b36d_stage07_b02_formal_cbfdd652",
+      "case_id": "square__square_int32_10e3__027724d31c220b2a",
+      "input_digest": "027724d31c220b2a8aed1db9bacba2fa05410d9748b09817afb1fe082626b162",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_int32_10e4",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T092027Z_76c5b6f8b36d_stage07_b02_formal_4c57a1e3",
+      "case_id": "square__square_int32_10e4__2f0da5fd6d139b99",
+      "input_digest": "2f0da5fd6d139b99d8f85554c017f6efd2a865a9f6cba892ea27483664a03e73",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_int8_10e2",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_e2b190f9",
+      "case_id": "square__square_int8_10e2__2d366678eca7d590",
+      "input_digest": "2d366678eca7d590b38f298a990f83e1798ec450231c2964a71d52fecc0c13e5",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_int8_10e3",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_64c27d0d",
+      "case_id": "square__square_int8_10e3__cd0464b936fb450c",
+      "input_digest": "cd0464b936fb450ccc81ca9a89348e46dee84f516fd8f051dcdae1b434e7f9fd",
+      "status": "PASS"
+    },
+    {
+      "operator": "square",
+      "scale_id": "square_int8_10e4",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_09f25ff3",
+      "case_id": "square__square_int8_10e4__eee14f803f408920",
+      "input_digest": "eee14f803f4089208ca854f14d178e46dbb0cab179b737407d5feffee25d92e5",
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "status": "PASS",
+  "output": "/tmp/ZKX_dev/results/stage07_b02_formal_76c5b6f8b36d/stage07_batch02_formal_audit_76c5b6f8b36d.json"
+}

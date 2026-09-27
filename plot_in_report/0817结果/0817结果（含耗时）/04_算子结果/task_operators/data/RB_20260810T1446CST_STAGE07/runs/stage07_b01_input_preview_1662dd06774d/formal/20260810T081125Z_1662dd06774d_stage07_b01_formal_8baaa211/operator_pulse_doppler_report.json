@@ -1,0 +1,38 @@
+{
+  "run_id": "20260810T081125Z_1662dd06774d_stage07_b01_formal_8baaa211",
+  "case_id": "pulse_doppler__pd_int32_10e2__bc7a5ec7b8133865",
+  "operator_name": "pulse_doppler",
+  "scale_id": "pd_int32_10e2",
+  "requested_dtype": "INT32",
+  "config_input_dtype": "ComplexINT32",
+  "input_content": [
+    {
+      "input_name": "compressed",
+      "shape": "[16x16]",
+      "dtype": "ComplexINT32",
+      "element_count": "256",
+      "generator": "complex_modular(seed=11,integral=true)",
+      "preview_head4_tail2": "i=0:(-5,-2);i=1:(-3,-4);i=2:(-1,3);i=3:(1,1);i=254:(-3,3);i=255:(-1,1)"
+    }
+  ],
+  "case_parameters": {
+    "num_pulses": 16,
+    "samples_per_pulse": 16,
+    "nfft": 16,
+    "window": "none"
+  },
+  "output_dtype": "ComplexFP64",
+  "backend": "fft_thrust",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 9.57982e-11,
+  "rmse": 9.78766e-06,
+  "relative_l2": 8.46809e-07,
+  "relative_linf": 1.35515e-06,
+  "exact_match": true,
+  "mismatch_count": 0,
+  "semantic_check": true,
+  "actual_input_digest": "bc7a5ec7b8133865643c25300e94f0eb7b8853838708bb36c50ae9ce63a9dc98",
+  "status": "PASS",
+  "error_code": "OK"
+}

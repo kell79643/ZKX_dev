@@ -1,0 +1,42 @@
+{
+  "run_id": "20260810T110512Z_6132f71eb1e0_stage07_b06_formal_81d82a77",
+  "case_id": "kalman_filter__kalman_filter_int8_10e3__7848a20161c02a20",
+  "operator_name": "kalman_filter",
+  "task_name": "Task2",
+  "step_name": "Step6",
+  "scale_id": "kalman_filter_int8_10e3",
+  "requested_dtype": "INT8",
+  "input_content": [
+    {
+      "input_name": "observations",
+      "shape": "[1024]",
+      "dtype": "INT8",
+      "element_count": "1024",
+      "generator": "deterministic_task2_observations",
+      "preview_head4_tail2": "i=0:1;i=1:1;i=2:1;i=3:1;i=1022:1;i=1023:1"
+    }
+  ],
+  "case_parameters": {
+    "observation_count": 1024,
+    "f": 1,
+    "q": 1,
+    "alpha_sq": 1,
+    "h": 1,
+    "r": 2,
+    "output_count": 2,
+    "execution_dtype": "FP32_TASK_SEQUENCE"
+  },
+  "output_dtype": "FP32_STATE_COVARIANCE",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "output_count": 2,
+  "actual_input_digest": "7848a20161c02a20d83ce17c109692520caf4af69635fced8c31c0403a3ccd40",
+  "typed_array_digest": "5a648d8015900d89664e00e125df179636301a2d8fa191c1aa2bd9358ea53a69",
+  "status": "PASS",
+  "error_code": "OK",
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0
+}

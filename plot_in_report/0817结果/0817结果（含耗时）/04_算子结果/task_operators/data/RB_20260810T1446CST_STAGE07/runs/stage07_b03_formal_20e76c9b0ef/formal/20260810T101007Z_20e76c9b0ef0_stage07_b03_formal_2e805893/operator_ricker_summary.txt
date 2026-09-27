@@ -1,0 +1,22 @@
+run_id=20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_2e805893
+case_id=ricker__ricker_standard_fp32_10e2__52e5d9c52ee25bb3
+operator_name=ricker
+task_name=Task2
+step_name=Step4
+scale_id=ricker_standard_fp32_10e2
+requested_dtype=FP32
+input_content=[{'input_name': 'width', 'shape': '[1]', 'dtype': 'FP32', 'element_count': '1', 'generator': 'configured_typed_scalar(profile=standard)', 'preview_head4_tail2': 'i=0:4.000000'}]
+case_parameters={'n': 128, 'width': 4, 'profile': 'standard', 'expected_output_shape': [128], 'output_dtype': 'FP64', 'equivalent_work': '10^2', 'task_gpu_call_status': 'cpu_callable_only_gpu_missing'}
+output_dtype=FP64
+backend=not_applicable
+task_gpu_call_status=cpu_callable_only_gpu_missing_independent_device_api_tested
+warmup_runs=20
+measured_runs=100
+mse=3.55661e-17
+rmse=5.96374e-09
+relative_l2=6.7472e-08
+relative_linf=7.44008e-08
+actual_input_digest=52e5d9c52ee25bb33a67788d36eaf255f2f83b68dd80fed350a377278bd1636a
+typed_array_digest=4f4b9b7d8b86633e2824e2f439819357b0cd010ab410ea1a691b12c5f94e91e0
+status=PASS
+error_code=OK

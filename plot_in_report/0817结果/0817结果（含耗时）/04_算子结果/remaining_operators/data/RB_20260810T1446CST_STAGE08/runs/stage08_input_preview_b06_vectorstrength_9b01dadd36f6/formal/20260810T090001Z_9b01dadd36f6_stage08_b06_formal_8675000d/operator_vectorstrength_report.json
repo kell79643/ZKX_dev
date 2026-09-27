@@ -1,0 +1,48 @@
+{
+  "run_id": "20260810T090001Z_9b01dadd36f6_stage08_b06_formal_8675000d",
+  "case_id": "vectorstrength__vectorstrength_int8_10e3__3175815f0a8bf512",
+  "operator_name": "vectorstrength",
+  "scale_id": "vectorstrength_int8_10e3",
+  "requested_dtype": "INT8",
+  "output_dtype": "FP64_pair",
+  "backend": "not_applicable",
+  "event_count": 64,
+  "period_count": 16,
+  "period_mode": "array",
+  "scientific_work": 1024,
+  "output_count": 16,
+  "scalar_period": false,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 1.08035e-11,
+  "rmse": 3.28687e-06,
+  "relative_l2": 3.00356e-06,
+  "relative_linf": 3.58534e-06,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "events",
+      "shape": "[64]",
+      "dtype": "INT8",
+      "element_count": "64",
+      "generator": "deterministic_events(seed=86550002,integral=true)",
+      "preview_head4_tail2": "i=0:2;i=1:5;i=2:8;i=3:11;i=62:95;i=63:99"
+    },
+    {
+      "input_name": "periods",
+      "shape": "[16]",
+      "dtype": "INT8",
+      "element_count": "16",
+      "generator": "deterministic_period_grid(integral=true)",
+      "preview_head4_tail2": "i=0:3;i=1:4;i=2:5;i=3:6;i=14:17;i=15:18"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT8",
+    "events": "64",
+    "periods": "16",
+    "period-mode": "array",
+    "seed": "86550002"
+  }
+}

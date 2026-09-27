@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+peak_finding/argrelextrema        invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: peak_finding.argrelextrema.invalid_shape.provide_scalar_input
+  abnormal_input: mutation=provide scalar input
+  error_message: peak_finding::argrelextrema检测到非法shape：mutation=provide scalar input
+  backend_error: code=NA name=NA message=NA
+peak_finding/argrelextrema        invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: peak_finding.argrelextrema.invalid_parameter.set_order_0
+  abnormal_input: mutation=set order=0
+  error_message: peak_finding::argrelextrema检测到非法参数：mutation=set order=0
+  backend_error: code=NA name=NA message=NA
+peak_finding/argrelextrema        unsupported_operation   UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    true       PASS    
+  case_id: peak_finding.argrelextrema.unsupported_operation.set_mode_raise_unsupported_by_fixed_contract
+  abnormal_input: mutation=set mode=raise unsupported by fixed contract
+  error_message: peak_finding::argrelextrema检测到不支持操作：mutation=set mode=raise unsupported by fixed contract
+  backend_error: code=NA name=NA message=NA
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

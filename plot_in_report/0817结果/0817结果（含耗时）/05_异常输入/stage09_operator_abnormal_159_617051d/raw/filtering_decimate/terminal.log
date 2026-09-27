@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+filtering/decimate                invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: filtering.decimate.invalid_shape.input_axis_length_is_zero
+  abnormal_input: mutation=input axis length is zero
+  error_message: filtering::decimate检测到非法shape：mutation=input axis length is zero
+  backend_error: code=NA name=NA message=NA
+filtering/decimate                invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: filtering.decimate.invalid_parameter.set_downsample_factor_q_0
+  abnormal_input: mutation=set downsample factor q=0
+  error_message: filtering::decimate检测到非法参数：mutation=set downsample factor q=0
+  backend_error: code=NA name=NA message=NA
+filtering/decimate                unsupported_operation   UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    true       PASS    
+  case_id: filtering.decimate.unsupported_operation.request_unsupported_filter_type
+  abnormal_input: mutation=request unsupported filter type
+  error_message: filtering::decimate检测到不支持操作：mutation=request unsupported filter type
+  backend_error: code=NA name=NA message=NA
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

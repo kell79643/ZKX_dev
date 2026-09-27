@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+wavelets/cwt                      invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: wavelets.cwt.invalid_shape.wavelet_callable_returns_unexpected_length
+  abnormal_input: mutation=wavelet callable returns unexpected length
+  error_message: wavelets::cwt检测到非法shape：mutation=wavelet callable returns unexpected length
+  backend_error: code=NA name=NA message=NA
+wavelets/cwt                      invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: wavelets.cwt.invalid_parameter.provide_non_positive_width
+  abnormal_input: mutation=provide non-positive width
+  error_message: wavelets::cwt检测到非法参数：mutation=provide non-positive width
+  backend_error: code=NA name=NA message=NA
+wavelets/cwt                      backend_call_failure    BACKEND_ERROR            BACKEND_ERROR            BACKEND_ERROR            true       PASS    
+  case_id: wavelets.cwt.backend_call_failure.inject_convolution_or_fft_failure_before_output_
+  abnormal_input: mutation=inject convolution or FFT failure before output consumption
+  error_message: wavelets::cwt捕获FFT后端失败：mutation=inject convolution or FFT failure before output consumption；CUFFT_INVALID_SIZE（controlled dlfft-compatible status injection: invalid FFT size）
+  backend_error: code=8 name=CUFFT_INVALID_SIZE message=controlled dlfft-compatible status injection: invalid FFT size
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

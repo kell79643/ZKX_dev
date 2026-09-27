@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+spectral_analysis/lombscargle     invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: spectral_analysis.lombscargle.invalid_shape.time_and_signal_lengths_differ
+  abnormal_input: mutation=time and signal lengths differ
+  error_message: spectral_analysis::lombscargle检测到非法shape：mutation=time and signal lengths differ
+  backend_error: code=NA name=NA message=NA
+spectral_analysis/lombscargle     invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: spectral_analysis.lombscargle.invalid_parameter.provide_non_positive_frequency
+  abnormal_input: mutation=provide non-positive frequency
+  error_message: spectral_analysis::lombscargle检测到非法参数：mutation=provide non-positive frequency
+  backend_error: code=NA name=NA message=NA
+spectral_analysis/lombscargle     backend_call_failure    CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       true       PASS    
+  case_id: spectral_analysis.lombscargle.backend_call_failure.inject_cuda_periodogram_kernel_failure
+  abnormal_input: mutation=inject CUDA periodogram kernel failure
+  error_message: spectral_analysis::lombscargle捕获CUDA Runtime失败：mutation=inject CUDA periodogram kernel failure；cudaErrorInvalidDevice（invalid device ordinal）
+  backend_error: code=101 name=cudaErrorInvalidDevice message=invalid device ordinal
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

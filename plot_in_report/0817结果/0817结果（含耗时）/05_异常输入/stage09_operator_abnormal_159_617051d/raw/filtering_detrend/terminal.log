@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+filtering/detrend                 invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: filtering.detrend.invalid_shape.shape_product_differs_from_input_length
+  abnormal_input: mutation=shape product differs from input length
+  error_message: filtering::detrend检测到非法shape：mutation=shape product differs from input length
+  backend_error: code=NA name=NA message=NA
+filtering/detrend                 invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: filtering.detrend.invalid_parameter.axis_is_outside_rank
+  abnormal_input: mutation=axis is outside rank
+  error_message: filtering::detrend检测到非法参数：mutation=axis is outside rank
+  backend_error: code=NA name=NA message=NA
+filtering/detrend                 unsupported_operation   UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    true       PASS    
+  case_id: filtering.detrend.unsupported_operation.set_detrend_mode_unknown
+  abnormal_input: mutation=set detrend mode=unknown
+  error_message: filtering::detrend检测到不支持操作：mutation=set detrend mode=unknown
+  backend_error: code=NA name=NA message=NA
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

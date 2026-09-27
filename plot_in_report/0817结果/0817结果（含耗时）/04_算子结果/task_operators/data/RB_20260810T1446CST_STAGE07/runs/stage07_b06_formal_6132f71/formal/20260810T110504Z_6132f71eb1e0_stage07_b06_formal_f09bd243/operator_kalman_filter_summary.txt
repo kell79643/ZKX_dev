@@ -1,0 +1,22 @@
+run_id=20260810T110504Z_6132f71eb1e0_stage07_b06_formal_f09bd243
+case_id=kalman_filter__kalman_filter_fp32_10e2__daf673c9ad0a86cb
+operator_name=kalman_filter
+task_name=Task2
+step_name=Step6
+scale_id=kalman_filter_fp32_10e2
+requested_dtype=FP32
+input_content=[{'input_name': 'observations', 'shape': '[128]', 'dtype': 'FP32', 'element_count': '128', 'generator': 'deterministic_task2_observations', 'preview_head4_tail2': 'i=0:0.9375;i=1:1.05212462;i=2:1.02612185;i=3:1.00011456;i=126:1.05638826;i=127:1.16111898'}]
+case_parameters={'observation_count': 128, 'f': 1, 'q': 1, 'alpha_sq': 1, 'h': 1, 'r': 2, 'output_count': 2, 'execution_dtype': 'FP32_TASK_SEQUENCE'}
+output_dtype=FP32_STATE_COVARIANCE
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+output_count=2
+actual_input_digest=daf673c9ad0a86cb02d6a2d5b088d7c6b3a1a9b24fe168a5a574239a950f778a
+typed_array_digest=642b1a83db32cd7a0ecbc8a8ee94473441fbd835d61c51b01022324811fc6edc
+status=PASS
+error_code=OK
+mse=0
+rmse=0
+relative_l2=0
+relative_linf=0

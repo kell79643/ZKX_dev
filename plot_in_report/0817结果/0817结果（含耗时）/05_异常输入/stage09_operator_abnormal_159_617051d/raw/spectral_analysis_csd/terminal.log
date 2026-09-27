@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+spectral_analysis/csd             invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: spectral_analysis.csd.invalid_shape.x_and_y_axis_lengths_disagree
+  abnormal_input: mutation=x and y axis lengths disagree
+  error_message: spectral_analysis::csd检测到非法shape：mutation=x and y axis lengths disagree
+  backend_error: code=NA name=NA message=NA
+spectral_analysis/csd             invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: spectral_analysis.csd.invalid_parameter.set_nperseg_0
+  abnormal_input: mutation=set nperseg=0
+  error_message: spectral_analysis::csd检测到非法参数：mutation=set nperseg=0
+  backend_error: code=NA name=NA message=NA
+spectral_analysis/csd             backend_call_failure    BACKEND_ERROR            BACKEND_ERROR            BACKEND_ERROR            true       PASS    
+  case_id: spectral_analysis.csd.backend_call_failure.inject_fft_execution_failure_before_output_consu
+  abnormal_input: mutation=inject FFT execution failure before output consumption
+  error_message: spectral_analysis::csd捕获FFT后端失败：mutation=inject FFT execution failure before output consumption；CUFFT_INVALID_SIZE（controlled dlfft-compatible status injection: invalid FFT size）
+  backend_error: code=8 name=CUFFT_INVALID_SIZE message=controlled dlfft-compatible status injection: invalid FFT size
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

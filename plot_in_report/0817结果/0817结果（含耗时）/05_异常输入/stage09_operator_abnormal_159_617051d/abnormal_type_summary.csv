@@ -1,0 +1,6 @@
+﻿"abnormal_type","case_count","expected_codes","actual_codes","pass_count","safe_exit_count","output_not_consumed_count"
+"backend_call_failure","44","BACKEND_ERROR|CUDA_RUNTIME_ERROR","BACKEND_ERROR|CUDA_RUNTIME_ERROR","44","44","44"
+"invalid_dtype","8","INVALID_DTYPE","INVALID_DTYPE","8","8","8"
+"invalid_parameter","47","INVALID_ARGUMENT","INVALID_ARGUMENT","47","47","47"
+"invalid_shape","53","INVALID_SHAPE","INVALID_SHAPE","53","53","53"
+"unsupported_operation","7","UNSUPPORTED_OPERATION","UNSUPPORTED_OPERATION","7","7","7"

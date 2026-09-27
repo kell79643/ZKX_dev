@@ -1,0 +1,78 @@
+command=build_stage08_b08_unit_impulse_a1467e3b776a/stage08_waveforms_unit_impulse --dtype INT16 --shape 100 --idx 0 --idx-mode zero --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage08_input_preview_b08_unit_impulse_bdef73fce32b/formal/20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009/unit_impulse_probe_raw.json
+{"run_id": "20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009", "case_id": "unit_impulse__unit_impulse_int16_10e2__85fd16b4b95c3dff", "operator_name": "unit_impulse", "scale_id": "unit_impulse_int16_10e2", "requested_dtype": "INT16", "output_dtype": "FP64", "backend": "not_applicable", "shape": 100, "idx": 0, "idx_mode": "zero", "output_count": 100, "warmup_runs": 20, "measured_runs": 100, "mse": 0, "rmse": 0, "relative_l2": 0, "relative_linf": 0, "status": "PASS", "error_code": "OK"}
+[stage08] identity and status
++--------------+-------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| target       | scale_id                | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code |
++--------------+-------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| unit_impulse | unit_impulse_int16_10e2 | CPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| unit_impulse | unit_impulse_int16_10e2 | GPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++--------------+-------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage08] timing detail
++--------+------------+---------+------------+-----------------------+----------+----------+------------------------+----------------------+----------------------+
+| device | mean_ms    | p50_ms  | p95_ms     | p99_ms                | min_ms   | max_ms   | std_ms                 | cv                   | speedup              |
++--------+------------+---------+------------+-----------------------+----------+----------+------------------------+----------------------+----------------------+
+| CPU    | 0.00050632 | 0.0005  | 0.00053    | 0.0005409000000000005 | 0.00049  | 0.00063  | 1.7705298641932023e-05 | 0.03496859425251229  | NA                   |
+| GPU    | 0.1030554  | 0.10219 | 0.10726405 | 0.12274960000000007   | 0.099005 | 0.135976 | 0.0045033591773253005  | 0.043698429944721964 | 0.004913085583094141 |
++--------+------------+---------+------------+-----------------------+----------+----------+------------------------+----------------------+----------------------+
+
+[stage08] accuracy detail
++-----------------------+-----+------+-------------+---------------+-------------+----------------+-----------------------------------------------------+--------+
+| accuracy_reference    | mse | rmse | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                                      | status |
++-----------------------+-----+------+-------------+---------------+-------------+----------------+-----------------------------------------------------+--------+
+| cpu_unit_impulse_fp64 | 0   | 0    | 0           | 0             | NA          | NA             | shape=100;idx_mode=zero;dtype_argument_ignored=true | PASS   |
++-----------------------+-----+------+-------------+---------------+-------------+----------------+-----------------------------------------------------+--------+
+
+[stage08] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1348720      | 1353360     | 1353360    | 4640        |
+| CPU    | rss        | 69050368     | 69050368    | 69050368   | 0           |
+| GPU    | cpu_heap   | 1353456      | 1357328     | 1357328    | 3872        |
+| GPU    | rss        | 69050368     | 69050368    | 69050368   | 0           |
+| GPU    | gpu_memory | 391544832    | 391544832   | 391544832  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage08] input/output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | 85fd16b4b95c3dffc24c55c49bea5a306d19c0bdf44e4442644b0eccf354aa1d | 21c16c44bd1240297a47899d96e64b9180f42a97e2a6420470e8fe99750d9fc4 |
+| GPU    | 85fd16b4b95c3dffc24c55c49bea5a306d19c0bdf44e4442644b0eccf354aa1d | 21c16c44bd1240297a47899d96e64b9180f42a97e2a6420470e8fe99750d9fc4 |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage08] input content
++--------------+-------------------+-------------------------+----------+---------------------------------------------------+-----------------------------------------------------+
+| input_name   | shape             | dtype                   | elements | generator                                         | values(head4/tail2)                                 |
++--------------+-------------------+-------------------------+----------+---------------------------------------------------+-----------------------------------------------------+
+| request_spec | scalar_parameters | NO_TYPED_BUSINESS_INPUT | 1        | unit_impulse_request(dtype_argument_ignored=true) | i=0:shape=100,idx=0,mode=zero,request_variant=INT16 |
++--------------+-------------------+-------------------------+----------+---------------------------------------------------+-----------------------------------------------------+
+
+[stage08] case parameters
++-------------------------------------------------------------+
+| parameters                                                  |
++-------------------------------------------------------------+
+| {"dtype":"INT16","idx":"0","idx-mode":"zero","shape":"100"} |
++-------------------------------------------------------------+
+
+[stage08] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| INT16           | NA                 | FP64         | 85fd16b4b95c3dffc24c55c49bea5a306d19c0bdf44e4442644b0eccf354aa1d | PASS   |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+
+[stage08] evidence files
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind           | path                                                                                                                                                                                                                                                        |
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dtype_csv      | /tmp/ZKX_dev/results/stage08_input_preview_b08_unit_impulse_bdef73fce32b/formal/20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009/operator_dtype_evidence_unit_impulse_not_applicable_20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009.csv |
+| main_csv       | /tmp/ZKX_dev/results/stage08_input_preview_b08_unit_impulse_bdef73fce32b/formal/20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009/operator_main_results_unit_impulse_not_applicable_20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009.csv   |
+| timing_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b08_unit_impulse_bdef73fce32b/formal/20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009/operator_timing_samples_unit_impulse_not_applicable_20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009.csv |
+| full_log       | /tmp/ZKX_dev/results/stage08_input_preview_b08_unit_impulse_bdef73fce32b/formal/20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009/operator_unit_impulse_full.log                                                                                    |
+| report_json    | /tmp/ZKX_dev/results/stage08_input_preview_b08_unit_impulse_bdef73fce32b/formal/20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009/operator_unit_impulse_report.json                                                                                 |
+| summary_txt    | /tmp/ZKX_dev/results/stage08_input_preview_b08_unit_impulse_bdef73fce32b/formal/20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009/operator_unit_impulse_summary.txt                                                                                 |
+| memory_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b08_unit_impulse_bdef73fce32b/formal/20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009/operator_waveforms_unit_impulse_memory_trace_not_applicable.csv                                                   |
+| probe_raw_json | /tmp/ZKX_dev/results/stage08_input_preview_b08_unit_impulse_bdef73fce32b/formal/20260810T091417Z_bdef73fce32b_stage08_b08_formal_87730009/unit_impulse_probe_raw.json                                                                                       |
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

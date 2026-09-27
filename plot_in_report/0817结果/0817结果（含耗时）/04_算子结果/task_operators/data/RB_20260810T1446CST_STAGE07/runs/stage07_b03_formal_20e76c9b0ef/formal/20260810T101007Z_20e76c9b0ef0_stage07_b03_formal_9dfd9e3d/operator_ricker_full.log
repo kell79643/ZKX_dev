@@ -1,0 +1,79 @@
+command=build_stage07_b03_ricker_20e76c9b0ef/stage07_wavelets_ricker --dtype FP32 --n 1024 --width 8 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage07_b03_formal_20e76c9b0ef/formal/20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d/ricker_probe_raw.json
+STAGE07_WAVELET_PROBE PASS operator=ricker dtype=FP32
+{"run_id": "20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d", "case_id": "ricker__ricker_standard_fp32_10e3__1c123ab5451870d8", "operator_name": "ricker", "task_name": "Task2", "step_name": "Step4", "scale_id": "ricker_standard_fp32_10e3", "requested_dtype": "FP32", "input_content": [{"input_name": "width", "shape": "[1]", "dtype": "FP32", "element_count": "1", "generator": "configured_typed_scalar(profile=standard)", "preview_head4_tail2": "i=0:8.000000"}], "case_parameters": {"n": 1024, "width": 8, "profile": "standard", "expected_output_shape": [1024], "output_dtype": "FP64", "equivalent_work": "10^3", "task_gpu_call_status": "cpu_callable_only_gpu_missing"}, "output_dtype": "FP64", "backend": "not_applicable", "task_gpu_call_status": "cpu_callable_only_gpu_missing_independent_device_api_tested", "warmup_runs": 20, "measured_runs": 100, "mse": 3.73825e-18, "rmse": 1.93346e-09, "relative_l2": 6.18706e-08, "relative_linf": 9.5518e-08, "actual_input_digest": "1c123ab5451870d8d2b115509a5b048ac4200237a44deb0e1e4fa10f42c71227", "typed_array_digest": "03e3c2420f5066a5fa6e36735ed8cc4f6a251046263e1a6024f009deeee3b952", "status": "PASS", "error_code": "OK"}
+[stage07] identity and status
++--------+---------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| target | scale_id                  | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code |
++--------+---------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| ricker | ricker_standard_fp32_10e3 | CPU    | not_applicable | FP32  | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| ricker | ricker_standard_fp32_10e3 | GPU    | not_applicable | FP32  | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++--------+---------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage07] timing detail
++--------+----------------------+-----------+------------+----------------------+----------+----------+----------------------+---------------------+---------------------+
+| device | mean_ms              | p50_ms    | p95_ms     | p99_ms               | min_ms   | max_ms   | std_ms               | cv                  | speedup             |
++--------+----------------------+-----------+------------+----------------------+----------+----------+----------------------+---------------------+---------------------+
+| CPU    | 0.059414550000000003 | 0.05949   | 0.060361   | 0.060774400000000055 | 0.057751 | 0.0721   | 0.001516374111985561 | 0.02552193211907792 | NA                  |
+| GPU    | 0.25292605           | 0.2520065 | 0.25989005 | 0.27563560000000004  | 0.247731 | 0.282031 | 0.005246428284795285 | 0.02074293369463242 | 0.23490878064952186 |
++--------+----------------------+-----------+------------+----------------------+----------+----------+----------------------+---------------------+---------------------+
+
+[stage07] accuracy detail
++---------------------+-------------+-------------+-------------+---------------+-------------+----------------+--------------------------------------------------------------------------------+--------+
+| reference           | mse         | rmse        | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                                                                 | status |
++---------------------+-------------+-------------+-------------+---------------+-------------+----------------+--------------------------------------------------------------------------------+--------+
+| typed_cpu_reference | 3.73825e-18 | 1.93346e-09 | 6.18706e-08 | 9.5518e-08    | NA          | NA             | output_count=1024;output_dtype=FP64;task_gpu_call=missing_independent_api_only | PASS   |
++---------------------+-------------+-------------+-------------+---------------+-------------+----------------+--------------------------------------------------------------------------------+--------+
+
+[stage07] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1401616      | 1413200     | 1413200    | 11584       |
+| CPU    | rss        | 70062080     | 70062080    | 70062080   | 0           |
+| GPU    | cpu_heap   | 1413200      | 1424256     | 1424256    | 11056       |
+| GPU    | rss        | 70062080     | 70062080    | 70062080   | 0           |
+| GPU    | gpu_memory | 357777408    | 357777408   | 357777408  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage07] input content
++------------+-------+-------+----------+-------------------------------------------+---------------------+
+| input_name | shape | dtype | elements | generator                                 | values(head4/tail2) |
++------------+-------+-------+----------+-------------------------------------------+---------------------+
+| width      | [1]   | FP32  | 1        | configured_typed_scalar(profile=standard) | i=0:8.000000        |
++------------+-------+-------+----------+-------------------------------------------+---------------------+
+
+[stage07] case parameters
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| parameters                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| {"equivalent_work":"10^3","expected_output_shape":[1024],"n":1024,"output_dtype":"FP64","profile":"standard","task_gpu_call_status":"cpu_callable_only_gpu_missing","width":8} |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+[stage07] input and output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | 1c123ab5451870d8d2b115509a5b048ac4200237a44deb0e1e4fa10f42c71227 | ae48c2ac11012fbc12620ade24b6c411389a7085f532c34a86d0d26aefdeccef |
+| GPU    | 1c123ab5451870d8d2b115509a5b048ac4200237a44deb0e1e4fa10f42c71227 | bd5759e26af29471931ef16c2978965a9491801ab386ccda2628a716ce55a0c0 |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage07] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------+
+| requested_dtype | config_input_dtype | output_dtype | typed_array_digest                                               | actual_input_digest                                              | task_gpu_call_status                                        |
++-----------------+--------------------+--------------+------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------+
+| FP32            | FP32               | FP64         | 03e3c2420f5066a5fa6e36735ed8cc4f6a251046263e1a6024f009deeee3b952 | 1c123ab5451870d8d2b115509a5b048ac4200237a44deb0e1e4fa10f42c71227 | cpu_callable_only_gpu_missing_independent_device_api_tested |
++-----------------+--------------------+--------------+------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------+
+
+[stage07] evidence files
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind        | path                                                                                                                                                                                                                             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| main_csv    | /tmp/ZKX_dev/results/stage07_b03_formal_20e76c9b0ef/formal/20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d/operator_main_results_ricker_not_applicable_20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d.csv   |
+| timing_csv  | /tmp/ZKX_dev/results/stage07_b03_formal_20e76c9b0ef/formal/20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d/operator_timing_samples_ricker_not_applicable_20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d.csv |
+| memory_csv  | /tmp/ZKX_dev/results/stage07_b03_formal_20e76c9b0ef/formal/20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d/operator_wavelets_ricker_memory_trace_not_applicable.csv                                                    |
+| dtype_csv   | /tmp/ZKX_dev/results/stage07_b03_formal_20e76c9b0ef/formal/20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d/operator_dtype_evidence_ricker_not_applicable_20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d.csv |
+| report_json | /tmp/ZKX_dev/results/stage07_b03_formal_20e76c9b0ef/formal/20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d/operator_ricker_report.json                                                                                 |
+| summary_txt | /tmp/ZKX_dev/results/stage07_b03_formal_20e76c9b0ef/formal/20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d/operator_ricker_summary.txt                                                                                 |
+| full_log    | /tmp/ZKX_dev/results/stage07_b03_formal_20e76c9b0ef/formal/20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d/operator_ricker_full.log                                                                                    |
+| result_dir  | /tmp/ZKX_dev/results/stage07_b03_formal_20e76c9b0ef/formal/20260810T101007Z_20e76c9b0ef0_stage07_b03_formal_9dfd9e3d                                                                                                             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

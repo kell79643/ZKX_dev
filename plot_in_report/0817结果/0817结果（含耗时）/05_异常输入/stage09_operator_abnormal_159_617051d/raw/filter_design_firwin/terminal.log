@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+filter_design/firwin              invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: filter_design.firwin.invalid_parameter.set_numtaps_0
+  abnormal_input: mutation=set numtaps=0
+  error_message: filter_design::firwin检测到非法参数：mutation=set numtaps=0
+  backend_error: code=NA name=NA message=NA
+filter_design/firwin              invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: filter_design.firwin.invalid_shape.explicit_window_length_differs_from_numtaps
+  abnormal_input: mutation=explicit window length differs from numtaps
+  error_message: filter_design::firwin检测到非法shape：mutation=explicit window length differs from numtaps
+  backend_error: code=NA name=NA message=NA
+filter_design/firwin              backend_call_failure    CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       true       PASS    
+  case_id: filter_design.firwin.backend_call_failure.inject_cuda_kernel_launch_failure_in_resident_pa
+  abnormal_input: mutation=inject CUDA kernel launch failure in resident path
+  error_message: filter_design::firwin捕获CUDA Runtime失败：mutation=inject CUDA kernel launch failure in resident path；cudaErrorInvalidDevice（invalid device ordinal）
+  backend_error: code=101 name=cudaErrorInvalidDevice message=invalid device ordinal
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

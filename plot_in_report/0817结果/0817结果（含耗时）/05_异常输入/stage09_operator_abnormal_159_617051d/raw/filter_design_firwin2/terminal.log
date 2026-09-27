@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+filter_design/firwin2             invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: filter_design.firwin2.invalid_shape.frequency_and_gain_lengths_differ
+  abnormal_input: mutation=frequency and gain lengths differ
+  error_message: filter_design::firwin2检测到非法shape：mutation=frequency and gain lengths differ
+  backend_error: code=NA name=NA message=NA
+filter_design/firwin2             invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: filter_design.firwin2.invalid_parameter.repeat_one_frequency_more_than_twice
+  abnormal_input: mutation=repeat one frequency more than twice
+  error_message: filter_design::firwin2检测到非法参数：mutation=repeat one frequency more than twice
+  backend_error: code=NA name=NA message=NA
+filter_design/firwin2             backend_call_failure    BACKEND_ERROR            BACKEND_ERROR            BACKEND_ERROR            true       PASS    
+  case_id: filter_design.firwin2.backend_call_failure.inject_fft_execution_failure_before_result_use
+  abnormal_input: mutation=inject FFT execution failure before result use
+  error_message: filter_design::firwin2捕获FFT后端失败：mutation=inject FFT execution failure before result use；CUFFT_INVALID_SIZE（controlled dlfft-compatible status injection: invalid FFT size）
+  backend_error: code=8 name=CUFFT_INVALID_SIZE message=controlled dlfft-compatible status injection: invalid FFT size
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

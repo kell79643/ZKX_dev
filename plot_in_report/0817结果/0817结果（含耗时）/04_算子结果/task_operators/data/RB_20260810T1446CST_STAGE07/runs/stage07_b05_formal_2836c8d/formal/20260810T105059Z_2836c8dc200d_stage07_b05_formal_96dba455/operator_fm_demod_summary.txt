@@ -1,0 +1,22 @@
+run_id=20260810T105059Z_2836c8dc200d_stage07_b05_formal_96dba455
+case_id=fm_demod__fm_demod_int16_10e3__cd20e32abc12e48b
+operator_name=fm_demod
+task_name=Task2
+step_name=Step4
+scale_id=fm_demod_int16_10e3
+requested_dtype=INT16
+input_content=[{'input_name': 'analytic', 'shape': '[1024]', 'dtype': 'ComplexINT16', 'element_count': '1024', 'generator': 'deterministic_chirped_analytic_signal', 'preview_head4_tail2': 'i=0:(20,0);i=1:(20,0);i=2:(20,1);i=3:(20,1);i=1022:(-16,12);i=1023:(-16,11)'}]
+case_parameters={'count': 1024, 'output_count': 1023}
+output_dtype=FP32
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+output_count=1023
+mse=3.91804e-15
+rmse=6.25942e-08
+relative_l2=1.66103e-06
+relative_linf=3.34353e-06
+actual_input_digest=cd20e32abc12e48bbd3ad801cdea9462cd0b30dd7909ee66643c03092ae15be8
+typed_array_digest=42d4970ac03d6b01f3402374e64ec74d182614d3b69d2732a6f619ebe7ffed67
+status=PASS
+error_code=OK

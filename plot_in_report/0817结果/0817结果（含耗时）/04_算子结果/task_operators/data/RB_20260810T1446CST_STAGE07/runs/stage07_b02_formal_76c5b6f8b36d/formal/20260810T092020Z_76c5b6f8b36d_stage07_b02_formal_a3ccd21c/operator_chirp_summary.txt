@@ -1,0 +1,22 @@
+run_id=20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_a3ccd21c
+case_id=chirp__chirp_int8_10e3__ec8ff85e726689ab
+operator_name=chirp
+task_name=Task2
+step_name=Step1
+scale_id=chirp_int8_10e3
+requested_dtype=INT8
+config_input_dtype=INT8
+input_content=[{'input_name': 'time', 'shape': '[1024]', 'dtype': 'INT8', 'element_count': '1024', 'generator': 'quantized_uniform_time_0_to_31(floor(31*i/(N-1)))', 'preview_head4_tail2': 'i=0:0;i=1:0;i=2:0;i=3:0;i=1022:30;i=1023:31'}]
+case_parameters={'f0': 0.02, 't1': 31, 'f1': 0.07, 'phase_degrees': 0, 'method': 'linear'}
+output_dtype=INT8
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+mse=0
+rmse=0
+relative_l2=0
+relative_linf=0
+actual_input_digest=ec8ff85e726689abe2287018202dd16a321a0173b517987361d4c1a4cf981bcc
+typed_array_digest=2c0be44b2a6be61207d88bd5e86212613251b38b5e1da73bdc931b421c9e871a
+status=PASS
+error_code=OK

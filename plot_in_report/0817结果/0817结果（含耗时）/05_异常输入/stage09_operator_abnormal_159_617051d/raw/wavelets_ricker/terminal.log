@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+wavelets/ricker                   invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: wavelets.ricker.invalid_parameter.set_width_0
+  abnormal_input: mutation=set width<=0
+  error_message: wavelets::ricker检测到非法参数：mutation=set width<=0
+  backend_error: code=NA name=NA message=NA
+wavelets/ricker                   invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: wavelets.ricker.invalid_shape.output_length_differs_from_n
+  abnormal_input: mutation=output length differs from n
+  error_message: wavelets::ricker检测到非法shape：mutation=output length differs from n
+  backend_error: code=NA name=NA message=NA
+wavelets/ricker                   backend_call_failure    CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       true       PASS    
+  case_id: wavelets.ricker.backend_call_failure.inject_cuda_wavelet_kernel_failure
+  abnormal_input: mutation=inject CUDA wavelet kernel failure
+  error_message: wavelets::ricker捕获CUDA Runtime失败：mutation=inject CUDA wavelet kernel failure；cudaErrorInvalidDevice（invalid device ordinal）
+  backend_error: code=101 name=cudaErrorInvalidDevice message=invalid device ordinal
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

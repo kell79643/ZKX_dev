@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+convolution/correlate             invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: convolution.correlate.invalid_shape.input_ranks_differ
+  abnormal_input: mutation=input ranks differ
+  error_message: convolution::correlate检测到非法shape：mutation=input ranks differ
+  backend_error: code=NA name=NA message=NA
+convolution/correlate             invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: convolution.correlate.invalid_parameter.set_mode_unknown
+  abnormal_input: mutation=set mode=unknown
+  error_message: convolution::correlate检测到非法参数：mutation=set mode=unknown
+  backend_error: code=NA name=NA message=NA
+convolution/correlate             backend_call_failure    BACKEND_ERROR            BACKEND_ERROR            BACKEND_ERROR            true       PASS    
+  case_id: convolution.correlate.backend_call_failure.inject_selected_fft_or_cuda_execution_failure
+  abnormal_input: mutation=inject selected FFT or CUDA execution failure
+  error_message: convolution::correlate捕获FFT后端失败：mutation=inject selected FFT or CUDA execution failure；CUFFT_INVALID_SIZE（controlled dlfft-compatible status injection: invalid FFT size）
+  backend_error: code=8 name=CUFFT_INVALID_SIZE message=controlled dlfft-compatible status injection: invalid FFT size
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

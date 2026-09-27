@@ -1,0 +1,47 @@
+{
+  "run_id": "20260810T103336Z_e6d8c17f237e_stage07_b04_formal_529834a9",
+  "case_id": "firwin__firwin_int32_10e3__c508c5e039022ad7",
+  "operator_name": "firwin",
+  "task_name": "Task2",
+  "step_name": "Step2",
+  "scale_id": "firwin_int32_10e3",
+  "requested_dtype": "INT32",
+  "input_content": [
+    {
+      "input_name": "cutoff",
+      "shape": "[1]",
+      "dtype": "INT32",
+      "element_count": "1",
+      "generator": "configured_cutoff_scalar",
+      "preview_head4_tail2": "i=0:60.000000"
+    },
+    {
+      "input_name": "window",
+      "shape": "[1023]",
+      "dtype": "FP32",
+      "element_count": "1023",
+      "generator": "symmetric_hamming_explicit_window",
+      "preview_head4_tail2": "i=0:0.0799999982;i=1:0.080008693;i=2:0.0800347701;i=3:0.0800782368;i=1021:0.080008693;i=1022:0.0799999982"
+    }
+  ],
+  "case_parameters": {
+    "numtaps": 1023,
+    "cutoff_hz": 60,
+    "fs_hz": 1000,
+    "pass_zero": "lowpass",
+    "scale": true,
+    "output_dtype": "FP32_TASK_RESIDENT"
+  },
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 5.78037e-18,
+  "rmse": 2.40424e-09,
+  "relative_l2": 2.22715e-07,
+  "relative_linf": 1.24189e-07,
+  "actual_input_digest": "c508c5e039022ad719c7fbb45770d65f8c60664e531b3801f2b6ab43fe4ad9ba",
+  "typed_array_digest": "621293836cafba765c105b23559d2564fbca2932bc13ebfebe9a63b7f393c3cd",
+  "status": "PASS",
+  "error_code": "OK"
+}

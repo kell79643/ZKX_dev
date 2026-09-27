@@ -1,0 +1,37 @@
+{
+  "run_id": "20260810T092025Z_76c5b6f8b36d_stage07_b02_formal_2666dbaf",
+  "case_id": "sawtooth__saw_int16_10e4__d05f856b5066d62e",
+  "operator_name": "sawtooth",
+  "task_name": "Task2",
+  "step_name": "Step1",
+  "scale_id": "saw_int16_10e4",
+  "requested_dtype": "INT16",
+  "config_input_dtype": "INT16",
+  "input_content": [
+    {
+      "input_name": "phase",
+      "shape": "[16384]",
+      "dtype": "INT16",
+      "element_count": "16384",
+      "generator": "quantized_periodic_phase_8cycles(floor(16*pi*i/(N-1)))",
+      "preview_head4_tail2": "i=0:0;i=1:0;i=2:0;i=3:0;i=16382:50;i=16383:50"
+    }
+  ],
+  "case_parameters": {
+    "width": 0.65,
+    "phase_cycles": 8,
+    "output_dtype": "FP64"
+  },
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 2.19536e-13,
+  "rmse": 4.68547e-07,
+  "relative_l2": 8.00056e-07,
+  "relative_linf": 1.24694e-06,
+  "actual_input_digest": "d05f856b5066d62eb7e49789a96a74a2bcfd9eba22d6ced1d8ff99b611c1ef09",
+  "typed_array_digest": "f343a13fb5c8aa5b24a834df964ad7230390fc22ab573444b27911e6c9783fc7",
+  "status": "PASS",
+  "error_code": "OK"
+}

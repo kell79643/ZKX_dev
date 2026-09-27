@@ -1,0 +1,39 @@
+{
+  "run_id": "20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_a7a5ca3a",
+  "case_id": "chirp__chirp_int8_10e2__832993fa8713ef30",
+  "operator_name": "chirp",
+  "task_name": "Task2",
+  "step_name": "Step1",
+  "scale_id": "chirp_int8_10e2",
+  "requested_dtype": "INT8",
+  "config_input_dtype": "INT8",
+  "input_content": [
+    {
+      "input_name": "time",
+      "shape": "[128]",
+      "dtype": "INT8",
+      "element_count": "128",
+      "generator": "quantized_uniform_time_0_to_31(floor(31*i/(N-1)))",
+      "preview_head4_tail2": "i=0:0;i=1:0;i=2:0;i=3:0;i=126:30;i=127:31"
+    }
+  ],
+  "case_parameters": {
+    "f0": 0.02,
+    "t1": 31,
+    "f1": 0.07,
+    "phase_degrees": 0,
+    "method": "linear"
+  },
+  "output_dtype": "INT8",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "actual_input_digest": "832993fa8713ef30efd7ba92a4095e777029c480cbcc8aeff3c0990ed5f41f93",
+  "typed_array_digest": "c91423ce70422b6b9e7e399a3b1bb4dda08d5fca85ce52d43237ce5b344d3c82",
+  "status": "PASS",
+  "error_code": "OK"
+}

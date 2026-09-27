@@ -1,0 +1,45 @@
+{
+  "run_id": "20260810T090728Z_ed9b9505e41d_stage08_b07_formal_87520002",
+  "case_id": "morlet2__morlet2_fp32_10e4__3e65c2edfbdd6ee7",
+  "operator_name": "morlet2",
+  "scale_id": "morlet2_fp32_10e4",
+  "requested_dtype": "FP32",
+  "output_dtype": "ComplexFP64",
+  "backend": "not_applicable",
+  "n": 10000,
+  "frequency": 7,
+  "scale": 3,
+  "output_count": 10000,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 3.76925e-18,
+  "rmse": 1.94146e-09,
+  "relative_l2": 2.74563e-07,
+  "relative_linf": 3.57528e-07,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "frequency",
+      "shape": "scalar",
+      "dtype": "FP32",
+      "element_count": "1",
+      "generator": "configured_typed_scalar",
+      "preview_head4_tail2": "i=0:7"
+    },
+    {
+      "input_name": "scale",
+      "shape": "scalar",
+      "dtype": "FP32",
+      "element_count": "1",
+      "generator": "configured_typed_scalar",
+      "preview_head4_tail2": "i=0:3"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "FP32",
+    "n": "10000",
+    "frequency": "7",
+    "scale": "3"
+  }
+}

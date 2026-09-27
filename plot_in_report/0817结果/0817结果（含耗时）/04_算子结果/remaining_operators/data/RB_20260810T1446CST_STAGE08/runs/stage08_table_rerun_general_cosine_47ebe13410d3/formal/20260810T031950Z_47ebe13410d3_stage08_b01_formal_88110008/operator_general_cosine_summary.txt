@@ -1,0 +1,17 @@
+status=PASS
+operator=general_cosine
+run_id=20260810T031950Z_47ebe13410d3_stage08_b01_formal_88110008
+case_id=general_cosine__general_cosine_fp16_10e3__8e3a195c7bfa638e__sym
+scale_id=general_cosine_fp16_10e3
+dtype=FP16
+sym=true
+dtype_semantics=actual_typed_array_input
+typed_input_count=3
+typed_input_manifest=length:INT32=1000|sym:BOOL=true|coefficient_values:FP16:bytes=003c;0040;003c;
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+input_digest=8e3a195c7bfa638e58e37f1b76ea1968b7563c467a2e6ee8c054a260c53959a5
+cpu_output_digest=07573c8d07f950a6f40641556502aaccecc7dc37efd6bb66dc11f9c35f338177
+gpu_output_digest=7d05df90a00a322b0148050e05b871541f7af1974f5882657247a9327aae0621
+error_code=OK

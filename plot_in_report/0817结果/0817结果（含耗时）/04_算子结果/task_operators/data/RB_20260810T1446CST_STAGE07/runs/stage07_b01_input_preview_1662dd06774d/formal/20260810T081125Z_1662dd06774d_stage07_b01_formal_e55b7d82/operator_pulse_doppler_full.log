@@ -1,0 +1,79 @@
+command=/tmp/ZKX_dev/build_stage07_b01_pulse_doppler_1662dd06774d/stage07_radartools_pulse_doppler --dtype INT32 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82/pulse_doppler_probe_raw.json --n0 32 --n1 32 --nfft 32
+STAGE07_RADAR_PROBE PASS operator=pulse_doppler dtype=INT32
+{"run_id": "20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82", "case_id": "pulse_doppler__pd_int32_10e3__3a255eaab5ada5ee", "operator_name": "pulse_doppler", "scale_id": "pd_int32_10e3", "requested_dtype": "INT32", "config_input_dtype": "ComplexINT32", "input_content": [{"input_name": "compressed", "shape": "[32x32]", "dtype": "ComplexINT32", "element_count": "1024", "generator": "complex_modular(seed=11,integral=true)", "preview_head4_tail2": "i=0:(-5,-2);i=1:(-3,-4);i=2:(-1,3);i=3:(1,1);i=1022:(4,-3);i=1023:(-5,4)"}], "case_parameters": {"num_pulses": 32, "samples_per_pulse": 32, "nfft": 32, "window": "none"}, "output_dtype": "ComplexFP64", "backend": "fft_thrust", "warmup_runs": 20, "measured_runs": 100, "mse": 8.65695e-10, "rmse": 2.94227e-05, "relative_l2": 1.80048e-06, "relative_linf": 2.24348e-06, "exact_match": true, "mismatch_count": 0, "semantic_check": true, "actual_input_digest": "3a255eaab5ada5eeeeefdf21110b89b5717ced6ec4e91a869093d9bf207cd1ab", "status": "PASS", "error_code": "OK"}
+[stage07] identity and status
++---------------+---------------+--------+------------+-------+--------+----------+--------------------------+--------+------------+
+| target        | scale_id      | device | backend    | dtype | warmup | measured | timing_scope             | status | error_code |
++---------------+---------------+--------+------------+-------+--------+----------+--------------------------+--------+------------+
+| pulse_doppler | pd_int32_10e3 | CPU    | fft_thrust | INT32 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| pulse_doppler | pd_int32_10e3 | GPU    | fft_thrust | INT32 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++---------------+---------------+--------+------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage07] timing detail
++--------+---------------------+--------------------+------------+--------------------+----------+----------+---------------------+----------------------+--------------------+
+| device | mean_ms             | p50_ms             | p95_ms     | p99_ms             | min_ms   | max_ms   | std_ms              | cv                   | speedup            |
++--------+---------------------+--------------------+------------+--------------------+----------+----------+---------------------+----------------------+--------------------+
+| CPU    | 1.89572624          | 1.8861150000000002 | 1.911946   | 2.0845724900000002 | 1.877145 | 2.089274 | 0.03581863411720779 | 0.018894412790956456 | NA                 |
+| GPU    | 0.48146738999999994 | 0.472704           | 0.53659155 | 0.5450881900000007 | 0.459379 | 0.696478 | 0.02933889596283235 | 0.06093641349797824  | 3.9373928107571317 |
++--------+---------------------+--------------------+------------+--------------------+----------+----------+---------------------+----------------------+--------------------+
+
+[stage07] accuracy detail
++---------------------+-------------+-------------+-------------+---------------+-------------+----------------+---------------------------------+--------+
+| reference           | mse         | rmse        | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                  | status |
++---------------------+-------------+-------------+-------------+---------------+-------------+----------------+---------------------------------+--------+
+| typed_cpu_reference | 8.65695e-10 | 2.94227e-05 | 1.80048e-06 | 2.24348e-06   | NA          | NA             | typed_output_shape_dtype_finite | PASS   |
++---------------------+-------------+-------------+-------------+---------------+-------------+----------------+---------------------------------+--------+
+
+[stage07] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1540000      | 1534896     | 1550176    | -5104       |
+| CPU    | rss        | 70189056     | 70189056    | 70189056   | 0           |
+| GPU    | cpu_heap   | 1534896      | 1537808     | 1537808    | 2912        |
+| GPU    | rss        | 70189056     | 70189056    | 70189056   | 0           |
+| GPU    | gpu_memory | 341000192    | 341000192   | 341000192  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage07] input content
++------------+---------+--------------+----------+----------------------------------------+--------------------------------------------------------------------------+
+| input_name | shape   | dtype        | elements | generator                              | values(head4/tail2)                                                      |
++------------+---------+--------------+----------+----------------------------------------+--------------------------------------------------------------------------+
+| compressed | [32x32] | ComplexINT32 | 1024     | complex_modular(seed=11,integral=true) | i=0:(-5,-2);i=1:(-3,-4);i=2:(-1,3);i=3:(1,1);i=1022:(4,-3);i=1023:(-5,4) |
++------------+---------+--------------+----------+----------------------------------------+--------------------------------------------------------------------------+
+
+[stage07] case parameters
++--------------------------------------------------------------------+
+| parameters                                                         |
++--------------------------------------------------------------------+
+| {"nfft":32,"num_pulses":32,"samples_per_pulse":32,"window":"none"} |
++--------------------------------------------------------------------+
+
+[stage07] input and output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | 3a255eaab5ada5eeeeefdf21110b89b5717ced6ec4e91a869093d9bf207cd1ab | 27d47e9c89590a8d5eb66b32051eeb1022c3e7748cfe1b2289c7a50e91cb13c4 |
+| GPU    | 3a255eaab5ada5eeeeefdf21110b89b5717ced6ec4e91a869093d9bf207cd1ab | 22526241ae4835aa6b15df7fe28f12debde3a8144e1be594571318721c8a108e |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage07] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+
+| requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              |
++-----------------+--------------------+--------------+------------------------------------------------------------------+
+| INT32           | ComplexINT32       | ComplexFP64  | 3a255eaab5ada5eeeeefdf21110b89b5717ced6ec4e91a869093d9bf207cd1ab |
++-----------------+--------------------+--------------+------------------------------------------------------------------+
+
+[stage07] evidence files
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind        | path                                                                                                                                                                                                                                        |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| main_csv    | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82/operator_main_results_pulse_doppler_fft_thrust_20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82.csv   |
+| timing_csv  | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82/operator_timing_samples_pulse_doppler_fft_thrust_20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82.csv |
+| memory_csv  | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82/operator_radartools_pulse_doppler_memory_trace_fft_thrust.csv                                                  |
+| dtype_csv   | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82/operator_dtype_evidence_pulse_doppler_fft_thrust_20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82.csv |
+| report_json | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82/operator_pulse_doppler_report.json                                                                             |
+| summary_txt | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82/operator_pulse_doppler_summary.txt                                                                             |
+| full_log    | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82/operator_pulse_doppler_full.log                                                                                |
+| result_dir  | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081125Z_1662dd06774d_stage07_b01_formal_e55b7d82                                                                                                                |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

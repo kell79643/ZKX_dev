@@ -1,0 +1,21 @@
+run_id=20260810T103352Z_e6d8c17f237e_stage07_b04_formal_f0d3e7ca
+case_id=firfilter__firfilter_int16_10e2__3e17970795aaf02f
+operator_name=firfilter
+task_name=Task2
+step_name=Step2;Step3
+scale_id=firfilter_int16_10e2
+requested_dtype=INT16
+input_content=[{'input_name': 'b', 'shape': '[9]', 'dtype': 'INT16', 'element_count': '9', 'generator': 'deterministic_nine_tap_smoother', 'preview_head4_tail2': 'i=0:0;i=1:1;i=2:0;i=3:1;i=7:1;i=8:0'}, {'input_name': 'x', 'shape': '[128]', 'dtype': 'INT16', 'element_count': '128', 'generator': 'sinusoid_mixture_plus_modular_noise', 'preview_head4_tail2': 'i=0:2;i=1:2;i=2:3;i=3:2;i=126:1;i=127:2'}]
+case_parameters={'signal_count': 128, 'tap_count': 9, 'shape': [128], 'axis': -1, 'zi': False, 'output_dtype': 'FP32'}
+output_dtype=FP32
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+mse=0
+rmse=0
+relative_l2=0
+relative_linf=0
+actual_input_digest=3e17970795aaf02fa009cab32eeb8ddc6d423c08641bafbd95cfe51c8ddacd1b
+typed_array_digest=291b281266266673aafcf512e0b536a90587a0209c28429b26d1719f34824bfb
+status=PASS
+error_code=OK

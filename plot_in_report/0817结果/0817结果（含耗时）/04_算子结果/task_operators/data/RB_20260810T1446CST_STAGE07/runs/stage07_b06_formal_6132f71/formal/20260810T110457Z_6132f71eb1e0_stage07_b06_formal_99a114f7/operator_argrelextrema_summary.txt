@@ -1,0 +1,21 @@
+run_id=20260810T110457Z_6132f71eb1e0_stage07_b06_formal_99a114f7
+case_id=argrelextrema__argrelextrema_int8_10e3__a31bb44949006eeb
+operator_name=argrelextrema
+task_name=Task2
+step_name=Step5
+scale_id=argrelextrema_int8_10e3
+requested_dtype=INT8
+input_content=[{'input_name': 'feature_bundle', 'shape': '[1024]', 'dtype': 'INT8', 'element_count': '1024', 'generator': 'deterministic_task2_feature_bundle', 'preview_head4_tail2': 'i=0:2;i=1:2;i=2:2;i=3:3;i=1022:2;i=1023:3'}]
+case_parameters={'count': 1024, 'order': 5, 'mode': 'clip', 'comparator': 'greater', 'output_count': 'dynamic_int64_coordinates'}
+output_dtype=INT64_COORDINATES
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+output_count=12
+actual_input_digest=a31bb44949006eeb8c31d1d12e8c3be5437f9a2fc251b6b80142e5647cb42d07
+typed_array_digest=80119aa6d94e9eaf7cf5fe08f0b5487092d6cf1ae73b76010fb68c44bb5c7056
+status=PASS
+error_code=OK
+exact_match=True
+mismatch_count=0
+semantic_check=True

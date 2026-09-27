@@ -1,0 +1,558 @@
+{
+  "schema_version": 1,
+  "audit_kind": "stage07_batch06_formal_evidence",
+  "formal_root": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal",
+  "driver_log_root": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs",
+  "result_git_commit": "6132f71eb1e0457ef1988f98e7e02226424d461c",
+  "result_git_dirty": "false",
+  "verifier_git_commit": "6132f71eb1e0457ef1988f98e7e02226424d461c",
+  "expected_case_count": 45,
+  "case_count": 45,
+  "selection_records": [
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110455Z_6132f71eb1e0_stage07_b06_formal_d3c47f7f"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110455Z_6132f71eb1e0_stage07_b06_formal_fef969da"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110455Z_6132f71eb1e0_stage07_b06_formal_d9ac25cc"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110454Z_6132f71eb1e0_stage07_b06_formal_761eb97a"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110454Z_6132f71eb1e0_stage07_b06_formal_d4d1595a"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110454Z_6132f71eb1e0_stage07_b06_formal_8e35652e"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_2c2f61a2"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_6fd916aa"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110455Z_6132f71eb1e0_stage07_b06_formal_6887dd95"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110455Z_6132f71eb1e0_stage07_b06_formal_b27b19e3"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_18a70618"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_6b59bd3d"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110457Z_6132f71eb1e0_stage07_b06_formal_99a114f7"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/argrelextrema/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110457Z_6132f71eb1e0_stage07_b06_formal_05133dad"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110446Z_6132f71eb1e0_stage07_b06_formal_fa81bf2c"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110446Z_6132f71eb1e0_stage07_b06_formal_a0fe3bdd"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110446Z_6132f71eb1e0_stage07_b06_formal_c6bea09d"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110445Z_6132f71eb1e0_stage07_b06_formal_4589f996"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110445Z_6132f71eb1e0_stage07_b06_formal_aa0f2ca5"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110445Z_6132f71eb1e0_stage07_b06_formal_4bb912c8"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110446Z_6132f71eb1e0_stage07_b06_formal_588ecc4c"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110447Z_6132f71eb1e0_stage07_b06_formal_76a4d0b2"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110447Z_6132f71eb1e0_stage07_b06_formal_5d2106d9"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110446Z_6132f71eb1e0_stage07_b06_formal_057f9050"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110446Z_6132f71eb1e0_stage07_b06_formal_ba7c2680"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110446Z_6132f71eb1e0_stage07_b06_formal_951c5aa8"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110447Z_6132f71eb1e0_stage07_b06_formal_cf486826"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110447Z_6132f71eb1e0_stage07_b06_formal_9e6b7f1f"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/cubic/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110447Z_6132f71eb1e0_stage07_b06_formal_6a6dd8ba"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110506Z_6132f71eb1e0_stage07_b06_formal_c682575d"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110507Z_6132f71eb1e0_stage07_b06_formal_584137dc"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110507Z_6132f71eb1e0_stage07_b06_formal_c38ece5b"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110504Z_6132f71eb1e0_stage07_b06_formal_f09bd243"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110505Z_6132f71eb1e0_stage07_b06_formal_acba3923"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110505Z_6132f71eb1e0_stage07_b06_formal_b260e82e"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110510Z_6132f71eb1e0_stage07_b06_formal_c4610795"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110510Z_6132f71eb1e0_stage07_b06_formal_d301f68c"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110511Z_6132f71eb1e0_stage07_b06_formal_71ad4410"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110508Z_6132f71eb1e0_stage07_b06_formal_4067d4d0"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110509Z_6132f71eb1e0_stage07_b06_formal_251c0126"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110512Z_6132f71eb1e0_stage07_b06_formal_3871c6fc"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110512Z_6132f71eb1e0_stage07_b06_formal_81d82a77"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal_driver_logs/kalman_filter/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110513Z_6132f71eb1e0_stage07_b06_formal_0821d4c5"
+    }
+  ],
+  "cases": [
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "9cb18ac62642d1a720c9be3fe48172fc1e476b0fd06c9d0fd444bb9d874d6c9e",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "81a1834c271aba4c0afb3383de2578868bdd0a0eb6336e6326be5de38c101a1b",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "7e0e16a14e6036d4a715278912cdef17f8dbe96cf7126cb89aa5aa1d14965abf",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "79ebc424e432bf4a170589d1b85a5270dc148eb3eb176e448860fccba8cd844e",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "7818a49621049c3a29250895cc1b4f44d22d1b61078841db2fb104a10e7f34c9",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "4b4f1d5472fe9b97e07385e51de94d9c9e54834a4e3ffa32345279bf9acd14d7",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_int16_10e2",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "ac9dfe184087b8be2b225f35b24a1cd7321fbbb3b6c448ff9252733b2f4e1309",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_int16_10e3",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "a7a23bddeaa3d1099654a5147b635bf7c176a9d843d41ed2c09bf99946ffc09d",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_int16_10e4",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "db17473a53123162745cfbbe500640d5afaacf40a48411e40ad769419c712f04",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_int32_10e2",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "fc0534c253561bb60786f71405a627883491f2e4473dbe0c77d376f99f9dc501",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_int32_10e3",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "67b5ba21600bc2883e3332f84f7254277616f55689b326a8db203a99051df778",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_int32_10e4",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "4a4f4513b2c1cb06ea5978e5027f77bdc6345d94e97ab4ac61da4b4dacbac0de",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_int8_10e2",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "09350b5634faf50e3cb6ac640321bd7e6d80a8cbea9f1c75bcc5bf72cc2b037a",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_int8_10e3",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "a31bb44949006eeb8c31d1d12e8c3be5437f9a2fc251b6b80142e5647cb42d07",
+      "status": "PASS"
+    },
+    {
+      "operator": "argrelextrema",
+      "scale_id": "argrelextrema_int8_10e4",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "d1d82a99bb4df73d481858e27896115c65c9d7e7eb62c1aff0554c7e69f8dbe2",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "cb15388a9d7aeedcd9f7d1ca8eee07a63e74399bd146e15c489cd1109905d3fb",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "7c75ad19471b16aa32c4cbcfca740c9521739a9af71a29fe4409b484bb5fe1f2",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "1b20c6a49d276caf876461aae9d5ca3f3092f6970baa093587246329bfce6736",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "5407de070298d52f158fc0772fb1d3ed2c6ea8226fdc463773983dee4f113ca5",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "c7c9fd53747b82b11c95a892e7a833cfc0aa71c2bec2f43bdbc492a71bff4bed",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "4ebb8a2d94032c645ccd7fcb4183fe5777318a5fa08066328e8e895747709cfe",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_int16_10e2",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "f9f36485f9deca98a7838ab4ba7e22ef4439079448558fcf8f71932646b25aec",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_int16_10e3",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "4d66bf2025cb3228cdc7a36ff85871c7e0253baf8f571786bd95f86f0dd0ef55",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_int16_10e4",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "ecad89f489527427849b533c94403b780ad353a1a7bedd4b681e32b0068f5cb4",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_int32_10e2",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "617bd716ff8a596e3f50e7e6acbbf248ffc4157e60794bd0fe81cb6a6c23afd8",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_int32_10e3",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "a08e6001c00fd698f6598c41e1457822eaafc7b4655771e7b5fc1fbc4b0daf52",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_int32_10e4",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "2d29744d2a8967862e49c90e0ad81944bf12ba6d4527cb8f6f8352f641ac8d73",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_int8_10e2",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "2403a31f280766f0c36a7a3165aa5cb26c0de6764e4a44f6a6fa4b70b76b6af9",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_int8_10e3",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "b6622b55eccc2b1ed07c1dafb921f7c64cc3db1acb713dd41ac667b3c5fe5214",
+      "status": "PASS"
+    },
+    {
+      "operator": "cubic",
+      "scale_id": "cubic_int8_10e4",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "7b83a895c6e15bbafe307d7bef07d9daafd14bd68d693b48abc7ff8b3ad7e896",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "529db5e3e824b6f3cc68e2e8393919c94f287766945abd66225d0b9835a86e7c",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "c31eb64069d4037cc2c933b89fe9bf2ba7edf7f053919500ed9bf00e2bb2c2c6",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "input_digest": "1e27555259d8070d7501704b9febab1e553af9d64b0d89bf625837c812b07900",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "daf673c9ad0a86cb02d6a2d5b088d7c6b3a1a9b24fe168a5a574239a950f778a",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "1fd5c0a0e83a4d12c091455f8bb2ada07c8955d30cdd01e31768114920fa6177",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "input_digest": "7251e10b6ce68521994aac7630dc9b42ed8a7729eb725f9f02bf8c3d225ca34d",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_int16_10e2",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "d63d70f61d3fd0fc0ad2fcbf19ce5e190dcc18b2361eb5fe41cd6f683a0dc6b3",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_int16_10e3",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "ed4cd8992b0c195d08b469d83f7014603c4fbfb1cecd2c7e8b81946de51ab19f",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_int16_10e4",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "input_digest": "21ca032eb4258d90f50080c6a2a873ac609cd911cd852bebac6ddb08dfa666a2",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_int32_10e2",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "6726eb0ec4b2013d96be6e44c593b6587642e1df17ce2b652cfaf173b3db8386",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_int32_10e3",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "5b4ebb8f95fb719f756fc5601d880bfdd90ae557be4eef6d696b49a2316c032d",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_int32_10e4",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "input_digest": "f95867230e09cba33b7e496448fc874f10f6264faa64c94c6e372b36bf9accfd",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_int8_10e2",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "2d620600d1722b382f0e6b9c99975434fe4ecc23dca25913e46f2d3c10dd1f2e",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_int8_10e3",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "7848a20161c02a20d83ce17c109692520caf4af69635fced8c31c0403a3ccd40",
+      "status": "PASS"
+    },
+    {
+      "operator": "kalman_filter",
+      "scale_id": "kalman_filter_int8_10e4",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "input_digest": "ef4a082ea3d004333a9c098454daecdb18f3732ae95485d84cba5ec7f9893f18",
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "status": "PASS",
+  "output": "/tmp/ZKX_dev/results/stage07_b06_formal_6132f71/stage07_batch06_formal_audit_6132f71.json"
+}

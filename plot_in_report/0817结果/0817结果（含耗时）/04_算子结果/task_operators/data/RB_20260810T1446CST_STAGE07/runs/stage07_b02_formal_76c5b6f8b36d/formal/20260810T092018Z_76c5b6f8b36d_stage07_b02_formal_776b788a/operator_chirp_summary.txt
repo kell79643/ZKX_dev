@@ -1,0 +1,22 @@
+run_id=20260810T092018Z_76c5b6f8b36d_stage07_b02_formal_776b788a
+case_id=chirp__chirp_fp32_10e4__806c90503c6db1fc
+operator_name=chirp
+task_name=Task2
+step_name=Step1
+scale_id=chirp_fp32_10e4
+requested_dtype=FP32
+config_input_dtype=FP32
+input_content=[{'input_name': 'time', 'shape': '[16384]', 'dtype': 'FP32', 'element_count': '16384', 'generator': 'uniform_time_0_to_31(31*i/(N-1))', 'preview_head4_tail2': 'i=0:0;i=1:0.00189220533;i=2:0.00378441066;i=3:0.00567661598;i=16382:30.9981079;i=16383:31'}]
+case_parameters={'f0': 0.02, 't1': 31, 'f1': 0.07, 'phase_degrees': 0, 'method': 'linear'}
+output_dtype=FP32
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+mse=5.5381e-16
+rmse=2.35332e-08
+relative_l2=3.34597e-08
+relative_linf=5.96046e-08
+actual_input_digest=806c90503c6db1fcfe9ce8609257636085b1d67ca42e2a450749b5abafbed906
+typed_array_digest=92b5b54743b189d3157ff0ae64406133fcd6e197ee79c25ae5d41b52efb8890d
+status=PASS
+error_code=OK

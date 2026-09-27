@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+waveforms/gausspulse              invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: waveforms.gausspulse.invalid_parameter.set_center_frequency_negative
+  abnormal_input: mutation=set center frequency negative
+  error_message: waveforms::gausspulse检测到非法参数：mutation=set center frequency negative
+  backend_error: code=NA name=NA message=NA
+waveforms/gausspulse              invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: waveforms.gausspulse.invalid_shape.time_input_and_output_lengths_differ
+  abnormal_input: mutation=time input and output lengths differ
+  error_message: waveforms::gausspulse检测到非法shape：mutation=time input and output lengths differ
+  backend_error: code=NA name=NA message=NA
+waveforms/gausspulse              unsupported_operation   UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    true       PASS    
+  case_id: waveforms.gausspulse.unsupported_operation.request_unsupported_return_envelope_combination
+  abnormal_input: mutation=request unsupported return-envelope combination
+  error_message: waveforms::gausspulse检测到不支持操作：mutation=request unsupported return-envelope combination
+  backend_error: code=NA name=NA message=NA
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

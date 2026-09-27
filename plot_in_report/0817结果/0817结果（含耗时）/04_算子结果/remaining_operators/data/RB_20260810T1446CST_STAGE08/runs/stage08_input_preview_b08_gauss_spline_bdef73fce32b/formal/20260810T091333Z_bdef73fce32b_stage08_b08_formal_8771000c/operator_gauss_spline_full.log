@@ -1,0 +1,78 @@
+command=build_stage08_b08_gauss_spline_a1467e3b776a/stage08_bsplines_gauss_spline --operator gauss_spline --dtype INT8 --elements 100 --order 0 --seed 87400012 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage08_input_preview_b08_gauss_spline_bdef73fce32b/formal/20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c/gauss_spline_probe_raw.json
+{"run_id": "20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c", "case_id": "gauss_spline__gauss_spline_int8_10e2__ba73a6649ec32f46", "operator_name": "gauss_spline", "scale_id": "gauss_spline_int8_10e2", "requested_dtype": "INT8", "output_dtype": "INT8", "backend": "not_applicable", "input_count": 100, "output_count": 100, "order": 0, "warmup_runs": 20, "measured_runs": 100, "mse": 0, "rmse": 0, "relative_l2": 0, "relative_linf": 0, "status": "PASS", "error_code": "OK"}
+[stage08] identity and status
++--------------+------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| target       | scale_id               | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code |
++--------------+------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| gauss_spline | gauss_spline_int8_10e2 | CPU    | not_applicable | INT8  | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| gauss_spline | gauss_spline_int8_10e2 | GPU    | not_applicable | INT8  | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++--------------+------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage08] timing detail
++--------+-----------------------+-----------+--------------------+-----------------------+----------+----------+------------------------+----------------------+----------------------+
+| device | mean_ms               | p50_ms    | p95_ms             | p99_ms                | min_ms   | max_ms   | std_ms                 | cv                   | speedup              |
++--------+-----------------------+-----------+--------------------+-----------------------+----------+----------+------------------------+----------------------+----------------------+
+| CPU    | 0.0035512700000000005 | 0.00355   | 0.00359            | 0.0036100999999999998 | 0.00349  | 0.00362  | 2.2872627745844944e-05 | 0.006440689597199014 | NA                   |
+| GPU    | 0.20112781999999998   | 0.1918395 | 0.2505485499999999 | 0.3351927700000008    | 0.186059 | 0.490303 | 0.0365508919284824     | 0.18172966787231323  | 0.017656781642638997 |
++--------+-----------------------+-----------+--------------------+-----------------------+----------+----------+------------------------+----------------------+----------------------+
+
+[stage08] accuracy detail
++-----------------------------+-----+------+-------------+---------------+-------------+----------------+--------------------------------------------+--------+
+| accuracy_reference          | mse | rmse | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                             | status |
++-----------------------------+-----+------+-------------+---------------+-------------+----------------+--------------------------------------------+--------+
+| cpu_gauss_spline_same_dtype | 0   | 0    | 0           | 0             | NA          | NA             | output_count=100;output_dtype=INT8;order=0 | PASS   |
++-----------------------------+-----+------+-------------+---------------+-------------+----------------+--------------------------------------------+--------+
+
+[stage08] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1344112      | 1348208     | 1348208    | 4096        |
+| CPU    | rss        | 69304320     | 69304320    | 69304320   | 0           |
+| GPU    | cpu_heap   | 1348304      | 1351520     | 1351520    | 3216        |
+| GPU    | rss        | 69304320     | 69304320    | 69304320   | 0           |
+| GPU    | gpu_memory | 391544832    | 391544832   | 391544832  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage08] input/output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | ba73a6649ec32f4683d3f2a706272c2e9a251454d664381ad0b086ac8cc572b4 | e74a2888657708b679dcb8fd977e404452fb82655e53f924e847b9d5176831d4 |
+| GPU    | ba73a6649ec32f4683d3f2a706272c2e9a251454d664381ad0b086ac8cc572b4 | e74a2888657708b679dcb8fd977e404452fb82655e53f924e847b9d5176831d4 |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage08] input content
++------------+-------+-------+----------+----------------------------------------------------------------+-----------------------------------------+
+| input_name | shape | dtype | elements | generator                                                      | values(head4/tail2)                     |
++------------+-------+-------+----------+----------------------------------------------------------------+-----------------------------------------+
+| x          | [100] | INT8  | 100      | bspline_modular_or_piecewise_ramp(seed=87400012,integral=true) | i=0:-1;i=1:0;i=2:1;i=3:2;i=98:-1;i=99:0 |
++------------+-------+-------+----------+----------------------------------------------------------------+-----------------------------------------+
+
+[stage08] case parameters
++-------------------------------------------------------------------------------------------+
+| parameters                                                                                |
++-------------------------------------------------------------------------------------------+
+| {"dtype":"INT8","elements":"100","operator":"gauss_spline","order":"0","seed":"87400012"} |
++-------------------------------------------------------------------------------------------+
+
+[stage08] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| INT8            | NA                 | INT8         | ba73a6649ec32f4683d3f2a706272c2e9a251454d664381ad0b086ac8cc572b4 | PASS   |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+
+[stage08] evidence files
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind           | path                                                                                                                                                                                                                                                        |
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| probe_raw_json | /tmp/ZKX_dev/results/stage08_input_preview_b08_gauss_spline_bdef73fce32b/formal/20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c/gauss_spline_probe_raw.json                                                                                       |
+| memory_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b08_gauss_spline_bdef73fce32b/formal/20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c/operator_bsplines_gauss_spline_memory_trace_not_applicable.csv                                                    |
+| dtype_csv      | /tmp/ZKX_dev/results/stage08_input_preview_b08_gauss_spline_bdef73fce32b/formal/20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c/operator_dtype_evidence_gauss_spline_not_applicable_20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c.csv |
+| full_log       | /tmp/ZKX_dev/results/stage08_input_preview_b08_gauss_spline_bdef73fce32b/formal/20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c/operator_gauss_spline_full.log                                                                                    |
+| report_json    | /tmp/ZKX_dev/results/stage08_input_preview_b08_gauss_spline_bdef73fce32b/formal/20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c/operator_gauss_spline_report.json                                                                                 |
+| summary_txt    | /tmp/ZKX_dev/results/stage08_input_preview_b08_gauss_spline_bdef73fce32b/formal/20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c/operator_gauss_spline_summary.txt                                                                                 |
+| main_csv       | /tmp/ZKX_dev/results/stage08_input_preview_b08_gauss_spline_bdef73fce32b/formal/20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c/operator_main_results_gauss_spline_not_applicable_20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c.csv   |
+| timing_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b08_gauss_spline_bdef73fce32b/formal/20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c/operator_timing_samples_gauss_spline_not_applicable_20260810T091333Z_bdef73fce32b_stage08_b08_formal_8771000c.csv |
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

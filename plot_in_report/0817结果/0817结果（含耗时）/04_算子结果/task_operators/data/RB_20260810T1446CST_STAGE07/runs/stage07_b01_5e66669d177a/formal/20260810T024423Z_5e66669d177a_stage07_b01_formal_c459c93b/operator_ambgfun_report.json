@@ -1,0 +1,22 @@
+{
+  "run_id": "20260810T024423Z_5e66669d177a_stage07_b01_formal_c459c93b",
+  "case_id": "ambgfun__amb_fp32_10e3__02daef509689b70b",
+  "operator_name": "ambgfun",
+  "scale_id": "amb_fp32_10e3",
+  "requested_dtype": "FP32",
+  "config_input_dtype": "ComplexFP32",
+  "output_dtype": "FP32",
+  "backend": "fft_thrust",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 9.54329e-16,
+  "rmse": 3.08922e-08,
+  "relative_l2": 2.45199e-07,
+  "relative_linf": 2.38419e-07,
+  "exact_match": true,
+  "mismatch_count": 0,
+  "semantic_check": true,
+  "actual_input_digest": "02daef509689b70b6d9472e0dca87829fe42c50fb7131c8d30af549205b19c69",
+  "status": "PASS",
+  "error_code": "OK"
+}

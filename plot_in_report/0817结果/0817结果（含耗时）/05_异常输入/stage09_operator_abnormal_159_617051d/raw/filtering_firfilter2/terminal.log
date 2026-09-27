@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+filtering/firfilter2              invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: filtering.firfilter2.invalid_shape.input_is_shorter_than_required_padding
+  abnormal_input: mutation=input is shorter than required padding
+  error_message: filtering::firfilter2检测到非法shape：mutation=input is shorter than required padding
+  backend_error: code=NA name=NA message=NA
+filtering/firfilter2              invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: filtering.firfilter2.invalid_parameter.set_padtype_unknown
+  abnormal_input: mutation=set padtype=unknown
+  error_message: filtering::firfilter2检测到非法参数：mutation=set padtype=unknown
+  backend_error: code=NA name=NA message=NA
+filtering/firfilter2              unsupported_operation   UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    true       PASS    
+  case_id: filtering.firfilter2.unsupported_operation.request_method_gust_rejected_by_fixed_contract
+  abnormal_input: mutation=request method=gust rejected by fixed contract
+  error_message: filtering::firfilter2检测到不支持操作：mutation=request method=gust rejected by fixed contract
+  backend_error: code=NA name=NA message=NA
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

@@ -1,0 +1,22 @@
+run_id=20260810T105113Z_2836c8dc200d_stage07_b05_formal_ca36b547
+case_id=correlate__correlate_int16_10e2__4b39124030179027
+operator_name=correlate
+task_name=Task2
+step_name=Step4
+scale_id=correlate_int16_10e2
+requested_dtype=INT16
+input_content=[{'input_name': 'signal', 'shape': '[128]', 'dtype': 'INT16', 'element_count': '128', 'generator': 'task2_signal_mixture', 'preview_head4_tail2': 'i=0:2;i=1:2;i=2:3;i=3:2;i=126:-4;i=127:-5'}, {'input_name': 'reference', 'shape': '[17]', 'dtype': 'INT16', 'element_count': '17', 'generator': 'task2_reference_template', 'preview_head4_tail2': 'i=0:2;i=1:3;i=2:2;i=3:2;i=15:2;i=16:3'}]
+case_parameters={'signal_count': 128, 'reference_count': 17, 'mode': 'same', 'output_count': 128}
+output_dtype=INT16
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+output_count=128
+mse=0
+rmse=0
+relative_l2=0
+relative_linf=0
+actual_input_digest=4b391240301790278f7f550fc55bf3272a82ab2e7b39bb17309f7c354a86055e
+typed_array_digest=3163d0be88c8a87911860e36353856fa207196e30c858e1110b17e41788c06ab
+status=PASS
+error_code=OK

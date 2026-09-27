@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+filtering/firfilter               invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: filtering.firfilter.invalid_shape.filter_coefficients_are_empty
+  abnormal_input: mutation=filter coefficients are empty
+  error_message: filtering::firfilter检测到非法shape：mutation=filter coefficients are empty
+  backend_error: code=NA name=NA message=NA
+filtering/firfilter               invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: filtering.firfilter.invalid_parameter.axis_is_outside_rank
+  abnormal_input: mutation=axis is outside rank
+  error_message: filtering::firfilter检测到非法参数：mutation=axis is outside rank
+  backend_error: code=NA name=NA message=NA
+filtering/firfilter               backend_call_failure    CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       true       PASS    
+  case_id: filtering.firfilter.backend_call_failure.inject_cuda_kernel_launch_failure_before_output_
+  abnormal_input: mutation=inject CUDA kernel launch failure before output consumption
+  error_message: filtering::firfilter捕获CUDA Runtime失败：mutation=inject CUDA kernel launch failure before output consumption；cudaErrorInvalidDevice（invalid device ordinal）
+  backend_error: code=101 name=cudaErrorInvalidDevice message=invalid device ordinal
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

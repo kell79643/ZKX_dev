@@ -1,0 +1,79 @@
+command=/tmp/ZKX_dev/build_stage07_b01_cfar_alpha_1662dd06774d/stage07_radartools_cfar_alpha --dtype INT32 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4/cfar_alpha_probe_raw.json --pfa 1 --reference 16384
+STAGE07_RADAR_PROBE PASS operator=cfar_alpha dtype=INT32
+{"run_id": "20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4", "case_id": "cfar_alpha__alpha_int32_10e4__afe70ce678554fec", "operator_name": "cfar_alpha", "scale_id": "alpha_int32_10e4", "requested_dtype": "INT32", "config_input_dtype": "INT32", "input_content": [{"input_name": "pfa", "shape": "[1]", "dtype": "INT32", "element_count": "1", "generator": "exact_scalar_from_case_config", "preview_head4_tail2": "value=1"}], "case_parameters": {"pfa": 1, "reference_count": 16384, "equivalent_work": "10^4"}, "output_dtype": "FP64", "backend": "not_applicable", "warmup_runs": 20, "measured_runs": 100, "mse": 0, "rmse": 0, "relative_l2": 0, "relative_linf": 0, "exact_match": true, "mismatch_count": 0, "semantic_check": true, "actual_input_digest": "afe70ce678554fec4007125b74caa7d26ec1f7bbec7036fd00d0e71507e0ecf5", "status": "PASS", "error_code": "OK"}
+[stage07] identity and status
++------------+------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| target     | scale_id         | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code |
++------------+------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| cfar_alpha | alpha_int32_10e4 | CPU    | not_applicable | INT32 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| cfar_alpha | alpha_int32_10e4 | GPU    | not_applicable | INT32 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++------------+------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage07] timing detail
++--------+------------------------+---------+------------+-----------------------+---------+---------+-----------------------+---------------------+-----------------------+
+| device | mean_ms                | p50_ms  | p95_ms     | p99_ms                | min_ms  | max_ms  | std_ms                | cv                  | speedup               |
++--------+------------------------+---------+------------+-----------------------+---------+---------+-----------------------+---------------------+-----------------------+
+| CPU    | 0.00025780000000000003 | 0.00011 | 0.00012    | 0.0003121000000000727 | 0.00011 | 0.01438 | 0.0014193608279785659 | 5.505666516596453   | NA                    |
+| GPU    | 0.18099474000000002    | 0.17677 | 0.20224045 | 0.2347757             | 0.17174 | 0.23633 | 0.012163955088391276  | 0.06720612482103776 | 0.0014243507850007133 |
++--------+------------------------+---------+------------+-----------------------+---------+---------+-----------------------+---------------------+-----------------------+
+
+[stage07] accuracy detail
++---------------------+-----+------+-------------+---------------+-------------+----------------+---------------------------------+--------+
+| reference           | mse | rmse | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                  | status |
++---------------------+-----+------+-------------+---------------+-------------+----------------+---------------------------------+--------+
+| typed_cpu_reference | 0   | 0    | 0           | 0             | NA          | NA             | typed_output_shape_dtype_finite | PASS   |
++---------------------+-----+------+-------------+---------------+-------------+----------------+---------------------------------+--------+
+
+[stage07] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1375664      | 1378976     | 1378976    | 3312        |
+| CPU    | rss        | 69615616     | 69615616    | 69615616   | 0           |
+| GPU    | cpu_heap   | 1379040      | 1381856     | 1381856    | 2816        |
+| GPU    | rss        | 69615616     | 69615616    | 69615616   | 0           |
+| GPU    | gpu_memory | 341000192    | 341000192   | 341000192  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage07] input content
++------------+-------+-------+----------+-------------------------------+---------------------+
+| input_name | shape | dtype | elements | generator                     | values(head4/tail2) |
++------------+-------+-------+----------+-------------------------------+---------------------+
+| pfa        | [1]   | INT32 | 1        | exact_scalar_from_case_config | value=1             |
++------------+-------+-------+----------+-------------------------------+---------------------+
+
+[stage07] case parameters
++------------------------------------------------------------+
+| parameters                                                 |
++------------------------------------------------------------+
+| {"equivalent_work":"10^4","pfa":1,"reference_count":16384} |
++------------------------------------------------------------+
+
+[stage07] input and output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | afe70ce678554fec4007125b74caa7d26ec1f7bbec7036fd00d0e71507e0ecf5 | af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc |
+| GPU    | afe70ce678554fec4007125b74caa7d26ec1f7bbec7036fd00d0e71507e0ecf5 | af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage07] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+
+| requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              |
++-----------------+--------------------+--------------+------------------------------------------------------------------+
+| INT32           | INT32              | FP64         | afe70ce678554fec4007125b74caa7d26ec1f7bbec7036fd00d0e71507e0ecf5 |
++-----------------+--------------------+--------------+------------------------------------------------------------------+
+
+[stage07] evidence files
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind        | path                                                                                                                                                                                                                                         |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| main_csv    | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4/operator_main_results_cfar_alpha_not_applicable_20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4.csv   |
+| timing_csv  | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4/operator_timing_samples_cfar_alpha_not_applicable_20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4.csv |
+| memory_csv  | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4/operator_radartools_cfar_alpha_memory_trace_not_applicable.csv                                                  |
+| dtype_csv   | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4/operator_dtype_evidence_cfar_alpha_not_applicable_20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4.csv |
+| report_json | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4/operator_cfar_alpha_report.json                                                                                 |
+| summary_txt | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4/operator_cfar_alpha_summary.txt                                                                                 |
+| full_log    | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4/operator_cfar_alpha_full.log                                                                                    |
+| result_dir  | /tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/formal/20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4                                                                                                                 |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

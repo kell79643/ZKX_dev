@@ -1,0 +1,79 @@
+command=build_stage08_b06_vectorstrength_89aacbf48da8/stage08_spectral_analysis_vectorstrength --dtype INT16 --events 64 --periods 16 --period-mode array --seed 86540002 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage08_input_preview_b06_vectorstrength_9b01dadd36f6/formal/20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a/vectorstrength_probe_raw.json
+{"run_id": "20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a", "case_id": "vectorstrength__vectorstrength_int16_10e3__796689102a8ab8a6", "operator_name": "vectorstrength", "scale_id": "vectorstrength_int16_10e3", "requested_dtype": "INT16", "output_dtype": "FP64_pair", "backend": "not_applicable", "event_count": 64, "period_count": 16, "period_mode": "array", "scientific_work": 1024, "output_count": 16, "scalar_period": false, "warmup_runs": 20, "measured_runs": 100, "mse": 1.08035e-11, "rmse": 3.28687e-06, "relative_l2": 3.00356e-06, "relative_linf": 3.58534e-06, "status": "PASS", "error_code": "OK"}
+[stage08] identity and status
++----------------+---------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| target         | scale_id                  | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code |
++----------------+---------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| vectorstrength | vectorstrength_int16_10e3 | CPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| vectorstrength | vectorstrength_int16_10e3 | GPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++----------------+---------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage08] timing detail
++--------+------------+--------------------+--------------------+----------------------+----------+----------+-----------------------+---------------------+---------------------+
+| device | mean_ms    | p50_ms             | p95_ms             | p99_ms               | min_ms   | max_ms   | std_ms                | cv                  | speedup             |
++--------+------------+--------------------+--------------------+----------------------+----------+----------+-----------------------+---------------------+---------------------+
+| CPU    | 0.05222379 | 0.05209            | 0.05225155         | 0.052776600000000055 | 0.052    | 0.06333  | 0.0011201102293524506 | 0.02144827538086475 | NA                  |
+| GPU    | 0.57170361 | 0.5650029999999999 | 0.6250470499999999 | 0.6622615100000004   | 0.547853 | 0.736364 | 0.026557097152699126  | 0.0464525615864121  | 0.09134766527012134 |
++--------+------------+--------------------+--------------------+----------------------+----------+----------+-----------------------+---------------------+---------------------+
+
+[stage08] accuracy detail
++--------------------------------------------+-------------+-------------+-------------+---------------+-------------+----------------+---------------------------------------+--------+
+| accuracy_reference                         | mse         | rmse        | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                        | status |
++--------------------------------------------+-------------+-------------+-------------+---------------+-------------+----------------+---------------------------------------+--------+
+| cpu_vectorstrength_fp64_trigonometric_mean | 1.08035e-11 | 3.28687e-06 | 3.00356e-06 | 3.58534e-06   | NA          | NA             | strength_phase_pair_period_mode=array | PASS   |
++--------------------------------------------+-------------+-------------+-------------+---------------+-------------+----------------+---------------------------------------+--------+
+
+[stage08] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1417808      | 1421200     | 1421200    | 3392        |
+| CPU    | rss        | 70180864     | 70180864    | 70180864   | 0           |
+| GPU    | cpu_heap   | 1421200      | 1424416     | 1424832    | 3216        |
+| GPU    | rss        | 70180864     | 70180864    | 70180864   | 0           |
+| GPU    | gpu_memory | 341000192    | 341000192   | 341000192  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage08] input/output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | 796689102a8ab8a6e213a896bd82046282dacba5919e53795572cd7077336765 | 2a4134a2aa14c5f7eaf4a7752f938c29ada8e8f3b297357603a66cd91e41d79c |
+| GPU    | 796689102a8ab8a6e213a896bd82046282dacba5919e53795572cd7077336765 | 263b19987e85484187a1dec5a78535452b6b975e3744e2cdc7790cd7836f6c18 |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage08] input content
++------------+-------+-------+----------+---------------------------------------------------+------------------------------------------+
+| input_name | shape | dtype | elements | generator                                         | values(head4/tail2)                      |
++------------+-------+-------+----------+---------------------------------------------------+------------------------------------------+
+| events     | [64]  | INT16 | 64       | deterministic_events(seed=86540002,integral=true) | i=0:2;i=1:5;i=2:8;i=3:11;i=62:95;i=63:99 |
+| periods    | [16]  | INT16 | 16       | deterministic_period_grid(integral=true)          | i=0:3;i=1:4;i=2:5;i=3:6;i=14:17;i=15:18  |
++------------+-------+-------+----------+---------------------------------------------------+------------------------------------------+
+
+[stage08] case parameters
++----------------------------------------------------------------------------------------+
+| parameters                                                                             |
++----------------------------------------------------------------------------------------+
+| {"dtype":"INT16","events":"64","period-mode":"array","periods":"16","seed":"86540002"} |
++----------------------------------------------------------------------------------------+
+
+[stage08] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| INT16           | NA                 | FP64_pair    | 796689102a8ab8a6e213a896bd82046282dacba5919e53795572cd7077336765 | PASS   |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+
+[stage08] evidence files
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind           | path                                                                                                                                                                                                                                                            |
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dtype_csv      | /tmp/ZKX_dev/results/stage08_input_preview_b06_vectorstrength_9b01dadd36f6/formal/20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a/operator_dtype_evidence_vectorstrength_not_applicable_20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a.csv |
+| main_csv       | /tmp/ZKX_dev/results/stage08_input_preview_b06_vectorstrength_9b01dadd36f6/formal/20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a/operator_main_results_vectorstrength_not_applicable_20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a.csv   |
+| memory_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b06_vectorstrength_9b01dadd36f6/formal/20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a/operator_spectral_analysis_vectorstrength_memory_trace_not_applicable.csv                                           |
+| timing_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b06_vectorstrength_9b01dadd36f6/formal/20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a/operator_timing_samples_vectorstrength_not_applicable_20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a.csv |
+| full_log       | /tmp/ZKX_dev/results/stage08_input_preview_b06_vectorstrength_9b01dadd36f6/formal/20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a/operator_vectorstrength_full.log                                                                                    |
+| report_json    | /tmp/ZKX_dev/results/stage08_input_preview_b06_vectorstrength_9b01dadd36f6/formal/20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a/operator_vectorstrength_report.json                                                                                 |
+| summary_txt    | /tmp/ZKX_dev/results/stage08_input_preview_b06_vectorstrength_9b01dadd36f6/formal/20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a/operator_vectorstrength_summary.txt                                                                                 |
+| probe_raw_json | /tmp/ZKX_dev/results/stage08_input_preview_b06_vectorstrength_9b01dadd36f6/formal/20260810T090000Z_9b01dadd36f6_stage08_b06_formal_8675000a/vectorstrength_probe_raw.json                                                                                       |
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

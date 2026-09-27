@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+waveforms/unit_impulse            invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: waveforms.unit_impulse.invalid_shape.provide_empty_shape
+  abnormal_input: mutation=provide empty shape
+  error_message: waveforms::unit_impulse检测到非法shape：mutation=provide empty shape
+  backend_error: code=NA name=NA message=NA
+waveforms/unit_impulse            invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: waveforms.unit_impulse.invalid_parameter.impulse_index_is_outside_shape
+  abnormal_input: mutation=impulse index is outside shape
+  error_message: waveforms::unit_impulse检测到非法参数：mutation=impulse index is outside shape
+  backend_error: code=NA name=NA message=NA
+waveforms/unit_impulse            invalid_dtype           INVALID_DTYPE            INVALID_DTYPE            INVALID_DTYPE            true       PASS    
+  case_id: waveforms.unit_impulse.invalid_dtype.request_complex_business_input
+  abnormal_input: mutation=request complex business input
+  error_message: waveforms::unit_impulse检测到非法dtype：mutation=request complex business input
+  backend_error: code=NA name=NA message=NA
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

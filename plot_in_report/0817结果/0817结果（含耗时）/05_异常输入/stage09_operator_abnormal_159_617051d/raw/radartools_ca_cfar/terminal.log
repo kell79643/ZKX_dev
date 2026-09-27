@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+radartools/ca_cfar                invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: radartools.ca_cfar.invalid_shape.provide_rank_greater_than_two
+  abnormal_input: mutation=provide rank greater than two
+  error_message: radartools::ca_cfar检测到非法shape：mutation=provide rank greater than two
+  backend_error: code=NA name=NA message=NA
+radartools/ca_cfar                invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: radartools.ca_cfar.invalid_parameter.set_pfa_outside_0_1
+  abnormal_input: mutation=set pfa outside valid probability interval
+  error_message: radartools::ca_cfar检测到非法参数：mutation=set pfa outside valid probability interval
+  backend_error: code=NA name=NA message=NA
+radartools/ca_cfar                backend_call_failure    CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       true       PASS    
+  case_id: radartools.ca_cfar.backend_call_failure.inject_cuda_cfar_kernel_failure
+  abnormal_input: mutation=inject CUDA CFAR kernel failure
+  error_message: radartools::ca_cfar捕获CUDA Runtime失败：mutation=inject CUDA CFAR kernel failure；cudaErrorInvalidDevice（invalid device ordinal）
+  backend_error: code=101 name=cudaErrorInvalidDevice message=invalid device ordinal
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

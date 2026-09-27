@@ -1,0 +1,79 @@
+command=build_stage07_b04_hamming_v2_db9b07e/stage07_hamming --dtype INT8 --n 128 --taps 1 --cutoff 60 --fs 1000 --sym true --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e/hamming_probe_raw.json
+STAGE07_FILTER_PROBE PASS operator=hamming dtype=INT8
+{"run_id": "20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e", "case_id": "hamming__hamming_int8_10e2__7d616613abe910dc", "operator_name": "hamming", "task_name": "Task2", "step_name": "Step2", "scale_id": "hamming_int8_10e2", "requested_dtype": "INT8", "input_content": [{"input_name": "request_spec", "shape": "[1]", "dtype": "INT8", "element_count": "1", "generator": "typed_hamming_request", "preview_head4_tail2": "i=0:n=128,sym=true,dtype=INT8"}], "case_parameters": {"n": 128, "sym": true, "output_dtype": "FP32_TASK_RESIDENT", "equivalent_work": "10^2"}, "output_dtype": "FP32", "backend": "not_applicable", "warmup_runs": 20, "measured_runs": 100, "mse": 3.45947e-15, "rmse": 5.88173e-08, "relative_l2": 9.36627e-08, "relative_linf": 1.78839e-07, "actual_input_digest": "7d616613abe910dc551dd0a457994e80b6a91385dfb84df6584c9f5111cfbe75", "typed_array_digest": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a", "status": "PASS", "error_code": "OK"}
+[stage07] identity and status
++---------+-------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| target  | scale_id          | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code |
++---------+-------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| hamming | hamming_int8_10e2 | CPU    | not_applicable | INT8  | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| hamming | hamming_int8_10e2 | GPU    | not_applicable | INT8  | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++---------+-------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage07] timing detail
++--------+------------+----------+----------------------+---------------------+----------+----------+-----------------------+--------------------+---------------------+
+| device | mean_ms    | p50_ms   | p95_ms               | p99_ms              | min_ms   | max_ms   | std_ms                | cv                 | speedup             |
++--------+------------+----------+----------------------+---------------------+----------+----------+-----------------------+--------------------+---------------------+
+| CPU    | 0.00489553 | 0.00489  | 0.004990499999999999 | 0.0050402           | 0.00485  | 0.00506  | 3.728336224108551e-05 | 0.0076157969088302 | NA                  |
+| GPU    | 0.10680458 | 0.105245 | 0.11359449999999997  | 0.13243520000000014 | 0.101931 | 0.159581 | 0.007016553634342148  | 0.0656952504690543 | 0.04583633023977062 |
++--------+------------+----------+----------------------+---------------------+----------+----------+-----------------------+--------------------+---------------------+
+
+[stage07] accuracy detail
++-----------------------------------+-------------+-------------+-------------+---------------+-------------+----------------+----------------------------------------------------------+--------+
+| reference                         | mse         | rmse        | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                                           | status |
++-----------------------------------+-------------+-------------+-------------+---------------+-------------+----------------+----------------------------------------------------------+--------+
+| typed_cpu_task_resident_reference | 3.45947e-15 | 5.88173e-08 | 9.36627e-08 | 1.78839e-07   | NA          | NA             | output_count=128;output_dtype=FP32;task_gpu_call=present | PASS   |
++-----------------------------------+-------------+-------------+-------------+---------------+-------------+----------------+----------------------------------------------------------+--------+
+
+[stage07] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1396240      | 1401136     | 1401136    | 4896        |
+| CPU    | rss        | 69992448     | 69992448    | 69992448   | 0           |
+| GPU    | cpu_heap   | 1401232      | 1405120     | 1405120    | 3888        |
+| GPU    | rss        | 69992448     | 70492160    | 70492160   | 499712      |
+| GPU    | gpu_memory | 341000192    | 341000192   | 341000192  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage07] input content
++--------------+-------+-------+----------+-----------------------+-------------------------------+
+| input_name   | shape | dtype | elements | generator             | values(head4/tail2)           |
++--------------+-------+-------+----------+-----------------------+-------------------------------+
+| request_spec | [1]   | INT8  | 1        | typed_hamming_request | i=0:n=128,sym=true,dtype=INT8 |
++--------------+-------+-------+----------+-----------------------+-------------------------------+
+
+[stage07] case parameters
++-----------------------------------------------------------------------------------+
+| parameters                                                                        |
++-----------------------------------------------------------------------------------+
+| {"equivalent_work":"10^2","n":128,"output_dtype":"FP32_TASK_RESIDENT","sym":true} |
++-----------------------------------------------------------------------------------+
+
+[stage07] input and output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | 7d616613abe910dc551dd0a457994e80b6a91385dfb84df6584c9f5111cfbe75 | 3ef49f928a9bcdc62f55ad0e0bb223886237274a9dcfd14088548f5ac5a61b4c |
+| GPU    | 7d616613abe910dc551dd0a457994e80b6a91385dfb84df6584c9f5111cfbe75 | 57e848bc1f5e0d624fa1cda2cdd6c770b02a3654fc56bb0ff5a5f7d92ec275f9 |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage07] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+------------------------------------------------------------------+----------------------+
+| requested_dtype | config_input_dtype | output_dtype | typed_array_digest                                               | actual_input_digest                                              | task_gpu_call_status |
++-----------------+--------------------+--------------+------------------------------------------------------------------+------------------------------------------------------------------+----------------------+
+| INT8            | INT8               | FP32         | 4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a | 7d616613abe910dc551dd0a457994e80b6a91385dfb84df6584c9f5111cfbe75 | proved_gpu_cpu       |
++-----------------+--------------------+--------------+------------------------------------------------------------------+------------------------------------------------------------------+----------------------+
+
+[stage07] evidence files
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind        | path                                                                                                                                                                                                                             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| main_csv    | /tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e/operator_main_results_hamming_not_applicable_20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e.csv   |
+| timing_csv  | /tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e/operator_timing_samples_hamming_not_applicable_20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e.csv |
+| memory_csv  | /tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e/operator_windows_hamming_memory_trace_not_applicable.csv                                                     |
+| dtype_csv   | /tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e/operator_dtype_evidence_hamming_not_applicable_20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e.csv |
+| report_json | /tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e/operator_hamming_report.json                                                                                 |
+| summary_txt | /tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e/operator_hamming_summary.txt                                                                                 |
+| full_log    | /tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e/operator_hamming_full.log                                                                                    |
+| result_dir  | /tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e                                                                                                              |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

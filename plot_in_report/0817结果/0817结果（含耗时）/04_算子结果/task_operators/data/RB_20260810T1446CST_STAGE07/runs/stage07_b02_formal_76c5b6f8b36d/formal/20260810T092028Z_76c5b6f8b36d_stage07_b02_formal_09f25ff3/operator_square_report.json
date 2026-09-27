@@ -1,0 +1,37 @@
+{
+  "run_id": "20260810T092028Z_76c5b6f8b36d_stage07_b02_formal_09f25ff3",
+  "case_id": "square__square_int8_10e4__eee14f803f408920",
+  "operator_name": "square",
+  "task_name": "Task2",
+  "step_name": "Step1",
+  "scale_id": "square_int8_10e4",
+  "requested_dtype": "INT8",
+  "config_input_dtype": "INT8",
+  "input_content": [
+    {
+      "input_name": "phase",
+      "shape": "[16384]",
+      "dtype": "INT8",
+      "element_count": "16384",
+      "generator": "quantized_periodic_phase_8cycles(floor(16*pi*i/(N-1)))",
+      "preview_head4_tail2": "i=0:0;i=1:0;i=2:0;i=3:0;i=16382:50;i=16383:50"
+    }
+  ],
+  "case_parameters": {
+    "duty": 0.35,
+    "phase_cycles": 8,
+    "output_dtype": "FP64"
+  },
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "actual_input_digest": "eee14f803f4089208ca854f14d178e46dbb0cab179b737407d5feffee25d92e5",
+  "typed_array_digest": "76eb7624d720bc376a50fb62c8f6d7aeacbad474bc00621ab2e5214cfe48da53",
+  "status": "PASS",
+  "error_code": "OK"
+}

@@ -1,0 +1,21 @@
+run_id=20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e
+case_id=hamming__hamming_int8_10e2__7d616613abe910dc
+operator_name=hamming
+task_name=Task2
+step_name=Step2
+scale_id=hamming_int8_10e2
+requested_dtype=INT8
+input_content=[{'input_name': 'request_spec', 'shape': '[1]', 'dtype': 'INT8', 'element_count': '1', 'generator': 'typed_hamming_request', 'preview_head4_tail2': 'i=0:n=128,sym=true,dtype=INT8'}]
+case_parameters={'n': 128, 'sym': True, 'output_dtype': 'FP32_TASK_RESIDENT', 'equivalent_work': '10^2'}
+output_dtype=FP32
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+mse=3.45947e-15
+rmse=5.88173e-08
+relative_l2=9.36627e-08
+relative_linf=1.78839e-07
+actual_input_digest=7d616613abe910dc551dd0a457994e80b6a91385dfb84df6584c9f5111cfbe75
+typed_array_digest=4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a
+status=PASS
+error_code=OK

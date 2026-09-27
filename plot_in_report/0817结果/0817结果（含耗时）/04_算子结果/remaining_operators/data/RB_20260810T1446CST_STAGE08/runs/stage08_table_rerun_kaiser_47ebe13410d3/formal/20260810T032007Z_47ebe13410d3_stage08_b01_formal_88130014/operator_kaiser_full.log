@@ -1,0 +1,51 @@
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/configs/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int16_10e3 dtype=INT16 sym=true backend=not_applicable
+[stage08-b01] dtype_semantics=actual_typed_scalar_input typed_input_count=1 actual_input_digest=74709b6e0b9bcf4d6200d5bb50f3827293e1db326fc430281aa5aca886111923
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.049087119999999984 gpu_mean_ms=0.2587820999999999 speedup=0.18968514437435974
+[stage08-b01] mse=1.6034510753045315e-14 rmse=1.2662744865567383e-07 relative_l2=2.2527289145725902e-07 relative_linf=4.9332858766712288e-07
+[stage08-b01] resources=available cuda_event_ms=0.29094401001930237
+[stage08-b01] status=PASS error_code=OK
+[stage08] identity and status
+target | scale_id          | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code
+kaiser | kaiser_int16_10e3 | CPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+kaiser | kaiser_int16_10e3 | GPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+
+[stage08] timing detail
+device | mean_ms              | p50_ms               | p95_ms               | p99_ms               | min_ms               | max_ms               | std_ms                | cv                   | speedup            
+CPU    | 0.049087119999999984 | 0.048911000000000003 | 0.049131000000000001 | 0.049274400000000065 | 0.048830999999999999 | 0.062481000000000002 | 0.0013490160583180619 | 0.027482077952792144 | NA                 
+GPU    | 0.2587820999999999   | 0.25915250000000001  | 0.26958549999999998  | 0.27352578999999999  | 0.243002             | 0.27677200000000002  | 0.0056079358047324314 | 0.021670493456589283 | 0.18968514437435974
+
+[stage08] accuracy detail
+accuracy_reference  | mse                    | rmse                   | relative_l2            | relative_linf          | exact_match | mismatch_count | semantic_check                                                                                    | status
+cpu_typed_reference | 1.6034510753045315e-14 | 1.2662744865567383e-07 | 2.2527289145725902e-07 | 4.9332858766712288e-07 | NA          | NA             | finite_normalized_fp64_window_shape_beta_and_symmetry_match_cpu:shape=[1000];finite=true;sym=true | PASS  
+
+[stage08] resource detail
+device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes
+CPU    | cpu_heap   | 1461632      | 1464944     | 1471840    | 3312       
+CPU    | rss        | 71122944     | 71122944    | 71122944   | 0          
+GPU    | cpu_heap   | 1464944      | 1467920     | 1474976    | 2976       
+GPU    | rss        | 71122944     | 71122944    | 71122944   | 0          
+GPU    | gpu_memory | 357777408    | 357777408   | 357777408  | 0          
+
+[stage08] input/output identity
+device | input_digest                                                     | output_digest                                                   
+CPU    | 74709b6e0b9bcf4d6200d5bb50f3827293e1db326fc430281aa5aca886111923 | 7fa02561634a7aa08dd83cdeb7a4b906d5fc46fe038ad25246b64d3ac7699471
+GPU    | 74709b6e0b9bcf4d6200d5bb50f3827293e1db326fc430281aa5aca886111923 | 88d54eb80cb0a025950b06c04d1b111581f59cfe97cb686cf7f97872498f6e39
+
+[stage08] dtype evidence
+requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status
+INT16           | INT16              | FP64         | 74709b6e0b9bcf4d6200d5bb50f3827293e1db326fc430281aa5aca886111923 | PASS  
+
+[stage08] evidence files
+kind        | path                                                                                                                                                                                                                                     
+main_csv    | /tmp/ZKX_dev/results/stage08_table_rerun_kaiser_47ebe13410d3/formal/20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014/operator_main_results_kaiser_not_applicable_20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014.csv  
+timing_csv  | /tmp/ZKX_dev/results/stage08_table_rerun_kaiser_47ebe13410d3/formal/20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014/operator_timing_samples_kaiser_not_applicable_20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014.csv
+memory_csv  | /tmp/ZKX_dev/results/stage08_table_rerun_kaiser_47ebe13410d3/formal/20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014/operator_windows_kaiser_memory_trace_not_applicable.csv                                                    
+dtype_csv   | /tmp/ZKX_dev/results/stage08_table_rerun_kaiser_47ebe13410d3/formal/20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014/operator_dtype_evidence_kaiser_not_applicable_20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014.csv
+module_csv  | /tmp/ZKX_dev/results/stage08_table_rerun_kaiser_47ebe13410d3/formal/20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014/windows_batch01_module_summary_not_applicable_20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014.csv
+report_json | /tmp/ZKX_dev/results/stage08_table_rerun_kaiser_47ebe13410d3/formal/20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014/operator_kaiser_report.json                                                                                
+summary_txt | /tmp/ZKX_dev/results/stage08_table_rerun_kaiser_47ebe13410d3/formal/20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014/operator_kaiser_summary.txt                                                                                
+full_log    | /tmp/ZKX_dev/results/stage08_table_rerun_kaiser_47ebe13410d3/formal/20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014/operator_kaiser_full.log                                                                                   
+results_dir | /tmp/ZKX_dev/results/stage08_table_rerun_kaiser_47ebe13410d3/formal/20260810T032007Z_47ebe13410d3_stage08_b01_formal_88130014                                                                                                            

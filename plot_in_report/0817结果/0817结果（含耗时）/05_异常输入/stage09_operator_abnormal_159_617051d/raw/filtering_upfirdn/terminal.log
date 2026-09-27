@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+filtering/upfirdn                 invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: filtering.upfirdn.invalid_shape.filter_taps_are_empty
+  abnormal_input: mutation=filter taps are empty
+  error_message: filtering::upfirdn检测到非法shape：mutation=filter taps are empty
+  backend_error: code=NA name=NA message=NA
+filtering/upfirdn                 invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: filtering.upfirdn.invalid_parameter.set_up_0_or_down_0
+  abnormal_input: mutation=set up=0 or down=0
+  error_message: filtering::upfirdn检测到非法参数：mutation=set up=0 or down=0
+  backend_error: code=NA name=NA message=NA
+filtering/upfirdn                 backend_call_failure    CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       true       PASS    
+  case_id: filtering.upfirdn.backend_call_failure.inject_cuda_polyphase_kernel_failure
+  abnormal_input: mutation=inject CUDA polyphase kernel failure
+  error_message: filtering::upfirdn捕获CUDA Runtime失败：mutation=inject CUDA polyphase kernel failure；cudaErrorInvalidDevice（invalid device ordinal）
+  backend_error: code=101 name=cudaErrorInvalidDevice message=invalid device ordinal
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

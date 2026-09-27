@@ -1,0 +1,2 @@
+run_id,case_id,operator_name,requested_dtype,config_input_dtype,dtype_semantics,typed_input_count,typed_input_manifest,actual_input_digest,output_dtype,status,error_code
+20260810T032008Z_47ebe13410d3_stage08_b01_formal_88130018,kaiser__kaiser_int8_10e2__1a0a1d4d3712cd66__sym,kaiser,INT8,INT8,actual_typed_scalar_input,1,length:INT32=100|sym:BOOL=true|beta:INT8:bytes=08,1a0a1d4d3712cd66387f4ae7a21ab736dcb7ea5c871b5242e73bb02aca84511b,FP64,PASS,OK

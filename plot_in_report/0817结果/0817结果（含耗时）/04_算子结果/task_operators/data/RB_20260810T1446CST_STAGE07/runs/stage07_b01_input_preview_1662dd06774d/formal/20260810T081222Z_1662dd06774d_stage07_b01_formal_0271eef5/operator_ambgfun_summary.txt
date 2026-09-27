@@ -1,0 +1,22 @@
+run_id=20260810T081222Z_1662dd06774d_stage07_b01_formal_0271eef5
+case_id=ambgfun__amb_fp16_10e4__bdcb000e86ed2f4d
+operator_name=ambgfun
+scale_id=amb_fp16_10e4
+requested_dtype=FP16
+config_input_dtype=ComplexFP16
+input_content=[{'input_name': 'waveform', 'shape': '[64]', 'dtype': 'ComplexFP16', 'element_count': '64', 'generator': 'complex_modular(seed=19,integral=false)', 'preview_head4_tail2': 'i=0:(0.75,-0.75);i=1:(1.25,1);i=2:(-1,0.5);i=3:(-0.5,0);i=62:(-1.25,-0.25);i=63:(-0.75,-0.75)'}]
+case_parameters={'cut': '2d', 'fs': 64, 'prf': 8, 'expected_output_shape': [127, 128]}
+output_dtype=FP32
+backend=fft_thrust
+warmup_runs=20
+measured_runs=100
+mse=1.01024e-15
+rmse=3.17843e-08
+relative_l2=3.58191e-07
+relative_linf=3.57628e-07
+exact_match=True
+mismatch_count=0
+semantic_check=True
+actual_input_digest=bdcb000e86ed2f4d49b1adcc0cadaa9feb7c45464438612f07313d09de5b04ca
+status=PASS
+error_code=OK

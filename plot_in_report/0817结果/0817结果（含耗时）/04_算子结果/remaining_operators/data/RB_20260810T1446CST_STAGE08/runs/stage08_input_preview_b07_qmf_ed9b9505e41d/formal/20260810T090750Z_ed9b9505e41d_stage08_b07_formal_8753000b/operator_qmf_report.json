@@ -1,0 +1,34 @@
+{
+  "run_id": "20260810T090750Z_ed9b9505e41d_stage08_b07_formal_8753000b",
+  "case_id": "qmf__qmf_int16_10e4__a155b2640c286884",
+  "operator_name": "qmf",
+  "scale_id": "qmf_int16_10e4",
+  "requested_dtype": "INT16",
+  "output_dtype": "INT64",
+  "backend": "not_applicable",
+  "input_count": 10000,
+  "output_count": 10000,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "hk",
+      "shape": "[10000]",
+      "dtype": "INT16",
+      "element_count": "10000",
+      "generator": "qmf_sinusoid_or_modular(seed=87300012,integral=true)",
+      "preview_head4_tail2": "i=0:-40;i=1:-33;i=2:-26;i=3:-19;i=9998:9;i=9999:16"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT16",
+    "elements": "10000",
+    "seed": "87300012"
+  }
+}

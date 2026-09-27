@@ -1,0 +1,69 @@
+command=build_stage08_b03_channelize_poly_0b2008e7f76a/stage08_filtering_channelize_poly --dtype FP32 --x-count 1024 --h-count 64 --n-chans 8 --seed 83010002 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage08_table_rerun_channelize_poly_47ebe13410d3/formal/20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001/channelize_poly_probe_raw.json
+STAGE08_CHANNELIZE_PROBE PASS dtype=FP32 x=1024 h=64 n_chans=8 backend=fft_thrust
+status=PASS
+error_code=OK
+case_id=channelize_poly__channelize_poly_fp32_10e3__b71186f739fb4d74
+{"actual_input_digest": "b71186f739fb4d74e354dfb4c54ecc3f4eacbaf1254621470c3c8d3165e1c401", "backend": "fft_thrust", "case_id": "channelize_poly__channelize_poly_fp32_10e3__b71186f739fb4d74", "compute_dtype": "FP32", "dtype_semantics": "actual_typed_array_inputs_fp32_compute_extension", "error_code": "OK", "fft_dtype": "ComplexFP32", "measured_runs": 100, "metrics": {"mse": 3.539430846934838e-14, "relative_l2": 4.9674633298089e-08, "relative_linf": 6.136634819798613e-08, "rmse": 1.8813375154221631e-07}, "operator_name": "channelize_poly", "output_dtype": "ComplexFP32", "requested_dtype": "FP32", "run_id": "20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001", "scale_id": "channelize_poly_fp32_10e3", "schema_version": 1, "status": "PASS", "typed_input_count": 2, "warmup_runs": 20}
+[stage08] identity and status
++-----------------+---------------------------+--------+------------+-------+--------+----------+--------------------------+--------+------------+
+| target          | scale_id                  | device | backend    | dtype | warmup | measured | timing_scope             | status | error_code |
++-----------------+---------------------------+--------+------------+-------+--------+----------+--------------------------+--------+------------+
+| channelize_poly | channelize_poly_fp32_10e3 | CPU    | fft_thrust | FP32  | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| channelize_poly | channelize_poly_fp32_10e3 | GPU    | fft_thrust | FP32  | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++-----------------+---------------------------+--------+------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage08] timing detail
++--------+---------------------+---------------------+------------+---------------------+---------------------+---------------------+----------------------+-----------------------+--------------------+
+| device | mean_ms             | p50_ms              | p95_ms     | p99_ms              | min_ms              | max_ms              | std_ms               | cv                    | speedup            |
++--------+---------------------+---------------------+------------+---------------------+---------------------+---------------------+----------------------+-----------------------+--------------------+
+| CPU    | 1.1941450300000001  | 1.1914555           | 1.2028725  | 1.2100300100000003  | 1.18784             | 1.265471            | 0.008671770178521802 | 0.0072619070218981705 | NA                 |
+| GPU    | 0.48215159000000002 | 0.47799400000000003 | 0.49432555 | 0.51265693000000145 | 0.46692400000000001 | 0.78321700000000005 | 0.031051982470397931 | 0.064402945286145236  | 2.4767003879423068 |
++--------+---------------------+---------------------+------------+---------------------+---------------------+---------------------+----------------------+-----------------------+--------------------+
+
+[stage08] accuracy detail
++-----------------------------+------------------------+------------------------+------------------------+-----------------------+-------------+----------------+--------------------------------------------------------------------------------+--------+
+| accuracy_reference          | mse                    | rmse                   | relative_l2            | relative_linf         | exact_match | mismatch_count | semantic_check                                                                 | status |
++-----------------------------+------------------------+------------------------+------------------------+-----------------------+-------------+----------------+--------------------------------------------------------------------------------+--------+
+| cpu_typed_double_direct_dft | 3.5394308469348379e-14 | 1.8813375154221631e-07 | 4.9674633298088998e-08 | 6.136634819798613e-08 | NA          | NA             | finite_complex_fp32_channel_major_shape_matches_cpu:shape=[8, 128];finite=true | PASS   |
++-----------------------------+------------------------+------------------------+------------------------+-----------------------+-------------+----------------+--------------------------------------------------------------------------------+--------+
+
+[stage08] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1499248      | 1514656     | 1514656    | 15408       |
+| CPU    | rss        | 70451200     | 70492160    | 70492160   | 40960       |
+| GPU    | cpu_heap   | 1514656      | 1526192     | 1526192    | 11536       |
+| GPU    | rss        | 70492160     | 70492160    | 70492160   | 0           |
+| GPU    | gpu_memory | 357777408    | 357777408   | 357777408  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage08] input/output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | b71186f739fb4d74e354dfb4c54ecc3f4eacbaf1254621470c3c8d3165e1c401 | dc4c3079764903a3924b4eb815fb386bbd7327419293c0ec8f4aefd7dd1bb238 |
+| GPU    | b71186f739fb4d74e354dfb4c54ecc3f4eacbaf1254621470c3c8d3165e1c401 | 0765063ee55ee45109de3af7ce2c2e4af1443f7c30d03bd349922170ee05e989 |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage08] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| FP32            | NA                 | ComplexFP32  | b71186f739fb4d74e354dfb4c54ecc3f4eacbaf1254621470c3c8d3165e1c401 | PASS   |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+
+[stage08] evidence files
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind           | path                                                                                                                                                                                                                                                    |
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| probe_raw_json | /tmp/ZKX_dev/results/stage08_table_rerun_channelize_poly_47ebe13410d3/formal/20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001/channelize_poly_probe_raw.json                                                                                   |
+| related_file   | /tmp/ZKX_dev/results/stage08_table_rerun_channelize_poly_47ebe13410d3/formal/20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001/filtering_batch03_module_summary_fft_thrust_20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001.csv        |
+| full_log       | /tmp/ZKX_dev/results/stage08_table_rerun_channelize_poly_47ebe13410d3/formal/20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001/operator_channelize_poly_full.log                                                                                |
+| report_json    | /tmp/ZKX_dev/results/stage08_table_rerun_channelize_poly_47ebe13410d3/formal/20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001/operator_channelize_poly_report.json                                                                             |
+| summary_txt    | /tmp/ZKX_dev/results/stage08_table_rerun_channelize_poly_47ebe13410d3/formal/20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001/operator_channelize_poly_summary.txt                                                                             |
+| dtype_csv      | /tmp/ZKX_dev/results/stage08_table_rerun_channelize_poly_47ebe13410d3/formal/20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001/operator_dtype_evidence_channelize_poly_fft_thrust_20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001.csv |
+| memory_csv     | /tmp/ZKX_dev/results/stage08_table_rerun_channelize_poly_47ebe13410d3/formal/20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001/operator_filtering_channelize_poly_memory_trace_fft_thrust.csv                                                   |
+| main_csv       | /tmp/ZKX_dev/results/stage08_table_rerun_channelize_poly_47ebe13410d3/formal/20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001/operator_main_results_channelize_poly_fft_thrust_20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001.csv   |
+| timing_csv     | /tmp/ZKX_dev/results/stage08_table_rerun_channelize_poly_47ebe13410d3/formal/20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001/operator_timing_samples_channelize_poly_fft_thrust_20260810T032154Z_47ebe13410d3_stage08_b03_formal_88300001.csv |
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

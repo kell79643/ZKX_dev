@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+windows/chebwin                   invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: windows.chebwin.invalid_shape.set_length_1
+  abnormal_input: mutation=set length=-1
+  error_message: windows::chebwin检测到非法shape：mutation=set length=-1
+  backend_error: code=NA name=NA message=NA
+windows/chebwin                   invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: windows.chebwin.invalid_parameter.provide_non_finite_attenuation
+  abnormal_input: mutation=provide non-finite attenuation
+  error_message: windows::chebwin检测到非法参数：mutation=provide non-finite attenuation
+  backend_error: code=NA name=NA message=NA
+windows/chebwin                   backend_call_failure    BACKEND_ERROR            BACKEND_ERROR            BACKEND_ERROR            true       PASS    
+  case_id: windows.chebwin.backend_call_failure.inject_fft_failure_before_output_consumption
+  abnormal_input: mutation=inject FFT failure before output consumption
+  error_message: windows::chebwin捕获FFT后端失败：mutation=inject FFT failure before output consumption；CUFFT_INVALID_SIZE（controlled dlfft-compatible status injection: invalid FFT size）
+  backend_error: code=8 name=CUFFT_INVALID_SIZE message=controlled dlfft-compatible status injection: invalid FFT size
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

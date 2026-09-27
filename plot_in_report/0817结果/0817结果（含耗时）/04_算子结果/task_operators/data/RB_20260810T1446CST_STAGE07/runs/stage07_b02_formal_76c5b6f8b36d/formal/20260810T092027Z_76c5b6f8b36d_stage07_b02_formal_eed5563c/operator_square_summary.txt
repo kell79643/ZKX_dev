@@ -1,0 +1,22 @@
+run_id=20260810T092027Z_76c5b6f8b36d_stage07_b02_formal_eed5563c
+case_id=square__square_fp16_10e3__4846868ee364daaf
+operator_name=square
+task_name=Task2
+step_name=Step1
+scale_id=square_fp16_10e3
+requested_dtype=FP16
+config_input_dtype=FP16
+input_content=[{'input_name': 'phase', 'shape': '[1024]', 'dtype': 'FP16', 'element_count': '1024', 'generator': 'periodic_phase_8cycles(16*pi*i/(N-1))', 'preview_head4_tail2': 'i=0:0;i=1:0.0491333008;i=2:0.0982666016;i=3:0.147460938;i=1022:50.21875;i=1023:50.25'}]
+case_parameters={'duty': 0.35, 'phase_cycles': 8, 'output_dtype': 'FP64'}
+output_dtype=FP64
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+mse=0
+rmse=0
+relative_l2=0
+relative_linf=0
+actual_input_digest=4846868ee364daafb867c02587a823e08d46a5cb170520cbeb99312565e3b690
+typed_array_digest=8eff7a8b4aa314a6272b68a0e8f3c5d601508c0d5997c2602073a3b8ad1efd9e
+status=PASS
+error_code=OK

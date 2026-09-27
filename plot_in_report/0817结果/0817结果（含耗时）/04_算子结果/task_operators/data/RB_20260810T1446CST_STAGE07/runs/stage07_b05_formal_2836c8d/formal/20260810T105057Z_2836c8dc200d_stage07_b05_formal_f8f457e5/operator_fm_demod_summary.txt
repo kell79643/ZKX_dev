@@ -1,0 +1,22 @@
+run_id=20260810T105057Z_2836c8dc200d_stage07_b05_formal_f8f457e5
+case_id=fm_demod__fm_demod_fp16_10e3__fbffbae83d8d999f
+operator_name=fm_demod
+task_name=Task2
+step_name=Step4
+scale_id=fm_demod_fp16_10e3
+requested_dtype=FP16
+input_content=[{'input_name': 'analytic', 'shape': '[1024]', 'dtype': 'ComplexFP16', 'element_count': '1024', 'generator': 'deterministic_chirped_analytic_signal', 'preview_head4_tail2': 'i=0:(20,0);i=1:(20,0.5);i=2:(19.96875,0.999511719);i=3:(19.9375,1.49902344);i=1022:(-16.09375,11.8671875);i=1023:(-16.4375,11.3984375)'}]
+case_parameters={'count': 1024, 'output_count': 1023}
+output_dtype=FP32
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+output_count=1023
+mse=1.16093e-14
+rmse=1.07747e-07
+relative_l2=3.97998e-06
+relative_linf=1.6214e-05
+actual_input_digest=fbffbae83d8d999ff18a3e5a8329f1784fe750064c00dabbaa502d218b743c89
+typed_array_digest=20588717c11305444bfc0be18bde6a582777ec771c2b816367dd88f6100d646c
+status=PASS
+error_code=OK

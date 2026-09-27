@@ -1,0 +1,22 @@
+run_id=20260810T092019Z_76c5b6f8b36d_stage07_b02_formal_16eaf3b4
+case_id=chirp__chirp_int16_10e2__44c94a8ce0e38935
+operator_name=chirp
+task_name=Task2
+step_name=Step1
+scale_id=chirp_int16_10e2
+requested_dtype=INT16
+config_input_dtype=INT16
+input_content=[{'input_name': 'time', 'shape': '[128]', 'dtype': 'INT16', 'element_count': '128', 'generator': 'quantized_uniform_time_0_to_31(floor(31*i/(N-1)))', 'preview_head4_tail2': 'i=0:0;i=1:0;i=2:0;i=3:0;i=126:30;i=127:31'}]
+case_parameters={'f0': 0.02, 't1': 31, 'f1': 0.07, 'phase_degrees': 0, 'method': 'linear'}
+output_dtype=INT16
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+mse=0
+rmse=0
+relative_l2=0
+relative_linf=0
+actual_input_digest=44c94a8ce0e389352b7cf3bcd18ebe5caa5e27bd6489c16558dc59e130b4e951
+typed_array_digest=bc14b7074ce6d43ce870563e92705f483e291160d5cd210bc53fffd641a680a0
+status=PASS
+error_code=OK

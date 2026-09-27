@@ -1,0 +1,11 @@
+[stage07-audit] operator summary
++-------------------+-------+--------+
+| operator          | cases | status |
++-------------------+-------+--------+
+| pulse_compression |    15 | PASS   |
+| pulse_doppler     |    15 | PASS   |
+| ambgfun           |    15 | PASS   |
+| ca_cfar           |    15 | PASS   |
+| cfar_alpha        |    15 | PASS   |
++-------------------+-------+--------+
+STAGE07_BATCH01_AUDIT PASS cases=75 failures=0 output=/tmp/ZKX_dev/results/stage07_b01_input_preview_1662dd06774d/stage07_batch01_formal_audit_74daf8b02d52.json

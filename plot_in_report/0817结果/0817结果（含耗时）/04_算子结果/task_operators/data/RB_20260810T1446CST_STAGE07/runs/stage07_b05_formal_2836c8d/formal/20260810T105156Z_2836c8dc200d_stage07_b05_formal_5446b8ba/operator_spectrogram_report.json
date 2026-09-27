@@ -1,0 +1,38 @@
+{
+  "run_id": "20260810T105156Z_2836c8dc200d_stage07_b05_formal_5446b8ba",
+  "case_id": "spectrogram__spectrogram_int16_10e4__ca76325a5d4c8f91",
+  "operator_name": "spectrogram",
+  "task_name": "Task2",
+  "step_name": "Step4",
+  "scale_id": "spectrogram_int16_10e4",
+  "requested_dtype": "INT16",
+  "input_content": [
+    {
+      "input_name": "signal",
+      "shape": "[10000]",
+      "dtype": "INT16",
+      "element_count": "10000",
+      "generator": "task2_signal_mixture",
+      "preview_head4_tail2": "i=0:2;i=1:3;i=2:2;i=3:2;i=9998:6;i=9999:5"
+    }
+  ],
+  "case_parameters": {
+    "count": 10000,
+    "frame": 64,
+    "hop": 32,
+    "output_count": 19904
+  },
+  "output_dtype": "FP32",
+  "backend": "fft_thrust",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "output_count": 19904,
+  "mse": 1.74112e-11,
+  "rmse": 4.17268e-06,
+  "relative_l2": 2.71495e-06,
+  "relative_linf": 3.03329e-06,
+  "actual_input_digest": "ca76325a5d4c8f91d753ea341cd29f17ccb2a40c2f43593da6880c8eaf46b0d6",
+  "typed_array_digest": "200fa6d37cfefaa446227c42f7c9136af33f9018076b2078d5c8053c779b3ad1",
+  "status": "PASS",
+  "error_code": "OK"
+}

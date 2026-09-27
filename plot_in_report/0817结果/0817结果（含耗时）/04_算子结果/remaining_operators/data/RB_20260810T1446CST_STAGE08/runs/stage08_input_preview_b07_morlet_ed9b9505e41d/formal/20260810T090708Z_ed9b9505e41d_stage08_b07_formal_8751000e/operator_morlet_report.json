@@ -1,0 +1,47 @@
+{
+  "run_id": "20260810T090708Z_ed9b9505e41d_stage08_b07_formal_8751000e",
+  "case_id": "morlet__morlet_int8_10e4__8e188e850355d91d",
+  "operator_name": "morlet",
+  "scale_id": "morlet_int8_10e4",
+  "requested_dtype": "INT8",
+  "output_dtype": "ComplexFP64",
+  "backend": "not_applicable",
+  "n": 10000,
+  "frequency": 7,
+  "scale": 3,
+  "complete": true,
+  "output_count": 10000,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 1.33841e-13,
+  "rmse": 3.65843e-07,
+  "relative_l2": 3.17685e-06,
+  "relative_linf": 3.19192e-06,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "frequency",
+      "shape": "scalar",
+      "dtype": "INT8",
+      "element_count": "1",
+      "generator": "configured_typed_scalar",
+      "preview_head4_tail2": "i=0:7"
+    },
+    {
+      "input_name": "scale",
+      "shape": "scalar",
+      "dtype": "INT8",
+      "element_count": "1",
+      "generator": "configured_typed_scalar",
+      "preview_head4_tail2": "i=0:3"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT8",
+    "n": "10000",
+    "frequency": "7",
+    "scale": "3",
+    "complete": "true"
+  }
+}

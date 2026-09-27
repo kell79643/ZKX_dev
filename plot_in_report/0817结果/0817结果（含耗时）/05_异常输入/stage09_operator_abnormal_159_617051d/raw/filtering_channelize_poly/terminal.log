@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+filtering/channelize_poly         invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: filtering.channelize_poly.invalid_shape.taps_length_is_not_divisible_by_channel_count
+  abnormal_input: mutation=taps length is not divisible by channel count
+  error_message: filtering::channelize_poly检测到非法shape：mutation=taps length is not divisible by channel count
+  backend_error: code=NA name=NA message=NA
+filtering/channelize_poly         invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: filtering.channelize_poly.invalid_parameter.set_n_chans_0
+  abnormal_input: mutation=set n_chans=0
+  error_message: filtering::channelize_poly检测到非法参数：mutation=set n_chans=0
+  backend_error: code=NA name=NA message=NA
+filtering/channelize_poly         backend_call_failure    CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       true       PASS    
+  case_id: filtering.channelize_poly.backend_call_failure.inject_cuda_kernel_launch_failure_before_output_
+  abnormal_input: mutation=inject CUDA kernel launch failure before output consumption
+  error_message: filtering::channelize_poly捕获CUDA Runtime失败：mutation=inject CUDA kernel launch failure before output consumption；cudaErrorInvalidDevice（invalid device ordinal）
+  backend_error: code=101 name=cudaErrorInvalidDevice message=invalid device ordinal
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

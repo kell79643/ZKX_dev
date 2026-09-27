@@ -1,0 +1,79 @@
+command=build/stage07_b06_kalman_filter_6132f71/stage07_kalman_filter --dtype INT32 --count 1024 --order 3 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287/kalman_filter_probe_raw.json
+STAGE07_TASK_FINAL_PROBE PASS operator=kalman_filter dtype=INT32
+{"run_id": "20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287", "case_id": "kalman_filter__kalman_filter_int32_10e3__5b4ebb8f95fb719f", "operator_name": "kalman_filter", "task_name": "Task2", "step_name": "Step6", "scale_id": "kalman_filter_int32_10e3", "requested_dtype": "INT32", "input_content": [{"input_name": "observations", "shape": "[1024]", "dtype": "INT32", "element_count": "1024", "generator": "deterministic_task2_observations", "preview_head4_tail2": "i=0:1;i=1:1;i=2:1;i=3:1;i=1022:1;i=1023:1"}], "case_parameters": {"observation_count": 1024, "f": 1, "q": 1, "alpha_sq": 1, "h": 1, "r": 2, "output_count": 2, "execution_dtype": "FP32_TASK_SEQUENCE"}, "output_dtype": "FP32_STATE_COVARIANCE", "backend": "not_applicable", "warmup_runs": 20, "measured_runs": 100, "output_count": 2, "actual_input_digest": "5b4ebb8f95fb719f756fc5601d880bfdd90ae557be4eef6d696b49a2316c032d", "typed_array_digest": "b33dd739a3b1d1e659a638b318bdcfbaed8eb8cca224dbf0a76e9e1a81db57bc", "status": "PASS", "error_code": "OK", "mse": 0, "rmse": 0, "relative_l2": 0, "relative_linf": 0}
+[stage07] identity and status
++---------------+--------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| target        | scale_id                 | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code |
++---------------+--------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| kalman_filter | kalman_filter_int32_10e3 | CPU    | not_applicable | INT32 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| kalman_filter | kalman_filter_int32_10e3 | GPU    | not_applicable | INT32 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++---------------+--------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage07] timing detail
++--------+------------+-----------+--------------------+--------------------+----------+----------+----------------------+----------------------+--------------------+
+| device | mean_ms    | p50_ms    | p95_ms             | p99_ms             | min_ms   | max_ms   | std_ms               | cv                   | speedup            |
++--------+------------+-----------+--------------------+--------------------+----------+----------+----------------------+----------------------+--------------------+
+| CPU    | 0.56249587 | 0.56153   | 0.5698429500000001 | 0.5734865200000003 | 0.55001  | 0.639472 | 0.008478874703231562 | 0.015073665702170511 | NA                 |
+| GPU    | 1.27016359 | 1.2664485 | 1.28632805         | 1.3374205200000004 | 1.246653 | 1.413306 | 0.01858493029262956  | 0.0146319186276073   | 0.4428530894984953 |
++--------+------------+-----------+--------------------+--------------------+----------+----------+----------------------+----------------------+--------------------+
+
+[stage07] accuracy detail
++---------------------------+-----+------+-------------+---------------+-------------+----------------+-------------------------------------------------------------------------+--------+
+| reference                 | mse | rmse | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                                                          | status |
++---------------------------+-----+------+-------------+---------------+-------------+----------------+-------------------------------------------------------------------------+--------+
+| typed_cpu_task2_reference | 0   | 0    | 0           | 0             | NA          | NA             | output_count=2;output_dtype=FP32_STATE_COVARIANCE;task_gpu_call=present | PASS   |
++---------------------------+-----+------+-------------+---------------+-------------+----------------+-------------------------------------------------------------------------+--------+
+
+[stage07] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1388960      | 1396000     | 1396000    | 7040        |
+| CPU    | rss        | 69591040     | 69591040    | 69591040   | 0           |
+| GPU    | cpu_heap   | 1396128      | 1399088     | 1401856    | 2960        |
+| GPU    | rss        | 69591040     | 69591040    | 69591040   | 0           |
+| GPU    | gpu_memory | 341000192    | 341000192   | 341000192  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage07] input content
++--------------+--------+-------+----------+----------------------------------+-------------------------------------------+
+| input_name   | shape  | dtype | elements | generator                        | values(head4/tail2)                       |
++--------------+--------+-------+----------+----------------------------------+-------------------------------------------+
+| observations | [1024] | INT32 | 1024     | deterministic_task2_observations | i=0:1;i=1:1;i=2:1;i=3:1;i=1022:1;i=1023:1 |
++--------------+--------+-------+----------+----------------------------------+-------------------------------------------+
+
+[stage07] case parameters
++-------------------------------------------------------------------------------------------------------------------------+
+| parameters                                                                                                              |
++-------------------------------------------------------------------------------------------------------------------------+
+| {"alpha_sq":1,"execution_dtype":"FP32_TASK_SEQUENCE","f":1,"h":1,"observation_count":1024,"output_count":2,"q":1,"r":2} |
++-------------------------------------------------------------------------------------------------------------------------+
+
+[stage07] input and output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | 5b4ebb8f95fb719f756fc5601d880bfdd90ae557be4eef6d696b49a2316c032d | 80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d |
+| GPU    | 5b4ebb8f95fb719f756fc5601d880bfdd90ae557be4eef6d696b49a2316c032d | 80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage07] dtype evidence
++-----------------+--------------------+-----------------------+------------------------------------------------------------------+------------------------------------------------------------------+----------------------+
+| requested_dtype | config_input_dtype | output_dtype          | typed_array_digest                                               | actual_input_digest                                              | task_gpu_call_status |
++-----------------+--------------------+-----------------------+------------------------------------------------------------------+------------------------------------------------------------------+----------------------+
+| INT32           | INT32              | FP32_STATE_COVARIANCE | b33dd739a3b1d1e659a638b318bdcfbaed8eb8cca224dbf0a76e9e1a81db57bc | 5b4ebb8f95fb719f756fc5601d880bfdd90ae557be4eef6d696b49a2316c032d | proved_gpu_cpu       |
++-----------------+--------------------+-----------------------+------------------------------------------------------------------+------------------------------------------------------------------+----------------------+
+
+[stage07] evidence files
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind        | path                                                                                                                                                                                                                                |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| main_csv    | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287/operator_main_results_kalman_filter_not_applicable_20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287.csv   |
+| timing_csv  | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287/operator_timing_samples_kalman_filter_not_applicable_20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287.csv |
+| memory_csv  | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287/operator_estimation_kalman_filter_memory_trace_not_applicable.csv                                                  |
+| dtype_csv   | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287/operator_dtype_evidence_kalman_filter_not_applicable_20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287.csv |
+| report_json | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287/operator_kalman_filter_report.json                                                                                 |
+| summary_txt | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287/operator_kalman_filter_summary.txt                                                                                 |
+| full_log    | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287/operator_kalman_filter_full.log                                                                                    |
+| result_dir  | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110509Z_6132f71eb1e0_stage07_b06_formal_649c8287                                                                                                                    |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

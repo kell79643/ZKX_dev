@@ -1,0 +1,22 @@
+{
+  "run_id": "20260810T032752Z_3ab9f5f39b2e_stage07_b01_formal_065f6a0d",
+  "case_id": "pulse_compression__pc_fp16_10e2__369612766bef3619",
+  "operator_name": "pulse_compression",
+  "scale_id": "pc_fp16_10e2",
+  "requested_dtype": "FP16",
+  "config_input_dtype": "ComplexFP16",
+  "output_dtype": "ComplexFP32",
+  "backend": "fft_thrust",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 9.47498e-12,
+  "rmse": 3.07814e-06,
+  "relative_l2": 1.98601e-07,
+  "relative_linf": 1.72277e-07,
+  "exact_match": true,
+  "mismatch_count": 0,
+  "semantic_check": true,
+  "actual_input_digest": "369612766bef3619446dd23a61fcabae907d8aa147c1d9b230de308354e2a46c",
+  "status": "PASS",
+  "error_code": "OK"
+}

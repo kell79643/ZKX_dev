@@ -1,0 +1,37 @@
+{
+  "run_id": "20260810T101630Z_20e76c9b0ef0_stage07_b04_formal_8475eed8",
+  "case_id": "hamming__hamming_int8_10e3__e2f2290b8d174f49",
+  "operator_name": "hamming",
+  "task_name": "Task2",
+  "step_name": "Step2",
+  "scale_id": "hamming_int8_10e3",
+  "requested_dtype": "INT8",
+  "input_content": [
+    {
+      "input_name": "request_spec",
+      "shape": "[1]",
+      "dtype": "INT8",
+      "element_count": "1",
+      "generator": "typed_hamming_request",
+      "preview_head4_tail2": "i=0:n=1024,sym=true,dtype=INT8"
+    }
+  ],
+  "case_parameters": {
+    "n": 1024,
+    "sym": true,
+    "output_dtype": "FP32_TASK_RESIDENT",
+    "equivalent_work": "10^3"
+  },
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 3.30774e-15,
+  "rmse": 5.75129e-08,
+  "relative_l2": 9.12768e-08,
+  "relative_linf": 2.38419e-07,
+  "actual_input_digest": "e2f2290b8d174f49efbe0e2b652db1cad0e546ccd35a5c4c0d1c4e6d23c2ce66",
+  "typed_array_digest": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+  "status": "PASS",
+  "error_code": "OK"
+}

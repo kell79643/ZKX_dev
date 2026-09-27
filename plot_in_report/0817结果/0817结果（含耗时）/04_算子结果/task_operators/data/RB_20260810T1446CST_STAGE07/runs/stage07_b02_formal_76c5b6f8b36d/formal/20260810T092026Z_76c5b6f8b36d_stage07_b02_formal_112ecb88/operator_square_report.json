@@ -1,0 +1,37 @@
+{
+  "run_id": "20260810T092026Z_76c5b6f8b36d_stage07_b02_formal_112ecb88",
+  "case_id": "square__square_fp32_10e2__47c5777a24bbeae5",
+  "operator_name": "square",
+  "task_name": "Task2",
+  "step_name": "Step1",
+  "scale_id": "square_fp32_10e2",
+  "requested_dtype": "FP32",
+  "config_input_dtype": "FP32",
+  "input_content": [
+    {
+      "input_name": "phase",
+      "shape": "[128]",
+      "dtype": "FP32",
+      "element_count": "128",
+      "generator": "periodic_phase_8cycles(16*pi*i/(N-1))",
+      "preview_head4_tail2": "i=0:0;i=1:0.395791203;i=2:0.791582406;i=3:1.18737364;i=126:49.8696899;i=127:50.2654839"
+    }
+  ],
+  "case_parameters": {
+    "duty": 0.35,
+    "phase_cycles": 8,
+    "output_dtype": "FP64"
+  },
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "actual_input_digest": "47c5777a24bbeae508340de9a7db90daa2d7a2f0e2044e9ad845aef229355588",
+  "typed_array_digest": "f00be0dd52d0a691ba3d2b44e231ef672d2cb3e60d40dcf889ea4f0e5cc59c01",
+  "status": "PASS",
+  "error_code": "OK"
+}

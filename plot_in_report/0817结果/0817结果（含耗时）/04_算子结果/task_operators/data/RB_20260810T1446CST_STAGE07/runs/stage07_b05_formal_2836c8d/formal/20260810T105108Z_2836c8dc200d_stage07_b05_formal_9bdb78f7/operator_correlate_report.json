@@ -1,0 +1,46 @@
+{
+  "run_id": "20260810T105108Z_2836c8dc200d_stage07_b05_formal_9bdb78f7",
+  "case_id": "correlate__correlate_fp32_10e4__3354ab251d38ac14",
+  "operator_name": "correlate",
+  "task_name": "Task2",
+  "step_name": "Step4",
+  "scale_id": "correlate_fp32_10e4",
+  "requested_dtype": "FP32",
+  "input_content": [
+    {
+      "input_name": "signal",
+      "shape": "[10000]",
+      "dtype": "FP32",
+      "element_count": "10000",
+      "generator": "task2_signal_mixture",
+      "preview_head4_tail2": "i=0:1.5;i=1:2.11894131;i=2:2.72771096;i=3:1.70126629;i=9998:5.50710106;i=9999:5.96201801"
+    },
+    {
+      "input_name": "reference",
+      "shape": "[31]",
+      "dtype": "FP32",
+      "element_count": "31",
+      "generator": "task2_reference_template",
+      "preview_head4_tail2": "i=0:2.125;i=1:2.74394131;i=2:1.72771096;i=3:2.32626629;i=29:2.19273925;i=30:2.64545703"
+    }
+  ],
+  "case_parameters": {
+    "signal_count": 10000,
+    "reference_count": 31,
+    "mode": "same",
+    "output_count": 10000
+  },
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "output_count": 10000,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "actual_input_digest": "3354ab251d38ac1482371b06b7fedd93eed00c954b9612dcdc15dcf700a61606",
+  "typed_array_digest": "7b78df487e8369b8e82e7b4d1c46431975c2c24534806bbc001dd4eb8fb4f9d4",
+  "status": "PASS",
+  "error_code": "OK"
+}

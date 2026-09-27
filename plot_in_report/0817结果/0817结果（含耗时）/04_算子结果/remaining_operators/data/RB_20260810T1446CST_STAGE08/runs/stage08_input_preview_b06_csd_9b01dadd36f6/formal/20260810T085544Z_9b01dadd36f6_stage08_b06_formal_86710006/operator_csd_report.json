@@ -1,0 +1,55 @@
+{
+  "run_id": "20260810T085544Z_9b01dadd36f6_stage08_b06_formal_86710006",
+  "case_id": "csd__csd_int32_10e2__537c6a319e4cec32",
+  "operator_name": "csd",
+  "scale_id": "csd_int32_10e2",
+  "requested_dtype": "INT32",
+  "output_dtype": "ComplexFP64",
+  "backend": "fft_thrust",
+  "nperseg": 20,
+  "noverlap": 10,
+  "nfft": 32,
+  "detrend": "none",
+  "scaling": "spectrum",
+  "average": "mean",
+  "frequency_count": 17,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 1.0547e-14,
+  "rmse": 1.02698e-07,
+  "relative_l2": 6.05689e-09,
+  "relative_linf": 1.0124e-08,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[100]",
+      "dtype": "INT32",
+      "element_count": "100",
+      "generator": "spectral_modular_plus_periodic_offset(seed=86130001,integral=true)",
+      "preview_head4_tail2": "i=0:-4;i=1:2;i=2:-3;i=3:3;i=98:1;i=99:-4"
+    },
+    {
+      "input_name": "y",
+      "shape": "[80]",
+      "dtype": "INT32",
+      "element_count": "80",
+      "generator": "spectral_modular_plus_periodic_offset(seed=86130002,integral=true)",
+      "preview_head4_tail2": "i=0:-3;i=1:3;i=2:-2;i=3:4;i=78:3;i=79:-2"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT32",
+    "nx": "100",
+    "ny": "80",
+    "fs": "100",
+    "nperseg": "20",
+    "noverlap": "10",
+    "nfft": "32",
+    "detrend": "none",
+    "scaling": "spectrum",
+    "average": "mean",
+    "seed": "86130001"
+  }
+}

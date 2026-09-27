@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+bsplines/cubic                    invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: bsplines.cubic.invalid_shape.device_output_length_differs_from_input
+  abnormal_input: mutation=device output length differs from input
+  error_message: bsplines::cubic检测到非法shape：mutation=device output length differs from input
+  backend_error: code=NA name=NA message=NA
+bsplines/cubic                    invalid_dtype           INVALID_DTYPE            INVALID_DTYPE            INVALID_DTYPE            true       PASS    
+  case_id: bsplines.cubic.invalid_dtype.request_fp64_business_input
+  abnormal_input: mutation=request FP64 business input
+  error_message: bsplines::cubic检测到非法dtype：mutation=request FP64 business input
+  backend_error: code=NA name=NA message=NA
+bsplines/cubic                    backend_call_failure    CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       CUDA_RUNTIME_ERROR       true       PASS    
+  case_id: bsplines.cubic.backend_call_failure.inject_cuda_kernel_launch_failure_before_output_
+  abnormal_input: mutation=inject CUDA kernel launch failure before output consumption
+  error_message: bsplines::cubic捕获CUDA Runtime失败：mutation=inject CUDA kernel launch failure before output consumption；cudaErrorInvalidDevice（invalid device ordinal）
+  backend_error: code=101 name=cudaErrorInvalidDevice message=invalid device ordinal
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

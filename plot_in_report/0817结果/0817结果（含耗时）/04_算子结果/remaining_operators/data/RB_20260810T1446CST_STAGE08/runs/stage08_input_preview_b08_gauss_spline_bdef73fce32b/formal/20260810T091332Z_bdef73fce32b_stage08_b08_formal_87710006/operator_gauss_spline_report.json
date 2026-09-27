@@ -1,0 +1,37 @@
+{
+  "run_id": "20260810T091332Z_bdef73fce32b_stage08_b08_formal_87710006",
+  "case_id": "gauss_spline__gauss_spline_int32_10e2__b2d24714b760506c",
+  "operator_name": "gauss_spline",
+  "scale_id": "gauss_spline_int32_10e2",
+  "requested_dtype": "INT32",
+  "output_dtype": "INT32",
+  "backend": "not_applicable",
+  "input_count": 100,
+  "output_count": 100,
+  "order": 0,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[100]",
+      "dtype": "INT32",
+      "element_count": "100",
+      "generator": "bspline_modular_or_piecewise_ramp(seed=87400006,integral=true)",
+      "preview_head4_tail2": "i=0:-2;i=1:-1;i=2:0;i=3:1;i=98:-2;i=99:-1"
+    }
+  ],
+  "case_parameters": {
+    "operator": "gauss_spline",
+    "dtype": "INT32",
+    "elements": "100",
+    "order": "0",
+    "seed": "87400006"
+  }
+}

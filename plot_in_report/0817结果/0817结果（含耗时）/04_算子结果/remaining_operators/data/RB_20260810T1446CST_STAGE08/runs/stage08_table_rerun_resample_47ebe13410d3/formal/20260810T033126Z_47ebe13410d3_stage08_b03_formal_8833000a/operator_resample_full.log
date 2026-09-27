@@ -1,0 +1,65 @@
+command=build_stage08_b03_resample_35406beea576/stage08_filtering_resample --dtype INT16 --rows 32 --cols 32 --output-count 24 --domain time --seed 83340002 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage08_table_rerun_resample_47ebe13410d3/formal/20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a/resample_probe_raw.json
+STAGE08_RESAMPLE_PROBE PASS dtype=INT16 shape=32x32 output_count=24 domain=time backend=fft_thrust
+{"actual_input_digest": "69011c40e0cc379c01951c64389f79f1557e4ba5c4247dc5a4df32c9066ac11c", "axis": 1, "backend": "fft_thrust", "case_id": "resample__resample_int16_10e3__69011c40e0cc379c", "compute_dtype": "FP32", "domain": "time", "dtype_semantics": "actual_typed_array_input_fp32_fft_resample_extension", "error_code": "OK", "fft_dtype": "ComplexFP32", "measured_runs": 100, "metrics": {"mse": 9.234397124302202e-13, "relative_l2": 1.6087714714874287e-07, "relative_linf": 3.212019287122806e-07, "rmse": 9.609577058488164e-07}, "operator_name": "resample", "output_dtype": "FP64", "output_sample_count": 24, "requested_dtype": "INT16", "run_id": "20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a", "scale_id": "resample_int16_10e3", "schema_version": 1, "status": "PASS", "typed_input_count": 1, "typed_input_names": "x", "warmup_runs": 20}
+[stage08] identity and status
++----------+---------------------+--------+------------+-------+--------+----------+--------------------------+--------+------------+
+| target   | scale_id            | device | backend    | dtype | warmup | measured | timing_scope             | status | error_code |
++----------+---------------------+--------+------------+-------+--------+----------+--------------------------+--------+------------+
+| resample | resample_int16_10e3 | CPU    | fft_thrust | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| resample | resample_int16_10e3 | GPU    | fft_thrust | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++----------+---------------------+--------+------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage08] timing detail
++--------+--------------------+-----------+--------------------+--------------------+--------------------+--------------------+----------------------+-----------------------+---------------------+
+| device | mean_ms            | p50_ms    | p95_ms             | p99_ms             | min_ms             | max_ms             | std_ms               | cv                    | speedup             |
++--------+--------------------+-----------+--------------------+--------------------+--------------------+--------------------+----------------------+-----------------------+---------------------+
+| CPU    | 3.0798139500000001 | 3.079558  | 3.08497895         | 3.1022325300000007 | 3.0671119999999998 | 3.1813859999999998 | 0.011405685694753285 | 0.0037033684111838264 | NA                  |
+| GPU    | 24.73943903        | 22.171301 | 30.170030149999999 | 31.157906280000002 | 21.741665000000001 | 31.426917          | 3.7195443922533027   | 0.15034877661303636   | 0.12449004790550419 |
++--------+--------------------+-----------+--------------------+--------------------+--------------------+--------------------+----------------------+-----------------------+---------------------+
+
+[stage08] accuracy detail
++--------------------------------------+------------------------+------------------------+------------------------+------------------------+-------------+----------------+----------------------------------------------------------------------------------------------------------------------+--------+
+| accuracy_reference                   | mse                    | rmse                   | relative_l2            | relative_linf          | exact_match | mismatch_count | semantic_check                                                                                                       | status |
++--------------------------------------+------------------------+------------------------+------------------------+------------------------+-------------+----------------+----------------------------------------------------------------------------------------------------------------------+--------+
+| cpu_typed_double_direct_dft_resample | 9.2343971243022015e-13 | 9.6095770584881636e-07 | 1.6087714714874287e-07 | 3.2120192871228059e-07 | NA          | NA             | finite_resampled_signal_shape_domain_and_output_dtype_match_cpu:shape=[32, 32];axis=1;num=24;domain=time;finite=true | PASS   |
++--------------------------------------+------------------------+------------------------+------------------------+------------------------+-------------+----------------+----------------------------------------------------------------------------------------------------------------------+--------+
+
+[stage08] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 2053472      | 2058960     | 2064000    | 5488        |
+| CPU    | rss        | 71188480     | 71188480    | 71188480   | 0           |
+| GPU    | cpu_heap   | 2058960      | 2062528     | 2062528    | 3568        |
+| GPU    | rss        | 71188480     | 71188480    | 71188480   | 0           |
+| GPU    | gpu_memory | 357777408    | 357777408   | 357777408  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage08] input/output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | 69011c40e0cc379c01951c64389f79f1557e4ba5c4247dc5a4df32c9066ac11c | 3e52a65fc1c2e6be01ed2da048f91e0c101ec953b7fec408d1fd64fefa943429 |
+| GPU    | 69011c40e0cc379c01951c64389f79f1557e4ba5c4247dc5a4df32c9066ac11c | eefb013e9716c769c0d545657e870f9df2a257a8ff877cae8e7a70def94a1f3c |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage08] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| INT16           | NA                 | FP64         | 69011c40e0cc379c01951c64389f79f1557e4ba5c4247dc5a4df32c9066ac11c | PASS   |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+
+[stage08] evidence files
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind           | path                                                                                                                                                                                                                                      |
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dtype_csv      | /tmp/ZKX_dev/results/stage08_table_rerun_resample_47ebe13410d3/formal/20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a/operator_dtype_evidence_resample_fft_thrust_20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a.csv |
+| memory_csv     | /tmp/ZKX_dev/results/stage08_table_rerun_resample_47ebe13410d3/formal/20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a/operator_filtering_resample_memory_trace_fft_thrust.csv                                                   |
+| main_csv       | /tmp/ZKX_dev/results/stage08_table_rerun_resample_47ebe13410d3/formal/20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a/operator_main_results_resample_fft_thrust_20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a.csv   |
+| full_log       | /tmp/ZKX_dev/results/stage08_table_rerun_resample_47ebe13410d3/formal/20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a/operator_resample_full.log                                                                                |
+| report_json    | /tmp/ZKX_dev/results/stage08_table_rerun_resample_47ebe13410d3/formal/20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a/operator_resample_report.json                                                                             |
+| summary_txt    | /tmp/ZKX_dev/results/stage08_table_rerun_resample_47ebe13410d3/formal/20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a/operator_resample_summary.txt                                                                             |
+| timing_csv     | /tmp/ZKX_dev/results/stage08_table_rerun_resample_47ebe13410d3/formal/20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a/operator_timing_samples_resample_fft_thrust_20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a.csv |
+| probe_raw_json | /tmp/ZKX_dev/results/stage08_table_rerun_resample_47ebe13410d3/formal/20260810T033126Z_47ebe13410d3_stage08_b03_formal_8833000a/resample_probe_raw.json                                                                                   |
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

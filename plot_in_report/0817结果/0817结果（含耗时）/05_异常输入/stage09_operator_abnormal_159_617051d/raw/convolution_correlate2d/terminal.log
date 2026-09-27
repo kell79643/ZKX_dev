@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+convolution/correlate2d           invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: convolution.correlate2d.invalid_shape.provide_non_2d_input_shape
+  abnormal_input: mutation=provide non-2D input shape
+  error_message: convolution::correlate2d检测到非法shape：mutation=provide non-2D input shape
+  backend_error: code=NA name=NA message=NA
+convolution/correlate2d           invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: convolution.correlate2d.invalid_parameter.set_boundary_unknown
+  abnormal_input: mutation=set boundary=unknown
+  error_message: convolution::correlate2d检测到非法参数：mutation=set boundary=unknown
+  backend_error: code=NA name=NA message=NA
+convolution/correlate2d           unsupported_operation   UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    true       PASS    
+  case_id: convolution.correlate2d.unsupported_operation.request_method_not_supported_by_correlate2d
+  abnormal_input: mutation=request method not supported by correlate2d
+  error_message: convolution::correlate2d检测到不支持操作：mutation=request method not supported by correlate2d
+  backend_error: code=NA name=NA message=NA
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+estimation/kalman_filter          invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: estimation.kalman_filter.invalid_shape.state_and_covariance_dimensions_disagree
+  abnormal_input: mutation=state and covariance dimensions disagree
+  error_message: estimation::kalman_filter检测到非法shape：mutation=state and covariance dimensions disagree
+  backend_error: code=NA name=NA message=NA
+estimation/kalman_filter          invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: estimation.kalman_filter.invalid_parameter.set_dim_x_0
+  abnormal_input: mutation=set dim_x=0
+  error_message: estimation::kalman_filter检测到非法参数：mutation=set dim_x=0
+  backend_error: code=NA name=NA message=NA
+estimation/kalman_filter          unsupported_operation   UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    UNSUPPORTED_OPERATION    true       PASS    
+  case_id: estimation.kalman_filter.unsupported_operation.provide_control_input_b_u_unsupported_by_fixed_c
+  abnormal_input: mutation=provide control input B/u unsupported by fixed contract
+  error_message: estimation::kalman_filter检测到不支持操作：mutation=provide control input B/u unsupported by fixed contract
+  backend_error: code=NA name=NA message=NA
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

@@ -1,0 +1,43 @@
+{
+  "run_id": "20260810T081254Z_1662dd06774d_stage07_b01_formal_18a0df11",
+  "case_id": "ca_cfar__cacfar_int16_10e3__1bab4e692dc7af99",
+  "operator_name": "ca_cfar",
+  "scale_id": "cacfar_int16_10e3",
+  "requested_dtype": "INT16",
+  "config_input_dtype": "INT16",
+  "input_content": [
+    {
+      "input_name": "power",
+      "shape": "[32x32]",
+      "dtype": "INT16",
+      "element_count": "1024",
+      "generator": "real_modular(seed=23,integral=true)",
+      "preview_head4_tail2": "i=0:-5;i=1:-7;i=2:-9;i=3:8;i=1022:3;i=1023:1"
+    }
+  ],
+  "case_parameters": {
+    "guard_cells": [
+      1,
+      1
+    ],
+    "reference_cells": [
+      4,
+      4
+    ],
+    "pfa": 0.001
+  },
+  "output_dtype": "FP32+BOOL",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "exact_match": true,
+  "mismatch_count": 0,
+  "semantic_check": true,
+  "actual_input_digest": "1bab4e692dc7af99664e969d0c046f4464b8450958fc4631678bdd4f21984ee1",
+  "status": "PASS",
+  "error_code": "OK"
+}

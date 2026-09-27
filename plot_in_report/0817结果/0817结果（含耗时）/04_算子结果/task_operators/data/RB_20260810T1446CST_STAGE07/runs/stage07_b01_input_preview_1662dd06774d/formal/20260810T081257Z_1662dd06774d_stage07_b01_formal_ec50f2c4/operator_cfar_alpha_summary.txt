@@ -1,0 +1,22 @@
+run_id=20260810T081257Z_1662dd06774d_stage07_b01_formal_ec50f2c4
+case_id=cfar_alpha__alpha_int32_10e4__afe70ce678554fec
+operator_name=cfar_alpha
+scale_id=alpha_int32_10e4
+requested_dtype=INT32
+config_input_dtype=INT32
+input_content=[{'input_name': 'pfa', 'shape': '[1]', 'dtype': 'INT32', 'element_count': '1', 'generator': 'exact_scalar_from_case_config', 'preview_head4_tail2': 'value=1'}]
+case_parameters={'pfa': 1, 'reference_count': 16384, 'equivalent_work': '10^4'}
+output_dtype=FP64
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+mse=0
+rmse=0
+relative_l2=0
+relative_linf=0
+exact_match=True
+mismatch_count=0
+semantic_check=True
+actual_input_digest=afe70ce678554fec4007125b74caa7d26ec1f7bbec7036fd00d0e71507e0ecf5
+status=PASS
+error_code=OK

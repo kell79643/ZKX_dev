@@ -1,0 +1,22 @@
+run_id=20260810T092020Z_76c5b6f8b36d_stage07_b02_formal_e21f8895
+case_id=gausspulse__gauss_fp32_10e2__3f95b2a7c6bf2d39
+operator_name=gausspulse
+task_name=Task2
+step_name=Step1
+scale_id=gauss_fp32_10e2
+requested_dtype=FP32
+config_input_dtype=FP32
+input_content=[{'input_name': 'time', 'shape': '[128]', 'dtype': 'FP32', 'element_count': '128', 'generator': 'centered_time_minus16_to_16(32*i/(N-1)-16)', 'preview_head4_tail2': 'i=0:-16;i=1:-15.7480316;i=2:-15.4960632;i=3:-15.2440948;i=126:15.7480316;i=127:16'}]
+case_parameters={'fc': 0.05, 'bw': 0.2, 'bwr_db': -6, 'return_component': 'in_phase'}
+output_dtype=FP32
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+mse=1.26483e-15
+rmse=3.55645e-08
+relative_l2=5.33062e-08
+relative_linf=1.19303e-07
+actual_input_digest=3f95b2a7c6bf2d399c595a9f5de84d4502f94d34ce6c24110743def0dc78dcff
+typed_array_digest=a94798040700feea6bc93930bd2fdf0cc477c3587d9f5271a8ab4de3985c10f0
+status=PASS
+error_code=OK

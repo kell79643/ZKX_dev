@@ -1,0 +1,51 @@
+[stage08-b01] operator=general_cosine entry=cpu:general_cosine_typed_cpu gpu:general_cosine_device
+[stage08-b01] config=test_all/configs/operators/windows/general_cosine/operator_scales.json config_sha256=98e7d3d2716deaf919d8883f5caa73c3f61a1ce37bffff86a62a6be43aa66f64
+[stage08-b01] run_type=formal scale=general_cosine_fp16_10e4 dtype=FP16 sym=true backend=not_applicable
+[stage08-b01] dtype_semantics=actual_typed_array_input typed_input_count=3 actual_input_digest=994f1addb16df798b8d259f081585a576b7ee190408cdc07cda3e6323d0a57d6
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=1.4090620699999996 gpu_mean_ms=0.4044072299999999 speedup=3.4842652788378685
+[stage08-b01] mse=7.5003670235156815e-14 rmse=2.7386797957256122e-07 relative_l2=1.4639591265985548e-07 relative_linf=4.0478951834230556e-07
+[stage08-b01] resources=available cuda_event_ms=0.40260198712348938
+[stage08-b01] status=PASS error_code=OK
+[stage08] identity and status
+target         | scale_id                 | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code
+general_cosine | general_cosine_fp16_10e4 | CPU    | not_applicable | FP16  | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+general_cosine | general_cosine_fp16_10e4 | GPU    | not_applicable | FP16  | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+
+[stage08] timing detail
+device | mean_ms            | p50_ms             | p95_ms              | p99_ms              | min_ms              | max_ms              | std_ms                | cv                    | speedup           
+CPU    | 1.4090620699999996 | 1.4059710000000001 | 1.4199165           | 1.4278643000000002  | 1.403362            | 1.4597720000000001  | 0.0073971605177324679 | 0.0052497052296159455 | NA                
+GPU    | 0.4044072299999999 | 0.399974           | 0.41078699999999996 | 0.45843471000000086 | 0.39243400000000001 | 0.63076500000000002 | 0.024885073284141641  | 0.061534689387580062  | 3.4842652788378685
+
+[stage08] accuracy detail
+accuracy_reference  | mse                    | rmse                   | relative_l2            | relative_linf          | exact_match | mismatch_count | semantic_check                                                                                  | status
+cpu_typed_reference | 7.5003670235156815e-14 | 2.7386797957256122e-07 | 1.4639591265985548e-07 | 4.0478951834230556e-07 | NA          | NA             | finite_fp64_window_shape_coefficients_and_symmetry_match_cpu:shape=[10000];finite=true;sym=true | PASS  
+
+[stage08] resource detail
+device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes
+CPU    | cpu_heap   | 1617040      | 1620864     | 1699760    | 3824       
+CPU    | rss        | 71081984     | 71081984    | 71081984   | 0          
+GPU    | cpu_heap   | 1620864      | 1623792     | 1703216    | 2928       
+GPU    | rss        | 71081984     | 71081984    | 71081984   | 0          
+GPU    | gpu_memory | 357777408    | 357777408   | 357777408  | 0          
+
+[stage08] input/output identity
+device | input_digest                                                     | output_digest                                                   
+CPU    | 994f1addb16df798b8d259f081585a576b7ee190408cdc07cda3e6323d0a57d6 | 60e1c159c5d26ce086278b6938a9da6cb31c7f4aa1306349ee1014aeb5d82a77
+GPU    | 994f1addb16df798b8d259f081585a576b7ee190408cdc07cda3e6323d0a57d6 | 3bcebd2aded50fce6d0e621aec39d794e26e62cc59c92ad5e9190173e7cbdf2d
+
+[stage08] dtype evidence
+requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status
+FP16            | FP16               | FP64         | 994f1addb16df798b8d259f081585a576b7ee190408cdc07cda3e6323d0a57d6 | PASS  
+
+[stage08] evidence files
+kind        | path                                                                                                                                                                                                                                                     
+main_csv    | /tmp/ZKX_dev/results/stage08_table_rerun_general_cosine_47ebe13410d3/formal/20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a/operator_main_results_general_cosine_not_applicable_20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a.csv  
+timing_csv  | /tmp/ZKX_dev/results/stage08_table_rerun_general_cosine_47ebe13410d3/formal/20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a/operator_timing_samples_general_cosine_not_applicable_20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a.csv
+memory_csv  | /tmp/ZKX_dev/results/stage08_table_rerun_general_cosine_47ebe13410d3/formal/20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a/operator_windows_general_cosine_memory_trace_not_applicable.csv                                                    
+dtype_csv   | /tmp/ZKX_dev/results/stage08_table_rerun_general_cosine_47ebe13410d3/formal/20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a/operator_dtype_evidence_general_cosine_not_applicable_20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a.csv
+module_csv  | /tmp/ZKX_dev/results/stage08_table_rerun_general_cosine_47ebe13410d3/formal/20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a/windows_batch01_module_summary_not_applicable_20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a.csv        
+report_json | /tmp/ZKX_dev/results/stage08_table_rerun_general_cosine_47ebe13410d3/formal/20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a/operator_general_cosine_report.json                                                                                
+summary_txt | /tmp/ZKX_dev/results/stage08_table_rerun_general_cosine_47ebe13410d3/formal/20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a/operator_general_cosine_summary.txt                                                                                
+full_log    | /tmp/ZKX_dev/results/stage08_table_rerun_general_cosine_47ebe13410d3/formal/20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a/operator_general_cosine_full.log                                                                                   
+results_dir | /tmp/ZKX_dev/results/stage08_table_rerun_general_cosine_47ebe13410d3/formal/20260810T031950Z_47ebe13410d3_stage08_b01_formal_8811000a                                                                                                                    

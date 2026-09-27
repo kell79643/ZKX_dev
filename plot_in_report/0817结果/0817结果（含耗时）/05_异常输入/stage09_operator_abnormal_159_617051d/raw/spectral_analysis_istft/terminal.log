@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+spectral_analysis/istft           invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: spectral_analysis.istft.invalid_shape.frequency_bin_count_conflicts_with_nfft
+  abnormal_input: mutation=frequency-bin count conflicts with nfft
+  error_message: spectral_analysis::istft检测到非法shape：mutation=frequency-bin count conflicts with nfft
+  backend_error: code=NA name=NA message=NA
+spectral_analysis/istft           invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: spectral_analysis.istft.invalid_parameter.set_noverlap_greater_than_or_equal_to_nperseg
+  abnormal_input: mutation=set noverlap greater than or equal to nperseg
+  error_message: spectral_analysis::istft检测到非法参数：mutation=set noverlap greater than or equal to nperseg
+  backend_error: code=NA name=NA message=NA
+spectral_analysis/istft           backend_call_failure    BACKEND_ERROR            BACKEND_ERROR            BACKEND_ERROR            true       PASS    
+  case_id: spectral_analysis.istft.backend_call_failure.inject_inverse_fft_failure_before_output_consump
+  abnormal_input: mutation=inject inverse FFT failure before output consumption
+  error_message: spectral_analysis::istft捕获FFT后端失败：mutation=inject inverse FFT failure before output consumption；CUFFT_INVALID_SIZE（controlled dlfft-compatible status injection: invalid FFT size）
+  backend_error: code=8 name=CUFFT_INVALID_SIZE message=controlled dlfft-compatible status injection: invalid FFT size
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

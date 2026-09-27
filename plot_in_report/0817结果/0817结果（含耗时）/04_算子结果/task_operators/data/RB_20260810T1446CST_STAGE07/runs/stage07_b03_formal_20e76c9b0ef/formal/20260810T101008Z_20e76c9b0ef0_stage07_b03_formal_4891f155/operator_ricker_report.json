@@ -1,0 +1,43 @@
+{
+  "run_id": "20260810T101008Z_20e76c9b0ef0_stage07_b03_formal_4891f155",
+  "case_id": "ricker__ricker_standard_fp16_10e2__a178906991effa7b",
+  "operator_name": "ricker",
+  "task_name": "Task2",
+  "step_name": "Step4",
+  "scale_id": "ricker_standard_fp16_10e2",
+  "requested_dtype": "FP16",
+  "input_content": [
+    {
+      "input_name": "width",
+      "shape": "[1]",
+      "dtype": "FP16",
+      "element_count": "1",
+      "generator": "configured_typed_scalar(profile=standard)",
+      "preview_head4_tail2": "i=0:4.000000"
+    }
+  ],
+  "case_parameters": {
+    "n": 128,
+    "width": 4,
+    "profile": "standard",
+    "expected_output_shape": [
+      128
+    ],
+    "output_dtype": "FP64",
+    "equivalent_work": "10^2",
+    "task_gpu_call_status": "cpu_callable_only_gpu_missing"
+  },
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "task_gpu_call_status": "cpu_callable_only_gpu_missing_independent_device_api_tested",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 3.55661e-17,
+  "rmse": 5.96374e-09,
+  "relative_l2": 6.7472e-08,
+  "relative_linf": 7.44008e-08,
+  "actual_input_digest": "a178906991effa7bc359bdd6f8c99a0c6850985d0c346a9bf8e9033a76cbd107",
+  "typed_array_digest": "08a2afecc9feaef6737f055c177a56a363d28a78d7b259b8c5f66b32174f2e7d",
+  "status": "PASS",
+  "error_code": "OK"
+}

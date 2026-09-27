@@ -1,0 +1,79 @@
+command=build/stage07_b06_argrelextrema_6132f71/stage07_argrelextrema --dtype INT16 --count 1024 --order 5 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c/argrelextrema_probe_raw.json
+STAGE07_TASK_FINAL_PROBE PASS operator=argrelextrema dtype=INT16
+{"run_id": "20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c", "case_id": "argrelextrema__argrelextrema_int16_10e3__a7a23bddeaa3d109", "operator_name": "argrelextrema", "task_name": "Task2", "step_name": "Step5", "scale_id": "argrelextrema_int16_10e3", "requested_dtype": "INT16", "input_content": [{"input_name": "feature_bundle", "shape": "[1024]", "dtype": "INT16", "element_count": "1024", "generator": "deterministic_task2_feature_bundle", "preview_head4_tail2": "i=0:2;i=1:2;i=2:2;i=3:3;i=1022:2;i=1023:3"}], "case_parameters": {"count": 1024, "order": 5, "mode": "clip", "comparator": "greater", "output_count": "dynamic_int64_coordinates"}, "output_dtype": "INT64_COORDINATES", "backend": "not_applicable", "warmup_runs": 20, "measured_runs": 100, "output_count": 12, "actual_input_digest": "a7a23bddeaa3d1099654a5147b635bf7c176a9d843d41ed2c09bf99946ffc09d", "typed_array_digest": "a74b070b346d42257a4c9b5e2883cf1188cf8f496bf3412a1acda6df04a60341", "status": "PASS", "error_code": "OK", "exact_match": true, "mismatch_count": 0, "semantic_check": true}
+[stage07] identity and status
++---------------+--------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| target        | scale_id                 | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code |
++---------------+--------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| argrelextrema | argrelextrema_int16_10e3 | CPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| argrelextrema | argrelextrema_int16_10e3 | GPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++---------------+--------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage07] timing detail
++--------+------------+-----------+----------------------+--------------------+----------+---------+------------------------+-----------------------+----------------------+
+| device | mean_ms    | p50_ms    | p95_ms               | p99_ms             | min_ms   | max_ms  | std_ms                 | cv                    | speedup              |
++--------+------------+-----------+----------------------+--------------------+----------+---------+------------------------+-----------------------+----------------------+
+| CPU    | 0.01198172 | 0.01198   | 0.011981450000000001 | 0.0120008          | 0.01198  | 0.01208 | 1.0220645772161503e-05 | 0.0008530199146834931 | NA                   |
+| GPU    | 0.46721661 | 0.4615035 | 0.51764445           | 0.5793328900000001 | 0.448408 | 0.5914  | 0.02484489517864586    | 0.05317639537396982   | 0.025644893061485978 |
++--------+------------+-----------+----------------------+--------------------+----------+---------+------------------------+-----------------------+----------------------+
+
+[stage07] accuracy detail
++---------------------------+-----+------+-------------+---------------+-------------+----------------+----------------------------------------------------------------------+--------+
+| reference                 | mse | rmse | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                                                       | status |
++---------------------------+-----+------+-------------+---------------+-------------+----------------+----------------------------------------------------------------------+--------+
+| typed_cpu_task2_reference | NA  | NA   | NA          | NA            | true        | 0              | output_count=12;output_dtype=INT64_COORDINATES;task_gpu_call=present | PASS   |
++---------------------------+-----+------+-------------+---------------+-------------+----------------+----------------------------------------------------------------------+--------+
+
+[stage07] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1526112      | 1530592     | 1530592    | 4480        |
+| CPU    | rss        | 69476352     | 69894144    | 69894144   | 417792      |
+| GPU    | cpu_heap   | 1530656      | 1533552     | 1533728    | 2896        |
+| GPU    | rss        | 69894144     | 69894144    | 69894144   | 0           |
+| GPU    | gpu_memory | 357777408    | 357777408   | 357777408  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage07] input content
++----------------+--------+-------+----------+------------------------------------+-------------------------------------------+
+| input_name     | shape  | dtype | elements | generator                          | values(head4/tail2)                       |
++----------------+--------+-------+----------+------------------------------------+-------------------------------------------+
+| feature_bundle | [1024] | INT16 | 1024     | deterministic_task2_feature_bundle | i=0:2;i=1:2;i=2:2;i=3:3;i=1022:2;i=1023:3 |
++----------------+--------+-------+----------+------------------------------------+-------------------------------------------+
+
+[stage07] case parameters
++----------------------------------------------------------------------------------------------------------+
+| parameters                                                                                               |
++----------------------------------------------------------------------------------------------------------+
+| {"comparator":"greater","count":1024,"mode":"clip","order":5,"output_count":"dynamic_int64_coordinates"} |
++----------------------------------------------------------------------------------------------------------+
+
+[stage07] input and output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | a7a23bddeaa3d1099654a5147b635bf7c176a9d843d41ed2c09bf99946ffc09d | a5498a7391cc57b2de10c9c9c5f357d6d5f3f75c4db8f5685096b025785f4665 |
+| GPU    | a7a23bddeaa3d1099654a5147b635bf7c176a9d843d41ed2c09bf99946ffc09d | a5498a7391cc57b2de10c9c9c5f357d6d5f3f75c4db8f5685096b025785f4665 |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage07] dtype evidence
++-----------------+--------------------+-------------------+------------------------------------------------------------------+------------------------------------------------------------------+----------------------+
+| requested_dtype | config_input_dtype | output_dtype      | typed_array_digest                                               | actual_input_digest                                              | task_gpu_call_status |
++-----------------+--------------------+-------------------+------------------------------------------------------------------+------------------------------------------------------------------+----------------------+
+| INT16           | INT16              | INT64_COORDINATES | a74b070b346d42257a4c9b5e2883cf1188cf8f496bf3412a1acda6df04a60341 | a7a23bddeaa3d1099654a5147b635bf7c176a9d843d41ed2c09bf99946ffc09d | proved_gpu_cpu       |
++-----------------+--------------------+-------------------+------------------------------------------------------------------+------------------------------------------------------------------+----------------------+
+
+[stage07] evidence files
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind        | path                                                                                                                                                                                                                                |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| main_csv    | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c/operator_main_results_argrelextrema_not_applicable_20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c.csv   |
+| timing_csv  | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c/operator_timing_samples_argrelextrema_not_applicable_20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c.csv |
+| memory_csv  | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c/operator_peak_finding_argrelextrema_memory_trace_not_applicable.csv                                                |
+| dtype_csv   | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c/operator_dtype_evidence_argrelextrema_not_applicable_20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c.csv |
+| report_json | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c/operator_argrelextrema_report.json                                                                                 |
+| summary_txt | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c/operator_argrelextrema_summary.txt                                                                                 |
+| full_log    | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c/operator_argrelextrema_full.log                                                                                    |
+| result_dir  | /tmp/ZKX_dev/results/stage07_b06_formal_6132f71/formal/20260810T110456Z_6132f71eb1e0_stage07_b06_formal_9b166b8c                                                                                                                    |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

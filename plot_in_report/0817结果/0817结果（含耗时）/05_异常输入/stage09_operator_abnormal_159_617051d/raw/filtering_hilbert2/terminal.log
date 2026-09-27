@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+filtering/hilbert2                invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: filtering.hilbert2.invalid_shape.provide_rank_other_than_2
+  abnormal_input: mutation=provide rank other than 2
+  error_message: filtering::hilbert2检测到非法shape：mutation=provide rank other than 2
+  backend_error: code=NA name=NA message=NA
+filtering/hilbert2                invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: filtering.hilbert2.invalid_parameter.set_one_requested_transform_length_to_zero
+  abnormal_input: mutation=set one requested transform length to zero
+  error_message: filtering::hilbert2检测到非法参数：mutation=set one requested transform length to zero
+  backend_error: code=NA name=NA message=NA
+filtering/hilbert2                backend_call_failure    BACKEND_ERROR            BACKEND_ERROR            BACKEND_ERROR            true       PASS    
+  case_id: filtering.hilbert2.backend_call_failure.inject_2d_fft_execution_failure_before_output_co
+  abnormal_input: mutation=inject 2D FFT execution failure before output consumption
+  error_message: filtering::hilbert2捕获FFT后端失败：mutation=inject 2D FFT execution failure before output consumption；CUFFT_INVALID_SIZE（controlled dlfft-compatible status injection: invalid FFT size）
+  backend_error: code=8 name=CUFFT_INVALID_SIZE message=controlled dlfft-compatible status injection: invalid FFT size
+[STAGE09][SUMMARY] total=3 pass=3 fail=0 status=PASS

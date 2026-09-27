@@ -1,0 +1,17 @@
+status=PASS
+operator=general_gaussian
+run_id=20260810T032000Z_47ebe13410d3_stage08_b01_formal_8812001c
+case_id=general_gaussian__general_gaussian_int8_10e4__151b58dac73e7aef__sym
+scale_id=general_gaussian_int8_10e4
+dtype=INT8
+sym=true
+dtype_semantics=actual_typed_scalar_inputs
+typed_input_count=2
+typed_input_manifest=length:INT32=10000|sym:BOOL=true|power:INT8:bytes=02|width:INT8:bytes=40
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+input_digest=151b58dac73e7aef30a9fd7a99de79a04ef3db255c3ace2e379e5ce1e62a61bb
+cpu_output_digest=0765d14dee1d4b26c680d9bfb5acec1db731d7362c1f5d442bd490a365fe5322
+gpu_output_digest=1e19713dcc312a7354b10e9612ef28fb31df5c6826d8601f134490f052500741
+error_code=OK

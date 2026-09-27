@@ -1,0 +1,36 @@
+{
+  "run_id": "20260810T105057Z_2836c8dc200d_stage07_b05_formal_dcf21822",
+  "case_id": "fm_demod__fm_demod_fp32_10e2__aeb0291153803dbd",
+  "operator_name": "fm_demod",
+  "task_name": "Task2",
+  "step_name": "Step4",
+  "scale_id": "fm_demod_fp32_10e2",
+  "requested_dtype": "FP32",
+  "input_content": [
+    {
+      "input_name": "analytic",
+      "shape": "[128]",
+      "dtype": "ComplexFP32",
+      "element_count": "128",
+      "generator": "deterministic_chirped_analytic_signal",
+      "preview_head4_tail2": "i=0:(20,0);i=1:(19.9937496,0.4999879);i=2:(19.9749966,0.999743164);i=3:(19.9437485,1.4989531);i=126:(-19.9838753,-0.802971065);i=127:(-19.9568958,-1.31236327)"
+    }
+  ],
+  "case_parameters": {
+    "count": 128,
+    "output_count": 127
+  },
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "output_count": 127,
+  "mse": 1.31127e-14,
+  "rmse": 1.1451e-07,
+  "relative_l2": 4.53427e-06,
+  "relative_linf": 9.34754e-06,
+  "actual_input_digest": "aeb0291153803dbd677cf4a331ae82d50ce27f8e073c33588e78e2aa2cd34a4e",
+  "typed_array_digest": "fa2384963e2b3ec49172ba992074438ea6badbee8d0caaab9a827fd8d85d14e4",
+  "status": "PASS",
+  "error_code": "OK"
+}

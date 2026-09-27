@@ -1,0 +1,652 @@
+{
+  "schema_version": 1,
+  "audit_kind": "stage07_batch04_formal_evidence",
+  "formal_root": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal",
+  "driver_log_root": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs",
+  "result_git_commit": "e6d8c17f237e75b8d68b91aec378482ac8f9fe5b",
+  "result_git_dirty": "false",
+  "verifier_git_commit": "e6d8c17f237e75b8d68b91aec378482ac8f9fe5b",
+  "expected_case_count": 45,
+  "formal_report_file_count": 45,
+  "selected_report_file_count": 45,
+  "case_count": 45,
+  "selection_records": [
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103350Z_e6d8c17f237e_stage07_b04_formal_61eba7b8"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103350Z_e6d8c17f237e_stage07_b04_formal_6e55b278"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103351Z_e6d8c17f237e_stage07_b04_formal_36d8a750"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103350Z_e6d8c17f237e_stage07_b04_formal_a6c4b841"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103350Z_e6d8c17f237e_stage07_b04_formal_26ff5c14"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103350Z_e6d8c17f237e_stage07_b04_formal_35ca6ed8"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103352Z_e6d8c17f237e_stage07_b04_formal_f0d3e7ca"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103352Z_e6d8c17f237e_stage07_b04_formal_cd88a90f"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103353Z_e6d8c17f237e_stage07_b04_formal_e6623fdc"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103351Z_e6d8c17f237e_stage07_b04_formal_1e3999bd"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103352Z_e6d8c17f237e_stage07_b04_formal_438ea714"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103352Z_e6d8c17f237e_stage07_b04_formal_3ea4bbe9"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103353Z_e6d8c17f237e_stage07_b04_formal_89c8178a"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103353Z_e6d8c17f237e_stage07_b04_formal_14f10313"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firfilter/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103353Z_e6d8c17f237e_stage07_b04_formal_436e8297"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103335Z_e6d8c17f237e_stage07_b04_formal_a1543c64"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103335Z_e6d8c17f237e_stage07_b04_formal_d5fdf9f1"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103335Z_e6d8c17f237e_stage07_b04_formal_419234b5"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103334Z_e6d8c17f237e_stage07_b04_formal_32594043"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103334Z_e6d8c17f237e_stage07_b04_formal_6d827fad"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103334Z_e6d8c17f237e_stage07_b04_formal_1e57815b"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103336Z_e6d8c17f237e_stage07_b04_formal_17ff2a6b"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103336Z_e6d8c17f237e_stage07_b04_formal_3a8d019a"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103336Z_e6d8c17f237e_stage07_b04_formal_7ca7dc6f"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103335Z_e6d8c17f237e_stage07_b04_formal_37b79289"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103336Z_e6d8c17f237e_stage07_b04_formal_529834a9"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103336Z_e6d8c17f237e_stage07_b04_formal_5ac9578e"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103337Z_e6d8c17f237e_stage07_b04_formal_8deda8ce"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103337Z_e6d8c17f237e_stage07_b04_formal_1a58898d"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/firwin/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103337Z_e6d8c17f237e_stage07_b04_formal_63521468"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/fp16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103323Z_e6d8c17f237e_stage07_b04_formal_2bd3cd51"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/fp16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103323Z_e6d8c17f237e_stage07_b04_formal_888e3b50"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/fp16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103324Z_e6d8c17f237e_stage07_b04_formal_48b60234"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/fp32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103323Z_e6d8c17f237e_stage07_b04_formal_c1185937"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/fp32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103323Z_e6d8c17f237e_stage07_b04_formal_362bdabd"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/fp32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103323Z_e6d8c17f237e_stage07_b04_formal_a0b6f16b"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/int16_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103324Z_e6d8c17f237e_stage07_b04_formal_084f9a3c"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/int16_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103324Z_e6d8c17f237e_stage07_b04_formal_56a4ba34"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/int16_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103324Z_e6d8c17f237e_stage07_b04_formal_a1098143"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/int32_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103324Z_e6d8c17f237e_stage07_b04_formal_a67d3bf5"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/int32_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103324Z_e6d8c17f237e_stage07_b04_formal_60807da7"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/int32_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103324Z_e6d8c17f237e_stage07_b04_formal_f1683fe7"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/int8_10e2.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/int8_10e3.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103325Z_e6d8c17f237e_stage07_b04_formal_424a433c"
+    },
+    {
+      "driver_log": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal_driver_logs/hamming/int8_10e4.log",
+      "result_directory": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/formal/20260810T103325Z_e6d8c17f237e_stage07_b04_formal_78929cf8"
+    }
+  ],
+  "unselected_historical_result_count": 0,
+  "unselected_historical_results": [],
+  "cases": [
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103350Z_e6d8c17f237e_stage07_b04_formal_61eba7b8",
+      "case_id": "firfilter__firfilter_fp16_10e2__827b206ad4261fc0",
+      "input_digest": "827b206ad4261fc0b492f7793ac3308d1aee2bb6fb9203fd3ae5b9a17174d5c6",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103350Z_e6d8c17f237e_stage07_b04_formal_6e55b278",
+      "case_id": "firfilter__firfilter_fp16_10e3__915687ddcf85bf5e",
+      "input_digest": "915687ddcf85bf5e056af78460731ed176f7bd231f2855e539c7892518a56fde",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103351Z_e6d8c17f237e_stage07_b04_formal_36d8a750",
+      "case_id": "firfilter__firfilter_fp16_10e4__dac666c80b9df1dc",
+      "input_digest": "dac666c80b9df1dc1692ce99c5a3dfe5cf34113f69912045dad50fe23baa4b93",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103350Z_e6d8c17f237e_stage07_b04_formal_a6c4b841",
+      "case_id": "firfilter__firfilter_fp32_10e2__b4c4b02302c5472d",
+      "input_digest": "b4c4b02302c5472d8c779b55860726335930f2f7c215e55147f7a3085cb73ff1",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103350Z_e6d8c17f237e_stage07_b04_formal_26ff5c14",
+      "case_id": "firfilter__firfilter_fp32_10e3__d4b481dfd77e49d2",
+      "input_digest": "d4b481dfd77e49d2bcb87621104f46cc88ce05f337b3ead9f75f26c2c37f2b0d",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103350Z_e6d8c17f237e_stage07_b04_formal_35ca6ed8",
+      "case_id": "firfilter__firfilter_fp32_10e4__d97a56c9ea8c4fcc",
+      "input_digest": "d97a56c9ea8c4fcc480711864b580f3346bcc91f8d454b3cdc4e7be5d1dd036b",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_int16_10e2",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103352Z_e6d8c17f237e_stage07_b04_formal_f0d3e7ca",
+      "case_id": "firfilter__firfilter_int16_10e2__3e17970795aaf02f",
+      "input_digest": "3e17970795aaf02fa009cab32eeb8ddc6d423c08641bafbd95cfe51c8ddacd1b",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_int16_10e3",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103352Z_e6d8c17f237e_stage07_b04_formal_cd88a90f",
+      "case_id": "firfilter__firfilter_int16_10e3__c2dd10b8f405c1e7",
+      "input_digest": "c2dd10b8f405c1e7f8289a3ab1e6c91b9fe048acd66b49aaa1af531864c57400",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_int16_10e4",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103353Z_e6d8c17f237e_stage07_b04_formal_e6623fdc",
+      "case_id": "firfilter__firfilter_int16_10e4__33d023cd573f44c6",
+      "input_digest": "33d023cd573f44c60bd650eff5f95688b86c93b02894c733677f1337de5f5b92",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_int32_10e2",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103351Z_e6d8c17f237e_stage07_b04_formal_1e3999bd",
+      "case_id": "firfilter__firfilter_int32_10e2__774bedcc31c353ea",
+      "input_digest": "774bedcc31c353ea43efbc2420971cfae05acc2aa8ebbda1cedb0bc5bfbf2512",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_int32_10e3",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103352Z_e6d8c17f237e_stage07_b04_formal_438ea714",
+      "case_id": "firfilter__firfilter_int32_10e3__5944c8e3d5953e0e",
+      "input_digest": "5944c8e3d5953e0ed0af7adb8e6200aa65afa980f86673543a088aae5fcedddc",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_int32_10e4",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103352Z_e6d8c17f237e_stage07_b04_formal_3ea4bbe9",
+      "case_id": "firfilter__firfilter_int32_10e4__954db4344cfef5e4",
+      "input_digest": "954db4344cfef5e4379c91191a1f5ee719b22ea404947698091526afb4fc5e7e",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_int8_10e2",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T103353Z_e6d8c17f237e_stage07_b04_formal_89c8178a",
+      "case_id": "firfilter__firfilter_int8_10e2__31e149e942426d47",
+      "input_digest": "31e149e942426d47c2e1fb6b9da288247f530a4bba11ce8b68cc83256dfc83f5",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_int8_10e3",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T103353Z_e6d8c17f237e_stage07_b04_formal_14f10313",
+      "case_id": "firfilter__firfilter_int8_10e3__d916cae18180b159",
+      "input_digest": "d916cae18180b1599400146b06b2ec4b198e0589c8573ef6ffcf017e4f39b7f9",
+      "status": "PASS"
+    },
+    {
+      "operator": "firfilter",
+      "scale_id": "firfilter_int8_10e4",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T103353Z_e6d8c17f237e_stage07_b04_formal_436e8297",
+      "case_id": "firfilter__firfilter_int8_10e4__b64d60755988bde0",
+      "input_digest": "b64d60755988bde075c07023cceac2a1810eafc1007c99ca4d2741e6c6830e81",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103335Z_e6d8c17f237e_stage07_b04_formal_a1543c64",
+      "case_id": "firwin__firwin_fp16_10e2__947a89c1149e9f7c",
+      "input_digest": "947a89c1149e9f7c71f67ee3894b9ff41e07710f0b6db1f4d14834451180639b",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103335Z_e6d8c17f237e_stage07_b04_formal_d5fdf9f1",
+      "case_id": "firwin__firwin_fp16_10e3__f02baa068a4889d4",
+      "input_digest": "f02baa068a4889d4c1b67769d93a40445169e3c40be8ad89f38a64d0cb825e51",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103335Z_e6d8c17f237e_stage07_b04_formal_419234b5",
+      "case_id": "firwin__firwin_fp16_10e4__8479ccb4426d46bc",
+      "input_digest": "8479ccb4426d46bce9c12f757d2e353dce79c80b12ad295f355014bd74549ebb",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103334Z_e6d8c17f237e_stage07_b04_formal_32594043",
+      "case_id": "firwin__firwin_fp32_10e2__173d15e3f12fcf2c",
+      "input_digest": "173d15e3f12fcf2cd198b053b21b7bfd44ff56092b0e16522a0c0aaf586c3c3f",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103334Z_e6d8c17f237e_stage07_b04_formal_6d827fad",
+      "case_id": "firwin__firwin_fp32_10e3__25d9a109e587c75f",
+      "input_digest": "25d9a109e587c75f97e164639a360ad35686dfcf929bffbb64fb98be20d1e571",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103334Z_e6d8c17f237e_stage07_b04_formal_1e57815b",
+      "case_id": "firwin__firwin_fp32_10e4__3a39c5a92af24753",
+      "input_digest": "3a39c5a92af24753ffc1113b8353fc5ddb14ada0d1ad4b483a756fd8010334b5",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_int16_10e2",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103336Z_e6d8c17f237e_stage07_b04_formal_17ff2a6b",
+      "case_id": "firwin__firwin_int16_10e2__f6d791d2c6d7b561",
+      "input_digest": "f6d791d2c6d7b561c22da0a751fb3d7187f02ac3ae6ee3ccf5386680e7d34753",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_int16_10e3",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103336Z_e6d8c17f237e_stage07_b04_formal_3a8d019a",
+      "case_id": "firwin__firwin_int16_10e3__c404510b6783e768",
+      "input_digest": "c404510b6783e768841a62f2dfa1de01697e3904ffb60a62b0a5e871d8d962fb",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_int16_10e4",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103336Z_e6d8c17f237e_stage07_b04_formal_7ca7dc6f",
+      "case_id": "firwin__firwin_int16_10e4__ea4721e4e6c7daa7",
+      "input_digest": "ea4721e4e6c7daa7e708ccc3727eca7f9df41519cc74823697dd7b1acd2f9d60",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_int32_10e2",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103335Z_e6d8c17f237e_stage07_b04_formal_37b79289",
+      "case_id": "firwin__firwin_int32_10e2__34f72db68d28d6ba",
+      "input_digest": "34f72db68d28d6ba008f92d1ba128bfd95eedb1cfc7acad5f2ba41612ca8a718",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_int32_10e3",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103336Z_e6d8c17f237e_stage07_b04_formal_529834a9",
+      "case_id": "firwin__firwin_int32_10e3__c508c5e039022ad7",
+      "input_digest": "c508c5e039022ad719c7fbb45770d65f8c60664e531b3801f2b6ab43fe4ad9ba",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_int32_10e4",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103336Z_e6d8c17f237e_stage07_b04_formal_5ac9578e",
+      "case_id": "firwin__firwin_int32_10e4__f887fe99f51bcbf7",
+      "input_digest": "f887fe99f51bcbf796254ebc581f98516d38fdd8a79f611ecaef90056c58cced",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_int8_10e2",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T103337Z_e6d8c17f237e_stage07_b04_formal_8deda8ce",
+      "case_id": "firwin__firwin_int8_10e2__ebd40a4c8267522b",
+      "input_digest": "ebd40a4c8267522b1c69968fe9ebf3c4ff976bd51715c40dc3287eef79291298",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_int8_10e3",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T103337Z_e6d8c17f237e_stage07_b04_formal_1a58898d",
+      "case_id": "firwin__firwin_int8_10e3__d0343276a5211759",
+      "input_digest": "d0343276a5211759e64669723537eddbe7cb4ce2c91a43b3d23b3b1a3f6ec9a9",
+      "status": "PASS"
+    },
+    {
+      "operator": "firwin",
+      "scale_id": "firwin_int8_10e4",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T103337Z_e6d8c17f237e_stage07_b04_formal_63521468",
+      "case_id": "firwin__firwin_int8_10e4__9bd8f969e090b169",
+      "input_digest": "9bd8f969e090b169425750550b9d97b7ee3b77761aefa3da0a486f4b55716696",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_fp16_10e2",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103323Z_e6d8c17f237e_stage07_b04_formal_2bd3cd51",
+      "case_id": "hamming__hamming_fp16_10e2__691c10395a838451",
+      "input_digest": "691c10395a83845157253d5e00b7c303dbf0367969e78b77695cb95eaab23d82",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_fp16_10e3",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103323Z_e6d8c17f237e_stage07_b04_formal_888e3b50",
+      "case_id": "hamming__hamming_fp16_10e3__d66d8401245d27af",
+      "input_digest": "d66d8401245d27afbd1be39fd8704502c1c46561d6055accd8ba86549a24d2a0",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_fp16_10e4",
+      "dtype": "FP16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103324Z_e6d8c17f237e_stage07_b04_formal_48b60234",
+      "case_id": "hamming__hamming_fp16_10e4__55dce539ce6c16c5",
+      "input_digest": "55dce539ce6c16c52874f1922d5768365e56ff69e7c3e2c88e7f7c13b133a600",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_fp32_10e2",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103323Z_e6d8c17f237e_stage07_b04_formal_c1185937",
+      "case_id": "hamming__hamming_fp32_10e2__c27e3d09975e40d0",
+      "input_digest": "c27e3d09975e40d022f987bcf283a8ba6622a71d94e1c197d6e3ff7f68476b3e",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_fp32_10e3",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103323Z_e6d8c17f237e_stage07_b04_formal_362bdabd",
+      "case_id": "hamming__hamming_fp32_10e3__73c72775634c2c7a",
+      "input_digest": "73c72775634c2c7af270e9124376bfc94ecbad5d09897cd6cfeea2618a8fd1ee",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_fp32_10e4",
+      "dtype": "FP32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103323Z_e6d8c17f237e_stage07_b04_formal_a0b6f16b",
+      "case_id": "hamming__hamming_fp32_10e4__edc058e5c55bde16",
+      "input_digest": "edc058e5c55bde162fba56a75414720627415474fb3984fd2bab47e8e90a530f",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_int16_10e2",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103324Z_e6d8c17f237e_stage07_b04_formal_084f9a3c",
+      "case_id": "hamming__hamming_int16_10e2__37bc17ca695efae8",
+      "input_digest": "37bc17ca695efae8c6fa7096010661f0480df3cf6eb8b62ccdb345b14aee1be2",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_int16_10e3",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103324Z_e6d8c17f237e_stage07_b04_formal_56a4ba34",
+      "case_id": "hamming__hamming_int16_10e3__f7701116fa02f20b",
+      "input_digest": "f7701116fa02f20b2a0020bcb62e197bbc00960297ced18349eec15f61565c3e",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_int16_10e4",
+      "dtype": "INT16",
+      "backend": "not_applicable",
+      "run_id": "20260810T103324Z_e6d8c17f237e_stage07_b04_formal_a1098143",
+      "case_id": "hamming__hamming_int16_10e4__d73984190869508a",
+      "input_digest": "d73984190869508adb0ed308e61ea568d1273da7e5e6b6e80fd4d989a3433018",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_int32_10e2",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103324Z_e6d8c17f237e_stage07_b04_formal_a67d3bf5",
+      "case_id": "hamming__hamming_int32_10e2__f7cce47043486a62",
+      "input_digest": "f7cce47043486a625dfd28fe9f8411b1c07646401de3fe2d3d1dacbca9fc222b",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_int32_10e3",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103324Z_e6d8c17f237e_stage07_b04_formal_60807da7",
+      "case_id": "hamming__hamming_int32_10e3__6a3948d0a6274c42",
+      "input_digest": "6a3948d0a6274c428ecc841e81290485065f908592c51f4f36cf5f521876671c",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_int32_10e4",
+      "dtype": "INT32",
+      "backend": "not_applicable",
+      "run_id": "20260810T103324Z_e6d8c17f237e_stage07_b04_formal_f1683fe7",
+      "case_id": "hamming__hamming_int32_10e4__bd2e203f85b32587",
+      "input_digest": "bd2e203f85b325875c61b24fd98e597607f066e61dcc774129c5fa9e55b46d7b",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_int8_10e2",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T103325Z_e6d8c17f237e_stage07_b04_formal_a7932a7e",
+      "case_id": "hamming__hamming_int8_10e2__7d616613abe910dc",
+      "input_digest": "7d616613abe910dc551dd0a457994e80b6a91385dfb84df6584c9f5111cfbe75",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_int8_10e3",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T103325Z_e6d8c17f237e_stage07_b04_formal_424a433c",
+      "case_id": "hamming__hamming_int8_10e3__e2f2290b8d174f49",
+      "input_digest": "e2f2290b8d174f49efbe0e2b652db1cad0e546ccd35a5c4c0d1c4e6d23c2ce66",
+      "status": "PASS"
+    },
+    {
+      "operator": "hamming",
+      "scale_id": "hamming_int8_10e4",
+      "dtype": "INT8",
+      "backend": "not_applicable",
+      "run_id": "20260810T103325Z_e6d8c17f237e_stage07_b04_formal_78929cf8",
+      "case_id": "hamming__hamming_int8_10e4__219b63cac39554d2",
+      "input_digest": "219b63cac39554d2a4092c275382d0be8d3ecba2d430b15f4b98922f292342c5",
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "status": "PASS",
+  "output": "/tmp/ZKX_dev/results/stage07_b04_formal_v2_e6d8c17/stage07_batch04_formal_audit_e6d8c17.json"
+}

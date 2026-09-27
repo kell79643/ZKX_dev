@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "run_id": "20260810T032751Z_47ebe13410d3_stage08_b03_formal_88320007",
+  "case_id": "hilbert2__hilbert2_int32_10e3__1c7dbb94abd0e997",
+  "operator_name": "hilbert2",
+  "scale_id": "hilbert2_int32_10e3",
+  "requested_dtype": "INT32",
+  "dtype_semantics": "actual_typed_array_input_fp32_fft2d_extension",
+  "typed_input_names": "x",
+  "compute_dtype": "FP32",
+  "fft_dtype": "ComplexFP32",
+  "output_dtype": "ComplexFP64",
+  "backend": "fft_thrust",
+  "typed_input_count": 1,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "1c7dbb94abd0e9973646c00f7f10e2fc2396533ef10db138f17263842098f0cf",
+  "metrics": {
+    "mse": 5.081318607401233e-12,
+    "rmse": 2.2541780336524515e-06,
+    "relative_l2": 1.3394556089946632e-07,
+    "relative_linf": 2.8068199238836833e-07
+  },
+  "status": "PASS",
+  "error_code": "OK"
+}

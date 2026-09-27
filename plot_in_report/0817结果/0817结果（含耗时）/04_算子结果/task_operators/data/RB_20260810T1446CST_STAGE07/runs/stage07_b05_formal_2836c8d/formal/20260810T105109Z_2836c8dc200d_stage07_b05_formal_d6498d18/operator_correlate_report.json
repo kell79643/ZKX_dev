@@ -1,0 +1,46 @@
+{
+  "run_id": "20260810T105109Z_2836c8dc200d_stage07_b05_formal_d6498d18",
+  "case_id": "correlate__correlate_fp16_10e2__dd36386658e0ce53",
+  "operator_name": "correlate",
+  "task_name": "Task2",
+  "step_name": "Step4",
+  "scale_id": "correlate_fp16_10e2",
+  "requested_dtype": "FP16",
+  "input_content": [
+    {
+      "input_name": "signal",
+      "shape": "[128]",
+      "dtype": "FP16",
+      "element_count": "128",
+      "generator": "task2_signal_mixture",
+      "preview_head4_tail2": "i=0:1.5;i=1:2.11914062;i=2:2.72851562;i=3:1.70117188;i=126:-3.79296875;i=127:-5.06640625"
+    },
+    {
+      "input_name": "reference",
+      "shape": "[17]",
+      "dtype": "FP16",
+      "element_count": "17",
+      "generator": "task2_reference_template",
+      "preview_head4_tail2": "i=0:2.125;i=1:2.74414062;i=2:1.72753906;i=3:2.32617188;i=15:2.26367188;i=16:2.74609375"
+    }
+  ],
+  "case_parameters": {
+    "signal_count": 128,
+    "reference_count": 17,
+    "mode": "same",
+    "output_count": 128
+  },
+  "output_dtype": "FP16",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "output_count": 128,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "actual_input_digest": "dd36386658e0ce53a9a0aae7055da8819ca440d7d8c1e44f61ce9dbbec651cce",
+  "typed_array_digest": "6cf430ce2fdb29d8390050e81258245fe7126ff5ee93f756eff7fb19564c10a0",
+  "status": "PASS",
+  "error_code": "OK"
+}

@@ -1,0 +1,36 @@
+{
+  "run_id": "20260810T105059Z_2836c8dc200d_stage07_b05_formal_5e32c370",
+  "case_id": "fm_demod__fm_demod_int8_10e4__3bd18c14f02f8af3",
+  "operator_name": "fm_demod",
+  "task_name": "Task2",
+  "step_name": "Step4",
+  "scale_id": "fm_demod_int8_10e4",
+  "requested_dtype": "INT8",
+  "input_content": [
+    {
+      "input_name": "analytic",
+      "shape": "[10000]",
+      "dtype": "ComplexINT8",
+      "element_count": "10000",
+      "generator": "deterministic_chirped_analytic_signal",
+      "preview_head4_tail2": "i=0:(20,0);i=1:(20,0);i=2:(20,1);i=3:(20,1);i=9998:(-16,-12);i=9999:(-15,-13)"
+    }
+  ],
+  "case_parameters": {
+    "count": 10000,
+    "output_count": 9999
+  },
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "output_count": 9999,
+  "mse": 6.25096e-15,
+  "rmse": 7.9063e-08,
+  "relative_l2": 1.54778e-06,
+  "relative_linf": 2.12219e-06,
+  "actual_input_digest": "3bd18c14f02f8af395cd192125d43ac598715d7e73a0ce09e3bf6aedaa6cec74",
+  "typed_array_digest": "8ecf076732650ce69f55ddf59b6094919f0337a7b5fcb114ba55a9a76aef2f6d",
+  "status": "PASS",
+  "error_code": "OK"
+}

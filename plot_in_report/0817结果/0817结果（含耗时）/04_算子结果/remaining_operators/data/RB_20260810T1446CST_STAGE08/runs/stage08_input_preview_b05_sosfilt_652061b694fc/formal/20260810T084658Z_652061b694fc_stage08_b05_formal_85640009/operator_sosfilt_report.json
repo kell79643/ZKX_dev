@@ -1,0 +1,50 @@
+{
+  "run_id": "20260810T084658Z_652061b694fc_stage08_b05_formal_85640009",
+  "case_id": "sosfilt__sosfilt_int16_10e2__2704a5f416f05463",
+  "operator_name": "sosfilt",
+  "scale_id": "sosfilt_int16_10e2",
+  "requested_dtype": "INT16",
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "sections": 1,
+  "axis": 0,
+  "rank": 1,
+  "has_zi": false,
+  "has_zf": false,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "sos",
+      "shape": "[1x6]",
+      "dtype": "INT16",
+      "element_count": "6",
+      "generator": "repeated_sos_section_[1,1,0,1,0,0]",
+      "preview_head4_tail2": "i=0:1;i=1:1;i=2:0;i=3:1;i=4:0;i=5:0"
+    },
+    {
+      "input_name": "x",
+      "shape": "[100]",
+      "dtype": "INT16",
+      "element_count": "100",
+      "generator": "sosfilt_modular(seed=85440001,integral=true)",
+      "preview_head4_tail2": "i=0:0;i=1:4;i=2:-1;i=3:3;i=98:-4;i=99:0"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT16",
+    "rank": "1",
+    "rows": "100",
+    "cols": "1",
+    "sections": "1",
+    "axis": "0",
+    "zi": "false",
+    "seed": "85440001"
+  }
+}

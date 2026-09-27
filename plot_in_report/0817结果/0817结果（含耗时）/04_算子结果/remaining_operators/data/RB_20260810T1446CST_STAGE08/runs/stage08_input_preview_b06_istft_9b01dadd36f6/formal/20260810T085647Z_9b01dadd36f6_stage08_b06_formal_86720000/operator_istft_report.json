@@ -1,0 +1,47 @@
+{
+  "run_id": "20260810T085647Z_9b01dadd36f6_stage08_b06_formal_86720000",
+  "case_id": "istft__istft_fp32_10e2__0e96def854e68ce9",
+  "operator_name": "istft",
+  "scale_id": "istft_fp32_10e2",
+  "requested_dtype": "FP32",
+  "output_dtype": "FP32",
+  "backend": "fft_thrust",
+  "frequency_count": 9,
+  "time_count": 12,
+  "nperseg": 16,
+  "noverlap": 8,
+  "nfft": 16,
+  "input_onesided": true,
+  "boundary": true,
+  "output_length": 88,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 2.67706e-14,
+  "rmse": 1.63617e-07,
+  "relative_l2": 9.96916e-08,
+  "relative_linf": 1.25415e-07,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "z",
+      "shape": "[9x12]",
+      "dtype": "ComplexFP32",
+      "element_count": "108",
+      "generator": "frequency_major_complex_modular(seed=86210001,component_dtype=FP32,integral=false)",
+      "preview_head4_tail2": "i=0:(1,-0.5);i=1:(-0.21875,0.359375);i=2:(1.3125,0.09375);i=3:(0.09375,-0.171875);i=106:(0.5625,-0.015625);i=107:(-0.65625,-0.28125)"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "FP32",
+    "bins": "9",
+    "frames": "12",
+    "fs": "100",
+    "nperseg": "16",
+    "noverlap": "8",
+    "nfft": "16",
+    "onesided": "true",
+    "boundary": "true",
+    "seed": "86210001"
+  }
+}

@@ -1,0 +1,22 @@
+run_id=20260810T081255Z_1662dd06774d_stage07_b01_formal_e20ffdb5
+case_id=ca_cfar__cacfar_int8_10e4__697a90db28843bae
+operator_name=ca_cfar
+scale_id=cacfar_int8_10e4
+requested_dtype=INT8
+config_input_dtype=INT8
+input_content=[{'input_name': 'power', 'shape': '[128x128]', 'dtype': 'INT8', 'element_count': '16384', 'generator': 'real_modular(seed=23,integral=true)', 'preview_head4_tail2': 'i=0:-5;i=1:-7;i=2:-9;i=3:8;i=16382:6;i=16383:4'}]
+case_parameters={'guard_cells': [1, 1], 'reference_cells': [4, 4], 'pfa': 0.001}
+output_dtype=FP32+BOOL
+backend=not_applicable
+warmup_runs=20
+measured_runs=100
+mse=0
+rmse=0
+relative_l2=0
+relative_linf=0
+exact_match=True
+mismatch_count=0
+semantic_check=True
+actual_input_digest=697a90db28843bae345e6c8463087043d1e093f1b66e42d41cf92b76e813f47a
+status=PASS
+error_code=OK

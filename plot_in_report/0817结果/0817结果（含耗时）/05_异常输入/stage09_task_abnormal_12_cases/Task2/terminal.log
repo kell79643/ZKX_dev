@@ -1,0 +1,40 @@
+[TASK2][ABNORMAL][CSV] path=/tmp/ZKX_dev/results/stage09_task2_abnormal_developer_20260814_v1/task_abnormal_cases_dlfft.csv rows=6
+task/step         abnormal_type           expected_code           captured_code           returned_code           safe_exit  status
+-------------------------------------------------------------------------------------------------------------------------------------
+Task2/entry       config_error            CONFIG_ERROR            CONFIG_ERROR            CONFIG_ERROR            true       PASS
+  case_id: task2.entry.config_error.missing_required_kalman_r
+  abnormal_input: Task2配置文件缺少必填字段kalman_R
+  error_message: Task2配置缺失或损坏：missing config field: kalman_R
+  backend_error: code=NA name=NA message=NA
+  output_consumed: false
+Task2/step2       upstream_step_failed    UPSTREAM_STEP_FAILED    UPSTREAM_STEP_FAILED    UPSTREAM_STEP_FAILED    true       PASS
+  case_id: task2.step2.upstream_step_failed.missing_step1_echo
+  abnormal_input: Step2缺少流程真值表规定的Step1.echo
+  error_message: Task2 step2缺少上游输入Step1.echo，pipeline已停止且未消费下游输出
+  backend_error: code=NA name=NA message=NA
+  output_consumed: false
+Task2/entry       invalid_parameter       INVALID_ARGUMENT        INVALID_ARGUMENT        INVALID_ARGUMENT        true       PASS
+  case_id: task2.entry.invalid_parameter.cutoff_violates_nyquist
+  abnormal_input: Task2滤波截止频率300Hz超过256Hz Nyquist上限
+  error_message: Task2采样率或滤波截止频率违反Nyquist约束
+  backend_error: code=NA name=NA message=NA
+  output_consumed: false
+Task2/entry       invalid_dtype           INVALID_DTYPE           INVALID_DTYPE           INVALID_DTYPE           true       PASS
+  case_id: task2.entry.invalid_dtype.fp64
+  abnormal_input: Task2请求不支持的FP64任务输入dtype
+  error_message: Task2 pipeline不支持输入dtype：FP64；当前任务合同仅允许FP32
+  backend_error: code=NA name=NA message=NA
+  output_consumed: false
+Task2/entry       controlled_oom          OUT_OF_MEMORY           OUT_OF_MEMORY           OUT_OF_MEMORY           true       PASS
+  case_id: task2.entry.controlled_oom.input_elements_exceed_guard
+  abnormal_input: 1073741824元素超过Task2受控资源上限且禁止实际分配
+  error_message: Task2输入规模超过受控资源上限：elements=1073741824，limit=67108864；未执行内存分配
+  backend_error: code=NA name=NA message=NA
+  output_consumed: false
+Task2/entry       invalid_backend         UNSUPPORTED_OPERATION   UNSUPPORTED_OPERATION   UNSUPPORTED_OPERATION   true       PASS
+  case_id: task2.entry.invalid_backend.cuda_unknown
+  abnormal_input: Task2请求未编译的cuda_unknown后端且禁止静默回退
+  error_message: Task2请求的FFT backend不可用：requested=cuda_unknown，compiled=dlfft；禁止静默回退
+  backend_error: code=NA name=NA message=NA
+  output_consumed: false
+[TASK2][ABNORMAL][SUMMARY] total=6 pass=6 fail=0 status=PASS

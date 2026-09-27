@@ -1,0 +1,2 @@
+command=build_stage07_b04_firwin_20e76c9b0ef/stage07_firwin --dtype FP32 --n 9999 --taps 1 --cutoff 60 --fs 1000 --sym true --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage07_b04_formal_20e76c9b0ef/formal/20260810T101630Z_20e76c9b0ef0_stage07_b04_formal_d8682cbf/firwin_probe_raw.json
+firwin lowpass resident shape or fs

@@ -1,0 +1,50 @@
+{
+  "run_id": "20260810T085927Z_9b01dadd36f6_stage08_b06_formal_8674000e",
+  "case_id": "stft__stft_int8_10e4__1b9051d8d79c6c75",
+  "operator_name": "stft",
+  "scale_id": "stft_int8_10e4",
+  "requested_dtype": "INT8",
+  "output_dtype": "ComplexFP32",
+  "backend": "fft_thrust",
+  "nperseg": 128,
+  "noverlap": 96,
+  "nfft": 128,
+  "detrend": "none",
+  "return_onesided": true,
+  "boundary": "even",
+  "padded": true,
+  "frequency_count": 65,
+  "time_count": 314,
+  "output_count": 20410,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 2.01769e-15,
+  "rmse": 4.49187e-08,
+  "relative_l2": 3.89765e-09,
+  "relative_linf": 4.76837e-10,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[10000]",
+      "dtype": "INT8",
+      "element_count": "10000",
+      "generator": "spectral_modular_plus_periodic_offset(seed=86450003,integral=true)",
+      "preview_head4_tail2": "i=0:-3;i=1:3;i=2:-2;i=3:4;i=9998:2;i=9999:-3"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT8",
+    "count": "10000",
+    "fs": "1000",
+    "nperseg": "128",
+    "noverlap": "96",
+    "nfft": "128",
+    "detrend": "none",
+    "onesided": "true",
+    "boundary": "even",
+    "padded": "true",
+    "seed": "86450003"
+  }
+}

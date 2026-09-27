@@ -1,0 +1,37 @@
+{
+  "run_id": "20260810T091355Z_bdef73fce32b_stage08_b08_formal_87720003",
+  "case_id": "quadratic__quadratic_fp16_10e2__46c24ce461ad684d",
+  "operator_name": "quadratic",
+  "scale_id": "quadratic_fp16_10e2",
+  "requested_dtype": "FP16",
+  "output_dtype": "FP16",
+  "backend": "not_applicable",
+  "input_count": 100,
+  "output_count": 100,
+  "order": -1,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[100]",
+      "dtype": "FP16",
+      "element_count": "100",
+      "generator": "bspline_modular_or_piecewise_ramp(seed=87400103,integral=false)",
+      "preview_head4_tail2": "i=0:-3.875;i=1:-3.84375;i=2:-3.8125;i=3:-3.78125;i=98:-0.8125;i=99:-0.78125"
+    }
+  ],
+  "case_parameters": {
+    "operator": "quadratic",
+    "dtype": "FP16",
+    "elements": "100",
+    "order": "-1",
+    "seed": "87400103"
+  }
+}
