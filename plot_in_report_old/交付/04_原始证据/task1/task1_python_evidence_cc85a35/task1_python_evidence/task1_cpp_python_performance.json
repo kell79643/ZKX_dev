@@ -1,0 +1,265 @@
+{
+  "task": "Task1",
+  "comparison": "cusignal_python_23.08.00_vs_cusignal_cpp_zq500",
+  "status": "pass",
+  "speedup_definition": {
+    "id": "task1_cusignal_python_gpu_adapter_over_cpp_cuda_gpu",
+    "name": "cuSignal Python GPU + required ZQ500 adapter / C++/CUDA GPU",
+    "formula": "T_(cuSignal Python GPU + required ZQ500 adapter) / T_(C++/CUDA GPU)",
+    "numerator": "matching Python step formal_execution_ms, including real cuSignal calls, all required task1_python/utils adapter time, task scaffolding, H2D and D2H",
+    "denominator": "matching task1_gpu_cpu C++/CUDA GPU step formal_execution_ms, excluding CPU validation and CPU/GPU accuracy comparison",
+    "primary_level": "matching Task1 step"
+  },
+  "fairness_contract": {
+    "same_input_fields": true,
+    "compared_input_fields": [
+      "dtype",
+      "shape",
+      "sample_rate_hz",
+      "prf_hz",
+      "pulse_samples",
+      "target_delay_samples",
+      "doppler_hz",
+      "doppler_bin",
+      "bandwidth_hz",
+      "carrier_frequency_hz",
+      "target_amplitude",
+      "noise_std",
+      "noise_seed"
+    ],
+    "same_shape": [
+      32,
+      256
+    ],
+    "same_dtype": "ComplexFP32",
+    "same_five_steps": true,
+    "same_result_semantics": true,
+    "cusignal_upstream_modified": false,
+    "required_adapters_in_python_numerator": true,
+    "python_warmup_runs": 1,
+    "python_measured_runs": 10,
+    "cpp_evidence_runs": 10,
+    "process_protocol": "one warmup plus ten measured runs in one process for each implementation",
+    "primary_step_scope": "formal_execution_ms",
+    "pipeline_caveat": "not a like-for-like primary metric: C++ total includes CPU accuracy validation; Python total contains result summarization and no CPU reference/comparison"
+  },
+  "pipeline": {
+    "python_total_mean_ms": 8.969162404537201,
+    "cpp_total_mean_ms": 151.8590805,
+    "comparison_status": "diagnostic_times_only_not_a_speedup",
+    "reason": "pipeline responsibilities differ because C++ total includes CPU accuracy validation/comparison while Python has no CPU reference/comparison"
+  },
+  "steps": {
+    "step1": {
+      "python_formal_execution_mean_ms": 2.846982330083847,
+      "cpp_formal_execution_mean_ms": 0.46774899999999997,
+      "speedup_definition_id": "task1_cusignal_python_gpu_adapter_over_cpp_cuda_gpu",
+      "speedup": 6.08655995006691,
+      "numerator_mean_ms": 2.846982330083847,
+      "numerator": "cuSignal Python GPU formal_execution_ms including required ZQ500 adapters",
+      "denominator_mean_ms": 0.46774899999999997,
+      "denominator": "C++/CUDA GPU formal_execution_ms for the matching Task1 step",
+      "interpretation": "greater than 1 means C++/CUDA GPU is faster by this factor; less than 1 means cuSignal Python GPU plus adapter is faster"
+    },
+    "step2": {
+      "python_formal_execution_mean_ms": 1.2200398370623589,
+      "cpp_formal_execution_mean_ms": 0.9876459000000001,
+      "speedup_definition_id": "task1_cusignal_python_gpu_adapter_over_cpp_cuda_gpu",
+      "speedup": 1.23530086750966,
+      "numerator_mean_ms": 1.2200398370623589,
+      "numerator": "cuSignal Python GPU formal_execution_ms including required ZQ500 adapters",
+      "denominator_mean_ms": 0.9876459000000001,
+      "denominator": "C++/CUDA GPU formal_execution_ms for the matching Task1 step",
+      "interpretation": "greater than 1 means C++/CUDA GPU is faster by this factor; less than 1 means cuSignal Python GPU plus adapter is faster"
+    },
+    "step3": {
+      "python_formal_execution_mean_ms": 0.6656227633357048,
+      "cpp_formal_execution_mean_ms": 1.2195458000000001,
+      "speedup_definition_id": "task1_cusignal_python_gpu_adapter_over_cpp_cuda_gpu",
+      "speedup": 0.5457956259910081,
+      "numerator_mean_ms": 0.6656227633357048,
+      "numerator": "cuSignal Python GPU formal_execution_ms including required ZQ500 adapters",
+      "denominator_mean_ms": 1.2195458000000001,
+      "denominator": "C++/CUDA GPU formal_execution_ms for the matching Task1 step",
+      "interpretation": "greater than 1 means C++/CUDA GPU is faster by this factor; less than 1 means cuSignal Python GPU plus adapter is faster"
+    },
+    "step4": {
+      "python_formal_execution_mean_ms": 0.9821149520576,
+      "cpp_formal_execution_mean_ms": 0.6878797000000001,
+      "speedup_definition_id": "task1_cusignal_python_gpu_adapter_over_cpp_cuda_gpu",
+      "speedup": 1.427742310258029,
+      "numerator_mean_ms": 0.9821149520576,
+      "numerator": "cuSignal Python GPU formal_execution_ms including required ZQ500 adapters",
+      "denominator_mean_ms": 0.6878797000000001,
+      "denominator": "C++/CUDA GPU formal_execution_ms for the matching Task1 step",
+      "interpretation": "greater than 1 means C++/CUDA GPU is faster by this factor; less than 1 means cuSignal Python GPU plus adapter is faster"
+    },
+    "step5": {
+      "python_formal_execution_mean_ms": 2.902838494628668,
+      "cpp_formal_execution_mean_ms": 7.0207587,
+      "speedup_definition_id": "task1_cusignal_python_gpu_adapter_over_cpp_cuda_gpu",
+      "speedup": 0.41346507103693336,
+      "numerator_mean_ms": 2.902838494628668,
+      "numerator": "cuSignal Python GPU formal_execution_ms including required ZQ500 adapters",
+      "denominator_mean_ms": 7.0207587,
+      "denominator": "C++/CUDA GPU formal_execution_ms for the matching Task1 step",
+      "interpretation": "greater than 1 means C++/CUDA GPU is faster by this factor; less than 1 means cuSignal Python GPU plus adapter is faster"
+    }
+  },
+  "result_semantic_comparison": {
+    "method": "compare matching Task1 result metrics after each complete GPU path",
+    "reference": "C++/CUDA GPU result metrics from the same ten measured runs",
+    "checks": {
+      "step2.peak_range_bin": {
+        "python_value": 80.0,
+        "cpp_values": [
+          80.0
+        ],
+        "absolute_tolerance": 0.0,
+        "max_absolute_difference": 0.0,
+        "pass": true
+      },
+      "step3.peak_doppler_bin": {
+        "python_value": 5.0,
+        "cpp_values": [
+          5.0
+        ],
+        "absolute_tolerance": 0.0,
+        "max_absolute_difference": 0.0,
+        "pass": true
+      },
+      "step3.peak_range_bin": {
+        "python_value": 80.0,
+        "cpp_values": [
+          80.0
+        ],
+        "absolute_tolerance": 0.0,
+        "max_absolute_difference": 0.0,
+        "pass": true
+      },
+      "step3.detected_doppler_hz": {
+        "python_value": 1250.0,
+        "cpp_values": [
+          1250.0
+        ],
+        "absolute_tolerance": 1e-06,
+        "max_absolute_difference": 0.0,
+        "pass": true
+      },
+      "step4.target_detected": {
+        "python_value": 1.0,
+        "cpp_values": [
+          1.0
+        ],
+        "absolute_tolerance": 0.0,
+        "max_absolute_difference": 0.0,
+        "pass": true
+      },
+      "step5.peak_delay_index": {
+        "python_value": 63.0,
+        "cpp_values": [
+          63.0
+        ],
+        "absolute_tolerance": 0.0,
+        "max_absolute_difference": 0.0,
+        "pass": true
+      },
+      "step5.peak_doppler_index": {
+        "python_value": 64.0,
+        "cpp_values": [
+          64.0
+        ],
+        "absolute_tolerance": 0.0,
+        "max_absolute_difference": 0.0,
+        "pass": true
+      },
+      "step5.delay_mainlobe_width_samples": {
+        "python_value": 3.0,
+        "cpp_values": [
+          3.0
+        ],
+        "absolute_tolerance": 0.0,
+        "max_absolute_difference": 0.0,
+        "pass": true
+      },
+      "step5.doppler_mainlobe_width_bins": {
+        "python_value": 1.0,
+        "cpp_values": [
+          1.0
+        ],
+        "absolute_tolerance": 0.0,
+        "max_absolute_difference": 0.0,
+        "pass": true
+      },
+      "step5.delay_pslr_db": {
+        "python_value": -14.33370368683438,
+        "cpp_values": [
+          -14.333618438839984
+        ],
+        "absolute_tolerance": 0.001,
+        "max_absolute_difference": 8.524799439513231e-05,
+        "pass": true
+      },
+      "step5.doppler_pslr_db": {
+        "python_value": -13.45697295182859,
+        "cpp_values": [
+          -13.45697051433772
+        ],
+        "absolute_tolerance": 0.001,
+        "max_absolute_difference": 2.437490870477177e-06,
+        "pass": true
+      }
+    },
+    "pass": true
+  },
+  "python_runtime": {
+    "python": "3.12.11",
+    "numpy": "2.4.6",
+    "cupy": "13.6.0",
+    "cusignal": "23.08.00",
+    "cusignal_source": "/tmp/ZKX_dev/cusignal-23.08.00/python",
+    "cusignal_immutable_source": {
+      "source_root": "/tmp/ZKX_dev/cusignal-23.08.00",
+      "file_count": 152,
+      "tree_sha256": "ca9e760bdebb0a481e18171546881b2e75214a422482f7442a0814871476c163",
+      "radartools_sha256": "438fdde707ea86e9249cc38cb5ad8addca3e65da7f38e7d06218809236f2f650"
+    },
+    "cupy_source": "/tmp/task1_cupy_zq500_13_6_0_cuda_11_7/source/cupy/__init__.py",
+    "dependency_versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "numba": "0.65.1",
+      "cupy": "source-or-unavailable",
+      "cusignal": "source-or-unavailable"
+    },
+    "cuda_runtime_version": 11070,
+    "cuda_driver_version": 11070,
+    "device_name": "ZQ500-Q QUAD-2",
+    "device_id": 0,
+    "device_count": 1,
+    "evidence_git_commit": "cc85a352c4eede97e54c54393bcdce6b9cda2545",
+    "evidence_git_dirty": "true",
+    "evidence_test_time": "2026-07-18T15:50:00+08:00"
+  },
+  "input_contract": {
+    "dtype": "ComplexFP32",
+    "shape": [
+      32,
+      256
+    ],
+    "sample_rate_hz": 2560000.0,
+    "prf_hz": 8000.0,
+    "bandwidth_hz": 640000.0,
+    "carrier_frequency_hz": 10000000000.0,
+    "pulse_samples": 64,
+    "target_delay_samples": 80,
+    "doppler_bin": 5,
+    "doppler_hz": 1250.0,
+    "target_amplitude": 1.0,
+    "noise_std": 0.035,
+    "noise_seed": 20260715
+  },
+  "cpp_commits": [
+    "cc85a352c4eede97e54c54393bcdce6b9cda2545"
+  ]
+}

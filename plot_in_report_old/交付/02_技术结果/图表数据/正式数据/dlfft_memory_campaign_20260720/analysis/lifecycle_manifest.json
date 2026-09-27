@@ -1,0 +1,22 @@
+{
+  "formal_iterations": 2000,
+  "repeats": [
+    {
+      "repeat": 1,
+      "control_rows": 2000,
+      "execute_rows": 2000
+    },
+    {
+      "repeat": 2,
+      "control_rows": 2000,
+      "execute_rows": 2000
+    },
+    {
+      "repeat": 3,
+      "control_rows": 2000,
+      "execute_rows": 2000
+    }
+  ],
+  "classification": "common_path_growth",
+  "conclusion": "Control 与 Execute 均增长，应优先排查公共生命周期代码、测量 API 或 allocator 行为。"
+}

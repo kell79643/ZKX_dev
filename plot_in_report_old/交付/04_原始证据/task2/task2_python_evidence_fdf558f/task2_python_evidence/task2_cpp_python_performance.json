@@ -1,0 +1,551 @@
+{
+  "task": "Task2",
+  "comparison": "cusignal_python_23.08.00_vs_cusignal_cpp_zq500",
+  "status": "pass",
+  "speedup_definition": {
+    "formula": "T_cuSignal Python GPU + required ZQ500 adapter / T_C++/CUDA GPU",
+    "numerator": "cuSignal 23.08 public Python/GPU calls plus required Task2/task2_python/utils ZQ500 adapter execution, allocation and synchronization; first JIT warmup excluded",
+    "denominator": "C++/CUDA GPU formal_execution_ms for the same six-step input/parameter contract; CPU validation, CPU comparison and semantic post-checks excluded",
+    "formal_speedup_scope": "step formal_execution_ms",
+    "pipeline_ratio_scope": "diagnostic only because complete-pipeline semantic/validation boundaries differ"
+  },
+  "python_git_commit": "fdf558f9a344a29d53e4f77b07ef59a9a918f8d3",
+  "python_git_dirty": "true",
+  "test_time": "2026-07-16T10:46:25+00:00",
+  "fairness_contract": {
+    "same_input": true,
+    "same_shape": [
+      512
+    ],
+    "same_dtype": "FP32",
+    "same_six_steps": true,
+    "same_target_delay_samples": 96,
+    "same_noise_seed": 20260714,
+    "python_warmup_runs": 1,
+    "python_measured_runs": 10,
+    "cpp_evidence_runs": 10,
+    "cpp_measured_runs": 10,
+    "primary_step_scope": "formal_execution_ms",
+    "operator_scope": "diagnostic mapped CUDA-event operator ratios; semantic operator/parameters match, but Python high-level allocation and C++ preallocated wrapper boundaries can differ",
+    "unmapped_scope": "Python GPU normalization/envelopes/feature fusion and C++ Host equivalents remain in formal step time but have no fabricated one-to-one operator ratio",
+    "pipeline_caveat": "pipeline totals include each implementation's semantic/validation overhead"
+  },
+  "pipeline": {
+    "python_total_ms": {
+      "total": 542.5435844808817,
+      "mean": 54.25435844808817,
+      "min": 47.87016287446022,
+      "max": 55.71808572858572,
+      "sample_stddev": 2.2998155148229897
+    },
+    "cpp_total_ms": {
+      "total": 33689.47,
+      "mean": 3368.947,
+      "min": 3360.1,
+      "max": 3381.13,
+      "sample_stddev": 6.629156222493389
+    },
+    "python_over_cpp_ratio": 0.01610424813690692,
+    "cpp_over_python_ratio": 62.095416780635,
+    "faster_implementation": "python"
+  },
+  "steps": {
+    "step1": {
+      "python_formal_execution_ms": {
+        "total": 39.48805760592222,
+        "mean": 3.948805760592222,
+        "min": 3.2725026831030846,
+        "max": 4.327060654759407,
+        "sample_stddev": 0.2632849422030194
+      },
+      "cpp_formal_execution_ms": {
+        "total": 1091.023,
+        "mean": 109.10229999999999,
+        "min": 107.39,
+        "max": 111.045,
+        "sample_stddev": 1.12374434122911
+      },
+      "python_over_cpp_ratio": 0.0361936069229725,
+      "cpp_over_python_ratio": 27.629188826861256,
+      "faster_implementation": "python",
+      "operators": {
+        "chirp": {
+          "python_ms": {
+            "total": 0.9473360031843185,
+            "mean": 0.09473360031843185,
+            "min": 0.08208200335502625,
+            "max": 0.11417800188064575,
+            "sample_stddev": 0.007837352002389894
+          },
+          "cpp_ms": {
+            "total": 33.167320000000004,
+            "mean": 3.3167320000000005,
+            "min": 3.24827,
+            "max": 3.3603,
+            "sample_stddev": 0.03576331602820591
+          },
+          "python_over_cpp_ratio": 0.02856233193349111,
+          "cpp_over_python_ratio": 35.011146930459056,
+          "faster_implementation": "python"
+        },
+        "gausspulse": {
+          "python_ms": {
+            "total": 2.10104601085186,
+            "mean": 0.210104601085186,
+            "min": 0.19350600242614746,
+            "max": 0.24224600195884705,
+            "sample_stddev": 0.012309265047131101
+          },
+          "cpp_ms": {
+            "total": 1.296364,
+            "mean": 0.1296364,
+            "min": 0.123698,
+            "max": 0.140692,
+            "sample_stddev": 0.006285786986881157
+          },
+          "python_over_cpp_ratio": 1.6207222746480616,
+          "cpp_over_python_ratio": 0.6170088581136759,
+          "faster_implementation": "cpp"
+        },
+        "sawtooth": {
+          "python_ms": {
+            "total": 2.3463079631328583,
+            "mean": 0.23463079631328582,
+            "min": 0.2061759978532791,
+            "max": 0.2602959871292114,
+            "sample_stddev": 0.016127490958099715
+          },
+          "cpp_ms": {
+            "total": 3.481048,
+            "mean": 0.3481048,
+            "min": 0.320862,
+            "max": 0.3807,
+            "sample_stddev": 0.01897930571730987
+          },
+          "python_over_cpp_ratio": 0.6740234444146872,
+          "cpp_over_python_ratio": 1.483627918711917,
+          "faster_implementation": "python"
+        },
+        "square": {
+          "python_ms": {
+            "total": 1.9436559975147247,
+            "mean": 0.19436559975147247,
+            "min": 0.17705599963665009,
+            "max": 0.21366199851036072,
+            "sample_stddev": 0.008939519970916469
+          },
+          "cpp_ms": {
+            "total": 2.849002,
+            "mean": 0.2849002,
+            "min": 0.27653,
+            "max": 0.310808,
+            "sample_stddev": 0.010725850412282776
+          },
+          "python_over_cpp_ratio": 0.682223458430259,
+          "cpp_over_python_ratio": 1.465795389535445,
+          "faster_implementation": "python"
+        },
+        "echo_superposition": {
+          "python_ms": {
+            "total": 21.311299920082092,
+            "mean": 2.1311299920082094,
+            "min": 1.6207820177078247,
+            "max": 2.3886380195617676,
+            "sample_stddev": 0.1944636053636949
+          },
+          "cpp_ms": {
+            "total": 0.903994,
+            "mean": 0.09039939999999999,
+            "min": 0.087446,
+            "max": 0.094818,
+            "sample_stddev": 0.0024936730695457607
+          },
+          "python_over_cpp_ratio": 23.574603282855968,
+          "cpp_over_python_ratio": 0.042418529296194975,
+          "faster_implementation": "cpp"
+        }
+      }
+    },
+    "step2": {
+      "python_formal_execution_ms": {
+        "total": 26.986831799149513,
+        "mean": 2.6986831799149513,
+        "min": 2.6245377957820892,
+        "max": 3.0479999259114265,
+        "sample_stddev": 0.1256697418105162
+      },
+      "cpp_formal_execution_ms": {
+        "total": 17.29832,
+        "mean": 1.729832,
+        "min": 1.65198,
+        "max": 1.85141,
+        "sample_stddev": 0.05254826856223608
+      },
+      "python_over_cpp_ratio": 1.5600839734234024,
+      "cpp_over_python_ratio": 0.6409911370383667,
+      "faster_implementation": "cpp",
+      "operators": {
+        "hamming": {
+          "python_ms": {
+            "total": 1.9787960201501846,
+            "mean": 0.19787960201501847,
+            "min": 0.19188199937343597,
+            "max": 0.21585799753665924,
+            "sample_stddev": 0.006605436159915573
+          },
+          "cpp_ms": {
+            "total": 3.357792,
+            "mean": 0.3357792,
+            "min": 0.298928,
+            "max": 0.44758,
+            "sample_stddev": 0.04252527079487886
+          },
+          "python_over_cpp_ratio": 0.5893146508628839,
+          "cpp_over_python_ratio": 1.6968863722220109,
+          "faster_implementation": "python"
+        },
+        "firwin": {
+          "python_ms": {
+            "total": 16.747998118400574,
+            "mean": 1.6747998118400573,
+            "min": 1.620468020439148,
+            "max": 1.8708100318908691,
+            "sample_stddev": 0.07186569024774665
+          },
+          "cpp_ms": {
+            "total": 5.612852,
+            "mean": 0.5612852,
+            "min": 0.541258,
+            "max": 0.57845,
+            "sample_stddev": 0.011797004147004622
+          },
+          "python_over_cpp_ratio": 2.9838659772964924,
+          "cpp_over_python_ratio": 0.3351356956407412,
+          "faster_implementation": "cpp"
+        },
+        "firfilter": {
+          "python_ms": {
+            "total": 2.557349979877472,
+            "mean": 0.2557349979877472,
+            "min": 0.23991799354553223,
+            "max": 0.3356359899044037,
+            "sample_stddev": 0.028887386628552357
+          },
+          "cpp_ms": {
+            "total": 4.112176,
+            "mean": 0.41121759999999996,
+            "min": 0.389064,
+            "max": 0.436482,
+            "sample_stddev": 0.014889724982162846
+          },
+          "python_over_cpp_ratio": 0.6218970150785064,
+          "cpp_over_python_ratio": 1.6079832765779767,
+          "faster_implementation": "python"
+        }
+      }
+    },
+    "step3": {
+      "python_formal_execution_ms": {
+        "total": 9.415325708687305,
+        "mean": 0.9415325708687305,
+        "min": 0.9147962555289268,
+        "max": 1.00786704570055,
+        "sample_stddev": 0.02773508583317624
+      },
+      "cpp_formal_execution_ms": {
+        "total": 6.188934,
+        "mean": 0.6188933999999999,
+        "min": 0.602014,
+        "max": 0.642384,
+        "sample_stddev": 0.013387585129514575
+      },
+      "python_over_cpp_ratio": 1.5213162248437786,
+      "cpp_over_python_ratio": 0.6573255340799959,
+      "faster_implementation": "cpp",
+      "operators": {
+        "cubic": {
+          "python_ms": {
+            "total": 0.9244219958782196,
+            "mean": 0.09244219958782196,
+            "min": 0.08842600136995316,
+            "max": 0.1046300008893013,
+            "sample_stddev": 0.006426381025284566
+          },
+          "cpp_ms": {
+            "total": 0.8763,
+            "mean": 0.08763,
+            "min": 0.082378,
+            "max": 0.091662,
+            "sample_stddev": 0.003243266940053568
+          },
+          "python_over_cpp_ratio": 1.0549149787495373,
+          "cpp_over_python_ratio": 0.9479436922825459,
+          "faster_implementation": "cpp"
+        },
+        "firfilter_b_spline": {
+          "python_ms": {
+            "total": 2.2930079847574234,
+            "mean": 0.22930079847574233,
+            "min": 0.22454999387264252,
+            "max": 0.24779799580574036,
+            "sample_stddev": 0.0068507836819883625
+          },
+          "cpp_ms": {
+            "total": 1.917208,
+            "mean": 0.1917208,
+            "min": 0.18286,
+            "max": 0.2013,
+            "sample_stddev": 0.00560122107322244
+          },
+          "python_over_cpp_ratio": 1.1960141960378965,
+          "cpp_over_python_ratio": 0.8361104770434634,
+          "faster_implementation": "cpp"
+        }
+      }
+    },
+    "step4": {
+      "python_formal_execution_ms": {
+        "total": 101.5387549996376,
+        "mean": 10.15387549996376,
+        "min": 9.941937401890755,
+        "max": 10.290528647601604,
+        "sample_stddev": 0.10157709494021133
+      },
+      "cpp_formal_execution_ms": {
+        "total": 32383.45,
+        "mean": 3238.3450000000003,
+        "min": 3229.01,
+        "max": 3249.88,
+        "sample_stddev": 6.299109725455883
+      },
+      "python_over_cpp_ratio": 0.003135513819547874,
+      "cpp_over_python_ratio": 318.9269949204674,
+      "faster_implementation": "python",
+      "operators": {
+        "analytic_glue": {
+          "python_ms": {
+            "total": 4.482767969369888,
+            "mean": 0.44827679693698885,
+            "min": 0.42021000385284424,
+            "max": 0.5216779708862305,
+            "sample_stddev": 0.030944080272672658
+          },
+          "cpp_ms": {
+            "total": 0.739946,
+            "mean": 0.0739946,
+            "min": 0.070834,
+            "max": 0.07649,
+            "sample_stddev": 0.0018493112351479527
+          },
+          "python_over_cpp_ratio": 6.058236640741201,
+          "cpp_over_python_ratio": 0.16506453268515012,
+          "faster_implementation": "cpp"
+        },
+        "fm_demod": {
+          "python_ms": {
+            "total": 11.01907205581665,
+            "mean": 1.101907205581665,
+            "min": 1.0363160371780396,
+            "max": 1.2571359872817993,
+            "sample_stddev": 0.05948369825450465
+          },
+          "cpp_ms": {
+            "total": 0.89821,
+            "mean": 0.089821,
+            "min": 0.084822,
+            "max": 0.102742,
+            "sample_stddev": 0.005256429311910426
+          },
+          "python_over_cpp_ratio": 12.267812711745194,
+          "cpp_over_python_ratio": 0.08151412346249799,
+          "faster_implementation": "cpp"
+        },
+        "correlate": {
+          "python_ms": {
+            "total": 2.2469780147075653,
+            "mean": 0.22469780147075652,
+            "min": 0.21861200034618378,
+            "max": 0.26054999232292175,
+            "sample_stddev": 0.012719401143572031
+          },
+          "cpp_ms": {
+            "total": 1.4746380000000001,
+            "mean": 0.1474638,
+            "min": 0.14329,
+            "max": 0.154056,
+            "sample_stddev": 0.002978719105775353
+          },
+          "python_over_cpp_ratio": 1.52374888935967,
+          "cpp_over_python_ratio": 0.6562761141176177,
+          "faster_implementation": "cpp"
+        },
+        "spectrogram": {
+          "python_ms": {
+            "total": 12.970286011695862,
+            "mean": 1.2970286011695862,
+            "min": 1.207453966140747,
+            "max": 1.6466079950332642,
+            "sample_stddev": 0.1256051346918981
+          },
+          "cpp_ms": {
+            "total": 32313.49,
+            "mean": 3231.349,
+            "min": 3222.0,
+            "max": 3242.87,
+            "sample_stddev": 6.302324879668492
+          },
+          "python_over_cpp_ratio": 0.0004013892034471009,
+          "cpp_over_python_ratio": 2491.347528563483,
+          "faster_implementation": "python"
+        },
+        "cwt_ricker": {
+          "python_ms": {
+            "total": 24.08020830154419,
+            "mean": 2.408020830154419,
+            "min": 2.402266025543213,
+            "max": 2.418613910675049,
+            "sample_stddev": 0.0047221714719128454
+          },
+          "cpp_ms": {
+            "total": 3.903056,
+            "mean": 0.3903056,
+            "min": 0.368584,
+            "max": 0.412726,
+            "sample_stddev": 0.016897101231999653
+          },
+          "python_over_cpp_ratio": 6.169577966994117,
+          "cpp_over_python_ratio": 0.16208564108433018,
+          "faster_implementation": "cpp"
+        }
+      }
+    },
+    "step5": {
+      "python_formal_execution_ms": {
+        "total": 22.79667556285858,
+        "mean": 2.279667556285858,
+        "min": 1.8597329035401344,
+        "max": 2.4484870955348015,
+        "sample_stddev": 0.15550889212436997
+      },
+      "cpp_formal_execution_ms": {
+        "total": 7.473342,
+        "mean": 0.7473342,
+        "min": 0.673144,
+        "max": 1.25763,
+        "sample_stddev": 0.17972940502680382
+      },
+      "python_over_cpp_ratio": 3.050399080205159,
+      "cpp_over_python_ratio": 0.327825957753942,
+      "faster_implementation": "cpp",
+      "operators": {
+        "argrelextrema": {
+          "python_ms": {
+            "total": 20.1359680891037,
+            "mean": 2.01359680891037,
+            "min": 1.625815987586975,
+            "max": 2.158247947692871,
+            "sample_stddev": 0.14325312394023845
+          },
+          "cpp_ms": {
+            "total": 5.7649740000000005,
+            "mean": 0.5764974,
+            "min": 0.513264,
+            "max": 0.998872,
+            "sample_stddev": 0.14879726561421303
+          },
+          "python_over_cpp_ratio": 3.492811604892528,
+          "cpp_over_python_ratio": 0.2863023011602624,
+          "faster_implementation": "cpp"
+        }
+      }
+    },
+    "step6": {
+      "python_formal_execution_ms": {
+        "total": 130.38279861211777,
+        "mean": 13.038279861211777,
+        "min": 10.060506872832775,
+        "max": 13.683282770216465,
+        "sample_stddev": 1.0834876722582554
+      },
+      "cpp_formal_execution_ms": {
+        "total": 51.016059999999996,
+        "mean": 5.101605999999999,
+        "min": 4.86062,
+        "max": 5.26721,
+        "sample_stddev": 0.11311866701241965
+      },
+      "python_over_cpp_ratio": 2.555720661535167,
+      "cpp_over_python_ratio": 0.3912790685815097,
+      "faster_implementation": "cpp",
+      "operators": {
+        "kalmanfilter_predict_update": {
+          "python_ms": {
+            "total": 98.68312239646912,
+            "mean": 9.868312239646912,
+            "min": 7.404990077018738,
+            "max": 10.41959011554718,
+            "sample_stddev": 0.9045686752593568
+          },
+          "cpp_ms": {
+            "total": 33.08477,
+            "mean": 3.308477,
+            "min": 3.17289,
+            "max": 3.44765,
+            "sample_stddev": 0.07493689004755931
+          },
+          "python_over_cpp_ratio": 2.9827356332375627,
+          "cpp_over_python_ratio": 0.33526269940141024,
+          "faster_implementation": "cpp"
+        }
+      }
+    }
+  },
+  "python_runtime": {
+    "python": "3.12.11",
+    "numpy": "2.4.6",
+    "cupy": "13.6.0",
+    "cusignal": "23.08.00",
+    "cusignal_source": "/tmp/ZKX_dev/cusignal-23.08.00/python",
+    "cusignal_module_file": "/tmp/ZKX_dev/cusignal-23.08.00/python/cusignal/__init__.py",
+    "device_name": "ZQ500-Q QUAD-2",
+    "device_id": 0,
+    "device_count": 1,
+    "cuda_runtime_version": 11070,
+    "cuda_driver_version": 11070,
+    "zq500_cusignal_adapter": {
+      "installed": true,
+      "waveform_kernels": true,
+      "direct_convolution": true,
+      "peak_helper": true,
+      "scalar_kalman": true,
+      "vendored_source_modified": false
+    },
+    "evidence_git_commit": "fdf558f9a344a29d53e4f77b07ef59a9a918f8d3",
+    "evidence_git_dirty": "true",
+    "evidence_test_time": "2026-07-16T10:46:25+00:00"
+  },
+  "input_contract": {
+    "dtype": "FP32",
+    "shape": [
+      512
+    ],
+    "sample_rate_hz": 512.0,
+    "target_delay_samples": 96,
+    "noise_seed": 20260714,
+    "step3_output_samples": 480,
+    "feature_fusion_weights": {
+      "fm": 0.1,
+      "correlation": 0.7,
+      "spectral": 0.1,
+      "wavelet": 0.1
+    },
+    "argrelextrema": {
+      "axis": 0,
+      "order": 3,
+      "mode": "clip"
+    }
+  },
+  "cpp_commits": [
+    "fdf558f9a344a29d53e4f77b07ef59a9a918f8d3"
+  ]
+}

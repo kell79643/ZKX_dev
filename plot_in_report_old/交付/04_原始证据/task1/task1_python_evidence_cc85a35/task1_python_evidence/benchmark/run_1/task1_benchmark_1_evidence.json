@@ -1,0 +1,274 @@
+{
+  "task": "Task1",
+  "implementation": "cusignal_python_23.08.00",
+  "evidence_id": "benchmark_1",
+  "requested_steps": 5,
+  "completed_steps": 5,
+  "status": "pass",
+  "runtime": {
+    "python": "3.12.11",
+    "numpy": "2.4.6",
+    "cupy": "13.6.0",
+    "cusignal": "23.08.00",
+    "cusignal_source": "/tmp/ZKX_dev/cusignal-23.08.00/python",
+    "cusignal_immutable_source": {
+      "source_root": "/tmp/ZKX_dev/cusignal-23.08.00",
+      "file_count": 152,
+      "tree_sha256": "ca9e760bdebb0a481e18171546881b2e75214a422482f7442a0814871476c163",
+      "radartools_sha256": "438fdde707ea86e9249cc38cb5ad8addca3e65da7f38e7d06218809236f2f650"
+    },
+    "cupy_source": "/tmp/task1_cupy_zq500_13_6_0_cuda_11_7/source/cupy/__init__.py",
+    "dependency_versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "numba": "0.65.1",
+      "cupy": "source-or-unavailable",
+      "cusignal": "source-or-unavailable"
+    },
+    "cuda_runtime_version": 11070,
+    "cuda_driver_version": 11070,
+    "device_name": "ZQ500-Q QUAD-2",
+    "device_id": 0,
+    "device_count": 1,
+    "evidence_git_commit": "cc85a352c4eede97e54c54393bcdce6b9cda2545",
+    "evidence_git_dirty": "true",
+    "evidence_test_time": "2026-07-18T15:50:00+08:00"
+  },
+  "input_contract": {
+    "dtype": "ComplexFP32",
+    "shape": [
+      32,
+      256
+    ],
+    "sample_rate_hz": 2560000.0,
+    "prf_hz": 8000.0,
+    "bandwidth_hz": 640000.0,
+    "carrier_frequency_hz": 10000000000.0,
+    "pulse_samples": 64,
+    "target_delay_samples": 80,
+    "doppler_bin": 5,
+    "doppler_hz": 1250.0,
+    "target_amplitude": 1.0,
+    "noise_std": 0.035,
+    "noise_seed": 20260715
+  },
+  "timing_policy": {
+    "gpu_clock": "cupy.cuda.Event",
+    "step_clock": "time.perf_counter",
+    "h2d_scope": "cp.asarray followed by current-stream synchronization",
+    "pipeline_handoff": "Host PipelineState with explicit H2D/D2H, matching task1_gpu_cpu",
+    "d2h_scope": "formal step output copied for result retention",
+    "postprocess_scope": "result summarization only; no CPU reference or accuracy comparison",
+    "dlpti_used": false,
+    "dlpti_scope": "not used for formal timing; optional auxiliary profiling only",
+    "python_speedup_numerator_scope": "formal_execution_ms: cuSignal Python GPU calls, required ZQ500 adapters, task scaffolding, H2D and required D2H; excludes CPU reference/comparison"
+  },
+  "formal_apis": [
+    "cusignal.pulse_compression",
+    "cusignal.pulse_doppler",
+    "cusignal.radartools.cfar_alpha",
+    "cusignal.radartools.ca_cfar",
+    "task1.utils.task1_ambgfun -> cusignal.ambgfun(cut=2d)"
+  ],
+  "implementation_contract": {
+    "cusignal_upstream_version": "23.08.00",
+    "cusignal_upstream_modified": false,
+    "actual_cusignal_apis": [
+      "cusignal.chirp",
+      "cusignal.pulse_compression",
+      "cusignal.pulse_doppler",
+      "cusignal.radartools.cfar_alpha",
+      "cusignal.radartools.ca_cfar",
+      "cusignal.ambgfun(cut=2d)"
+    ],
+    "required_zq500_adapters": [
+      {
+        "name": "utils.cusignal_chirp_compat",
+        "scope": "restore removed NumPy type-test alias and explicitly cast the official linear chirp FP32 kernel constants",
+        "reason": "cuSignal 23.08.00 references np.issubclass_ and ZQ500 clang rejects NVIDIA-accepted implicit FP64-to-FP32 list narrowing"
+      },
+      {
+        "name": "utils.hamming_fp32_adapter",
+        "scope": "FP32 Hamming formula/dtype boundary only",
+        "reason": "avoid unsupported ComplexFP64/Z2Z FFT promotion"
+      },
+      {
+        "name": "utils.ambgfun_*_cut_adapter",
+        "scope": "grid-aligned slices of official cuSignal 2D output only",
+        "reason": "avoid unsupported FP64/non-power-of-two one-dimensional paths"
+      }
+    ],
+    "adapters_in_formal_execution": true,
+    "adapters_in_speedup_numerator": true
+  },
+  "pipeline_total_ms": 9.463268332183361,
+  "sum_step_total_ms": 9.453807026147842,
+  "steps": [
+    {
+      "name": "step1",
+      "timing_ms": {
+        "prepare": 0.002310611307621002,
+        "h2d": 0.0,
+        "compute": 2.7825361788272858,
+        "d2h": 0.3153625875711441,
+        "postprocess": 0.06994977593421936,
+        "formal_execution": 3.19606252014637,
+        "total": 3.2801423221826553
+      },
+      "operators_ms": {
+        "utils.cusignal_chirp_compat": 0.012990087270736694,
+        "cusignal.chirp": 0.28689199686050415,
+        "task_scaffolding.delay_doppler_noise": 2.482654094696045
+      },
+      "timing_categories_ms": {
+        "cusignal_api": 0.28689199686050415,
+        "required_zq500_adapter": 0.012990087270736694,
+        "task_scaffolding": 2.482654094696045
+      },
+      "result_metrics": {
+        "chirp_called": 1.0,
+        "target_echo_present": 1.0,
+        "delay_ground_truth_recorded": 1.0,
+        "delay_ground_truth_samples": 80.0,
+        "doppler_ground_truth_recorded": 1.0,
+        "doppler_ground_truth_hz": 1250.0,
+        "noise_added": 1.0,
+        "waveform_samples": 64.0,
+        "echo_elements": 8192.0,
+        "echo_peak_magnitude": 1.0483403205871582
+      }
+    },
+    {
+      "name": "step2",
+      "timing_ms": {
+        "prepare": 0.002059154212474823,
+        "h2d": 0.21777022629976273,
+        "compute": 0.9779459834098816,
+        "d2h": 0.09975116699934006,
+        "postprocess": 0.056580640375614166,
+        "formal_execution": 1.339196227490902,
+        "total": 1.4037266373634338
+      },
+      "operators_ms": {
+        "cusignal.pulse_compression": 0.9779459834098816
+      },
+      "timing_categories_ms": {
+        "cusignal_api": 0.9779459834098816,
+        "required_zq500_adapter": 0,
+        "task_scaffolding": 0
+      },
+      "result_metrics": {
+        "pulse_compression_called": 1.0,
+        "step1_to_step2_data_match": 1.0,
+        "peak_range_bin": 80.0,
+        "peak_energy": 2039.3426513671875,
+        "half_peak_width_bins": 3.0,
+        "output_elements": 8192.0,
+        "complex64_output": 1.0
+      }
+    },
+    {
+      "name": "step3",
+      "timing_ms": {
+        "prepare": 0.0011101365089416504,
+        "h2d": 0.12296997010707855,
+        "compute": 0.35445599257946014,
+        "d2h": 0.15484075993299484,
+        "postprocess": 0.05203951150178909,
+        "formal_execution": 0.7140832021832466,
+        "total": 0.7724631577730179
+      },
+      "operators_ms": {
+        "utils.hamming_fp32_adapter": 0.07186199724674225,
+        "cusignal.pulse_doppler": 0.2825939953327179
+      },
+      "timing_categories_ms": {
+        "cusignal_api": 0.2825939953327179,
+        "required_zq500_adapter": 0.07186199724674225,
+        "task_scaffolding": 0
+      },
+      "result_metrics": {
+        "pulse_doppler_called": 1.0,
+        "hamming_fp32_adapter_called": 1.0,
+        "step2_to_step3_data_match": 1.0,
+        "peak_doppler_bin": 5.0,
+        "peak_range_bin": 80.0,
+        "detected_doppler_hz": 1250.0,
+        "peak_power": 18044.40625,
+        "complex64_output": 1.0
+      }
+    },
+    {
+      "name": "step4",
+      "timing_ms": {
+        "prepare": 0.0011008232831954956,
+        "h2d": 0.12020021677017212,
+        "compute": 0.6114941164851189,
+        "d2h": 0.19889045506715775,
+        "postprocess": 0.057170167565345764,
+        "formal_execution": 1.0119546204805374,
+        "total": 1.0798834264278412
+      },
+      "operators_ms": {
+        "cupy.range_doppler_power": 0.1787479966878891,
+        "cusignal.cfar_alpha_host": 0.004080124199390411,
+        "cusignal.ca_cfar": 0.42866599559783936
+      },
+      "timing_categories_ms": {
+        "cusignal_api": 0.43274611979722977,
+        "required_zq500_adapter": 0,
+        "task_scaffolding": 0.1787479966878891
+      },
+      "result_metrics": {
+        "cfar_alpha_called": 1.0,
+        "ca_cfar_called": 1.0,
+        "step3_to_step4_data_match": 1.0,
+        "target_detected": 1.0,
+        "cfar_alpha": 7.142328977101583,
+        "detection_count": 2014.0,
+        "threshold_finite_fraction": 1.0
+      }
+    },
+    {
+      "name": "step5",
+      "timing_ms": {
+        "prepare": 0.001000240445137024,
+        "h2d": 0.12135133147239685,
+        "compute": 2.2994660027325153,
+        "d2h": 0.18528010696172714,
+        "postprocess": 0.10782107710838318,
+        "formal_execution": 2.7993815019726753,
+        "total": 2.917591482400894
+      },
+      "operators_ms": {
+        "cusignal.ambgfun_2d": 0.745714008808136,
+        "cusignal.ambgfun_2d_for_doppler_cut_adapter": 0.7307980060577393,
+        "utils.ambgfun_doppler_cut_adapter": 0.07928600162267685,
+        "cusignal.ambgfun_2d_for_delay_cut_adapter": 0.7106379866600037,
+        "utils.ambgfun_delay_cut_adapter": 0.03302999958395958
+      },
+      "timing_categories_ms": {
+        "cusignal_api": 2.187150001525879,
+        "required_zq500_adapter": 0.11231600120663643,
+        "task_scaffolding": 0
+      },
+      "result_metrics": {
+        "ambgfun_called": 1.0,
+        "ambiguity_cut_adapter_called": 1.0,
+        "step1_waveform_to_step5_match": 1.0,
+        "waveform_quality_pass": 1.0,
+        "ambiguity_peak": 1.0,
+        "ambiguity_peak_row": 63.0,
+        "ambiguity_peak_column": 64.0,
+        "ambiguity_rows": 127.0,
+        "ambiguity_columns": 128.0,
+        "peak_delay_index": 63.0,
+        "peak_doppler_index": 64.0,
+        "delay_mainlobe_width_samples": 3.0,
+        "doppler_mainlobe_width_bins": 1.0,
+        "delay_pslr_db": -14.33370368683438,
+        "doppler_pslr_db": -13.45697295182859
+      }
+    }
+  ]
+}

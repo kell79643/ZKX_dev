@@ -1,0 +1,5 @@
+task,implementation,mean_ms,min_ms,max_ms,stddev_ms,comparison_scope
+Task1,cuSignal Python GPU,7.9422986228019,7.66678340733051,10.7750305905938,0.43951237085654,sum of matching steps' formal_execution; excludes validation and reporting
+Task1,C++ CUDA GPU,9.64135895,7.967528,11.189935,0.722848041215537,sum of matching steps' formal_execution; excludes validation and reporting
+Task2,cuSignal Python GPU,28.937357291579247,25.97876451909542,35.17513256520033,3.108881658868582,sum of matching steps' formal_execution; excludes validation and reporting
+Task2,C++ CUDA GPU,11.027837850000001,8.407617,12.904388,1.294064839169174,sum of matching steps' formal_execution; excludes validation and reporting

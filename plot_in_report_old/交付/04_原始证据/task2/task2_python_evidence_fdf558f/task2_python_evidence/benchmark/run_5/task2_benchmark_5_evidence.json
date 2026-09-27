@@ -1,0 +1,308 @@
+{
+  "task": "Task2",
+  "implementation": "cusignal_python_23.08.00",
+  "evidence_id": "benchmark_5",
+  "requested_steps": 6,
+  "completed_steps": 6,
+  "status": "pass",
+  "git_commit": "fdf558f9a344a29d53e4f77b07ef59a9a918f8d3",
+  "git_dirty": "true",
+  "test_time": "2026-07-16T10:46:25+00:00",
+  "runtime": {
+    "python": "3.12.11",
+    "numpy": "2.4.6",
+    "cupy": "13.6.0",
+    "cusignal": "23.08.00",
+    "cusignal_source": "/tmp/ZKX_dev/cusignal-23.08.00/python",
+    "cusignal_module_file": "/tmp/ZKX_dev/cusignal-23.08.00/python/cusignal/__init__.py",
+    "device_name": "ZQ500-Q QUAD-2",
+    "device_id": 0,
+    "device_count": 1,
+    "cuda_runtime_version": 11070,
+    "cuda_driver_version": 11070,
+    "zq500_cusignal_adapter": {
+      "installed": true,
+      "waveform_kernels": true,
+      "direct_convolution": true,
+      "peak_helper": true,
+      "scalar_kalman": true,
+      "vendored_source_modified": false
+    },
+    "evidence_git_commit": "fdf558f9a344a29d53e4f77b07ef59a9a918f8d3",
+    "evidence_git_dirty": "true",
+    "evidence_test_time": "2026-07-16T10:46:25+00:00"
+  },
+  "input_contract": {
+    "dtype": "FP32",
+    "shape": [
+      512
+    ],
+    "sample_rate_hz": 512.0,
+    "target_delay_samples": 96,
+    "noise_seed": 20260714,
+    "step3_output_samples": 480,
+    "feature_fusion_weights": {
+      "fm": 0.1,
+      "correlation": 0.7,
+      "spectral": 0.1,
+      "wavelet": 0.1
+    },
+    "argrelextrema": {
+      "axis": 0,
+      "order": 3,
+      "mode": "clip"
+    }
+  },
+  "timing_policy": {
+    "gpu_clock": "cupy.cuda.Event",
+    "step_clock": "time.perf_counter",
+    "h2d_scope": "cp.asarray followed by current-stream synchronization",
+    "pipeline_handoff": "Host PipelineState with explicit H2D/D2H, matching task2_gpu_cpu",
+    "d2h_scope": "formal step output copied for downstream step and evidence",
+    "postprocess_scope": "mandatory Host handoff where applicable plus semantic/task-effect checks; no CPU precision reference",
+    "formal_execution_scope": "prepare + H2D + GPU operators + required D2H and mandatory handoff; excludes semantic checks"
+  },
+  "precision_policy": {
+    "cpu_validation": false,
+    "cpu_comparison": false,
+    "reason": "Task2 Python is the cuSignal performance baseline; CPU precision evidence belongs to task2_gpu_cpu only"
+  },
+  "formal_apis": [
+    "cusignal.chirp/gausspulse/sawtooth/square",
+    "cusignal.hamming/firwin/firfilter",
+    "cusignal.cubic/firfilter",
+    "cusignal.fm_demod/correlate/spectrogram/cwt/ricker",
+    "cusignal.argrelextrema",
+    "cusignal.KalmanFilter.predict/update"
+  ],
+  "pipeline_total_ms": 55.45375403016806,
+  "sum_step_total_ms": 55.37072289735079,
+  "steps": [
+    {
+      "name": "step1",
+      "status": "pass",
+      "timing_ms": {
+        "prepare": 0.023799948394298553,
+        "h2d": 0.39271265268325806,
+        "compute": 2.88433800637722,
+        "d2h": 0.3580823540687561,
+        "postprocess": 4.514100961387157,
+        "formal_execution": 4.012747667729855,
+        "total": 8.52768775075674
+      },
+      "operators_ms": {
+        "cusignal.chirp": 0.09194199740886688,
+        "cusignal.gausspulse": 0.20521800220012665,
+        "cusignal.sawtooth": 0.2281379997730255,
+        "cusignal.square": 0.1901399940252304,
+        "cupy.echo_superposition": 2.1689000129699707
+      },
+      "metrics": {
+        "waveform_functions_selected": 4.0,
+        "target_component": 1.0,
+        "interference_component": 1.0,
+        "noise_component": 1.0,
+        "custom_waveform_superposition": 1.0,
+        "sample_rate_hz": 512.0,
+        "samples": 512.0,
+        "target_delay_samples": 96.0,
+        "noise_seed": 20260714.0,
+        "echo_rms": 0.5158220094150758,
+        "weight_perturbation_delta": 0.06999999284744263,
+        "seed_perturbation_delta": 0.07720698416233063,
+        "perturbation_checks_pass": 1.0
+      },
+      "output": {
+        "shape": [
+          512
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "name": "step2",
+      "status": "pass",
+      "timing_ms": {
+        "prepare": 0.0008996576070785522,
+        "h2d": 0.13264082372188568,
+        "compute": 2.129666030406952,
+        "d2h": 0.2155127003788948,
+        "postprocess": 0.14933105558156967,
+        "formal_execution": 2.6245377957820892,
+        "total": 2.774558961391449
+      },
+      "operators_ms": {
+        "cusignal.hamming": 0.19833199679851532,
+        "cusignal.firwin": 1.6876640319824219,
+        "cusignal.firfilter": 0.2436700016260147
+      },
+      "metrics": {
+        "filter_design_functions": 1.0,
+        "filtering_functions": 1.0,
+        "window_functions": 1.0,
+        "step1_to_step2_data_match": 1.0,
+        "taps": 33.0,
+        "cutoff_hz": 90.0,
+        "window_nonzero": 1.0,
+        "snr_before_db": 16.746854990181532,
+        "snr_after_db": 25.497165378976195,
+        "snr_improvement_db": 8.750310388794663
+      },
+      "output": {
+        "shape": [
+          512
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "name": "step3",
+      "status": "pass",
+      "timing_ms": {
+        "prepare": 0.006830319762229919,
+        "h2d": 0.2235211431980133,
+        "compute": 0.44044798612594604,
+        "d2h": 0.09745080024003983,
+        "postprocess": 0.08659064769744873,
+        "formal_execution": 0.9196354076266289,
+        "total": 1.0045263916254044
+      },
+      "operators_ms": {
+        "cusignal.cubic": 0.08853399753570557,
+        "cupy.cubic_normalization": 0.12590399384498596,
+        "cusignal.firfilter_b_spline": 0.22600999474525452
+      },
+      "metrics": {
+        "bsplines_functions": 1.0,
+        "step2_to_step3_data_match": 1.0,
+        "crop_begin": 16.0,
+        "crop_end": 496.0,
+        "roughness_before": 0.13516609693298526,
+        "roughness_after": 0.10554997725374182,
+        "peak_preservation_ratio": 0.9489529132843018
+      },
+      "output": {
+        "shape": [
+          480
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "name": "step4",
+      "status": "pass",
+      "timing_ms": {
+        "prepare": 0.0017294660210609436,
+        "h2d": 0.21954067051410675,
+        "compute": 9.188288301229477,
+        "d2h": 0.3648223355412483,
+        "postprocess": 0.07557123899459839,
+        "formal_execution": 10.19228808581829,
+        "total": 10.268548503518105
+      },
+      "operators_ms": {
+        "cupy.analytic_glue": 0.43644198775291443,
+        "cusignal.fm_demod": 1.0848300457000732,
+        "cusignal.correlate": 0.21861200034618378,
+        "cusignal.spectrogram": 1.2732460498809814,
+        "cupy.spectral_envelope": 0.19183599948883057,
+        "cusignal.cwt_ricker": 2.406114101409912,
+        "cupy.cwt_envelope": 0.2324260026216507,
+        "cupy.feature_fusion": 3.3447821140289307
+      },
+      "metrics": {
+        "feature_families": 4.0,
+        "demod_functions": 1.0,
+        "correlate_functions": 1.0,
+        "spectral_functions": 1.0,
+        "wavelets_functions": 2.0,
+        "step3_to_step4_data_match": 1.0,
+        "feature_bundle_complete": 1.0,
+        "fusion_weight_fm": 0.1,
+        "fusion_weight_correlation": 0.7,
+        "fusion_weight_spectral": 0.1,
+        "fusion_weight_wavelet": 0.1,
+        "bundle_samples": 480.0,
+        "bundle_peak": 0.871823251247406
+      },
+      "output": {
+        "shape": [
+          480
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "name": "step5",
+      "status": "pass",
+      "timing_ms": {
+        "prepare": 0.0009499490261077881,
+        "h2d": 0.1388518139719963,
+        "compute": 2.0324718952178955,
+        "d2h": 0.07560010999441147,
+        "postprocess": 4.555040970444679,
+        "formal_execution": 2.295045182108879,
+        "total": 6.850886158645153
+      },
+      "operators_ms": {
+        "cusignal.argrelextrema": 2.0324718952178955
+      },
+      "metrics": {
+        "argrelextrema_called": 1.0,
+        "step4_to_step5_data_match": 1.0,
+        "comparator_greater": 1.0,
+        "axis": 0.0,
+        "order": 3.0,
+        "mode_clip": 1.0,
+        "extrema_count": 63.0,
+        "injected_peak_index": 101.0,
+        "moved_peak_index": 113.0,
+        "injected_peak_followed": 1.0,
+        "moved_peak_followed": 1.0,
+        "perturbation_checks_pass": 1.0
+      },
+      "output": {
+        "shape": [
+          63
+        ],
+        "dtype": "int64"
+      }
+    },
+    {
+      "name": "step6",
+      "status": "pass",
+      "timing_ms": {
+        "prepare": 0.49805454909801483,
+        "h2d": 2.2883769124746323,
+        "compute": 10.320631980895996,
+        "d2h": 0.1401808112859726,
+        "postprocess": 12.296573258936405,
+        "formal_execution": 13.647112064063549,
+        "total": 25.944515131413937
+      },
+      "operators_ms": {
+        "cusignal.KalmanFilter.predict_update": 10.320631980895996
+      },
+      "metrics": {
+        "kalmanfilter_called": 1.0,
+        "step5_to_step6_data_match": 1.0,
+        "kalman_anchor": 356.0,
+        "observation_count": 8.0,
+        "estimate": 0.7430393099784851,
+        "truth": 0.7004175365344467,
+        "estimate_abs_error": 0.04262177344403839,
+        "estimate_error_limit": 0.18,
+        "final_covariance": 0.0004260423593223095,
+        "high_measurement_noise_estimate": 0.7414025664329529,
+        "measurement_noise_response": 0.0016367435455322266,
+        "perturbation_checks_pass": 1.0
+      },
+      "output": {
+        "shape": [
+          1
+        ],
+        "dtype": "float32"
+      }
+    }
+  ]
+}

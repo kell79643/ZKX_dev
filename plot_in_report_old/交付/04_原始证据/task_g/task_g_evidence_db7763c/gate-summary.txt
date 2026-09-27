@@ -1,0 +1,12 @@
+100% tests passed, 0 tests failed out of 6
+[TASK1][CTEST_GATE] step_targets_build_run=5/5 task1_target_build_run=true tests=6/6 failed=0 status=passed
+10: [TASK2][SUMMARY] requested_steps=1/6 completed_steps=1/6 gpu_operator_mapping=1/6 cpu_fallback=0 temporary_implementation=0 nvidia_only_path=0 accuracy_pass=1/1 semantic_metrics_pass=1/1 status=pass
+11: [TASK2][SUMMARY] requested_steps=2/6 completed_steps=2/6 gpu_operator_mapping=2/6 cpu_fallback=0 temporary_implementation=0 nvidia_only_path=0 accuracy_pass=2/2 semantic_metrics_pass=2/2 status=pass
+12: [TASK2][SUMMARY] requested_steps=3/6 completed_steps=3/6 gpu_operator_mapping=3/6 cpu_fallback=0 temporary_implementation=0 nvidia_only_path=0 accuracy_pass=3/3 semantic_metrics_pass=3/3 status=pass
+13: [TASK2][SUMMARY] requested_steps=4/6 completed_steps=4/6 gpu_operator_mapping=4/6 cpu_fallback=0 temporary_implementation=0 nvidia_only_path=0 accuracy_pass=4/4 semantic_metrics_pass=4/4 status=pass
+14: [TASK2][SUMMARY] requested_steps=5/6 completed_steps=5/6 gpu_operator_mapping=5/6 cpu_fallback=0 temporary_implementation=0 nvidia_only_path=0 accuracy_pass=5/5 semantic_metrics_pass=5/5 status=pass
+15: [TASK2][SUMMARY] requested_steps=6/6 completed_steps=6/6 gpu_operator_mapping=6/6 cpu_fallback=0 temporary_implementation=0 nvidia_only_path=0 accuracy_pass=6/6 semantic_metrics_pass=6/6 status=pass
+[G][OPERATORS][SUMMARY] operator_targets_build_run=53/53 category_targets_build_run=all correctness_accuracy_performance=true missing=0 failed=0
+16: [TASK2][SUMMARY] requested_steps=6/6 completed_steps=6/6 gpu_operator_mapping=6/6 cpu_fallback=0 temporary_implementation=0 nvidia_only_path=0 accuracy_pass=6/6 semantic_metrics_pass=6/6 status=pass
+100% tests passed, 0 tests failed out of 7
+[G][TEST_ALL][SUMMARY] operators=true task1=true task2=true build_run=passed missing=0 failed=0

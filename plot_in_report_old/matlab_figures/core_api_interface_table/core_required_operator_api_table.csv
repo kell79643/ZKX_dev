@@ -1,0 +1,24 @@
+Task,Stage,Operator,CoreInputs,Output,Alignment
+任务1,LFM脉冲生成,generate_lfm_pulse_kernel（对照chirp语义）,"fs; bandwidth; pulse_width; samples_per_pulse",复数LFM发射脉冲,不完全一致：任务自定义kernel；数学语义接近Chirp/LFM；函数名和参数不与Python cuSignal同形
+任务1,脉冲压缩,pulse_compression / pulse_compression_device,"x; template; normalize; window; nfft","复数压缩结果，1D或2D",语义对齐：None以空字符串或-1表达；device使用params/workspace
+任务1,脉冲多普勒,pulse_doppler / pulse_doppler_device,"x; window; nfft",复数距离-多普勒矩阵,语义对齐：host参数语义对齐；device使用params/workspace
+任务1,CFAR检测,ca_cfar / ca_cfar_device,"array; guard_cells; reference_cells; pfa",检测索引或检测mask/threshold,一致：host接口对齐；device输出拆为预分配mask/threshold
+任务1,CFAR阈值系数,cfar_alpha / cfar_alpha_device,"pfa; N",阈值乘数alpha,一致：host接口与Python cuSignal对齐；device输出为预分配标量buffer
+任务1,模糊函数分析,ambgfun / ambgfun_device,"x; fs; prf; y; cut; cutValue",2D模糊函数或切片结果,语义对齐：y=None以空数组表达；device使用workspace
+任务2,Chirp波形,chirp / chirp_device,"t; f0; t1; f1; method; phi; vertex_zero; type",实数或复数Chirp波形,语义对齐：host接口对齐；device采用预分配输出
+任务2,高斯脉冲,gausspulse / gausspulse_device,"t; fc; bw; bwr; tpr; retquad; retenv","y或(y,yq)或(y,yq,ye)",语义对齐：host用variant表达多返回；device固定多输出buffer
+任务2,锯齿波,sawtooth / sawtooth_device,"t; width",实数锯齿波序列,一致：host参数和默认值对齐；device采用预分配输出
+任务2,方波,square / square_device,"t; duty",实数方波序列,一致：host参数和默认值对齐；device采用预分配输出
+任务2,FIR滤波器设计,firwin / firwin_device,"numtaps; cutoff; width; window; pass_zero; scale; nyq; fs; gpupath",FIR滤波器系数,语义对齐：None以0或-1哨兵值表达
+任务2,FIR滤波应用,firfilter / firfilter_device,"b; x; axis; zi","滤波后信号，带zi时返回y,zf",语义对齐：host用重载/pair表达zi=None与多返回；device使用预分配输出
+任务2,B样条平滑,cubic / cubic_device,x,三次B样条平滑序列,一致：host接口与输出形态对齐；device采用预分配输出
+任务2,B样条平滑,quadratic / quadratic_device,x,二次B样条平滑序列,一致：host接口与输出形态对齐；device采用预分配输出
+任务2,B样条平滑,gauss_spline / gauss_spline_device,"x; n",高斯样条平滑序列,一致：host接口与输出形态对齐；device采用预分配输出
+任务2,FM解调,fm_demod / fm_demod_device,"x; axis",瞬时频率/相位差分序列,一致：host参数语义对齐；device对1D/2D显式传shape/axis
+任务2,相关分析,correlate / correlate_device,"in1; in2; mode; method",相关序列,语义对齐：host参数对齐；device可使用workspace加速
+任务2,谱分析,lombscargle / lombscargle_device,"x; y; freqs; precenter; normalize",周期图功率谱,一致：参数语义和输出形态对齐；device采用预分配输出
+任务2,小波变换,cwt / cwt_device,"data; wavelet; widths",尺度x时间的CWT复数矩阵,语义对齐：host支持函数/字符串小波；device使用小波名称和扁平输出
+任务2,Morlet小波,morlet / morlet_device,"M; w; s; complete",复数Morlet小波母函数,一致：host参数与默认值对齐；device采用预分配输出
+任务2,Ricker小波,ricker / ricker_device,"points; a",实数Ricker小波母函数,一致：host参数和输出形态对齐；device采用预分配输出
+任务2,卡尔曼滤波,KalmanFilter / kalman_predict_device / kalman_update_device,"dim_x; dim_z; x; P; Q; F; H; R; z",更新后的状态估计x和协方差P（原地修改）,语义对齐：host构造同形但缺少dtype及predict/update可选覆盖；device拆为两独立函数并采用预分配DeviceArray
+任务2,相对极值检测,argrelextrema / argrelextrema_device,"data; comparator; axis; order; mode",极值点索引数组（多维返回tuple）,语义对齐：host参数默认值对齐且comparator支持双形态；device以find_max布尔替代comparator且输出拆为预分配buffer

@@ -1,0 +1,3 @@
+[TASK1_PYTHON][step1][TIMING] prep_ms=0.002339 h2d_ms=0.000000 compute_ms=21849.976741 d2h_ms=5.350639 post_ms=0.194541 formal_execution_ms=21977.565720 total_ms=21977.785391
+[TASK1_PYTHON][step1][RESULT] metrics={"chirp_called": 1.0, "delay_ground_truth_recorded": 1.0, "delay_ground_truth_samples": 80.0, "doppler_ground_truth_hz": 1250.0, "doppler_ground_truth_recorded": 1.0, "echo_elements": 8192.0, "echo_peak_magnitude": 1.0483403205871582, "noise_added": 1.0, "target_echo_present": 1.0, "waveform_samples": 64.0}
+[TASK1_PYTHON][PIPELINE] completed_steps=1 pipeline_total_ms=21977.799511 status=pass

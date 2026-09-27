@@ -1,0 +1,5 @@
+task,implementation,business_pipeline_ms,timing_scope
+Task1,cuSignal Python GPU,7.9422986228019,sum of matching steps' formal_execution; excludes validation and reporting
+Task1,C++ CUDA GPU,9.64135895,sum of matching steps' formal_execution; excludes validation and reporting
+Task2,cuSignal Python GPU,28.937357291579247,sum of matching steps' formal_execution; excludes validation and reporting
+Task2,C++ CUDA GPU,11.027837850000001,sum of matching steps' formal_execution; excludes validation and reporting

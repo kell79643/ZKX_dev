@@ -1,0 +1,942 @@
+{
+  "task": "Task2",
+  "implementation": "cusignal_python_23.08.00",
+  "status": "pass",
+  "git_commit": "fdf558f9a344a29d53e4f77b07ef59a9a918f8d3",
+  "git_dirty": "true",
+  "test_time": "2026-07-16T10:46:25+00:00",
+  "warmup_runs": 1,
+  "measured_runs": 10,
+  "timing_scope": {
+    "pipeline_total_ms": "six formal steps plus Host semantic checks",
+    "formal_execution_ms": "prepare, H2D, GPU operators and required D2H; excludes semantic checks",
+    "compute_ms": "sum of per-operator CuPy CUDA-event times",
+    "operator_sync": "each CUDA-event stop is synchronized before elapsed time is read",
+    "operator_h2d_included": false,
+    "operator_d2h_included": false,
+    "operator_allocation": "high-level cuSignal/CuPy output and temporary allocations are included inside each timed call",
+    "operator_plan_workspace": "implementation-internal setup is included when performed inside the high-level call; Kalman object/state setup is excluded"
+  },
+  "pipeline_total_ms": {
+    "total": 542.5435844808817,
+    "mean": 54.25435844808817,
+    "min": 47.87016287446022,
+    "max": 55.71808572858572,
+    "sample_stddev": 2.2998155148229897
+  },
+  "sum_step_total_ms": {
+    "total": 541.688154451549,
+    "mean": 54.168815445154905,
+    "min": 47.768402844667435,
+    "max": 55.63554726541042,
+    "sample_stddev": 2.3054303897004846
+  },
+  "steps": {
+    "step1": {
+      "prepare": {
+        "total": 0.2812119200825691,
+        "mean": 0.028121192008256912,
+        "min": 0.02316012978553772,
+        "max": 0.04659965634346008,
+        "sample_stddev": 0.009303989591149923
+      },
+      "h2d": {
+        "total": 3.8332873955368996,
+        "mean": 0.38332873955368996,
+        "min": 0.3100018948316574,
+        "max": 0.40789321064949036,
+        "sample_stddev": 0.02660386780198741
+      },
+      "compute": {
+        "total": 28.649645894765854,
+        "mean": 2.8649645894765854,
+        "min": 2.2796020209789276,
+        "max": 3.2190200090408325,
+        "sample_stddev": 0.23118023078229247
+      },
+      "d2h": {
+        "total": 3.6392072215676308,
+        "mean": 0.3639207221567631,
+        "min": 0.3509931266307831,
+        "max": 0.39650313556194305,
+        "sample_stddev": 0.013406296087054827
+      },
+      "postprocess": {
+        "total": 45.046841725707054,
+        "mean": 4.504684172570705,
+        "min": 4.392959177494049,
+        "max": 4.559420980513096,
+        "sample_stddev": 0.05537978737559318
+      },
+      "formal_execution": {
+        "total": 39.48805760592222,
+        "mean": 3.948805760592222,
+        "min": 3.2725026831030846,
+        "max": 4.327060654759407,
+        "sample_stddev": 0.2632849422030194
+      },
+      "total": {
+        "total": 84.54345166683197,
+        "mean": 8.454345166683197,
+        "min": 7.750212214887142,
+        "max": 8.882441557943821,
+        "sample_stddev": 0.2837505184718469
+      },
+      "operators_ms": {
+        "cusignal.chirp": {
+          "dtype": "FP32",
+          "input_shape": [
+            512
+          ],
+          "parameters": {
+            "f0": 20.0,
+            "t1": 1.0,
+            "f1": 70.0,
+            "phi": 0.0
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 0.9473360031843185,
+            "mean": 0.09473360031843185,
+            "min": 0.08208200335502625,
+            "max": 0.11417800188064575,
+            "sample_stddev": 0.007837352002389894
+          }
+        },
+        "cusignal.gausspulse": {
+          "dtype": "FP32",
+          "input_shape": [
+            512
+          ],
+          "parameters": {
+            "fc": 170.0,
+            "bw": 0.2
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 2.10104601085186,
+            "mean": 0.210104601085186,
+            "min": 0.19350600242614746,
+            "max": 0.24224600195884705,
+            "sample_stddev": 0.012309265047131101
+          }
+        },
+        "cusignal.sawtooth": {
+          "dtype": "FP32 input",
+          "input_shape": [
+            512
+          ],
+          "parameters": {
+            "width": 0.65
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 2.3463079631328583,
+            "mean": 0.23463079631328582,
+            "min": 0.2061759978532791,
+            "max": 0.2602959871292114,
+            "sample_stddev": 0.016127490958099715
+          }
+        },
+        "cusignal.square": {
+          "dtype": "FP32 input",
+          "input_shape": [
+            512
+          ],
+          "parameters": {
+            "duty": 0.35
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 1.9436559975147247,
+            "mean": 0.19436559975147247,
+            "min": 0.17705599963665009,
+            "max": 0.21366199851036072,
+            "sample_stddev": 0.008939519970916469
+          }
+        },
+        "cupy.echo_superposition": {
+          "dtype": "FP32",
+          "input_shape": [
+            4,
+            512
+          ],
+          "parameters": {
+            "target_delay": 96,
+            "target_weight": 0.8,
+            "noise_seed": 20260714
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 21.311299920082092,
+            "mean": 2.1311299920082094,
+            "min": 1.6207820177078247,
+            "max": 2.3886380195617676,
+            "sample_stddev": 0.1944636053636949
+          }
+        }
+      }
+    },
+    "step2": {
+      "prepare": {
+        "total": 0.009531155228614807,
+        "mean": 0.0009531155228614807,
+        "min": 0.0008400529623031616,
+        "max": 0.0013103708624839783,
+        "sample_stddev": 0.00013671259917685154
+      },
+      "h2d": {
+        "total": 1.3858890160918236,
+        "mean": 0.13858890160918236,
+        "min": 0.13264082372188568,
+        "max": 0.14670100063085556,
+        "sample_stddev": 0.004376513172022317
+      },
+      "compute": {
+        "total": 21.28414411842823,
+        "mean": 2.128414411842823,
+        "min": 2.0617480278015137,
+        "max": 2.422304019331932,
+        "sample_stddev": 0.1055542354132146
+      },
+      "d2h": {
+        "total": 2.202693372964859,
+        "mean": 0.2202693372964859,
+        "min": 0.21232105791568756,
+        "max": 0.23827049881219864,
+        "sample_stddev": 0.008159172924213132
+      },
+      "postprocess": {
+        "total": 1.5338091179728508,
+        "mean": 0.15338091179728508,
+        "min": 0.14659110456705093,
+        "max": 0.18241070210933685,
+        "sample_stddev": 0.010449641738132653
+      },
+      "formal_execution": {
+        "total": 26.986831799149513,
+        "mean": 2.6986831799149513,
+        "min": 2.6245377957820892,
+        "max": 3.0479999259114265,
+        "sample_stddev": 0.1256697418105162
+      },
+      "total": {
+        "total": 28.52834202349186,
+        "mean": 2.852834202349186,
+        "min": 2.7725687250494957,
+        "max": 3.231360577046871,
+        "sample_stddev": 0.13601799461386763
+      },
+      "operators_ms": {
+        "cusignal.hamming": {
+          "dtype": "implementation-selected floating",
+          "input_shape": [
+            33
+          ],
+          "parameters": {
+            "M": 33,
+            "sym": true
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 1.9787960201501846,
+            "mean": 0.19787960201501847,
+            "min": 0.19188199937343597,
+            "max": 0.21585799753665924,
+            "sample_stddev": 0.006605436159915573
+          }
+        },
+        "cusignal.firwin": {
+          "dtype": "implementation-selected floating",
+          "input_shape": [
+            33
+          ],
+          "parameters": {
+            "numtaps": 33,
+            "cutoff_hz": 90.0,
+            "window": "hamming",
+            "fs_hz": 512.0,
+            "gpupath": true
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 16.747998118400574,
+            "mean": 1.6747998118400573,
+            "min": 1.620468020439148,
+            "max": 1.8708100318908691,
+            "sample_stddev": 0.07186569024774665
+          }
+        },
+        "cusignal.firfilter": {
+          "dtype": "FP32 signal",
+          "input_shape": [
+            512
+          ],
+          "parameters": {
+            "axis": -1,
+            "taps": 33
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 2.557349979877472,
+            "mean": 0.2557349979877472,
+            "min": 0.23991799354553223,
+            "max": 0.3356359899044037,
+            "sample_stddev": 0.028887386628552357
+          }
+        }
+      }
+    },
+    "step3": {
+      "prepare": {
+        "total": 0.0722324475646019,
+        "mean": 0.00722324475646019,
+        "min": 0.0067194923758506775,
+        "max": 0.009130686521530151,
+        "sample_stddev": 0.0007124728547357067
+      },
+      "h2d": {
+        "total": 2.1986551582813263,
+        "mean": 0.21986551582813263,
+        "min": 0.21009240299463272,
+        "max": 0.23256056010723114,
+        "sample_stddev": 0.006546702680014361
+      },
+      "compute": {
+        "total": 4.554919987916946,
+        "mean": 0.45549199879169466,
+        "min": 0.44044798612594604,
+        "max": 0.4916300103068352,
+        "sample_stddev": 0.015723783150486465
+      },
+      "d2h": {
+        "total": 1.087377779185772,
+        "mean": 0.1087377779185772,
+        "min": 0.09618047624826431,
+        "max": 0.17862115055322647,
+        "sample_stddev": 0.02482975390454734
+      },
+      "postprocess": {
+        "total": 0.872255302965641,
+        "mean": 0.0872255302965641,
+        "min": 0.08418131619691849,
+        "max": 0.0991215929389,
+        "sample_stddev": 0.004532102986030757
+      },
+      "formal_execution": {
+        "total": 9.415325708687305,
+        "mean": 0.9415325708687305,
+        "min": 0.9147962555289268,
+        "max": 1.00786704570055,
+        "sample_stddev": 0.02773508583317624
+      },
+      "total": {
+        "total": 10.269270278513432,
+        "mean": 1.0269270278513432,
+        "min": 0.9971065446734428,
+        "max": 1.0964181274175644,
+        "sample_stddev": 0.03071044129209198
+      },
+      "operators_ms": {
+        "cusignal.cubic": {
+          "dtype": "FP32 input",
+          "input_shape": [
+            9
+          ],
+          "parameters": {
+            "offset_begin": -2.0,
+            "offset_end": 2.0,
+            "offset_step": 0.5
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 0.9244219958782196,
+            "mean": 0.09244219958782196,
+            "min": 0.08842600136995316,
+            "max": 0.1046300008893013,
+            "sample_stddev": 0.006426381025284566
+          }
+        },
+        "cupy.cubic_normalization": {
+          "dtype": "implementation-selected floating",
+          "input_shape": [
+            9
+          ],
+          "parameters": {
+            "normalization": "sum=1"
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 1.3374900072813034,
+            "mean": 0.13374900072813034,
+            "min": 0.12432999908924103,
+            "max": 0.15523600578308105,
+            "sample_stddev": 0.010417408690575513
+          }
+        },
+        "cusignal.firfilter_b_spline": {
+          "dtype": "FP32 signal",
+          "input_shape": [
+            480
+          ],
+          "parameters": {
+            "axis": -1,
+            "taps": 9
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 2.2930079847574234,
+            "mean": 0.22930079847574233,
+            "min": 0.22454999387264252,
+            "max": 0.24779799580574036,
+            "sample_stddev": 0.0068507836819883625
+          }
+        }
+      }
+    },
+    "step4": {
+      "prepare": {
+        "total": 0.018250197172164917,
+        "mean": 0.0018250197172164917,
+        "min": 0.0016102567315101624,
+        "max": 0.002609565854072571,
+        "sample_stddev": 0.0002934637349919711
+      },
+      "h2d": {
+        "total": 2.247181721031666,
+        "mean": 0.22471817210316658,
+        "min": 0.2173716202378273,
+        "max": 0.25718193501234055,
+        "sample_stddev": 0.011777755327787725
+      },
+      "compute": {
+        "total": 91.39943420886993,
+        "mean": 9.139943420886993,
+        "min": 9.027538061141968,
+        "max": 9.22989584505558,
+        "sample_stddev": 0.07402817769809074
+      },
+      "d2h": {
+        "total": 3.559224307537079,
+        "mean": 0.3559224307537079,
+        "min": 0.2783415839076042,
+        "max": 0.3796229138970375,
+        "sample_stddev": 0.029847709372567668
+      },
+      "postprocess": {
+        "total": 0.775814987719059,
+        "mean": 0.0775814987719059,
+        "min": 0.07555074989795685,
+        "max": 0.08154939860105515,
+        "sample_stddev": 0.0019614547797927313
+      },
+      "formal_execution": {
+        "total": 101.5387549996376,
+        "mean": 10.15387549996376,
+        "min": 9.941937401890755,
+        "max": 10.290528647601604,
+        "sample_stddev": 0.10157709494021133
+      },
+      "total": {
+        "total": 102.32241917401552,
+        "mean": 10.232241917401552,
+        "min": 10.024557821452618,
+        "max": 10.367530398070812,
+        "sample_stddev": 0.10011566037058985
+      },
+      "operators_ms": {
+        "cupy.analytic_glue": {
+          "dtype": "FP32 to ComplexFP32",
+          "input_shape": [
+            480
+          ],
+          "parameters": {
+            "imaginary": "0.5*(next-previous)"
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 4.482767969369888,
+            "mean": 0.44827679693698885,
+            "min": 0.42021000385284424,
+            "max": 0.5216779708862305,
+            "sample_stddev": 0.030944080272672658
+          }
+        },
+        "cusignal.fm_demod": {
+          "dtype": "ComplexFP32",
+          "input_shape": [
+            480
+          ],
+          "parameters": {
+            "axis": -1
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 11.01907205581665,
+            "mean": 1.101907205581665,
+            "min": 1.0363160371780396,
+            "max": 1.2571359872817993,
+            "sample_stddev": 0.05948369825450465
+          }
+        },
+        "cusignal.correlate": {
+          "dtype": "FP32",
+          "input_shape": [
+            [
+              480
+            ],
+            [
+              480
+            ]
+          ],
+          "parameters": {
+            "mode": "same",
+            "method": "auto"
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 2.2469780147075653,
+            "mean": 0.22469780147075652,
+            "min": 0.21861200034618378,
+            "max": 0.26054999232292175,
+            "sample_stddev": 0.012719401143572031
+          }
+        },
+        "cusignal.spectrogram": {
+          "dtype": "FP32",
+          "input_shape": [
+            480
+          ],
+          "parameters": {
+            "fs_hz": 512.0,
+            "window": "boxcar",
+            "nperseg": 64,
+            "noverlap": 32,
+            "nfft": 64,
+            "return_onesided": false,
+            "scaling": "spectrum",
+            "mode": "magnitude"
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 12.970286011695862,
+            "mean": 1.2970286011695862,
+            "min": 1.207453966140747,
+            "max": 1.6466079950332642,
+            "sample_stddev": 0.1256051346918981
+          }
+        },
+        "cupy.spectral_envelope": {
+          "dtype": "implementation spectrogram magnitude to FP32",
+          "input_shape": [
+            64,
+            14
+          ],
+          "parameters": {
+            "reduction": "max(abs), axis=frequency"
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 1.9497519880533218,
+            "mean": 0.19497519880533218,
+            "min": 0.17702800035476685,
+            "max": 0.22624799609184265,
+            "sample_stddev": 0.018188296924819117
+          }
+        },
+        "cusignal.cwt_ricker": {
+          "dtype": "FP32 input / implementation FP64 output",
+          "input_shape": [
+            480
+          ],
+          "parameters": {
+            "widths": [
+              2,
+              4,
+              8,
+              12
+            ],
+            "wavelet": "ricker"
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 24.08020830154419,
+            "mean": 2.408020830154419,
+            "min": 2.402266025543213,
+            "max": 2.418613910675049,
+            "sample_stddev": 0.0047221714719128454
+          }
+        },
+        "cupy.cwt_envelope": {
+          "dtype": "implementation FP64 to FP32",
+          "input_shape": [
+            4,
+            480
+          ],
+          "parameters": {
+            "reduction": "max(abs), axis=width"
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 2.178632006049156,
+            "mean": 0.21786320060491562,
+            "min": 0.16816399991512299,
+            "max": 0.2493620067834854,
+            "sample_stddev": 0.023961003339068216
+          }
+        },
+        "cupy.feature_fusion": {
+          "dtype": "FP32",
+          "input_shape": "four variable-length feature vectors -> [480]",
+          "parameters": {
+            "weights": [
+              0.1,
+              0.7,
+              0.1,
+              0.1
+            ],
+            "normalization": "per-feature max-abs",
+            "resampling": "linear"
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 32.4717378616333,
+            "mean": 3.24717378616333,
+            "min": 2.537839889526367,
+            "max": 3.36966609954834,
+            "sample_stddev": 0.2508338601645944
+          }
+        }
+      }
+    },
+    "step5": {
+      "prepare": {
+        "total": 0.009709037840366364,
+        "mean": 0.0009709037840366364,
+        "min": 0.0008800998330116272,
+        "max": 0.0012498348951339722,
+        "sample_stddev": 0.00010414654624054824
+      },
+      "h2d": {
+        "total": 1.3933302834630013,
+        "mean": 0.13933302834630013,
+        "min": 0.12393109500408173,
+        "max": 0.15412084758281708,
+        "sample_stddev": 0.009232020104531747
+      },
+      "compute": {
+        "total": 20.1359680891037,
+        "mean": 2.01359680891037,
+        "min": 1.625815987586975,
+        "max": 2.158247947692871,
+        "sample_stddev": 0.14325312394023845
+      },
+      "d2h": {
+        "total": 0.7844846695661545,
+        "mean": 0.07844846695661545,
+        "min": 0.06619095802307129,
+        "max": 0.0890493392944336,
+        "sample_stddev": 0.006297569264095948
+      },
+      "postprocess": {
+        "total": 44.79425959289074,
+        "mean": 4.479425959289074,
+        "min": 3.5219332203269005,
+        "max": 4.69302199780941,
+        "sample_stddev": 0.34061838875242123
+      },
+      "formal_execution": {
+        "total": 22.79667556285858,
+        "mean": 2.279667556285858,
+        "min": 1.8597329035401344,
+        "max": 2.4484870955348015,
+        "sample_stddev": 0.15550889212436997
+      },
+      "total": {
+        "total": 67.59916618466377,
+        "mean": 6.759916618466377,
+        "min": 5.382745526731014,
+        "max": 7.0906877517700195,
+        "sample_stddev": 0.4909676089696326
+      },
+      "operators_ms": {
+        "cusignal.argrelextrema": {
+          "dtype": "FP32 input / INT64 indices",
+          "input_shape": [
+            480
+          ],
+          "parameters": {
+            "comparator": "cupy.greater",
+            "axis": 0,
+            "order": 3,
+            "mode": "clip"
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": true,
+          "plan_workspace_scope": "implementation-internal setup included when the high-level call performs it",
+          "timing_ms": {
+            "total": 20.1359680891037,
+            "mean": 2.01359680891037,
+            "min": 1.625815987586975,
+            "max": 2.158247947692871,
+            "sample_stddev": 0.14325312394023845
+          }
+        }
+      }
+    },
+    "step6": {
+      "prepare": {
+        "total": 4.9324044957757,
+        "mean": 0.49324044957756996,
+        "min": 0.44147297739982605,
+        "max": 0.5265148356556892,
+        "sample_stddev": 0.025464779497204958
+      },
+      "h2d": {
+        "total": 21.277891471982002,
+        "mean": 2.1277891471982002,
+        "min": 1.7696013674139977,
+        "max": 2.2883769124746323,
+        "sample_stddev": 0.13657505678284979
+      },
+      "compute": {
+        "total": 98.68312239646912,
+        "mean": 9.868312239646912,
+        "min": 7.404990077018738,
+        "max": 10.41959011554718,
+        "sample_stddev": 0.9045686752593568
+      },
+      "d2h": {
+        "total": 1.5081819146871567,
+        "mean": 0.15081819146871567,
+        "min": 0.11879019439220428,
+        "max": 0.21912157535552979,
+        "sample_stddev": 0.026035559801397913
+      },
+      "postprocess": {
+        "total": 118.03390644490719,
+        "mean": 11.803390644490719,
+        "min": 9.120112285017967,
+        "max": 12.488883920013905,
+        "sample_stddev": 0.9825334139277945
+      },
+      "formal_execution": {
+        "total": 130.38279861211777,
+        "mean": 13.038279861211777,
+        "min": 10.060506872832775,
+        "max": 13.683282770216465,
+        "sample_stddev": 1.0834876722582554
+      },
+      "total": {
+        "total": 248.4255051240325,
+        "mean": 24.84255051240325,
+        "min": 19.181598909199238,
+        "max": 26.17297600954771,
+        "sample_stddev": 2.0565825820208437
+      },
+      "operators_ms": {
+        "cusignal.KalmanFilter.predict_update": {
+          "dtype": "FP32",
+          "input_shape": {
+            "observations": [
+              8
+            ],
+            "state": [
+              1
+            ],
+            "covariance": [
+              1
+            ]
+          },
+          "parameters": {
+            "dim_x": 1,
+            "dim_z": 1,
+            "points": 1,
+            "F": 1.0,
+            "Q": 0.0001,
+            "H": 1.0,
+            "R": 0.002,
+            "iterations": 8
+          },
+          "warmup_runs": 1,
+          "measured_runs": 10,
+          "synchronization": "cupy.cuda.Event stop.synchronize",
+          "includes_h2d": false,
+          "includes_d2h": false,
+          "includes_allocation": false,
+          "plan_workspace_scope": "pre-created Kalman object/state excluded; predict/update kernel internals included",
+          "timing_ms": {
+            "total": 98.68312239646912,
+            "mean": 9.868312239646912,
+            "min": 7.404990077018738,
+            "max": 10.41959011554718,
+            "sample_stddev": 0.9045686752593568
+          }
+        }
+      }
+    }
+  },
+  "runtime": {
+    "python": "3.12.11",
+    "numpy": "2.4.6",
+    "cupy": "13.6.0",
+    "cusignal": "23.08.00",
+    "cusignal_source": "/tmp/ZKX_dev/cusignal-23.08.00/python",
+    "cusignal_module_file": "/tmp/ZKX_dev/cusignal-23.08.00/python/cusignal/__init__.py",
+    "device_name": "ZQ500-Q QUAD-2",
+    "device_id": 0,
+    "device_count": 1,
+    "cuda_runtime_version": 11070,
+    "cuda_driver_version": 11070,
+    "zq500_cusignal_adapter": {
+      "installed": true,
+      "waveform_kernels": true,
+      "direct_convolution": true,
+      "peak_helper": true,
+      "scalar_kalman": true,
+      "vendored_source_modified": false
+    },
+    "evidence_git_commit": "fdf558f9a344a29d53e4f77b07ef59a9a918f8d3",
+    "evidence_git_dirty": "true",
+    "evidence_test_time": "2026-07-16T10:46:25+00:00"
+  },
+  "input_contract": {
+    "dtype": "FP32",
+    "shape": [
+      512
+    ],
+    "sample_rate_hz": 512.0,
+    "target_delay_samples": 96,
+    "noise_seed": 20260714,
+    "step3_output_samples": 480,
+    "feature_fusion_weights": {
+      "fm": 0.1,
+      "correlation": 0.7,
+      "spectral": 0.1,
+      "wavelet": 0.1
+    },
+    "argrelextrema": {
+      "axis": 0,
+      "order": 3,
+      "mode": "clip"
+    }
+  }
+}

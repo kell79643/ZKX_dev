@@ -1,0 +1,12 @@
+task,step,implementation,warmup,iterations,baseline_bytes,peak_bytes,delta_bytes,final_bytes,scope,backend,status,evidence_id
+Task1,1,cpp_cuda,5,20,0,197120,197120,0,step-exclusive-task-allocator-live-peak,DLFFT_OFF_THRUST_ON,pass,681b84e_20260720
+Task1,2,cpp_cuda,5,20,133120,465412,332292,133120,step-exclusive-task-allocator-live-peak,DLFFT_OFF_THRUST_ON,pass,681b84e_20260720
+Task1,3,cpp_cuda,5,20,198656,460800,262144,198656,step-exclusive-task-allocator-live-peak,DLFFT_OFF_THRUST_ON,pass,681b84e_20260720
+Task1,4,cpp_cuda,5,20,198656,337928,139272,198656,step-exclusive-task-allocator-live-peak,DLFFT_OFF_THRUST_ON,pass,681b84e_20260720
+Task1,5,cpp_cuda,5,20,338944,664584,325640,338944,step-exclusive-task-allocator-live-peak,DLFFT_OFF_THRUST_ON,pass,681b84e_20260720
+Task2,1,cpp_cuda,5,20,0,32768,32768,0,step-exclusive-task-allocator-live-peak,DLFFT_OFF_THRUST_ON,pass,681b84e_20260720
+Task2,2,cpp_cuda,5,20,0,4364,4364,0,step-exclusive-task-allocator-live-peak,DLFFT_OFF_THRUST_ON,pass,681b84e_20260720
+Task2,3,cpp_cuda,5,20,0,5904,5904,0,step-exclusive-task-allocator-live-peak,DLFFT_OFF_THRUST_ON,pass,681b84e_20260720
+Task2,4,cpp_cuda,5,20,7168,83724,76556,7168,step-exclusive-task-allocator-live-peak,DLFFT_OFF_THRUST_ON,pass,681b84e_20260720
+Task2,5,cpp_cuda,5,20,7168,15344,8176,7168,step-exclusive-task-allocator-live-peak,DLFFT_OFF_THRUST_ON,pass,681b84e_20260720
+Task2,6,cpp_cuda,5,20,7168,7276,108,7168,step-exclusive-task-allocator-live-peak,DLFFT_OFF_THRUST_ON,pass,681b84e_20260720

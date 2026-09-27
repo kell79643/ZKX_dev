@@ -1,0 +1,54 @@
+{
+  "task": "Task2",
+  "requested_steps": 6,
+  "completed_steps": 6,
+  "git_commit": "fdf558f9a344a29d53e4f77b07ef59a9a918f8d3",
+  "status": "pass",
+  "input_contract": {"dtype": "FP32", "shape": [512], "sample_rate_hz": 512, "target_delay_samples": 96, "noise_seed": 20260714, "step3_output_samples": 480, "feature_fusion_weights": {"fm": 0.10, "correlation": 0.70, "spectral": 0.10, "wavelet": 0.10}, "argrelextrema": {"axis": 0, "order": 3, "mode": "clip"}},
+  "pipeline_total_ms": 3365.37,
+  "sum_step_total_ms": 3365.35,
+  "steps": [
+    {
+      "name": "step1",
+      "timing_ms": {"prepare": 0.02598, "h2d": 103.222, "compute": 4.08018, "d2h": 0.387313, "postprocess": 0.376842, "formal_execution": 108.045, "total": 109.049},
+      "accuracy": {"relative_error": 1.06134e-05, "relative_tolerance": 3e-05, "max_abs_error": 1.79932e-06, "max_error": 1.79932e-06, "compared_elements": 2560, "tolerance": 3e-05, "first_failure_index": -1, "reference_source": "typed CPU waveform APIs plus independent Host echo/noise formulas", "comparison_method": "maximum relative L2 error across five FP32 arrays; maximum absolute error retained", "status": "pass", "failure_reason": "", "input_shape": "[512]", "input_dtype": "FP32 outputs; FP64 typed waveform intermediates where required", "failure_action": "stop at step1; inspect evidence; fix this step and rerun this and downstream steps"},
+      "operators_ms": {"chirp": 3.24827, "gausspulse": 0.125008, "gpu_echo_superposition": 0.091194, "sawtooth": 0.339182, "square": 0.27653},
+      "metrics": {"interference_rms": 0.0718417, "noise_rms": 0.0227211, "perturbation_delta": 0.118545, "target_rms": 0.510511, "waveform_functions_selected": 4}
+    },
+    {
+      "name": "step2",
+      "timing_ms": {"prepare": 0.00166, "h2d": 0.152501, "compute": 1.2496, "d2h": 0.159832, "postprocess": 0.569244, "formal_execution": 1.68202, "total": 2.49557},
+      "accuracy": {"relative_error": 1.19766e-07, "relative_tolerance": 0.0005, "max_abs_error": 2.38419e-07, "max_error": 2.38419e-07, "compared_elements": 512, "tolerance": 0.0005, "first_failure_index": -1, "reference_source": "hamming_typed_cpu<float> + firwin_typed_cpu + firfilter_typed_cpu", "comparison_method": "FP32 relative L2 error primary; maximum absolute error retained", "status": "pass", "failure_reason": "", "input_shape": "[512]", "input_dtype": "FP32", "failure_action": "stop at step2; inspect evidence; fix this step and rerun this and downstream steps"},
+      "operators_ms": {"firfilter": 0.389064, "firwin": 0.556214, "hamming": 0.304318},
+      "metrics": {"snr_after_db": 25.4972, "snr_before_db": 16.7468, "snr_improvement_db": 8.75032, "step1_to_step2_data_match": 1}
+    },
+    {
+      "name": "step3",
+      "timing_ms": {"prepare": 0.00225, "h2d": 0.150402, "compute": 0.279662, "d2h": 0.102951, "postprocess": 0.127251, "formal_execution": 0.621635, "total": 0.971067},
+      "accuracy": {"relative_error": 5.93161e-08, "relative_tolerance": 5e-05, "max_abs_error": 5.96046e-08, "max_error": 5.96046e-08, "compared_elements": 480, "tolerance": 5e-05, "first_failure_index": -1, "reference_source": "cubic_cpu + firfilter_typed_cpu", "comparison_method": "FP32 relative L2 error primary; maximum absolute error retained", "status": "pass", "failure_reason": "", "input_shape": "input [512], output [480]", "input_dtype": "FP32", "failure_action": "stop at step3; inspect evidence; fix this step and rerun this and downstream steps"},
+      "operators_ms": {"cubic": 0.087094, "firfilter_b_spline": 0.192568},
+      "metrics": {"crop_begin": 16, "crop_end": 496, "peak_amplitude_ratio": 0.952412, "roughness_after": 0.10555, "roughness_before": 0.135166, "step2_to_step3_data_match": 1}
+    },
+    {
+      "name": "step4",
+      "timing_ms": {"prepare": 5.41475, "h2d": 0.09591, "compute": 3229.36, "d2h": 0.208892, "postprocess": 8.49032, "formal_execution": 3235.68, "total": 3244.41},
+      "accuracy": {"relative_error": 7.77434e-07, "relative_tolerance": 0.01, "max_abs_error": 2.28882e-05, "max_error": 2.28882e-05, "compared_elements": 1933, "tolerance": 0.01, "first_failure_index": -1, "reference_source": "fm_demod/correlate/spectrogram/cwt typed CPU APIs plus Host fusion", "comparison_method": "maximum relative L2 error across four domains and fused bundle; maximum absolute error retained", "status": "pass", "failure_reason": "", "input_shape": "input [480], fused output [480]", "input_dtype": "FP32 features; FP64 CWT workspace/intermediate where required", "failure_action": "stop at step4; inspect evidence; fix this step and rerun this and downstream steps"},
+      "operators_ms": {"analytic_glue": 0.076134, "correlate": 0.1481, "cwt_ricker": 0.376188, "fm_demod": 0.08795, "spectrogram": 3228.68},
+      "metrics": {"feature_bundle_size": 480, "feature_families": 4, "step3_to_step4_data_match": 1}
+    },
+    {
+      "name": "step5",
+      "timing_ms": {"prepare": 0.01162, "h2d": 0.060891, "compute": 0.546616, "d2h": 0.05155, "postprocess": 1.20043, "formal_execution": 0.713035, "total": 2.08575},
+      "accuracy": {"relative_error": 0, "relative_tolerance": 0, "max_abs_error": 0, "max_error": 0, "compared_elements": 187, "tolerance": 0, "first_failure_index": -1, "reference_source": "argrelextrema_typed_cpu exact integer indices", "comparison_method": "relative INT64 index mismatch rate primary (zero required); exact equality and absolute mismatch retained", "status": "pass", "failure_reason": "", "input_shape": "input [480], variable-length coordinate output", "input_dtype": "FP32 input / INT64 indices", "failure_action": "stop at step5; inspect evidence; fix this step and rerun this and downstream steps"},
+      "operators_ms": {"argrelextrema": 0.546616},
+      "metrics": {"baseline_relative_mismatch_rate": 0, "extrema_count": 62, "injected_peak_followed": 1, "injected_relative_mismatch_rate": 0, "moved_relative_mismatch_rate": 0, "step4_to_step5_data_match": 1, "zero_review_comparator_negative": 1, "zero_review_independent_integer_recompute": 1, "zero_review_path_independent": 1, "zero_review_perturbation": 1}
+    },
+    {
+      "name": "step6",
+      "timing_ms": {"prepare": 0.01057, "h2d": 0.763145, "compute": 3.44765, "d2h": 0.118901, "postprocess": 0.06628, "formal_execution": 5.26721, "total": 6.33916},
+      "accuracy": {"relative_error": 6.83121e-08, "relative_tolerance": 2e-05, "max_abs_error": 2.91038e-11, "max_error": 2.91038e-11, "compared_elements": 2, "tolerance": 2e-05, "first_failure_index": -1, "reference_source": "typed CPU Kalman predict/update state and covariance", "comparison_method": "FP32 state/covariance relative L2 error primary; maximum absolute error, truth and R perturbation retained", "status": "pass", "failure_reason": "", "input_shape": "8 observations, state [1], covariance [1]", "input_dtype": "FP32", "failure_action": "stop at step6; inspect evidence; fix this step and rerun this and downstream steps"},
+      "operators_ms": {"kalmanfilter_predict_update": 3.44765},
+      "metrics": {"anchor_index": 356, "estimate_normalized": 0.743048, "measurement_noise_response": 0.04349, "observation_count": 8, "step5_to_step6_data_match": 1, "truth_absolute_error": 0.042631, "truth_normalized": 0.700418}
+    }
+  ]
+}

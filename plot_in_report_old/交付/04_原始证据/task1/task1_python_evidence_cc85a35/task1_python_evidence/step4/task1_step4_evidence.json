@@ -1,0 +1,236 @@
+{
+  "task": "Task1",
+  "implementation": "cusignal_python_23.08.00",
+  "evidence_id": "step4",
+  "requested_steps": 4,
+  "completed_steps": 4,
+  "status": "pass",
+  "runtime": {
+    "python": "3.12.11",
+    "numpy": "2.4.6",
+    "cupy": "13.6.0",
+    "cusignal": "23.08.00",
+    "cusignal_source": "/tmp/ZKX_dev/cusignal-23.08.00/python",
+    "cusignal_immutable_source": {
+      "source_root": "/tmp/ZKX_dev/cusignal-23.08.00",
+      "file_count": 152,
+      "tree_sha256": "ca9e760bdebb0a481e18171546881b2e75214a422482f7442a0814871476c163",
+      "radartools_sha256": "438fdde707ea86e9249cc38cb5ad8addca3e65da7f38e7d06218809236f2f650"
+    },
+    "cupy_source": "/tmp/task1_cupy_zq500_13_6_0_cuda_11_7/source/cupy/__init__.py",
+    "dependency_versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "numba": "0.65.1",
+      "cupy": "source-or-unavailable",
+      "cusignal": "source-or-unavailable"
+    },
+    "cuda_runtime_version": 11070,
+    "cuda_driver_version": 11070,
+    "device_name": "ZQ500-Q QUAD-2",
+    "device_id": 0,
+    "device_count": 1,
+    "evidence_git_commit": "cc85a352c4eede97e54c54393bcdce6b9cda2545",
+    "evidence_git_dirty": "true",
+    "evidence_test_time": "2026-07-18T15:50:00+08:00"
+  },
+  "input_contract": {
+    "dtype": "ComplexFP32",
+    "shape": [
+      32,
+      256
+    ],
+    "sample_rate_hz": 2560000.0,
+    "prf_hz": 8000.0,
+    "bandwidth_hz": 640000.0,
+    "carrier_frequency_hz": 10000000000.0,
+    "pulse_samples": 64,
+    "target_delay_samples": 80,
+    "doppler_bin": 5,
+    "doppler_hz": 1250.0,
+    "target_amplitude": 1.0,
+    "noise_std": 0.035,
+    "noise_seed": 20260715
+  },
+  "timing_policy": {
+    "gpu_clock": "cupy.cuda.Event",
+    "step_clock": "time.perf_counter",
+    "h2d_scope": "cp.asarray followed by current-stream synchronization",
+    "pipeline_handoff": "Host PipelineState with explicit H2D/D2H, matching task1_gpu_cpu",
+    "d2h_scope": "formal step output copied for result retention",
+    "postprocess_scope": "result summarization only; no CPU reference or accuracy comparison",
+    "dlpti_used": false,
+    "dlpti_scope": "not used for formal timing; optional auxiliary profiling only",
+    "python_speedup_numerator_scope": "formal_execution_ms: cuSignal Python GPU calls, required ZQ500 adapters, task scaffolding, H2D and required D2H; excludes CPU reference/comparison"
+  },
+  "formal_apis": [
+    "cusignal.pulse_compression",
+    "cusignal.pulse_doppler",
+    "cusignal.radartools.cfar_alpha",
+    "cusignal.radartools.ca_cfar",
+    "task1.utils.task1_ambgfun -> cusignal.ambgfun(cut=2d)"
+  ],
+  "implementation_contract": {
+    "cusignal_upstream_version": "23.08.00",
+    "cusignal_upstream_modified": false,
+    "actual_cusignal_apis": [
+      "cusignal.chirp",
+      "cusignal.pulse_compression",
+      "cusignal.pulse_doppler",
+      "cusignal.radartools.cfar_alpha",
+      "cusignal.radartools.ca_cfar",
+      "cusignal.ambgfun(cut=2d)"
+    ],
+    "required_zq500_adapters": [
+      {
+        "name": "utils.cusignal_chirp_compat",
+        "scope": "restore removed NumPy type-test alias and explicitly cast the official linear chirp FP32 kernel constants",
+        "reason": "cuSignal 23.08.00 references np.issubclass_ and ZQ500 clang rejects NVIDIA-accepted implicit FP64-to-FP32 list narrowing"
+      },
+      {
+        "name": "utils.hamming_fp32_adapter",
+        "scope": "FP32 Hamming formula/dtype boundary only",
+        "reason": "avoid unsupported ComplexFP64/Z2Z FFT promotion"
+      },
+      {
+        "name": "utils.ambgfun_*_cut_adapter",
+        "scope": "grid-aligned slices of official cuSignal 2D output only",
+        "reason": "avoid unsupported FP64/non-power-of-two one-dimensional paths"
+      }
+    ],
+    "adapters_in_formal_execution": true,
+    "adapters_in_speedup_numerator": true
+  },
+  "pipeline_total_ms": 43412.62227948755,
+  "sum_step_total_ms": 43412.59719990194,
+  "steps": [
+    {
+      "name": "step1",
+      "timing_ms": {
+        "prepare": 0.002280808985233307,
+        "h2d": 0.0,
+        "compute": 21733.02614699304,
+        "d2h": 5.397779867053032,
+        "postprocess": 0.18539093434810638,
+        "formal_execution": 21859.735565260053,
+        "total": 21859.943576157093
+      },
+      "operators_ms": {
+        "utils.cusignal_chirp_compat": 0.031029805541038513,
+        "cusignal.chirp": 1912.8193359375,
+        "task_scaffolding.delay_doppler_noise": 19820.17578125
+      },
+      "timing_categories_ms": {
+        "cusignal_api": 1912.8193359375,
+        "required_zq500_adapter": 0.031029805541038513,
+        "task_scaffolding": 19820.17578125
+      },
+      "result_metrics": {
+        "chirp_called": 1.0,
+        "target_echo_present": 1.0,
+        "delay_ground_truth_recorded": 1.0,
+        "delay_ground_truth_samples": 80.0,
+        "doppler_ground_truth_recorded": 1.0,
+        "doppler_ground_truth_hz": 1250.0,
+        "noise_added": 1.0,
+        "waveform_samples": 64.0,
+        "echo_elements": 8192.0,
+        "echo_peak_magnitude": 1.0483403205871582
+      }
+    },
+    {
+      "name": "step2",
+      "timing_ms": {
+        "prepare": 0.004019588232040405,
+        "h2d": 2.6671504601836205,
+        "compute": 12570.3349609375,
+        "d2h": 0.3038812428712845,
+        "postprocess": 0.2508210018277168,
+        "formal_execution": 12573.777399025857,
+        "total": 12574.067080393434
+      },
+      "operators_ms": {
+        "cusignal.pulse_compression": 12570.3349609375
+      },
+      "timing_categories_ms": {
+        "cusignal_api": 12570.3349609375,
+        "required_zq500_adapter": 0,
+        "task_scaffolding": 0
+      },
+      "result_metrics": {
+        "pulse_compression_called": 1.0,
+        "step1_to_step2_data_match": 1.0,
+        "peak_range_bin": 80.0,
+        "peak_energy": 2039.3426513671875,
+        "half_peak_width_bins": 3.0,
+        "output_elements": 8192.0,
+        "complex64_output": 1.0
+      }
+    },
+    {
+      "name": "step3",
+      "timing_ms": {
+        "prepare": 0.0011408701539039612,
+        "h2d": 0.2531306818127632,
+        "compute": 4463.951477050781,
+        "d2h": 0.2778712660074234,
+        "postprocess": 0.1418301835656166,
+        "formal_execution": 4464.744257740676,
+        "total": 4464.908427558839
+      },
+      "operators_ms": {
+        "utils.hamming_fp32_adapter": 653.8999633789062,
+        "cusignal.pulse_doppler": 3810.051513671875
+      },
+      "timing_categories_ms": {
+        "cusignal_api": 3810.051513671875,
+        "required_zq500_adapter": 653.8999633789062,
+        "task_scaffolding": 0
+      },
+      "result_metrics": {
+        "pulse_doppler_called": 1.0,
+        "hamming_fp32_adapter_called": 1.0,
+        "step2_to_step3_data_match": 1.0,
+        "peak_doppler_bin": 5.0,
+        "peak_range_bin": 80.0,
+        "detected_doppler_hz": 1250.0,
+        "peak_power": 18044.40625,
+        "complex64_output": 1.0
+      }
+    },
+    {
+      "name": "step4",
+      "timing_ms": {
+        "prepare": 0.001039355993270874,
+        "h2d": 0.1609809696674347,
+        "compute": 4512.619683489203,
+        "d2h": 0.3586411476135254,
+        "postprocess": 0.19421149045228958,
+        "formal_execution": 4513.462104834616,
+        "total": 4513.6781157925725
+      },
+      "operators_ms": {
+        "cupy.range_doppler_power": 1293.126953125,
+        "cusignal.cfar_alpha_host": 0.022759661078453064,
+        "cusignal.ca_cfar": 3219.469970703125
+      },
+      "timing_categories_ms": {
+        "cusignal_api": 3219.4927303642035,
+        "required_zq500_adapter": 0,
+        "task_scaffolding": 1293.126953125
+      },
+      "result_metrics": {
+        "cfar_alpha_called": 1.0,
+        "ca_cfar_called": 1.0,
+        "step3_to_step4_data_match": 1.0,
+        "target_detected": 1.0,
+        "cfar_alpha": 7.142328977101583,
+        "detection_count": 2014.0,
+        "threshold_finite_fraction": 1.0
+      }
+    }
+  ],
+  "git_commit": "cc85a352c4eede97e54c54393bcdce6b9cda2545",
+  "git_dirty": "true",
+  "test_time": "2026-07-18T15:50:00+08:00"
+}

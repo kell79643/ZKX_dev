@@ -1,0 +1,4 @@
+task,input_dtype,scenario,gpu_peak_doppler_bin,gpu_peak_range_bin,contract_peak_doppler_bin,contract_peak_range_bin,high_precision_reference_peak_doppler_bin,high_precision_reference_peak_range_bin,expected_doppler_bin,expected_range_bin,business_metric,business_pass
+Task1,FP32,32x256_delay80_doppler5_noise_seed20260715,5,80,5,80,5,80,5,80,peak_location,1
+Task1,FP16,32x256_delay80_doppler5_noise_seed20260715,5,80,5,80,5,80,5,80,peak_location,1
+

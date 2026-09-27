@@ -1,0 +1,15 @@
+-- Using ZQ500 DLI_V2 architecture options
+-- The CXX compiler identification is Clang 15.0.6
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /zq500/sdk/bin/dlcc - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [G][CMAKE-SCAN] active=13 violations=0 stability_user_deferred=3
+-- [CONTRACT][EVIDENCE] total=109 pinned_cusignal=/tmp/ZKX_g_clean_db7763c/cusignal-23.08.00 pinned_cupy=/tmp/ZKX_g_clean_db7763c/cupy-13.6.0
+-- [CONTRACT][OPERATORS] total=53 approved=53 reviewed=0 draft=0 blocked=0
+-- [CONTRACT][DTYPES] total=265 approved=265 reviewed=0 draft=0 blocked=0
+-- [TASK1][CONTRACT] official_steps=5 formal_apis=5 accuracy_validation_files=5 accuracy_comparison_files=5 comparison_gpu_paths=0 legacy_paths=0 nvidia_only_path=0 status=passed
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/g_task_db7763c_clean2

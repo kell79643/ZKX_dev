@@ -1,0 +1,66 @@
+[TASK2][step1][TIMING] prep_ms=0.025980 h2d_ms=103.222390 compute_ms=4.080182 d2h_ms=0.387313 post_ms=0.376842 formal_execution_ms=108.044603 total_ms=109.049120
+[TASK2][step1][ACCURACY] max_error=1.799315214e-06 relative_error=1.061341108e-05 relative_tolerance=3.000000000e-05 compared_elements=2560 tolerance=3.000000000e-05 first_failure_index=-1 reference_source="typed CPU waveform APIs plus independent Host echo/noise formulas" comparison_method="maximum relative L2 error across five FP32 arrays; maximum absolute error retained" input_shape="[512]" input_dtype="FP32 outputs; FP64 typed waveform intermediates where required" status=pass
+[TASK2][OPERATOR] step=step1 name=chirp gpu_ms=3.248268
+[TASK2][OPERATOR] step=step1 name=gausspulse gpu_ms=0.125008
+[TASK2][OPERATOR] step=step1 name=gpu_echo_superposition gpu_ms=0.091194
+[TASK2][OPERATOR] step=step1 name=sawtooth gpu_ms=0.339182
+[TASK2][OPERATOR] step=step1 name=square gpu_ms=0.276530
+[TASK2][METRIC] step=step1 name=interference_rms value=0.071842
+[TASK2][METRIC] step=step1 name=noise_rms value=0.022721
+[TASK2][METRIC] step=step1 name=perturbation_delta value=0.118545
+[TASK2][METRIC] step=step1 name=target_rms value=0.510511
+[TASK2][METRIC] step=step1 name=waveform_functions_selected value=4.000000
+[TASK2][step2][TIMING] prep_ms=0.001660 h2d_ms=0.152501 compute_ms=1.249596 d2h_ms=0.159832 post_ms=0.569244 formal_execution_ms=1.682022 total_ms=2.495567
+[TASK2][step2][ACCURACY] max_error=2.384185791e-07 relative_error=1.197660815e-07 relative_tolerance=5.000000000e-04 compared_elements=512 tolerance=5.000000000e-04 first_failure_index=-1 reference_source="hamming_typed_cpu<float> + firwin_typed_cpu + firfilter_typed_cpu" comparison_method="FP32 relative L2 error primary; maximum absolute error retained" input_shape="[512]" input_dtype="FP32" status=pass
+[TASK2][OPERATOR] step=step2 name=firfilter gpu_ms=0.389064
+[TASK2][OPERATOR] step=step2 name=firwin gpu_ms=0.556214
+[TASK2][OPERATOR] step=step2 name=hamming gpu_ms=0.304318
+[TASK2][METRIC] step=step2 name=snr_after_db value=25.497160
+[TASK2][METRIC] step=step2 name=snr_before_db value=16.746842
+[TASK2][METRIC] step=step2 name=snr_improvement_db value=8.750318
+[TASK2][METRIC] step=step2 name=step1_to_step2_data_match value=1.000000
+[TASK2][step3][TIMING] prep_ms=0.002250 h2d_ms=0.150402 compute_ms=0.279662 d2h_ms=0.102951 post_ms=0.127251 formal_execution_ms=0.621635 total_ms=0.971067
+[TASK2][step3][ACCURACY] max_error=5.960464478e-08 relative_error=5.931607227e-08 relative_tolerance=5.000000000e-05 compared_elements=480 tolerance=5.000000000e-05 first_failure_index=-1 reference_source="cubic_cpu + firfilter_typed_cpu" comparison_method="FP32 relative L2 error primary; maximum absolute error retained" input_shape="input [512], output [480]" input_dtype="FP32" status=pass
+[TASK2][OPERATOR] step=step3 name=cubic gpu_ms=0.087094
+[TASK2][OPERATOR] step=step3 name=firfilter_b_spline gpu_ms=0.192568
+[TASK2][METRIC] step=step3 name=crop_begin value=16.000000
+[TASK2][METRIC] step=step3 name=crop_end value=496.000000
+[TASK2][METRIC] step=step3 name=peak_amplitude_ratio value=0.952412
+[TASK2][METRIC] step=step3 name=roughness_after value=0.105550
+[TASK2][METRIC] step=step3 name=roughness_before value=0.135166
+[TASK2][METRIC] step=step3 name=step2_to_step3_data_match value=1.000000
+[TASK2][step4][TIMING] prep_ms=5.414748 h2d_ms=0.095910 compute_ms=3229.364153 d2h_ms=0.208892 post_ms=8.490318 formal_execution_ms=3235.676663 total_ms=3244.409153
+[TASK2][step4][ACCURACY] max_error=2.288818359e-05 relative_error=7.774341946e-07 relative_tolerance=1.000000000e-02 compared_elements=1933 tolerance=1.000000000e-02 first_failure_index=-1 reference_source="fm_demod/correlate/spectrogram/cwt typed CPU APIs plus Host fusion" comparison_method="maximum relative L2 error across four domains and fused bundle; maximum absolute error retained" input_shape="input [480], fused output [480]" input_dtype="FP32 features; FP64 CWT workspace/intermediate where required" status=pass
+[TASK2][OPERATOR] step=step4 name=analytic_glue gpu_ms=0.076134
+[TASK2][OPERATOR] step=step4 name=correlate gpu_ms=0.148100
+[TASK2][OPERATOR] step=step4 name=cwt_ricker gpu_ms=0.376188
+[TASK2][OPERATOR] step=step4 name=fm_demod gpu_ms=0.087950
+[TASK2][OPERATOR] step=step4 name=spectrogram gpu_ms=3228.675781
+[TASK2][METRIC] step=step4 name=feature_bundle_size value=480.000000
+[TASK2][METRIC] step=step4 name=feature_families value=4.000000
+[TASK2][METRIC] step=step4 name=step3_to_step4_data_match value=1.000000
+[TASK2][step5][TIMING] prep_ms=0.011620 h2d_ms=0.060891 compute_ms=0.546616 d2h_ms=0.051550 post_ms=1.200429 formal_execution_ms=0.713035 total_ms=2.085755
+[TASK2][step5][ACCURACY] max_error=0.000000000e+00 relative_error=0.000000000e+00 relative_tolerance=0.000000000e+00 compared_elements=187 tolerance=0.000000000e+00 first_failure_index=-1 reference_source="argrelextrema_typed_cpu exact integer indices" comparison_method="relative INT64 index mismatch rate primary (zero required); exact equality and absolute mismatch retained" input_shape="input [480], variable-length coordinate output" input_dtype="FP32 input / INT64 indices" status=pass
+[TASK2][OPERATOR] step=step5 name=argrelextrema gpu_ms=0.546616
+[TASK2][METRIC] step=step5 name=baseline_relative_mismatch_rate value=0.000000
+[TASK2][METRIC] step=step5 name=extrema_count value=62.000000
+[TASK2][METRIC] step=step5 name=injected_peak_followed value=1.000000
+[TASK2][METRIC] step=step5 name=injected_relative_mismatch_rate value=0.000000
+[TASK2][METRIC] step=step5 name=moved_relative_mismatch_rate value=0.000000
+[TASK2][METRIC] step=step5 name=step4_to_step5_data_match value=1.000000
+[TASK2][METRIC] step=step5 name=zero_review_comparator_negative value=1.000000
+[TASK2][METRIC] step=step5 name=zero_review_independent_integer_recompute value=1.000000
+[TASK2][METRIC] step=step5 name=zero_review_path_independent value=1.000000
+[TASK2][METRIC] step=step5 name=zero_review_perturbation value=1.000000
+[TASK2][step6][TIMING] prep_ms=0.010570 h2d_ms=0.763145 compute_ms=3.447654 d2h_ms=0.118901 post_ms=0.066280 formal_execution_ms=5.267206 total_ms=6.339163
+[TASK2][step6][ACCURACY] max_error=2.910383046e-11 relative_error=6.831205823e-08 relative_tolerance=2.000000000e-05 compared_elements=2 tolerance=2.000000000e-05 first_failure_index=-1 reference_source="typed CPU Kalman predict/update state and covariance" comparison_method="FP32 state/covariance relative L2 error primary; maximum absolute error, truth and R perturbation retained" input_shape="8 observations, state [1], covariance [1]" input_dtype="FP32" status=pass
+[TASK2][OPERATOR] step=step6 name=kalmanfilter_predict_update gpu_ms=3.447654
+[TASK2][METRIC] step=step6 name=anchor_index value=356.000000
+[TASK2][METRIC] step=step6 name=estimate_normalized value=0.743048
+[TASK2][METRIC] step=step6 name=measurement_noise_response value=0.043490
+[TASK2][METRIC] step=step6 name=observation_count value=8.000000
+[TASK2][METRIC] step=step6 name=step5_to_step6_data_match value=1.000000
+[TASK2][METRIC] step=step6 name=truth_absolute_error value=0.042631
+[TASK2][METRIC] step=step6 name=truth_normalized value=0.700418
+[TASK2][PIPELINE][TIMING] requested_steps=6 completed_steps=6 pipeline_total_ms=3365.370745 sum_step_total_ms=3365.349825
+[TASK2][SUMMARY] requested_steps=6/6 completed_steps=6/6 gpu_operator_mapping=6/6 cpu_fallback=0 temporary_implementation=0 nvidia_only_path=0 accuracy_pass=6/6 semantic_metrics_pass=6/6 status=pass

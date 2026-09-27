@@ -1,0 +1,47 @@
+{
+  "task": "Task1",
+  "evidence_id": "step3",
+  "completed_steps": 3,
+  "git_commit": "0372dcd5f8f512a6c2582c7fbf6b37fd90f41791",
+  "git_dirty": "true",
+  "test_time": "2026-07-15T19:36:00+08:00",
+  "host": "usr_02@10.110.12.10",
+  "container": "gpu_02",
+  "sdk": "/zq500/sdk",
+  "dtype": "ComplexFP32",
+  "result_location": "build_task1/task1_evidence/step3/task1_step3_evidence.json",
+  "input_contract": {"dtype": "ComplexFP32", "shape": [32, 256], "sample_rate_hz": 2560000, "prf_hz": 8000, "pulse_samples": 64, "target_delay_samples": 80, "doppler_hz": 1250, "noise_seed": 20260715},
+  "memory_contract": {"gpu_algorithm_storage": "DeviceArray", "pipeline_handoff_storage": "host PipelineState with explicit H2D/D2H", "layout": "row-major"},
+  "timing_policy": {"gpu_clock": "CudaEvent", "step_clock": "steady_clock", "plan_workspace": "included in formal operator compute_ms", "synchronization": "CudaEvent end synchronization and explicit transfers"},
+  "formal_apis": ["pulse_compression_device<float>", "pulse_doppler_device<float>", "cfar_alpha_device<float>", "ca_cfar_device<float>", "ambgfun_device<float>"],
+  "private_gpu_helpers": ["gpu_lfm_generation", "gpu_delay_doppler_noise", "range_doppler_power"],
+  "operator_counting": {"formal_business_operators": 5, "private_helpers_are_business_operators": false},
+  "accuracy_architecture": {"validation_files": 5, "comparison_files": 5, "transport": "in-memory typed validation data", "comparison_gpu_calls": 0},
+  "source_files": ["task1_common.h", "task1_common.cu", "task1_runner.h", "task1_runner.cu", "accuracy/accuracy_types.h", "accuracy/accuracy_utils.h", "accuracy/accuracy_utils.cpp", "accuracy/validation/step1_validation.cu", "accuracy/validation/step2_validation.cu", "accuracy/validation/step3_validation.cu", "accuracy/validation/step4_validation.cu", "accuracy/validation/step5_validation.cu", "accuracy/comparison/step1_comparison.cpp", "accuracy/comparison/step2_comparison.cpp", "accuracy/comparison/step3_comparison.cpp", "accuracy/comparison/step4_comparison.cpp", "accuracy/comparison/step5_comparison.cpp", "step1/step1.cu", "step2/step2.cu", "step3/step3.cu", "step4/step4.cu", "step5/step5.cu", "CMakeLists.txt", "verify_task1_source_contract.cmake", "run_zq500_acceptance.sh", "verify_task1_runtime_evidence.cmake", "cusignal_cpp/src/radartools/radartools_typed.h", "cusignal_cpp/src/radartools/radartools_typed.cpp", "cusignal_cpp/src/radartools/radartools_typed.cu", "cusignal_cpp/CMakeLists.txt"],
+  "status": "pass",
+  "pipeline_total_ms": 10333.537071000001,
+  "sum_step_total_ms": 10333.524991,
+  "steps": [
+    {
+      "name": "step1",
+      "timing_ms": {"prepare": 3.0000000000000001e-05, "h2d": 0, "compute": 3.3479839712381363, "d2h": 5.6952100000000003, "postprocess": 6.7862470000000004, "formal_execution": 112.635758, "total": 119.623648},
+      "accuracy": {"max_abs_error": 5.1013358737896945e-06, "max_rel_error": 5.1013355983833819e-06, "compared_elements": 24640, "relative_tolerance": 2.0000000000000002e-05, "relative_floor": 9.9999999999999998e-13, "first_failure_index": -1, "reference_source": "independent Host LFM/echo/noise formulas", "comparison_method": "full-element complex L_inf relative error for pass/fail; max_abs_error retained; delay/Doppler/seed perturbations"},
+      "operators_ms": {"gpu_delay_doppler_noise": 0.084097996354103088, "gpu_lfm_generation": 3.2638859748840332},
+      "metrics": {"bandwidth_hz": 640000, "delay_ground_truth_recorded": 1, "delay_ground_truth_samples": 80, "doppler_ground_truth_hz": 1250, "doppler_ground_truth_recorded": 1, "noise_added": 1, "noise_rms": 0.02862463021614188, "noise_seed": 20260715, "noise_std": 0.035000000149011612, "num_pulses": 32, "output_columns": 256, "output_rows": 32, "perturbation_checks_pass": 3, "prf_hz": 8000, "pri_seconds": 0.000125, "pulse_samples": 64, "pulse_width_seconds": 2.5000000000000001e-05, "sample_rate_hz": 2560000, "samples_per_pulse": 256, "snr_db": 24.84460241335869, "target_amplitude": 1, "target_echo_present": 1, "target_range_m": 4684.2571562499998}
+    },
+    {
+      "name": "step2",
+      "timing_ms": {"prepare": 0.00054000000000000001, "h2d": 0.13852200000000001, "compute": 6939.93212890625, "d2h": 0.28144400000000003, "postprocess": 33.272095, "formal_execution": 6940.6847610000004, "total": 6974.0645279999999},
+      "accuracy": {"max_abs_error": 1.9660499694908431e-06, "max_rel_error": 2.4510527921028506e-07, "compared_elements": 8192, "relative_tolerance": 0.002, "relative_floor": 9.9999999999999998e-13, "first_failure_index": -1, "reference_source": "pulse_compression_typed_cpu<float>", "comparison_method": "full-element complex L_inf relative error for pass/fail; max_abs_error retained; range peak/template perturbation"},
+      "operators_ms": {"pulse_compression": 6939.93212890625},
+      "metrics": {"compressed_half_power_width_samples": 3, "expected_range_bin": 80, "nfft": 256, "normalization_enabled": 1, "output_columns": 256, "output_rows": 32, "padding_policy_circular": 1, "peak_range_bin": 80, "pulse_compression_called": 1, "range_bin_spacing_m": 58.553214453125001, "range_error_m": 0, "step1_to_step2_data_match": 1, "template_samples": 64, "theoretical_range_resolution_m": 234.2128578125, "uncompressed_width_samples": 64}
+    },
+    {
+      "name": "step3",
+      "timing_ms": {"prepare": 0.00029, "h2d": 0.116572, "compute": 3202.912109375, "d2h": 0.42904700000000001, "postprocess": 36.108919, "formal_execution": 3203.6536850000002, "total": 3239.8368150000001},
+      "accuracy": {"max_abs_error": 5.340576171875e-05, "max_rel_error": 3.9757297706299202e-07, "compared_elements": 8192, "relative_tolerance": 0.01, "relative_floor": 9.9999999999999998e-13, "first_failure_index": -1, "reference_source": "pulse_doppler_typed_cpu<float>", "comparison_method": "full-element complex L_inf relative error for pass/fail; max_abs_error retained; peak truth/window perturbation"},
+      "operators_ms": {"pulse_doppler": 3202.912109375},
+      "metrics": {"detected_doppler_hz": 1250, "doppler_bin_spacing_hz": 250, "doppler_error_hz": 0, "expected_doppler_hz": 1250, "hamming_window": 1, "nfft": 32, "normalization_none": 1, "output_columns": 256, "output_rows": 32, "padding_or_truncation_none": 1, "peak_doppler_bin": 5, "peak_range_bin": 80, "pulse_doppler_called": 1, "signed_doppler_bin": 5, "slow_time_axis": 0, "step2_to_step3_data_match": 1}
+    }
+  ]
+}

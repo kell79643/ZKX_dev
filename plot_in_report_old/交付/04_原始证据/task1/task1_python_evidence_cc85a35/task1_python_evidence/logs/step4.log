@@ -1,0 +1,9 @@
+[TASK1_PYTHON][step1][TIMING] prep_ms=0.002281 h2d_ms=0.000000 compute_ms=21733.026147 d2h_ms=5.397780 post_ms=0.185391 formal_execution_ms=21859.735565 total_ms=21859.943576
+[TASK1_PYTHON][step1][RESULT] metrics={"chirp_called": 1.0, "delay_ground_truth_recorded": 1.0, "delay_ground_truth_samples": 80.0, "doppler_ground_truth_hz": 1250.0, "doppler_ground_truth_recorded": 1.0, "echo_elements": 8192.0, "echo_peak_magnitude": 1.0483403205871582, "noise_added": 1.0, "target_echo_present": 1.0, "waveform_samples": 64.0}
+[TASK1_PYTHON][step2][TIMING] prep_ms=0.004020 h2d_ms=2.667150 compute_ms=12570.334961 d2h_ms=0.303881 post_ms=0.250821 formal_execution_ms=12573.777399 total_ms=12574.067080
+[TASK1_PYTHON][step2][RESULT] metrics={"complex64_output": 1.0, "half_peak_width_bins": 3.0, "output_elements": 8192.0, "peak_energy": 2039.3426513671875, "peak_range_bin": 80.0, "pulse_compression_called": 1.0, "step1_to_step2_data_match": 1.0}
+[TASK1_PYTHON][step3][TIMING] prep_ms=0.001141 h2d_ms=0.253131 compute_ms=4463.951477 d2h_ms=0.277871 post_ms=0.141830 formal_execution_ms=4464.744258 total_ms=4464.908428
+[TASK1_PYTHON][step3][RESULT] metrics={"complex64_output": 1.0, "detected_doppler_hz": 1250.0, "hamming_fp32_adapter_called": 1.0, "peak_doppler_bin": 5.0, "peak_power": 18044.40625, "peak_range_bin": 80.0, "pulse_doppler_called": 1.0, "step2_to_step3_data_match": 1.0}
+[TASK1_PYTHON][step4][TIMING] prep_ms=0.001039 h2d_ms=0.160981 compute_ms=4512.619683 d2h_ms=0.358641 post_ms=0.194211 formal_execution_ms=4513.462105 total_ms=4513.678116
+[TASK1_PYTHON][step4][RESULT] metrics={"ca_cfar_called": 1.0, "cfar_alpha": 7.142328977101583, "cfar_alpha_called": 1.0, "detection_count": 2014.0, "step3_to_step4_data_match": 1.0, "target_detected": 1.0, "threshold_finite_fraction": 1.0}
+[TASK1_PYTHON][PIPELINE] completed_steps=4 pipeline_total_ms=43412.622279 status=pass

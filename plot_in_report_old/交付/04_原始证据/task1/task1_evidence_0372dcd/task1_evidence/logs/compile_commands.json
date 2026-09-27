@@ -1,0 +1,317 @@
+[
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/fft_core.dir/src/fft_interface/fft_dlfft.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/fft_interface/fft_dlfft.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/fft_interface/fft_dlfft.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -Dfft_core_shared_EXPORTS -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -fPIC --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/fft_core_shared.dir/src/fft_interface/fft_dlfft.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/fft_interface/fft_dlfft.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/fft_interface/fft_dlfft.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/fft_interface/fft_interface.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/fft_interface/fft_interface.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/fft_interface/fft_interface.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/fft_interface/fft_interface_cpu.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/fft_interface/fft_interface_cpu.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/fft_interface/fft_interface_cpu.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/cuda_utils/cuda_utils_smoke.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/cuda_utils/cuda_utils_smoke.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/cuda_utils/cuda_utils_smoke.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/cuda_utils/operator_type_dispatch.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/cuda_utils/operator_type_dispatch.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/cuda_utils/operator_type_dispatch.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/bsplines/bsplines_typed.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/bsplines/bsplines_typed.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/bsplines/bsplines_typed.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/bsplines/bsplines_typed.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/bsplines/bsplines_typed.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/bsplines/bsplines_typed.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/convolution/convolution_typed.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/convolution/convolution_typed.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/convolution/convolution_typed.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/convolution/convolution_typed.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/convolution/convolution_typed.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/convolution/convolution_typed.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/demod/demod_typed.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/demod/demod_typed.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/demod/demod_typed.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/demod/demod_typed.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/demod/demod_typed.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/demod/demod_typed.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/estimation/estimation_typed.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/estimation/estimation_typed.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/estimation/estimation_typed.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/estimation/estimation_typed.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/estimation/estimation_typed.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/estimation/estimation_typed.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/filter_design/filter_design_typed.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/filter_design/filter_design_typed.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/filter_design/filter_design_typed.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/filter_design/filter_design_typed.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/filter_design/filter_design_typed.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/filter_design/filter_design_typed.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/filtering/filtering_typed.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/filtering/filtering_typed.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/filtering/filtering_typed.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/filtering/filtering_typed.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/filtering/filtering_typed.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/filtering/filtering_typed.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/peak_finding/peak_finding_typed.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/peak_finding/peak_finding_typed.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/peak_finding/peak_finding_typed.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/peak_finding/peak_finding_typed.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/peak_finding/peak_finding_typed.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/peak_finding/peak_finding_typed.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/radartools/radartools_typed.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/radartools/radartools_typed.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/radartools/radartools_typed.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/radartools/radartools_typed.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/radartools/radartools_typed.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/radartools/radartools_typed.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/spectral_analysis/spectral_analysis_typed.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/spectral_analysis/spectral_analysis_typed.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/spectral_analysis/spectral_analysis_typed.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/spectral_analysis/spectral_analysis_typed.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/spectral_analysis/spectral_analysis_typed.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/spectral_analysis/spectral_analysis_typed.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/waveforms/waveforms_typed.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/waveforms/waveforms_typed.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/waveforms/waveforms_typed.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/waveforms/waveforms_typed.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/waveforms/waveforms_typed.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/waveforms/waveforms_typed.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/wavelets/wavelets_typed.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/wavelets/wavelets_typed.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/wavelets/wavelets_typed.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/wavelets/wavelets_typed.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/wavelets/wavelets_typed.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/wavelets/wavelets_typed.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/windows/windows_typed.cpp.o -c /tmp/ZKX_dev/cusignal_cpp/src/windows/windows_typed.cpp",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/windows/windows_typed.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/signal_lib.dir/src/windows/windows_typed.cu.o -c /tmp/ZKX_dev/cusignal_cpp/src/windows/windows_typed.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/src/windows/windows_typed.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DE_EVIDENCE_GIT_COMMIT=\\\"unbound\\\" -DE_EVIDENCE_TEST_TIME=\\\"unbound\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/e3_bsplines_type_smoke.dir/test/signal_processing/e3_bsplines_type_smoke.cu.o -c /tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_bsplines_type_smoke.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_bsplines_type_smoke.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DE_EVIDENCE_GIT_COMMIT=\\\"unbound\\\" -DE_EVIDENCE_TEST_TIME=\\\"unbound\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/e3_convolution_type_smoke.dir/test/signal_processing/e3_convolution_type_smoke.cu.o -c /tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_convolution_type_smoke.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_convolution_type_smoke.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DE_EVIDENCE_GIT_COMMIT=\\\"unbound\\\" -DE_EVIDENCE_TEST_TIME=\\\"unbound\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/e3_demod_type_smoke.dir/test/signal_processing/e3_demod_type_smoke.cu.o -c /tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_demod_type_smoke.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_demod_type_smoke.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DE_EVIDENCE_GIT_COMMIT=\\\"unbound\\\" -DE_EVIDENCE_TEST_TIME=\\\"unbound\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/e3_simple_batch_type_smoke.dir/test/signal_processing/e3_simple_batch_type_smoke.cu.o -c /tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_simple_batch_type_smoke.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_simple_batch_type_smoke.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DE_EVIDENCE_GIT_COMMIT=\\\"unbound\\\" -DE_EVIDENCE_TEST_TIME=\\\"unbound\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/e3_estimation_filter_design_type_smoke.dir/test/signal_processing/e3_estimation_filter_design_type_smoke.cu.o -c /tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_estimation_filter_design_type_smoke.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_estimation_filter_design_type_smoke.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DE_EVIDENCE_GIT_COMMIT=\\\"unbound\\\" -DE_EVIDENCE_TEST_TIME=\\\"unbound\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/e3_filtering_type_smoke.dir/test/signal_processing/e3_filtering_type_smoke.cu.o -c /tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_filtering_type_smoke.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_filtering_type_smoke.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DE_EVIDENCE_GIT_COMMIT=\\\"unbound\\\" -DE_EVIDENCE_TEST_TIME=\\\"unbound\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/e3_peak_radar_type_smoke.dir/test/signal_processing/e3_peak_radar_type_smoke.cu.o -c /tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_peak_radar_type_smoke.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_peak_radar_type_smoke.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DE_EVIDENCE_GIT_COMMIT=\\\"unbound\\\" -DE_EVIDENCE_TEST_TIME=\\\"unbound\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/e3_spectral_type_smoke.dir/test/signal_processing/e3_spectral_type_smoke.cu.o -c /tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_spectral_type_smoke.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_spectral_type_smoke.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DE_EVIDENCE_GIT_COMMIT=\\\"unbound\\\" -DE_EVIDENCE_TEST_TIME=\\\"unbound\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/e3_wave_window_type_smoke.dir/test/signal_processing/e3_wave_window_type_smoke.cu.o -c /tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_wave_window_type_smoke.cu",
+  "file": "/tmp/ZKX_dev/cusignal_cpp/test/signal_processing/e3_wave_window_type_smoke.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/task1_common.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/task1_common.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/task1_common.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/task1_runner.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/task1_runner.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/task1_runner.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/accuracy/accuracy_utils.cpp.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/accuracy_utils.cpp",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/accuracy_utils.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/accuracy/validation/step1_validation.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/validation/step1_validation.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/validation/step1_validation.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/accuracy/validation/step2_validation.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/validation/step2_validation.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/validation/step2_validation.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/accuracy/validation/step3_validation.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/validation/step3_validation.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/validation/step3_validation.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/accuracy/validation/step4_validation.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/validation/step4_validation.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/validation/step4_validation.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/accuracy/validation/step5_validation.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/validation/step5_validation.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/validation/step5_validation.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/accuracy/comparison/step1_comparison.cpp.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/comparison/step1_comparison.cpp",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/comparison/step1_comparison.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/accuracy/comparison/step2_comparison.cpp.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/comparison/step2_comparison.cpp",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/comparison/step2_comparison.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/accuracy/comparison/step3_comparison.cpp.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/comparison/step3_comparison.cpp",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/comparison/step3_comparison.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/accuracy/comparison/step4_comparison.cpp.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/comparison/step4_comparison.cpp",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/comparison/step4_comparison.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/accuracy/comparison/step5_comparison.cpp.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/comparison/step5_comparison.cpp",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/accuracy/comparison/step5_comparison.cpp"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/step1/step1.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/step1/step1.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/step1/step1.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/step2/step2.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/step2/step2.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/step2/step2.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/step3/step3.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/step3/step3.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/step3/step3.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/step4/step4.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/step4/step4.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/step4/step4.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DTASK1_EVIDENCE_GIT_COMMIT=\\\"0372dcd5f8f512a6c2582c7fbf6b37fd90f41791\\\" -DTASK1_EVIDENCE_GIT_DIRTY=\\\"true\\\" -DTASK1_EVIDENCE_TEST_TIME=\\\"2026-07-15T19:36:00+08:00\\\" -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline_core.dir/step5/step5.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/step5/step5.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/step5/step5.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_pipeline.dir/main.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/main.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/main.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_step1.dir/step1/main.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/step1/main.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/step1/main.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_step2.dir/step2/main.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/step2/main.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/step2/main.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_step3.dir/step3/main.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/step3/main.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/step3/main.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_step4.dir/step4/main.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/step4/main.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/step4/main.cu"
+},
+{
+  "directory": "/tmp/ZKX_dev/cusignal_cpp/build_task1/Task1/task1_gpu_cpu",
+  "command": "/zq500/sdk/bin/dlcc -DDLI_V2 -DUSE_DLFFT -I/tmp/ZKX_dev/cusignal_cpp/src -I/zq500/sdk/bin/../include -I/tmp/ZKX_dev/Task1/task1_gpu_cpu --offload-arch=dlgput64,dlgpux64 -x cuda -std=gnu++17 -o CMakeFiles/task1_step5.dir/step5/main.cu.o -c /tmp/ZKX_dev/Task1/task1_gpu_cpu/step5/main.cu",
+  "file": "/tmp/ZKX_dev/Task1/task1_gpu_cpu/step5/main.cu"
+}
+]

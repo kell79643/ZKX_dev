@@ -1,0 +1,90 @@
+[
+  {
+    "Task": "Task1",
+    "Step": "step1",
+    "selected_input_shape": "echo=[16,512],waveform=[128]",
+    "selected_scale_order": "10^2",
+    "speedup": 8.15252413504848,
+    "selection_reason": "两侧各20个样本且状态pass；排除最小/最大端点后，在内部代表性规模中speedup最高"
+  },
+  {
+    "Task": "Task1",
+    "Step": "step2",
+    "selected_input_shape": "echo=[16,512],template=[128]",
+    "selected_scale_order": "10^2",
+    "speedup": 1.1901150630420134,
+    "selection_reason": "两侧各20个样本且状态pass；排除最小/最大端点后，在内部代表性规模中speedup最高"
+  },
+  {
+    "Task": "Task1",
+    "Step": "step3",
+    "selected_input_shape": "range_slow_time=[512,16]",
+    "selected_scale_order": "10^2",
+    "speedup": 0.7017394319287337,
+    "selection_reason": "两侧各20个样本且状态pass；排除最小/最大端点后，在内部代表性规模中speedup最高"
+  },
+  {
+    "Task": "Task1",
+    "Step": "step4",
+    "selected_input_shape": "range_doppler=[16,512]",
+    "selected_scale_order": "10^2",
+    "speedup": 1.127634454412729,
+    "selection_reason": "两侧各20个样本且状态pass；排除最小/最大端点后，在内部代表性规模中speedup最高"
+  },
+  {
+    "Task": "Task1",
+    "Step": "step5",
+    "selected_input_shape": "waveform=[2048]",
+    "selected_scale_order": "10^3",
+    "speedup": 0.32449092263044454,
+    "selection_reason": "两侧各20个样本且状态pass；排除最小/最大端点后，在内部代表性规模中speedup最高"
+  },
+  {
+    "Task": "Task2",
+    "Step": "step1",
+    "selected_input_shape": "time=[512]",
+    "selected_scale_order": "10^2",
+    "speedup": 1.4932339953811637,
+    "selection_reason": "两侧各20个样本且状态pass；排除最小/最大端点后，在内部代表性规模中speedup最高"
+  },
+  {
+    "Task": "Task2",
+    "Step": "step2",
+    "selected_input_shape": "signal=[4096],filter=[65]",
+    "selected_scale_order": "10^3",
+    "speedup": 4.157492248357968,
+    "selection_reason": "两侧各20个样本且状态pass；排除最小/最大端点后，在内部代表性规模中speedup最高"
+  },
+  {
+    "Task": "Task2",
+    "Step": "step3",
+    "selected_input_shape": "input=[4096],output=[3968]",
+    "selected_scale_order": "10^3",
+    "speedup": 1.3030035495548709,
+    "selection_reason": "两侧各20个样本且状态pass；排除最小/最大端点后，在内部代表性规模中speedup最高"
+  },
+  {
+    "Task": "Task2",
+    "Step": "step4",
+    "selected_input_shape": "fusion_input=[512]",
+    "selected_scale_order": "10^2",
+    "speedup": 3.4274113137242685,
+    "selection_reason": "两侧各20个样本且状态pass；排除最小/最大端点后，在内部代表性规模中speedup最高"
+  },
+  {
+    "Task": "Task2",
+    "Step": "step5",
+    "selected_input_shape": "feature_bundle=[4096]",
+    "selected_scale_order": "10^3",
+    "speedup": 3.8816984103551575,
+    "selection_reason": "两侧各20个样本且状态pass；排除最小/最大端点后，在内部代表性规模中speedup最高"
+  },
+  {
+    "Task": "Task2",
+    "Step": "step6",
+    "selected_input_shape": "observations=[1024],state=[1]",
+    "selected_scale_order": "10^3",
+    "speedup": 2.565088307792424,
+    "selection_reason": "两侧各20个样本且状态pass；排除最小/最大端点后，在内部代表性规模中speedup最高"
+  }
+]

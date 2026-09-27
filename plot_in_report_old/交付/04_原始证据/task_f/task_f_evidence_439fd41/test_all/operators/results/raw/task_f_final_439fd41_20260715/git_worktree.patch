@@ -1,0 +1,960 @@
+diff --git a/Task2/selection_guide_tables.m b/Task2/selection_guide_tables.m
+deleted file mode 100644
+index 2e96d9a..0000000
+--- a/Task2/selection_guide_tables.m
++++ /dev/null
+@@ -1,93 +0,0 @@
+-function selection_guide_tables()
+-% GPU雷达信号处理系统选型建议 - 整合表格图片生成
+-% 将所有选型建议整合为一张表格图片，窗口显示结果
+-
+-fig = figure('Name', 'GPU雷达信号处理系统选型建议汇总表', ...
+-    'Position', [100, 100, 1400, 1200], 'Visible', 'on');
+-
+-all_data = {
+-    '1.1', '特征提取-场景', '雷达目标检测', '相关性分析 > 小波变换 > 谱分析 > FM解调', '';
+-    '1.1', '特征提取-场景', '调频信号特征提取', 'FM解调 > 小波变换 > 谱分析 > 相关性分析', '';
+-    '1.1', '特征提取-场景', '噪声环境下信号检测', '谱分析 > 小波变换 > 相关性分析 > FM解调', '';
+-    '1.1', '特征提取-场景', '瞬态信号检测', '小波变换 > FM解调 > 相关性分析 > 谱分析', '';
+-    '1.1', '特征提取-场景', '信号分类与识别', '小波变换 + 谱分析 > 相关性分析 > FM解调', '';
+-    '1.2', '特征提取-特性', '窄带连续信号', '谱分析', 'FM解调';
+-    '1.2', '特征提取-特性', '宽带Chirp信号', 'FM解调', '小波变换';
+-    '1.2', '特征提取-特性', '脉冲调制信号', '小波变换', '相关性分析';
+-    '1.2', '特征提取-特性', '噪声污染信号', '谱分析', '小波变换';
+-    '1.2', '特征提取-特性', '多分量信号', '小波变换', '谱分析';
+-    '1.2', '特征提取-特性', '瞬态/突变信号', '小波变换', 'FM解调';
+-    '2.1', 'CFAR决策', '海上监视(均匀海杂波)', 'CA-CFAR', '高信噪比，均匀环境';
+-    '2.1', 'CFAR决策', '地面监视(复杂地形)', 'OS-CFAR', '非均匀杂波，多目标';
+-    '2.1', 'CFAR决策', '气象雷达', 'OS-CFAR', '降雨分布不均匀';
+-    '2.1', 'CFAR决策', '航空管制', 'CA-CFAR', '高信噪比，低虚警要求';
+-    '2.1', 'CFAR决策', '车载雷达', 'OS-CFAR', '复杂环境，多目标';
+-    '2.1', 'CFAR决策', '工业检测', 'CA-CFAR', '环境可控，简单高效';
+-    '2.2', 'CA-CFAR参数', 'PFA=1e-3', 'ref=8, α=6.07', '';
+-    '2.2', 'CA-CFAR参数', 'PFA=1e-4', 'ref=8, α=8.53', '';
+-    '2.2', 'CA-CFAR参数', 'PFA=1e-5', 'ref=8, α=11.03', '';
+-    '2.3', 'OS-CFAR参数', '均匀噪声', 'os_rank=N (最大)', '';
+-    '2.3', 'OS-CFAR参数', '非均匀杂波', 'os_rank=N/2~3N/4', '';
+-    '2.3', 'OS-CFAR参数', '多目标', 'os_rank=N/4~N/2', '';
+-    '3.1', 'B样条-场景', '雷达目标检测', '三次B样条', '';
+-    '3.1', 'B样条-场景', 'SAR图像处理', '高斯样条', '';
+-    '3.1', 'B样条-场景', '实时信号滤波', '二次B样条', '';
+-    '3.1', 'B样条-场景', '高精度频率分析', '三次B样条', '';
+-    '3.1', 'B样条-场景', '瞬态信号检测', '一次B样条', '';
+-    '3.1', 'B样条-场景', '多通道信号处理', '二次B样条', '';
+-    '3.2', 'B样条-阶数', '带宽比>0.4', '阶数1', '带宽0.5 ωs';
+-    '3.2', 'B样条-阶数', '带宽比0.2-0.4', '阶数2', '带宽0.4 ωs';
+-    '3.2', 'B样条-阶数', '带宽比0.1-0.2', '阶数3', '带宽0.35 ωs';
+-    '3.2', 'B样条-阶数', '带宽比<0.1', '阶数5', '带宽0.25 ωs';
+-    '4.1', '窗函数-场景', '通用雷达信号滤波', 'Hamming窗', '';
+-    '4.1', '窗函数-场景', '高动态范围频谱分析', 'Blackman窗', '';
+-    '4.1', '窗函数-场景', '频率分辨率优先', '矩形窗', '';
+-    '4.1', '窗函数-场景', '自适应滤波系统', 'Kaiser窗', '';
+-    '4.1', '窗函数-场景', '实时信号处理', 'Hamming窗', '';
+-    '4.1', '窗函数-场景', '多普勒雷达', 'Hann窗', '';
+-    '4.2', '窗函数-阶数', 'N=32', 'Hamming/-40dB/0.10', 'Blackman/-60dB/0.15';
+-    '4.2', '窗函数-阶数', 'N=64', 'Hamming/-47dB/0.05', 'Blackman/-74dB/0.08';
+-    '4.2', '窗函数-阶数', 'N=128', 'Hamming/-54dB/0.025', 'Blackman/-86dB/0.04';
+-    '5.1', '波形-场景', '远程监视雷达', 'Chirp LFM', '平衡距离分辨率、杂波抑制';
+-    '5.1', '波形-场景', '短距离高分辨雷达', 'Gaussian脉冲', '最高分辨率(0.3m)，无耦合';
+-    '5.1', '波形-场景', '成本敏感系统', 'Square波形', '简单硬件，高PAPR效率';
+-    '5.2', '波形-优先级', '优先级1', '通用雷达系统', 'Chirp LFM';
+-    '5.2', '波形-优先级', '优先级2', '高分辨测量', 'Gaussian脉冲';
+-    '5.2', '波形-优先级', '优先级3', '低成本系统', 'Square波形'
+-};
+-
+-column_name = {'章节', '类别', '应用场景/条件', '推荐方案', '备选/参数'};
+-column_width = {70, 120, 250, 280, 450};
+-
+-t = uitable('Parent', fig, ...
+-    'Data', all_data, ...
+-    'ColumnName', column_name, ...
+-    'ColumnFormat', {'char', 'char', 'char', 'char', 'char'}, ...
+-    'ColumnWidth', column_width, ...
+-    'RowName', [], ...
+-    'FontSize', 11, ...
+-    'Position', [30, 50, 1200, 1000]);
+-
+-title_str = uicontrol('Parent', fig, ...
+-    'Style', 'text', ...
+-    'String', 'GPU雷达信号处理系统选型建议汇总表', ...
+-    'FontSize', 18, ...
+-    'FontWeight', 'bold', ...
+-    'Position', [350, 1070, 700, 40]);
+-
+-subtitle_str = uicontrol('Parent', fig, ...
+-    'Style', 'text', ...
+-    'String', '文档生成时间: 2026-05-06  源文件: SELECTION_GUIDE.md', ...
+-    'FontSize', 10, ...
+-    'Position', [450, 1040, 500, 25]);
+-
+-output_dir = fileparts(mfilename('fullpath'));
+-if isempty(output_dir)
+-    output_dir = pwd;
+-end
+-
+-exportapp(fig, fullfile(output_dir, 'selection_guide_all_tables.png'));
+-fprintf('图片已保存至: %s/selection_guide_all_tables.png\n', output_dir);
+-fprintf('请查看窗口中的表格，也可手动保存或截图\n');
+-
+-end
+diff --git a/Task2/task2_python/main.py b/Task2/task2_python/main.py
+deleted file mode 100644
+index 49e7626..0000000
+--- a/Task2/task2_python/main.py
++++ /dev/null
+@@ -1,73 +0,0 @@
+-import os
+-import sys
+-
+-os.environ['CUPY_NVCC_COMPILER_FLAGS'] = '-std=c++17 -DCCCL_IGNORE_DEPRECATED_CPP_DIALECT'
+-
+-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+-
+-from step1_waveform_generation import step1_waveform_generation
+-from step2_filtering_denoising import step2_filtering_denoising
+-from step3_bspline_smoothing import step3_bspline_smoothing
+-from step4_feature_extraction import step4_feature_extraction
+-
+-
+-def main():
+-    print("\n" + "=" * 80)
+-    print("GPU MULTI-DOMAIN FEATURE EXTRACTION - PYTHON/cusignal IMPLEMENTATION")
+-    print("=" * 80)
+-
+-    base_dir = "/workspace/ZKX/Task2/task2_python"
+-
+-    step1_dir = f"{base_dir}/step1"
+-    step2_dir = f"{base_dir}/step2"
+-    step3_dir = f"{base_dir}/step3"
+-    step4_dir = f"{base_dir}/step4"
+-
+-    print("\n[DIRECTORY SETUP]")
+-    print(f"  Step 1 output: {step1_dir}")
+-    print(f"  Step 2 output: {step2_dir}")
+-    print(f"  Step 3 output: {step3_dir}")
+-    print(f"  Step 4 output: {step4_dir}")
+-
+-    step1_results = step1_waveform_generation(step1_dir)
+-
+-    step2_results = step2_filtering_denoising(step1_dir, step2_dir)
+-
+-    step3_results = step3_bspline_smoothing(step2_dir, step3_dir)
+-
+-    step4_results = step4_feature_extraction(step1_dir, step3_dir, step4_dir)
+-
+-    print("\n" + "=" * 80)
+-    print("ALL STEPS COMPLETED SUCCESSFULLY")
+-    print("=" * 80)
+-
+-    print("\n[OUTPUT SUMMARY]")
+-    print("\nStep 1 - Waveform Generation:")
+-    print(f"  - target_chirp.txt ({step1_results['n']} samples)")
+-    print(f"  - echo_signal.txt (main input signal)")
+-    print(f"  - interference1_gausspulse.txt, interference2_sawtooth.txt")
+-    print(f"  - Additional waveforms: chirp variants, square waves, noise")
+-
+-    print("\nStep 2 - Filtering/Denoising:")
+-    print(f"  - filtered_signal.txt (FIR bandpass filtered)")
+-    print(f"  - Input: echo_signal.txt -> Output: filtered_signal.txt")
+-
+-    print("\nStep 3 - B-Spline Smoothing:")
+-    print(f"  - smoothed_signal.txt (cubic B-spline)")
+-    print(f"  - smoothed_signal_gauss.txt (gaussian B-spline)")
+-    print(f"  - smoothed_signal_quad.txt (quadratic B-spline)")
+-
+-    print("\nStep 4 - Multi-Domain Feature Extraction:")
+-    print(f"  - FM Demodulation: fm_demod_output.txt")
+-    print(f"  - Correlation Analysis: correlation_output.txt")
+-    print(f"  - Spectral Analysis: lombscargle_psd.txt, frequencies.txt")
+-    print(f"  - Wavelet Transform: cwt_morlet_output.txt, cwt_ricker_output.txt")
+-    print(f"    + magnitude files and wavelet function files")
+-
+-    print("\n" + "=" * 80)
+-    print("PROCESSING PIPELINE COMPLETED")
+-    print("=" * 80)
+-
+-
+-if __name__ == "__main__":
+-    main()
+\ No newline at end of file
+diff --git a/Task2/task2_python/step1_waveform_generation.py b/Task2/task2_python/step1_waveform_generation.py
+deleted file mode 100644
+index 877bdf2..0000000
+--- a/Task2/task2_python/step1_waveform_generation.py
++++ /dev/null
+@@ -1,149 +0,0 @@
+-import os
+-os.environ['CUPY_NVCC_COMPILER_FLAGS'] = '-std=c++17 -DCCCL_IGNORE_DEPRECATED_CPP_DIALECT'
+-
+-import cupy as cp
+-import numpy as np
+-import cusignal
+-
+-
+-def compute_rms(arr):
+-    return cp.sqrt(cp.mean(arr ** 2))
+-
+-
+-def compute_peak(arr):
+-    return cp.max(cp.abs(arr))
+-
+-
+-def write_signal_file(filename, data, description):
+-    data_host = cp.asnumpy(data)
+-    with open(filename, 'w') as f:
+-        f.write(f"# {description}\n")
+-        f.write(f"# N={len(data)} double\n")
+-        for i in range(0, len(data_host), 4):
+-            line = ' '.join([f"{v:.15e}" for v in data_host[i:i+4]])
+-            f.write(line + '\n')
+-
+-
+-def step1_waveform_generation(output_dir):
+-    print("=" * 50)
+-    print("STEP 1: WAVEFORM GENERATION (Python/cusignal)")
+-    print("=" * 50)
+-
+-    n = 1024
+-    fs = 1.0
+-
+-    t = cp.linspace(0, 1, n, endpoint=False)
+-
+-    print(f"\n[PARAMETERS]")
+-    print(f"  n = {n} samples")
+-    print(f"  fs = {fs} Hz")
+-
+-    f0 = 0.1
+-    t1 = 1.0
+-    f1 = 0.4
+-    target_chirp = cusignal.chirp(t, f0, t1, f1, method="linear", phi=0, vertex_zero=True, type="real")
+-    print(f"\n[STEP 1] Generate Chirp Signal (Linear FM)")
+-    print(f"  f0 = {f0} Hz (start frequency)")
+-    print(f"  t1 = {t1} s (end time)")
+-    print(f"  f1 = {f1} Hz (end frequency)")
+-    print(f"  Generated {len(target_chirp)} samples")
+-    write_signal_file(f"{output_dir}/target_chirp.txt", target_chirp,
+-                      f"Linear FM Chirp Signal (f0={f0}, f1={f1})")
+-
+-    fc = 0.5
+-    bw = 0.5
+-    bwr = -6.0
+-    tpr = 0.0
+-    interference1 = cusignal.gausspulse(t, fc, bw, bwr, tpr)
+-    print(f"\n[STEP 2] Generate Gaussian Pulse (Interference 1)")
+-    print(f"  fc = {fc} Hz (center frequency)")
+-    print(f"  bw = {bw} (bandwidth)")
+-    print(f"  bwr = {bwr} dB (relative bandwidth)")
+-    print(f"  Generated {len(interference1)} samples")
+-    write_signal_file(f"{output_dir}/interference1_gausspulse.txt", interference1,
+-                      f"Gaussian Pulse (fc={fc}, bw={bw})")
+-
+-    width = 0.5
+-    interference2 = cusignal.sawtooth(t, width)
+-    print(f"\n[STEP 3] Generate Sawtooth Wave (Interference 2)")
+-    print(f"  width = {width} (waveform width ratio)")
+-    print(f"  Generated {len(interference2)} samples")
+-    write_signal_file(f"{output_dir}/interference2_sawtooth.txt", interference2,
+-                      f"Sawtooth Wave (width={width})")
+-
+-    noise_mean = 0.0
+-    noise_std = 0.05
+-    noise = cp.random.normal(noise_mean, noise_std, n)
+-    print(f"\n[STEP 4] Generate Gaussian White Noise")
+-    print(f"  noise_mean = {noise_mean}")
+-    print(f"  noise_std = {noise_std}")
+-    print(f"  Generated {len(noise)} samples")
+-    write_signal_file(f"{output_dir}/noise.txt", noise,
+-                      f"Gaussian White Noise (mean={noise_mean}, std={noise_std})")
+-
+-    echo_signal = 0.7 * target_chirp + 0.2 * interference1 + 0.1 * interference2 + noise
+-    print(f"\n[STEP 5] Synthesize Echo Signal")
+-    print(f"  echo = 0.7 * target + 0.2 * interference1 + 0.1 * interference2 + noise")
+-    print(f"  Synthesized {len(echo_signal)} samples")
+-    print(f"  Echo Signal - RMS: {float(compute_rms(echo_signal)):.6f}, Peak: {float(compute_peak(echo_signal)):.6f}")
+-    write_signal_file(f"{output_dir}/echo_signal.txt", echo_signal,
+-                      "Synthetic Echo Signal")
+-
+-    chirp_quadratic = cusignal.chirp(t, f0, t1, f1, method="quadratic", phi=0, vertex_zero=True, type="real")
+-    write_signal_file(f"{output_dir}/chirp_quadratic.txt", chirp_quadratic,
+-                      f"Quadratic FM Chirp Signal (f0={f0}, f1={f1})")
+-
+-    chirp_logarithmic = cusignal.chirp(t, f0, t1, f1, method="logarithmic", phi=0, vertex_zero=True, type="real")
+-    write_signal_file(f"{output_dir}/chirp_logarithmic.txt", chirp_logarithmic,
+-                      f"Logarithmic FM Chirp Signal (f0={f0}, f1={f1})")
+-
+-    chirp_hyperbolic = cusignal.chirp(t, f0, t1, f1, method="hyperbolic", phi=0, vertex_zero=True, type="real")
+-    write_signal_file(f"{output_dir}/chirp_hyperbolic.txt", chirp_hyperbolic,
+-                      f"Hyperbolic FM Chirp Signal (f0={f0}, f1={f1})")
+-
+-    square_30pct = cusignal.square(t, duty=0.3)
+-    write_signal_file(f"{output_dir}/square_wave_30pct.txt", square_30pct,
+-                      "Square Wave (30% duty cycle)")
+-
+-    square_70pct = cusignal.square(t, duty=0.7)
+-    write_signal_file(f"{output_dir}/square_wave_70pct.txt", square_70pct,
+-                      "Square Wave (70% duty cycle)")
+-
+-    print(f"\n[STEP 6] Generate Additional Waveforms for Testing")
+-    print(f"  a) Quadratic Chirp... Generated {len(chirp_quadratic)} samples")
+-    print(f"  b) Logarithmic Chirp... Generated {len(chirp_logarithmic)} samples")
+-    print(f"  c) Hyperbolic Chirp... Generated {len(chirp_hyperbolic)} samples")
+-    print(f"  d) Square Wave 30%... Generated {len(square_30pct)} samples")
+-    print(f"  e) Square Wave 70%... Generated {len(square_70pct)} samples")
+-
+-    print(f"\n[OUTPUT FILES]")
+-    print(f"  target_chirp.txt")
+-    print(f"  interference1_gausspulse.txt")
+-    print(f"  interference2_sawtooth.txt")
+-    print(f"  noise.txt")
+-    print(f"  echo_signal.txt")
+-    print(f"  chirp_quadratic.txt")
+-    print(f"  chirp_logarithmic.txt")
+-    print(f"  chirp_hyperbolic.txt")
+-    print(f"  square_wave_30pct.txt")
+-    print(f"  square_wave_70pct.txt")
+-
+-    print("\n" + "=" * 50)
+-    print("STEP 1 COMPLETED")
+-    print("=" * 50)
+-
+-    return {
+-        'n': n,
+-        'fs': fs,
+-        't': t,
+-        'target_chirp': target_chirp,
+-        'interference1': interference1,
+-        'interference2': interference2,
+-        'noise': noise,
+-        'echo_signal': echo_signal
+-    }
+-
+-
+-if __name__ == "__main__":
+-    output_dir = "/workspace/ZKX/Task2/task2_python/step1"
+-    step1_waveform_generation(output_dir)
+\ No newline at end of file
+diff --git a/Task2/task2_python/step2_filtering_denoising.py b/Task2/task2_python/step2_filtering_denoising.py
+deleted file mode 100644
+index e36ac29..0000000
+--- a/Task2/task2_python/step2_filtering_denoising.py
++++ /dev/null
+@@ -1,99 +0,0 @@
+-import os
+-os.environ['CUPY_NVCC_COMPILER_FLAGS'] = '-std=c++17 -DCCCL_IGNORE_DEPRECATED_CPP_DIALECT'
+-
+-import cupy as cp
+-import numpy as np
+-import cusignal
+-
+-
+-def compute_rms(arr):
+-    return cp.sqrt(cp.mean(arr ** 2))
+-
+-
+-def compute_peak(arr):
+-    return cp.max(cp.abs(arr))
+-
+-
+-def read_signal_file(filename):
+-    data = []
+-    with open(filename, 'r') as f:
+-        for line in f:
+-            line = line.strip()
+-            if line.startswith('#') or not line:
+-                continue
+-            values = line.split()
+-            data.extend([float(v) for v in values])
+-    return cp.array(data)
+-
+-
+-def write_signal_file(filename, data, description):
+-    data_host = cp.asnumpy(data)
+-    with open(filename, 'w') as f:
+-        f.write(f"# {description}\n")
+-        f.write(f"# N={len(data)} double\n")
+-        for i in range(0, len(data_host), 4):
+-            line = ' '.join([f"{v:.15e}" for v in data_host[i:i+4]])
+-            f.write(line + '\n')
+-
+-
+-def step2_filtering_denoising(input_dir, output_dir):
+-    print("=" * 50)
+-    print("STEP 2: FIR FILTERING AND DENOISING (Python/cusignal)")
+-    print("=" * 50)
+-
+-    echo_signal = read_signal_file(f"{input_dir}/echo_signal.txt")
+-    print(f"\n[INPUT] Reading echo_signal.txt...")
+-    print(f"  Loaded {len(echo_signal)} samples")
+-    print(f"  Echo Signal - RMS: {float(compute_rms(echo_signal)):.6f}, Peak: {float(compute_peak(echo_signal)):.6f}")
+-
+-    numtaps = 64
+-    cutoff = [0.1, 0.4]
+-    nyq = 0.5
+-
+-    print(f"\n[PARAMETERS]")
+-    print(f"  Filter order: {numtaps}")
+-    print(f"  Cutoff frequencies: {cutoff}")
+-    print(f"  Nyquist frequency: {nyq}")
+-    print(f"  Window type: hamming")
+-
+-    h = cusignal.firwin(numtaps, cutoff, pass_zero=True, window='hamming', nyq=nyq)
+-    print(f"\n[STEP 1] FIR Filter Design (firwin)")
+-    print(f"  Designed {len(h)}-tap FIR filter with hamming window")
+-    print(f"  Pass band: 0.1 - 0.4 Hz")
+-
+-    filtered_signal = cusignal.firfilter(h, echo_signal)
+-    print(f"\n[STEP 2] FIR Filtering (firfilter)")
+-    print(f"  Filtered signal length: {len(filtered_signal)}")
+-    print(f"  Filtered Signal - RMS: {float(compute_rms(filtered_signal)):.6f}, Peak: {float(compute_peak(filtered_signal)):.6f}")
+-
+-    reduction_ratio = (1 - compute_rms(filtered_signal) / compute_rms(echo_signal)) * 100
+-    print(f"\n[VERIFICATION] Signal Statistics")
+-    print(f"  Input (echo_signal):")
+-    print(f"    RMS: {float(compute_rms(echo_signal)):.6f}")
+-    print(f"    Peak: {float(compute_peak(echo_signal)):.6f}")
+-    print(f"  Output (filtered_signal):")
+-    print(f"    RMS: {float(compute_rms(filtered_signal)):.6f}")
+-    print(f"    Peak: {float(compute_peak(filtered_signal)):.6f}")
+-    print(f"  RMS reduction: {reduction_ratio:.1f}%")
+-
+-    write_signal_file(f"{output_dir}/filtered_signal.txt", filtered_signal,
+-                      f"FIR Bandpass Filtered Signal (order={numtaps}, cutoff={cutoff})")
+-
+-    print(f"\n[OUTPUT] Writing filtered signal to file...")
+-    print(f"  Saved to: filtered_signal.txt")
+-
+-    print("\n" + "=" * 50)
+-    print("STEP 2 COMPLETED")
+-    print("=" * 50)
+-
+-    return {
+-        'echo_signal': echo_signal,
+-        'filtered_signal': filtered_signal,
+-        'filter_coeffs': h
+-    }
+-
+-
+-if __name__ == "__main__":
+-    input_dir = "/workspace/ZKX/Task2/task2_python/step1"
+-    output_dir = "/workspace/ZKX/Task2/task2_python/step2"
+-    step2_filtering_denoising(input_dir, output_dir)
+\ No newline at end of file
+diff --git a/Task2/task2_python/step3_bspline_smoothing.py b/Task2/task2_python/step3_bspline_smoothing.py
+deleted file mode 100644
+index 931ba2b..0000000
+--- a/Task2/task2_python/step3_bspline_smoothing.py
++++ /dev/null
+@@ -1,115 +0,0 @@
+-import os
+-os.environ['CUPY_NVCC_COMPILER_FLAGS'] = '-std=c++17 -DCCCL_IGNORE_DEPRECATED_CPP_DIALECT'
+-
+-import cupy as cp
+-import numpy as np
+-import cusignal
+-
+-
+-def compute_rms(arr):
+-    return cp.sqrt(cp.mean(arr ** 2))
+-
+-
+-def compute_peak(arr):
+-    return cp.max(cp.abs(arr))
+-
+-
+-def read_signal_file(filename):
+-    data = []
+-    with open(filename, 'r') as f:
+-        for line in f:
+-            line = line.strip()
+-            if line.startswith('#') or not line:
+-                continue
+-            values = line.split()
+-            data.extend([float(v) for v in values])
+-    return cp.array(data)
+-
+-
+-def write_signal_file(filename, data, description):
+-    data_host = cp.asnumpy(data)
+-    with open(filename, 'w') as f:
+-        f.write(f"# {description}\n")
+-        f.write(f"# N={len(data)} double\n")
+-        for i in range(0, len(data_host), 4):
+-            line = ' '.join([f"{v:.15e}" for v in data_host[i:i+4]])
+-            f.write(line + '\n')
+-
+-
+-def step3_bspline_smoothing(input_dir, output_dir):
+-    print("=" * 50)
+-    print("STEP 3: B-SPLINE SMOOTHING (Python/cusignal)")
+-    print("=" * 50)
+-
+-    filtered_signal = read_signal_file(f"{input_dir}/filtered_signal.txt")
+-    print(f"\n[INPUT] Reading filtered_signal.txt...")
+-    print(f"  Loaded {len(filtered_signal)} samples")
+-    print(f"  Input Signal - RMS: {float(compute_rms(filtered_signal)):.6f}, Peak: {float(compute_peak(filtered_signal)):.6f}")
+-
+-    print(f"\n[PARAMETERS]")
+-    print(f"  Input signal length: {len(filtered_signal)}")
+-    print(f"  B-spline type: cubic (3rd order)")
+-
+-    smoothed_cubic = cusignal.cubic(filtered_signal)
+-    print(f"\n[STEP 1] B-Spline Smoothing (cubic)")
+-    print(f"  Smoothed signal length: {len(smoothed_cubic)}")
+-    print(f"  Smoothed Signal (cubic) - RMS: {float(compute_rms(smoothed_cubic)):.6f}, Peak: {float(compute_peak(smoothed_cubic)):.6f}")
+-    write_signal_file(f"{output_dir}/smoothed_signal.txt", smoothed_cubic,
+-                      "Cubic B-Spline Smoothed Signal")
+-
+-    smoothed_gauss = cusignal.gauss_spline(filtered_signal, 3)
+-    print(f"\n[STEP 2] B-Spline Smoothing (gauss_spline, order=3)")
+-    print(f"  Smoothed signal length: {len(smoothed_gauss)}")
+-    print(f"  Smoothed Signal (gauss_spline) - RMS: {float(compute_rms(smoothed_gauss)):.6f}, Peak: {float(compute_peak(smoothed_gauss)):.6f}")
+-    write_signal_file(f"{output_dir}/smoothed_signal_gauss.txt", smoothed_gauss,
+-                      "Gauss-Spline Smoothed Signal (order=3)")
+-
+-    smoothed_quad = cusignal.quadratic(filtered_signal)
+-    print(f"\n[STEP 3] B-Spline Smoothing (quadratic)")
+-    print(f"  Smoothed signal length: {len(smoothed_quad)}")
+-    print(f"  Smoothed Signal (quadratic) - RMS: {float(compute_rms(smoothed_quad)):.6f}, Peak: {float(compute_peak(smoothed_quad)):.6f}")
+-    write_signal_file(f"{output_dir}/smoothed_signal_quad.txt", smoothed_quad,
+-                      "Quadratic B-Spline Smoothed Signal")
+-
+-    rms_ratio_cubic = float(compute_rms(smoothed_cubic)) / float(compute_rms(filtered_signal))
+-    rms_ratio_quad = float(compute_rms(smoothed_quad)) / float(compute_rms(filtered_signal))
+-    rms_ratio_gauss = float(compute_rms(smoothed_gauss)) / float(compute_rms(filtered_signal))
+-
+-    print(f"\n[VERIFICATION] Signal Statistics")
+-    print(f"  Input (filtered_signal):")
+-    print(f"    RMS: {float(compute_rms(filtered_signal)):.6f}")
+-    print(f"    Peak: {float(compute_peak(filtered_signal)):.6f}")
+-    print(f"  Output (cubic smoothed):")
+-    print(f"    RMS: {float(compute_rms(smoothed_cubic)):.6f}")
+-    print(f"    Peak: {float(compute_peak(smoothed_cubic)):.6f}")
+-    print(f"    RMS ratio (output/input): {rms_ratio_cubic:.4f}")
+-    print(f"  Output (quadratic smoothed):")
+-    print(f"    RMS: {float(compute_rms(smoothed_quad)):.6f}")
+-    print(f"    Peak: {float(compute_peak(smoothed_quad)):.6f}")
+-    print(f"    RMS ratio (output/input): {rms_ratio_quad:.4f}")
+-    print(f"  Output (gauss_spline smoothed, order=3):")
+-    print(f"    RMS: {float(compute_rms(smoothed_gauss)):.6f}")
+-    print(f"    Peak: {float(compute_peak(smoothed_gauss)):.6f}")
+-    print(f"    RMS ratio (output/input): {rms_ratio_gauss:.4f}")
+-
+-    print(f"\n[OUTPUT FILES]")
+-    print(f"  smoothed_signal.txt (cubic)")
+-    print(f"  smoothed_signal_gauss.txt (gauss_spline)")
+-    print(f"  smoothed_signal_quad.txt (quadratic)")
+-
+-    print("\n" + "=" * 50)
+-    print("STEP 3 COMPLETED")
+-    print("=" * 50)
+-
+-    return {
+-        'filtered_signal': filtered_signal,
+-        'smoothed_cubic': smoothed_cubic,
+-        'smoothed_quad': smoothed_quad,
+-        'smoothed_gauss': smoothed_gauss
+-    }
+-
+-
+-if __name__ == "__main__":
+-    input_dir = "/workspace/ZKX/Task2/task2_python/step2"
+-    output_dir = "/workspace/ZKX/Task2/task2_python/step3"
+-    step3_bspline_smoothing(input_dir, output_dir)
+\ No newline at end of file
+diff --git a/Task2/task2_python/step4_feature_extraction.py b/Task2/task2_python/step4_feature_extraction.py
+deleted file mode 100644
+index 55c3972..0000000
+--- a/Task2/task2_python/step4_feature_extraction.py
++++ /dev/null
+@@ -1,351 +0,0 @@
+-import os
+-os.environ['CUPY_NVCC_COMPILER_FLAGS'] = '-std=c++17 -DCCCL_IGNORE_DEPRECATED_CPP_DIALECT'
+-
+-import cupy as cp
+-import numpy as np
+-import cusignal
+-
+-
+-def compute_rms(arr):
+-    return cp.sqrt(cp.mean(arr ** 2))
+-
+-
+-def compute_peak(arr):
+-    return cp.max(cp.abs(arr))
+-
+-
+-def compute_min(arr):
+-    return cp.min(arr)
+-
+-
+-def compute_max(arr):
+-    return cp.max(arr)
+-
+-
+-def read_signal_file(filename):
+-    data = []
+-    with open(filename, 'r') as f:
+-        for line in f:
+-            line = line.strip()
+-            if line.startswith('#') or not line:
+-                continue
+-            values = line.split()
+-            data.extend([float(v) for v in values])
+-    return cp.array(data)
+-
+-
+-def write_signal_file(filename, data, description):
+-    data_host = cp.asnumpy(data)
+-    with open(filename, 'w') as f:
+-        f.write(f"# {description}\n")
+-        f.write(f"# N={len(data)} double\n")
+-        for i in range(0, len(data_host), 4):
+-            line = ' '.join([f"{v:.15e}" for v in data_host[i:i+4]])
+-            f.write(line + '\n')
+-
+-
+-def write_2d_signal_file(filename, data, description):
+-    data_host = cp.asnumpy(data)
+-    with open(filename, 'w') as f:
+-        f.write(f"# {description}\n")
+-        f.write(f"# Rows={data.shape[0]}, Cols={data.shape[1]}\n")
+-        for i in range(data_host.shape[0]):
+-            row_values = data_host[i, :]
+-            line = ' '.join([f"{v:.15e}" for v in row_values])
+-            f.write(line + '\n')
+-
+-
+-def step4_fm_demodulation(smoothed_signal, output_dir):
+-    print("\n" + "=" * 50)
+-    print("STEP 4: FM DEMODULATION")
+-    print("=" * 50)
+-
+-    print(f"\n[INPUT] Smoothed signal length: {len(smoothed_signal)}")
+-
+-    complex_signal = smoothed_signal.astype(cp.complex128)
+-    if cp.isrealobj(complex_signal):
+-        complex_signal = complex_signal + 1j * cp.zeros(len(complex_signal))
+-
+-    print(f"\n[CONVERSION] Converted real signal to complex (imag=0)")
+-
+-    demod_output = cusignal.fm_demod(complex_signal)
+-
+-    print(f"\n[STEP 1] FM Demodulation (fm_demod)")
+-    print(f"  Demodulated signal length: {len(demod_output)}")
+-
+-    if len(demod_output) > 0:
+-        rms_val = float(compute_rms(demod_output))
+-        max_val = float(compute_max(demod_output))
+-        min_val = float(compute_min(demod_output))
+-    else:
+-        rms_val = 0.0
+-        max_val = 0.0
+-        min_val = 0.0
+-
+-    print(f"\n[OUTPUT] Writing FM demodulated signal to file...")
+-    print(f"  Saved to: fm_demod_output.txt")
+-
+-    print(f"\n[VERIFICATION] Demodulated Signal Statistics")
+-    print(f"  RMS: {rms_val:.6f}")
+-    print(f"  Max: {max_val:.6f}")
+-    print(f"  Min: {min_val:.6f}")
+-    print(f"  Range: {max_val - min_val:.6f}")
+-
+-    write_signal_file(f"{output_dir}/fm_demod_output.txt", demod_output,
+-                      "FM Demodulated Signal (Phase Difference Method)")
+-
+-    print("\n" + "-" * 50)
+-
+-    return demod_output
+-
+-
+-def step4_correlation(smoothed_signal, target_chirp, output_dir):
+-    print("\n" + "=" * 50)
+-    print("STEP 4: CORRELATION ANALYSIS")
+-    print("=" * 50)
+-
+-    print(f"\n[INPUT] Reading signals...")
+-    print(f"  Smoothed signal length: {len(smoothed_signal)}")
+-    print(f"  Target chirp length: {len(target_chirp)}")
+-
+-    print(f"\n[PARAMETERS]")
+-    print(f"  Correlation mode: full")
+-    print(f"  Expected output length: {len(smoothed_signal) + len(target_chirp) - 1}")
+-
+-    corr_output = cusignal.correlate(smoothed_signal, target_chirp, mode='full', method='direct')
+-
+-    print(f"\n[STEP 1] Correlation (correlate)")
+-    print(f"  Correlation completed")
+-    print(f"  Output length: {len(corr_output)}")
+-
+-    if len(corr_output) > 0:
+-        max_val = float(compute_max(corr_output))
+-        min_val = float(compute_min(corr_output))
+-        mean_val = float(cp.mean(corr_output))
+-        rms_val = float(compute_rms(corr_output - mean_val))
+-        max_idx = int(cp.argmax(corr_output))
+-    else:
+-        max_val = 0.0
+-        min_val = 0.0
+-        mean_val = 0.0
+-        rms_val = 0.0
+-        max_idx = 0
+-
+-    smoothed_rms = float(compute_rms(smoothed_signal))
+-    target_rms = float(compute_rms(target_chirp))
+-    normalized_corr = max_val / (smoothed_rms * target_rms) if (smoothed_rms * target_rms) > 0 else 0
+-
+-    print(f"\n[OUTPUT] Writing correlation result to file...")
+-    print(f"  Saved to: correlation_output.txt")
+-
+-    print(f"\n[VERIFICATION] Correlation Statistics")
+-    print(f"  Output length: {len(corr_output)}")
+-    print(f"  Max value: {max_val:.6f}")
+-    print(f"  Max index: {max_idx}")
+-    print(f"  Min value: {min_val:.6f}")
+-    print(f"  Mean: {mean_val:.6f}")
+-    print(f"  RMS (centered): {rms_val:.6f}")
+-
+-    print(f"\n[COMPARISON] Input Signal Statistics")
+-    print(f"  Smoothed signal - RMS: {smoothed_rms:.6f}, Peak: {float(compute_peak(smoothed_signal)):.6f}")
+-    print(f"  Target chirp    - RMS: {target_rms:.6f}, Peak: {float(compute_peak(target_chirp)):.6f}")
+-    print(f"  Correlation peak / (smoothed_rms * target_rms): {normalized_corr:.6f}")
+-
+-    print(f"\n[MODE ANALYSIS] Full correlation result structure:")
+-    print(f"  Zero-lag index: {len(target_chirp) - 1}")
+-    print(f"  Peak lag: {max_idx - (len(target_chirp) - 1)}")
+-
+-    write_signal_file(f"{output_dir}/correlation_output.txt", corr_output,
+-                      f"Cross-Correlation (full mode, len={len(corr_output)})")
+-
+-    print("\n" + "-" * 50)
+-
+-    return corr_output
+-
+-
+-def step4_spectral_analysis(smoothed_signal, output_dir):
+-    print("\n" + "=" * 50)
+-    print("STEP 4: SPECTRAL ANALYSIS (Lomb-Scargle)")
+-    print("=" * 50)
+-
+-    n = len(smoothed_signal)
+-    fs = 1.0
+-
+-    t = cp.linspace(0, n / fs, n)
+-
+-    print(f"\n[INPUT] Smoothed signal length: {n}")
+-
+-    nfreqs = 512
+-    freqs = cp.linspace(0.01, 0.5, nfreqs)
+-
+-    print(f"\n[PARAMETERS]")
+-    print(f"  Number of frequency points: {nfreqs}")
+-    print(f"  Frequency range: [0.01, 0.5] Hz")
+-    print(f"  Pre-center: True")
+-    print(f"  Normalize: True")
+-
+-    psd = cusignal.lombscargle(t, smoothed_signal, freqs, precenter=True, normalize=True)
+-
+-    print(f"\n[STEP 1] Lomb-Scargle Periodogram")
+-    print(f"  Computed PSD for {nfreqs} frequencies")
+-
+-    psd_max = float(compute_max(psd))
+-    psd_min = float(compute_min(psd))
+-    psd_mean = float(cp.mean(psd))
+-
+-    max_idx = int(cp.argmax(psd))
+-    max_freq = float(freqs[max_idx])
+-
+-    print(f"\n[OUTPUT] Writing PSD to file...")
+-    print(f"  Saved to: lombscargle_psd.txt")
+-
+-    print(f"\n[VERIFICATION] PSD Statistics")
+-    print(f"  Max PSD: {psd_max:.6f}")
+-    print(f"  Min PSD: {psd_min:.6f}")
+-    print(f"  Mean PSD: {psd_mean:.6f}")
+-    print(f"  Peak frequency index: {max_idx}")
+-    print(f"  Peak frequency: {max_freq:.6f} Hz")
+-
+-    psd_output = cp.zeros((2, nfreqs))
+-    psd_output[0, :] = freqs
+-    psd_output[1, :] = psd
+-
+-    write_2d_signal_file(f"{output_dir}/lombscargle_psd.txt", psd_output,
+-                          f"Lomb-Scargle PSD ({nfreqs} freq points, normalized)")
+-    write_signal_file(f"{output_dir}/frequencies.txt", freqs,
+-                      f"Frequency points ({nfreqs} points, range [0.01, 0.5] Hz)")
+-
+-    print("\n" + "-" * 50)
+-
+-    return psd, freqs
+-
+-
+-def step4_wavelet_transform(smoothed_signal, output_dir):
+-    print("\n" + "=" * 50)
+-    print("STEP 4: WAVELET TRANSFORM (CWT)")
+-    print("=" * 50)
+-
+-    n = len(smoothed_signal)
+-
+-    print(f"\n[INPUT] Smoothed signal length: {n}")
+-
+-    widths = cp.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50], dtype=cp.float64)
+-
+-    print(f"\n[PARAMETERS]")
+-    print(f"  Number of scales: {len(widths)}")
+-    print(f"  Scales: {cp.asnumpy(widths).tolist()}")
+-    print(f"  Wavelet types: morlet, ricker")
+-
+-    cwt_morlet = cusignal.cwt(cp.asnumpy(smoothed_signal), cusignal.morlet2, cp.asnumpy(widths))
+-    cwt_morlet = cp.array(cwt_morlet, dtype=cp.complex128)
+-
+-    print(f"\n[STEP 1] CWT with Morlet Wavelet")
+-    print(f"  Output shape: {cwt_morlet.shape}")
+-    print(f"  Output dimensions: {cwt_morlet.shape[0]} x {cwt_morlet.shape[1]} = {cwt_morlet.shape[0] * cwt_morlet.shape[1]} coefficients")
+-
+-    cwt_ricker = cusignal.cwt(cp.asnumpy(smoothed_signal), cusignal.ricker, cp.asnumpy(widths))
+-    cwt_ricker = cp.array(cwt_ricker, dtype=cp.complex128)
+-
+-    print(f"\n[STEP 2] CWT with Ricker Wavelet")
+-    print(f"  Output shape: {cwt_ricker.shape}")
+-    print(f"  Output dimensions: {cwt_ricker.shape[0]} x {cwt_ricker.shape[1]} = {cwt_ricker.shape[0] * cwt_ricker.shape[1]} coefficients")
+-
+-    if len(cwt_morlet) > 0:
+-        morlet_max = float(cp.max(cp.abs(cwt_morlet)))
+-        morlet_mean = float(cp.mean(cp.abs(cwt_morlet)))
+-    else:
+-        morlet_max = 0.0
+-        morlet_mean = 0.0
+-
+-    if len(cwt_ricker) > 0:
+-        ricker_max = float(cp.max(cp.abs(cwt_ricker)))
+-        ricker_mean = float(cp.mean(cp.abs(cwt_ricker)))
+-    else:
+-        ricker_max = 0.0
+-        ricker_mean = 0.0
+-
+-    print(f"\n[OUTPUT] Writing CWT results to files...")
+-
+-    write_2d_signal_file(f"{output_dir}/cwt_morlet_output.txt", cwt_morlet.real,
+-                          f"CWT Morlet Output (shape={cwt_morlet.shape})")
+-    write_2d_signal_file(f"{output_dir}/cwt_morlet_magnitude.txt", cp.abs(cwt_morlet),
+-                          f"CWT Morlet Magnitude (shape={cwt_morlet.shape})")
+-
+-    write_2d_signal_file(f"{output_dir}/cwt_ricker_output.txt", cwt_ricker.real,
+-                          f"CWT Ricker Output (shape={cwt_ricker.shape})")
+-    write_2d_signal_file(f"{output_dir}/cwt_ricker_magnitude.txt", cp.abs(cwt_ricker),
+-                          f"CWT Ricker Magnitude (shape={cwt_ricker.shape})")
+-
+-    wavelet_morlet = cusignal.morlet(64, w=5.0, s=1.0, complete=True)
+-    wavelet_ricker = cusignal.ricker(64, a=4.0)
+-
+-    write_signal_file(f"{output_dir}/morlet_wavelet.txt", cp.array(wavelet_morlet),
+-                      "Morlet Wavelet (M=64, w=5.0, s=1.0)")
+-    write_signal_file(f"{output_dir}/ricker_wavelet.txt", cp.array(wavelet_ricker),
+-                      "Ricker Wavelet (M=64, a=4.0)")
+-
+-    print(f"  Saved to: cwt_morlet_output.txt")
+-    print(f"  Saved to: cwt_morlet_magnitude.txt")
+-    print(f"  Saved to: cwt_ricker_output.txt")
+-    print(f"  Saved to: cwt_ricker_magnitude.txt")
+-    print(f"  Saved to: morlet_wavelet.txt")
+-    print(f"  Saved to: ricker_wavelet.txt")
+-
+-    print(f"\n[VERIFICATION] CWT Statistics")
+-    print(f"  Morlet wavelet:")
+-    print(f"    Max magnitude: {morlet_max:.6f}")
+-    print(f"    Mean magnitude: {morlet_mean:.6f}")
+-    print(f"  Ricker wavelet:")
+-    print(f"    Max magnitude: {ricker_max:.6f}")
+-    print(f"    Mean magnitude: {ricker_mean:.6f}")
+-
+-    print("\n" + "-" * 50)
+-
+-    return cwt_morlet, cwt_ricker
+-
+-
+-def step4_feature_extraction(step1_dir, step3_dir, output_base_dir):
+-    print("\n" + "=" * 70)
+-    print("STEP 4: MULTI-DOMAIN FEATURE EXTRACTION (Python/cusignal)")
+-    print("=" * 70)
+-
+-    smoothed_signal = read_signal_file(f"{step3_dir}/smoothed_signal.txt")
+-    target_chirp = read_signal_file(f"{step1_dir}/target_chirp.txt")
+-
+-    print(f"\n[INPUT DATA]")
+-    print(f"  Smoothed signal: {len(smoothed_signal)} samples")
+-    print(f"  Target chirp: {len(target_chirp)} samples")
+-
+-    fm_output_dir = f"{output_base_dir}/FM_Demodulation"
+-    corr_output_dir = f"{output_base_dir}/Correlation"
+-    spectral_output_dir = f"{output_base_dir}/spectral"
+-    wavelet_output_dir = f"{output_base_dir}/Wavelet_Transform"
+-
+-    fm_demod_output = step4_fm_demodulation(smoothed_signal, fm_output_dir)
+-
+-    corr_output = step4_correlation(smoothed_signal, target_chirp, corr_output_dir)
+-
+-    psd, freqs = step4_spectral_analysis(smoothed_signal, spectral_output_dir)
+-
+-    cwt_morlet, cwt_ricker = step4_wavelet_transform(smoothed_signal, wavelet_output_dir)
+-
+-    print("\n" + "=" * 70)
+-    print("STEP 4 COMPLETED - ALL FEATURE EXTRACTION MODULES FINISHED")
+-    print("=" * 70)
+-
+-    return {
+-        'fm_demod_output': fm_demod_output,
+-        'correlation_output': corr_output,
+-        'psd': psd,
+-        'freqs': freqs,
+-        'cwt_morlet': cwt_morlet,
+-        'cwt_ricker': cwt_ricker
+-    }
+-
+-
+-if __name__ == "__main__":
+-    step1_dir = "/workspace/ZKX/Task2/task2_python/step1"
+-    step3_dir = "/workspace/ZKX/Task2/task2_python/step3"
+-    output_base_dir = "/workspace/ZKX/Task2/task2_python/step4"
+-
+-    step4_feature_extraction(step1_dir, step3_dir, output_base_dir)
+\ No newline at end of file
+diff --git a/semi_final_tasks/LATEST_SOURCE_PLATFORMIZATION_REQUIREMENTS.md b/semi_final_tasks/LATEST_SOURCE_PLATFORMIZATION_REQUIREMENTS.md
+index 06b9bd4..e0f7390 100644
+--- a/semi_final_tasks/LATEST_SOURCE_PLATFORMIZATION_REQUIREMENTS.md
++++ b/semi_final_tasks/LATEST_SOURCE_PLATFORMIZATION_REQUIREMENTS.md
+@@ -1,5 +1,3 @@
+-以下是合并后的全部要求。
+-
+ # 一、最终项目目标
+ 
+ ## 1.1 交付对象
+diff --git "a/semi_final_tasks/\347\256\227\345\255\220\350\246\201\346\261\202.md" "b/semi_final_tasks/\347\256\227\345\255\220\350\246\201\346\261\202.md"
+index 2c36ccc..a5ff65d 100644
+--- "a/semi_final_tasks/\347\256\227\345\255\220\350\246\201\346\261\202.md"
++++ "b/semi_final_tasks/\347\256\227\345\255\220\350\246\201\346\261\202.md"
+@@ -197,8 +197,8 @@
+ 6. 每种类型在 ZQ500 产生真实输出。
+ 7. 每种类型与 CPU reference 对比。
+ 8. 每种类型有性能结果。
+-9. 输出 dtype、shape 和语义按 `cusignal-23.08.00/` 确定。
+-10. 不擅自要求输入输出同型。
++9. 五类型实现必须与 `cusignal-23.08.00/` 的对应算子保持一致：公开 API 分别接受真实 FP32、FP16、INT32、INT16、INT8 业务输入；每种输入对应的输出 dtype、复数类型、索引类型、shape、返回值数量和数学语义，均按 cuSignal 对应算子的可观察行为确定。输出不要求与输入同型，也不能脱离 cuSignal 依据而统一固定成某一种类型。
++10. 中间计算 dtype 不作要求；允许在正式算子内部按 cuSignal 语义和 ZQ500 能力提升或转换计算类型。验收关注正式公开接口的真实五类型输入、cuSignal 对应输出以及 CPU reference/GPU 结果一致性，然后据此完成源码封装和头文件声明。
+ 
+ ### 5.2 内部转换
+ 
+@@ -255,6 +255,13 @@
+ 7. ZQ500 device 不支持的 double 路径必须修改。
+ 8. CPU reference 为提高独立对照精度可以使用 double，但必须标明只用于 CPU reference。
+ 9. CPU reference 中的 double 不能混入 GPU FP64 输入要求。
++10. 当前在 ZQ500 实测完成前采用以下最可能假设：FP64、ComplexFP64 可以作为 cuSignal 对应的正式输出 dtype 和设备输出缓冲区存储类型，但不得作为第六种业务输入，也不得在 device 代码或设备科学库中参与计算。
++11. cuSignal 对应输出为 FP64 或 ComplexFP64 时，GPU 主计算使用 FP32、ComplexFP32、FP16 或整数完成；不得在 kernel/device function 中通过 `double` 运算或 FP32-to-FP64 device 转换生成结果。
++12. 暂定 FP64 输出收尾路径为：GPU 生成非 FP64 计算结果，D2H 后由 host 转换为 FP64/ComplexFP64；若正式接口要求 device 输出，再将 host 转换后的 64 位结果按数据复制回 device 输出缓冲区。主算法仍必须由正式 GPU 路径完成。
++13. FP64 输出封装必须逐函数写清输出位于 host 还是 device、D2H/H2D、同步点、临时缓冲、输出可读时机和性能计时范围，不得隐藏转换成本。
++14. ZQ500 实测至少分别验证 FP64 device buffer 的分配、H2D、D2H、字节保持、正式接口返回和释放；这些存储/传输测试不能替代设备端 FP64 计算禁用检查。
++15. 如果实测证明设备能够直接生成 FP64 输出且不违反“不支持设备端 FP64”的官方限制，需取得依据后再启用 native device output；不得仅凭编译通过擅自使用 device `double` 计算。
++16. 如果实测证明 device FP64 输出缓冲区或传输也不可用，则将相应算子改为明确的 host FP64 输出接口，或依据官方批准记录输出 dtype 偏离；不得静默降为 FP32。
+ 
+ ## 七、CPU reference
+ 

@@ -1,0 +1,22 @@
+{
+  "fft_length": 1024,
+  "batch": 1,
+  "dtype": "complex64",
+  "warmup_rounds": 100,
+  "formal_iterations": 2000,
+  "independent_runs": 3,
+  "lifecycle_classification": "dlfft_reproducible_cpu_leak",
+  "lifecycle_conclusion": "当前 SDK 的 dlfft 完整调用生命周期存在可重复的同进程 CPU 内存泄漏；fft_thrust 在该测试条件下未观察到同类增长。",
+  "resident_classification": "dlfft_reproducible_cpu_leak",
+  "resident_conclusion": "当前 SDK 的 dlfft 在常驻执行场景存在可重复的同进程 CPU 内存泄漏；fft_thrust 在该测试条件下未观察到同类增长。",
+  "correctness": {
+    "fft_length": 1024,
+    "batch": 1,
+    "dtype": "complex64",
+    "tolerance": 0.00335775008493986,
+    "fft_thrust_max_abs_error_vs_reference": 0.0005035468193951875,
+    "dlfft_max_abs_error_vs_reference": 0.0005032258735561151,
+    "backend_max_abs_difference": 0.00010004498987932,
+    "status": "passed"
+  }
+}

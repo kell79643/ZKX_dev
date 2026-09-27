@@ -1,0 +1,142 @@
+ZKX ZQ500 服务器操作代码规范
+============================
+
+适用范围
+--------
+
+本文档是完整工作区中面向人工操作与 AI 自动化的服务器操作基准，只规定 ZKX 源码从
+Windows 本地同步到远程宿主机、复制进 `gpu_02`、初始化环境以及在容器内构建和运行时
+必须遵守的命令形态与安全边界。
+
+Task1/Task2 的演示顺序、业务指标、绘图、答辩讲解、性能结论和具体实验参数不属于服务器
+操作规范，统一以仓库内对应 README、任务文档、脚本和证据文档为准。完整技术说明及故障
+恢复流程见 `ZKX/docs/development/ZQ500_RUNTIME.md`。
+
+
+一、固定环境与基本原则
+----------------------
+
+- 本地工作区：`ZKX_dev/`；活跃 Git 仓库通常是其中的 `ZKX/`。
+- 远程主机：`usr_02@10.110.12.10`。
+- 远程宿主机项目目录：`/home/usr_02/ZKX_dev`。
+- ZQ500 SDK 与硬件运行环境：Docker 容器 `gpu_02`。
+- 容器内项目目录：`/tmp/ZKX_dev`。
+- Windows 本地负责阅读、编辑和 Git 管理。ZQ500 Python、CUDA、CMake、编译产物及
+  硬件测试只能在 `gpu_02` 内执行，不能在本地或远程宿主机直接执行。唯一例外是
+  `Task1/visualization/main.py --plot-only` 和
+  `Task2/visualization/main.py --plot-only`：它们只读取已经从正式 pipeline 回收的 CSV，
+  可在 Windows 本地执行评价与绘图，不得在该模式下生成任务数据或调用任务核心算法。
+- 容器内使用 `dlsmi` 检查 GPU；不要使用 `nvidia-smi` 代替。
+- 平台每天 `01:00-08:00` 可能维护，不安排长时间实验。
+- 不记录、索取、代输或写入 VPN、SSH、sudo 等密码和凭据。
+
+
+二、标准五阶段工作流
+--------------------
+
+以下阶段必须按顺序执行：本地核对 → 同步宿主机 → 精确复制 → 交互进入容器 → 容器内执行。
+任一阶段失败，立即停止，不得使用后续阶段的旧文件或部分同步结果。
+
+1. 本地核对
+
+在 Windows PowerShell 的 `ZKX_dev/` 中执行：
+
+    Set-Location .\ZKX
+    git rev-parse HEAD
+    git status --short
+
+记录完整提交 SHA 和真实 dirty 状态。不得为了得到 clean 状态覆盖共享工作区中的改动。
+
+2. 同步到远程宿主机
+
+仍在 `ZKX/` 中执行：
+
+    .\remote_scripts\remote-run.ps1 "pwd"
+
+只有命令返回 0，且输出同时包含 `/home/usr_02/ZKX_dev` 和 `Sync done`，才视为同步成功。
+若出现 rsync code 23、`Permission denied`、`chgrp failed` 或
+`cannot delete non-empty directory`，立即停止；按
+`ZKX/docs/development/ZQ500_RUNTIME.md` 的 owner 恢复流程只读核对，不继续 `docker cp`。
+
+3. 精确复制到容器
+
+同步成功后执行：
+
+    .\remote_scripts\remote-run.ps1 --no-sync "sudo docker cp /home/usr_02/ZKX_dev/. gpu_02:/tmp/ZKX_dev"
+
+必须保留源路径末尾的 `/.`。不得在同步未成功时复制，也不得把容器内容直接覆盖回宿主机
+源码树。
+
+4. 交互进入容器
+
+人工终端执行唯一允许的交互入口：
+
+    .\remote_scripts\remote-run.ps1 --no-sync "sudo docker exec -it gpu_02 bash"
+
+禁止改写为 `sudo docker exec gpu_02 <命令>`、`sudo docker ps`、`sudo -n`、`bash -c`、
+`bash -lc` 或其他 sudo/Docker 包装。出现 sudo 密码提示说明命令形态错误，应立即终止，
+不得等待、索取或输入密码。
+
+5. 在容器内初始化并执行
+
+进入 `gpu_02` 后逐条执行：
+
+    source /zq500/sdk/env.sh
+    cd /tmp/ZKX_dev
+    pwd
+    dlsmi
+    cmake --version
+
+成功标志是当前目录为 `/tmp/ZKX_dev`、`dlsmi` 显示 ZQ500 GPU，且 CMake 来自初始化
+SDK 后的容器环境。2026-07-12 实测版本为 3.22.1；项目仍保持最低 CMake 3.16 兼容，
+不得把宿主机历史版本写成当前容器版本。
+
+
+三、AI 持久交互方式
+------------------
+
+AI 或自动化无法持续占用人工终端时，必须使用仓库已有的持久交互辅助脚本。该脚本内部仍
+只启动上一节规定的精确交互入口：
+
+    .\remote_scripts\remote-run.ps1 --no-sync "python3 remote_scripts/gpu02_interactive.py start --timeout 30"
+    .\remote_scripts\remote-run.ps1 --no-sync "python3 remote_scripts/gpu02_interactive.py send 'source /zq500/sdk/env.sh' --timeout 30"
+    .\remote_scripts\remote-run.ps1 --no-sync "python3 remote_scripts/gpu02_interactive.py send 'cd /tmp/ZKX_dev && pwd && dlsmi && cmake --version' --timeout 60"
+
+后续 `source`、`cd`、CMake、程序运行和 SDK 检查均通过同一会话的 `send` 逐条发送。每条
+必须等待 `[gpu02-interactive] status=prompt`，并另外核对命令自身的退出码和成功标志。
+出现 `sudo_password_required`、`timeout`、`session_closed`、非零退出或预期成功标志缺失
+时立即停止。
+
+
+四、构建、运行与检查规则
+------------------------
+
+- 先从仓库 `README.md`、任务 README、`remote_scripts/`、`run*.sh`、`test*.sh`、
+  `CMakeLists.txt` 和 Python `__main__` 入口确认命令，优先使用已有脚本。
+- 修改 ZQ500 CMake 前，先在已初始化 SDK 的容器中查看 `/zq500/sdk/samples/` 平台样例。
+- CMake 配置、编译、Python 入口、CUDA 程序和硬件测试只能在当前 `gpu_02` 交互会话执行。
+- FFT 后端等构建选项必须按任务文档显式给出，不自行假设默认值。
+- 使用 Python 入口前，先确认容器内实际 Python 命令和项目依赖；未经明确批准不安装包。
+- 优先构建受影响目标并运行 smoke test，再按任务要求运行完整测试或长时间实验。
+- `status=prompt` 仅表示 shell 返回提示符，不能代替 `Built target`、退出码或测试汇总。
+- 容器工作完成后执行 `exit`；AI 会话则按辅助脚本文档关闭或复用会话。
+
+
+五、同步与安全边界
+------------------
+
+- 标准同步必须使用过滤后的 SHA-256 清单与远程持久 staging 比较，只上传新增或修改文件的
+  `tar.gz` 及删除清单；不得因执行 `pwd` 或单文件改动而重复上传完整源码树。首次没有
+  staging 时允许一次全量初始化；已有旧版 staging 但没有清单时，应先在远程生成基线清单。
+- 增量包应用成功后仍须由 `usr_02` 从 staging 镜像到正式源码目录，并继续以远程路径和
+  `Sync done` 为成功门禁。删除只允许来自 manifest 明确差集；禁止用宽泛
+  `rsync --delete` 删除从未进入本地同步清单的远程独有文件。增量传输不得绕过 owner、
+  排除项或明确删除同步。
+- 不同步 `.git/`、`.venv/`、`__pycache__/`、`build/`、`dist/`、`*.egg-info/` 及大型生成
+  产物；未经明确要求不修改或同步 `data/`、`results/`。
+- `cupy-13.6.0` 位于外层共享工作区，不在 `ZKX/` 同步源内；同步脚本必须排除并保留它。
+- 远程宿主机只用于 SSH、同步与文件管理；不在宿主机直接构建或运行项目。
+- 不尝试任意 `sudo chown`，不删除 owner 故障恢复产生的旧备份，除非用户明确批准。
+- 不杀掉无关远程进程，不访问其他队伍目录，不向仓库写入个人电脑绝对路径或凭据。
+- 需要故障恢复、官方 SDK 样例、CMake 约束或 owner 处理细节时，严格查阅
+  `ZKX/docs/development/ZQ500_RUNTIME.md`，不得自行发明 sudo、Docker 或 shell 包装方式。

@@ -1,0 +1,123 @@
+{
+  "task": "Task2",
+  "implementation": "cusignal_python_23.08.00",
+  "evidence_id": "step1",
+  "requested_steps": 1,
+  "completed_steps": 1,
+  "status": "pass",
+  "git_commit": "fdf558f9a344a29d53e4f77b07ef59a9a918f8d3",
+  "git_dirty": "true",
+  "test_time": "2026-07-16T10:46:25+00:00",
+  "runtime": {
+    "python": "3.12.11",
+    "numpy": "2.4.6",
+    "cupy": "13.6.0",
+    "cusignal": "23.08.00",
+    "cusignal_source": "/tmp/ZKX_dev/cusignal-23.08.00/python",
+    "cusignal_module_file": "/tmp/ZKX_dev/cusignal-23.08.00/python/cusignal/__init__.py",
+    "device_name": "ZQ500-Q QUAD-2",
+    "device_id": 0,
+    "device_count": 1,
+    "cuda_runtime_version": 11070,
+    "cuda_driver_version": 11070,
+    "zq500_cusignal_adapter": {
+      "installed": true,
+      "waveform_kernels": true,
+      "direct_convolution": true,
+      "peak_helper": true,
+      "scalar_kalman": true,
+      "vendored_source_modified": false
+    },
+    "evidence_git_commit": "fdf558f9a344a29d53e4f77b07ef59a9a918f8d3",
+    "evidence_git_dirty": "true",
+    "evidence_test_time": "2026-07-16T10:46:25+00:00"
+  },
+  "input_contract": {
+    "dtype": "FP32",
+    "shape": [
+      512
+    ],
+    "sample_rate_hz": 512.0,
+    "target_delay_samples": 96,
+    "noise_seed": 20260714,
+    "step3_output_samples": 480,
+    "feature_fusion_weights": {
+      "fm": 0.1,
+      "correlation": 0.7,
+      "spectral": 0.1,
+      "wavelet": 0.1
+    },
+    "argrelextrema": {
+      "axis": 0,
+      "order": 3,
+      "mode": "clip"
+    }
+  },
+  "timing_policy": {
+    "gpu_clock": "cupy.cuda.Event",
+    "step_clock": "time.perf_counter",
+    "h2d_scope": "cp.asarray followed by current-stream synchronization",
+    "pipeline_handoff": "Host PipelineState with explicit H2D/D2H, matching task2_gpu_cpu",
+    "d2h_scope": "formal step output copied for downstream step and evidence",
+    "postprocess_scope": "mandatory Host handoff where applicable plus semantic/task-effect checks; no CPU precision reference",
+    "formal_execution_scope": "prepare + H2D + GPU operators + required D2H and mandatory handoff; excludes semantic checks"
+  },
+  "precision_policy": {
+    "cpu_validation": false,
+    "cpu_comparison": false,
+    "reason": "Task2 Python is the cuSignal performance baseline; CPU precision evidence belongs to task2_gpu_cpu only"
+  },
+  "formal_apis": [
+    "cusignal.chirp/gausspulse/sawtooth/square",
+    "cusignal.hamming/firwin/firfilter",
+    "cusignal.cubic/firfilter",
+    "cusignal.fm_demod/correlate/spectrogram/cwt/ricker",
+    "cusignal.argrelextrema",
+    "cusignal.KalmanFilter.predict/update"
+  ],
+  "pipeline_total_ms": 18903.534105047584,
+  "sum_step_total_ms": 18903.488975018263,
+  "steps": [
+    {
+      "name": "step1",
+      "status": "pass",
+      "timing_ms": {
+        "prepare": 0.092310830950737,
+        "h2d": 179.45457436144352,
+        "compute": 18717.749755859375,
+        "d2h": 0.5600182339549065,
+        "postprocess": 4.446924664080143,
+        "formal_execution": 18899.0406896919,
+        "total": 18903.488975018263
+      },
+      "operators_ms": {
+        "cusignal.chirp": 721.8123779296875,
+        "cusignal.gausspulse": 872.2281494140625,
+        "cusignal.sawtooth": 1552.6485595703125,
+        "cusignal.square": 928.4649658203125,
+        "cupy.echo_superposition": 14642.595703125
+      },
+      "metrics": {
+        "waveform_functions_selected": 4.0,
+        "target_component": 1.0,
+        "interference_component": 1.0,
+        "noise_component": 1.0,
+        "custom_waveform_superposition": 1.0,
+        "sample_rate_hz": 512.0,
+        "samples": 512.0,
+        "target_delay_samples": 96.0,
+        "noise_seed": 20260714.0,
+        "echo_rms": 0.5158220094150758,
+        "weight_perturbation_delta": 0.06999999284744263,
+        "seed_perturbation_delta": 0.07720698416233063,
+        "perturbation_checks_pass": 1.0
+      },
+      "output": {
+        "shape": [
+          512
+        ],
+        "dtype": "float32"
+      }
+    }
+  ]
+}

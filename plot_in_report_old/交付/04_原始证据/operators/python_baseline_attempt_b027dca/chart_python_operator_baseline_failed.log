@@ -1,0 +1,122 @@
+[RUN] bsplines / cubic
+[RUN] bsplines / gauss_spline
+[RUN] bsplines / quadratic
+[RUN] convolution / correlate
+[FAIL] convolution / correlate: CUDA_ERROR_FILE_NOT_FOUND: file not found
+[RUN] convolution / correlate2d
+[FAIL] convolution / correlate2d: CUDA_ERROR_FILE_NOT_FOUND: file not found
+[RUN] demod / fm_demod
+[RUN] estimation / KalmanFilter
+[FAIL] estimation / KalmanFilter: python3: warning: argument unused during compilation: '-fmad=true' [-Wunused-command-line-argument] dlrtc_tmp1.cu:15:18: warning: argument to '#pragma unroll' should not be in parentheses in CUDA C/C+
+[RUN] filter_design / firwin
+[RUN] filter_design / firwin2
+[FAIL] filter_design / firwin2: CUFFT_NOT_SUPPORTED
+[RUN] filtering / channelize_poly
+[FAIL] filtering / channelize_poly: CUDA_ERROR_FILE_NOT_FOUND: file not found
+[RUN] filtering / detrend
+[444611][444611][E][HC_TOP] compile src:#include <cupy/complex.cuh>
+#include <cupy/carray.cuh>
+#include <cupy/atomics.cuh>
+#include <cupy/math_constants.h>
+
+    
+    
+    extern "C" __global__ void _detrend_A_kernel(CArray<double, 1, 1, 1> _raw_A, CIndexer<1, 1> _ind) {
+      const double den { 1.0 / _ind.size() };;
+      #pragma unroll 1
+      CUPY_FOR(i, _ind.size()) {
+        _ind.set(i);
+        double &A = _raw_A[_ind.get()];
+
+    if ( i & 1 ) {
+        const int new_i { i >> 1 };
+        A = new_i * den;
+    } else {
+        A = 1.0;
+    }
+    ;
+      }
+      ;
+    }
+     to bc failed.
+[FAIL] filtering / detrend: In file included from dlrtc_tmp1.cu:4: /tmp/task1_cupy_zq500_13_6_0_cuda_11_7/source/cupy/_core/include/cupy/math_constants.h:12:9: warning: 'CUDART_INF_F' macro redefined [-Wmacro-redefined] #define 
+[RUN] filtering / firfilter
+[RUN] filtering / firfilter2
+[FAIL] filtering / firfilter2: /tmp/task1_cupy_zq500_13_6_0_cuda_11_7/source/cupy_backends/cuda/libs/cusolver.cpython-312-x86_64-linux-gnu.so: undefined symbol: cusolverDnSXgels_bufferSize
+[RUN] filtering / freq_shift
+[444611][444611][E][HC_TOP] compile src:#include <cupy/complex.cuh>
+#include <cupy/carray.cuh>
+#include <cupy/atomics.cuh>
+#include <cupy/math_constants.h>
+
+    typedef thrust::complex<float> T;
+
+    
+    extern "C" __global__ void _freq_shift_kernel(const CArray<thrust::complex<float>, 1, 1, 1> _raw_x, const double freq, const double fs, CArray<thrust::complex<double>, 1, 1, 1> _raw_out, CIndexer<1, 1> _ind) {
+      const double neg2pi { -1 * 2 * M_PI };;
+      #pragma unroll 1
+      CUPY_FOR(i, _ind.size()) {
+        _ind.set(i);
+        const T &x = _raw_x[_ind.get()];
+thrust::complex<double> &out = _raw_out[_ind.get()];
+
+    thrust::complex<double> temp(0, neg2pi * freq / fs * i);
+    out = x * exp(temp);
+    ;
+      }
+      ;
+    }
+     to bc failed.
+[FAIL] filtering / freq_shift: In file included from dlrtc_tmp1.cu:4: /tmp/task1_cupy_zq500_13_6_0_cuda_11_7/source/cupy/_core/include/cupy/math_constants.h:12:9: warning: 'CUDART_INF_F' macro redefined [-Wmacro-redefined] #define 
+[RUN] filtering / hilbert
+[444611][444611][E][HC_TOP] compile src:#include <cupy/complex.cuh>
+#include <cupy/carray.cuh>
+#include <cupy/atomics.cuh>
+#include <cupy/math_constants.h>
+
+    typedef float T;
+
+    
+    extern "C" __global__ void _hilbert_kernel(CArray<float, 1, 1, 1> _raw_h, CIndexer<1, 1> _ind) {
+      const bool odd { _ind.size() & 1 };                const int bend = odd ?                    static_cast<int>( 0.5 * ( _ind.size()  + 1 ) ) :                    static_cast<int>( 0.5 * _ind.size() );;
+      #pragma unroll 1
+      CUPY_FOR(i, _ind.size()) {
+        _ind.set(i);
+        T &h = _raw_h[_ind.get()];
+
+    if ( !odd ) {
+        if ( ( i == 0 ) || ( i == bend ) ) {
+            h = 1.0;
+        } else if ( i > 0 && i < bend ) {
+            h = 2.0;
+        } else {
+            h = 0.0;
+        }
+    } else {
+        if ( i == 0 ) {
+            h = 1.0;
+        } else if ( i > 0 && i < bend) {
+            h = 2.0;
+        } else {
+            h = 0.0;
+        }
+    }
+    ;
+      }
+      ;
+    }
+     to bc failed.
+[FAIL] filtering / hilbert: In file included from dlrtc_tmp1.cu:4: /tmp/task1_cupy_zq500_13_6_0_cuda_11_7/source/cupy/_core/include/cupy/math_constants.h:12:9: warning: 'CUDART_INF_F' macro redefined [-Wmacro-redefined] #define 
+[RUN] filtering / hilbert2
+[FAIL] filtering / hilbert2: CUFFT_NOT_SUPPORTED
+[RUN] filtering / lfilter_zi
+[FAIL] filtering / lfilter_zi: /tmp/task1_cupy_zq500_13_6_0_cuda_11_7/source/cupy_backends/cuda/libs/cusolver.cpython-312-x86_64-linux-gnu.so: undefined symbol: cusolverDnSXgels_bufferSize
+[RUN] filtering / sosfilt
+[FAIL] filtering / sosfilt: CUDA_ERROR_FILE_NOT_FOUND: file not found
+[RUN] filtering / wiener
+[FAIL] filtering / wiener: Direct method is only implemented for 1D
+[RUN] filtering / decimate
+[FAIL] filtering / decimate: CUDA_ERROR_FILE_NOT_FOUND: file not found
+[RUN] filtering / resample
+[RUN] filtering / resample_poly
+LLVM ERROR: unsupported function call legalization:__nv_cyl_bessel_i0

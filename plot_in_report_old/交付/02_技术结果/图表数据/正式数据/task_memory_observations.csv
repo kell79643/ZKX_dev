@@ -1,0 +1,5 @@
+task,implementation,source,iterations,baseline_bytes,peak_bytes,growth_bytes,device_global_baseline_bytes,device_global_peak_bytes,device_global_growth_bytes,allocator_final_bytes,status,allocator_status,cpu_status,gpu_status,resource_status,scope
+Task1,cusignal_python_gpu,task1_python.log,20,0,596864,596864,357777408,357777408,0,0,pass,pass,not_measured,pass,pass,task-allocator-live-peak
+Task1,cpp_cuda,task1_cpp.log,20,338944,671236,332292,357777408,357777408,0,338944,pass,pass,fail,pass,fail,task-allocator-live-peak
+Task2,cusignal_python_gpu,task2_python.log,20,0,53248,53248,357777408,357777408,0,0,pass,pass,not_measured,pass,pass,task-allocator-live-peak
+Task2,cpp_cuda,task2_cpp.log,20,7168,83724,76556,357777408,357777408,0,7168,pass,pass,fail,pass,fail,task-allocator-live-peak

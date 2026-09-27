@@ -1,0 +1,32 @@
+Consolidate compiler generated dependencies of target f_result_collector
+[  0%] Building CXX object CMakeFiles/f_comparison_negative_tests.dir/accuracy/f_comparison_negative_tests.cpp.o
+[ 20%] Built target f_result_collector
+[ 20%] Building CXX object CMakeFiles/f_benchmark_contract_tests.dir/performance/f_benchmark_contract_tests.cpp.o
+[ 40%] Linking CXX executable f_comparison_negative_tests
+[ 60%] Linking CXX executable f_benchmark_contract_tests
+[ 60%] Built target f_comparison_negative_tests
+[ 80%] Building CXX object CMakeFiles/f_result_schema_tests.dir/f_result_schema_tests.cpp.o
+[ 80%] Built target f_benchmark_contract_tests
+[ 80%] Building CXX object CMakeFiles/f_case_manifest.dir/f_case_manifest.cpp.o
+[ 80%] Linking CXX executable f_result_schema_tests
+[100%] Building CXX object CMakeFiles/f_case_manifest.dir/tmp/ZKX_dev/cusignal_cpp/src/cuda_utils/operator_type_dispatch.cu.o
+[100%] Built target f_result_schema_tests
+[100%] Linking CXX executable f_case_manifest
+[100%] Built target f_case_manifest
+[F4][NEGATIVE] case=over-tolerance rejected=1 compared=3 mismatches=1 first_mismatch=1 finite=1 shape_match=1
+[F4][NEGATIVE] case=nan rejected=1 compared=2 mismatches=1 first_mismatch=1 finite=0 shape_match=1
+[F4][NEGATIVE] case=inf rejected=1 compared=2 mismatches=1 first_mismatch=1 finite=0 shape_match=1
+[F4][NEGATIVE] case=shape rejected=1 compared=2 mismatches=1 first_mismatch=2 finite=1 shape_match=0
+[F4][NEGATIVE] case=index rejected=1 compared=3 mismatches=1 first_mismatch=1 finite=1 shape_match=1
+[F4][NEGATIVE] case=mask rejected=1 compared=4 mismatches=1 first_mismatch=1 finite=1 shape_match=1
+[F4][NEGATIVE] case=complex-sign rejected=1 compared=4 mismatches=1 first_mismatch=1 finite=1 shape_match=1
+[F4][NEGATIVE] case=complex-layout rejected=1 compared=4 mismatches=4 first_mismatch=0 finite=1 shape_match=1
+[F4][SUMMARY] total=8 pass=8 fail=0
+[F5][BENCHMARK-CONTRACT][SUMMARY] total=6 pass=6 fail=0
+[F7][RESULT-SCHEMA][SUMMARY] total=6 pass=6 fail=0
+[F7][COLLECTOR-SELF-TEST] total=5 pass=5 fail=0
+[F2][MANIFEST][SUMMARY] operators=53 dtype_cases=265 missing=0 extra=0 duplicate=0 pass=1
+test_id,operator,input_dtype,status
+F.cubic.FP32,cubic,FP32,blocked-e8
+[F2][MANIFEST] selected=1
+[100%] Built target f_framework_gate

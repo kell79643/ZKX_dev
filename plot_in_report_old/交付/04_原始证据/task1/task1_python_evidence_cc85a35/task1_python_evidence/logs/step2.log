@@ -1,0 +1,5 @@
+[TASK1_PYTHON][step1][TIMING] prep_ms=0.002421 h2d_ms=0.000000 compute_ms=21721.043872 d2h_ms=5.344270 post_ms=0.181620 formal_execution_ms=21845.060388 total_ms=21845.265328
+[TASK1_PYTHON][step1][RESULT] metrics={"chirp_called": 1.0, "delay_ground_truth_recorded": 1.0, "delay_ground_truth_samples": 80.0, "doppler_ground_truth_hz": 1250.0, "doppler_ground_truth_recorded": 1.0, "echo_elements": 8192.0, "echo_peak_magnitude": 1.0483403205871582, "noise_added": 1.0, "target_echo_present": 1.0, "waveform_samples": 64.0}
+[TASK1_PYTHON][step2][TIMING] prep_ms=0.002510 h2d_ms=2.669268 compute_ms=12566.807617 d2h_ms=0.271911 post_ms=0.218111 formal_execution_ms=12570.189750 total_ms=12570.443551
+[TASK1_PYTHON][step2][RESULT] metrics={"complex64_output": 1.0, "half_peak_width_bins": 3.0, "output_elements": 8192.0, "peak_energy": 2039.3426513671875, "peak_range_bin": 80.0, "pulse_compression_called": 1.0, "step1_to_step2_data_match": 1.0}
+[TASK1_PYTHON][PIPELINE] completed_steps=2 pipeline_total_ms=34415.728319 status=pass

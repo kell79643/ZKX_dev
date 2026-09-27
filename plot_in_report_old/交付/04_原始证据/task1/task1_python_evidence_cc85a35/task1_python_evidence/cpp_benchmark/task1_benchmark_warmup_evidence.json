@@ -1,0 +1,62 @@
+{
+  "task": "Task1",
+  "implementation": "cusignal_cpp_zq500",
+  "evidence_id": "benchmark_warmup",
+  "completed_steps": 5,
+  "git_commit": "cc85a352c4eede97e54c54393bcdce6b9cda2545",
+  "git_dirty": "true",
+  "test_time": "2026-07-18T15:50:00+08:00",
+  "host": "usr_02@10.110.12.10",
+  "container": "gpu_02",
+  "sdk": "/zq500/sdk",
+  "dtype": "ComplexFP32",
+  "result_location": "build_task1/task1_evidence/benchmark_warmup/task1_benchmark_warmup_evidence.json",
+  "input_contract": {"dtype": "ComplexFP32", "shape": [32, 256], "sample_rate_hz": 2560000, "prf_hz": 8000, "pulse_samples": 64, "target_delay_samples": 80, "doppler_hz": 1250, "doppler_bin": 5, "bandwidth_hz": 640000, "carrier_frequency_hz": 10000000000, "target_amplitude": 1, "noise_std": 0.035, "noise_seed": 20260715},
+  "memory_contract": {"gpu_algorithm_storage": "DeviceArray", "pipeline_handoff_storage": "host PipelineState with explicit H2D/D2H", "layout": "row-major"},
+  "timing_policy": {"gpu_clock": "CudaEvent", "step_clock": "steady_clock", "plan_workspace": "included in formal operator compute_ms", "synchronization": "CudaEvent end synchronization and explicit transfers"},
+  "formal_apis": ["pulse_compression_device<float>", "pulse_doppler_device<float>", "cfar_alpha_device<float>", "ca_cfar_device<float>", "ambgfun_device<float>"],
+  "private_gpu_helpers": ["gpu_lfm_generation", "gpu_delay_doppler_noise", "range_doppler_power"],
+  "operator_counting": {"formal_business_operators": 5, "private_helpers_are_business_operators": false},
+  "accuracy_architecture": {"validation_files": 5, "comparison_files": 5, "transport": "in-memory typed validation data", "comparison_gpu_calls": 0},
+  "source_files": ["task1_common.h", "task1_common.cu", "task1_runner.h", "task1_runner.cu", "accuracy/accuracy_types.h", "accuracy/accuracy_utils.h", "accuracy/accuracy_utils.cpp", "accuracy/validation/step1_validation.cu", "accuracy/validation/step2_validation.cu", "accuracy/validation/step3_validation.cu", "accuracy/validation/step4_validation.cu", "accuracy/validation/step5_validation.cu", "accuracy/comparison/step1_comparison.cpp", "accuracy/comparison/step2_comparison.cpp", "accuracy/comparison/step3_comparison.cpp", "accuracy/comparison/step4_comparison.cpp", "accuracy/comparison/step5_comparison.cpp", "step1/step1.cu", "step2/step2.cu", "step3/step3.cu", "step4/step4.cu", "step5/step5.cu", "CMakeLists.txt", "verify_task1_source_contract.cmake", "run_zq500_acceptance.sh", "verify_task1_runtime_evidence.cmake", "cusignal_cpp/src/radartools/radartools_typed.h", "cusignal_cpp/src/radartools/radartools_typed.cpp", "cusignal_cpp/src/radartools/radartools_typed.cu", "cusignal_cpp/CMakeLists.txt"],
+  "status": "pass",
+  "pipeline_total_ms": 17988.110795000001,
+  "sum_step_total_ms": 17988.071785,
+  "steps": [
+    {
+      "name": "step1",
+      "timing_ms": {"prepare": 4.0000000000000003e-05, "h2d": 0, "compute": 3.1016659736633301, "d2h": 5.0212899999999996, "postprocess": 6.7368170000000003, "formal_execution": 83.250636999999998, "total": 90.159554},
+      "accuracy": {"max_abs_error": 5.1013358737896945e-06, "max_rel_error": 5.1013355983833819e-06, "compared_elements": 24640, "relative_tolerance": 2.0000000000000002e-05, "relative_floor": 9.9999999999999998e-13, "first_failure_index": -1, "reference_source": "independent Host LFM/echo/noise formulas", "comparison_method": "full-element complex L_inf relative error for pass/fail; max_abs_error retained; delay/Doppler/seed perturbations"},
+      "operators_ms": {"gpu_delay_doppler_noise": 0.085114002227783203, "gpu_lfm_generation": 3.0165519714355469},
+      "metrics": {"bandwidth_hz": 640000, "delay_ground_truth_recorded": 1, "delay_ground_truth_samples": 80, "doppler_ground_truth_hz": 1250, "doppler_ground_truth_recorded": 1, "noise_added": 1, "noise_rms": 0.02862463021614188, "noise_seed": 20260715, "noise_std": 0.035000000149011612, "num_pulses": 32, "output_columns": 256, "output_rows": 32, "perturbation_checks_pass": 3, "prf_hz": 8000, "pri_seconds": 0.000125, "pulse_samples": 64, "pulse_width_seconds": 2.5000000000000001e-05, "sample_rate_hz": 2560000, "samples_per_pulse": 256, "snr_db": 24.84460241335869, "target_amplitude": 1, "target_echo_present": 1, "target_range_m": 4684.2571562499998}
+    },
+    {
+      "name": "step2",
+      "timing_ms": {"prepare": 0.00088999999999999995, "h2d": 0.12667100000000001, "compute": 6822.484375, "d2h": 0.25617099999999998, "postprocess": 33.228529999999999, "formal_execution": 6823.1069280000002, "total": 6856.4395089999998},
+      "accuracy": {"max_abs_error": 1.9660499694908431e-06, "max_rel_error": 2.4510527921028506e-07, "compared_elements": 8192, "relative_tolerance": 0.002, "relative_floor": 9.9999999999999998e-13, "first_failure_index": -1, "reference_source": "pulse_compression_typed_cpu<float>", "comparison_method": "full-element complex L_inf relative error for pass/fail; max_abs_error retained; range peak/template perturbation"},
+      "operators_ms": {"pulse_compression": 6822.484375},
+      "metrics": {"compressed_half_power_width_samples": 3, "expected_range_bin": 80, "nfft": 256, "normalization_enabled": 1, "output_columns": 256, "output_rows": 32, "padding_policy_circular": 1, "peak_range_bin": 80, "pulse_compression_called": 1, "range_bin_spacing_m": 58.553214453125001, "range_error_m": 0, "step1_to_step2_data_match": 1, "template_samples": 64, "theoretical_range_resolution_m": 234.2128578125, "uncompressed_width_samples": 64}
+    },
+    {
+      "name": "step3",
+      "timing_ms": {"prepare": 0.00024000000000000001, "h2d": 0.084940000000000002, "compute": 3145.908935546875, "d2h": 0.41045100000000001, "postprocess": 36.144311999999999, "formal_execution": 3146.5426819999998, "total": 3182.758124},
+      "accuracy": {"max_abs_error": 5.340576171875e-05, "max_rel_error": 3.9757297706299202e-07, "compared_elements": 8192, "relative_tolerance": 0.01, "relative_floor": 9.9999999999999998e-13, "first_failure_index": -1, "reference_source": "pulse_doppler_typed_cpu<float>", "comparison_method": "full-element complex L_inf relative error for pass/fail; max_abs_error retained; peak truth/window perturbation"},
+      "operators_ms": {"pulse_doppler": 3145.908935546875},
+      "metrics": {"detected_doppler_hz": 1250, "doppler_bin_spacing_hz": 250, "doppler_error_hz": 0, "expected_doppler_hz": 1250, "hamming_window": 1, "nfft": 32, "normalization_none": 1, "output_columns": 256, "output_rows": 32, "padding_or_truncation_none": 1, "peak_doppler_bin": 5, "peak_range_bin": 80, "pulse_doppler_called": 1, "signed_doppler_bin": 5, "slow_time_axis": 0, "step2_to_step3_data_match": 1}
+    },
+    {
+      "name": "step4",
+      "timing_ms": {"prepare": 0.00083000000000000001, "h2d": 0.107761, "compute": 0.45919999480247498, "d2h": 0.25459100000000001, "postprocess": 3.6992240000000001, "formal_execution": 0.94030400000000003, "total": 4.8115690000000004},
+      "accuracy": {"max_abs_error": 0.0035846605896949768, "max_rel_error": 5.5684892729678185e-07, "compared_elements": 24577, "relative_tolerance": 0.02, "relative_floor": 9.9999999999999998e-13, "first_failure_index": -1, "reference_source": "Host FP32 power formula plus cfar_alpha/ca_cfar_typed_cpu<float>", "comparison_method": "full-element numeric L_inf relative error for pass/fail; max_abs_error retained; exact mask and scene perturbations"},
+      "operators_ms": {"ca_cfar": 0.16391199827194214, "cfar_alpha": 0.2163659930229187, "range_doppler_power": 0.078922003507614136},
+      "metrics": {"boundary_policy_zero_threshold": 1, "ca_cfar_called": 1, "cfar_alpha": 7.1423282623291016, "cfar_alpha_called": 1, "cfar_rank": 2, "false_alarm_rate": 0.0083333333333333332, "false_alarm_rate_limit": 0.02, "false_alarms": 52, "guard_cells_doppler": 1, "guard_cells_range": 2, "interference_perturbation_detected": 1, "missed_targets": 0, "pfa": 0.0010000000474974513, "pure_noise_false_alarms": 0, "reference_cell_count": 104, "reference_cells_doppler": 2, "reference_cells_range": 6, "step3_to_step4_data_match": 1, "target_detected": 1}
+    },
+    {
+      "name": "step5",
+      "timing_ms": {"prepare": 0.00036999999999999999, "h2d": 0.058180999999999997, "compute": 7792.915283203125, "d2h": 0.28422199999999997, "postprocess": 60.144457000000003, "formal_execution": 7793.6269819999998, "total": 7853.9030290000001},
+      "accuracy": {"max_abs_error": 6.7173750246257713e-06, "max_rel_error": 6.7173750246257823e-06, "compared_elements": 16511, "relative_tolerance": 0.0030000000000000001, "relative_floor": 9.9999999999999998e-13, "first_failure_index": -1, "reference_source": "ambgfun_typed_cpu<float> for 2D and both cuts", "comparison_method": "full-element L_inf relative error for pass/fail; max_abs_error retained; peak/mainlobe/PSLR/waveform perturbation"},
+      "operators_ms": {"ambgfun_2d": 3148.2392578125, "ambgfun_delay_cut": 1519.48583984375, "ambgfun_doppler_cut": 3125.190185546875},
+      "metrics": {"ambgfun_called": 1, "ambiguity_columns": 128, "ambiguity_rows": 127, "delay_grid_max_seconds": 2.4609375e-05, "delay_grid_min_seconds": -2.4609375e-05, "delay_grid_spacing_seconds": 3.9062500000000002e-07, "delay_mainlobe_width_samples": 3, "delay_pslr_db": -14.333618438839984, "doppler_grid_max_hz": 1260000, "doppler_grid_min_hz": -1280000, "doppler_grid_spacing_hz": 20000, "doppler_mainlobe_width_bins": 1, "doppler_pslr_db": -13.456970514337719, "normalization_error": 2.384185791015625e-07, "normalization_peak": 1.0000002384185791, "peak_delay_index": 63, "peak_delay_seconds": 0, "peak_doppler_hz": 0, "peak_doppler_index": 64, "step1_waveform_to_step5_match": 1, "waveform_quality_pass": 1}
+    }
+  ]
+}

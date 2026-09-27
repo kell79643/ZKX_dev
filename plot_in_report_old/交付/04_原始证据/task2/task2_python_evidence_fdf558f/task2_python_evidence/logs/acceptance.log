@@ -1,0 +1,70 @@
+[TASK2_PYTHON][BINDING] commit=fdf558f9a344a29d53e4f77b07ef59a9a918f8d3 dirty=true test_time=2026-07-16T10:46:25+00:00
+[TASK2_PYTHON][SOURCE_GATE] formal_steps=6/6 self_timed_steps=6/6 cpu_accuracy_directories=0 fusion_before_peak_and_kalman=true status=passed
+[TASK2_PYTHON][PREFLIGHT] {"status": "pass", "runtime": {"python": "3.12.11", "numpy": "2.4.6", "cupy": "13.6.0", "cusignal": "23.08.00", "cusignal_source": "/tmp/ZKX_dev/cusignal-23.08.00/python", "cusignal_module_file": "/tmp/ZKX_dev/cusignal-23.08.00/python/cusignal/__init__.py", "device_name": "ZQ500-Q QUAD-2", "device_id": 0, "device_count": 1, "cuda_runtime_version": 11070, "cuda_driver_version": 11070, "zq500_cusignal_adapter": {"installed": true, "waveform_kernels": true, "direct_convolution": true, "peak_helper": true, "scalar_kalman": true, "vendored_source_modified": false}, "evidence_git_commit": "fdf558f9a344a29d53e4f77b07ef59a9a918f8d3", "evidence_git_dirty": "true", "evidence_test_time": "2026-07-16T10:46:25+00:00"}, "cupy_event_smoke_ms": 976.4425048828125, "cusignal_hamming_checksum": 17.36}
+[TASK2_PYTHON][step1][TIMING] prep_ms=0.092311 h2d_ms=179.454574 compute_ms=18717.749756 d2h_ms=0.560018 post_ms=4.446925 formal_execution_ms=18899.040690 total_ms=18903.488975
+[TASK2_PYTHON][step1][EFFECT] metrics=13 operators=5 status=pass
+[TASK2_PYTHON][PIPELINE] completed_steps=1 pipeline_total_ms=18903.534105 status=pass
+[TASK2_PYTHON][step1][TIMING] prep_ms=0.088321 h2d_ms=177.693050 compute_ms=18852.482788 d2h_ms=0.536907 post_ms=4.784710 formal_execution_ms=19032.030707 total_ms=19036.819427
+[TASK2_PYTHON][step1][EFFECT] metrics=13 operators=5 status=pass
+[TASK2_PYTHON][step2][TIMING] prep_ms=0.001621 h2d_ms=0.259864 compute_ms=9446.928406 d2h_ms=0.351225 post_ms=0.417066 formal_execution_ms=9448.210205 total_ms=9448.630051
+[TASK2_PYTHON][step2][EFFECT] metrics=10 operators=3 status=pass
+[TASK2_PYTHON][PIPELINE] completed_steps=2 pipeline_total_ms=28485.534027 status=pass
+[TASK2_PYTHON][step1][TIMING] prep_ms=0.091451 h2d_ms=176.640530 compute_ms=18823.498718 d2h_ms=0.535678 post_ms=4.497944 formal_execution_ms=19002.019281 total_ms=19006.518816
+[TASK2_PYTHON][step1][EFFECT] metrics=13 operators=5 status=pass
+[TASK2_PYTHON][step2][TIMING] prep_ms=0.001631 h2d_ms=0.227273 compute_ms=9406.105530 d2h_ms=0.399106 post_ms=0.429966 formal_execution_ms=9407.377433 total_ms=9407.810209
+[TASK2_PYTHON][step2][EFFECT] metrics=10 operators=3 status=pass
+[TASK2_PYTHON][step3][TIMING] prep_ms=0.012740 h2d_ms=0.333085 compute_ms=1995.121760 d2h_ms=0.161872 post_ms=0.266485 formal_execution_ms=1995.983642 total_ms=1996.242276
+[TASK2_PYTHON][step3][EFFECT] metrics=7 operators=3 status=pass
+[TASK2_PYTHON][PIPELINE] completed_steps=3 pipeline_total_ms=30410.677283 status=pass
+[TASK2_PYTHON][step1][TIMING] prep_ms=0.090681 h2d_ms=180.524690 compute_ms=18833.470947 d2h_ms=0.555308 post_ms=4.469784 formal_execution_ms=19015.843712 total_ms=19020.314797
+[TASK2_PYTHON][step1][EFFECT] metrics=13 operators=5 status=pass
+[TASK2_PYTHON][step2][TIMING] prep_ms=0.003440 h2d_ms=0.223644 compute_ms=9413.102661 d2h_ms=0.371285 post_ms=0.417426 formal_execution_ms=9414.343187 total_ms=9414.762162
+[TASK2_PYTHON][step2][EFFECT] metrics=10 operators=3 status=pass
+[TASK2_PYTHON][step3][TIMING] prep_ms=0.014500 h2d_ms=0.292694 compute_ms=1985.786218 d2h_ms=0.169402 post_ms=0.267765 formal_execution_ms=1986.585813 total_ms=1986.844388
+[TASK2_PYTHON][step3][EFFECT] metrics=7 operators=3 status=pass
+[TASK2_PYTHON][step4][TIMING] prep_ms=0.002090 h2d_ms=0.271634 compute_ms=29907.270752 d2h_ms=0.439736 post_ms=0.185153 formal_execution_ms=29909.959305 total_ms=29910.145678
+[TASK2_PYTHON][step4][EFFECT] metrics=13 operators=8 status=pass
+[TASK2_PYTHON][PIPELINE] completed_steps=4 pipeline_total_ms=60332.219484 status=pass
+[TASK2_PYTHON][step1][TIMING] prep_ms=0.089491 h2d_ms=179.337408 compute_ms=18795.168640 d2h_ms=0.540648 post_ms=4.498493 formal_execution_ms=18976.378310 total_ms=18980.878003
+[TASK2_PYTHON][step1][EFFECT] metrics=13 operators=5 status=pass
+[TASK2_PYTHON][step2][TIMING] prep_ms=0.001750 h2d_ms=0.220654 compute_ms=9339.242615 d2h_ms=0.361875 post_ms=0.453096 formal_execution_ms=9340.485854 total_ms=9340.940599
+[TASK2_PYTHON][step2][EFFECT] metrics=10 operators=3 status=pass
+[TASK2_PYTHON][step3][TIMING] prep_ms=0.014400 h2d_ms=0.295994 compute_ms=1978.551192 d2h_ms=0.155112 post_ms=0.236883 formal_execution_ms=1979.337027 total_ms=1979.564969
+[TASK2_PYTHON][step3][EFFECT] metrics=7 operators=3 status=pass
+[TASK2_PYTHON][step4][TIMING] prep_ms=0.002200 h2d_ms=0.258343 compute_ms=29722.671753 d2h_ms=0.438966 post_ms=0.180403 formal_execution_ms=29725.299986 total_ms=29725.481478
+[TASK2_PYTHON][step4][EFFECT] metrics=13 operators=8 status=pass
+[TASK2_PYTHON][step5][TIMING] prep_ms=0.002400 h2d_ms=0.230464 compute_ms=5893.922363 d2h_ms=0.196263 post_ms=4.245719 formal_execution_ms=5894.663838 total_ms=5898.911017
+[TASK2_PYTHON][step5][EFFECT] metrics=12 operators=1 status=pass
+[TASK2_PYTHON][PIPELINE] completed_steps=5 pipeline_total_ms=65925.942262 status=pass
+[TASK2_PYTHON][step1][TIMING] prep_ms=0.089561 h2d_ms=177.505121 compute_ms=18715.865723 d2h_ms=0.522408 post_ms=4.548692 formal_execution_ms=18895.171300 total_ms=18899.721190
+[TASK2_PYTHON][step1][EFFECT] metrics=13 operators=5 status=pass
+[TASK2_PYTHON][step2][TIMING] prep_ms=0.001370 h2d_ms=0.228483 compute_ms=9338.926941 d2h_ms=0.393315 post_ms=0.417775 formal_execution_ms=9340.185354 total_ms=9340.604389
+[TASK2_PYTHON][step2][EFFECT] metrics=10 operators=3 status=pass
+[TASK2_PYTHON][step3][TIMING] prep_ms=0.013021 h2d_ms=0.272653 compute_ms=1988.960131 d2h_ms=0.165423 post_ms=0.269842 formal_execution_ms=1989.746965 total_ms=1990.007698
+[TASK2_PYTHON][step3][EFFECT] metrics=7 operators=3 status=pass
+[TASK2_PYTHON][step4][TIMING] prep_ms=0.002100 h2d_ms=0.272844 compute_ms=29747.977539 d2h_ms=0.499777 post_ms=0.182852 formal_execution_ms=29750.632903 total_ms=29750.816984
+[TASK2_PYTHON][step4][EFFECT] metrics=13 operators=8 status=pass
+[TASK2_PYTHON][step5][TIMING] prep_ms=0.001490 h2d_ms=0.223013 compute_ms=5907.439453 d2h_ms=0.213063 post_ms=5.179801 formal_execution_ms=5908.185658 total_ms=5913.366699
+[TASK2_PYTHON][step5][EFFECT] metrics=12 operators=1 status=pass
+[TASK2_PYTHON][step6][TIMING] prep_ms=645.735563 h2d_ms=2.686646 compute_ms=1286.810193 d2h_ms=0.176122 post_ms=12.586541 formal_execution_ms=1935.904629 total_ms=1948.492460
+[TASK2_PYTHON][step6][EFFECT] metrics=12 operators=1 status=pass
+[TASK2_PYTHON][PIPELINE] completed_steps=6 pipeline_total_ms=67843.235235 status=pass
+[TASK2_PYTHON][step1][TIMING] prep_ms=0.090080 h2d_ms=180.009346 compute_ms=18963.490417 d2h_ms=0.602038 post_ms=5.001516 formal_execution_ms=19145.428176 total_ms=19150.434123
+[TASK2_PYTHON][step1][EFFECT] metrics=13 operators=5 status=pass
+[TASK2_PYTHON][step2][TIMING] prep_ms=0.004800 h2d_ms=0.268783 compute_ms=9487.179871 d2h_ms=0.357885 post_ms=0.462246 formal_execution_ms=9488.466678 total_ms=9488.930824
+[TASK2_PYTHON][step2][EFFECT] metrics=10 operators=3 status=pass
+[TASK2_PYTHON][step3][TIMING] prep_ms=0.014900 h2d_ms=0.308604 compute_ms=2003.189928 d2h_ms=0.164123 post_ms=0.254153 formal_execution_ms=2004.006672 total_ms=2004.250805
+[TASK2_PYTHON][step3][EFFECT] metrics=7 operators=3 status=pass
+[TASK2_PYTHON][step4][TIMING] prep_ms=0.002360 h2d_ms=0.267045 compute_ms=30083.496948 d2h_ms=0.487868 post_ms=0.184202 formal_execution_ms=30086.181113 total_ms=30086.366876
+[TASK2_PYTHON][step4][EFFECT] metrics=13 operators=8 status=pass
+[TASK2_PYTHON][step5][TIMING] prep_ms=0.001980 h2d_ms=0.239223 compute_ms=5963.559570 d2h_ms=0.210193 post_ms=5.194689 formal_execution_ms=5964.319340 total_ms=5969.515799
+[TASK2_PYTHON][step5][EFFECT] metrics=12 operators=1 status=pass
+[TASK2_PYTHON][step6][TIMING] prep_ms=643.289617 h2d_ms=2.664455 compute_ms=1301.654165 d2h_ms=0.182122 post_ms=13.709004 formal_execution_ms=1948.298766 total_ms=1962.009190
+[TASK2_PYTHON][step6][EFFECT] metrics=12 operators=1 status=pass
+[TASK2_PYTHON][PIPELINE] completed_steps=6 pipeline_total_ms=68661.766510 status=pass
+[TASK2_PYTHON][MEMORY] iterations=20 baseline_bytes=0 max_bytes=0 growth_bytes=0 status=observed
+[TASK2_PYTHON][RUNTIME_GATE] tests=7/7 cpu_accuracy_claims=0 failed=0 status=passed
+[TASK2_PYTHON][BENCHMARK] warmup=1 repeats=10 pipeline_mean_ms=54.254358 summary=/tmp/task2_python_utils_evidence_fdf558f/benchmark/task2_python_benchmark_summary.json status=pass
+[TASK2_CPP_PYTHON][PERFORMANCE] output=/tmp/task2_python_utils_evidence_fdf558f/task2_cpp_python_performance.json status=pass
+[TASK2_PYTHON][BENCHMARK_GATE] warmup=1 measured=10 comparison=passed status=passed
+[TASK2_PYTHON][ACCEPTANCE] evidence_root=/tmp/task2_python_utils_evidence_fdf558f status=passed
