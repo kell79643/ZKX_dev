@@ -1,0 +1,13 @@
+status=PASS
+warmup_runs=20
+measured_runs=100
+scale_id=task2_s07_noisy
+backend=fft_thrust
+semantic_gates=16/16
+accuracy_threshold_set_id=task_accuracy_formal_v7
+accuracy_thresholds_sha256=b1ea03d79712ee0089bd3a3fb4fba74ce19c6ff5cf87e70b0ff62b590a36ae6f
+pipeline_total_direct=true
+cpu_correlation_method=direct_parallel_exact
+cpu_correlation_workers=255
+resource_sampling_mode=same_pipeline_execution
+accuracy_status=PASS

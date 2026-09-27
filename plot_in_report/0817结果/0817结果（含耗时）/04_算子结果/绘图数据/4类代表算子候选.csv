@@ -1,0 +1,5 @@
+﻿"category","operator_name","rule","overall_median_speedup","operator_median_speedup","cases_below_1x","qualification_status"
+"最高性能收益","spectrogram","全部case精度PASS后median_speedup最高","0.260742718902332","10.4629706065054","0","CANDIDATE_NOT_FINAL"
+"典型对象","firwin2","median_speedup最接近53算子总体中位数且不与前项重复","0.260742718902332","0.260742718902332","10","CANDIDATE_NOT_FINAL"
+"性能边界","triang","低于1x case最多并以median_speedup更低者优先","0.260742718902332","0.0403016039789749","60","CANDIDATE_NOT_FINAL"
+"技术代表","ambgfun","fft_thrust算子中median_speedup最高且不与前三项重复","0.260742718902332","10.2333895086171","0","CANDIDATE_NOT_FINAL"

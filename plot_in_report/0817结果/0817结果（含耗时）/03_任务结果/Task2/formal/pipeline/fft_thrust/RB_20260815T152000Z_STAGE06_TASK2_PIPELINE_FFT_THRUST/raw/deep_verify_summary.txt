@@ -1,0 +1,12 @@
+status=PASS
+target=task2_pipeline_benchmark
+backend=fft_thrust
+cases=110
+warmup_runs=20
+measured_runs=100
+git_commit=b0478e7c5f1ad93e4cf41827d653d191c4a86804
+git_dirty=False
+config_id=task_scales_formal_v3
+config_sha256=baaa5c346f0c31ac4bb1fd1f81069be745425af6b28982a50aa11d42ff41b232
+accuracy_threshold_set_id=task_accuracy_formal_v7
+accuracy_thresholds_sha256=b1ea03d79712ee0089bd3a3fb4fba74ce19c6ff5cf87e70b0ff62b590a36ae6f

@@ -1,0 +1,6 @@
+status=PASS
+target=task2_pipeline_benchmark
+backend=fft_thrust
+cases=110
+warmup_runs=20
+measured_runs=100
