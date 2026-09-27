@@ -1,0 +1,7 @@
+﻿指标名称,数值,单位,计算公式,项目建议标准,评价结果,是否满足项目建议
+fm_demod 与融合特征相关系数,0.018287536506662986,1,"corr(feature,fused_bundle)",>=0.8优秀；>=0.5良好,一般,否
+correlation 与融合特征相关系数,0.27627730829818187,1,"corr(feature,fused_bundle)",>=0.8优秀；>=0.5良好,一般,否
+spectral_envelope 与融合特征相关系数,0.91950519043037859,1,"corr(feature,fused_bundle)",>=0.8优秀；>=0.5良好,优秀,是
+wavelet_envelope 与融合特征相关系数,0.80165325290657075,1,"corr(feature,fused_bundle)",>=0.8优秀；>=0.5良好,优秀,是
+频谱峰值频率误差,0.13037109375,Hz,|f_peak-f_theory|,<=1 bin优秀；<=2 bin良好,优秀,是
+小波包络重构代理 MSE,0.024865151359529502,1,mean((norm(CWT_env)-norm(|signal|))^2),<=0.01优秀；<=0.05良好,良好,是

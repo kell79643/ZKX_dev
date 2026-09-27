@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "target": "cwt",
+      "dtype": "FP32",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "cwt",
+      "dtype": "FP16",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "cwt",
+      "dtype": "INT32",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "cwt",
+      "dtype": "INT16",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "cwt",
+      "dtype": "INT8",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "ricker",
+      "dtype": "FP32",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "ricker",
+      "dtype": "FP16",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "ricker",
+      "dtype": "INT32",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "ricker",
+      "dtype": "INT16",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "ricker",
+      "dtype": "INT8",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    }
+  ]
+}

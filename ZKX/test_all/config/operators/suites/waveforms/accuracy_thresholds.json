@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "target": "chirp",
+      "dtype": "FP32",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "chirp",
+      "dtype": "FP16",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "chirp",
+      "dtype": "INT32",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "chirp",
+      "dtype": "INT16",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "chirp",
+      "dtype": "INT8",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "gausspulse",
+      "dtype": "FP32",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "gausspulse",
+      "dtype": "FP16",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "gausspulse",
+      "dtype": "INT32",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "gausspulse",
+      "dtype": "INT16",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "gausspulse",
+      "dtype": "INT8",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "sawtooth",
+      "dtype": "FP32",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "sawtooth",
+      "dtype": "FP16",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "sawtooth",
+      "dtype": "INT32",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "sawtooth",
+      "dtype": "INT16",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "sawtooth",
+      "dtype": "INT8",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "square",
+      "dtype": "FP32",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "square",
+      "dtype": "FP16",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "square",
+      "dtype": "INT32",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "square",
+      "dtype": "INT16",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    },
+    {
+      "target": "square",
+      "dtype": "INT8",
+      "mse_max": 0.000001,
+      "rmse_max": 0.001,
+      "relative_l2_max": 0.001,
+      "relative_linf_max": 0.001
+    }
+  ]
+}

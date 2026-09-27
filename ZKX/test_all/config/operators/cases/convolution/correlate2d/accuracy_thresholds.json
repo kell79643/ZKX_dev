@@ -1,0 +1,6 @@
+{"schema_version":1,"threshold_set_id":"stage08_b04_correlate2d_accuracy_v1","entries":[
+{"target":"correlate2d","dtype":"FP32","output_kind":"floating","mse_max":1e-10,"rmse_max":1e-5,"relative_l2_max":1e-5,"relative_linf_max":1e-5,"require_exact_match":false,"semantic_rule":"shape_mode_boundary_fill_and_same_dtype_output_match_cpu"},
+{"target":"correlate2d","dtype":"FP16","output_kind":"floating","mse_max":1e-6,"rmse_max":1e-3,"relative_l2_max":1e-3,"relative_linf_max":1e-3,"require_exact_match":false,"semantic_rule":"approved_fp32_legal_path_shape_mode_boundary_and_fp16_output_match_cpu"},
+{"target":"correlate2d","dtype":"INT32","output_kind":"discrete","mse_max":0,"rmse_max":0,"relative_l2_max":0,"relative_linf_max":0,"require_exact_match":true,"semantic_rule":"native_modular_int32_exact_match_cpu"},
+{"target":"correlate2d","dtype":"INT16","output_kind":"discrete","mse_max":0,"rmse_max":0,"relative_l2_max":0,"relative_linf_max":0,"require_exact_match":true,"semantic_rule":"approved_fp32_legal_path_int16_wrap_exact_match_cpu"},
+{"target":"correlate2d","dtype":"INT8","output_kind":"discrete","mse_max":0,"rmse_max":0,"relative_l2_max":0,"relative_linf_max":0,"require_exact_match":true,"semantic_rule":"approved_fp32_legal_path_int8_wrap_exact_match_cpu"}]}

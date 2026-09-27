@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+get_filename_component(REPO_ROOT "${CMAKE_CURRENT_LIST_DIR}/../../../../.." ABSOLUTE)
+include("${REPO_ROOT}/cmake/ZQ500Build.cmake")
+project(operator_case_wavelets_ricker LANGUAGES CXX)
+include("${CMAKE_CURRENT_LIST_DIR}/../../../shared/wavelets/WaveletOperatorTarget.cmake")
+operator_case_add_wavelet_target(operator_case_wavelets_ricker ricker)

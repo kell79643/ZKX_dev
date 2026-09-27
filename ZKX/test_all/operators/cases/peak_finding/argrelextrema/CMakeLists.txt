@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+get_filename_component(REPO_ROOT "${CMAKE_CURRENT_LIST_DIR}/../../../../.." ABSOLUTE)
+include("${REPO_ROOT}/cmake/ZQ500Build.cmake")
+project(operator_case_argrelextrema LANGUAGES CXX)
+include("${REPO_ROOT}/test_all/operators/suites/task2_final/Task2PipelineOperatorTarget.cmake")
+operator_case_add_task2_pipeline_target(operator_case_argrelextrema argrelextrema)

@@ -1,0 +1,6 @@
+{"schema_version":1,"entries":[
+{"target":"lfilter_zi","dtype":"FP32","mse_max":1e-8,"rmse_max":1e-4,"relative_l2_max":1e-4,"relative_linf_max":1e-4,"semantic_rule":"trim_normalize_pad_solve_and_fp64_output"},
+{"target":"lfilter_zi","dtype":"FP16","mse_max":1e-8,"rmse_max":1e-4,"relative_l2_max":1e-4,"relative_linf_max":1e-4,"semantic_rule":"approved_fp16_fp32_solve_extension_and_fp64_output"},
+{"target":"lfilter_zi","dtype":"INT32","mse_max":1e-8,"rmse_max":1e-4,"relative_l2_max":1e-4,"relative_linf_max":1e-4,"semantic_rule":"integer_true_divide_fp32_solve_and_fp64_output"},
+{"target":"lfilter_zi","dtype":"INT16","mse_max":1e-8,"rmse_max":1e-4,"relative_l2_max":1e-4,"relative_linf_max":1e-4,"semantic_rule":"integer_true_divide_fp32_solve_and_fp64_output"},
+{"target":"lfilter_zi","dtype":"INT8","mse_max":1e-8,"rmse_max":1e-4,"relative_l2_max":1e-4,"relative_linf_max":1e-4,"semantic_rule":"integer_true_divide_fp32_solve_and_fp64_output"}]}

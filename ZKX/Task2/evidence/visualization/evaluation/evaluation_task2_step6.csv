@@ -1,0 +1,6 @@
+﻿指标名称,数值,单位,计算公式,项目建议标准,评价结果,是否满足项目建议
+最终状态 RMSE,77.733888387680054,sample,sqrt(mean((estimate-truth)^2)),<=1优秀；<=3良好,一般,否
+最终收敛绝对误差,77.733888387680054,sample,|estimate-truth|,<=1优秀；<=3良好,一般,否
+观测值 RMSE,76.426005828044296,sample,sqrt(mean((observation-truth)^2)),最终RMSE应更小,一般,否
+Kalman RMSE 改善量,-1.3078825596357575,sample,RMSE_observation-RMSE_final,>0表示改善,一般,否
+最终协方差,104032.05654125731,sample^2,P_final*(N-1)^2,<=1优秀；<=9良好,一般,否

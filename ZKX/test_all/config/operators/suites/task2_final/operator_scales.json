@@ -1,0 +1,19 @@
+{
+  "schema_version":1,
+  "scale_set_id":"stage07_b06_task2_final_v1",
+  "dtypes":["FP32","FP16","INT32","INT16","INT8"],
+  "operators":[
+    {"operator_name":"cubic","module_name":"bsplines","profiles":[
+      {"suffix":"10e2","order_of_magnitude":"10^2","count":128},
+      {"suffix":"10e3","order_of_magnitude":"10^3","count":1024},
+      {"suffix":"10e4","order_of_magnitude":"10^4","count":10000}]},
+    {"operator_name":"argrelextrema","module_name":"peak_finding","profiles":[
+      {"suffix":"10e2","order_of_magnitude":"10^2","count":128,"order":3,"mode":"clip","comparator":"greater"},
+      {"suffix":"10e3","order_of_magnitude":"10^3","count":1024,"order":5,"mode":"clip","comparator":"greater"},
+      {"suffix":"10e4","order_of_magnitude":"10^4","count":10000,"order":7,"mode":"clip","comparator":"greater"}]},
+    {"operator_name":"kalman_filter","module_name":"estimation","profiles":[
+      {"suffix":"10e2","order_of_magnitude":"10^2","observation_count":128},
+      {"suffix":"10e3","order_of_magnitude":"10^3","observation_count":1024},
+      {"suffix":"10e4","order_of_magnitude":"10^4","observation_count":10000}]}
+  ]
+}

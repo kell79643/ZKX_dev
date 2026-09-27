@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "scale_set_id": "stage08_b05_freq_shift_scales_v1",
+  "operators": [{
+    "operator_name": "freq_shift",
+    "module_name": "filtering",
+    "scales": [
+      {"scale_id":"freq_shift_fp32_10e2","order_of_magnitude":"10^2","actual_elements":100,"inputs":[{"input_name":"x","shape":[100],"element_count":100,"dtype":"FP32","role":"primary"}],"parameters":{"seed":85210001,"freq":1.25,"fs":100.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_fp32_10e3","order_of_magnitude":"10^3","actual_elements":1024,"inputs":[{"input_name":"x","shape":[32,32],"element_count":1024,"dtype":"FP32","role":"primary"}],"parameters":{"seed":85210002,"freq":-7.5,"fs":256.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_fp32_10e4","order_of_magnitude":"10^4","actual_elements":10000,"inputs":[{"input_name":"x","shape":[100,100],"element_count":10000,"dtype":"FP32","role":"primary"}],"parameters":{"seed":85210003,"freq":37.25,"fs":2000.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_fp16_10e2","order_of_magnitude":"10^2","actual_elements":100,"inputs":[{"input_name":"x","shape":[100],"element_count":100,"dtype":"FP16","role":"primary"}],"parameters":{"seed":85220001,"freq":1.25,"fs":100.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_fp16_10e3","order_of_magnitude":"10^3","actual_elements":1024,"inputs":[{"input_name":"x","shape":[32,32],"element_count":1024,"dtype":"FP16","role":"primary"}],"parameters":{"seed":85220002,"freq":-7.5,"fs":256.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_fp16_10e4","order_of_magnitude":"10^4","actual_elements":10000,"inputs":[{"input_name":"x","shape":[100,100],"element_count":10000,"dtype":"FP16","role":"primary"}],"parameters":{"seed":85220003,"freq":37.25,"fs":2000.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_int32_10e2","order_of_magnitude":"10^2","actual_elements":100,"inputs":[{"input_name":"x","shape":[100],"element_count":100,"dtype":"INT32","role":"primary"}],"parameters":{"seed":85230001,"freq":1.25,"fs":100.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_int32_10e3","order_of_magnitude":"10^3","actual_elements":1024,"inputs":[{"input_name":"x","shape":[32,32],"element_count":1024,"dtype":"INT32","role":"primary"}],"parameters":{"seed":85230002,"freq":-7.5,"fs":256.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_int32_10e4","order_of_magnitude":"10^4","actual_elements":10000,"inputs":[{"input_name":"x","shape":[100,100],"element_count":10000,"dtype":"INT32","role":"primary"}],"parameters":{"seed":85230003,"freq":37.25,"fs":2000.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_int16_10e2","order_of_magnitude":"10^2","actual_elements":100,"inputs":[{"input_name":"x","shape":[100],"element_count":100,"dtype":"INT16","role":"primary"}],"parameters":{"seed":85240001,"freq":1.25,"fs":100.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_int16_10e3","order_of_magnitude":"10^3","actual_elements":1024,"inputs":[{"input_name":"x","shape":[32,32],"element_count":1024,"dtype":"INT16","role":"primary"}],"parameters":{"seed":85240002,"freq":-7.5,"fs":256.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_int16_10e4","order_of_magnitude":"10^4","actual_elements":10000,"inputs":[{"input_name":"x","shape":[100,100],"element_count":10000,"dtype":"INT16","role":"primary"}],"parameters":{"seed":85240003,"freq":37.25,"fs":2000.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_int8_10e2","order_of_magnitude":"10^2","actual_elements":100,"inputs":[{"input_name":"x","shape":[100],"element_count":100,"dtype":"INT8","role":"primary"}],"parameters":{"seed":85250001,"freq":1.25,"fs":100.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_int8_10e3","order_of_magnitude":"10^3","actual_elements":1024,"inputs":[{"input_name":"x","shape":[32,32],"element_count":1024,"dtype":"INT8","role":"primary"}],"parameters":{"seed":85250002,"freq":-7.5,"fs":256.0,"output_dtype":"ComplexFP64"}},
+      {"scale_id":"freq_shift_int8_10e4","order_of_magnitude":"10^4","actual_elements":10000,"inputs":[{"input_name":"x","shape":[100,100],"element_count":10000,"dtype":"INT8","role":"primary"}],"parameters":{"seed":85250003,"freq":37.25,"fs":2000.0,"output_dtype":"ComplexFP64"}}
+    ]
+  }]
+}

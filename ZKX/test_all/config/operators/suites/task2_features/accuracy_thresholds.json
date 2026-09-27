@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {"target":"fm_demod","dtype":"FP32","mse_max":1e-10,"rmse_max":1e-5,"relative_l2_max":1e-5,"relative_linf_max":1e-5},
+    {"target":"fm_demod","dtype":"FP16","mse_max":1e-8,"rmse_max":1e-4,"relative_l2_max":1e-4,"relative_linf_max":1e-4},
+    {"target":"fm_demod","dtype":"INT32","mse_max":1e-10,"rmse_max":1e-5,"relative_l2_max":1e-5,"relative_linf_max":1e-5},
+    {"target":"fm_demod","dtype":"INT16","mse_max":1e-10,"rmse_max":1e-5,"relative_l2_max":1e-5,"relative_linf_max":1e-5},
+    {"target":"fm_demod","dtype":"INT8","mse_max":1e-10,"rmse_max":1e-5,"relative_l2_max":1e-5,"relative_linf_max":1e-5},
+    {"target":"correlate","dtype":"FP32","mse_max":1e-8,"rmse_max":1e-4,"relative_l2_max":1e-5,"relative_linf_max":1e-5},
+    {"target":"correlate","dtype":"FP16","mse_max":1e-6,"rmse_max":1e-3,"relative_l2_max":1e-3,"relative_linf_max":1e-3},
+    {"target":"correlate","dtype":"INT32","mse_max":0,"rmse_max":0,"relative_l2_max":0,"relative_linf_max":0},
+    {"target":"correlate","dtype":"INT16","mse_max":0,"rmse_max":0,"relative_l2_max":0,"relative_linf_max":0},
+    {"target":"correlate","dtype":"INT8","mse_max":0,"rmse_max":0,"relative_l2_max":0,"relative_linf_max":0},
+    {"target":"spectrogram","dtype":"FP32","mse_max":1e-7,"rmse_max":5e-4,"relative_l2_max":1e-3,"relative_linf_max":1e-3},
+    {"target":"spectrogram","dtype":"FP16","mse_max":1e-6,"rmse_max":1e-3,"relative_l2_max":2e-3,"relative_linf_max":2e-3},
+    {"target":"spectrogram","dtype":"INT32","mse_max":1e-6,"rmse_max":1e-3,"relative_l2_max":2e-3,"relative_linf_max":2e-3},
+    {"target":"spectrogram","dtype":"INT16","mse_max":1e-6,"rmse_max":1e-3,"relative_l2_max":2e-3,"relative_linf_max":2e-3},
+    {"target":"spectrogram","dtype":"INT8","mse_max":1e-6,"rmse_max":1e-3,"relative_l2_max":2e-3,"relative_linf_max":2e-3}
+  ]
+}

@@ -1,0 +1,17 @@
+{"schema_version":1,"scale_set_id":"stage08_b07_qmf_scales_v1","operators":[{"operator_name":"qmf","module_name":"wavelets","scales":[
+{"scale_id":"qmf_fp32_10e2","order_of_magnitude":"10^2","actual_elements":100,"inputs":[{"input_name":"hk","shape":[100],"element_count":100,"dtype":"FP32"}],"parameters":{"seed":87300001,"output_dtype":"INT64"}},
+{"scale_id":"qmf_fp32_10e3","order_of_magnitude":"10^3","actual_elements":1024,"inputs":[{"input_name":"hk","shape":[1024],"element_count":1024,"dtype":"FP32"}],"parameters":{"seed":87300002,"output_dtype":"INT64"}},
+{"scale_id":"qmf_fp32_10e4","order_of_magnitude":"10^4","actual_elements":10000,"inputs":[{"input_name":"hk","shape":[10000],"element_count":10000,"dtype":"FP32"}],"parameters":{"seed":87300003,"output_dtype":"INT64"}},
+{"scale_id":"qmf_fp16_10e2","order_of_magnitude":"10^2","actual_elements":100,"inputs":[{"input_name":"hk","shape":[100],"element_count":100,"dtype":"FP16"}],"parameters":{"seed":87300004,"output_dtype":"INT64"}},
+{"scale_id":"qmf_fp16_10e3","order_of_magnitude":"10^3","actual_elements":1024,"inputs":[{"input_name":"hk","shape":[1024],"element_count":1024,"dtype":"FP16"}],"parameters":{"seed":87300005,"output_dtype":"INT64"}},
+{"scale_id":"qmf_fp16_10e4","order_of_magnitude":"10^4","actual_elements":10000,"inputs":[{"input_name":"hk","shape":[10000],"element_count":10000,"dtype":"FP16"}],"parameters":{"seed":87300006,"output_dtype":"INT64"}},
+{"scale_id":"qmf_int32_10e2","order_of_magnitude":"10^2","actual_elements":100,"inputs":[{"input_name":"hk","shape":[100],"element_count":100,"dtype":"INT32"}],"parameters":{"seed":87300007,"output_dtype":"INT64"}},
+{"scale_id":"qmf_int32_10e3","order_of_magnitude":"10^3","actual_elements":1024,"inputs":[{"input_name":"hk","shape":[1024],"element_count":1024,"dtype":"INT32"}],"parameters":{"seed":87300008,"output_dtype":"INT64"}},
+{"scale_id":"qmf_int32_10e4","order_of_magnitude":"10^4","actual_elements":10000,"inputs":[{"input_name":"hk","shape":[10000],"element_count":10000,"dtype":"INT32"}],"parameters":{"seed":87300009,"output_dtype":"INT64"}},
+{"scale_id":"qmf_int16_10e2","order_of_magnitude":"10^2","actual_elements":100,"inputs":[{"input_name":"hk","shape":[100],"element_count":100,"dtype":"INT16"}],"parameters":{"seed":87300010,"output_dtype":"INT64"}},
+{"scale_id":"qmf_int16_10e3","order_of_magnitude":"10^3","actual_elements":1024,"inputs":[{"input_name":"hk","shape":[1024],"element_count":1024,"dtype":"INT16"}],"parameters":{"seed":87300011,"output_dtype":"INT64"}},
+{"scale_id":"qmf_int16_10e4","order_of_magnitude":"10^4","actual_elements":10000,"inputs":[{"input_name":"hk","shape":[10000],"element_count":10000,"dtype":"INT16"}],"parameters":{"seed":87300012,"output_dtype":"INT64"}},
+{"scale_id":"qmf_int8_10e2","order_of_magnitude":"10^2","actual_elements":100,"inputs":[{"input_name":"hk","shape":[100],"element_count":100,"dtype":"INT8"}],"parameters":{"seed":87300013,"output_dtype":"INT64"}},
+{"scale_id":"qmf_int8_10e3","order_of_magnitude":"10^3","actual_elements":1024,"inputs":[{"input_name":"hk","shape":[1024],"element_count":1024,"dtype":"INT8"}],"parameters":{"seed":87300014,"output_dtype":"INT64"}},
+{"scale_id":"qmf_int8_10e4","order_of_magnitude":"10^4","actual_elements":10000,"inputs":[{"input_name":"hk","shape":[10000],"element_count":10000,"dtype":"INT8"}],"parameters":{"seed":87300015,"output_dtype":"INT64"}}
+]}]}

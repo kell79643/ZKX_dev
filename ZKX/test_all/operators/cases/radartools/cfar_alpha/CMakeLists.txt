@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+get_filename_component(REPO_ROOT "${CMAKE_CURRENT_LIST_DIR}/../../../../.." ABSOLUTE)
+include("${REPO_ROOT}/cmake/ZQ500Build.cmake")
+project(operator_case_radartools_cfar_alpha LANGUAGES CXX)
+include("${CMAKE_CURRENT_LIST_DIR}/../../../shared/radartools/RadarOperatorTarget.cmake")
+operator_case_add_radartools_target(operator_case_radartools_cfar_alpha cfar_alpha)

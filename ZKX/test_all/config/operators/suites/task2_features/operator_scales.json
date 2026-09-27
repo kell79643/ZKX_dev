@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "scale_set_id": "stage07_b05_task2_features_v1",
+  "dtypes": ["FP32", "FP16", "INT32", "INT16", "INT8"],
+  "operators": [
+    {
+      "operator_name": "fm_demod",
+      "module_name": "demod",
+      "backend": "not_applicable",
+      "profiles": [
+        {"suffix":"10e2","order_of_magnitude":"10^2","count":128},
+        {"suffix":"10e3","order_of_magnitude":"10^3","count":1024},
+        {"suffix":"10e4","order_of_magnitude":"10^4","count":10000}
+      ]
+    },
+    {
+      "operator_name": "correlate",
+      "module_name": "convolution",
+      "backend": "not_applicable",
+      "profiles": [
+        {"suffix":"10e2","order_of_magnitude":"10^2","signal_count":128,"reference_count":17,"mode":"same"},
+        {"suffix":"10e3","order_of_magnitude":"10^3","signal_count":1024,"reference_count":31,"mode":"same"},
+        {"suffix":"10e4","order_of_magnitude":"10^4","signal_count":10000,"reference_count":31,"mode":"same"}
+      ]
+    },
+    {
+      "operator_name": "spectrogram",
+      "module_name": "spectral_analysis",
+      "backend": "fft_thrust",
+      "profiles": [
+        {"suffix":"10e2","order_of_magnitude":"10^2","count":128,"frame":64,"hop":32},
+        {"suffix":"10e3","order_of_magnitude":"10^3","count":1024,"frame":64,"hop":32},
+        {"suffix":"10e4","order_of_magnitude":"10^4","count":10000,"frame":64,"hop":32}
+      ]
+    }
+  ]
+}

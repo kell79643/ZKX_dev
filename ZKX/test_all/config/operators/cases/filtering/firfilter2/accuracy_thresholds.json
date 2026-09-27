@@ -1,0 +1,6 @@
+{"schema_version":1,"threshold_set_id":"stage08_b04_firfilter2_accuracy_v1","entries":[
+{"target":"firfilter2","dtype":"FP32","mse_max":1e-6,"rmse_max":1e-3,"relative_l2_max":0.01,"relative_linf_max":0.01,"semantic_rule":"shape_axis_padding_and_fp32_output_match_cpu"},
+{"target":"firfilter2","dtype":"FP16","mse_max":1e-6,"rmse_max":1e-3,"relative_l2_max":0.01,"relative_linf_max":0.01,"semantic_rule":"shape_axis_padding_and_fp32_output_match_cpu"},
+{"target":"firfilter2","dtype":"INT32","mse_max":1e-6,"rmse_max":1e-3,"relative_l2_max":0.01,"relative_linf_max":0.01,"semantic_rule":"shape_axis_padding_and_fp64_storage_output_match_cpu"},
+{"target":"firfilter2","dtype":"INT16","mse_max":1e-6,"rmse_max":1e-3,"relative_l2_max":0.01,"relative_linf_max":0.01,"semantic_rule":"shape_axis_padding_and_fp32_output_match_cpu"},
+{"target":"firfilter2","dtype":"INT8","mse_max":1e-6,"rmse_max":1e-3,"relative_l2_max":0.01,"relative_linf_max":0.01,"semantic_rule":"shape_axis_padding_and_fp32_output_match_cpu"}]}

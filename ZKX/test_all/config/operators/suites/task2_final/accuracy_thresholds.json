@@ -1,0 +1,16 @@
+{
+  "schema_version":1,
+  "entries":[
+    {"target":"cubic","dtype":"FP32","mse_max":1e-12,"rmse_max":1e-6,"relative_l2_max":1e-6,"relative_linf_max":1e-6},
+    {"target":"cubic","dtype":"FP16","mse_max":1e-8,"rmse_max":1e-4,"relative_l2_max":1e-4,"relative_linf_max":1e-4},
+    {"target":"cubic","dtype":"INT32","mse_max":0,"rmse_max":0,"relative_l2_max":0,"relative_linf_max":0},
+    {"target":"cubic","dtype":"INT16","mse_max":0,"rmse_max":0,"relative_l2_max":0,"relative_linf_max":0},
+    {"target":"cubic","dtype":"INT8","mse_max":0,"rmse_max":0,"relative_l2_max":0,"relative_linf_max":0},
+    {"target":"kalman_filter","dtype":"FP32","mse_max":1e-10,"rmse_max":1e-5,"relative_l2_max":1e-5,"relative_linf_max":1e-5},
+    {"target":"kalman_filter","dtype":"FP16","mse_max":1e-8,"rmse_max":1e-4,"relative_l2_max":1e-4,"relative_linf_max":1e-4},
+    {"target":"kalman_filter","dtype":"INT32","mse_max":1e-10,"rmse_max":1e-5,"relative_l2_max":1e-5,"relative_linf_max":1e-5},
+    {"target":"kalman_filter","dtype":"INT16","mse_max":1e-10,"rmse_max":1e-5,"relative_l2_max":1e-5,"relative_linf_max":1e-5},
+    {"target":"kalman_filter","dtype":"INT8","mse_max":1e-10,"rmse_max":1e-5,"relative_l2_max":1e-5,"relative_linf_max":1e-5}
+  ],
+  "discrete":{"target":"argrelextrema","exact_match":true,"mismatch_count_max":0,"semantic_check_required":true}
+}

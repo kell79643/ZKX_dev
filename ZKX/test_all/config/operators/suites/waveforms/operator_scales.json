@@ -1,0 +1,1396 @@
+{
+  "schema_version": 1,
+  "scale_set_id": "stage07_b02_waveforms_five_dtype_v1",
+  "coverage": "minimal_example_not_full_53",
+  "operators": [
+    {
+      "operator_name": "chirp",
+      "module_name": "waveforms",
+      "scales": [
+        {
+          "scale_id": "chirp_fp32_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "FP32：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "chirp_fp32_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "FP32：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "chirp_fp32_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "FP32：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "chirp_fp16_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "FP16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "FP16：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "chirp_fp16_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "FP16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "FP16：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "chirp_fp16_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "FP16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "FP16：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "chirp_int32_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "INT32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "INT32：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "chirp_int32_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "INT32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "INT32：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "chirp_int32_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "INT32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "INT32：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "chirp_int16_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "INT16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "INT16：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "chirp_int16_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "INT16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "INT16：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "chirp_int16_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "INT16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "INT16：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "chirp_int8_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "INT8",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "INT8：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "chirp_int8_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "INT8",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "INT8：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "chirp_int8_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "INT8",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "f0": 0.02,
+            "t1": 31,
+            "f1": 0.07,
+            "phase_degrees": 0,
+            "method": "linear"
+          },
+          "mapping_reason": "INT8：Task2 Step1线性调频时间采样，覆盖0至31时间单位并从0.02扫频至0.07，16384个样点形成10^4科学规模"
+        }
+      ]
+    },
+    {
+      "operator_name": "gausspulse",
+      "module_name": "waveforms",
+      "scales": [
+        {
+          "scale_id": "gauss_fp32_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "FP32：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "gauss_fp32_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "FP32：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "gauss_fp32_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "FP32：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "gauss_fp16_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "FP16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "FP16：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "gauss_fp16_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "FP16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "FP16：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "gauss_fp16_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "FP16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "FP16：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "gauss_int32_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "INT32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "INT32：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "gauss_int32_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "INT32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "INT32：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "gauss_int32_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "INT32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "INT32：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "gauss_int16_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "INT16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "INT16：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "gauss_int16_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "INT16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "INT16：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "gauss_int16_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "INT16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "INT16：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "gauss_int8_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "INT8",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "INT8：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "gauss_int8_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "INT8",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "INT8：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "gauss_int8_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "time",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "INT8",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "fc": 0.05,
+            "bw": 0.2,
+            "bwr_db": -6,
+            "return_component": "in_phase"
+          },
+          "mapping_reason": "INT8：Task2 Step1高斯包络脉冲时间采样，覆盖负16至正16时间单位，16384个样点形成10^4科学规模"
+        }
+      ]
+    },
+    {
+      "operator_name": "sawtooth",
+      "module_name": "waveforms",
+      "scales": [
+        {
+          "scale_id": "saw_fp32_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "FP32：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "saw_fp32_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "FP32：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "saw_fp32_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "FP32：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "saw_fp16_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "FP16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "FP16：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "saw_fp16_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "FP16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "FP16：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "saw_fp16_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "FP16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "FP16：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "saw_int32_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "INT32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT32：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "saw_int32_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "INT32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT32：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "saw_int32_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "INT32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT32：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "saw_int16_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "INT16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT16：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "saw_int16_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "INT16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT16：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "saw_int16_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "INT16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT16：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "saw_int8_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "INT8",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT8：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "saw_int8_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "INT8",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT8：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "saw_int8_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "INT8",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "width": 0.65,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT8：Task2 Step1八周期相位采样与0.65上升段比例的锯齿波生成，16384个样点形成10^4科学规模"
+        }
+      ]
+    },
+    {
+      "operator_name": "square",
+      "module_name": "waveforms",
+      "scales": [
+        {
+          "scale_id": "square_fp32_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "FP32：Task2 Step1八周期相位采样与0.35占空比的方波生成，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "square_fp32_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "FP32：Task2 Step1八周期相位采样与0.35占空比的方波生成，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "square_fp32_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "FP32：Task2 Step1八周期相位采样与0.35占空比的方波生成，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "square_fp16_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "FP16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "FP16：Task2 Step1八周期相位采样与0.35占空比的方波生成，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "square_fp16_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "FP16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "FP16：Task2 Step1八周期相位采样与0.35占空比的方波生成，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "square_fp16_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "FP16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "FP16：Task2 Step1八周期相位采样与0.35占空比的方波生成，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "square_int32_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "INT32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT32：Task2 Step1八周期相位采样与0.35占空比的方波生成，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "square_int32_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "INT32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT32：Task2 Step1八周期相位采样与0.35占空比的方波生成，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "square_int32_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "INT32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT32：Task2 Step1八周期相位采样与0.35占空比的方波生成，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "square_int16_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "INT16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT16：Task2 Step1八周期相位采样与0.35占空比的方波生成，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "square_int16_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "INT16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT16：Task2 Step1八周期相位采样与0.35占空比的方波生成，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "square_int16_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "INT16",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT16：Task2 Step1八周期相位采样与0.35占空比的方波生成，16384个样点形成10^4科学规模"
+        },
+        {
+          "scale_id": "square_int8_10e2",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                128
+              ],
+              "element_count": 128,
+              "dtype": "INT8",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT8：Task2 Step1八周期相位采样与0.35占空比的方波生成，128个样点形成10^2科学规模"
+        },
+        {
+          "scale_id": "square_int8_10e3",
+          "order_of_magnitude": "10^3",
+          "actual_elements": 1024,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                1024
+              ],
+              "element_count": 1024,
+              "dtype": "INT8",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT8：Task2 Step1八周期相位采样与0.35占空比的方波生成，1024个样点形成10^3科学规模"
+        },
+        {
+          "scale_id": "square_int8_10e4",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "inputs": [
+            {
+              "input_name": "phase",
+              "shape": [
+                16384
+              ],
+              "element_count": 16384,
+              "dtype": "INT8",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "duty": 0.35,
+            "phase_cycles": 8,
+            "output_dtype": "FP64"
+          },
+          "mapping_reason": "INT8：Task2 Step1八周期相位采样与0.35占空比的方波生成，16384个样点形成10^4科学规模"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+get_filename_component(REPO_ROOT "${CMAKE_CURRENT_LIST_DIR}/../../../../.." ABSOLUTE)
+include("${REPO_ROOT}/cmake/ZQ500Build.cmake")
+project(operator_case_firfilter LANGUAGES CXX)
+include("${REPO_ROOT}/test_all/operators/shared/filtering/Task2FilterTarget.cmake")
+operator_case_add_filter_target(operator_case_firfilter firfilter)
