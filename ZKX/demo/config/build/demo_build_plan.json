@@ -1,0 +1,1464 @@
+{
+  "schema_version": 2,
+  "build_root": "build/demo",
+  "supported_backends": [
+    "fft_thrust",
+    "dlfft"
+  ],
+  "shared_backend": "not_applicable",
+  "public_directories": [
+    "fft_thrust/bin",
+    "fft_thrust/lib",
+    "dlfft/bin",
+    "dlfft/lib",
+    "fft_library_swap/bin",
+    "not_applicable/bin",
+    "not_applicable/lib"
+  ],
+  "forbidden_public_name_patterns": [
+    "task_f",
+    "cusignal_task_f",
+    "stage[0-9]+",
+    "[0-9a-f]{7,40}"
+  ],
+  "groups": [
+    {
+      "build_group_id": "task_pipelines",
+      "kind": "task",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": ".",
+      "work": "fft_thrust/work/root",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "task1_pipeline_benchmark",
+          "internal_binary": "bin/task1_pipeline_benchmark",
+          "published_binary": "fft_thrust/bin/task1_pipeline_benchmark"
+        },
+        {
+          "cmake_target": "task2_pipeline_benchmark",
+          "internal_binary": "bin/task2_pipeline_benchmark",
+          "published_binary": "fft_thrust/bin/task2_pipeline_benchmark"
+        }
+      ]
+    },
+    {
+      "build_group_id": "task_pipelines",
+      "kind": "task",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": ".",
+      "work": "dlfft/work/root",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "task1_pipeline_benchmark",
+          "internal_binary": "bin/task1_pipeline_benchmark",
+          "published_binary": "dlfft/bin/task1_pipeline_benchmark"
+        },
+        {
+          "cmake_target": "task2_pipeline_benchmark",
+          "internal_binary": "bin/task2_pipeline_benchmark",
+          "published_binary": "dlfft/bin/task2_pipeline_benchmark"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_radartools_ambgfun",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/radartools/ambgfun",
+      "work": "fft_thrust/work/operators/radartools/ambgfun",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_radartools_ambgfun",
+          "internal_binary": "bin/operator_case_radartools_ambgfun",
+          "published_binary": "fft_thrust/bin/operator_radartools_ambgfun"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_radartools_ambgfun",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/radartools/ambgfun",
+      "work": "dlfft/work/operators/radartools/ambgfun",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_radartools_ambgfun",
+          "internal_binary": "bin/operator_case_radartools_ambgfun",
+          "published_binary": "dlfft/bin/operator_radartools_ambgfun"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_peak_finding_argrelextrema",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/peak_finding/argrelextrema",
+      "work": "not_applicable/work/operators/peak_finding/argrelextrema",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_argrelextrema",
+          "internal_binary": "bin/operator_case_argrelextrema",
+          "published_binary": "not_applicable/bin/operator_peak_finding_argrelextrema"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_radartools_ca_cfar",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/radartools/ca_cfar",
+      "work": "not_applicable/work/operators/radartools/ca_cfar",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_radartools_ca_cfar",
+          "internal_binary": "bin/operator_case_radartools_ca_cfar",
+          "published_binary": "not_applicable/bin/operator_radartools_ca_cfar"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_radartools_cfar_alpha",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/radartools/cfar_alpha",
+      "work": "not_applicable/work/operators/radartools/cfar_alpha",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_radartools_cfar_alpha",
+          "internal_binary": "bin/operator_case_radartools_cfar_alpha",
+          "published_binary": "not_applicable/bin/operator_radartools_cfar_alpha"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_channelize_poly",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/channelize_poly",
+      "work": "fft_thrust/work/operators/filtering/channelize_poly",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_channelize_poly",
+          "internal_binary": "bin/remaining_operator_case_filtering_channelize_poly",
+          "published_binary": "fft_thrust/bin/operator_filtering_channelize_poly"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_channelize_poly",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/filtering/channelize_poly",
+      "work": "dlfft/work/operators/filtering/channelize_poly",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_channelize_poly",
+          "internal_binary": "bin/remaining_operator_case_filtering_channelize_poly",
+          "published_binary": "dlfft/bin/operator_filtering_channelize_poly"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_windows_chebwin",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/windows/chebwin",
+      "work": "fft_thrust/work/operators/windows/chebwin",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_windows_chebwin",
+          "internal_binary": "bin/remaining_operator_case_windows_chebwin",
+          "published_binary": "fft_thrust/bin/operator_windows_chebwin"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_windows_chebwin",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/windows/chebwin",
+      "work": "dlfft/work/operators/windows/chebwin",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_windows_chebwin",
+          "internal_binary": "bin/remaining_operator_case_windows_chebwin",
+          "published_binary": "dlfft/bin/operator_windows_chebwin"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_waveforms_chirp",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/waveforms/chirp",
+      "work": "not_applicable/work/operators/waveforms/chirp",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_waveforms_chirp",
+          "internal_binary": "bin/operator_case_waveforms_chirp",
+          "published_binary": "not_applicable/bin/operator_waveforms_chirp"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_convolution_correlate",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/convolution/correlate",
+      "work": "not_applicable/work/operators/convolution/correlate",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_correlate",
+          "internal_binary": "bin/operator_case_correlate",
+          "published_binary": "not_applicable/bin/operator_convolution_correlate"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_convolution_correlate2d",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/convolution/correlate2d",
+      "work": "not_applicable/work/operators/convolution/correlate2d",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_convolution_correlate2d",
+          "internal_binary": "bin/remaining_operator_case_convolution_correlate2d",
+          "published_binary": "not_applicable/bin/operator_convolution_correlate2d"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_spectral_analysis_csd",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/spectral_analysis/csd",
+      "work": "fft_thrust/work/operators/spectral_analysis/csd",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_spectral_analysis_csd",
+          "internal_binary": "bin/remaining_operator_case_spectral_analysis_csd",
+          "published_binary": "fft_thrust/bin/operator_spectral_analysis_csd"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_spectral_analysis_csd",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/spectral_analysis/csd",
+      "work": "dlfft/work/operators/spectral_analysis/csd",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_spectral_analysis_csd",
+          "internal_binary": "bin/remaining_operator_case_spectral_analysis_csd",
+          "published_binary": "dlfft/bin/operator_spectral_analysis_csd"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_bsplines_cubic",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/bsplines/cubic",
+      "work": "not_applicable/work/operators/bsplines/cubic",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_cubic",
+          "internal_binary": "bin/operator_case_cubic",
+          "published_binary": "not_applicable/bin/operator_bsplines_cubic"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_wavelets_cwt",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/wavelets/cwt",
+      "work": "not_applicable/work/operators/wavelets/cwt",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_wavelets_cwt",
+          "internal_binary": "bin/operator_case_wavelets_cwt",
+          "published_binary": "not_applicable/bin/operator_wavelets_cwt"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_decimate",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/decimate",
+      "work": "not_applicable/work/operators/filtering/decimate",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_decimate",
+          "internal_binary": "bin/remaining_operator_case_filtering_decimate",
+          "published_binary": "not_applicable/bin/operator_filtering_decimate"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_detrend",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/detrend",
+      "work": "not_applicable/work/operators/filtering/detrend",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_detrend",
+          "internal_binary": "bin/remaining_operator_case_filtering_detrend",
+          "published_binary": "not_applicable/bin/operator_filtering_detrend"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_firfilter",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/firfilter",
+      "work": "not_applicable/work/operators/filtering/firfilter",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_firfilter",
+          "internal_binary": "bin/operator_case_firfilter",
+          "published_binary": "not_applicable/bin/operator_filtering_firfilter"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_firfilter2",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/firfilter2",
+      "work": "not_applicable/work/operators/filtering/firfilter2",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_firfilter2",
+          "internal_binary": "bin/remaining_operator_case_filtering_firfilter2",
+          "published_binary": "not_applicable/bin/operator_filtering_firfilter2"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filter_design_firwin",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filter_design/firwin",
+      "work": "not_applicable/work/operators/filter_design/firwin",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_firwin",
+          "internal_binary": "bin/operator_case_firwin",
+          "published_binary": "not_applicable/bin/operator_filter_design_firwin"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filter_design_firwin2",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filter_design/firwin2",
+      "work": "fft_thrust/work/operators/filter_design/firwin2",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filter_design_firwin2",
+          "internal_binary": "bin/remaining_operator_case_filter_design_firwin2",
+          "published_binary": "fft_thrust/bin/operator_filter_design_firwin2"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filter_design_firwin2",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/filter_design/firwin2",
+      "work": "dlfft/work/operators/filter_design/firwin2",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filter_design_firwin2",
+          "internal_binary": "bin/remaining_operator_case_filter_design_firwin2",
+          "published_binary": "dlfft/bin/operator_filter_design_firwin2"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_demod_fm_demod",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/demod/fm_demod",
+      "work": "not_applicable/work/operators/demod/fm_demod",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_fm_demod",
+          "internal_binary": "bin/operator_case_fm_demod",
+          "published_binary": "not_applicable/bin/operator_demod_fm_demod"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_freq_shift",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/freq_shift",
+      "work": "not_applicable/work/operators/filtering/freq_shift",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_freq_shift",
+          "internal_binary": "bin/remaining_operator_case_filtering_freq_shift",
+          "published_binary": "not_applicable/bin/operator_filtering_freq_shift"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_bsplines_gauss_spline",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/bsplines/gauss_spline",
+      "work": "not_applicable/work/operators/bsplines/gauss_spline",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_bsplines_gauss_spline",
+          "internal_binary": "bin/remaining_operator_case_bsplines_gauss_spline",
+          "published_binary": "not_applicable/bin/operator_bsplines_gauss_spline"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_waveforms_gausspulse",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/waveforms/gausspulse",
+      "work": "not_applicable/work/operators/waveforms/gausspulse",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_waveforms_gausspulse",
+          "internal_binary": "bin/operator_case_waveforms_gausspulse",
+          "published_binary": "not_applicable/bin/operator_waveforms_gausspulse"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_windows_general_cosine",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/windows/general_cosine",
+      "work": "not_applicable/work/operators/windows/general_cosine",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_windows_general_cosine",
+          "internal_binary": "bin/remaining_operator_case_windows_general_cosine",
+          "published_binary": "not_applicable/bin/operator_windows_general_cosine"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_windows_general_gaussian",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/windows/general_gaussian",
+      "work": "not_applicable/work/operators/windows/general_gaussian",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_windows_general_gaussian",
+          "internal_binary": "bin/remaining_operator_case_windows_general_gaussian",
+          "published_binary": "not_applicable/bin/operator_windows_general_gaussian"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_windows_hamming",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/windows/hamming",
+      "work": "not_applicable/work/operators/windows/hamming",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_hamming",
+          "internal_binary": "bin/operator_case_hamming",
+          "published_binary": "not_applicable/bin/operator_windows_hamming"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_hilbert",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/hilbert",
+      "work": "fft_thrust/work/operators/filtering/hilbert",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_hilbert",
+          "internal_binary": "bin/remaining_operator_case_filtering_hilbert",
+          "published_binary": "fft_thrust/bin/operator_filtering_hilbert"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_hilbert",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/filtering/hilbert",
+      "work": "dlfft/work/operators/filtering/hilbert",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_hilbert",
+          "internal_binary": "bin/remaining_operator_case_filtering_hilbert",
+          "published_binary": "dlfft/bin/operator_filtering_hilbert"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_hilbert2",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/hilbert2",
+      "work": "fft_thrust/work/operators/filtering/hilbert2",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_hilbert2",
+          "internal_binary": "bin/remaining_operator_case_filtering_hilbert2",
+          "published_binary": "fft_thrust/bin/operator_filtering_hilbert2"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_hilbert2",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/filtering/hilbert2",
+      "work": "dlfft/work/operators/filtering/hilbert2",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_hilbert2",
+          "internal_binary": "bin/remaining_operator_case_filtering_hilbert2",
+          "published_binary": "dlfft/bin/operator_filtering_hilbert2"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_spectral_analysis_istft",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/spectral_analysis/istft",
+      "work": "fft_thrust/work/operators/spectral_analysis/istft",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_spectral_analysis_istft",
+          "internal_binary": "bin/remaining_operator_case_spectral_analysis_istft",
+          "published_binary": "fft_thrust/bin/operator_spectral_analysis_istft"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_spectral_analysis_istft",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/spectral_analysis/istft",
+      "work": "dlfft/work/operators/spectral_analysis/istft",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_spectral_analysis_istft",
+          "internal_binary": "bin/remaining_operator_case_spectral_analysis_istft",
+          "published_binary": "dlfft/bin/operator_spectral_analysis_istft"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_windows_kaiser",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/windows/kaiser",
+      "work": "not_applicable/work/operators/windows/kaiser",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_windows_kaiser",
+          "internal_binary": "bin/remaining_operator_case_windows_kaiser",
+          "published_binary": "not_applicable/bin/operator_windows_kaiser"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_estimation_kalman_filter",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/estimation/kalman_filter",
+      "work": "not_applicable/work/operators/estimation/kalman_filter",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_kalman_filter",
+          "internal_binary": "bin/operator_case_kalman_filter",
+          "published_binary": "not_applicable/bin/operator_estimation_kalman_filter"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_lfilter_zi",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/lfilter_zi",
+      "work": "not_applicable/work/operators/filtering/lfilter_zi",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_lfilter_zi",
+          "internal_binary": "bin/remaining_operator_case_filtering_lfilter_zi",
+          "published_binary": "not_applicable/bin/operator_filtering_lfilter_zi"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_spectral_analysis_lombscargle",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/spectral_analysis/lombscargle",
+      "work": "not_applicable/work/operators/spectral_analysis/lombscargle",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_spectral_analysis_lombscargle",
+          "internal_binary": "bin/remaining_operator_case_spectral_analysis_lombscargle",
+          "published_binary": "not_applicable/bin/operator_spectral_analysis_lombscargle"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_wavelets_morlet",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/wavelets/morlet",
+      "work": "not_applicable/work/operators/wavelets/morlet",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_wavelets_morlet",
+          "internal_binary": "bin/remaining_operator_case_wavelets_morlet",
+          "published_binary": "not_applicable/bin/operator_wavelets_morlet"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_wavelets_morlet2",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/wavelets/morlet2",
+      "work": "not_applicable/work/operators/wavelets/morlet2",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_wavelets_morlet2",
+          "internal_binary": "bin/remaining_operator_case_wavelets_morlet2",
+          "published_binary": "not_applicable/bin/operator_wavelets_morlet2"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_windows_parzen",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/windows/parzen",
+      "work": "not_applicable/work/operators/windows/parzen",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_windows_parzen",
+          "internal_binary": "bin/remaining_operator_case_windows_parzen",
+          "published_binary": "not_applicable/bin/operator_windows_parzen"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_radartools_pulse_compression",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/radartools/pulse_compression",
+      "work": "fft_thrust/work/operators/radartools/pulse_compression",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_radartools_pulse_compression",
+          "internal_binary": "bin/operator_case_radartools_pulse_compression",
+          "published_binary": "fft_thrust/bin/operator_radartools_pulse_compression"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_radartools_pulse_compression",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/radartools/pulse_compression",
+      "work": "dlfft/work/operators/radartools/pulse_compression",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_radartools_pulse_compression",
+          "internal_binary": "bin/operator_case_radartools_pulse_compression",
+          "published_binary": "dlfft/bin/operator_radartools_pulse_compression"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_radartools_pulse_doppler",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/radartools/pulse_doppler",
+      "work": "fft_thrust/work/operators/radartools/pulse_doppler",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_radartools_pulse_doppler",
+          "internal_binary": "bin/operator_case_radartools_pulse_doppler",
+          "published_binary": "fft_thrust/bin/operator_radartools_pulse_doppler"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_radartools_pulse_doppler",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/radartools/pulse_doppler",
+      "work": "dlfft/work/operators/radartools/pulse_doppler",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_radartools_pulse_doppler",
+          "internal_binary": "bin/operator_case_radartools_pulse_doppler",
+          "published_binary": "dlfft/bin/operator_radartools_pulse_doppler"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_wavelets_qmf",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/wavelets/qmf",
+      "work": "not_applicable/work/operators/wavelets/qmf",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_wavelets_qmf",
+          "internal_binary": "bin/remaining_operator_case_wavelets_qmf",
+          "published_binary": "not_applicable/bin/operator_wavelets_qmf"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_bsplines_quadratic",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/bsplines/quadratic",
+      "work": "not_applicable/work/operators/bsplines/quadratic",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_bsplines_quadratic",
+          "internal_binary": "bin/remaining_operator_case_bsplines_quadratic",
+          "published_binary": "not_applicable/bin/operator_bsplines_quadratic"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_resample",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/resample",
+      "work": "fft_thrust/work/operators/filtering/resample",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_resample",
+          "internal_binary": "bin/remaining_operator_case_filtering_resample",
+          "published_binary": "fft_thrust/bin/operator_filtering_resample"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_resample",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/filtering/resample",
+      "work": "dlfft/work/operators/filtering/resample",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_resample",
+          "internal_binary": "bin/remaining_operator_case_filtering_resample",
+          "published_binary": "dlfft/bin/operator_filtering_resample"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_resample_poly",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/resample_poly",
+      "work": "not_applicable/work/operators/filtering/resample_poly",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_resample_poly",
+          "internal_binary": "bin/remaining_operator_case_filtering_resample_poly",
+          "published_binary": "not_applicable/bin/operator_filtering_resample_poly"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_wavelets_ricker",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/wavelets/ricker",
+      "work": "not_applicable/work/operators/wavelets/ricker",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_wavelets_ricker",
+          "internal_binary": "bin/operator_case_wavelets_ricker",
+          "published_binary": "not_applicable/bin/operator_wavelets_ricker"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_waveforms_sawtooth",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/waveforms/sawtooth",
+      "work": "not_applicable/work/operators/waveforms/sawtooth",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_waveforms_sawtooth",
+          "internal_binary": "bin/operator_case_waveforms_sawtooth",
+          "published_binary": "not_applicable/bin/operator_waveforms_sawtooth"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_sosfilt",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/sosfilt",
+      "work": "not_applicable/work/operators/filtering/sosfilt",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_sosfilt",
+          "internal_binary": "bin/remaining_operator_case_filtering_sosfilt",
+          "published_binary": "not_applicable/bin/operator_filtering_sosfilt"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_spectral_analysis_spectrogram",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/spectral_analysis/spectrogram",
+      "work": "fft_thrust/work/operators/spectral_analysis/spectrogram",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_spectrogram",
+          "internal_binary": "bin/operator_case_spectrogram",
+          "published_binary": "fft_thrust/bin/operator_spectral_analysis_spectrogram"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_spectral_analysis_spectrogram",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/spectral_analysis/spectrogram",
+      "work": "dlfft/work/operators/spectral_analysis/spectrogram",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_spectrogram",
+          "internal_binary": "bin/operator_case_spectrogram",
+          "published_binary": "dlfft/bin/operator_spectral_analysis_spectrogram"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_waveforms_square",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/waveforms/square",
+      "work": "not_applicable/work/operators/waveforms/square",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "operator_case_waveforms_square",
+          "internal_binary": "bin/operator_case_waveforms_square",
+          "published_binary": "not_applicable/bin/operator_waveforms_square"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_spectral_analysis_stft",
+      "kind": "operator",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/spectral_analysis/stft",
+      "work": "fft_thrust/work/operators/spectral_analysis/stft",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_spectral_analysis_stft",
+          "internal_binary": "bin/remaining_operator_case_spectral_analysis_stft",
+          "published_binary": "fft_thrust/bin/operator_spectral_analysis_stft"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_spectral_analysis_stft",
+      "kind": "operator",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/cases/spectral_analysis/stft",
+      "work": "dlfft/work/operators/spectral_analysis/stft",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_spectral_analysis_stft",
+          "internal_binary": "bin/remaining_operator_case_spectral_analysis_stft",
+          "published_binary": "dlfft/bin/operator_spectral_analysis_stft"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_windows_taylor",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/windows/taylor",
+      "work": "not_applicable/work/operators/windows/taylor",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_windows_taylor",
+          "internal_binary": "bin/remaining_operator_case_windows_taylor",
+          "published_binary": "not_applicable/bin/operator_windows_taylor"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_windows_triang",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/windows/triang",
+      "work": "not_applicable/work/operators/windows/triang",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_windows_triang",
+          "internal_binary": "bin/remaining_operator_case_windows_triang",
+          "published_binary": "not_applicable/bin/operator_windows_triang"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_waveforms_unit_impulse",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/waveforms/unit_impulse",
+      "work": "not_applicable/work/operators/waveforms/unit_impulse",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_waveforms_unit_impulse",
+          "internal_binary": "bin/remaining_operator_case_waveforms_unit_impulse",
+          "published_binary": "not_applicable/bin/operator_waveforms_unit_impulse"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_upfirdn",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/upfirdn",
+      "work": "not_applicable/work/operators/filtering/upfirdn",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_upfirdn",
+          "internal_binary": "bin/remaining_operator_case_filtering_upfirdn",
+          "published_binary": "not_applicable/bin/operator_filtering_upfirdn"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_spectral_analysis_vectorstrength",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/spectral_analysis/vectorstrength",
+      "work": "not_applicable/work/operators/spectral_analysis/vectorstrength",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_spectral_analysis_vectorstrength",
+          "internal_binary": "bin/remaining_operator_case_spectral_analysis_vectorstrength",
+          "published_binary": "not_applicable/bin/operator_spectral_analysis_vectorstrength"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_filtering_wiener",
+      "kind": "operator",
+      "logical_backend": "not_applicable",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/cases/filtering/wiener",
+      "work": "not_applicable/work/operators/filtering/wiener",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "remaining_operator_case_filtering_wiener",
+          "internal_binary": "bin/remaining_operator_case_filtering_wiener",
+          "published_binary": "not_applicable/bin/operator_filtering_wiener"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_abnormal_input",
+      "kind": "abnormal",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/abnormal",
+      "work": "fft_thrust/work/abnormal/operator",
+      "cmake_options": [],
+      "targets": [
+        {
+          "cmake_target": "abnormal_input_operator_abnormal",
+          "internal_binary": "bin/abnormal_input_operator_abnormal",
+          "published_binary": "fft_thrust/bin/operator_abnormal_input"
+        }
+      ]
+    },
+    {
+      "build_group_id": "task1_abnormal_input",
+      "kind": "abnormal",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/tasks/abnormal/task1",
+      "work": "fft_thrust/work/abnormal/task1",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "task1_task_abnormal",
+          "internal_binary": "bin/task1_task_abnormal",
+          "published_binary": "fft_thrust/bin/task1_abnormal_input"
+        }
+      ]
+    },
+    {
+      "build_group_id": "task2_abnormal_input",
+      "kind": "abnormal",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/tasks/abnormal/task2",
+      "work": "fft_thrust/work/abnormal/task2",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "task2_task_abnormal",
+          "internal_binary": "bin/task2_task_abnormal",
+          "published_binary": "fft_thrust/bin/task2_abnormal_input"
+        }
+      ]
+    },
+    {
+      "build_group_id": "operator_abnormal_input",
+      "kind": "abnormal",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/operators/abnormal",
+      "work": "dlfft/work/abnormal/operator",
+      "cmake_options": [],
+      "targets": [
+        {
+          "cmake_target": "abnormal_input_operator_abnormal",
+          "internal_binary": "bin/abnormal_input_operator_abnormal",
+          "published_binary": "dlfft/bin/operator_abnormal_input"
+        }
+      ]
+    },
+    {
+      "build_group_id": "task1_abnormal_input",
+      "kind": "abnormal",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/tasks/abnormal/task1",
+      "work": "dlfft/work/abnormal/task1",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "task1_task_abnormal",
+          "internal_binary": "bin/task1_task_abnormal",
+          "published_binary": "dlfft/bin/task1_abnormal_input"
+        }
+      ]
+    },
+    {
+      "build_group_id": "task2_abnormal_input",
+      "kind": "abnormal",
+      "logical_backend": "dlfft",
+      "configured_backend": "dlfft",
+      "source": "test_all/tasks/abnormal/task2",
+      "work": "dlfft/work/abnormal/task2",
+      "cmake_options": [
+        "-DUSE_DLFFT=ON",
+        "-DUSE_THRUST=OFF"
+      ],
+      "targets": [
+        {
+          "cmake_target": "task2_task_abnormal",
+          "internal_binary": "bin/task2_task_abnormal",
+          "published_binary": "dlfft/bin/task2_abnormal_input"
+        }
+      ]
+    },
+    {
+      "build_group_id": "fft_library_swap_compatibility",
+      "kind": "fft_library_swap",
+      "logical_backend": "fft_thrust",
+      "configured_backend": "fft_thrust",
+      "source": "test_all/operators/fft_backend",
+      "work": "fft_thrust/work/fft_library_swap",
+      "cmake_options": [
+        "-DUSE_DLFFT=OFF",
+        "-DUSE_THRUST=ON"
+      ],
+      "targets": [
+        {
+          "cmake_target": "fft_library_swap_dlfft",
+          "internal_binary": "bin/fft_library_swap_dlfft",
+          "published_binary": "fft_library_swap/bin/fft_library_swap_dlfft",
+          "link_configuration": "FFT_LIBRARY=dlfft",
+          "source": "test_all/operators/fft_backend/src/fft_library_swap_demo.cu"
+        },
+        {
+          "cmake_target": "fft_library_swap_zkx_fft_thrust",
+          "internal_binary": "bin/fft_library_swap_zkx_fft_thrust",
+          "published_binary": "fft_library_swap/bin/fft_library_swap_zkx_fft_thrust",
+          "link_configuration": "FFT_LIBRARY=zkx_fft_thrust",
+          "source": "test_all/operators/fft_backend/src/fft_library_swap_demo.cu"
+        }
+      ]
+    }
+  ]
+}

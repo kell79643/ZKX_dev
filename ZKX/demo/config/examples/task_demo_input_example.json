@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "scale_set_id": "task_demo_external_input_example_v1",
+  "description": "Task1 and Task2 external JSON input examples for the interactive demo menu.",
+  "tasks": {
+    "Task1": {
+      "task_name": "Task1",
+      "scales": [
+        {
+          "scale_id": "task1_demo_json_example",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 65536,
+          "input_shape": [128, 512],
+          "mapping_reason": "Deterministic Task1 external JSON demonstration input.",
+          "parameters": {
+            "num_pulses": 128,
+            "samples_per_pulse": 512,
+            "pulse_samples": 128,
+            "sample_rate_hz": 2560000,
+            "prf_hz": 8000,
+            "bandwidth_hz": 640000,
+            "carrier_frequency_hz": 10000000000,
+            "target_delay_samples": 171,
+            "doppler_bin": 16,
+            "target_amplitude": 1.5,
+            "noise_std": 0.035,
+            "noise_seed": 20260720,
+            "pfa": 0.001,
+            "cfar_guard_doppler": 1,
+            "cfar_guard_range": 2,
+            "cfar_reference_doppler": 2,
+            "cfar_reference_range": 6,
+            "ambiguity_nfreq": 256
+          }
+        }
+      ]
+    },
+    "Task2": {
+      "task_name": "Task2",
+      "scales": [
+        {
+          "scale_id": "task2_demo_json_example",
+          "order_of_magnitude": "10^4",
+          "actual_elements": 16384,
+          "input_shape": [16384],
+          "mapping_reason": "Deterministic Task2 external JSON demonstration input.",
+          "parameters": {
+            "samples": 16384,
+            "sample_rate_hz": 512,
+            "target_delay_samples": 3276,
+            "noise_seed": 20260714,
+            "target_weight": 0.8,
+            "gaussian_weight": 0.16,
+            "sawtooth_weight": 0.06,
+            "square_weight": 0.06,
+            "noise_amplitude": 0.04,
+            "filter_taps": 129,
+            "filter_cutoff_hz": 90,
+            "step3_crop_each": 128,
+            "fusion_weight_fm": 0.1,
+            "fusion_weight_correlation": 0.7,
+            "fusion_weight_spectral": 0.1,
+            "fusion_weight_wavelet": 0.1,
+            "argrelextrema_order": 3,
+            "kalman_observation_count": 1024,
+            "kalman_F": 1,
+            "kalman_Q": 0.0001,
+            "kalman_H": 1,
+            "kalman_R": 0.002,
+            "kalman_measurement_noise_variant": 0.5
+          }
+        }
+      ]
+    }
+  }
+}

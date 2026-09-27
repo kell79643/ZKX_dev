@@ -1,0 +1,1765 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s01_baseline__10960d3a7c71662f",
+      "scale_id": "task1_s01_baseline",
+      "source_csv_sha256": "c3b637f634333c3574235e03372e32d55e0cda0b2ecfe68a26f712d4bebb176e"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s01_doppler_neg__f0367e91092f72d3",
+      "scale_id": "task1_s01_doppler_neg",
+      "source_csv_sha256": "39aa3d6ded00f070a6fcb0ebdc3451a63caef577c2236967148009e77fe123b0"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s01_doppler_pos__1a12ea22c4f51d42",
+      "scale_id": "task1_s01_doppler_pos",
+      "source_csv_sha256": "ef18b8ecc5e778a80aa2091de4e170abc095930c1f344eb8f8c8b80c8e56b72c"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s01_far__109d8b1a98d6fedb",
+      "scale_id": "task1_s01_far",
+      "source_csv_sha256": "77647d8c8cfc8e8b95127c437027ae5c70709e43d3daabedf3a3c9115af7d95d"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s01_near__4613562971ad8c41",
+      "scale_id": "task1_s01_near",
+      "source_csv_sha256": "206420ab7046a1d04797a4106e6102d05d7cda60c96b3bedc154264051635777"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s01_noiseless__2a254ec4f3cc3bf4",
+      "scale_id": "task1_s01_noiseless",
+      "source_csv_sha256": "495a43f716c808fa48c53286653102c5751db77ed7194aee099eca3196525ada"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s01_noisy__274ca0d27ca5f545",
+      "scale_id": "task1_s01_noisy",
+      "source_csv_sha256": "6c2b6d2883cc297bc8258d6acccea6f5c2c59b20c8103d2015db61a082ab12c2"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s01_quiet__61e47ee488d0692a",
+      "scale_id": "task1_s01_quiet",
+      "source_csv_sha256": "0fe9ea3c244c90939d891dd5523ae28590803bccef867e9d8d1923c6e8ca17e3"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s01_strong__c0129e9ee52af466",
+      "scale_id": "task1_s01_strong",
+      "source_csv_sha256": "1bd3deb5cf013e86438705bbc9bbe1b2a89a5c162634f6e9c5a4c1fc1e468318"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s01_weak__4a4a6814111164aa",
+      "scale_id": "task1_s01_weak",
+      "source_csv_sha256": "e19ca428e11f4230d8e73e9c819ea8b11808a410aea83530ac72f4772ee86c3f"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s02_baseline__72d340e790da5ea4",
+      "scale_id": "task1_s02_baseline",
+      "source_csv_sha256": "e02fb950f62bbf281fc89d3548b820ea0b4f8c70ed247559628d30761378fc15"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s02_doppler_neg__e01c3478cf43f3a2",
+      "scale_id": "task1_s02_doppler_neg",
+      "source_csv_sha256": "73702f4843a3da5ebcd6c40c3e6e9ee8464d5b4761731ee5b0c9f8997381d753"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s02_doppler_pos__bcef0b069af941e9",
+      "scale_id": "task1_s02_doppler_pos",
+      "source_csv_sha256": "be4d111d9aa74798affaebf6ca38ac796647a6801d0b7dd09ca5adef7a4642a8"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s02_far__bb93a908f94173d3",
+      "scale_id": "task1_s02_far",
+      "source_csv_sha256": "e60a3de93f26c088ca2f99f7a998117998dec28c847780cd38964555964435b6"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s02_near__eb7ec51b3b78760a",
+      "scale_id": "task1_s02_near",
+      "source_csv_sha256": "975718070662423800a997291b928f539fe248984c80da42d3dbd493be4feff6"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s02_noiseless__2b79691cbf2a7137",
+      "scale_id": "task1_s02_noiseless",
+      "source_csv_sha256": "5a71b8c7ba3cb358b1a82b1fe7d608e3586694c051f1cc6c1379d03b2d182dfe"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s02_noisy__bed54e8cd297d461",
+      "scale_id": "task1_s02_noisy",
+      "source_csv_sha256": "791d778c1c2c7049a456ac045830b988e15e3b4eea394d2016b1ae0e33893780"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s02_quiet__55b1c1f61c73857c",
+      "scale_id": "task1_s02_quiet",
+      "source_csv_sha256": "d4621b1c09830a240ef9d667d60e20e9ab80592d5ccf54a5010db47c00985428"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s02_strong__d9baadd8b96880ee",
+      "scale_id": "task1_s02_strong",
+      "source_csv_sha256": "24c3e4b2e0fa6b4a18a7aff39eb97533ee60342635a952da77c09ee0f55b1bcd"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s02_weak__a383d8e2734cdcee",
+      "scale_id": "task1_s02_weak",
+      "source_csv_sha256": "17b57f181e040c0c0d7c89aeb7dd1d6da8709b01f1dcec0e1b2e456713c87d6b"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s03_baseline__8dd721138eb2da45",
+      "scale_id": "task1_s03_baseline",
+      "source_csv_sha256": "4e8dfad514965761ea7aea17dda9e6fcb4029a9ef6a4ded88a30fcb2bab9581b"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s03_doppler_neg__63ba598a89a38159",
+      "scale_id": "task1_s03_doppler_neg",
+      "source_csv_sha256": "afad0c703792bf36135b1454e434b963dce65c3adfb2aef3826301089e3183ca"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s03_doppler_pos__658c59b58a839ed2",
+      "scale_id": "task1_s03_doppler_pos",
+      "source_csv_sha256": "1ee7e39c4d8ce61441e8701d97c6b9501c01c6b578709ea1badbc0dfc09fc3f0"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s03_far__28a1012b5f8d0c77",
+      "scale_id": "task1_s03_far",
+      "source_csv_sha256": "47da32ba6503975462ac3023aa28b6479c6677461adbe60eabadfd89baa64e9d"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s03_near__0221725e8fb27ca5",
+      "scale_id": "task1_s03_near",
+      "source_csv_sha256": "7e24cffaf191d693c952fbe969abaf39481cc0fad63327a8f37a6888c8ddbf11"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s03_noiseless__cc3a565353e8965b",
+      "scale_id": "task1_s03_noiseless",
+      "source_csv_sha256": "d564d6158d91d9a8991bcdd22de7137c0cb0d6d7c4aee0f8e2838ff930c2e5e5"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s03_noisy__3b3b395ff4a988d9",
+      "scale_id": "task1_s03_noisy",
+      "source_csv_sha256": "462e86e940888a002837749ef227a00f867128f242900c28d18815f02547c7c6"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s03_quiet__b4e29b0cde9e5dfd",
+      "scale_id": "task1_s03_quiet",
+      "source_csv_sha256": "b3c8d1dd959f48bb3dde14788879d4cddb93397ba290e65b97a961c8b045e311"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s03_strong__d47b602a0144ef50",
+      "scale_id": "task1_s03_strong",
+      "source_csv_sha256": "73fabc5b8c67901be604f1487f474a5f1332e25ac2d878ae219947d9598bbd96"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s03_weak__3dab5079d1372d4c",
+      "scale_id": "task1_s03_weak",
+      "source_csv_sha256": "7e6c5fbe91314d6dcc54fe73f014145769b4125a59b137a6e434e9946c0e9832"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s04_baseline__e411928340c0320d",
+      "scale_id": "task1_s04_baseline",
+      "source_csv_sha256": "cf12f694dde6d3a4951a618c96c0d8176791b9d36d9f37293a8f0b6027a2f07f"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s04_doppler_neg__bc7022bd1d00ea9e",
+      "scale_id": "task1_s04_doppler_neg",
+      "source_csv_sha256": "d670ff229e98956889c3a48c3fba275d5eea661a3c72dc6527fc54db59739ce6"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s04_doppler_pos__e1f40dc9b6c84b6a",
+      "scale_id": "task1_s04_doppler_pos",
+      "source_csv_sha256": "fa7553907d554395a42132f9d6e3d92f37916b5f945035c542de168e0ec4fd3a"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s04_far__fcee9187f07edb7c",
+      "scale_id": "task1_s04_far",
+      "source_csv_sha256": "74ef3c2e4886e5a625318f8ff37d94152f68c0484655eeef473c45b52324cb69"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s04_near__c0146f89ab418158",
+      "scale_id": "task1_s04_near",
+      "source_csv_sha256": "9670b21435d4e68ef9d3642d40b8784b6bebe606792b38a74e4ff8c49ecbbc0b"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s04_noiseless__9cfc59dfef14d07d",
+      "scale_id": "task1_s04_noiseless",
+      "source_csv_sha256": "0304794ce9be7386e5c03d578596c9c71d8c9f5abac25806030edb1e446177c6"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s04_noisy__13c3866ff7a07afb",
+      "scale_id": "task1_s04_noisy",
+      "source_csv_sha256": "d8a08e6c16dd02bfdb82e207446a88aa4e6ede0a031e668ec184bae500a22b53"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s04_quiet__64b2d35087355bd6",
+      "scale_id": "task1_s04_quiet",
+      "source_csv_sha256": "cb4d6211536eb12dd42f6bcb77a69c0e653eec2cdd4aa895b123aa1d30941ac1"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s04_strong__aab6720ef21b2574",
+      "scale_id": "task1_s04_strong",
+      "source_csv_sha256": "a04c9cc1e1e810687f79f05610dc154d708a22c0766ce8eab81b2d92a7c10b3f"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s04_weak__d8d1fb055768c288",
+      "scale_id": "task1_s04_weak",
+      "source_csv_sha256": "3104ebb5b7cd06da148e347d86b89001bad840164d512eff4b7a0b5ced2879c8"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s05_baseline__c3356e83c65a178d",
+      "scale_id": "task1_s05_baseline",
+      "source_csv_sha256": "c7ce30230827d8fa23f65ae48745d12794065a3e2e885b4a9bad2b69534b99a9"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s05_doppler_neg__a91654dbbdc0255b",
+      "scale_id": "task1_s05_doppler_neg",
+      "source_csv_sha256": "8e07463b3b54f77e5839042ab088753e62a7a3267f79f326ff5cb6aabe16d8e1"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s05_doppler_pos__f7fa1f13523d485a",
+      "scale_id": "task1_s05_doppler_pos",
+      "source_csv_sha256": "f4b93192308a07f21b5998a9955a404b17acfca2cd1be17a24c184682acd220d"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s05_far__5e71aceef6d000e5",
+      "scale_id": "task1_s05_far",
+      "source_csv_sha256": "2475c8fbc3dc78419d0225f8331f1eb0b8df457555ef699ad6436dc76fbdd5e3"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s05_near__d85d54f0f178c15c",
+      "scale_id": "task1_s05_near",
+      "source_csv_sha256": "41e52ae08155c0f498fc9a80a0a5ac728ce779d540c4e4a3fb36313545cc3a48"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s05_noiseless__338904909982105e",
+      "scale_id": "task1_s05_noiseless",
+      "source_csv_sha256": "26affb9d9beee7069cf2af274a9baa0b36852971b065d5374f005e1c96fbbe45"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s05_noisy__3a4364467320d93c",
+      "scale_id": "task1_s05_noisy",
+      "source_csv_sha256": "1a0263e64b91e51ec4cb08eb4ca8e49cbc1dce2ba3580f17f3d1ae2d90f3f25c"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s05_quiet__ef7d339770ff6b25",
+      "scale_id": "task1_s05_quiet",
+      "source_csv_sha256": "f5e55058c7fe80e449640f473a50e89c0eee03740a07769d6ab6c1db03147dac"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s05_strong__f304a9147a064533",
+      "scale_id": "task1_s05_strong",
+      "source_csv_sha256": "6d80a5a7597e5bb1dafd355de0f99da888f67d5261dabf10d02eb5941fd17315"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s05_weak__9d6570a8ffc45881",
+      "scale_id": "task1_s05_weak",
+      "source_csv_sha256": "d8e3de2908592a99a160e7c175d886fa2e7aa26f31096175dcc7d4d4ec8af081"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s06_baseline__64437203f7e06c8a",
+      "scale_id": "task1_s06_baseline",
+      "source_csv_sha256": "51a1eee3815131e237999eeff90a78ae58e5b0ff44b491977eec59e6616f89f8"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s06_doppler_neg__c91bda98543412d1",
+      "scale_id": "task1_s06_doppler_neg",
+      "source_csv_sha256": "8073c3b1c7a7ae2522ad03dd8e4cdf3da6805a155a86bd09dde9353eb8a26576"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s06_doppler_pos__e79ba6261fe55fbd",
+      "scale_id": "task1_s06_doppler_pos",
+      "source_csv_sha256": "29a3eaefe974727079004455918df89f71dda740e59a803021a63d9171e6e1bf"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s06_far__a4ac0bfa012f8a35",
+      "scale_id": "task1_s06_far",
+      "source_csv_sha256": "20f7ae6edc280dce3180668d80f7bb12da4fd2f7f6612f3471fd4c7ee808581a"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s06_near__a3f5f924bd95d53a",
+      "scale_id": "task1_s06_near",
+      "source_csv_sha256": "c2334d8f3135e3887521e750bc91992b0562d022e513eca2afa639946876057c"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s06_noiseless__68661efbc4dddcbc",
+      "scale_id": "task1_s06_noiseless",
+      "source_csv_sha256": "d92976dd5fc804157c2c018e84b5b553248a71fe3051d9aa46ff4020949426d3"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s06_noisy__fa54da6a7e2f7f2f",
+      "scale_id": "task1_s06_noisy",
+      "source_csv_sha256": "dcef1b0b26dc6fb358dffee73d4da7087b891ac8db400a38e748822bcc7f64b9"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s06_quiet__8986cd0ad5c0d3c6",
+      "scale_id": "task1_s06_quiet",
+      "source_csv_sha256": "c5df9ec5b23bcfc06a711f36e6082b0751c90bf2af0f50a42ff40850bb6e6d69"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s06_strong__a6d11038584946f6",
+      "scale_id": "task1_s06_strong",
+      "source_csv_sha256": "9ddafbcf35e1111493e6cc341a7ac1df3911885c16201d993e9be59752452d5a"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s06_weak__f3f93ec17c27baf2",
+      "scale_id": "task1_s06_weak",
+      "source_csv_sha256": "0dc05709fa76a8d530443d5f9acf26f14c8de8f158f8c9e32130cd68daff9622"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s07_baseline__edf75b3d330f4e68",
+      "scale_id": "task1_s07_baseline",
+      "source_csv_sha256": "3edc2aeb5d1fdeb69f3f0ee46443212a469648b57cccd8fc283a3eab4d42a86b"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s07_doppler_neg__7b65dcbbd4a093a8",
+      "scale_id": "task1_s07_doppler_neg",
+      "source_csv_sha256": "a892ca449b849cf58a89a353860a7ea61a9a9d13939e1df2a9fd70f28a33245c"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s07_doppler_pos__a0218ec2b57702a1",
+      "scale_id": "task1_s07_doppler_pos",
+      "source_csv_sha256": "9c54060242fe388d6a83e98ea0d7cb52bdc8579d8dc60512f8480f3c4fa1f642"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s07_far__445b3ff4ff9cdac8",
+      "scale_id": "task1_s07_far",
+      "source_csv_sha256": "18281767b1e5ed3c4262ccd0c74d7c0b6bdb8fe5c0a9a14bdf32b397c0f09c13"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s07_near__5650540aef247a70",
+      "scale_id": "task1_s07_near",
+      "source_csv_sha256": "76544cb1cef835f876017eb39bd243c93b501fe128ed6129cda4b7247ae8de88"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s07_noiseless__db816e3e5f3e4e46",
+      "scale_id": "task1_s07_noiseless",
+      "source_csv_sha256": "f427b1e18fa803ea5036f0d633ec520ced7715e9b66d3e47224c7b8f4619c141"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s07_noisy__2916dc45901783f9",
+      "scale_id": "task1_s07_noisy",
+      "source_csv_sha256": "504016174b435c1bef9f3935c6fe7219fa5abf1343d81253d18c03778a1c3464"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s07_quiet__c39f7ab0db1e379f",
+      "scale_id": "task1_s07_quiet",
+      "source_csv_sha256": "22931c35b9d0e4bb691284f2bf7da496ff84cac8656ecc8592851dbb61b70018"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s07_strong__5db6fd6439475ac6",
+      "scale_id": "task1_s07_strong",
+      "source_csv_sha256": "bf284c62cf695d693cd284c16585d372bbd8281354fc50bb0afae07f7d633dcc"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s07_weak__d61c5e98987ce6cd",
+      "scale_id": "task1_s07_weak",
+      "source_csv_sha256": "4131f2d65bd80697f23f35bfde02690284521fddd1bbcc383362c6f6b1378d53"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s08_baseline__5162cfff94710288",
+      "scale_id": "task1_s08_baseline",
+      "source_csv_sha256": "d4547473fdfca8f8237ccf3d0a30d356d97cc3a2904c5e89f0511cf47ecad96f"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s08_doppler_neg__31d0190594d2a718",
+      "scale_id": "task1_s08_doppler_neg",
+      "source_csv_sha256": "70b349fc7480ab706583fc63f0242255af8a20c6e2449aebfb47ce3d34fcfa84"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s08_doppler_pos__e1bf5c769b9bc2b0",
+      "scale_id": "task1_s08_doppler_pos",
+      "source_csv_sha256": "7817db19763d3499b62acbd1144e66a2853ea8d02247b553dbb3ca216eccf156"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s08_far__12fd296f18abe2e5",
+      "scale_id": "task1_s08_far",
+      "source_csv_sha256": "bd52a9763ac6b518b01114c96ad00021e75b7e67b884c757a47448242bf4d2d9"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s08_near__27efb42db4943076",
+      "scale_id": "task1_s08_near",
+      "source_csv_sha256": "329ec126329911a863299e9c83b91a4088a073fd1fa5edf07d0f2bd3335d7d1d"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s08_noiseless__572903ce22db3be9",
+      "scale_id": "task1_s08_noiseless",
+      "source_csv_sha256": "8494c10cfbfa8b42296eaaf56eacb6e7307e9b13d4de05a41f07fb00b4cc44b5"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s08_noisy__cab5ace8a43c151c",
+      "scale_id": "task1_s08_noisy",
+      "source_csv_sha256": "c4b7f89f50b2c784613503637241bbff6b5b61b6b4686ec174084a73bc95298d"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s08_quiet__0fe5fc9fba6d2fca",
+      "scale_id": "task1_s08_quiet",
+      "source_csv_sha256": "0542ec9c62841c163dca4b1b4eb0d22f5dedd15ca25ba2cd3930a977b93c2d3c"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s08_strong__7dcf6fdb2e764c24",
+      "scale_id": "task1_s08_strong",
+      "source_csv_sha256": "fb7c228d50890b126fb85d9530be162a8ef41e8ab06f50266a1aadfca33f5b5d"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s08_weak__7f7b8ddb24bea129",
+      "scale_id": "task1_s08_weak",
+      "source_csv_sha256": "0f315c13c922e9c419ba017b1fb09fb03ad96cfe3eec61826eee36906050a8e1"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s09_baseline__88f00aa941831e8c",
+      "scale_id": "task1_s09_baseline",
+      "source_csv_sha256": "9311302b08720b3e9a5ba1293cbb080c80176bfe9d2636bd530dff3bbdbf5bce"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s09_doppler_neg__a87dbba5b4887307",
+      "scale_id": "task1_s09_doppler_neg",
+      "source_csv_sha256": "d1cc41f263363ddb3d2bb2ddbab319c531ae2213cd87ea7e76d0d925f1b4e01b"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s09_doppler_pos__a105bd702ba3828e",
+      "scale_id": "task1_s09_doppler_pos",
+      "source_csv_sha256": "26c82382d7e103d0af8de559376aac00cf922a940f3228f0f503926769de30e4"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s09_far__2716eb279496252c",
+      "scale_id": "task1_s09_far",
+      "source_csv_sha256": "783485222521bee0e2dc6fa7963759f7e55cf32228ea4ad6dc470e7d854eb413"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s09_near__dd185175c8a9b985",
+      "scale_id": "task1_s09_near",
+      "source_csv_sha256": "38bf5d607b31fc913bf46e3822c7d509da313daab755e1bf2d71209b24fa7d17"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s09_noiseless__f0a31da3bc53dec2",
+      "scale_id": "task1_s09_noiseless",
+      "source_csv_sha256": "2201a1adec290c65ce67c9480160f371c9b63cb96f02a1b501637f9819231f43"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s09_noisy__0f2f15dd6ac348b5",
+      "scale_id": "task1_s09_noisy",
+      "source_csv_sha256": "1372f254224063e221eec492ff11ae0d001c8296c3edc262cbdd4b17c649816d"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s09_quiet__5d3019b0a84de490",
+      "scale_id": "task1_s09_quiet",
+      "source_csv_sha256": "870de87b35a49688a76e499bdbdea1038954ec0e26e352826a8d6681e8cc1e81"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s09_strong__c65d7b7238458571",
+      "scale_id": "task1_s09_strong",
+      "source_csv_sha256": "042f8a0444d7193a856fd18c632f59cc4de5e65d2ad73d9af775e4ae050ed645"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s09_weak__da3d32c995988850",
+      "scale_id": "task1_s09_weak",
+      "source_csv_sha256": "8a65a9c37e678fba5b080e9eb48f6daf656676746ccf1ea05f7a064088a2507a"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s10_baseline__84a906ac75055be8",
+      "scale_id": "task1_s10_baseline",
+      "source_csv_sha256": "ec9da24cacf40581c70e8cccbae3b3ab52ee2d939670f9edb465c8fbe2376fa8"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s10_doppler_neg__275a301dbb485200",
+      "scale_id": "task1_s10_doppler_neg",
+      "source_csv_sha256": "837de06ae7b2d8fb68d93b94b80ac5cd9c0f87d42dc07b85480ba67d28afd125"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s10_doppler_pos__779f95e0852c47a9",
+      "scale_id": "task1_s10_doppler_pos",
+      "source_csv_sha256": "b21fa0719679c1b36aae5c6ec83d6032d1a6442d52becd2596c0fea01affd585"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s10_far__9cc98aebad3a505d",
+      "scale_id": "task1_s10_far",
+      "source_csv_sha256": "ed9a3eb7ae902a88eb4b61660c9ed81ea14311f7454ec44029a38af79792a249"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s10_near__555c8c5d4b54bff5",
+      "scale_id": "task1_s10_near",
+      "source_csv_sha256": "26062a22da72b2ed31d7d2aa7925bd890ccc43277b0b92fb8720f084289112db"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s10_noiseless__763913c539150401",
+      "scale_id": "task1_s10_noiseless",
+      "source_csv_sha256": "2efa398a4b436ff98a46ad3a7c14dade6373086eaad0741782029492d020bda2"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s10_noisy__37eb33fd2436d6b6",
+      "scale_id": "task1_s10_noisy",
+      "source_csv_sha256": "2db95fcd83fbabd2f20950fb9cd2edc00c393dae7d8ced7212aec5fb3eaeb432"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s10_quiet__e0d238c613047c48",
+      "scale_id": "task1_s10_quiet",
+      "source_csv_sha256": "e63f931aa5db41469707d03018ff269924dac6c8b154e281504a51b86df176a1"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s10_strong__e5ecbe82aae56c94",
+      "scale_id": "task1_s10_strong",
+      "source_csv_sha256": "57c5f46061957a2680590042541ee9ea0e16ea8fa94c8859ebf68707203981b0"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s10_weak__f84a97c9c89b68b2",
+      "scale_id": "task1_s10_weak",
+      "source_csv_sha256": "80c66aafd66baff20a3ba9d2e1c34864d6f5c49076af51bcc3bdd71347eea0bf"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s11_baseline__605214590a2b4df7",
+      "scale_id": "task1_s11_baseline",
+      "source_csv_sha256": "22e733aec3e546a8c5f247819507c4b6ac649a3b25b2d12161faffc101780f96"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s11_doppler_neg__2f3b9395b8eddef4",
+      "scale_id": "task1_s11_doppler_neg",
+      "source_csv_sha256": "4df2e2a16502a79fb261213672f9322cf44ab60c243ac2e8c8f9fa5750ddd9cf"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s11_doppler_pos__4fe41b4f8be037a2",
+      "scale_id": "task1_s11_doppler_pos",
+      "source_csv_sha256": "cc91e0c91ce73b9f4687746d7c927d3622f316a77ffd6212d53034959133f5b0"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s11_far__73d44edb607a3279",
+      "scale_id": "task1_s11_far",
+      "source_csv_sha256": "d4a95b9cd480c29534afa185d3c20d5d3d02768d33ae408deb9e8555138fba25"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s11_near__ba89b3911681627f",
+      "scale_id": "task1_s11_near",
+      "source_csv_sha256": "1bea5347aa3d4693856f3df11802b7e2f5671d5390794d1637329dcf3584f069"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s11_noiseless__ab875c241f808c95",
+      "scale_id": "task1_s11_noiseless",
+      "source_csv_sha256": "db259cfa858eea86c16311245a479cd92f974c9519629c9f60c8f0aea5f3d6e9"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s11_noisy__54e8c0c86e5a3b59",
+      "scale_id": "task1_s11_noisy",
+      "source_csv_sha256": "424348c508d57bce277967fdee4c7307a70decc4495607aed117bc78be92e428"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s11_quiet__28623548b011643f",
+      "scale_id": "task1_s11_quiet",
+      "source_csv_sha256": "f1d81f732411ac71ed4f82f4248186074904bcf994704ed397d4a46cfafe2302"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s11_strong__c72328d7e5535969",
+      "scale_id": "task1_s11_strong",
+      "source_csv_sha256": "c29b6ef3e5e1911a6b64dd221fb29187689eb60f1dcad7882b3f1b8463bfb501"
+    },
+    {
+      "target": "task1",
+      "backend": "fft_thrust",
+      "dtype": "ComplexFP32",
+      "case_id": "task1_pipeline__task1_s11_weak__0a1a2f21703cc13b",
+      "scale_id": "task1_s11_weak",
+      "source_csv_sha256": "97d343284aa8e84b894418c77352965036976cfa82e458a459463443aa427810"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s01_baseline__3f1be800df3cea6d",
+      "scale_id": "task2_s01_baseline",
+      "source_csv_sha256": "eda3ca137e0d49d6424c76245ca1f6f0eca3288a54c00969f45b5a361eeabb68"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s01_far__657e59aae70906d0",
+      "scale_id": "task2_s01_far",
+      "source_csv_sha256": "9aaae2f46bbb5d3a9b5934cb62ecf487bd796847964cde9b09825ef152e963c4"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s01_gaussian_dominant__bf8ca4192e88d1f7",
+      "scale_id": "task2_s01_gaussian_dominant",
+      "source_csv_sha256": "164f9a078eb08ae43eb77b4a0ad91966e3b91d77019857abe6f8af6935edd6c7"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s01_near__3ffea69561cd022b",
+      "scale_id": "task2_s01_near",
+      "source_csv_sha256": "e3090f090840080a2c53d0775924868753d07f67409c4caf885e81c495e2a802"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s01_noiseless__1593b807811b0553",
+      "scale_id": "task2_s01_noiseless",
+      "source_csv_sha256": "785f5ae5b6bd7120b8133f385870a6a7d0b191bf0b5fbc36c3fe80be542272ef"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s01_noisy__b8a8dff9e599ecf2",
+      "scale_id": "task2_s01_noisy",
+      "source_csv_sha256": "9f21194afa27f2b7eb52a71672a07f6e3a070ebf395ce09949b3371132df4fd1"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s01_periodic_dominant__ce1d1bbfadc3c225",
+      "scale_id": "task2_s01_periodic_dominant",
+      "source_csv_sha256": "5e99c33adbb6834addfd0ae1026a658f53003b7f360f110e89c5a35906e1e05d"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s01_quiet__330ff71c5175fb40",
+      "scale_id": "task2_s01_quiet",
+      "source_csv_sha256": "85ed2f9026af53f3476da00ecf9481b6430a8a251dc9742afb4fc02f05778f1e"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s01_strong__2037690085351733",
+      "scale_id": "task2_s01_strong",
+      "source_csv_sha256": "b4cd7346fc6db92c59d6c0104ee29d39cb08d4544b50ad4b222c1faaae828592"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s01_weak__8effeb7efbbaaae5",
+      "scale_id": "task2_s01_weak",
+      "source_csv_sha256": "f72c416001ce0153d1e78338dcdd6c52e5d576bcfac193a22f049e49b8afc814"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s02_baseline__7fec0d6ee0396d30",
+      "scale_id": "task2_s02_baseline",
+      "source_csv_sha256": "e6ec76f16d20c5b72c99f47ccbf212f9835e2986c20727a43a1e98c8b94b8518"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s02_far__aa6e31b11e2f62ee",
+      "scale_id": "task2_s02_far",
+      "source_csv_sha256": "38c18da6513db8cd2d5a3305a46ea9fc0bc9e7ae8a972fe8c74e013a03d9b54e"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s02_gaussian_dominant__6e52545a0afeeeb6",
+      "scale_id": "task2_s02_gaussian_dominant",
+      "source_csv_sha256": "71754549e3990ab2b65bca4041d06b5c9aef8f2d0c00929b83e0222f89e1ee3a"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s02_near__118ccca411c41c47",
+      "scale_id": "task2_s02_near",
+      "source_csv_sha256": "1998d1898a8cb2cf4abd95a034d33ac2975bad77b38678a89386ffadc63e4fb2"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s02_noiseless__ee269a7a29906db4",
+      "scale_id": "task2_s02_noiseless",
+      "source_csv_sha256": "a9365b31602c59af616d1ca3c43ca6dbfdef336feab8fa6f221506a7f7632146"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s02_noisy__b872fd532028bb1c",
+      "scale_id": "task2_s02_noisy",
+      "source_csv_sha256": "0a1cda49163e22e6fcc2e94b0f5f3582ea75131ac31bc915fe8da4651789817a"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s02_periodic_dominant__a2e4bdaada5407b4",
+      "scale_id": "task2_s02_periodic_dominant",
+      "source_csv_sha256": "06e9cd174be97bff275c9d0e56e6a5f08bf8303a2693aea9227b4784c517f769"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s02_quiet__30ccf79b5a742414",
+      "scale_id": "task2_s02_quiet",
+      "source_csv_sha256": "47b570ef4f674453f5a6c6e9c1084a7a5ac204383ba461a178b292dfda6c54f7"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s02_strong__ea2a3bc0cc0ba750",
+      "scale_id": "task2_s02_strong",
+      "source_csv_sha256": "44b49ab643b68fd98d8764a02584ca9472aa147917062ea2c170f8f3b7a60b56"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s02_weak__05107f383cc4f021",
+      "scale_id": "task2_s02_weak",
+      "source_csv_sha256": "38503b068ee6504efb6610d8830c368632731a33edbd75216c1b6f2444ee7dc1"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s03_baseline__2c54264b2cca509d",
+      "scale_id": "task2_s03_baseline",
+      "source_csv_sha256": "7eb3234ee5e933339902deb08a6688c2ccc7bd7a7cc8fc9b4183a6656462f35f"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s03_far__0ae4c1cc2aad984d",
+      "scale_id": "task2_s03_far",
+      "source_csv_sha256": "3c1c1b0da4755f450df8e61b67abb58e45a356e36e218eb049700dd1e3e44499"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s03_gaussian_dominant__01748322cf7883e2",
+      "scale_id": "task2_s03_gaussian_dominant",
+      "source_csv_sha256": "8d3f4936f2a1064369c2b2a7e77ddde7a2ddb3836d7de1a0fa3b93dab2920bf7"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s03_near__9bc3fbaebcae8473",
+      "scale_id": "task2_s03_near",
+      "source_csv_sha256": "1bfb080dc164af20935a9e99e883092238edffa8f48afe3352b2343d0f4ae2bb"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s03_noiseless__ea690e89b7b342da",
+      "scale_id": "task2_s03_noiseless",
+      "source_csv_sha256": "83de264a0892c8079d5cfb8b28f883d60c465ec97e63e508819b0783a9c0b430"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s03_noisy__34450ef3c6f96a45",
+      "scale_id": "task2_s03_noisy",
+      "source_csv_sha256": "cf5ecac3af0a8964752474102dab1a04d5c638886fcb7966deef83b3023c1754"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s03_periodic_dominant__424523d4f36b97b2",
+      "scale_id": "task2_s03_periodic_dominant",
+      "source_csv_sha256": "3a7d584b9d9a29213d0a5274123daee81a1484b727afe9cbc7f21a494f40c8be"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s03_quiet__ea4ad94d6ae357d7",
+      "scale_id": "task2_s03_quiet",
+      "source_csv_sha256": "46c3faaf67907116360ea1ac3564424b5b9d989ade2a0baf829105527013ffab"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s03_strong__afb946edbc657935",
+      "scale_id": "task2_s03_strong",
+      "source_csv_sha256": "c66c17a73ee9598f855942f1e0e0191cf13890fb11b6abce5268de96d5d1779d"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s03_weak__76572df366e91c28",
+      "scale_id": "task2_s03_weak",
+      "source_csv_sha256": "fcd7b84ca2071fc7fb58f7d87f0e4dfe02394aa326109bda3123d99a94e9b16f"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s04_baseline__82c9a68a7b9d7b13",
+      "scale_id": "task2_s04_baseline",
+      "source_csv_sha256": "af1c53abbee2ed94fcbeef507c22eb28cbf5ca7e045aa715c0106bf31d51f333"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s04_far__6c71ce0568c1af9c",
+      "scale_id": "task2_s04_far",
+      "source_csv_sha256": "41dad7aadbc9d590012f442b52ef36df023954a734aa98131191b5076a739168"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s04_gaussian_dominant__d679b65d6024d277",
+      "scale_id": "task2_s04_gaussian_dominant",
+      "source_csv_sha256": "7a20eac35b728a294329941e8378b73db047b6b9ca1a210a2aee92014aeded97"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s04_near__4c566bc9d7bb37d0",
+      "scale_id": "task2_s04_near",
+      "source_csv_sha256": "ce1b9c79c340181506bfb4dcbc2a77adad5302476f10d7a59f647ade8d0af341"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s04_noiseless__5c1cdb9764c18656",
+      "scale_id": "task2_s04_noiseless",
+      "source_csv_sha256": "2712c29cfa8d3adfad64b36fa769a2445b59fd3d5de9111733385264f09c4ceb"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s04_noisy__765a57c3b84ecf05",
+      "scale_id": "task2_s04_noisy",
+      "source_csv_sha256": "385ce00ce61e9accf7dff741eda9fc3fe85521c74288610fc6df860c351b348f"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s04_periodic_dominant__3d29e897f4bb5b2e",
+      "scale_id": "task2_s04_periodic_dominant",
+      "source_csv_sha256": "b09da9de21c96b0cd1ca52a37c7f177319da325f86435f4641b7faa07dc35d8b"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s04_quiet__5a4d71bc737876b6",
+      "scale_id": "task2_s04_quiet",
+      "source_csv_sha256": "8a58e36f301fe8d0016afe777d60473fa59387f2c5b9d1e46bf06abe3b0260c3"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s04_strong__2843bbefb932f87d",
+      "scale_id": "task2_s04_strong",
+      "source_csv_sha256": "d033e937f5cd37d13a27a5510b7577fd8234e5abc422b0eda8c82c10985d8a45"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s04_weak__40d391e79365b064",
+      "scale_id": "task2_s04_weak",
+      "source_csv_sha256": "223650e8046e42b31b859bb1b372d7c88825005e4066374eb99402b008db3565"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s05_baseline__a1e8ceedd6a121ef",
+      "scale_id": "task2_s05_baseline",
+      "source_csv_sha256": "5df78c73e453f99c66297322e8059d49247bb8149f1e1cc91944c8359062bf61"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s05_far__3ee30699ea439999",
+      "scale_id": "task2_s05_far",
+      "source_csv_sha256": "569dd6a5f16ad941b5464adccb46958c8db191567851dad1bf0a558dd53bfa76"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s05_gaussian_dominant__c686390f6c6465ea",
+      "scale_id": "task2_s05_gaussian_dominant",
+      "source_csv_sha256": "616857bdabb3412ef55ec9a05e485ea41fca604eae63a36bece0fd63b2d5d528"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s05_near__622e8e52ac464b70",
+      "scale_id": "task2_s05_near",
+      "source_csv_sha256": "fe0b414e7951d9f0839992dce4989f04989ef1cc8fa900898dad0688120e814f"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s05_noiseless__068cf9f56d8615b7",
+      "scale_id": "task2_s05_noiseless",
+      "source_csv_sha256": "eed2cb6e0811654e0ef1bbef3c2392f733a1e948c2f4e078d4f49b8ace3ede73"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s05_noisy__9d4803068ff8e806",
+      "scale_id": "task2_s05_noisy",
+      "source_csv_sha256": "5d7120d35380210e6eb89df31ab37961bec486eff679a16c4648585813dbacef"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s05_periodic_dominant__87a2ca72b07c96f4",
+      "scale_id": "task2_s05_periodic_dominant",
+      "source_csv_sha256": "77b54dad32705648ebdb1ff41e6a9205fec670663f58476bb3c005519503cc21"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s05_quiet__4e8faec303893462",
+      "scale_id": "task2_s05_quiet",
+      "source_csv_sha256": "27d51549e162957310732225be4b3a59c062a459a1736c8ae8540d9e0e361456"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s05_strong__4ad3cce0f60fa56c",
+      "scale_id": "task2_s05_strong",
+      "source_csv_sha256": "9210bbdbef3bd88e9d3275bd6db67d2a097669f47fb7cc80d2e9cbd75e299caf"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s05_weak__50418d295a78e4f8",
+      "scale_id": "task2_s05_weak",
+      "source_csv_sha256": "3ffe5ddb916410eeda4df5c7aa00085e6a023000420e6f78fc2975608d49e231"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s06_baseline__253dc09bfa96b08f",
+      "scale_id": "task2_s06_baseline",
+      "source_csv_sha256": "b41ee00d2c0d65b063cc242ed69f78985cc29d5c8f27d4e8ba1f8c0f4722e6ba"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s06_far__2f68f9f41e0b4a53",
+      "scale_id": "task2_s06_far",
+      "source_csv_sha256": "7c68d9f670e503b962a3d8bf8bcefa05c006ddebd4bc2fa908d94cd674cf5936"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s06_gaussian_dominant__8a76dba6e1d47e64",
+      "scale_id": "task2_s06_gaussian_dominant",
+      "source_csv_sha256": "a144d2c5d91702a77a5b0a68ba68c0451d8f52017b72f486d9246943d0895691"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s06_near__b4c5560462aaad2a",
+      "scale_id": "task2_s06_near",
+      "source_csv_sha256": "c6e2872aba3b48f16acf52986a6a9b160ff8176f93388b17301d069b3e9b5a68"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s06_noiseless__f45af24471734fdf",
+      "scale_id": "task2_s06_noiseless",
+      "source_csv_sha256": "21f982f1bd04d7a39896e5b9d506e939937e9b487627952f6914033cbfb548a3"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s06_noisy__7c2a14ba8c1cd4e9",
+      "scale_id": "task2_s06_noisy",
+      "source_csv_sha256": "85bb28afd2f66139b70ab8e00bb133705891841484d770e633c99a4c224b2a5c"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s06_periodic_dominant__61f948d580cdb97b",
+      "scale_id": "task2_s06_periodic_dominant",
+      "source_csv_sha256": "f3987990929ed6e3e4183705764c99aeecf8d60dc82168e2bf68b60c19d8d979"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s06_quiet__8d8dd68ef6b417ed",
+      "scale_id": "task2_s06_quiet",
+      "source_csv_sha256": "56a6b4d9ee13d8af414d0fcb7ba8a28a74325459b028144f95dd2f33c1781a18"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s06_strong__c44014e4fc037b82",
+      "scale_id": "task2_s06_strong",
+      "source_csv_sha256": "2520bfab693d6b4cc942275183b9c198cd28fea2fae2250bb8fcc5bd32719e1e"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s06_weak__3cd983da3b2bbece",
+      "scale_id": "task2_s06_weak",
+      "source_csv_sha256": "f9ffbb6ef67747ed5085e7476a8755694786d722daac52511dc6973193d2ad3e"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s07_baseline__b4a528b3c223eafd",
+      "scale_id": "task2_s07_baseline",
+      "source_csv_sha256": "eca3ea7f298b28c4f3eb560fd8975aa15300e6e037f1ec0f60ab7cab0ccbc579"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s07_far__252691afa5c5393a",
+      "scale_id": "task2_s07_far",
+      "source_csv_sha256": "1e6cd854e72b9ec9a02ec7763efb8c1409d8ef3a73610ad59536deb5fec1cc0e"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s07_gaussian_dominant__938858c0a8b4c990",
+      "scale_id": "task2_s07_gaussian_dominant",
+      "source_csv_sha256": "a54ac3c03a6d14581b05d18aa2ec8fd69097542ffe085c4bda5466935b1aaea2"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s07_near__f04b5f6b01747d75",
+      "scale_id": "task2_s07_near",
+      "source_csv_sha256": "66ce8da8f50d00cd37ef5d97b70d4bc32403ba7da00a34068c2ed5d5af2dc312"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s07_noiseless__1bfad8c1115e0a25",
+      "scale_id": "task2_s07_noiseless",
+      "source_csv_sha256": "178bc183e13d637b779f8de6817379a6979ec5370599a3179a3c2b63554f1318"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s07_noisy__f4694edcecf402c7",
+      "scale_id": "task2_s07_noisy",
+      "source_csv_sha256": "97c2e3c684a8f877e1a83c96fcfe852e14b1d2bd9b17628d254cb5840b8c169a"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s07_periodic_dominant__efbf7f3923a20dcd",
+      "scale_id": "task2_s07_periodic_dominant",
+      "source_csv_sha256": "8c59292c0874233e21796f000dec4afdcd5a9797204b43c9898646d0626812df"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s07_quiet__126ab2abbe4cf4b7",
+      "scale_id": "task2_s07_quiet",
+      "source_csv_sha256": "f51632cfaa2a2b398fdd9dba885a2791837cce8b50a5c05f4d694dfe84288b35"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s07_strong__63b25b6dc92dde8a",
+      "scale_id": "task2_s07_strong",
+      "source_csv_sha256": "b5fc128b21f6ce85b6a51de4eef875716d33923a47418fa3c0d0c73ba651e7b1"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s07_weak__1f3340cf4b7feb3b",
+      "scale_id": "task2_s07_weak",
+      "source_csv_sha256": "7fea4f04544e3e275871e751fbda976211f3239be65d80e9f9665edcf503611f"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s08_baseline__784bbdaec1e3f4d0",
+      "scale_id": "task2_s08_baseline",
+      "source_csv_sha256": "8e0480cc8699e772a8961b9d7d30f839890580632f8dc3e5ff33664c72b31af7"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s08_far__028d93d66bd9fcc7",
+      "scale_id": "task2_s08_far",
+      "source_csv_sha256": "5b06cd529f32b6a73cc0b7f6ab48a59cbc9fa4890fbb52768e086d3ccc01f02d"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s08_gaussian_dominant__b0b2e1959832039b",
+      "scale_id": "task2_s08_gaussian_dominant",
+      "source_csv_sha256": "3db6064ee140e6dffa8a798268868d01535fc3daa88d89de08bae7dc966af6b4"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s08_near__2bdc27fba80a5907",
+      "scale_id": "task2_s08_near",
+      "source_csv_sha256": "da9edaa1f581efc5855d847cd6eecd5547cbd47fd08268eb50c15224d2de40c7"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s08_noiseless__989d55be7dbf8325",
+      "scale_id": "task2_s08_noiseless",
+      "source_csv_sha256": "7a02f6acdac54a0a9011fdae1eebd33bf656b024123fc0d24ed38afd7bf599fb"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s08_noisy__305d56a405c58052",
+      "scale_id": "task2_s08_noisy",
+      "source_csv_sha256": "a71d2b2824ef4b08283a8df8470b6557a5c9ac33fa142e4fb2a819ba9fe53370"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s08_periodic_dominant__d45ebc049e51f4e8",
+      "scale_id": "task2_s08_periodic_dominant",
+      "source_csv_sha256": "ca3457b6e4729797b1107ca2076d90248211417c35e9978495023a1b421fcd38"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s08_quiet__1e79947ea7ae3328",
+      "scale_id": "task2_s08_quiet",
+      "source_csv_sha256": "d7ee00770d211e5329693128dced83937b1c34d4108f9c7284f1e758d8c5f650"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s08_strong__ec1a044bb5944945",
+      "scale_id": "task2_s08_strong",
+      "source_csv_sha256": "8ae66e779a4abdfad35406795ba46eefcc8a04668a2eaceac30bf53a7068a610"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s08_weak__2f13578d16497198",
+      "scale_id": "task2_s08_weak",
+      "source_csv_sha256": "2efc4a8cec2512a8307f45c08a7a49b961d97d60c70495c2719afba8664c10a4"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s09_baseline__e0db3d2776420778",
+      "scale_id": "task2_s09_baseline",
+      "source_csv_sha256": "02b4ab1f77498b54735edd1ba26e62500a1e4592e35c2cce7fcb965795b0a1d6"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s09_far__233b6c67dfa1b7cc",
+      "scale_id": "task2_s09_far",
+      "source_csv_sha256": "e78e5fae8b7171e0a24ed831da19f4ae2703167656e7146815c3e57de586cc60"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s09_gaussian_dominant__4e2a7521db71389a",
+      "scale_id": "task2_s09_gaussian_dominant",
+      "source_csv_sha256": "ea2af7b50f9c6bd3d1929bc34484b209f1326ea26df52bb3a2cab8643a2ea570"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s09_near__b2bfdb1779a41cbf",
+      "scale_id": "task2_s09_near",
+      "source_csv_sha256": "f0865b151a2c3711d1f95058f9f6a71db7a4291d2ae3ef5aa53e3913156dac32"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s09_noiseless__c266846fa341e392",
+      "scale_id": "task2_s09_noiseless",
+      "source_csv_sha256": "ec92641c3345c57db44b09b5631fbdbbd6116cf9461da6ff5b06d4c8ac7430df"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s09_noisy__303e5f79a0567188",
+      "scale_id": "task2_s09_noisy",
+      "source_csv_sha256": "35327df3587b44f6d372fb345ada4435a88a36379a3c41abcefcd3633709bb9d"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s09_periodic_dominant__f34616a73e4b199d",
+      "scale_id": "task2_s09_periodic_dominant",
+      "source_csv_sha256": "5620d80f7191858bc98edf39c4f873b856d161887ed0884bb3ccbe961ce5bfaa"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s09_quiet__4e4f629278e8d95c",
+      "scale_id": "task2_s09_quiet",
+      "source_csv_sha256": "750b71a0070c284605e66c696f120dff5559b06225b3600fba8288aa601011fd"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s09_strong__74ffa956cbf4c6aa",
+      "scale_id": "task2_s09_strong",
+      "source_csv_sha256": "9a1ab4562aab902a79b1f33ae72592d214f108059e33f51cf720d598fe5c8573"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s09_weak__ebf70bb4712c2ccd",
+      "scale_id": "task2_s09_weak",
+      "source_csv_sha256": "bf18a3a7d83ddd3480a5a97342c14fdaf625e6dc7f904b1782853358be8b150c"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s10_baseline__e8e060d44b0ef8bc",
+      "scale_id": "task2_s10_baseline",
+      "source_csv_sha256": "18d40c0ddc565fdac3d82eb60cb3f1971393dc83535b229eabf41b7419264bd5"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s10_far__29205dbd102de2f1",
+      "scale_id": "task2_s10_far",
+      "source_csv_sha256": "d7ccc74983c93d1be98b7bba71ecb97e328afb9c5587b986907b8427a112f2a1"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s10_gaussian_dominant__12dddc58546b04d7",
+      "scale_id": "task2_s10_gaussian_dominant",
+      "source_csv_sha256": "a919e5e2947944e1a02798beac5264c583777201c76bc225d6d77e16c061bc46"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s10_near__b6c456508e6efa20",
+      "scale_id": "task2_s10_near",
+      "source_csv_sha256": "d329df5e334adbab97b3021758434726109fb183f5f48f4cb8ac715fe59ab04f"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s10_noiseless__1a307db3952a30d3",
+      "scale_id": "task2_s10_noiseless",
+      "source_csv_sha256": "327a24245f9a80f7a4ff4d52e87bdf60c9a55389d4cb67a1bbd296ac411dc6a0"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s10_noisy__da8b867aaaeb95f5",
+      "scale_id": "task2_s10_noisy",
+      "source_csv_sha256": "700732ce8f47ef1ef5507fc6a51917adb50fd89d0a0f132e5ef35978e0d206d3"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s10_periodic_dominant__efb3ec237d2b4d68",
+      "scale_id": "task2_s10_periodic_dominant",
+      "source_csv_sha256": "7ccf64ba57736fd3b1a42bf61e296e2174d02a274324fcb81e0cbdfcdb325f48"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s10_quiet__db1b219a1b8f190a",
+      "scale_id": "task2_s10_quiet",
+      "source_csv_sha256": "8c8212363fc0ccc4b0d1224087efbf4975c3f6f0d5483cabf969da0537522d8e"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s10_strong__37078fae5f684b4a",
+      "scale_id": "task2_s10_strong",
+      "source_csv_sha256": "8854c5df23f4d14369f81dca26180d5d12f879d0a1be594b30a9201b267ecb32"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s10_weak__79c9722007dadf57",
+      "scale_id": "task2_s10_weak",
+      "source_csv_sha256": "696375d767dab75af59ff507b21c37dcb2aebd9fa219eeb4f67f6f1374a2d782"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s11_baseline__182bb00af94d9373",
+      "scale_id": "task2_s11_baseline",
+      "source_csv_sha256": "6cb2bc38252decd2046e3927be4b6932b9fef3f158899ea9798e2930f120cd31"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s11_far__a2f87f3d32f072eb",
+      "scale_id": "task2_s11_far",
+      "source_csv_sha256": "087692719fc5aa2f6efe08d7c189743c4dcd6176a3139fe88d9728cbdb1bee96"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s11_gaussian_dominant__9b0b8aeb8bf05ea2",
+      "scale_id": "task2_s11_gaussian_dominant",
+      "source_csv_sha256": "52604552c7a07e405e77376e891347217ed74609177b2bc4e8437f330e206150"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s11_near__209889e1a403e082",
+      "scale_id": "task2_s11_near",
+      "source_csv_sha256": "310dfe41391671759b35b559069cf644da53145ae360f6caf1de057b4650e705"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s11_noiseless__c33695dc8e3de754",
+      "scale_id": "task2_s11_noiseless",
+      "source_csv_sha256": "1be10953207bd6aa7e37a36597e3c11a02de6cdc3bc14e349c2c27d1565c5f1b"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s11_noisy__d5e8ee0a81daca0e",
+      "scale_id": "task2_s11_noisy",
+      "source_csv_sha256": "8fd161c17e52d4174dc7ac09a68aefabc2fddbba18ce0b2abb509b439293fdc1"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s11_periodic_dominant__8bbcd1ae50ae04ca",
+      "scale_id": "task2_s11_periodic_dominant",
+      "source_csv_sha256": "5b8a1139a80312dcefed83b92ae95ae67b2eecb24914b7d82b90833f7cb4b829"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s11_quiet__f7d9ef2f20ca3292",
+      "scale_id": "task2_s11_quiet",
+      "source_csv_sha256": "1ced9e635e7eac32020c0a48702726f5eb34e232021c4439f42317cd0271e2cc"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s11_strong__e446f7dae4395179",
+      "scale_id": "task2_s11_strong",
+      "source_csv_sha256": "11c50b969ca9ea3687c44087469225825bee190d73de410dec1fe8f7796491ba"
+    },
+    {
+      "target": "task2",
+      "backend": "fft_thrust",
+      "dtype": "FP32",
+      "case_id": "task2_pipeline__task2_s11_weak__9e5ed88807c9c1ad",
+      "scale_id": "task2_s11_weak",
+      "source_csv_sha256": "da0710e0b5abd9245b53c73572aefbe1383879949db6403f1b5a0188f9f4ba60"
+    }
+  ]
+}

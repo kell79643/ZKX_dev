@@ -1,0 +1,1158 @@
+{
+  "schema_version": 1,
+  "total_cmake_files": 77,
+  "active_cmake_files": 77,
+  "historical_cmake_files": 0,
+  "operator_case_cmake_files": 53,
+  "files": [
+    {
+      "path": "cmake/VerifyProjectCMake.cmake",
+      "status": "active",
+      "sha256": "c3c9fd5e3e62d07af264aedb01b3e3a8e66c1de183ab3dc6790fb10ab169a531",
+      "projects": [],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "cmake/ZQ500Build.cmake",
+      "status": "active",
+      "sha256": "6e297bb762f6b57b5ff67838ecf599445b77a2aba739857b54696641c75a4c97",
+      "projects": [],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "CMakeLists.txt",
+      "status": "active",
+      "sha256": "b2028cd63202eecbb32bf1d8b3aeaf0be1899717f541ad11277ad085b60e479f",
+      "projects": [
+        "zkx_zq500"
+      ],
+      "executable_targets": [],
+      "custom_targets": [
+        "project_cmake_gate",
+        "test_all"
+      ],
+      "includes": [
+        "${CMAKE_CURRENT_LIST_DIR}/cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_SOURCE_DIR}/cmake/VerifyProjectCMake.cmake"
+      ],
+      "subdirectories": [
+        "test_all/operators/fft_backend components/fft_backend_tests",
+        "Task1 components/task1_pipeline",
+        "Task2 components/task2_pipeline"
+      ]
+    },
+    {
+      "path": "cusignal_cpp/cmake/contracts/operator_contracts.cmake",
+      "status": "active",
+      "sha256": "b362487a4912d9c31b19f864cea24b7fe76cf42eca8792a838984c783ce10f40",
+      "projects": [],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "cusignal_cpp/cmake/contracts/verify_operator_contracts.cmake",
+      "status": "active",
+      "sha256": "869242ead5d6f3974e004cecf6b4fdaa49743984cc5917a1599a11b3f609048b",
+      "projects": [],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${CONTRACT_DATA_FILE}"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "cusignal_cpp/cmake/validation/verify_public_api_docs.cmake",
+      "status": "active",
+      "sha256": "d1ad67715d8bc1d22aca01f11ce521c389d5ef8c1dd0d3edcd7edcae51d1c85f",
+      "projects": [],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "cusignal_cpp/cmake/validation/verify_type_coverage_output.cmake",
+      "status": "active",
+      "sha256": "b4b64cea20debe8d1c57a0784676ec5d7dea5ae4084861ebe6b3158aedbb2f05",
+      "projects": [],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "cusignal_cpp/CMakeLists.txt",
+      "status": "active",
+      "sha256": "3985633a268477b1d2d81d26317aada5c484165468c29418770ccf2dc48462f7",
+      "projects": [
+        "cusignal_cpp"
+      ],
+      "executable_targets": [],
+      "custom_targets": [
+        "public_api_docs_gate",
+        "operator_contract_completion_gate"
+      ],
+      "includes": [
+        "${CMAKE_CURRENT_LIST_DIR}/../cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_SOURCE_DIR}/cmake/contracts/verify_operator_contracts.cmake"
+      ],
+      "subdirectories": [
+        "\"${TASK2_SOURCE_DIR}\"",
+        "\"${TASK1_SOURCE_DIR}\""
+      ]
+    },
+    {
+      "path": "Task1/cmake/verify_source_contract.cmake",
+      "status": "active",
+      "sha256": "34c7665494eb4152bea3a3735aeb32a3ac5fdb5151c4d155b06a0c399a4d4cb9",
+      "projects": [],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "Task1/CMakeLists.txt",
+      "status": "active",
+      "sha256": "9be12082d3b5640ad9c4b43a1716e4fe87c834384b78f7856a44e0e5df162497",
+      "projects": [],
+      "executable_targets": [
+        "${target}",
+        "${target}"
+      ],
+      "custom_targets": [
+        "task1_all"
+      ],
+      "includes": [
+        "${CMAKE_CURRENT_LIST_DIR}/cmake/verify_source_contract.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "Task1/stability/scaled_pipeline/CMakeLists.txt",
+      "status": "active",
+      "sha256": "e8654c7eede6effe25597b81e1c5eb9bae2a506871e418f56800cdb373bd2aa8",
+      "projects": [
+        "task1_scaled_pipeline_stability"
+      ],
+      "executable_targets": [
+        "${target}"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": [
+        "\"${REPO_ROOT}/cusignal_cpp\" cusignal_cpp"
+      ]
+    },
+    {
+      "path": "Task2/CMakeLists.txt",
+      "status": "active",
+      "sha256": "867ca4cd0c50614173489dff090a2602e7e616bb51a43ad18cf4ee861a85f214",
+      "projects": [],
+      "executable_targets": [
+        "${target}",
+        "${target}"
+      ],
+      "custom_targets": [
+        "task2_all"
+      ],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "Task2/stability/scaled_pipeline/CMakeLists.txt",
+      "status": "active",
+      "sha256": "2369918ed57d7e9bbef636c3025a4347e4801eff56fad22ef14a7d03bd2ded92",
+      "projects": [
+        "task2_scaled_pipeline_stability"
+      ],
+      "executable_targets": [
+        "${target}"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": [
+        "\"${REPO_ROOT}/cusignal_cpp\" cusignal_cpp"
+      ]
+    },
+    {
+      "path": "test_all/operators/abnormal/CMakeLists.txt",
+      "status": "active",
+      "sha256": "8405d891b4b3540ba263fb15f03ea6d2fd5e153043fb7eb9357577e4f3476f94",
+      "projects": [
+        "abnormal_input_operator_abnormal"
+      ],
+      "executable_targets": [
+        "abnormal_input_operator_abnormal"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/bsplines/cubic/CMakeLists.txt",
+      "status": "active",
+      "sha256": "0fcbefc7d91295e125c0ff4b40f6e98c3cd097f88c5cfbdc9695bd5ac0442894",
+      "projects": [
+        "operator_case_cubic"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${REPO_ROOT}/test_all/operators/suites/task2_final/Task2PipelineOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/bsplines/gauss_spline/CMakeLists.txt",
+      "status": "active",
+      "sha256": "373071806615a995daccae3b29aca81b4d04ac9e4574e87ae5695f50975392aa",
+      "projects": [
+        "remaining_operator_case_bsplines_gauss_spline"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_bsplines_gauss_spline"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/bsplines/quadratic/CMakeLists.txt",
+      "status": "active",
+      "sha256": "c0ea07c3c07a48a47204c77deb63f49c4dd5d3636189139e748d1c1b4d093096",
+      "projects": [
+        "remaining_operator_case_bsplines_quadratic"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_bsplines_quadratic"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/convolution/correlate/CMakeLists.txt",
+      "status": "active",
+      "sha256": "54402392b4f72bc7852d69b8b92638ec937aca04752adc60eb440a40115a45c4",
+      "projects": [
+        "operator_case_correlate"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${REPO_ROOT}/test_all/operators/suites/task2_features/Task2FeatureOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/convolution/correlate2d/CMakeLists.txt",
+      "status": "active",
+      "sha256": "703f225fe0dcfe9de5ba6e4c1ec0bd479f138b32910f9f1f401e01937eeb2506",
+      "projects": [
+        "remaining_operator_case_convolution_correlate2d"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_convolution_correlate2d"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/demod/fm_demod/CMakeLists.txt",
+      "status": "active",
+      "sha256": "2176c921c243467545d94a5f0f304d4025fc5525e2bcab9e3f3d83bbbc1850b5",
+      "projects": [
+        "operator_case_fm_demod"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${REPO_ROOT}/test_all/operators/suites/task2_features/Task2FeatureOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/estimation/kalman_filter/CMakeLists.txt",
+      "status": "active",
+      "sha256": "6ecb22029b233ed901d29fda9721bd2ef14eb2fa96972b856c83137cf0030409",
+      "projects": [
+        "operator_case_kalman_filter"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${REPO_ROOT}/test_all/operators/suites/task2_final/Task2PipelineOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filter_design/firwin/CMakeLists.txt",
+      "status": "active",
+      "sha256": "17281cc5091e4fbc8a88c3dcf9e0ce284f702456932ea368d751390bb0075dca",
+      "projects": [
+        "operator_case_firwin"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${REPO_ROOT}/test_all/operators/shared/filtering/Task2FilterTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filter_design/firwin2/CMakeLists.txt",
+      "status": "active",
+      "sha256": "a5c1d969ccfd583e9e6f4588f0b39889f4512fc719099c9e7891a156e531c799",
+      "projects": [
+        "remaining_operator_case_filter_design_firwin2"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filter_design_firwin2"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/channelize_poly/CMakeLists.txt",
+      "status": "active",
+      "sha256": "6c51e3247264a8d50d8ae0237f8555d5bf5f0950c5a8b79df2f30bc5bf769ae3",
+      "projects": [
+        "remaining_operator_case_filtering_channelize_poly"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_channelize_poly"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${ZKX_REMAINING_OPERATOR_CASE_REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/decimate/CMakeLists.txt",
+      "status": "active",
+      "sha256": "201561aa6e582bce94629cbb195d569bcdfe5768ca6cd441387675a0febe770f",
+      "projects": [
+        "remaining_operator_case_filtering_decimate"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_decimate"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/detrend/CMakeLists.txt",
+      "status": "active",
+      "sha256": "be3a05178919b057b263e2bac35bc571e1b7fb9cf7db45a5a7f9d138f7a0b20c",
+      "projects": [
+        "remaining_operator_case_filtering_detrend"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_detrend"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/firfilter/CMakeLists.txt",
+      "status": "active",
+      "sha256": "e320dbae58e44c6ed5b08945d0ff02679f73516ea46b9ed16a307f0ddb470d8a",
+      "projects": [
+        "operator_case_firfilter"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${REPO_ROOT}/test_all/operators/shared/filtering/Task2FilterTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/firfilter2/CMakeLists.txt",
+      "status": "active",
+      "sha256": "7189382ff7524c499865d663d406b1e621b254427d0ce38972ed74de2fdc5938",
+      "projects": [
+        "remaining_operator_case_filtering_firfilter2"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_firfilter2"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/freq_shift/CMakeLists.txt",
+      "status": "active",
+      "sha256": "17deaa4976403360ce8b5f6deba0eb8c33752afc25694db2a6f360054b2b1d99",
+      "projects": [
+        "remaining_operator_case_filtering_freq_shift"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_freq_shift"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/hilbert/CMakeLists.txt",
+      "status": "active",
+      "sha256": "157c00aaf09a0d873abbcc439325133c91d99ea66ffce9b3f558005c858950fd",
+      "projects": [
+        "remaining_operator_case_filtering_hilbert"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_hilbert"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/hilbert2/CMakeLists.txt",
+      "status": "active",
+      "sha256": "efbdba79c7a903add50ce7e44d1ae414e580fd1219784e39c02ba9e934c3be76",
+      "projects": [
+        "remaining_operator_case_filtering_hilbert2"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_hilbert2"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/lfilter_zi/CMakeLists.txt",
+      "status": "active",
+      "sha256": "2424dd7176ac78891b6780d0586652121af8eee12405ceb55538ef0f39890f82",
+      "projects": [
+        "remaining_operator_case_filtering_lfilter_zi"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_lfilter_zi"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/resample_poly/CMakeLists.txt",
+      "status": "active",
+      "sha256": "8f8441527a82251509ae078474bac475623ac0585b65bddbe79b763a28fbc75c",
+      "projects": [
+        "remaining_operator_case_filtering_resample_poly"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_resample_poly"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/resample/CMakeLists.txt",
+      "status": "active",
+      "sha256": "08e472793f189dba839526f980f587bf729978e8bf1dcc2c10a60fc30681b932",
+      "projects": [
+        "remaining_operator_case_filtering_resample"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_resample"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/sosfilt/CMakeLists.txt",
+      "status": "active",
+      "sha256": "eda008acfd199edc9dcc3135862bb76d14ef8771203e71eeca222778411eb9ca",
+      "projects": [
+        "remaining_operator_case_filtering_sosfilt"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_sosfilt"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/upfirdn/CMakeLists.txt",
+      "status": "active",
+      "sha256": "5abf6024dc7118a0a91fbd9713f4b9434f30079756782b55bd22a904cc792363",
+      "projects": [
+        "remaining_operator_case_filtering_upfirdn"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_upfirdn"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/filtering/wiener/CMakeLists.txt",
+      "status": "active",
+      "sha256": "2631f7f59077f916071611aea8c41a8aa663dfb9b37a38655b519939b1dbb1b0",
+      "projects": [
+        "remaining_operator_case_filtering_wiener"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_filtering_wiener"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/peak_finding/argrelextrema/CMakeLists.txt",
+      "status": "active",
+      "sha256": "a575362426710ce94eca1f532d069992044ef9e474318297230e6b137bdb2ff1",
+      "projects": [
+        "operator_case_argrelextrema"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${REPO_ROOT}/test_all/operators/suites/task2_final/Task2PipelineOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/radartools/ambgfun/CMakeLists.txt",
+      "status": "active",
+      "sha256": "4c1ff6c16d3275a1a7c76c9ee0626a889e06ac2c3f1c1795af7ad394b5015fef",
+      "projects": [
+        "operator_case_radartools_ambgfun"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/radartools/RadarOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/radartools/ca_cfar/CMakeLists.txt",
+      "status": "active",
+      "sha256": "90c12d26e6f875f902cd9a3c4d92dc46ef3feccc55877a80967dcca1cd740ec0",
+      "projects": [
+        "operator_case_radartools_ca_cfar"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/radartools/RadarOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/radartools/cfar_alpha/CMakeLists.txt",
+      "status": "active",
+      "sha256": "023f4fbc28e73b8c92b63b97eb7aff56ea95360d6855d8cf897910875f3a084e",
+      "projects": [
+        "operator_case_radartools_cfar_alpha"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/radartools/RadarOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/radartools/pulse_compression/CMakeLists.txt",
+      "status": "active",
+      "sha256": "475a3f86c03160eda0e26b5693f2ecdecbad8bc494af1c8a08c3c47038f45638",
+      "projects": [
+        "operator_case_radartools_pulse_compression"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/radartools/RadarOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/radartools/pulse_doppler/CMakeLists.txt",
+      "status": "active",
+      "sha256": "412bde74625960b5ed13627275482a30aa3ad418ea07dd7b82b6d62466129bed",
+      "projects": [
+        "operator_case_radartools_pulse_doppler"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/radartools/RadarOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/spectral_analysis/csd/CMakeLists.txt",
+      "status": "active",
+      "sha256": "b47bf636f311171a59f5c05a770af188d7ed1a5e4c324e5df514470387af4beb",
+      "projects": [
+        "remaining_operator_case_spectral_analysis_csd"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_spectral_analysis_csd"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/spectral_analysis/istft/CMakeLists.txt",
+      "status": "active",
+      "sha256": "6800d18863b99dd79d15341614055f4a676b7450336d8dcfe78f493346792b26",
+      "projects": [
+        "remaining_operator_case_spectral_analysis_istft"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_spectral_analysis_istft"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/spectral_analysis/lombscargle/CMakeLists.txt",
+      "status": "active",
+      "sha256": "9f97e2cb1cc12dfc68ba186a72f76718c104658cab7c96df07d8117cb666a91d",
+      "projects": [
+        "remaining_operator_case_spectral_analysis_lombscargle"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_spectral_analysis_lombscargle"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/spectral_analysis/spectrogram/CMakeLists.txt",
+      "status": "active",
+      "sha256": "33d8ae0231837c65fef0c88ad70fbc3ed5c3faa89cc21c5078a6a4e00d77cf37",
+      "projects": [
+        "operator_case_spectrogram"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${REPO_ROOT}/test_all/operators/suites/task2_features/Task2FeatureOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/spectral_analysis/stft/CMakeLists.txt",
+      "status": "active",
+      "sha256": "aa3e470bfd97e0e132dd36ffe13a35088e0d693d3fd1e36d889410074c767822",
+      "projects": [
+        "remaining_operator_case_spectral_analysis_stft"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_spectral_analysis_stft"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/spectral_analysis/vectorstrength/CMakeLists.txt",
+      "status": "active",
+      "sha256": "a7b976488981595b99b792779ec2a38fef092b15139f5870aff10295f4e54b96",
+      "projects": [
+        "remaining_operator_case_spectral_analysis_vectorstrength"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_spectral_analysis_vectorstrength"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/waveforms/chirp/CMakeLists.txt",
+      "status": "active",
+      "sha256": "6625f19c3dc09b7b703ef22995446720bce99da5c76da668a497216ae02d1bac",
+      "projects": [
+        "operator_case_waveforms_chirp"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/waveforms/WaveformOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/waveforms/gausspulse/CMakeLists.txt",
+      "status": "active",
+      "sha256": "3761ef393ace30dfbf3f19c7b681e520585c6b19a80d64396dc085275683fa29",
+      "projects": [
+        "operator_case_waveforms_gausspulse"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/waveforms/WaveformOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/waveforms/sawtooth/CMakeLists.txt",
+      "status": "active",
+      "sha256": "95168b07772f902cf376e13280f326854fdc26f6fc534b60004776b47e93e67e",
+      "projects": [
+        "operator_case_waveforms_sawtooth"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/waveforms/WaveformOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/waveforms/square/CMakeLists.txt",
+      "status": "active",
+      "sha256": "cedb8184a2f640af7a71c79d4555eff33bf75db0ab665eeb9ec6450c1e5ed039",
+      "projects": [
+        "operator_case_waveforms_square"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/waveforms/WaveformOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/waveforms/unit_impulse/CMakeLists.txt",
+      "status": "active",
+      "sha256": "a53dabbbd6ed3441f5fc6f54147ba002d828bd28105003e21b43429979c7f9ce",
+      "projects": [
+        "remaining_operator_case_waveforms_unit_impulse"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_waveforms_unit_impulse"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/wavelets/cwt/CMakeLists.txt",
+      "status": "active",
+      "sha256": "74f601428cd9c5ab400c8c47d87c8e2aa3803b97ef10ec1e783bec6791d57970",
+      "projects": [
+        "operator_case_wavelets_cwt"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/wavelets/WaveletOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/wavelets/morlet/CMakeLists.txt",
+      "status": "active",
+      "sha256": "5025988b7ddfa7d1580c2da0fe7964b3c02eaa2f7967246ac6d72b1d6e41b9a3",
+      "projects": [
+        "remaining_operator_case_wavelets_morlet"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_wavelets_morlet"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/wavelets/morlet2/CMakeLists.txt",
+      "status": "active",
+      "sha256": "3e2e2ef68105b502b815d7700bc605edb6ef6aa4b3b5630668303bcb08921cd4",
+      "projects": [
+        "remaining_operator_case_wavelets_morlet2"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_wavelets_morlet2"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/wavelets/qmf/CMakeLists.txt",
+      "status": "active",
+      "sha256": "09967321a61dc7e7e5909c1a13d8f5eb2b98d18316f6e452658529fceea8f69d",
+      "projects": [
+        "remaining_operator_case_wavelets_qmf"
+      ],
+      "executable_targets": [
+        "remaining_operator_case_wavelets_qmf"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/wavelets/ricker/CMakeLists.txt",
+      "status": "active",
+      "sha256": "bb2bd9dffe7f5f15dea7439b3634757c53a5db1be8ad5f9b310b61835739fee9",
+      "projects": [
+        "operator_case_wavelets_ricker"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/wavelets/WaveletOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/windows/chebwin/CMakeLists.txt",
+      "status": "active",
+      "sha256": "6aa26ca468b4c25676ab0f6204658419f374e623216099da5e696ed11ed55c3e",
+      "projects": [
+        "remaining_operator_case_windows_chebwin"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/windows/WindowOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/windows/general_cosine/CMakeLists.txt",
+      "status": "active",
+      "sha256": "83e15c6ecf0b7a5e3de7e2976ab99897cf86d7875aafa10638e29249dadac122",
+      "projects": [
+        "remaining_operator_case_windows_general_cosine"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/windows/WindowOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/windows/general_gaussian/CMakeLists.txt",
+      "status": "active",
+      "sha256": "c536d20caacc5a35228f3ce6594aad889e1a63adb755ede5719c989816dc9e9e",
+      "projects": [
+        "remaining_operator_case_windows_general_gaussian"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/windows/WindowOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/windows/hamming/CMakeLists.txt",
+      "status": "active",
+      "sha256": "5a69b19d94433df2bf0efb8cdd4ca618b68e050a8e491a0cb14b515c6b830862",
+      "projects": [
+        "operator_case_hamming"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake",
+        "${REPO_ROOT}/test_all/operators/shared/filtering/Task2FilterTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/windows/kaiser/CMakeLists.txt",
+      "status": "active",
+      "sha256": "c1c1e3c6031201f3f6799f16ccca9723dc025dfb51aba2a0d6224d3ffaf50e9f",
+      "projects": [
+        "remaining_operator_case_windows_kaiser"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/windows/WindowOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/windows/parzen/CMakeLists.txt",
+      "status": "active",
+      "sha256": "f32e337e7e125b31e3a64e6954c1553d1355d40c40146e2b0766485d90be949d",
+      "projects": [
+        "remaining_operator_case_windows_parzen"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/windows/WindowOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/windows/taylor/CMakeLists.txt",
+      "status": "active",
+      "sha256": "093261506cab2054542be8221ca775f88e9bdaaa851e6ac8ce5ccfa0d844721b",
+      "projects": [
+        "remaining_operator_case_windows_taylor"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/windows/WindowOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/cases/windows/triang/CMakeLists.txt",
+      "status": "active",
+      "sha256": "ca6d1841bfc43ef0a22641ae267bef01213bbe380d32ed8fe99d21644b897e48",
+      "projects": [
+        "remaining_operator_case_windows_triang"
+      ],
+      "executable_targets": [],
+      "custom_targets": [],
+      "includes": [
+        "${CMAKE_CURRENT_LIST_DIR}/../../../shared/windows/WindowOperatorTarget.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/fft_backend/CMakeLists.txt",
+      "status": "active",
+      "sha256": "029b98eecb9bc996b8777aa067108d5ecaee2f67b2ba7058cb34e6ff2f72cc04",
+      "projects": [
+        "zq500_fft_backend_tests"
+      ],
+      "executable_targets": [
+        "${target}"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": [
+        "\"${REPO_ROOT}/cusignal_cpp\""
+      ]
+    },
+    {
+      "path": "test_all/operators/shared/filtering/Task2FilterTarget.cmake",
+      "status": "active",
+      "sha256": "9de85d191622bc0fe8b62cfe75d297dbffd92ee77eb776cf44d33a636f60fee4",
+      "projects": [],
+      "executable_targets": [
+        "${target}"
+      ],
+      "custom_targets": [],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/shared/radartools/RadarOperatorTarget.cmake",
+      "status": "active",
+      "sha256": "4c403879316648537b7560be047521a5b69ed55eaf6a64bb9908473b9be1efe4",
+      "projects": [],
+      "executable_targets": [
+        "${target}"
+      ],
+      "custom_targets": [],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/shared/waveforms/WaveformOperatorTarget.cmake",
+      "status": "active",
+      "sha256": "3bff1876c69d0cee6340f690dda4079c1d1d7257b05253fd70dc192a78fad7f0",
+      "projects": [],
+      "executable_targets": [
+        "${target}"
+      ],
+      "custom_targets": [],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/shared/wavelets/WaveletOperatorTarget.cmake",
+      "status": "active",
+      "sha256": "f69bd99cd79bd3589d43865265f301f85afe3db4746e5919f09fdf966b1b63e2",
+      "projects": [],
+      "executable_targets": [
+        "${target}"
+      ],
+      "custom_targets": [],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/shared/windows/WindowOperatorTarget.cmake",
+      "status": "active",
+      "sha256": "2e04cd107df6b8721089aad2c5c22ee7c1b6dc45263d5774007d749be1fb08d3",
+      "projects": [],
+      "executable_targets": [
+        "${target}"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${ZKX_REMAINING_OPERATOR_CASE_REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/suites/task2_features/Task2FeatureOperatorTarget.cmake",
+      "status": "active",
+      "sha256": "ff60db4cf2eb5e2fd109c3f41d9e5dad27b7d245505bf8e59ba8a542db477d41",
+      "projects": [],
+      "executable_targets": [
+        "${target}"
+      ],
+      "custom_targets": [],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/operators/suites/task2_final/Task2PipelineOperatorTarget.cmake",
+      "status": "active",
+      "sha256": "3e92f15ff2140b9d9871371760cefc2f3a7590bad4044ef6c10dcdaa9c394b62",
+      "projects": [],
+      "executable_targets": [
+        "${target}"
+      ],
+      "custom_targets": [],
+      "includes": [],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/tasks/abnormal/task1/CMakeLists.txt",
+      "status": "active",
+      "sha256": "f665eb628a89e6cdb5cfc7132c7da9c43fca172bd8aa05de143e16bbacaafdd1",
+      "projects": [
+        "abnormal_input_task1_abnormal"
+      ],
+      "executable_targets": [
+        "task1_task_abnormal"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    },
+    {
+      "path": "test_all/tasks/abnormal/task2/CMakeLists.txt",
+      "status": "active",
+      "sha256": "f502510798120724e22f5e735218fd4d6599c7894a3cd823689cafef10fc7c1f",
+      "projects": [
+        "abnormal_input_task2_abnormal"
+      ],
+      "executable_targets": [
+        "task2_task_abnormal"
+      ],
+      "custom_targets": [],
+      "includes": [
+        "${REPO_ROOT}/cmake/ZQ500Build.cmake"
+      ],
+      "subdirectories": []
+    }
+  ]
+}

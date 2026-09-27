@@ -1,0 +1,1597 @@
+{
+  "schema_version": 2,
+  "operator_count": 53,
+  "dtype_count": 5,
+  "entries": [
+    {
+      "module": "radartools",
+      "operator": "ambgfun",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/radartools/ambgfun/run_operator.sh",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/suites/radartools/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/radartools/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_radartools_ambgfun",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "peak_finding",
+      "operator": "argrelextrema",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/peak_finding/argrelextrema/run_operator.sh",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/suites/task2_final/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/task2_final/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_peak_finding_argrelextrema",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "radartools",
+      "operator": "ca_cfar",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/radartools/ca_cfar/run_operator.sh",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/suites/radartools/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/radartools/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_radartools_ca_cfar",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "radartools",
+      "operator": "cfar_alpha",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/radartools/cfar_alpha/run_operator.sh",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/suites/radartools/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/radartools/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_radartools_cfar_alpha",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "channelize_poly",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/channelize_poly/run_operator.py",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/cases/filtering/channelize_poly/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/channelize_poly/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_filtering_channelize_poly",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "windows",
+      "operator": "chebwin",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "windows_binary",
+      "runner_path": null,
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/windows/chebwin/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/windows/chebwin/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_windows_chebwin",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "waveforms",
+      "operator": "chirp",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/waveforms/chirp/run_operator.sh",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/suites/waveforms/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/waveforms/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_waveforms_chirp",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "convolution",
+      "operator": "correlate",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/convolution/correlate/run_operator.sh",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/suites/task2_features/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/task2_features/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_convolution_correlate",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "convolution",
+      "operator": "correlate2d",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/convolution/correlate2d/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/convolution/correlate2d/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/convolution/correlate2d/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_convolution_correlate2d",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "spectral_analysis",
+      "operator": "csd",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/spectral_analysis/csd/run_operator.py",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/cases/spectral_analysis/csd/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/spectral_analysis/csd/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_spectral_analysis_csd",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "bsplines",
+      "operator": "cubic",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/bsplines/cubic/run_operator.sh",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/suites/task2_final/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/task2_final/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_bsplines_cubic",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "wavelets",
+      "operator": "cwt",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/wavelets/cwt/run_operator.sh",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/suites/wavelets/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/wavelets/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_wavelets_cwt",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "decimate",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/decimate/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/filtering/decimate/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/decimate/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_filtering_decimate",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "detrend",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/detrend/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/filtering/detrend/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/detrend/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_filtering_detrend",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "firfilter",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/firfilter/run_operator.sh",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/suites/task2_filter_chain/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/task2_filter_chain/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_filtering_firfilter",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "firfilter2",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/firfilter2/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/filtering/firfilter2/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/firfilter2/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_filtering_firfilter2",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filter_design",
+      "operator": "firwin",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/filter_design/firwin/run_operator.sh",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/suites/task2_filter_chain/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/task2_filter_chain/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_filter_design_firwin",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filter_design",
+      "operator": "firwin2",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filter_design/firwin2/run_operator.py",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/cases/filter_design/firwin2/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filter_design/firwin2/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_filter_design_firwin2",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "demod",
+      "operator": "fm_demod",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/demod/fm_demod/run_operator.sh",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/suites/task2_features/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/task2_features/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_demod_fm_demod",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "freq_shift",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/freq_shift/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/filtering/freq_shift/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/freq_shift/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_filtering_freq_shift",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "bsplines",
+      "operator": "gauss_spline",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/shared/bsplines/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/bsplines/gauss_spline/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/bsplines/gauss_spline/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_bsplines_gauss_spline",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "waveforms",
+      "operator": "gausspulse",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/waveforms/gausspulse/run_operator.sh",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/suites/waveforms/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/waveforms/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_waveforms_gausspulse",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "windows",
+      "operator": "general_cosine",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "windows_binary",
+      "runner_path": null,
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/windows/general_cosine/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/windows/general_cosine/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_windows_general_cosine",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "windows",
+      "operator": "general_gaussian",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "windows_binary",
+      "runner_path": null,
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/windows/general_gaussian/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/windows/general_gaussian/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_windows_general_gaussian",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "windows",
+      "operator": "hamming",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/windows/hamming/run_operator.sh",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/suites/task2_filter_chain/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/task2_filter_chain/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_windows_hamming",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "hilbert",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/hilbert/run_operator.py",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/cases/filtering/hilbert/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/hilbert/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_filtering_hilbert",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "hilbert2",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/hilbert2/run_operator.py",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/cases/filtering/hilbert2/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/hilbert2/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_filtering_hilbert2",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "spectral_analysis",
+      "operator": "istft",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/spectral_analysis/istft/run_operator.py",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/cases/spectral_analysis/istft/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/spectral_analysis/istft/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_spectral_analysis_istft",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "windows",
+      "operator": "kaiser",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "windows_binary",
+      "runner_path": null,
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/windows/kaiser/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/windows/kaiser/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_windows_kaiser",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "estimation",
+      "operator": "kalman_filter",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/estimation/kalman_filter/run_operator.sh",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/suites/task2_final/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/task2_final/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_estimation_kalman_filter",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "lfilter_zi",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/lfilter_zi/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/filtering/lfilter_zi/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/lfilter_zi/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_filtering_lfilter_zi",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "spectral_analysis",
+      "operator": "lombscargle",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/spectral_analysis/lombscargle/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/spectral_analysis/lombscargle/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/spectral_analysis/lombscargle/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_spectral_analysis_lombscargle",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "wavelets",
+      "operator": "morlet",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/wavelets/morlet/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/wavelets/morlet/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/wavelets/morlet/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_wavelets_morlet",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "wavelets",
+      "operator": "morlet2",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/wavelets/morlet2/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/wavelets/morlet2/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/wavelets/morlet2/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_wavelets_morlet2",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "windows",
+      "operator": "parzen",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "windows_binary",
+      "runner_path": null,
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/windows/parzen/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/windows/parzen/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_windows_parzen",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "radartools",
+      "operator": "pulse_compression",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/radartools/pulse_compression/run_operator.sh",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/suites/radartools/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/radartools/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_radartools_pulse_compression",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "radartools",
+      "operator": "pulse_doppler",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/radartools/pulse_doppler/run_operator.sh",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/suites/radartools/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/radartools/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_radartools_pulse_doppler",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "wavelets",
+      "operator": "qmf",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/wavelets/qmf/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/wavelets/qmf/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/wavelets/qmf/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_wavelets_qmf",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "bsplines",
+      "operator": "quadratic",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/shared/bsplines/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/bsplines/quadratic/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/bsplines/quadratic/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_bsplines_quadratic",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "resample",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/resample/run_operator.py",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/cases/filtering/resample/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/resample/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_filtering_resample",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "resample_poly",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/resample_poly/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/filtering/resample_poly/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/resample_poly/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_filtering_resample_poly",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "wavelets",
+      "operator": "ricker",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/wavelets/ricker/run_operator.sh",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/suites/wavelets/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/wavelets/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_wavelets_ricker",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "waveforms",
+      "operator": "sawtooth",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/waveforms/sawtooth/run_operator.sh",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/suites/waveforms/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/waveforms/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_waveforms_sawtooth",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "sosfilt",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/sosfilt/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/filtering/sosfilt/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/sosfilt/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_filtering_sosfilt",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "spectral_analysis",
+      "operator": "spectrogram",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/spectral_analysis/spectrogram/run_operator.sh",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/suites/task2_features/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/task2_features/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_spectral_analysis_spectrogram",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "waveforms",
+      "operator": "square",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "shell_wrapper",
+      "runner_path": "test_all/operators/cases/waveforms/square/run_operator.sh",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/suites/waveforms/operator_scales.json",
+      "thresholds": "test_all/config/operators/suites/waveforms/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_waveforms_square",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "spectral_analysis",
+      "operator": "stft",
+      "profile_backend": "fft_thrust",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/spectral_analysis/stft/run_operator.py",
+      "runner_backend_argument": true,
+      "config": "test_all/config/operators/cases/spectral_analysis/stft/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/spectral_analysis/stft/accuracy_thresholds.json",
+      "binary_tree": "fft_thrust",
+      "binary_tree_by_backend": {
+        "fft_thrust": "fft_thrust",
+        "dlfft": "dlfft"
+      },
+      "binary": "bin/operator_spectral_analysis_stft",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "windows",
+      "operator": "taylor",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "windows_binary",
+      "runner_path": null,
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/windows/taylor/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/windows/taylor/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_windows_taylor",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "windows",
+      "operator": "triang",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "windows_binary",
+      "runner_path": null,
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/windows/triang/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/windows/triang/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_windows_triang",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "waveforms",
+      "operator": "unit_impulse",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/waveforms/unit_impulse/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/waveforms/unit_impulse/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/waveforms/unit_impulse/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_waveforms_unit_impulse",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "upfirdn",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/upfirdn/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/filtering/upfirdn/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/upfirdn/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_filtering_upfirdn",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "spectral_analysis",
+      "operator": "vectorstrength",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/spectral_analysis/vectorstrength/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/spectral_analysis/vectorstrength/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/spectral_analysis/vectorstrength/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_spectral_analysis_vectorstrength",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    },
+    {
+      "module": "filtering",
+      "operator": "wiener",
+      "profile_backend": "not_applicable",
+      "selectable_backends": [
+        "fft_thrust",
+        "dlfft"
+      ],
+      "dtypes": [
+        "FP32",
+        "FP16",
+        "INT32",
+        "INT16",
+        "INT8"
+      ],
+      "runner_kind": "python_wrapper",
+      "runner_path": "test_all/operators/cases/filtering/wiener/run_operator.py",
+      "runner_backend_argument": false,
+      "config": "test_all/config/operators/cases/filtering/wiener/operator_scales.json",
+      "thresholds": "test_all/config/operators/cases/filtering/wiener/accuracy_thresholds.json",
+      "binary_tree": "not_applicable",
+      "binary_tree_by_backend": {
+        "fft_thrust": "not_applicable",
+        "dlfft": "not_applicable"
+      },
+      "binary": "bin/operator_filtering_wiener",
+      "run_type": "smoke",
+      "effective_warmup_runs": 1,
+      "effective_measured_runs": 1
+    }
+  ]
+}

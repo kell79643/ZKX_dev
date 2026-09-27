@@ -1,0 +1,51 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 16,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "zq500-base",
+      "hidden": true,
+      "generator": "Unix Makefiles",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    },
+    {
+      "name": "zq500-fft-thrust",
+      "displayName": "ZQ500 / fft_thrust",
+      "inherits": "zq500-base",
+      "binaryDir": "${sourceDir}/build/zq500/fft-thrust",
+      "cacheVariables": {
+        "USE_DLFFT": "OFF",
+        "USE_THRUST": "ON"
+      }
+    },
+    {
+      "name": "zq500-dlfft",
+      "displayName": "ZQ500 / dlfft",
+      "inherits": "zq500-base",
+      "binaryDir": "${sourceDir}/build/zq500/dlfft",
+      "cacheVariables": {
+        "USE_DLFFT": "ON",
+        "USE_THRUST": "OFF"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "zq500-fft-thrust",
+      "configurePreset": "zq500-fft-thrust",
+      "jobs": 1
+    },
+    {
+      "name": "zq500-dlfft",
+      "configurePreset": "zq500-dlfft",
+      "jobs": 1
+    }
+  ]
+}

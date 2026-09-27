@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "target": "Task2",
+  "backend": "fft_thrust",
+  "formal_git_commit": "b0478e7c5f1ad93e4cf41827d653d191c4a86804",
+  "memory_git_commit": "37baf29a697d03c2940be32e89770fa767195e46",
+  "relevant_paths": [
+    "CMakeLists.txt",
+    "Task2",
+    "cusignal_cpp/src",
+    "cusignal_cpp/include"
+  ],
+  "verification_command": "git diff --name-only b0478e7c5f1ad93e4cf41827d653d191c4a86804 37baf29a697d03c2940be32e89770fa767195e46 -- CMakeLists.txt Task2 cusignal_cpp/src cusignal_cpp/include",
+  "changed_paths": [],
+  "status": "PASS"
+}

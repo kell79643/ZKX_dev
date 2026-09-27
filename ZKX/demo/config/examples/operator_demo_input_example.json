@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "scale_set_id": "demo_external_hamming_single_v1",
+  "coverage": "minimal_example_not_full_53",
+  "operators": [
+    {
+      "operator_name": "hamming",
+      "module_name": "windows",
+      "scales": [
+        {
+          "scale_id": "hamming_fp32_external_128",
+          "order_of_magnitude": "10^2",
+          "actual_elements": 128,
+          "inputs": [
+            {
+              "input_name": "request_spec",
+              "shape": [1],
+              "element_count": 1,
+              "dtype": "FP32",
+              "role": "primary"
+            }
+          ],
+          "parameters": {
+            "n": 128,
+            "sym": true,
+            "output_dtype": "FP32_TASK_RESIDENT",
+            "equivalent_work": "10^2"
+          },
+          "mapping_reason": "现场外部JSON输入演示：生成128点对称Hamming窗"
+        }
+      ]
+    }
+  ]
+}

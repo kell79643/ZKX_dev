@@ -1,0 +1,18 @@
+module/operator                   abnormal_type           expected_code            captured_code            returned_code            safe_exit  status  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+filtering/lfilter_zi              invalid_shape           INVALID_SHAPE            INVALID_SHAPE            INVALID_SHAPE            true       PASS    
+  case_id: filtering.lfilter_zi.invalid_shape.coefficient_a_is_empty
+  abnormal_input: mutation=coefficient a is empty
+  error_message: filtering::lfilter_zi检测到非法shape：mutation=coefficient a is empty
+  backend_error: code=NA name=NA message=NA
+filtering/lfilter_zi              invalid_parameter       INVALID_ARGUMENT         INVALID_ARGUMENT         INVALID_ARGUMENT         true       PASS    
+  case_id: filtering.lfilter_zi.invalid_parameter.leading_denominator_coefficient_is_zero
+  abnormal_input: mutation=leading denominator coefficient is zero
+  error_message: filtering::lfilter_zi检测到非法参数：mutation=leading denominator coefficient is zero
+  backend_error: code=NA name=NA message=NA
+filtering/lfilter_zi              backend_call_failure    BACKEND_ERROR            CONFIG_ERROR             CONFIG_ERROR             true       FAIL    
+  case_id: filtering.lfilter_zi.backend_call_failure.inject_singular_linear_system_backend_failure
+  abnormal_input: mutation=inject singular linear-system backend failure
+  error_message: filtering::lfilter_zi后端失败case使用未知backend：not_applicable
+  backend_error: code=NA name=NA message=NA
+[STAGE09][SUMMARY] total=3 pass=2 fail=1 status=FAIL

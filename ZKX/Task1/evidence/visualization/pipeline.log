@@ -1,0 +1,127 @@
+command=/tmp/ZKX_dev/build_visualization/cusignal_task_f/Task1/task1_gpu_cpu/task1_pipeline --config /tmp/ZKX_dev/Task1/visualization/actual_results/task1_selected.conf
+[TASK1][CONFIG] path=/tmp/ZKX_dev/Task1/visualization/actual_results/task1_selected.conf sha256=7b079499cfe137c212989484ecf96a325d85750a7b65b19f9351c358bdbe2b00 shape=[128,512] pulse_samples=128 sample_rate_hz=2.56e+06 prf_hz=8000 bandwidth_hz=640000 carrier_frequency_hz=1e+10 target_delay_samples=171 doppler_bin=16 doppler_hz=1000 target_amplitude=1.5 noise_std=0.035 noise_seed=20260720 pfa=0.001 cfar_guard=[1,2] cfar_reference=[2,6] ambiguity_nfreq=256
+[TASK1][step1][TIMING] prep_ms=0.000040 h2d_ms=0.000000 compute_ms=3.181106 d2h_ms=7.106763 post_ms=52.615655 formal_execution_ms=27.139273 total_ms=79.939449
+[TASK1][step1][ACCURACY] max_abs_error=0.000027 mse=0.000000 rmse=0.000003 relative_l2_error=0.000004 relative_linf_error=0.000018 compared_elements=196736 relative_tolerance=0.000020 relative_floor=0.000000 first_failure_index=-1 reference_source="independent Host LFM/echo/noise formulas" comparison_method="MSE, RMSE, relative L2 and CPU-amplitude-normalized relative L_inf for each complex output; maximum across outputs; delay/Doppler perturbations; seed sensitivity when noise is enabled and seed invariance when noise_std is zero" status=pass
+[TASK1][OPERATOR] step=step1 name=gpu_delay_doppler_noise gpu_ms=0.137102
+[TASK1][OPERATOR] step=step1 name=gpu_lfm_generation gpu_ms=3.044004
+[TASK1][METRIC] step=step1 name=bandwidth_hz value=640000.000000
+[TASK1][METRIC] step=step1 name=delay_ground_truth_recorded value=1.000000
+[TASK1][METRIC] step=step1 name=delay_ground_truth_samples value=171.000000
+[TASK1][METRIC] step=step1 name=doppler_ground_truth_hz value=1000.000000
+[TASK1][METRIC] step=step1 name=doppler_ground_truth_recorded value=1.000000
+[TASK1][METRIC] step=step1 name=noise_added value=1.000000
+[TASK1][METRIC] step=step1 name=noise_free_case value=0.000000
+[TASK1][METRIC] step=step1 name=noise_rms value=0.028593
+[TASK1][METRIC] step=step1 name=noise_seed value=20260720.000000
+[TASK1][METRIC] step=step1 name=noise_std value=0.035000
+[TASK1][METRIC] step=step1 name=num_pulses value=128.000000
+[TASK1][METRIC] step=step1 name=output_columns value=512.000000
+[TASK1][METRIC] step=step1 name=output_rows value=128.000000
+[TASK1][METRIC] step=step1 name=perturbation_checks_pass value=3.000000
+[TASK1][METRIC] step=step1 name=prf_hz value=8000.000000
+[TASK1][METRIC] step=step1 name=pri_seconds value=0.000125
+[TASK1][METRIC] step=step1 name=pulse_samples value=128.000000
+[TASK1][METRIC] step=step1 name=pulse_width_seconds value=0.000050
+[TASK1][METRIC] step=step1 name=sample_rate_hz value=2560000.000000
+[TASK1][METRIC] step=step1 name=samples_per_pulse value=512.000000
+[TASK1][METRIC] step=step1 name=seed_perturbation_delta value=0.093062
+[TASK1][METRIC] step=step1 name=seed_perturbation_expected_change value=1.000000
+[TASK1][METRIC] step=step1 name=snr_db value=28.376067
+[TASK1][METRIC] step=step1 name=snr_db_defined value=1.000000
+[TASK1][METRIC] step=step1 name=target_amplitude value=1.500000
+[TASK1][METRIC] step=step1 name=target_echo_present value=1.000000
+[TASK1][METRIC] step=step1 name=target_range_m value=10012.599671
+[TASK1][step2][TIMING] prep_ms=0.001280 h2d_ms=0.264452 compute_ms=1.444530 d2h_ms=1.551929 post_ms=559.640495 formal_execution_ms=3.326530 total_ms=563.077516
+[TASK1][step2][ACCURACY] max_abs_error=0.000004 mse=0.000000 rmse=0.000000 relative_l2_error=0.000000 relative_linf_error=0.000000 compared_elements=65536 relative_tolerance=0.000100 relative_floor=0.000000 first_failure_index=-1 reference_source="pulse_compression_typed_cpu<float>" comparison_method="MSE, RMSE, relative L2 and CPU-amplitude-normalized relative L_inf; range peak/template perturbation" status=pass
+[TASK1][OPERATOR] step=step2 name=pulse_compression gpu_ms=1.444530
+[TASK1][METRIC] step=step2 name=compressed_half_power_width_samples value=3.000000
+[TASK1][METRIC] step=step2 name=expected_range_bin value=171.000000
+[TASK1][METRIC] step=step2 name=nfft value=512.000000
+[TASK1][METRIC] step=step2 name=normalization_enabled value=1.000000
+[TASK1][METRIC] step=step2 name=output_columns value=512.000000
+[TASK1][METRIC] step=step2 name=output_rows value=128.000000
+[TASK1][METRIC] step=step2 name=padding_policy_circular value=1.000000
+[TASK1][METRIC] step=step2 name=peak_range_bin value=171.000000
+[TASK1][METRIC] step=step2 name=pulse_compression_called value=1.000000
+[TASK1][METRIC] step=step2 name=range_bin_spacing_m value=58.553214
+[TASK1][METRIC] step=step2 name=range_error_m value=0.000000
+[TASK1][METRIC] step=step2 name=step1_to_step2_data_match value=1.000000
+[TASK1][METRIC] step=step2 name=template_samples value=128.000000
+[TASK1][METRIC] step=step2 name=theoretical_range_resolution_m value=234.212858
+[TASK1][METRIC] step=step2 name=uncompressed_width_samples value=128.000000
+[TASK1][step3][TIMING] prep_ms=0.000470 h2d_ms=0.216882 compute_ms=0.484356 d2h_ms=1.412558 post_ms=1201.848037 formal_execution_ms=2.167423 total_ms=1204.055351
+[TASK1][step3][ACCURACY] max_abs_error=0.001592 mse=0.000000 rmse=0.000015 relative_l2_error=0.000001 relative_linf_error=0.000001 compared_elements=65536 relative_tolerance=0.000500 relative_floor=0.000000 first_failure_index=-1 reference_source="pulse_doppler_typed_cpu<float>" comparison_method="MSE, RMSE, relative L2 and CPU-amplitude-normalized relative L_inf; peak truth/window perturbation" status=pass
+[TASK1][OPERATOR] step=step3 name=pulse_doppler gpu_ms=0.484356
+[TASK1][METRIC] step=step3 name=detected_doppler_hz value=1000.000000
+[TASK1][METRIC] step=step3 name=doppler_bin_spacing_hz value=62.500000
+[TASK1][METRIC] step=step3 name=doppler_error_hz value=0.000000
+[TASK1][METRIC] step=step3 name=expected_doppler_hz value=1000.000000
+[TASK1][METRIC] step=step3 name=hamming_window value=1.000000
+[TASK1][METRIC] step=step3 name=nfft value=128.000000
+[TASK1][METRIC] step=step3 name=normalization_none value=1.000000
+[TASK1][METRIC] step=step3 name=output_columns value=512.000000
+[TASK1][METRIC] step=step3 name=output_rows value=128.000000
+[TASK1][METRIC] step=step3 name=padding_or_truncation_none value=1.000000
+[TASK1][METRIC] step=step3 name=peak_doppler_bin value=16.000000
+[TASK1][METRIC] step=step3 name=peak_range_bin value=171.000000
+[TASK1][METRIC] step=step3 name=pulse_doppler_called value=1.000000
+[TASK1][METRIC] step=step3 name=signed_doppler_bin value=16.000000
+[TASK1][METRIC] step=step3 name=slow_time_axis value=0.000000
+[TASK1][METRIC] step=step3 name=step2_to_step3_data_match value=1.000000
+[TASK1][step4][TIMING] prep_ms=0.001690 h2d_ms=0.000000 compute_ms=0.744158 d2h_ms=0.974316 post_ms=32.954367 formal_execution_ms=1.910851 total_ms=34.952019
+[TASK1][step4][ACCURACY] max_abs_error=0.070822 mse=0.000005 rmse=0.002238 relative_l2_error=0.000000 relative_linf_error=0.000000 compared_elements=196609 relative_tolerance=0.001000 relative_floor=0.000000 first_failure_index=-1 reference_source="Independent Host FP32 numeric reference plus same-GPU-power ca_cfar_typed_cpu<float> discrete reference" comparison_method="MSE, RMSE, relative L2 and CPU-amplitude-normalized relative L_inf against the independent CPU pipeline for numeric outputs; exact mask against the CPU CFAR fed by the same GPU power; independent mask differences remain diagnostics; scene perturbations remain hard gates" status=pass
+[TASK1][OPERATOR] step=step4 name=ca_cfar gpu_ms=0.415174
+[TASK1][OPERATOR] step=step4 name=cfar_alpha gpu_ms=0.235546
+[TASK1][OPERATOR] step=step4 name=range_doppler_power gpu_ms=0.093438
+[TASK1][METRIC] step=step4 name=boundary_policy_zero_threshold value=1.000000
+[TASK1][METRIC] step=step4 name=ca_cfar_called value=1.000000
+[TASK1][METRIC] step=step4 name=cfar_alpha value=7.142328
+[TASK1][METRIC] step=step4 name=cfar_alpha_called value=1.000000
+[TASK1][METRIC] step=step4 name=cfar_rank value=2.000000
+[TASK1][METRIC] step=step4 name=false_alarm_rate value=0.005073
+[TASK1][METRIC] step=step4 name=false_alarm_rate_limit value=0.020000
+[TASK1][METRIC] step=step4 name=false_alarms value=307.000000
+[TASK1][METRIC] step=step4 name=guard_cells_doppler value=1.000000
+[TASK1][METRIC] step=step4 name=guard_cells_range value=2.000000
+[TASK1][METRIC] step=step4 name=interference_perturbation_detected value=1.000000
+[TASK1][METRIC] step=step4 name=missed_targets value=0.000000
+[TASK1][METRIC] step=step4 name=pfa value=0.001000
+[TASK1][METRIC] step=step4 name=pure_noise_false_alarms value=0.000000
+[TASK1][METRIC] step=step4 name=reference_cell_count value=104.000000
+[TASK1][METRIC] step=step4 name=reference_cells_doppler value=2.000000
+[TASK1][METRIC] step=step4 name=reference_cells_range value=6.000000
+[TASK1][METRIC] step=step4 name=step3_to_step4_data_match value=1.000000
+[TASK1][METRIC] step=step4 name=target_detected value=1.000000
+[TASK1][METRIC] step=step4 name=target_doppler_index value=16.000000
+[TASK1][METRIC] step=step4 name=target_scene_false_alarm_rate_applicable value=0.000000
+[TASK1][METRIC] step=step4 name=target_scene_false_alarm_rate_diagnostic_only value=1.000000
+[TASK1][METRIC] step=step4 name=target_scene_false_alarm_rate_gate_applied value=0.000000
+[TASK1][step5][TIMING] prep_ms=0.000810 h2d_ms=0.053370 compute_ms=5.641120 d2h_ms=0.803475 post_ms=431.900091 formal_execution_ms=6.608720 total_ms=438.655041
+[TASK1][step5][ACCURACY] max_abs_error=0.000000 mse=0.000000 rmse=0.000000 relative_l2_error=0.000000 relative_linf_error=0.000000 compared_elements=65791 relative_tolerance=0.000200 relative_floor=0.000000 first_failure_index=-1 reference_source="ambgfun_typed_cpu<float> for 2D and both cuts" comparison_method="MSE, RMSE, relative L2 and CPU-amplitude-normalized relative L_inf for each ambiguity output; maximum across outputs; peak/mainlobe/PSLR/waveform perturbation" status=pass
+[TASK1][OPERATOR] step=step5 name=ambgfun_2d gpu_ms=0.885158
+[TASK1][OPERATOR] step=step5 name=ambgfun_delay_cut gpu_ms=3.754622
+[TASK1][OPERATOR] step=step5 name=ambgfun_doppler_cut gpu_ms=1.001340
+[TASK1][METRIC] step=step5 name=ambgfun_called value=1.000000
+[TASK1][METRIC] step=step5 name=ambiguity_columns value=256.000000
+[TASK1][METRIC] step=step5 name=ambiguity_rows value=255.000000
+[TASK1][METRIC] step=step5 name=delay_grid_max_seconds value=0.000050
+[TASK1][METRIC] step=step5 name=delay_grid_min_seconds value=-0.000050
+[TASK1][METRIC] step=step5 name=delay_grid_spacing_seconds value=0.000000
+[TASK1][METRIC] step=step5 name=delay_mainlobe_width_samples value=3.000000
+[TASK1][METRIC] step=step5 name=delay_pslr_db value=-13.676513
+[TASK1][METRIC] step=step5 name=doppler_grid_max_hz value=1270000.000000
+[TASK1][METRIC] step=step5 name=doppler_grid_min_hz value=-1280000.000000
+[TASK1][METRIC] step=step5 name=doppler_grid_spacing_hz value=10000.000000
+[TASK1][METRIC] step=step5 name=doppler_mainlobe_width_bins value=1.000000
+[TASK1][METRIC] step=step5 name=doppler_pslr_db value=-13.462859
+[TASK1][METRIC] step=step5 name=normalization_error value=0.000000
+[TASK1][METRIC] step=step5 name=normalization_peak value=1.000000
+[TASK1][METRIC] step=step5 name=peak_delay_index value=127.000000
+[TASK1][METRIC] step=step5 name=peak_delay_seconds value=0.000000
+[TASK1][METRIC] step=step5 name=peak_doppler_hz value=0.000000
+[TASK1][METRIC] step=step5 name=peak_doppler_index value=128.000000
+[TASK1][METRIC] step=step5 name=step1_waveform_to_step5_match value=1.000000
+[TASK1][METRIC] step=step5 name=waveform_quality_pass value=1.000000
+[TASK1][PIPELINE][TIMING] completed_steps=5 pipeline_total_ms=2320.949117 sum_step_total_ms=2320.679376
+[TASK1][SUMMARY] official_steps=5/5 gpu_step_mapping=5/5 formal_business_operators_exercised=5/5 cpu_fallback=0 temporary_implementation=0 nvidia_only_path=0 self_timed_steps=5/5 accuracy_validation_files=5/5 accuracy_comparison_files=5/5 accuracy_pass=5/5 semantic_metrics_pass=5/5 comparison_negative_tests_pass=true status=pass
+return_code=0

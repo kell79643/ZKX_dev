@@ -1,0 +1,13 @@
+{
+  "verdict": "UPSTREAM_NUMERIC_SENSITIVITY",
+  "cpu_on_cpu_count": 2039,
+  "gpu_on_cpu_count": 2039,
+  "cpu_on_gpu_count": 2040,
+  "gpu_on_gpu_count": 2040,
+  "same_cpu_bundle_difference": [],
+  "same_gpu_bundle_difference": [],
+  "pipeline_difference": [11559],
+  "differing_points": [
+    {"coordinate": 11559, "cpu_value": 0.027248803526163101, "gpu_value": 0.027248833328485489, "cpu_peak_margin": 0, "gpu_peak_margin": 1.1175870895385742e-08}
+  ]
+}

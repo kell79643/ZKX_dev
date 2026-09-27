@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "default_input_profile_backend": "fft_thrust",
+  "warmup_runs": 1,
+  "measured_runs": 1,
+  "normal_run_count": 1,
+  "safety_timeout_seconds": 300,
+  "presentation_time_target_seconds": 90,
+  "presentation_time_target_is_gate": false,
+  "temporary_results_policy": "delete_before_render",
+  "decision_basis": "Task1 and Task2 matched 0/1/3 single-measurement comparison; user selected warmup_runs=1"
+}

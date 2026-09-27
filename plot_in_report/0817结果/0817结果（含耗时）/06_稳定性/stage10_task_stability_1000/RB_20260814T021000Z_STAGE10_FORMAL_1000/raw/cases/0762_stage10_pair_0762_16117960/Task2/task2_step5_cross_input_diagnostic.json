@@ -1,0 +1,14 @@
+{
+  "verdict": "UPSTREAM_NUMERIC_SENSITIVITY",
+  "cpu_on_cpu_count": 2048,
+  "gpu_on_cpu_count": 2048,
+  "cpu_on_gpu_count": 2048,
+  "gpu_on_gpu_count": 2048,
+  "same_cpu_bundle_difference": [],
+  "same_gpu_bundle_difference": [],
+  "pipeline_difference": [2850,2853],
+  "differing_points": [
+    {"coordinate": 2850, "cpu_value": 0.0067327860742807388, "gpu_value": 0.0067327935248613358, "cpu_peak_margin": -9.3132257461547852e-10, "gpu_peak_margin": 9.3132257461547852e-10},
+    {"coordinate": 2853, "cpu_value": 0.0067327870056033134, "gpu_value": 0.0067327925935387611, "cpu_peak_margin": 9.3132257461547852e-10, "gpu_peak_margin": -9.3132257461547852e-10}
+  ]
+}
