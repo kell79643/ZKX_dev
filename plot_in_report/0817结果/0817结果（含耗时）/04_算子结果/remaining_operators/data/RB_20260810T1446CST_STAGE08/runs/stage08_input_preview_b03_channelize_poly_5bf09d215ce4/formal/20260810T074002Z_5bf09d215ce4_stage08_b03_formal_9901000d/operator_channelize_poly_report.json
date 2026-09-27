@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "run_id": "20260810T074002Z_5bf09d215ce4_stage08_b03_formal_9901000d",
+  "case_id": "channelize_poly__channelize_poly_int8_10e2__630349d9c47b1bf9",
+  "operator_name": "channelize_poly",
+  "scale_id": "channelize_poly_int8_10e2",
+  "requested_dtype": "INT8",
+  "dtype_semantics": "actual_typed_array_inputs_fp32_compute_extension",
+  "typed_input_count": 2,
+  "compute_dtype": "FP32",
+  "fft_dtype": "ComplexFP32",
+  "output_dtype": "ComplexFP32",
+  "backend": "fft_thrust",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "630349d9c47b1bf9d98e1d65a49269ade37fd420f07651579646246ba3b65fff",
+  "metrics": {
+    "mse": 1.1040834912989794e-11,
+    "rmse": 3.3227751824325693e-06,
+    "relative_l2": 3.8476631806030484e-08,
+    "relative_linf": 5.3413827815786496e-08
+  },
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[128]",
+      "dtype": "INT8",
+      "element_count": "128",
+      "generator": "modular_signal(seed=83050001,integral=true)",
+      "preview_head4_tail2": "i=0:3;i=1:-3;i=2:-9;i=3:8;i=126:6;i=127:0"
+    },
+    {
+      "input_name": "h",
+      "shape": "[32]",
+      "dtype": "INT8",
+      "element_count": "32",
+      "generator": "modular_taps(seed=83050002,integral=true)",
+      "preview_head4_tail2": "i=0:-4;i=1:3;i=2:1;i=3:-1;i=30:-1;i=31:-3"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT8",
+    "x-count": "128",
+    "h-count": "32",
+    "n-chans": "8",
+    "seed": "83050001"
+  }
+}

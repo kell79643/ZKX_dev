@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260807T103311Z_ba0a42aa462d_stage08_b02_formal_8b00020d",
+  "case_id": "taylor__taylor_int32_10e2__eee0d52b9a309a7f__periodic",
+  "operator_name": "taylor",
+  "scale_id": "taylor_int32_10e2",
+  "dtype": "INT32",
+  "sym": false,
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "eee0d52b9a309a7fb432da36f2339320dc752e01b8dba4cd7469b33b3ed4ac71",
+  "cuda_event_auxiliary_ms": 0.39124199748039246,
+  "cuda_event_source": "cudaEvent",
+  "mse": 4.0313219051453759e-15,
+  "rmse": 6.3492691745943299e-08,
+  "relative_l2": 9.0990661037047512e-08,
+  "relative_linf": 1.2564541629345172e-07,
+  "status": "PASS",
+  "error_code": "OK"
+}

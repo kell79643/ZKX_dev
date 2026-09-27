@@ -1,0 +1,17 @@
+status=PASS
+error_code=OK
+run_id=20260810T073952Z_5bf09d215ce4_stage08_b03_formal_9901000a
+case_id=channelize_poly__channelize_poly_int16_10e2__1464f14c428bbf20
+scale_id=channelize_poly_int16_10e2
+dtype=INT16
+dtype_semantics=actual_typed_array_inputs_fp32_compute_extension
+typed_input_count=2
+compute_dtype=FP32
+fft_dtype=ComplexFP32
+output_dtype=ComplexFP32
+backend=fft_thrust
+warmup_runs=20
+measured_runs=100
+actual_input_digest=1464f14c428bbf20b9d1450dc3ad00ac09f034e4d64fe85f907aaa6785d38bcc
+input_content_json=[{"dtype":"INT16","element_count":"128","generator":"modular_signal(seed=83040001,integral=true)","input_name":"x","preview_head4_tail2":"i=0:8;i=1:2;i=2:-4;i=3:-10;i=126:11;i=127:5","shape":"[128]"},{"dtype":"INT16","element_count":"32","generator":"modular_taps(seed=83040002,integral=true)","input_name":"h","preview_head4_tail2":"i=0:2;i=1:0;i=2:-2;i=3:-4;i=30:-4;i=31:3","shape":"[32]"}]
+case_parameters_json={"dtype":"INT16","h-count":"32","n-chans":"8","seed":"83040001","x-count":"128"}

@@ -1,0 +1,1 @@
+command=build_stage08_b05_sosfilt_1681b603eadb/stage08_filtering_sosfilt --dtype INT8 --rank 2 --rows 32 --cols 32 --sections 2 --axis 1 --zi true --seed 85450002 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage08_b05_sosfilt_1681b603eadb/formal/20260809T141501Z_1681b603eadb_stage08_b05_formal_8543f00d/sosfilt_probe_raw.json

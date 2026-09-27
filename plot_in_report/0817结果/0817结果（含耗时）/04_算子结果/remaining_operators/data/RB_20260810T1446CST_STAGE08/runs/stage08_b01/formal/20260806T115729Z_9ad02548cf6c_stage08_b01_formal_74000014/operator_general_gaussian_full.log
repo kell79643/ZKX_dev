@@ -1,0 +1,8 @@
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int16_10e3 dtype=INT16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.043161190000000058 gpu_mean_ms=0.26412610000000014 speedup=0.16341130240441984
+[stage08-b01] mse=5.2172072977120558e-16 rmse=2.2841206837012917e-08 relative_l2=4.7417485714348028e-08 relative_linf=1.0280114938285787e-07
+[stage08-b01] resources=available cuda_event_ms=0.27539399266242981
+[stage08-b01] status=PASS error_code=OK

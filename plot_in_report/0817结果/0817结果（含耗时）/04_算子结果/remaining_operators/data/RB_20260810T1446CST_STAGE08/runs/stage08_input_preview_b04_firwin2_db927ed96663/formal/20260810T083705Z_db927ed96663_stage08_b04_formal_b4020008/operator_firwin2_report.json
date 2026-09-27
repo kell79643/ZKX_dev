@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "run_id": "20260810T083705Z_db927ed96663_stage08_b04_formal_b4020008",
+  "case_id": "firwin2__firwin2_int32_10e3__9bb7ee17931d2a9a",
+  "operator_name": "firwin2",
+  "scale_id": "firwin2_int32_10e3",
+  "requested_dtype": "INT32",
+  "dtype_semantics": "actual_same_dtype_freq_gain_arrays",
+  "typed_input_names": "freq|gain",
+  "compute_dtype": "FP32",
+  "fft_dtype": "ComplexFP32",
+  "output_dtype": "FP64",
+  "backend": "fft_thrust",
+  "filter_type": "II",
+  "window": "none",
+  "antisymmetric": false,
+  "numtaps": 32,
+  "nfreqs": 65,
+  "work_items": 2080,
+  "typed_input_count": 2,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "9bb7ee17931d2a9a4ebf725bb62923a7d4386220c65c617d97e4564f41e8e011",
+  "metrics": {
+    "mse": 3.3703870808340244e-15,
+    "rmse": 5.805503493095172e-08,
+    "relative_l2": 5.687036828005167e-07,
+    "relative_linf": 5.240684496942937e-07
+  },
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "freq",
+      "shape": "[3]",
+      "dtype": "INT32",
+      "element_count": "3",
+      "generator": "fixed_frequency_breakpoints",
+      "preview_head4_tail2": "i=0:0;i=1:4;i=2:8"
+    },
+    {
+      "input_name": "gain",
+      "shape": "[3]",
+      "dtype": "INT32",
+      "element_count": "3",
+      "generator": "fixed_gain_breakpoints",
+      "preview_head4_tail2": "i=0:0;i=1:1;i=2:0"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT32",
+    "numtaps": "32",
+    "nfreqs": "65",
+    "window": "none",
+    "antisymmetric": "false",
+    "fs": "16"
+  }
+}

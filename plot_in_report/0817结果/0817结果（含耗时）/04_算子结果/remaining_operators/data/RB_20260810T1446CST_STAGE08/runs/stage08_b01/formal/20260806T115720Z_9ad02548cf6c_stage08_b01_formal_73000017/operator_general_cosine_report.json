@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260806T115720Z_9ad02548cf6c_stage08_b01_formal_73000017",
+  "case_id": "general_cosine__general_cosine_int16_10e4__103c3e0fc2bc0975__periodic",
+  "operator_name": "general_cosine",
+  "scale_id": "general_cosine_int16_10e4",
+  "dtype": "INT16",
+  "sym": false,
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "103c3e0fc2bc097546b335300f3f3590b40be1c9390bdb6c5ed435be9b721317",
+  "cuda_event_auxiliary_ms": 0.44960999488830566,
+  "cuda_event_source": "cudaEvent",
+  "mse": 7.5160771004930909e-14,
+  "rmse": 2.7415464797251005e-07,
+  "relative_l2": 1.4654182338639309e-07,
+  "relative_linf": 3.8914514655097321e-07,
+  "status": "PASS",
+  "error_code": "OK"
+}

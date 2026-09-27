@@ -1,0 +1,23 @@
+{
+  "run_id": "20260809T134106Z_99442e69c882_stage08_b05_formal_8523f00c",
+  "case_id": "freq_shift__freq_shift_int8_10e2__63cdbea1183b7e19",
+  "operator_name": "freq_shift",
+  "scale_id": "freq_shift_int8_10e2",
+  "requested_dtype": "INT8",
+  "output_dtype": "ComplexFP64",
+  "backend": "not_applicable",
+  "freq": 1.25,
+  "fs": 100.0,
+  "rank": 1,
+  "shape": [
+    100
+  ],
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 1.314594580281868e-13,
+  "rmse": 3.625733829560394e-07,
+  "relative_l2": 3.3810142294646335e-07,
+  "relative_linf": 5.737134929865017e-07,
+  "status": "PASS",
+  "error_code": "OK"
+}

@@ -1,0 +1,2 @@
+run_id,case_id,operator_name,scale_id,dtype,sym,backend,warmup_runs,measured_runs,cpu_mean_ms,gpu_mean_ms,cpu_gpu_speedup,mse,rmse,relative_l2,relative_linf,cuda_event_ms,cuda_event_source,status,error_code
+20260810T083032Z_a64a65577ccc_stage08_b02_formal_a2010006,parzen__parzen_fp32_10e4__76494d2bef81be4b__periodic,parzen,parzen_fp32_10e4,FP32,false,not_applicable,20,100,0.2194195099999999,0.30700420999999983,0.71471172984891651,4.4763879250018581e-16,2.1157476042765256e-08,4.0742500917610931e-08,9.6697271634305082e-08,0.46386799216270447,cudaEvent,PASS,OK

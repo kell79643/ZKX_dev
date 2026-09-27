@@ -1,0 +1,46 @@
+[stage08-b03-formal] case=0 scale=hilbert_fp32_10e2 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_fp32_10e2 dtype=FP32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091140Z_0b2008e7f76a_stage08_b03_formal_8313f000
+[stage08-b03-formal] case=0 scale=hilbert_fp32_10e2 status=completed
+[stage08-b03-formal] case=1 scale=hilbert_fp32_10e3 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_fp32_10e3 dtype=FP32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091142Z_0b2008e7f76a_stage08_b03_formal_8313f001
+[stage08-b03-formal] case=1 scale=hilbert_fp32_10e3 status=completed
+[stage08-b03-formal] case=2 scale=hilbert_fp32_10e4 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_fp32_10e4 dtype=FP32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091142Z_0b2008e7f76a_stage08_b03_formal_8313f002
+[stage08-b03-formal] case=2 scale=hilbert_fp32_10e4 status=completed
+[stage08-b03-formal] case=3 scale=hilbert_fp16_10e2 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_fp16_10e2 dtype=FP16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091214Z_0b2008e7f76a_stage08_b03_formal_8313f003
+[stage08-b03-formal] case=3 scale=hilbert_fp16_10e2 status=completed
+[stage08-b03-formal] case=4 scale=hilbert_fp16_10e3 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_fp16_10e3 dtype=FP16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091216Z_0b2008e7f76a_stage08_b03_formal_8313f004
+[stage08-b03-formal] case=4 scale=hilbert_fp16_10e3 status=completed
+[stage08-b03-formal] case=5 scale=hilbert_fp16_10e4 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_fp16_10e4 dtype=FP16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091217Z_0b2008e7f76a_stage08_b03_formal_8313f005
+[stage08-b03-formal] case=5 scale=hilbert_fp16_10e4 status=completed
+[stage08-b03-formal] case=6 scale=hilbert_int32_10e2 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_int32_10e2 dtype=INT32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091252Z_0b2008e7f76a_stage08_b03_formal_8313f006
+[stage08-b03-formal] case=6 scale=hilbert_int32_10e2 status=completed
+[stage08-b03-formal] case=7 scale=hilbert_int32_10e3 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_int32_10e3 dtype=INT32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091254Z_0b2008e7f76a_stage08_b03_formal_8313f007
+[stage08-b03-formal] case=7 scale=hilbert_int32_10e3 status=completed
+[stage08-b03-formal] case=8 scale=hilbert_int32_10e4 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_int32_10e4 dtype=INT32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091255Z_0b2008e7f76a_stage08_b03_formal_8313f008
+[stage08-b03-formal] case=8 scale=hilbert_int32_10e4 status=completed
+[stage08-b03-formal] case=9 scale=hilbert_int16_10e2 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_int16_10e2 dtype=INT16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091327Z_0b2008e7f76a_stage08_b03_formal_8313f009
+[stage08-b03-formal] case=9 scale=hilbert_int16_10e2 status=completed
+[stage08-b03-formal] case=10 scale=hilbert_int16_10e3 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_int16_10e3 dtype=INT16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091329Z_0b2008e7f76a_stage08_b03_formal_8313f00a
+[stage08-b03-formal] case=10 scale=hilbert_int16_10e3 status=completed
+[stage08-b03-formal] case=11 scale=hilbert_int16_10e4 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_int16_10e4 dtype=INT16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091330Z_0b2008e7f76a_stage08_b03_formal_8313f00b
+[stage08-b03-formal] case=11 scale=hilbert_int16_10e4 status=completed
+[stage08-b03-formal] case=12 scale=hilbert_int8_10e2 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_int8_10e2 dtype=INT8 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091402Z_0b2008e7f76a_stage08_b03_formal_8313f00c
+[stage08-b03-formal] case=12 scale=hilbert_int8_10e2 status=completed
+[stage08-b03-formal] case=13 scale=hilbert_int8_10e3 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_int8_10e3 dtype=INT8 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091404Z_0b2008e7f76a_stage08_b03_formal_8313f00d
+[stage08-b03-formal] case=13 scale=hilbert_int8_10e3 status=completed
+[stage08-b03-formal] case=14 scale=hilbert_int8_10e4 status=starting
+STAGE08_HILBERT_CASE PASS scale=hilbert_int8_10e4 dtype=INT8 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_hilbert_0b2008e7f76a/formal/20260809T091405Z_0b2008e7f76a_stage08_b03_formal_8313f00e
+[stage08-b03-formal] case=14 scale=hilbert_int8_10e4 status=completed
+[stage08-b03-formal] cases=15 status=completed

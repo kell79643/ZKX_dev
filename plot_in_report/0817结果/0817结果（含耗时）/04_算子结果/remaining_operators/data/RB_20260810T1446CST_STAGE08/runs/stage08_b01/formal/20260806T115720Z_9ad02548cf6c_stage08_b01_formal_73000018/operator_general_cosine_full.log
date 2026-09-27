@@ -1,0 +1,8 @@
+[stage08-b01] operator=general_cosine entry=cpu:general_cosine_typed_cpu gpu:general_cosine_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_cosine/operator_scales.json config_sha256=98e7d3d2716deaf919d8883f5caa73c3f61a1ce37bffff86a62a6be43aa66f64
+[stage08-b01] run_type=formal scale=general_cosine_int8_10e2 dtype=INT8 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0086552100000000035 gpu_mean_ms=0.33624569999999993 speedup=0.025740730662131905
+[stage08-b01] mse=5.8853675548907073e-14 rmse=2.4259776492974349e-07 relative_l2=1.3032723333441223e-07 relative_linf=1.8001477704619689e-07
+[stage08-b01] resources=available cuda_event_ms=0.39855799078941345
+[stage08-b01] status=PASS error_code=OK

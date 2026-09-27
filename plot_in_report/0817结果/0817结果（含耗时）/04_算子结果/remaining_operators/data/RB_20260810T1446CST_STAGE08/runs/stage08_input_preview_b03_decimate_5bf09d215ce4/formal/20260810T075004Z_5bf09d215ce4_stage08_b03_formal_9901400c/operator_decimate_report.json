@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "run_id": "20260810T075004Z_5bf09d215ce4_stage08_b03_formal_9901400c",
+  "case_id": "decimate__decimate_int16_10e4__b1b01f96dbc97b28",
+  "operator_name": "decimate",
+  "scale_id": "decimate_int16_10e4",
+  "requested_dtype": "INT16",
+  "dtype_semantics": "actual_typed_array_inputs_fp32_fir_decimate_extension",
+  "typed_input_names": "x|h",
+  "compute_dtype": "FP32",
+  "fft_dtype": "not_applicable",
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "q": 5,
+  "zero_phase": true,
+  "custom_coefficients": true,
+  "axis": 1,
+  "typed_input_count": 2,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "b1b01f96dbc97b286f6416451acbb919a8b6d9e033e966e958d77fd72a7a75a0",
+  "metrics": {
+    "mse": 0,
+    "rmse": 0,
+    "relative_l2": 0,
+    "relative_linf": 0
+  },
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[100x100]",
+      "dtype": "INT16",
+      "element_count": "10000",
+      "generator": "modular_signal(seed=83440003,integral=true)",
+      "preview_head4_tail2": "i=0:-6;i=1:11;i=2:5;i=3:-1;i=9998:-10;i=9999:7"
+    },
+    {
+      "input_name": "h",
+      "shape": "[5]",
+      "dtype": "INT16",
+      "element_count": "5",
+      "generator": "fixed_custom_coefficients",
+      "preview_head4_tail2": "i=0:1;i=1:2;i=2:1;i=3:-1;i=4:1"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT16",
+    "rows": "100",
+    "cols": "100",
+    "q": "5",
+    "filter-order": "-1",
+    "zero-phase": "true",
+    "custom-coefficients": "true",
+    "seed": "83440003"
+  }
+}

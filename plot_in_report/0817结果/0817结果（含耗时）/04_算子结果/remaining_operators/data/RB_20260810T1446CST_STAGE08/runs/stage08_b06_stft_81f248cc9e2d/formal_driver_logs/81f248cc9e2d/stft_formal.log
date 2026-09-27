@@ -1,0 +1,46 @@
+[stage08-b06-formal] case=0 scale=stft_fp32_10e2 status=starting
+STAGE08_STFT_CASE PASS scale=stft_fp32_10e2 dtype=FP32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155120Z_81f248cc9e2d_stage08_b06_formal_8643f000
+[stage08-b06-formal] case=0 scale=stft_fp32_10e2 status=completed
+[stage08-b06-formal] case=1 scale=stft_fp32_10e3 status=starting
+STAGE08_STFT_CASE PASS scale=stft_fp32_10e3 dtype=FP32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155120Z_81f248cc9e2d_stage08_b06_formal_8643f001
+[stage08-b06-formal] case=1 scale=stft_fp32_10e3 status=completed
+[stage08-b06-formal] case=2 scale=stft_fp32_10e4 status=starting
+STAGE08_STFT_CASE PASS scale=stft_fp32_10e4 dtype=FP32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155121Z_81f248cc9e2d_stage08_b06_formal_8643f002
+[stage08-b06-formal] case=2 scale=stft_fp32_10e4 status=completed
+[stage08-b06-formal] case=3 scale=stft_fp16_10e2 status=starting
+STAGE08_STFT_CASE PASS scale=stft_fp16_10e2 dtype=FP16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155136Z_81f248cc9e2d_stage08_b06_formal_8643f003
+[stage08-b06-formal] case=3 scale=stft_fp16_10e2 status=completed
+[stage08-b06-formal] case=4 scale=stft_fp16_10e3 status=starting
+STAGE08_STFT_CASE PASS scale=stft_fp16_10e3 dtype=FP16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155136Z_81f248cc9e2d_stage08_b06_formal_8643f004
+[stage08-b06-formal] case=4 scale=stft_fp16_10e3 status=completed
+[stage08-b06-formal] case=5 scale=stft_fp16_10e4 status=starting
+STAGE08_STFT_CASE PASS scale=stft_fp16_10e4 dtype=FP16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155138Z_81f248cc9e2d_stage08_b06_formal_8643f005
+[stage08-b06-formal] case=5 scale=stft_fp16_10e4 status=completed
+[stage08-b06-formal] case=6 scale=stft_int32_10e2 status=starting
+STAGE08_STFT_CASE PASS scale=stft_int32_10e2 dtype=INT32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155203Z_81f248cc9e2d_stage08_b06_formal_8643f006
+[stage08-b06-formal] case=6 scale=stft_int32_10e2 status=completed
+[stage08-b06-formal] case=7 scale=stft_int32_10e3 status=starting
+STAGE08_STFT_CASE PASS scale=stft_int32_10e3 dtype=INT32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155203Z_81f248cc9e2d_stage08_b06_formal_8643f007
+[stage08-b06-formal] case=7 scale=stft_int32_10e3 status=completed
+[stage08-b06-formal] case=8 scale=stft_int32_10e4 status=starting
+STAGE08_STFT_CASE PASS scale=stft_int32_10e4 dtype=INT32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155204Z_81f248cc9e2d_stage08_b06_formal_8643f008
+[stage08-b06-formal] case=8 scale=stft_int32_10e4 status=completed
+[stage08-b06-formal] case=9 scale=stft_int16_10e2 status=starting
+STAGE08_STFT_CASE PASS scale=stft_int16_10e2 dtype=INT16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155220Z_81f248cc9e2d_stage08_b06_formal_8643f009
+[stage08-b06-formal] case=9 scale=stft_int16_10e2 status=completed
+[stage08-b06-formal] case=10 scale=stft_int16_10e3 status=starting
+STAGE08_STFT_CASE PASS scale=stft_int16_10e3 dtype=INT16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155220Z_81f248cc9e2d_stage08_b06_formal_8643f00a
+[stage08-b06-formal] case=10 scale=stft_int16_10e3 status=completed
+[stage08-b06-formal] case=11 scale=stft_int16_10e4 status=starting
+STAGE08_STFT_CASE PASS scale=stft_int16_10e4 dtype=INT16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155221Z_81f248cc9e2d_stage08_b06_formal_8643f00b
+[stage08-b06-formal] case=11 scale=stft_int16_10e4 status=completed
+[stage08-b06-formal] case=12 scale=stft_int8_10e2 status=starting
+STAGE08_STFT_CASE PASS scale=stft_int8_10e2 dtype=INT8 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155236Z_81f248cc9e2d_stage08_b06_formal_8643f00c
+[stage08-b06-formal] case=12 scale=stft_int8_10e2 status=completed
+[stage08-b06-formal] case=13 scale=stft_int8_10e3 status=starting
+STAGE08_STFT_CASE PASS scale=stft_int8_10e3 dtype=INT8 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155237Z_81f248cc9e2d_stage08_b06_formal_8643f00d
+[stage08-b06-formal] case=13 scale=stft_int8_10e3 status=completed
+[stage08-b06-formal] case=14 scale=stft_int8_10e4 status=starting
+STAGE08_STFT_CASE PASS scale=stft_int8_10e4 dtype=INT8 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b06_stft_81f248cc9e2d/formal/20260809T155238Z_81f248cc9e2d_stage08_b06_formal_8643f00e
+[stage08-b06-formal] case=14 scale=stft_int8_10e4 status=completed
+[stage08-b06-formal] cases=15 status=completed

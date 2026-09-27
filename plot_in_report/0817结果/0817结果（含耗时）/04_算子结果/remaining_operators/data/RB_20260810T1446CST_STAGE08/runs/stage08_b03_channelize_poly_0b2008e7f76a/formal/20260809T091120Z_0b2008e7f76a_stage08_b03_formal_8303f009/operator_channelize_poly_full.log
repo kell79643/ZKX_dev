@@ -1,0 +1,6 @@
+command=build_stage08_b03_channelize_poly_0b2008e7f76a/stage08_filtering_channelize_poly --dtype INT16 --x-count 128 --h-count 32 --n-chans 8 --seed 83040001 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091120Z_0b2008e7f76a_stage08_b03_formal_8303f009/channelize_poly_probe_raw.json
+STAGE08_CHANNELIZE_PROBE PASS dtype=INT16 x=128 h=32 n_chans=8 backend=fft_thrust
+status=PASS
+error_code=OK
+case_id=channelize_poly__channelize_poly_int16_10e2__1464f14c428bbf20
+{"actual_input_digest": "1464f14c428bbf20b9d1450dc3ad00ac09f034e4d64fe85f907aaa6785d38bcc", "backend": "fft_thrust", "case_id": "channelize_poly__channelize_poly_int16_10e2__1464f14c428bbf20", "compute_dtype": "FP32", "dtype_semantics": "actual_typed_array_inputs_fp32_compute_extension", "error_code": "OK", "fft_dtype": "ComplexFP32", "measured_runs": 100, "metrics": {"mse": 1.1348921801853275e-11, "relative_l2": 3.725377980142042e-08, "relative_linf": 4.795374763906166e-08, "rmse": 3.3688160831148495e-06}, "operator_name": "channelize_poly", "output_dtype": "ComplexFP32", "requested_dtype": "INT16", "run_id": "20260809T091120Z_0b2008e7f76a_stage08_b03_formal_8303f009", "scale_id": "channelize_poly_int16_10e2", "schema_version": 1, "status": "PASS", "typed_input_count": 2, "warmup_runs": 20}

@@ -1,0 +1,61 @@
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/configs/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int16_10e3 dtype=INT16 sym=false backend=fft_thrust
+[stage08-b01] dtype_semantics=actual_typed_scalar_input typed_input_count=1 actual_input_digest=7e3cd92367bd14367b9f3a18b925bd36453848f095f8137ff9494209a27b8d37
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=2.2996029399999993 gpu_mean_ms=1.8863931099999991 speedup=1.2190475716909295
+[stage08-b01] mse=1.8558794426569041e-13 rmse=4.3079919250816895e-07 relative_l2=7.8759937605590052e-07 relative_linf=1.1662717315807404e-06
+[stage08-b01] resources=available cuda_event_ms=1.9435240030288696
+[stage08-b01] status=PASS error_code=OK
+[stage08] identity and status
+target  | scale_id           | device | backend    | dtype | warmup | measured | timing_scope             | status | error_code
+chebwin | chebwin_int16_10e3 | CPU    | fft_thrust | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+chebwin | chebwin_int16_10e3 | GPU    | fft_thrust | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+
+[stage08] timing detail
+device | mean_ms            | p50_ms             | p95_ms             | p99_ms             | min_ms             | max_ms             | std_ms               | cv                   | speedup           
+CPU    | 2.2996029399999993 | 2.2980960000000001 | 2.3073014999999999 | 2.3212447100000011 | 2.2891560000000002 | 2.5973269999999999 | 0.030495561360243877 | 0.013261229071243006 | NA                
+GPU    | 1.8863931099999991 | 1.85883            | 2.0982910499999998 | 2.1422120000000002 | 1.831985           | 2.1596359999999999 | 0.07324940683021193  | 0.038830404141060482 | 1.2190475716909295
+
+[stage08] accuracy detail
+accuracy_reference  | mse                    | rmse                   | relative_l2            | relative_linf          | exact_match | mismatch_count | semantic_check                                                                            | status
+cpu_typed_reference | 1.8558794426569041e-13 | 4.3079919250816895e-07 | 7.8759937605590052e-07 | 1.1662717315807404e-06 | NA          | NA             | finite_fp64_window_shape_and_symmetry_policy_match_cpu:shape=[1000];finite=true;sym=false | PASS  
+
+[stage08] resource detail
+device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes
+CPU    | cpu_heap   | 2162032      | 2164816     | 2171712    | 2784       
+CPU    | rss        | 71929856     | 72089600    | 72089600   | 159744     
+GPU    | cpu_heap   | 2164912      | 2168352     | 2175728    | 3440       
+GPU    | rss        | 72089600     | 72089600    | 72089600   | 0          
+GPU    | gpu_memory | 408322048    | 408322048   | 408322048  | 0          
+
+[stage08] input/output identity
+device | input_digest                                                     | output_digest                                                   
+CPU    | 7e3cd92367bd14367b9f3a18b925bd36453848f095f8137ff9494209a27b8d37 | e4982ab4c0cd7a35594fee900e867474e64d21a86bf88c115b8323b80f6a97f3
+GPU    | 7e3cd92367bd14367b9f3a18b925bd36453848f095f8137ff9494209a27b8d37 | 1ec02ae08821acdd44ed71ef4d8988a0e8456d7d2d9a0cca271c32547810ef11
+
+[stage08] input content
+input_name       | shape  | dtype       | elements | generator                                           | values(head4/tail2)                                                                              
+window_positions | [1000] | INDEX_INT64 | 1000     | implicit_window_index_domain(no_materialized_array) | i=0:position=0;i=1:position=1;i=2:position=2;i=3:position=3;i=998:position=998;i=999:position=999
+attenuation_db   | scalar | INT16       | 1        | exact_config_scalar                                 | value=80                                                                                         
+
+[stage08] case parameters
+parameters                                                                                        
+{"length":1000,"requested_dtype":"INT16","sym":false,"attenuation_db":80,"algorithm":"fft_thrust"}
+
+[stage08] dtype evidence
+requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status
+INT16           | INT16              | FP64         | 7e3cd92367bd14367b9f3a18b925bd36453848f095f8137ff9494209a27b8d37 | PASS  
+
+[stage08] evidence files
+kind        | path                                                                                                                                                                                                                                         
+main_csv    | /tmp/ZKX_dev/results/stage08_input_preview_b01_chebwin_8b745f9a6864/formal/20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016/operator_main_results_chebwin_fft_thrust_20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016.csv  
+timing_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b01_chebwin_8b745f9a6864/formal/20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016/operator_timing_samples_chebwin_fft_thrust_20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016.csv
+memory_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b01_chebwin_8b745f9a6864/formal/20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016/operator_windows_chebwin_memory_trace_fft_thrust.csv                                                    
+input_csv   | /tmp/ZKX_dev/results/stage08_input_preview_b01_chebwin_8b745f9a6864/formal/20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016/operator_input_evidence_chebwin_fft_thrust_20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016.csv
+dtype_csv   | /tmp/ZKX_dev/results/stage08_input_preview_b01_chebwin_8b745f9a6864/formal/20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016/operator_dtype_evidence_chebwin_fft_thrust_20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016.csv
+module_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b01_chebwin_8b745f9a6864/formal/20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016/windows_batch01_module_summary_fft_thrust_20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016.csv 
+report_json | /tmp/ZKX_dev/results/stage08_input_preview_b01_chebwin_8b745f9a6864/formal/20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016/operator_chebwin_report.json                                                                            
+summary_txt | /tmp/ZKX_dev/results/stage08_input_preview_b01_chebwin_8b745f9a6864/formal/20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016/operator_chebwin_summary.txt                                                                            
+full_log    | /tmp/ZKX_dev/results/stage08_input_preview_b01_chebwin_8b745f9a6864/formal/20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016/operator_chebwin_full.log                                                                               
+results_dir | /tmp/ZKX_dev/results/stage08_input_preview_b01_chebwin_8b745f9a6864/formal/20260810T082044Z_8b745f9a6864_stage08_b01_formal_a1010016                                                                                                         

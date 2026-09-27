@@ -1,0 +1,22 @@
+{
+  "run_id": "20260809T141501Z_1681b603eadb_stage08_b05_formal_8543f00b",
+  "case_id": "sosfilt__sosfilt_int16_10e4__ef87ce4b1346e630",
+  "operator_name": "sosfilt",
+  "scale_id": "sosfilt_int16_10e4",
+  "requested_dtype": "INT16",
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "sections": 4,
+  "axis": 0,
+  "rank": 2,
+  "has_zi": true,
+  "has_zf": true,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "status": "PASS",
+  "error_code": "OK"
+}

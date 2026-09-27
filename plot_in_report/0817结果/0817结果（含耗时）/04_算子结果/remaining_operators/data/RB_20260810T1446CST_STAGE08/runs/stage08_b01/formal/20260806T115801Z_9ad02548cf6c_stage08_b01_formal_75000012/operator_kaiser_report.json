@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260806T115801Z_9ad02548cf6c_stage08_b01_formal_75000012",
+  "case_id": "kaiser__kaiser_int16_10e2__8739bfd7e8cef921__sym",
+  "operator_name": "kaiser",
+  "scale_id": "kaiser_int16_10e2",
+  "dtype": "INT16",
+  "sym": true,
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "8739bfd7e8cef921f048800b543ff5f0e93418ca4d3ecd80a00507a0a521aca6",
+  "cuda_event_auxiliary_ms": 0.27313798666000366,
+  "cuda_event_source": "cudaEvent",
+  "mse": 1.0393479857547649e-14,
+  "rmse": 1.0194841763140638e-07,
+  "relative_l2": 1.8219090234977226e-07,
+  "relative_linf": 3.4051494144698818e-07,
+  "status": "PASS",
+  "error_code": "OK"
+}

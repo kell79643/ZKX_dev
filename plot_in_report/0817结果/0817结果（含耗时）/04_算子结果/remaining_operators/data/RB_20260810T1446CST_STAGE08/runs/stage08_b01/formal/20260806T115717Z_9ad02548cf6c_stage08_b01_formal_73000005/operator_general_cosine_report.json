@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260806T115717Z_9ad02548cf6c_stage08_b01_formal_73000005",
+  "case_id": "general_cosine__general_cosine_fp32_10e4__c85938e2314bc230__periodic",
+  "operator_name": "general_cosine",
+  "scale_id": "general_cosine_fp32_10e4",
+  "dtype": "FP32",
+  "sym": false,
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "c85938e2314bc23081b347a5e3125e954511184f15f449fae5b43299f0e4b7c5",
+  "cuda_event_auxiliary_ms": 0.40375000238418579,
+  "cuda_event_source": "cudaEvent",
+  "mse": 7.5160771004930909e-14,
+  "rmse": 2.7415464797251005e-07,
+  "relative_l2": 1.4654182338639309e-07,
+  "relative_linf": 3.8914514655097321e-07,
+  "status": "PASS",
+  "error_code": "OK"
+}

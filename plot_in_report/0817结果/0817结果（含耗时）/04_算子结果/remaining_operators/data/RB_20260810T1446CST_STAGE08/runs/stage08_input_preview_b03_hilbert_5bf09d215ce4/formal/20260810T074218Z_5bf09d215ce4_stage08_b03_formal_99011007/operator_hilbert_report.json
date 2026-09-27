@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "run_id": "20260810T074218Z_5bf09d215ce4_stage08_b03_formal_99011007",
+  "case_id": "hilbert__hilbert_int32_10e2__45638d447e78dc1d",
+  "operator_name": "hilbert",
+  "scale_id": "hilbert_int32_10e2",
+  "requested_dtype": "INT32",
+  "dtype_semantics": "actual_typed_array_input_fp32_fft_extension",
+  "typed_input_names": "x",
+  "compute_dtype": "FP32",
+  "fft_dtype": "ComplexFP32",
+  "output_dtype": "ComplexFP64",
+  "backend": "fft_thrust",
+  "typed_input_count": 1,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "45638d447e78dc1d8e3fcbf78659c8ba0b903712284f5447ff835fc02b3d25de",
+  "metrics": {
+    "mse": 3.6000237320998766e-12,
+    "rmse": 1.8973728500481598e-06,
+    "relative_l2": 2.1039365371876424e-07,
+    "relative_linf": 3.53613758657187e-07
+  },
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[10x10]",
+      "dtype": "INT32",
+      "element_count": "100",
+      "generator": "modular_signal(seed=83130001,integral=true)",
+      "preview_head4_tail2": "i=0:9;i=1:3;i=2:-3;i=3:-9;i=98:-4;i=99:-10"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT32",
+    "rows": "10",
+    "cols": "10",
+    "axis": "1",
+    "seed": "83130001"
+  }
+}

@@ -1,0 +1,271 @@
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp32_10e2 dtype=FP32 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.019194590000000001 gpu_mean_ms=0.38673427999999999 speedup=0.049632502192461452
+[stage08-b02] mse=4.8603990259821879e-15 rmse=6.9716562063703258e-08 relative_l2=1.0034733771186266e-07 relative_linf=1.322186991520581e-07
+[stage08-b02] resources=available cuda_event_ms=0.4064059853553772
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103308Z_ba0a42aa462d_stage08_b02_formal_8b000200
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp32_10e2 dtype=FP32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.01923279000000002 gpu_mean_ms=0.38066240000000001 speedup=0.050524533024538333
+[stage08-b02] mse=4.0313219051453759e-15 rmse=6.3492691745943299e-08 relative_l2=9.0990661037047512e-08 relative_linf=1.2564541629345172e-07
+[stage08-b02] resources=available cuda_event_ms=0.38760998845100403
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103308Z_ba0a42aa462d_stage08_b02_formal_8b000201
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp32_10e3 dtype=FP32 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.17247431999999996 gpu_mean_ms=0.39986328999999993 speedup=0.43133321891089327
+[stage08-b02] mse=2.8433952351655122e-15 rmse=5.3323496089111711e-08 relative_l2=7.6751789124970632e-08 relative_linf=1.1843647180769327e-07
+[stage08-b02] resources=available cuda_event_ms=0.42440199851989746
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103308Z_ba0a42aa462d_stage08_b02_formal_8b000202
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp32_10e3 dtype=FP32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.17242982000000001 gpu_mean_ms=0.39517730999999989 speedup=0.43633532502157085
+[stage08-b02] mse=4.9587043046234506e-15 rmse=7.0418068026774563e-08 relative_l2=1.0131261357063187e-07 relative_linf=1.36965723096516e-07
+[stage08-b02] resources=available cuda_event_ms=0.45295199751853943
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103309Z_ba0a42aa462d_stage08_b02_formal_8b000203
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp32_10e4 dtype=FP32 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=1.6981154400000005 gpu_mean_ms=0.46305813999999978 speedup=3.6671754436710717
+[stage08-b02] mse=1.9874606510359069e-15 rmse=4.4580944932066065e-08 relative_l2=6.4168097281163419e-08 relative_linf=1.2873245750495576e-07
+[stage08-b02] resources=available cuda_event_ms=0.47709599137306213
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103309Z_ba0a42aa462d_stage08_b02_formal_8b000204
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp32_10e4 dtype=FP32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=1.6983453500000005 gpu_mean_ms=0.44967643999999984 speedup=3.7768163926933798
+[stage08-b02] mse=2.6180198115830785e-15 rmse=5.1166588821056642e-08 relative_l2=7.3643988435790488e-08 relative_linf=1.4111954987905406e-07
+[stage08-b02] resources=available cuda_event_ms=0.47999998927116394
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103309Z_ba0a42aa462d_stage08_b02_formal_8b000205
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp16_10e2 dtype=FP16 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.019228499999999992 gpu_mean_ms=0.38986343999999989 speedup=0.049321116132356492
+[stage08-b02] mse=4.8603990259821879e-15 rmse=6.9716562063703258e-08 relative_l2=1.0034733771186266e-07 relative_linf=1.322186991520581e-07
+[stage08-b02] resources=available cuda_event_ms=0.40677401423454285
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103309Z_ba0a42aa462d_stage08_b02_formal_8b000206
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp16_10e2 dtype=FP16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.019169890000000002 gpu_mean_ms=0.38689797000000004 speedup=0.049547662397918503
+[stage08-b02] mse=4.0313219051453759e-15 rmse=6.3492691745943299e-08 relative_l2=9.0990661037047512e-08 relative_linf=1.2564541629345172e-07
+[stage08-b02] resources=available cuda_event_ms=0.40516999363899231
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103309Z_ba0a42aa462d_stage08_b02_formal_8b000207
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp16_10e3 dtype=FP16 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.17263202999999994 gpu_mean_ms=0.39484350000000001 speedup=0.43721634014489269
+[stage08-b02] mse=2.8433952351655122e-15 rmse=5.3323496089111711e-08 relative_l2=7.6751789124970632e-08 relative_linf=1.1843647180769327e-07
+[stage08-b02] resources=available cuda_event_ms=0.4166640043258667
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103310Z_ba0a42aa462d_stage08_b02_formal_8b000208
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp16_10e3 dtype=FP16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.17262531 gpu_mean_ms=0.40031638999999991 speedup=0.43122218902903287
+[stage08-b02] mse=4.9587043046234506e-15 rmse=7.0418068026774563e-08 relative_l2=1.0131261357063187e-07 relative_linf=1.36965723096516e-07
+[stage08-b02] resources=available cuda_event_ms=0.4081520140171051
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103310Z_ba0a42aa462d_stage08_b02_formal_8b000209
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp16_10e4 dtype=FP16 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=1.6986196199999997 gpu_mean_ms=0.44517456000000005 speedup=3.8156259872531786
+[stage08-b02] mse=1.9874606510359069e-15 rmse=4.4580944932066065e-08 relative_l2=6.4168097281163419e-08 relative_linf=1.2873245750495576e-07
+[stage08-b02] resources=available cuda_event_ms=0.46316999197006226
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103310Z_ba0a42aa462d_stage08_b02_formal_8b00020a
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp16_10e4 dtype=FP16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=1.7056602299999994 gpu_mean_ms=0.45057302999999976 speedup=3.7855355656773337
+[stage08-b02] mse=2.6180198115830785e-15 rmse=5.1166588821056642e-08 relative_l2=7.3643988435790488e-08 relative_linf=1.4111954987905406e-07
+[stage08-b02] resources=available cuda_event_ms=0.47064000368118286
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103310Z_ba0a42aa462d_stage08_b02_formal_8b00020b
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int32_10e2 dtype=INT32 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.019045690000000001 gpu_mean_ms=0.40434064999999997 speedup=0.047103080039071023
+[stage08-b02] mse=4.8603990259821879e-15 rmse=6.9716562063703258e-08 relative_l2=1.0034733771186266e-07 relative_linf=1.322186991520581e-07
+[stage08-b02] resources=available cuda_event_ms=0.44958001375198364
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103311Z_ba0a42aa462d_stage08_b02_formal_8b00020c
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int32_10e2 dtype=INT32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.019164989999999972 gpu_mean_ms=0.3894998999999999 speedup=0.049204094789241225
+[stage08-b02] mse=4.0313219051453759e-15 rmse=6.3492691745943299e-08 relative_l2=9.0990661037047512e-08 relative_linf=1.2564541629345172e-07
+[stage08-b02] resources=available cuda_event_ms=0.39124199748039246
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103311Z_ba0a42aa462d_stage08_b02_formal_8b00020d
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int32_10e3 dtype=INT32 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.17239953000000008 gpu_mean_ms=0.41035862000000001 speedup=0.42011918745608434
+[stage08-b02] mse=2.8433952351655122e-15 rmse=5.3323496089111711e-08 relative_l2=7.6751789124970632e-08 relative_linf=1.1843647180769327e-07
+[stage08-b02] resources=available cuda_event_ms=0.42852801084518433
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103311Z_ba0a42aa462d_stage08_b02_formal_8b00020e
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int32_10e3 dtype=INT32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.17219961 gpu_mean_ms=0.39825994000000015 speedup=0.43237994260733315
+[stage08-b02] mse=4.9587043046234506e-15 rmse=7.0418068026774563e-08 relative_l2=1.0131261357063187e-07 relative_linf=1.36965723096516e-07
+[stage08-b02] resources=available cuda_event_ms=0.41218599677085876
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103311Z_ba0a42aa462d_stage08_b02_formal_8b00020f
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int32_10e4 dtype=INT32 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=1.6987877000000002 gpu_mean_ms=0.45608761999999992 speedup=3.7246959257521626
+[stage08-b02] mse=1.9874606510359069e-15 rmse=4.4580944932066065e-08 relative_l2=6.4168097281163419e-08 relative_linf=1.2873245750495576e-07
+[stage08-b02] resources=available cuda_event_ms=0.47284001111984253
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103311Z_ba0a42aa462d_stage08_b02_formal_8b000210
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int32_10e4 dtype=INT32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=1.6975841600000001 gpu_mean_ms=0.44784318999999984 speedup=3.7905771437542697
+[stage08-b02] mse=2.6180198115830785e-15 rmse=5.1166588821056642e-08 relative_l2=7.3643988435790488e-08 relative_linf=1.4111954987905406e-07
+[stage08-b02] resources=available cuda_event_ms=0.456743985414505
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103311Z_ba0a42aa462d_stage08_b02_formal_8b000211
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int16_10e2 dtype=INT16 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.019141299999999993 gpu_mean_ms=0.38882940999999988 speedup=0.049228014928191774
+[stage08-b02] mse=4.8603990259821879e-15 rmse=6.9716562063703258e-08 relative_l2=1.0034733771186266e-07 relative_linf=1.322186991520581e-07
+[stage08-b02] resources=available cuda_event_ms=0.42678201198577881
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103312Z_ba0a42aa462d_stage08_b02_formal_8b000212
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int16_10e2 dtype=INT16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.019165789999999995 gpu_mean_ms=0.39067682999999981 speedup=0.049057913160603879
+[stage08-b02] mse=4.0313219051453759e-15 rmse=6.3492691745943299e-08 relative_l2=9.0990661037047512e-08 relative_linf=1.2564541629345172e-07
+[stage08-b02] resources=available cuda_event_ms=0.41360399127006531
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103312Z_ba0a42aa462d_stage08_b02_formal_8b000213
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int16_10e3 dtype=INT16 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.17234521 gpu_mean_ms=0.39363797000000006 speedup=0.4378266913631324
+[stage08-b02] mse=2.8433952351655122e-15 rmse=5.3323496089111711e-08 relative_l2=7.6751789124970632e-08 relative_linf=1.1843647180769327e-07
+[stage08-b02] resources=available cuda_event_ms=0.39014598727226257
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103312Z_ba0a42aa462d_stage08_b02_formal_8b000214
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int16_10e3 dtype=INT16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.17285322999999991 gpu_mean_ms=0.39791883999999994 speedup=0.43439317927243642
+[stage08-b02] mse=4.9587043046234506e-15 rmse=7.0418068026774563e-08 relative_l2=1.0131261357063187e-07 relative_linf=1.36965723096516e-07
+[stage08-b02] resources=available cuda_event_ms=0.42478799819946289
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103312Z_ba0a42aa462d_stage08_b02_formal_8b000215
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int16_10e4 dtype=INT16 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=1.6992401800000005 gpu_mean_ms=0.44579496000000007 speedup=3.81170792060996
+[stage08-b02] mse=1.9874606510359069e-15 rmse=4.4580944932066065e-08 relative_l2=6.4168097281163419e-08 relative_linf=1.2873245750495576e-07
+[stage08-b02] resources=available cuda_event_ms=0.46792399883270264
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103312Z_ba0a42aa462d_stage08_b02_formal_8b000216
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int16_10e4 dtype=INT16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=1.6992992599999999 gpu_mean_ms=0.45087323999999995 speedup=3.7689068883307426
+[stage08-b02] mse=2.6180198115830785e-15 rmse=5.1166588821056642e-08 relative_l2=7.3643988435790488e-08 relative_linf=1.4111954987905406e-07
+[stage08-b02] resources=available cuda_event_ms=0.49653199315071106
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103313Z_ba0a42aa462d_stage08_b02_formal_8b000217
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int8_10e2 dtype=INT8 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.019281379999999987 gpu_mean_ms=0.39506349000000007 speedup=0.048805775496996655
+[stage08-b02] mse=4.8603990259821879e-15 rmse=6.9716562063703258e-08 relative_l2=1.0034733771186266e-07 relative_linf=1.322186991520581e-07
+[stage08-b02] resources=available cuda_event_ms=0.41812801361083984
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103313Z_ba0a42aa462d_stage08_b02_formal_8b000218
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int8_10e2 dtype=INT8 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.01929330000000001 gpu_mean_ms=0.38951670999999999 speedup=0.049531379539532489
+[stage08-b02] mse=4.0313219051453759e-15 rmse=6.3492691745943299e-08 relative_l2=9.0990661037047512e-08 relative_linf=1.2564541629345172e-07
+[stage08-b02] resources=available cuda_event_ms=0.40995600819587708
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103313Z_ba0a42aa462d_stage08_b02_formal_8b000219
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int8_10e3 dtype=INT8 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.17204690000000003 gpu_mean_ms=0.39845163999999988 speedup=0.4317886607268076
+[stage08-b02] mse=2.8433952351655122e-15 rmse=5.3323496089111711e-08 relative_l2=7.6751789124970632e-08 relative_linf=1.1843647180769327e-07
+[stage08-b02] resources=available cuda_event_ms=0.41090598702430725
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103313Z_ba0a42aa462d_stage08_b02_formal_8b00021a
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int8_10e3 dtype=INT8 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.17239921999999996 gpu_mean_ms=0.40492814999999993 speedup=0.42575261808792497
+[stage08-b02] mse=4.9587043046234506e-15 rmse=7.0418068026774563e-08 relative_l2=1.0131261357063187e-07 relative_linf=1.36965723096516e-07
+[stage08-b02] resources=available cuda_event_ms=0.41641798615455627
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103313Z_ba0a42aa462d_stage08_b02_formal_8b00021b
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int8_10e4 dtype=INT8 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=1.7031205899999997 gpu_mean_ms=0.46096148000000026 speedup=3.6947134715030825
+[stage08-b02] mse=1.9874606510359069e-15 rmse=4.4580944932066065e-08 relative_l2=6.4168097281163419e-08 relative_linf=1.2873245750495576e-07
+[stage08-b02] resources=available cuda_event_ms=0.49285200238227844
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103313Z_ba0a42aa462d_stage08_b02_formal_8b00021c
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_int8_10e4 dtype=INT8 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=1.6987556200000002 gpu_mean_ms=0.44702988000000005 speedup=3.8000941234621721
+[stage08-b02] mse=2.6180198115830785e-15 rmse=5.1166588821056642e-08 relative_l2=7.3643988435790488e-08 relative_linf=1.4111954987905406e-07
+[stage08-b02] resources=available cuda_event_ms=0.44417199492454529
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103314Z_ba0a42aa462d_stage08_b02_formal_8b00021d
+[stage08-b02-formal] cases=30 status=completed

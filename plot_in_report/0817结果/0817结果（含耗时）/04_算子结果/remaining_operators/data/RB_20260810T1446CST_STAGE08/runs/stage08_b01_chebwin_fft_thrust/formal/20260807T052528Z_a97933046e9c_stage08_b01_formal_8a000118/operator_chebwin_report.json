@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260807T052528Z_a97933046e9c_stage08_b01_formal_8a000118",
+  "case_id": "chebwin__chebwin_int8_10e2__9479c504f5bf4bac__sym",
+  "operator_name": "chebwin",
+  "scale_id": "chebwin_int8_10e2",
+  "dtype": "INT8",
+  "sym": true,
+  "backend": "fft_thrust",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "9479c504f5bf4bacbd1cab120b7ff64c765db7f76c2917961314eab8bd598ebb",
+  "cuda_event_auxiliary_ms": 1.4721419811248779,
+  "cuda_event_source": "cudaEvent",
+  "mse": 1.3593549496823892e-14,
+  "rmse": 1.1659137831256603e-07,
+  "relative_l2": 2.1396127190412897e-07,
+  "relative_linf": 2.7514908007564287e-07,
+  "status": "PASS",
+  "error_code": "OK"
+}

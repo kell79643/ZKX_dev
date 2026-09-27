@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260806T115720Z_9ad02548cf6c_stage08_b01_formal_7300001c",
+  "case_id": "general_cosine__general_cosine_int8_10e4__0c213c58f032845a__sym",
+  "operator_name": "general_cosine",
+  "scale_id": "general_cosine_int8_10e4",
+  "dtype": "INT8",
+  "sym": true,
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "0c213c58f032845ad1860fc07e7f1537a8f0a90aa1e7bfe14a234ba4fdf1be22",
+  "cuda_event_auxiliary_ms": 0.43341800570487976,
+  "cuda_event_source": "cudaEvent",
+  "mse": 7.5003670235156815e-14,
+  "rmse": 2.7386797957256122e-07,
+  "relative_l2": 1.4639591265985548e-07,
+  "relative_linf": 4.0478951834230556e-07,
+  "status": "PASS",
+  "error_code": "OK"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260807T103314Z_ba0a42aa462d_stage08_b02_formal_8b000300",
+  "case_id": "triang__triang_fp32_10e2__e90ade0237ce8a71__sym",
+  "operator_name": "triang",
+  "scale_id": "triang_fp32_10e2",
+  "dtype": "FP32",
+  "sym": true,
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "e90ade0237ce8a71252622c3f8a8bb8cb8fa70327bea9e8413ebaa0433f71f58",
+  "cuda_event_auxiliary_ms": 0.26960200071334839,
+  "cuda_event_source": "cudaEvent",
+  "mse": 1.6910361987476936e-16,
+  "rmse": 1.3003984769091717e-08,
+  "relative_l2": 2.2524688583505137e-08,
+  "relative_linf": 2.8899221736194802e-08,
+  "status": "PASS",
+  "error_code": "OK"
+}

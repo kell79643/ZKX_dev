@@ -1,0 +1,28 @@
+{
+  "run_id": "20260809T143013Z_fd04f1143cb8_stage08_b05_formal_8553f002",
+  "case_id": "wiener__wiener_fp32_10e4__8ef832568ac2a9fa",
+  "operator_name": "wiener",
+  "scale_id": "wiener_fp32_10e4",
+  "requested_dtype": "FP32",
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "rank": 2,
+  "shape": [
+    100,
+    100
+  ],
+  "window_mode": "per_dimension",
+  "window_shape": [
+    3,
+    5
+  ],
+  "noise_mode": "automatic",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 7.36794e-16,
+  "rmse": 2.71439e-08,
+  "relative_l2": 9.19721e-08,
+  "relative_linf": 2.12803e-07,
+  "status": "PASS",
+  "error_code": "OK"
+}

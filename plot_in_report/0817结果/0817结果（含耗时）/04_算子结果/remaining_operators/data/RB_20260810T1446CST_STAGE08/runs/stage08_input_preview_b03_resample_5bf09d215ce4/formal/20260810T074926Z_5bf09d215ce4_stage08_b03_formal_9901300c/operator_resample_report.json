@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "run_id": "20260810T074926Z_5bf09d215ce4_stage08_b03_formal_9901300c",
+  "case_id": "resample__resample_int16_10e4__9b51e3a1549ddaa4",
+  "operator_name": "resample",
+  "scale_id": "resample_int16_10e4",
+  "requested_dtype": "INT16",
+  "dtype_semantics": "actual_typed_array_input_fp32_fft_resample_extension",
+  "typed_input_names": "x",
+  "compute_dtype": "FP32",
+  "fft_dtype": "ComplexFP32",
+  "output_dtype": "FP64",
+  "backend": "fft_thrust",
+  "domain": "frequency",
+  "axis": 1,
+  "output_sample_count": 80,
+  "typed_input_count": 1,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "9b51e3a1549ddaa4be6442ea6ca4a4660caa5835fc587b3caf255a3b43d827c0",
+  "metrics": {
+    "mse": 8.748554462173256e-15,
+    "rmse": 9.353370762550395e-08,
+    "relative_l2": 2.1656630882192465e-07,
+    "relative_linf": 1.498643551175143e-07
+  },
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[100x100]",
+      "dtype": "INT16",
+      "element_count": "10000",
+      "generator": "modular_signal(seed=83340003,integral=true)",
+      "preview_head4_tail2": "i=0:-2;i=1:-8;i=2:9;i=3:3;i=9998:-6;i=9999:11"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT16",
+    "rows": "100",
+    "cols": "100",
+    "output-count": "80",
+    "domain": "frequency",
+    "seed": "83340003"
+  }
+}

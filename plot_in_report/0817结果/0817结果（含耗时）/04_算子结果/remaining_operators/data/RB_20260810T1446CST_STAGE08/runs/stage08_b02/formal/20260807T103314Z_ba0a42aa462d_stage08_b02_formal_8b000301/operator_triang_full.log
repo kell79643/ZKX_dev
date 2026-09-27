@@ -1,0 +1,8 @@
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp32_10e2 dtype=FP32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.0016585299999999975 gpu_mean_ms=0.24470710000000001 speedup=0.0067776129094742135
+[stage08-b02] mse=1.7337183905004099e-16 rmse=1.3167074050450273e-08 relative_l2=2.2579303203325789e-08 relative_linf=2.9217963160022009e-08
+[stage08-b02] resources=available cuda_event_ms=0.2675279974937439
+[stage08-b02] status=PASS error_code=OK

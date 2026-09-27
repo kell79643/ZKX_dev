@@ -1,0 +1,63 @@
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/configs/operators/windows/taylor/operator_scales.json config_sha256=1e7a268332169dbf26515052ca42f187fc360013dd724c8f10fd2a57331a5876
+[stage08-b02] run_type=formal scale=taylor_fp32_10e3 dtype=FP32 sym=true backend=not_applicable
+[stage08-b02] dtype_semantics=actual_typed_scalar_input typed_input_count=1 actual_input_digest=fafcf120c6885f098648cbc3781c53d1015daeb09944f29e400d8be4fd82c624
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.17250299000000002 gpu_mean_ms=0.4012062500000001 speedup=0.42996087423862411
+[stage08-b02] mse=2.8433952351655122e-15 rmse=5.3323496089111711e-08 relative_l2=7.6751789124970632e-08 relative_linf=1.1843647180769327e-07
+[stage08-b02] resources=available cuda_event_ms=0.44480198621749878
+[stage08-b02] status=PASS error_code=OK
+[stage08] identity and status
+target | scale_id         | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code
+taylor | taylor_fp32_10e3 | CPU    | not_applicable | FP32  | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+taylor | taylor_fp32_10e3 | GPU    | not_applicable | FP32  | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+
+[stage08] timing detail
+device | mean_ms             | p50_ms              | p95_ms              | p99_ms              | min_ms              | max_ms              | std_ms                | cv                   | speedup            
+CPU    | 0.17250299000000002 | 0.17203550000000001 | 0.17236194999999999 | 0.18189880000000011 | 0.17138             | 0.20247100000000001 | 0.0033724485837296325 | 0.019550087704158822 | NA                 
+GPU    | 0.4012062500000001  | 0.39441700000000002 | 0.43117999999999995 | 0.46094971000000085 | 0.38231199999999999 | 0.62803299999999995 | 0.027201055610168876  | 0.067798185123409391 | 0.42996087423862411
+
+[stage08] accuracy detail
+accuracy_reference  | mse                    | rmse                   | relative_l2            | relative_linf          | exact_match | mismatch_count | semantic_check                                                                                         | status
+cpu_typed_reference | 2.8433952351655122e-15 | 5.3323496089111711e-08 | 7.6751789124970632e-08 | 1.1843647180769327e-07 | NA          | NA             | finite_normalized_fp64_taylor_window_nbar_sll_and_symmetry_match_cpu:shape=[1000];finite=true;sym=true | PASS  
+
+[stage08] resource detail
+device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes
+CPU    | cpu_heap   | 1476400      | 1480256     | 1487152    | 3856       
+CPU    | rss        | 70967296     | 70967296    | 70967296   | 0          
+GPU    | cpu_heap   | 1480256      | 1483280     | 1490176    | 3024       
+GPU    | rss        | 70967296     | 70967296    | 70967296   | 0          
+GPU    | gpu_memory | 408322048    | 408322048   | 408322048  | 0          
+
+[stage08] input/output identity
+device | input_digest                                                     | output_digest                                                   
+CPU    | fafcf120c6885f098648cbc3781c53d1015daeb09944f29e400d8be4fd82c624 | c25eca1973d337068a4f0c6e8a62152d1e7de70aadf6806528157b97a7e4fd21
+GPU    | fafcf120c6885f098648cbc3781c53d1015daeb09944f29e400d8be4fd82c624 | 28b7e7f615f3db435442e52487a9e36f2eacaf203d09db4ea096f2127402e7ac
+
+[stage08] input content
+input_name        | shape  | dtype       | elements | generator                                           | values(head4/tail2)                                                                              
+window_positions  | [1000] | INDEX_INT64 | 1000     | implicit_window_index_domain(no_materialized_array) | i=0:position=0;i=1:position=1;i=2:position=2;i=3:position=3;i=998:position=998;i=999:position=999
+nbar              | scalar | INT32       | 1        | exact_config_scalar                                 | value=4                                                                                          
+sidelobe_level_db | scalar | FP32        | 1        | exact_config_scalar                                 | value=30                                                                                         
+normalize         | scalar | BOOL        | 1        | exact_config_scalar                                 | value=true                                                                                       
+
+[stage08] case parameters
+parameters                                                                                                                                                                                
+{"length":1000,"requested_dtype":"FP32","sym":true,"nbar":4,"sidelobe_level_db":30,"normalize":true,"dtype_semantics":"actual_typed_scalar_input","typed_input_names":"sidelobe_level_db"}
+
+[stage08] dtype evidence
+requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status
+FP32            | FP32               | FP64         | fafcf120c6885f098648cbc3781c53d1015daeb09944f29e400d8be4fd82c624 | PASS  
+
+[stage08] evidence files
+kind        | path                                                                                                                                                                                                                                           
+main_csv    | /tmp/ZKX_dev/results/stage08_input_preview_b02_taylor_a64a65577ccc/formal/20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003/operator_main_results_taylor_not_applicable_20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003.csv  
+timing_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b02_taylor_a64a65577ccc/formal/20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003/operator_timing_samples_taylor_not_applicable_20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003.csv
+memory_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b02_taylor_a64a65577ccc/formal/20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003/operator_windows_taylor_memory_trace_not_applicable.csv                                                    
+input_csv   | /tmp/ZKX_dev/results/stage08_input_preview_b02_taylor_a64a65577ccc/formal/20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003/operator_input_evidence_taylor_not_applicable_20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003.csv
+dtype_csv   | /tmp/ZKX_dev/results/stage08_input_preview_b02_taylor_a64a65577ccc/formal/20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003/operator_dtype_evidence_taylor_not_applicable_20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003.csv
+module_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b02_taylor_a64a65577ccc/formal/20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003/windows_batch02_module_summary_not_applicable_20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003.csv
+report_json | /tmp/ZKX_dev/results/stage08_input_preview_b02_taylor_a64a65577ccc/formal/20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003/operator_taylor_report.json                                                                                
+summary_txt | /tmp/ZKX_dev/results/stage08_input_preview_b02_taylor_a64a65577ccc/formal/20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003/operator_taylor_summary.txt                                                                                
+full_log    | /tmp/ZKX_dev/results/stage08_input_preview_b02_taylor_a64a65577ccc/formal/20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003/operator_taylor_full.log                                                                                   
+results_dir | /tmp/ZKX_dev/results/stage08_input_preview_b02_taylor_a64a65577ccc/formal/20260810T083038Z_a64a65577ccc_stage08_b02_formal_a2020003                                                                                                            

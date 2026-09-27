@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260807T103316Z_ba0a42aa462d_stage08_b02_formal_8b000311",
+  "case_id": "triang__triang_int32_10e4__4b89fba336fb0dac__periodic",
+  "operator_name": "triang",
+  "scale_id": "triang_int32_10e4",
+  "dtype": "INT32",
+  "sym": false,
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "4b89fba336fb0daccaba136d97d99067cfba04492fbd639b03cc3aa21f049855",
+  "cuda_event_auxiliary_ms": 0.32537999749183655,
+  "cuda_event_source": "cudaEvent",
+  "mse": 1.6917807930917966e-16,
+  "rmse": 1.3006847400856969e-08,
+  "relative_l2": 2.2526267805358978e-08,
+  "relative_linf": 2.9796363154588335e-08,
+  "status": "PASS",
+  "error_code": "OK"
+}

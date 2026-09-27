@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "run_id": "20260809T113849Z_be79ae78aeff_stage08_b04_formal_8423f00c",
+  "case_id": "firfilter2__firfilter2_int8_10e2__b813600a26be64d8",
+  "operator_name": "firfilter2",
+  "scale_id": "firfilter2_int8_10e2",
+  "requested_dtype": "INT8",
+  "dtype_semantics": "actual_same_dtype_x_b_arrays_fp32_bidirectional_direct",
+  "typed_input_names": "x|b",
+  "compute_dtype": "FP32",
+  "fft_dtype": "not_applicable",
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "axis": 1,
+  "padtype": "odd",
+  "padlen": 4,
+  "typed_input_count": 2,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "status": "PASS",
+  "error_code": "OK"
+}

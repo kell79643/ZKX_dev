@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "run_id": "20260809T104755Z_02b9734201c9_stage08_b03_formal_8343f002",
+  "case_id": "decimate__decimate_fp32_10e4__66335f10271923ec",
+  "operator_name": "decimate",
+  "scale_id": "decimate_fp32_10e4",
+  "requested_dtype": "FP32",
+  "dtype_semantics": "actual_typed_array_inputs_fp32_fir_decimate_extension",
+  "typed_input_names": "x|h",
+  "compute_dtype": "FP32",
+  "fft_dtype": "not_applicable",
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "q": 5,
+  "zero_phase": true,
+  "custom_coefficients": true,
+  "axis": 1,
+  "typed_input_count": 2,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "66335f10271923eccf543f45173adb369bf49bb347fb9605c25222f8efce520c",
+  "metrics": {
+    "mse": 0,
+    "rmse": 0,
+    "relative_l2": 0,
+    "relative_linf": 0
+  },
+  "status": "PASS",
+  "error_code": "OK"
+}

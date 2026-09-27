@@ -1,0 +1,2 @@
+run_id,case_id,operator_name,scale_id,dtype,backend,warmup_runs,measured_runs,cpu_mean_ms,gpu_mean_ms,cpu_gpu_speedup,mse,rmse,relative_l2,relative_linf,status,error_code
+20260810T073942Z_5bf09d215ce4_stage08_b03_formal_99010007,channelize_poly__channelize_poly_int32_10e2__97f3ee30cd9ac943,channelize_poly,channelize_poly_int32_10e2,INT32,fft_thrust,20,100,0.086482860000000009,0.44901163999999999,0.19260716715495396,1.3355094807820933e-11,3.654462314461723e-06,4.1556666849234001e-08,4.0259676189510718e-08,PASS,OK

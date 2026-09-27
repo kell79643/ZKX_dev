@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "run_id": "20260810T083714Z_db927ed96663_stage08_b04_formal_b403000d",
+  "case_id": "firfilter2__firfilter2_int8_10e2__b813600a26be64d8",
+  "operator_name": "firfilter2",
+  "scale_id": "firfilter2_int8_10e2",
+  "requested_dtype": "INT8",
+  "dtype_semantics": "actual_same_dtype_x_b_arrays_fp32_bidirectional_direct",
+  "typed_input_names": "x|b",
+  "compute_dtype": "FP32",
+  "fft_dtype": "not_applicable",
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "axis": 1,
+  "padtype": "odd",
+  "padlen": 4,
+  "typed_input_count": 2,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[10x10]",
+      "dtype": "INT8",
+      "element_count": "100",
+      "generator": "firfilter_modular(seed=84250001,integral=true)",
+      "preview_head4_tail2": "i=0:-2;i=1:2;i=2:-3;i=3:1;i=98:3;i=99:-2"
+    },
+    {
+      "input_name": "b",
+      "shape": "[3]",
+      "dtype": "INT8",
+      "element_count": "3",
+      "generator": "fixed_filter_coefficients",
+      "preview_head4_tail2": "i=0:1;i=1:1;i=2:1"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT8",
+    "rows": "10",
+    "cols": "10",
+    "axis": "1",
+    "padtype": "odd",
+    "padlen": "4",
+    "seed": "84250001"
+  }
+}

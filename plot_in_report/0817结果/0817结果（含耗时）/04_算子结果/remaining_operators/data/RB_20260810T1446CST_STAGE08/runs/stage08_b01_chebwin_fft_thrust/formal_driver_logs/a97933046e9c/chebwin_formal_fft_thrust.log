@@ -1,0 +1,271 @@
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_fp32_10e2 dtype=FP32 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.22257349000000001 gpu_mean_ms=1.4756486200000003 speedup=0.15083095459405504
+[stage08-b01] mse=1.3593549496823892e-14 rmse=1.1659137831256603e-07 relative_l2=2.1396127190412897e-07 relative_linf=2.7514908007564287e-07
+[stage08-b01] resources=available cuda_event_ms=1.4636399745941162
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052432Z_a97933046e9c_stage08_b01_formal_8a000100
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_fp32_10e2 dtype=FP32 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.21899463000000005 gpu_mean_ms=1.4703372200000002 speedup=0.14894177133052514
+[stage08-b01] mse=5.9750327471063565e-14 rmse=2.4443880107516393e-07 relative_l2=4.4652958722329837e-07 relative_linf=4.888965245680027e-07
+[stage08-b01] resources=available cuda_event_ms=1.4723399877548218
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052432Z_a97933046e9c_stage08_b01_formal_8a000101
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_fp32_10e3 dtype=FP32 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=2.3370582300000002 gpu_mean_ms=1.7259188099999998 speedup=1.35409511528529
+[stage08-b01] mse=8.0716766245112788e-14 rmse=2.8410696268326967e-07 relative_l2=5.1966973888842977e-07 relative_linf=7.7925057303564194e-07
+[stage08-b01] resources=available cuda_event_ms=1.7515699863433838
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052432Z_a97933046e9c_stage08_b01_formal_8a000102
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_fp32_10e3 dtype=FP32 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=2.2986102599999989 gpu_mean_ms=1.7368915800000002 speedup=1.3234045731282771
+[stage08-b01] mse=1.8558794426569041e-13 rmse=4.3079919250816895e-07 relative_l2=7.8759937605590052e-07 relative_linf=1.1662717315807404e-06
+[stage08-b01] resources=available cuda_event_ms=1.7452360391616821
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052433Z_a97933046e9c_stage08_b01_formal_8a000103
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_fp32_10e4 dtype=FP32 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=46.464413530000002 gpu_mean_ms=4.2225329100000009 speedup=11.003919808407128
+[stage08-b01] mse=1.158962747058139e-11 rmse=3.4043541928802576e-06 relative_l2=6.2242134505764948e-06 relative_linf=6.0858400870494791e-05
+[stage08-b01] resources=available cuda_event_ms=4.2489838600158691
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052434Z_a97933046e9c_stage08_b01_formal_8a000104
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_fp32_10e4 dtype=FP32 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=46.034266030000005 gpu_mean_ms=4.2329854599999983 speedup=10.875129731723677
+[stage08-b01] mse=1.2534347189892478e-11 rmse=3.5403879999079873e-06 relative_l2=6.4726488979299366e-06 relative_linf=6.4516186445327632e-05
+[stage08-b01] resources=available cuda_event_ms=4.2425718307495117
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052440Z_a97933046e9c_stage08_b01_formal_8a000105
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_fp16_10e2 dtype=FP16 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.22336748999999997 gpu_mean_ms=1.4616205099999997 speedup=0.15282180871969292
+[stage08-b01] mse=1.3593549496823892e-14 rmse=1.1659137831256603e-07 relative_l2=2.1396127190412897e-07 relative_linf=2.7514908007564287e-07
+[stage08-b01] resources=available cuda_event_ms=1.4800299406051636
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052446Z_a97933046e9c_stage08_b01_formal_8a000106
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_fp16_10e2 dtype=FP16 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.21930527000000008 gpu_mean_ms=1.45719789 speedup=0.15049793271386092
+[stage08-b01] mse=5.9750327471063565e-14 rmse=2.4443880107516393e-07 relative_l2=4.4652958722329837e-07 relative_linf=4.888965245680027e-07
+[stage08-b01] resources=available cuda_event_ms=1.4591820240020752
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052446Z_a97933046e9c_stage08_b01_formal_8a000107
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_fp16_10e3 dtype=FP16 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=2.3392839499999996 gpu_mean_ms=1.7282095900000005 speedup=1.3535881084886232
+[stage08-b01] mse=8.0716766245112788e-14 rmse=2.8410696268326967e-07 relative_l2=5.1966973888842977e-07 relative_linf=7.7925057303564194e-07
+[stage08-b01] resources=available cuda_event_ms=1.7431520223617554
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052446Z_a97933046e9c_stage08_b01_formal_8a000108
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_fp16_10e3 dtype=FP16 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=2.2981091000000009 gpu_mean_ms=1.7507925299999993 speedup=1.3126107523431128
+[stage08-b01] mse=1.8558794426569041e-13 rmse=4.3079919250816895e-07 relative_l2=7.8759937605590052e-07 relative_linf=1.1662717315807404e-06
+[stage08-b01] resources=available cuda_event_ms=1.7701660394668579
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052447Z_a97933046e9c_stage08_b01_formal_8a000109
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_fp16_10e4 dtype=FP16 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=46.482497770000002 gpu_mean_ms=4.2649106500000027 speedup=10.89882100343649
+[stage08-b01] mse=1.158962747058139e-11 rmse=3.4043541928802576e-06 relative_l2=6.2242134505764948e-06 relative_linf=6.0858400870494791e-05
+[stage08-b01] resources=available cuda_event_ms=4.3493218421936035
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052448Z_a97933046e9c_stage08_b01_formal_8a00010a
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_fp16_10e4 dtype=FP16 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=46.097927740000003 gpu_mean_ms=4.2064911700000014 speedup=10.958760134518478
+[stage08-b01] mse=1.2534347189892478e-11 rmse=3.5403879999079873e-06 relative_l2=6.4726488979299366e-06 relative_linf=6.4516186445327632e-05
+[stage08-b01] resources=available cuda_event_ms=4.2120637893676758
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052454Z_a97933046e9c_stage08_b01_formal_8a00010b
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int32_10e2 dtype=INT32 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.22317821999999995 gpu_mean_ms=1.4778682700000005 speedup=0.15101360826970042
+[stage08-b01] mse=1.3593549496823892e-14 rmse=1.1659137831256603e-07 relative_l2=2.1396127190412897e-07 relative_linf=2.7514908007564287e-07
+[stage08-b01] resources=available cuda_event_ms=1.4940259456634521
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052500Z_a97933046e9c_stage08_b01_formal_8a00010c
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int32_10e2 dtype=INT32 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.21932160000000003 gpu_mean_ms=1.4679235300000002 speedup=0.14940941780529943
+[stage08-b01] mse=5.9750327471063565e-14 rmse=2.4443880107516393e-07 relative_l2=4.4652958722329837e-07 relative_linf=4.888965245680027e-07
+[stage08-b01] resources=available cuda_event_ms=1.4536579847335815
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052500Z_a97933046e9c_stage08_b01_formal_8a00010d
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int32_10e3 dtype=INT32 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=2.3332836599999993 gpu_mean_ms=1.7280341699999995 speedup=1.350253195514068
+[stage08-b01] mse=8.0716766245112788e-14 rmse=2.8410696268326967e-07 relative_l2=5.1966973888842977e-07 relative_linf=7.7925057303564194e-07
+[stage08-b01] resources=available cuda_event_ms=1.7302559614181519
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052501Z_a97933046e9c_stage08_b01_formal_8a00010e
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int32_10e3 dtype=INT32 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=2.3077187400000003 gpu_mean_ms=1.7255233499999991 speedup=1.337402209016761
+[stage08-b01] mse=1.8558794426569041e-13 rmse=4.3079919250816895e-07 relative_l2=7.8759937605590052e-07 relative_linf=1.1662717315807404e-06
+[stage08-b01] resources=available cuda_event_ms=1.7321959733963013
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052501Z_a97933046e9c_stage08_b01_formal_8a00010f
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int32_10e4 dtype=INT32 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=46.44790978000001 gpu_mean_ms=4.2490179900000005 speedup=10.931445780957969
+[stage08-b01] mse=1.158962747058139e-11 rmse=3.4043541928802576e-06 relative_l2=6.2242134505764948e-06 relative_linf=6.0858400870494791e-05
+[stage08-b01] resources=available cuda_event_ms=4.3393101692199707
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052502Z_a97933046e9c_stage08_b01_formal_8a000110
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int32_10e4 dtype=INT32 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=46.079809559999994 gpu_mean_ms=4.2298434399999998 speedup=10.893975205853009
+[stage08-b01] mse=1.2534347189892478e-11 rmse=3.5403879999079873e-06 relative_l2=6.4726488979299366e-06 relative_linf=6.4516186445327632e-05
+[stage08-b01] resources=available cuda_event_ms=4.2347278594970703
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052508Z_a97933046e9c_stage08_b01_formal_8a000111
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int16_10e2 dtype=INT16 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.22394893000000005 gpu_mean_ms=1.4601957499999998 speedup=0.15336911506556575
+[stage08-b01] mse=1.3593549496823892e-14 rmse=1.1659137831256603e-07 relative_l2=2.1396127190412897e-07 relative_linf=2.7514908007564287e-07
+[stage08-b01] resources=available cuda_event_ms=1.4605139493942261
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052514Z_a97933046e9c_stage08_b01_formal_8a000112
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int16_10e2 dtype=INT16 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.2189744099999999 gpu_mean_ms=1.4568027300000015 speedup=0.15031164171418027
+[stage08-b01] mse=5.9750327471063565e-14 rmse=2.4443880107516393e-07 relative_l2=4.4652958722329837e-07 relative_linf=4.888965245680027e-07
+[stage08-b01] resources=available cuda_event_ms=1.5087419748306274
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052514Z_a97933046e9c_stage08_b01_formal_8a000113
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int16_10e3 dtype=INT16 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=2.3376375600000001 gpu_mean_ms=1.73569679 speedup=1.3468006471337659
+[stage08-b01] mse=8.0716766245112788e-14 rmse=2.8410696268326967e-07 relative_l2=5.1966973888842977e-07 relative_linf=7.7925057303564194e-07
+[stage08-b01] resources=available cuda_event_ms=1.7403800487518311
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052515Z_a97933046e9c_stage08_b01_formal_8a000114
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int16_10e3 dtype=INT16 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=2.3002313100000009 gpu_mean_ms=1.7361395199999998 speedup=1.324911554343283
+[stage08-b01] mse=1.8558794426569041e-13 rmse=4.3079919250816895e-07 relative_l2=7.8759937605590052e-07 relative_linf=1.1662717315807404e-06
+[stage08-b01] resources=available cuda_event_ms=1.7357560396194458
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052515Z_a97933046e9c_stage08_b01_formal_8a000115
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int16_10e4 dtype=INT16 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=46.459057350000002 gpu_mean_ms=4.2447788499999994 speedup=10.944988889114921
+[stage08-b01] mse=1.158962747058139e-11 rmse=3.4043541928802576e-06 relative_l2=6.2242134505764948e-06 relative_linf=6.0858400870494791e-05
+[stage08-b01] resources=available cuda_event_ms=4.3160138130187988
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052516Z_a97933046e9c_stage08_b01_formal_8a000116
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int16_10e4 dtype=INT16 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=46.087226179999988 gpu_mean_ms=4.2481540299999994 speedup=10.848765335375562
+[stage08-b01] mse=1.2534347189892478e-11 rmse=3.5403879999079873e-06 relative_l2=6.4726488979299366e-06 relative_linf=6.4516186445327632e-05
+[stage08-b01] resources=available cuda_event_ms=4.2908058166503906
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052522Z_a97933046e9c_stage08_b01_formal_8a000117
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int8_10e2 dtype=INT8 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.22260586999999993 gpu_mean_ms=1.4606807500000007 speedup=0.15239871546195144
+[stage08-b01] mse=1.3593549496823892e-14 rmse=1.1659137831256603e-07 relative_l2=2.1396127190412897e-07 relative_linf=2.7514908007564287e-07
+[stage08-b01] resources=available cuda_event_ms=1.4721419811248779
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052528Z_a97933046e9c_stage08_b01_formal_8a000118
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int8_10e2 dtype=INT8 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.21928952000000002 gpu_mean_ms=1.4686568500000003 speedup=0.14931297259805784
+[stage08-b01] mse=5.9750327471063565e-14 rmse=2.4443880107516393e-07 relative_l2=4.4652958722329837e-07 relative_linf=4.888965245680027e-07
+[stage08-b01] resources=available cuda_event_ms=1.4825659990310669
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052528Z_a97933046e9c_stage08_b01_formal_8a000119
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int8_10e3 dtype=INT8 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=2.343517910000001 gpu_mean_ms=1.7303434800000006 speedup=1.3543657297451719
+[stage08-b01] mse=8.0716766245112788e-14 rmse=2.8410696268326967e-07 relative_l2=5.1966973888842977e-07 relative_linf=7.7925057303564194e-07
+[stage08-b01] resources=available cuda_event_ms=1.7459440231323242
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052529Z_a97933046e9c_stage08_b01_formal_8a00011a
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int8_10e3 dtype=INT8 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=2.3004882399999995 gpu_mean_ms=1.7223426700000002 speedup=1.3356739515720175
+[stage08-b01] mse=1.8558794426569041e-13 rmse=4.3079919250816895e-07 relative_l2=7.8759937605590052e-07 relative_linf=1.1662717315807404e-06
+[stage08-b01] resources=available cuda_event_ms=1.7328640222549438
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052529Z_a97933046e9c_stage08_b01_formal_8a00011b
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int8_10e4 dtype=INT8 sym=true backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=46.430774 gpu_mean_ms=4.2478221500000002 speedup=10.930489168431874
+[stage08-b01] mse=1.158962747058139e-11 rmse=3.4043541928802576e-06 relative_l2=6.2242134505764948e-06 relative_linf=6.0858400870494791e-05
+[stage08-b01] resources=available cuda_event_ms=4.2524681091308594
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052530Z_a97933046e9c_stage08_b01_formal_8a00011c
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=e5f2e743fda9d9dda0f3c0b01d6bbbf2d9490d2f40af1bc668f22d1da683811e
+[stage08-b01] run_type=formal scale=chebwin_int8_10e4 dtype=INT8 sym=false backend=fft_thrust
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=46.085681170000008 gpu_mean_ms=4.2264831200000001 speedup=10.904025844068675
+[stage08-b01] mse=1.2534347189892478e-11 rmse=3.5403879999079873e-06 relative_l2=6.4726488979299366e-06 relative_linf=6.4516186445327632e-05
+[stage08-b01] resources=available cuda_event_ms=4.2893657684326172
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01_chebwin_fft_thrust/formal/20260807T052536Z_a97933046e9c_stage08_b01_formal_8a00011d
+[stage08-b01-formal] cases=30 status=completed

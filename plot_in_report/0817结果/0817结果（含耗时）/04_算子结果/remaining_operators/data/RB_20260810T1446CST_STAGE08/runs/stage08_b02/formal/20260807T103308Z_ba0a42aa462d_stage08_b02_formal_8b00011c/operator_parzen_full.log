@@ -1,0 +1,8 @@
+[stage08-b02] operator=parzen entry=cpu:parzen_typed_cpu gpu:parzen_device
+[stage08-b02] config=test_all/final_prep/operators/windows/parzen/operator_scales.json config_sha256=2cf8b019151848ff2818a0e6bca92b27d9ba22f505dacbb0d59a6ec098e64372
+[stage08-b02] run_type=formal scale=parzen_int8_10e4 dtype=INT8 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.22276338999999992 gpu_mean_ms=0.31134194999999992 speedup=0.7154942981503134
+[stage08-b02] mse=4.5339589084042754e-16 rmse=2.1293094909862858e-08 relative_l2=4.1005709412730799e-08 relative_linf=8.6133480741671434e-08
+[stage08-b02] resources=available cuda_event_ms=0.3352699875831604
+[stage08-b02] status=PASS error_code=OK

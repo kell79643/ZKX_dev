@@ -1,0 +1,2 @@
+command=build_stage08_b04_firfilter2_be79ae78aeff/stage08_filtering_firfilter2 --dtype INT32 --rows 100 --cols 100 --axis 1 --padtype constant --padlen 8 --seed 84230003 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage08_b04_firfilter2_be79ae78aeff/formal/20260809T113848Z_be79ae78aeff_stage08_b04_formal_8423f008/firfilter2_probe_raw.json
+STAGE08_FIRFILTER2_PROBE PASS dtype=INT32 padtype=constant backend=not_applicable

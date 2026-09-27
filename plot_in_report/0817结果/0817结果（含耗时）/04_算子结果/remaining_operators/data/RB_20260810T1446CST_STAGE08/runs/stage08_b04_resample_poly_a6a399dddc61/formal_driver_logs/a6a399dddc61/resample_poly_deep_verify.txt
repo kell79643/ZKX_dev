@@ -1,0 +1,1 @@
+STAGE08_FORMAL_DEEP_VERIFY PASS batch=b04 operator=resample_poly backend=not_applicable cases=15 warmup=20 measured=100 typed_inputs=x|x+h filter_coverage=default_kaiser|identity|custom axis_coverage=0|1 output_dtype_coverage=request_dtype|FP32|FP64 request_variant_coverage=5x3

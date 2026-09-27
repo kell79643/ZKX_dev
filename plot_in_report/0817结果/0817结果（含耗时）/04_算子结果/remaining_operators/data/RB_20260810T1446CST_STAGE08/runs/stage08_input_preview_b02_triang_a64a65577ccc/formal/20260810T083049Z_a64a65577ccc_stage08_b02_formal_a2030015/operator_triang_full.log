@@ -1,0 +1,60 @@
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/configs/operators/windows/triang/operator_scales.json config_sha256=d7de5774be071f747c6bdb46d3373673771af1a8190a816ca4092657ec7a5dfd
+[stage08-b02] run_type=formal scale=triang_int16_10e3 dtype=INT16 sym=true backend=not_applicable
+[stage08-b02] dtype_semantics=request_variant_no_typed_data_input typed_input_count=0 actual_input_digest=6da158ece72508d29649124d2d289624f6020920ecb9c5233ac6aa50ef535fe7
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.010114750000000006 gpu_mean_ms=0.26199919999999999 speedup=0.038606033911553955
+[stage08-b02] mse=1.6915186893922353e-16 rmse=1.3005839801382437e-08 relative_l2=2.2526786594492018e-08 relative_linf=2.9593497266780682e-08
+[stage08-b02] resources=available cuda_event_ms=0.28608998656272888
+[stage08-b02] status=PASS error_code=OK
+[stage08] identity and status
+target | scale_id          | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code
+triang | triang_int16_10e3 | CPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+triang | triang_int16_10e3 | GPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+
+[stage08] timing detail
+device | mean_ms              | p50_ms               | p95_ms               | p99_ms               | min_ms               | max_ms               | std_ms                 | cv                    | speedup             
+CPU    | 0.010114750000000006 | 0.010120000000000001 | 0.010149999999999999 | 0.010160800000000001 | 0.010019999999999999 | 0.010240000000000001 | 3.1056199059125034e-05 | 0.0030703872126473732 | NA                  
+GPU    | 0.26199919999999999  | 0.261936             | 0.27339399999999997  | 0.28357260000000051  | 0.247811             | 0.38362200000000002  | 0.014181642174304076   | 0.054128570523513338  | 0.038606033911553955
+
+[stage08] accuracy detail
+accuracy_reference  | mse                    | rmse                   | relative_l2            | relative_linf          | exact_match | mismatch_count | semantic_check                                                                                      | status
+cpu_typed_reference | 1.6915186893922353e-16 | 1.3005839801382437e-08 | 2.2526786594492018e-08 | 2.9593497266780682e-08 | NA          | NA             | finite_fp64_triangular_window_shape_parity_and_symmetry_match_cpu:shape=[1000];finite=true;sym=true | PASS  
+
+[stage08] resource detail
+device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes
+CPU    | cpu_heap   | 1463984      | 1467648     | 1474544    | 3664       
+CPU    | rss        | 70701056     | 70701056    | 70701056   | 0          
+GPU    | cpu_heap   | 1467648      | 1471968     | 1478928    | 4320       
+GPU    | rss        | 70701056     | 70701056    | 70701056   | 0          
+GPU    | gpu_memory | 408322048    | 408322048   | 408322048  | 0          
+
+[stage08] input/output identity
+device | input_digest                                                     | output_digest                                                   
+CPU    | 6da158ece72508d29649124d2d289624f6020920ecb9c5233ac6aa50ef535fe7 | 17b07ba602b79c3a8074c20771cff3405993d6ef1e949e73e0e1ec98e6889d13
+GPU    | 6da158ece72508d29649124d2d289624f6020920ecb9c5233ac6aa50ef535fe7 | 3d0aadfb7ddee8d71ac6e397a406f96ed4925b8ad6f756608e0855f0e47f28ff
+
+[stage08] input content
+input_name       | shape  | dtype       | elements | generator                                           | values(head4/tail2)                                                                              
+window_positions | [1000] | INDEX_INT64 | 1000     | implicit_window_index_domain(no_materialized_array) | i=0:position=0;i=1:position=1;i=2:position=2;i=3:position=3;i=998:position=998;i=999:position=999
+
+[stage08] case parameters
+parameters                                                                                                                             
+{"length":1000,"requested_dtype":"INT16","sym":true,"dtype_semantics":"request_variant_no_typed_data_input","typed_input_names":"none"}
+
+[stage08] dtype evidence
+requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status
+INT16           | INT16              | FP64         | 6da158ece72508d29649124d2d289624f6020920ecb9c5233ac6aa50ef535fe7 | PASS  
+
+[stage08] evidence files
+kind        | path                                                                                                                                                                                                                                           
+main_csv    | /tmp/ZKX_dev/results/stage08_input_preview_b02_triang_a64a65577ccc/formal/20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015/operator_main_results_triang_not_applicable_20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015.csv  
+timing_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b02_triang_a64a65577ccc/formal/20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015/operator_timing_samples_triang_not_applicable_20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015.csv
+memory_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b02_triang_a64a65577ccc/formal/20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015/operator_windows_triang_memory_trace_not_applicable.csv                                                    
+input_csv   | /tmp/ZKX_dev/results/stage08_input_preview_b02_triang_a64a65577ccc/formal/20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015/operator_input_evidence_triang_not_applicable_20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015.csv
+dtype_csv   | /tmp/ZKX_dev/results/stage08_input_preview_b02_triang_a64a65577ccc/formal/20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015/operator_dtype_evidence_triang_not_applicable_20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015.csv
+module_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b02_triang_a64a65577ccc/formal/20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015/windows_batch02_module_summary_not_applicable_20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015.csv
+report_json | /tmp/ZKX_dev/results/stage08_input_preview_b02_triang_a64a65577ccc/formal/20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015/operator_triang_report.json                                                                                
+summary_txt | /tmp/ZKX_dev/results/stage08_input_preview_b02_triang_a64a65577ccc/formal/20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015/operator_triang_summary.txt                                                                                
+full_log    | /tmp/ZKX_dev/results/stage08_input_preview_b02_triang_a64a65577ccc/formal/20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015/operator_triang_full.log                                                                                   
+results_dir | /tmp/ZKX_dev/results/stage08_input_preview_b02_triang_a64a65577ccc/formal/20260810T083049Z_a64a65577ccc_stage08_b02_formal_a2030015                                                                                                            

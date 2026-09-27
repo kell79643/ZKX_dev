@@ -1,0 +1,1 @@
+STAGE08_FORMAL_DEEP_VERIFY PASS batch=b05 operator=detrend backend=not_applicable cases=15 warmup=20 measured=100 typed_inputs=x input_preview=head4_tail2 mode_coverage=constant|linear rank_coverage=1|2 axis_coverage=0|1 breakpoint_coverage=none|25,50,75 output_dtype_coverage=FP16|FP32|FP64 request_variant_coverage=5x3

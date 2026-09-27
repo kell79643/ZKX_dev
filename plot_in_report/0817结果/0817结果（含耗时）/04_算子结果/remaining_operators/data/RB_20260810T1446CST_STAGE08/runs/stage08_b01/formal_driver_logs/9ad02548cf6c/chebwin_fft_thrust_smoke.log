@@ -1,0 +1,50 @@
+[  9%] Building CXX object cusignal_task_f/CMakeFiles/fft_core.dir/src/fft_interface/fft_thrust.cu.o
+[  9%] Building CXX object CMakeFiles/f_case_manifest.dir/f_case_manifest.cpp.o
+[ 18%] Building CXX object CMakeFiles/f_case_manifest.dir/tmp/ZKX_dev/cusignal_cpp/src/cuda_utils/operator_type_dispatch.cu.o
+[ 18%] Linking CXX executable f_case_manifest
+[ 18%] Built target f_case_manifest
+[ 18%] Building CXX object CMakeFiles/f_windows_performance.dir/tmp/ZKX_dev/cusignal_cpp/src/cuda_utils/fp64_storage_finalize.cu.o
+[ 18%] Built target fft_core
+[ 27%] Building CXX object CMakeFiles/f_windows_performance.dir/performance/f_windows_performance.cu.o
+[ 27%] Building CXX object CMakeFiles/f_windows_performance.dir/tmp/ZKX_dev/cusignal_cpp/src/windows/windows_typed.cpp.o
+[ 27%] Building CXX object CMakeFiles/f_windows_performance.dir/tmp/ZKX_dev/cusignal_cpp/src/windows/windows_typed.cu.o
+[ 27%] Building CXX object CMakeFiles/f_windows_performance.dir/tmp/ZKX_dev/cusignal_cpp/src/fft_interface/fft_interface.cpp.o
+[ 36%] Building CXX object CMakeFiles/f_windows_performance.dir/tmp/ZKX_dev/cusignal_cpp/src/fft_interface/fft_interface_cpu.cpp.o
+[ 36%] Building CXX object CMakeFiles/f_windows_performance.dir/tmp/ZKX_dev/cusignal_cpp/src/fft_interface/fft_thrust.cu.o
+[ 36%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/fft_interface/fft_interface.cpp.o
+[ 36%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/fft_interface/fft_interface_cpu.cpp.o
+[ 36%] Linking CXX executable f_windows_performance
+[ 36%] Built target f_windows_performance
+[ 36%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/cuda_utils/cuda_utils_smoke.cu.o
+[ 45%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/cuda_utils/operator_type_dispatch.cu.o
+[ 45%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/cuda_utils/fp64_storage_finalize.cu.o
+[ 45%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/bsplines/bsplines_typed.cpp.o
+[ 45%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/bsplines/bsplines_typed.cu.o
+[ 54%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/convolution/convolution_typed.cpp.o
+[ 54%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/convolution/convolution_typed.cu.o
+[ 54%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/demod/demod_typed.cpp.o
+[ 54%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/demod/demod_typed.cu.o
+[ 63%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/estimation/estimation_typed.cpp.o
+[ 63%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/estimation/estimation_typed.cu.o
+[ 63%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/filter_design/filter_design_typed.cpp.o
+[ 63%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/filter_design/filter_design_typed.cu.o
+[ 63%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/filtering/filtering_typed.cpp.o
+[ 72%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/filtering/filtering_typed.cu.o
+[ 72%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/peak_finding/peak_finding_typed.cpp.o
+[ 72%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/peak_finding/peak_finding_typed.cu.o
+[ 72%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/radartools/radartools_typed.cpp.o
+[ 81%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/radartools/radartools_typed.cu.o
+[ 81%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/spectral_analysis/spectral_analysis_typed.cpp.o
+[ 81%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/spectral_analysis/spectral_analysis_typed.cu.o
+[ 81%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/waveforms/waveforms_typed.cpp.o
+[ 90%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/waveforms/waveforms_typed.cu.o
+[ 90%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/wavelets/wavelets_typed.cpp.o
+[ 90%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/wavelets/wavelets_typed.cu.o
+[ 90%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/windows/windows_typed.cpp.o
+[100%] Building CXX object cusignal_task_f/CMakeFiles/signal_lib.dir/src/windows/windows_typed.cu.o
+[100%] Built target signal_lib
+[100%] Building CXX object cusignal_task_f/CMakeFiles/e3_wave_window_type_smoke.dir/test/signal_processing/e3_wave_window_type_smoke.cu.o
+[100%] Linking CXX executable ../e3_wave_window_type_smoke
+[100%] Built target e3_wave_window_type_smoke
+-- [G][OPERATOR] operator=chebwin correctness_accuracy=5/>=5 performance=5/5 build_run=passed
+[100%] Built target g_operator_chebwin

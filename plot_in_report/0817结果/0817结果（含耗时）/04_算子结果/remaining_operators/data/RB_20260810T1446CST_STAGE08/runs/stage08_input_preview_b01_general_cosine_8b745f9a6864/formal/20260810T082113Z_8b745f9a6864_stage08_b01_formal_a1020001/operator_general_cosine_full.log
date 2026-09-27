@@ -1,0 +1,61 @@
+[stage08-b01] operator=general_cosine entry=cpu:general_cosine_typed_cpu gpu:general_cosine_device
+[stage08-b01] config=test_all/configs/operators/windows/general_cosine/operator_scales.json config_sha256=98e7d3d2716deaf919d8883f5caa73c3f61a1ce37bffff86a62a6be43aa66f64
+[stage08-b01] run_type=formal scale=general_cosine_fp32_10e2 dtype=FP32 sym=true backend=not_applicable
+[stage08-b01] dtype_semantics=actual_typed_array_input typed_input_count=3 actual_input_digest=7aea9ce1217a052519180c6753897bccd990fec0c5b4981f1dfe2709bb981540
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0084455200000000067 gpu_mean_ms=0.33828946999999998 speedup=0.024965364721520913
+[stage08-b01] mse=5.8853675548907073e-14 rmse=2.4259776492974349e-07 relative_l2=1.3032723333441223e-07 relative_linf=1.8001477704619689e-07
+[stage08-b01] resources=available cuda_event_ms=0.3258959949016571
+[stage08-b01] status=PASS error_code=OK
+[stage08] identity and status
+target         | scale_id                 | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code
+general_cosine | general_cosine_fp32_10e2 | CPU    | not_applicable | FP32  | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+general_cosine | general_cosine_fp32_10e2 | GPU    | not_applicable | FP32  | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+
+[stage08] timing detail
+device | mean_ms               | p50_ms                | p95_ms                | p99_ms                | min_ms                | max_ms               | std_ms                 | cv                  | speedup             
+CPU    | 0.0084455200000000067 | 0.0083400000000000002 | 0.0084200000000000004 | 0.0089044000000000432 | 0.0082900000000000005 | 0.017260000000000001 | 0.00088786854297243816 | 0.10512893735050506 | NA                  
+GPU    | 0.33828946999999998   | 0.32827600000000001   | 0.38463799999999998   | 0.54536560000000023   | 0.306421              | 0.57542199999999999  | 0.037202295544080347   | 0.10997178110238059 | 0.024965364721520913
+
+[stage08] accuracy detail
+accuracy_reference  | mse                    | rmse                   | relative_l2            | relative_linf          | exact_match | mismatch_count | semantic_check                                                                                | status
+cpu_typed_reference | 5.8853675548907073e-14 | 2.4259776492974349e-07 | 1.3032723333441223e-07 | 1.8001477704619689e-07 | NA          | NA             | finite_fp64_window_shape_coefficients_and_symmetry_match_cpu:shape=[100];finite=true;sym=true | PASS  
+
+[stage08] resource detail
+device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes
+CPU    | cpu_heap   | 1437744      | 1441568     | 1441568    | 3824       
+CPU    | rss        | 70578176     | 70578176    | 70578176   | 0          
+GPU    | cpu_heap   | 1441568      | 1444592     | 1444592    | 3024       
+GPU    | rss        | 70578176     | 70578176    | 70578176   | 0          
+GPU    | gpu_memory | 391544832    | 391544832   | 391544832  | 0          
+
+[stage08] input/output identity
+device | input_digest                                                     | output_digest                                                   
+CPU    | 7aea9ce1217a052519180c6753897bccd990fec0c5b4981f1dfe2709bb981540 | 1dbdadaaf8668ad13198bbf9f83eafd63f0a085bf8792035c4a755f51f175445
+GPU    | 7aea9ce1217a052519180c6753897bccd990fec0c5b4981f1dfe2709bb981540 | 8e87c8f9a107959dd1bf4392fd15e28217f4ea2c20a08768c4b7343ce59fadcc
+
+[stage08] input content
+input_name         | shape | dtype       | elements | generator                                           | values(head4/tail2)                                                                          
+window_positions   | [100] | INDEX_INT64 | 100      | implicit_window_index_domain(no_materialized_array) | i=0:position=0;i=1:position=1;i=2:position=2;i=3:position=3;i=98:position=98;i=99:position=99
+coefficient_values | [3]   | FP32        | 3        | exact_config_array                                  | i=0:1;i=1:2;i=2:1                                                                            
+
+[stage08] case parameters
+parameters                                                                     
+{"length":100,"requested_dtype":"FP32","sym":true,"coefficient_values":[1,2,1]}
+
+[stage08] dtype evidence
+requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status
+FP32            | FP32               | FP64         | 7aea9ce1217a052519180c6753897bccd990fec0c5b4981f1dfe2709bb981540 | PASS  
+
+[stage08] evidence files
+kind        | path                                                                                                                                                                                                                                                           
+main_csv    | /tmp/ZKX_dev/results/stage08_input_preview_b01_general_cosine_8b745f9a6864/formal/20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001/operator_main_results_general_cosine_not_applicable_20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001.csv  
+timing_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b01_general_cosine_8b745f9a6864/formal/20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001/operator_timing_samples_general_cosine_not_applicable_20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001.csv
+memory_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b01_general_cosine_8b745f9a6864/formal/20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001/operator_windows_general_cosine_memory_trace_not_applicable.csv                                                    
+input_csv   | /tmp/ZKX_dev/results/stage08_input_preview_b01_general_cosine_8b745f9a6864/formal/20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001/operator_input_evidence_general_cosine_not_applicable_20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001.csv
+dtype_csv   | /tmp/ZKX_dev/results/stage08_input_preview_b01_general_cosine_8b745f9a6864/formal/20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001/operator_dtype_evidence_general_cosine_not_applicable_20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001.csv
+module_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b01_general_cosine_8b745f9a6864/formal/20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001/windows_batch01_module_summary_not_applicable_20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001.csv        
+report_json | /tmp/ZKX_dev/results/stage08_input_preview_b01_general_cosine_8b745f9a6864/formal/20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001/operator_general_cosine_report.json                                                                                
+summary_txt | /tmp/ZKX_dev/results/stage08_input_preview_b01_general_cosine_8b745f9a6864/formal/20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001/operator_general_cosine_summary.txt                                                                                
+full_log    | /tmp/ZKX_dev/results/stage08_input_preview_b01_general_cosine_8b745f9a6864/formal/20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001/operator_general_cosine_full.log                                                                                   
+results_dir | /tmp/ZKX_dev/results/stage08_input_preview_b01_general_cosine_8b745f9a6864/formal/20260810T082113Z_8b745f9a6864_stage08_b01_formal_a1020001                                                                                                                    

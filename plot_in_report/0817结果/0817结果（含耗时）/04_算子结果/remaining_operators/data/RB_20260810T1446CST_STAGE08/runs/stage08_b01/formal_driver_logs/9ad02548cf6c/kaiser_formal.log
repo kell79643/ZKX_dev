@@ -1,0 +1,271 @@
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp32_10e2 dtype=FP32 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0055265600000000067 gpu_mean_ms=0.24629322000000001 speedup=0.022438944929137745
+[stage08-b01] mse=1.0393479857547649e-14 rmse=1.0194841763140638e-07 relative_l2=1.8219090234977226e-07 relative_linf=3.4051494144698818e-07
+[stage08-b01] resources=available cuda_event_ms=0.2595059871673584
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115759Z_9ad02548cf6c_stage08_b01_formal_75000000
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp32_10e2 dtype=FP32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0055775799999999917 gpu_mean_ms=0.25419421999999997 speedup=0.021942198370993614
+[stage08-b01] mse=9.4177306276040361e-15 rmse=9.7044992800267839e-08 relative_l2=1.7255874147697642e-07 relative_linf=2.8263307960685324e-07
+[stage08-b01] resources=available cuda_event_ms=0.25828999280929565
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115759Z_9ad02548cf6c_stage08_b01_formal_75000001
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp32_10e3 dtype=FP32 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.04930996999999996 gpu_mean_ms=0.26578667999999994 speedup=0.18552460943490459
+[stage08-b01] mse=1.6034510753045315e-14 rmse=1.2662744865567383e-07 relative_l2=2.2527289145725902e-07 relative_linf=4.9332858766712288e-07
+[stage08-b01] resources=available cuda_event_ms=0.27488398551940918
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115759Z_9ad02548cf6c_stage08_b01_formal_75000002
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp32_10e3 dtype=FP32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.049159760000000018 gpu_mean_ms=0.25912559000000007 speedup=0.18971403017355409
+[stage08-b01] mse=1.6053093309773665e-14 rmse=1.267008023249011e-07 relative_l2=2.2529066124187107e-07 relative_linf=5.8072872155534583e-07
+[stage08-b01] resources=available cuda_event_ms=0.28780001401901245
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115759Z_9ad02548cf6c_stage08_b01_formal_75000003
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp32_10e4 dtype=FP32 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.48831276999999995 gpu_mean_ms=0.31446444000000012 speedup=1.5528393925875998
+[stage08-b01] mse=1.5984623541104168e-14 rmse=1.2643031100611975e-07 relative_l2=2.2482093325615244e-07 relative_linf=7.0414503653548794e-07
+[stage08-b01] resources=available cuda_event_ms=0.35347598791122437
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115759Z_9ad02548cf6c_stage08_b01_formal_75000004
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp32_10e4 dtype=FP32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.48634873999999995 gpu_mean_ms=0.31174208999999997 speedup=1.5600996965151546
+[stage08-b01] mse=1.5666116859541735e-14 rmse=1.2516435938214095e-07 relative_l2=2.2255866392746574e-07 relative_linf=6.288099760887178e-07
+[stage08-b01] resources=available cuda_event_ms=0.33134201169013977
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115759Z_9ad02548cf6c_stage08_b01_formal_75000005
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp16_10e2 dtype=FP16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.00558487999999999 gpu_mean_ms=0.24957714000000003 speedup=0.022377369978676689
+[stage08-b01] mse=1.0393479857547649e-14 rmse=1.0194841763140638e-07 relative_l2=1.8219090234977226e-07 relative_linf=3.4051494144698818e-07
+[stage08-b01] resources=available cuda_event_ms=0.26607400178909302
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115800Z_9ad02548cf6c_stage08_b01_formal_75000006
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp16_10e2 dtype=FP16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0057391699999999983 gpu_mean_ms=0.24723872999999996 speedup=0.023213070217598997
+[stage08-b01] mse=9.4177306276040361e-15 rmse=9.7044992800267839e-08 relative_l2=1.7255874147697642e-07 relative_linf=2.8263307960685324e-07
+[stage08-b01] resources=available cuda_event_ms=0.25079798698425293
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115800Z_9ad02548cf6c_stage08_b01_formal_75000007
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp16_10e3 dtype=FP16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.049323170000000013 gpu_mean_ms=0.25684855000000001 speedup=0.19203211386632321
+[stage08-b01] mse=1.6034510753045315e-14 rmse=1.2662744865567383e-07 relative_l2=2.2527289145725902e-07 relative_linf=4.9332858766712288e-07
+[stage08-b01] resources=available cuda_event_ms=0.28127598762512207
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115800Z_9ad02548cf6c_stage08_b01_formal_75000008
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp16_10e3 dtype=FP16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.056906569999999997 gpu_mean_ms=0.26172902000000003 speedup=0.21742552659999256
+[stage08-b01] mse=1.6053093309773665e-14 rmse=1.267008023249011e-07 relative_l2=2.2529066124187107e-07 relative_linf=5.8072872155534583e-07
+[stage08-b01] resources=available cuda_event_ms=0.28080800175666809
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115800Z_9ad02548cf6c_stage08_b01_formal_75000009
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp16_10e4 dtype=FP16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.49013590000000007 gpu_mean_ms=0.31051297999999999 speedup=1.5784715344266771
+[stage08-b01] mse=1.5984623541104168e-14 rmse=1.2643031100611975e-07 relative_l2=2.2482093325615244e-07 relative_linf=7.0414503653548794e-07
+[stage08-b01] resources=available cuda_event_ms=0.33339199423789978
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115800Z_9ad02548cf6c_stage08_b01_formal_7500000a
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp16_10e4 dtype=FP16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.48976909000000007 gpu_mean_ms=0.31335970999999996 speedup=1.5629612690157269
+[stage08-b01] mse=1.5666116859541735e-14 rmse=1.2516435938214095e-07 relative_l2=2.2255866392746574e-07 relative_linf=6.288099760887178e-07
+[stage08-b01] resources=available cuda_event_ms=0.33623999357223511
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115800Z_9ad02548cf6c_stage08_b01_formal_7500000b
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int32_10e2 dtype=INT32 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.005985680000000008 gpu_mean_ms=0.25101737999999996 speedup=0.02384567953023814
+[stage08-b01] mse=1.0393479857547649e-14 rmse=1.0194841763140638e-07 relative_l2=1.8219090234977226e-07 relative_linf=3.4051494144698818e-07
+[stage08-b01] resources=available cuda_event_ms=0.32275199890136719
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115800Z_9ad02548cf6c_stage08_b01_formal_7500000c
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int32_10e2 dtype=INT32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0055572800000000012 gpu_mean_ms=0.24992096000000003 speedup=0.022236150181241303
+[stage08-b01] mse=9.4177306276040361e-15 rmse=9.7044992800267839e-08 relative_l2=1.7255874147697642e-07 relative_linf=2.8263307960685324e-07
+[stage08-b01] resources=available cuda_event_ms=0.28267800807952881
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115800Z_9ad02548cf6c_stage08_b01_formal_7500000d
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int32_10e3 dtype=INT32 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.049543569999999974 gpu_mean_ms=0.26277484000000007 speedup=0.18854000634155066
+[stage08-b01] mse=1.6034510753045315e-14 rmse=1.2662744865567383e-07 relative_l2=2.2527289145725902e-07 relative_linf=4.9332858766712288e-07
+[stage08-b01] resources=available cuda_event_ms=0.2764819860458374
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115801Z_9ad02548cf6c_stage08_b01_formal_7500000e
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int32_10e3 dtype=INT32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.049233759999999988 gpu_mean_ms=0.25756625000000005 speedup=0.19114988862088872
+[stage08-b01] mse=1.6053093309773665e-14 rmse=1.267008023249011e-07 relative_l2=2.2529066124187107e-07 relative_linf=5.8072872155534583e-07
+[stage08-b01] resources=available cuda_event_ms=0.28328800201416016
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115801Z_9ad02548cf6c_stage08_b01_formal_7500000f
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int32_10e4 dtype=INT32 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.48681794000000012 gpu_mean_ms=0.31822985999999992 speedup=1.5297682624754327
+[stage08-b01] mse=1.5984623541104168e-14 rmse=1.2643031100611975e-07 relative_l2=2.2482093325615244e-07 relative_linf=7.0414503653548794e-07
+[stage08-b01] resources=available cuda_event_ms=0.33957201242446899
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115801Z_9ad02548cf6c_stage08_b01_formal_75000010
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int32_10e4 dtype=INT32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.48796355999999996 gpu_mean_ms=0.31377571999999998 speedup=1.5551348587456033
+[stage08-b01] mse=1.5666116859541735e-14 rmse=1.2516435938214095e-07 relative_l2=2.2255866392746574e-07 relative_linf=6.288099760887178e-07
+[stage08-b01] resources=available cuda_event_ms=0.33709201216697693
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115801Z_9ad02548cf6c_stage08_b01_formal_75000011
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int16_10e2 dtype=INT16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0056227799999999904 gpu_mean_ms=0.25274819999999987 speedup=0.022246567928080174
+[stage08-b01] mse=1.0393479857547649e-14 rmse=1.0194841763140638e-07 relative_l2=1.8219090234977226e-07 relative_linf=3.4051494144698818e-07
+[stage08-b01] resources=available cuda_event_ms=0.27313798666000366
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115801Z_9ad02548cf6c_stage08_b01_formal_75000012
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int16_10e2 dtype=INT16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0055452799999999979 gpu_mean_ms=0.25953257999999996 speedup=0.02136641187784593
+[stage08-b01] mse=9.4177306276040361e-15 rmse=9.7044992800267839e-08 relative_l2=1.7255874147697642e-07 relative_linf=2.8263307960685324e-07
+[stage08-b01] resources=available cuda_event_ms=0.29190400242805481
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115801Z_9ad02548cf6c_stage08_b01_formal_75000013
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int16_10e3 dtype=INT16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.049183460000000005 gpu_mean_ms=0.25820936999999999 speedup=0.19047898997623519
+[stage08-b01] mse=1.6034510753045315e-14 rmse=1.2662744865567383e-07 relative_l2=2.2527289145725902e-07 relative_linf=4.9332858766712288e-07
+[stage08-b01] resources=available cuda_event_ms=0.27442601323127747
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115801Z_9ad02548cf6c_stage08_b01_formal_75000014
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int16_10e3 dtype=INT16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.049129139999999995 gpu_mean_ms=0.25700435999999999 speedup=0.19116072583360064
+[stage08-b01] mse=1.6053093309773665e-14 rmse=1.267008023249011e-07 relative_l2=2.2529066124187107e-07 relative_linf=5.8072872155534583e-07
+[stage08-b01] resources=available cuda_event_ms=0.33539599180221558
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115801Z_9ad02548cf6c_stage08_b01_formal_75000015
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int16_10e4 dtype=INT16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.48726515000000015 gpu_mean_ms=0.3127272900000001 speedup=1.5581152191738687
+[stage08-b01] mse=1.5984623541104168e-14 rmse=1.2643031100611975e-07 relative_l2=2.2482093325615244e-07 relative_linf=7.0414503653548794e-07
+[stage08-b01] resources=available cuda_event_ms=0.34076800942420959
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115802Z_9ad02548cf6c_stage08_b01_formal_75000016
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int16_10e4 dtype=INT16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.48904737999999986 gpu_mean_ms=0.31448373000000002 speedup=1.5550800672581688
+[stage08-b01] mse=1.5666116859541735e-14 rmse=1.2516435938214095e-07 relative_l2=2.2255866392746574e-07 relative_linf=6.288099760887178e-07
+[stage08-b01] resources=available cuda_event_ms=0.33283200860023499
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115802Z_9ad02548cf6c_stage08_b01_formal_75000017
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int8_10e2 dtype=INT8 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0056429799999999928 gpu_mean_ms=0.2452559 speedup=0.023008539244111937
+[stage08-b01] mse=1.0393479857547649e-14 rmse=1.0194841763140638e-07 relative_l2=1.8219090234977226e-07 relative_linf=3.4051494144698818e-07
+[stage08-b01] resources=available cuda_event_ms=0.26643800735473633
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115802Z_9ad02548cf6c_stage08_b01_formal_75000018
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int8_10e2 dtype=INT8 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0056519800000000035 gpu_mean_ms=0.24774383000000011 speedup=0.022813807310559465
+[stage08-b01] mse=9.4177306276040361e-15 rmse=9.7044992800267839e-08 relative_l2=1.7255874147697642e-07 relative_linf=2.8263307960685324e-07
+[stage08-b01] resources=available cuda_event_ms=0.28583601117134094
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115802Z_9ad02548cf6c_stage08_b01_formal_75000019
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int8_10e3 dtype=INT8 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.049140450000000016 gpu_mean_ms=0.26083339999999999 speedup=0.18839784322099862
+[stage08-b01] mse=1.6034510753045315e-14 rmse=1.2662744865567383e-07 relative_l2=2.2527289145725902e-07 relative_linf=4.9332858766712288e-07
+[stage08-b01] resources=available cuda_event_ms=0.26757600903511047
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115802Z_9ad02548cf6c_stage08_b01_formal_7500001a
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int8_10e3 dtype=INT8 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.049343059999999966 gpu_mean_ms=0.2599418 speedup=0.18982349125842771
+[stage08-b01] mse=1.6053093309773665e-14 rmse=1.267008023249011e-07 relative_l2=2.2529066124187107e-07 relative_linf=5.8072872155534583e-07
+[stage08-b01] resources=available cuda_event_ms=0.28266799449920654
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115802Z_9ad02548cf6c_stage08_b01_formal_7500001b
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int8_10e4 dtype=INT8 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.48568532999999986 gpu_mean_ms=0.30977825999999997 speedup=1.5678483377109804
+[stage08-b01] mse=1.5984623541104168e-14 rmse=1.2643031100611975e-07 relative_l2=2.2482093325615244e-07 relative_linf=7.0414503653548794e-07
+[stage08-b01] resources=available cuda_event_ms=0.33505600690841675
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115802Z_9ad02548cf6c_stage08_b01_formal_7500001c
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int8_10e4 dtype=INT8 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.48788725000000005 gpu_mean_ms=0.31231870000000006 speedup=1.5621454943299904
+[stage08-b01] mse=1.5666116859541735e-14 rmse=1.2516435938214095e-07 relative_l2=2.2255866392746574e-07 relative_linf=6.288099760887178e-07
+[stage08-b01] resources=available cuda_event_ms=0.33232399821281433
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115803Z_9ad02548cf6c_stage08_b01_formal_7500001d
+[stage08-b01-formal] cases=30 status=completed

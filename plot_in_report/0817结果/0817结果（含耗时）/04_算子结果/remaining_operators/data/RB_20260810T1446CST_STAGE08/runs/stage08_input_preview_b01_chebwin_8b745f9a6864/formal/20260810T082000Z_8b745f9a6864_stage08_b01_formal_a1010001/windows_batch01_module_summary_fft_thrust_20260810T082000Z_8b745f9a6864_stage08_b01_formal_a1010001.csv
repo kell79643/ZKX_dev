@@ -1,0 +1,2 @@
+run_id,case_id,operator_name,scale_id,dtype,sym,backend,warmup_runs,measured_runs,cpu_mean_ms,gpu_mean_ms,cpu_gpu_speedup,mse,rmse,relative_l2,relative_linf,cuda_event_ms,cuda_event_source,status,error_code
+20260810T082000Z_8b745f9a6864_stage08_b01_formal_a1010001,chebwin__chebwin_fp32_10e2__37f607f8470837ce__sym,chebwin,chebwin_fp32_10e2,FP32,true,fft_thrust,20,100,0.22251922999999996,1.6146544900000002,0.13781228824997721,1.3593549496823892e-14,1.1659137831256603e-07,2.1396127190412897e-07,2.7514908007564287e-07,1.5845340490341187,cudaEvent,PASS,OK

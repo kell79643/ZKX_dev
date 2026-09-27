@@ -1,0 +1,2 @@
+run_id,case_id,operator_name,scale_id,dtype,sym,backend,warmup_runs,measured_runs,cpu_mean_ms,gpu_mean_ms,cpu_gpu_speedup,mse,rmse,relative_l2,relative_linf,cuda_event_ms,cuda_event_source,status,error_code
+20260810T083047Z_a64a65577ccc_stage08_b02_formal_a203000c,triang__triang_fp16_10e4__76494d2bef81be4b__periodic,triang,triang_fp16_10e4,FP16,false,not_applicable,20,100,0.096881350000000033,0.30578751999999998,0.31682571610509164,1.6917807930917966e-16,1.3006847400856969e-08,2.2526267805358978e-08,2.9796363154588335e-08,0.32767599821090698,cudaEvent,PASS,OK

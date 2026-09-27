@@ -1,0 +1,21 @@
+{
+  "run_id": "20260810T011839Z_a1467e3b776a_stage08_b08_formal_8753f009",
+  "case_id": "unit_impulse__unit_impulse_int16_10e2__85fd16b4b95c3dff",
+  "operator_name": "unit_impulse",
+  "scale_id": "unit_impulse_int16_10e2",
+  "requested_dtype": "INT16",
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "shape": 100,
+  "idx": 0,
+  "idx_mode": "zero",
+  "output_count": 100,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "status": "PASS",
+  "error_code": "OK"
+}

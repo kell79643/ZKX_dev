@@ -1,0 +1,2 @@
+command=build_stage08_b04_firfilter2_cdf69665a35d/stage08_filtering_firfilter2 --dtype FP16 --rows 10 --cols 10 --axis 1 --padtype odd --padlen 4 --seed 84220001 --warmup 1 --measured 1 --output /tmp/ZKX_dev/results/stage08_b04_firfilter2_cdf69665a35d/smoke/20260809T113000Z_cdf69665a35d_stage08_b04_smoke_84200001/firfilter2_probe_raw.json
+STAGE08_FIRFILTER2_PROBE PASS dtype=FP16 padtype=odd backend=not_applicable

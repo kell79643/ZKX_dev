@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "run_id": "20260809T110646Z_e458c69972d3_stage08_b04_formal_8403f008",
+  "case_id": "correlate2d__correlate2d_int32_10e4__7df5632b89759395",
+  "operator_name": "correlate2d",
+  "scale_id": "correlate2d_int32_10e4",
+  "requested_dtype": "INT32",
+  "dtype_semantics": "actual_same_dtype_arrays_native_modular_direct",
+  "typed_input_names": "in1|in2",
+  "compute_dtype": "INT32_modular",
+  "fft_dtype": "not_applicable",
+  "output_dtype": "INT32",
+  "backend": "not_applicable",
+  "native_capability": "native",
+  "mode": "valid",
+  "boundary": "symm",
+  "boundary_effect": "ignored_by_valid",
+  "typed_input_count": 2,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "7df5632b897593958c2080680f4c19ff787ae2acc4c4604d239f636b06040cf4",
+  "metrics": {
+    "mse": 0,
+    "rmse": 0,
+    "relative_l2": 0,
+    "relative_linf": 0,
+    "exact_match": true,
+    "mismatch_count": 0
+  },
+  "status": "PASS",
+  "error_code": "OK"
+}

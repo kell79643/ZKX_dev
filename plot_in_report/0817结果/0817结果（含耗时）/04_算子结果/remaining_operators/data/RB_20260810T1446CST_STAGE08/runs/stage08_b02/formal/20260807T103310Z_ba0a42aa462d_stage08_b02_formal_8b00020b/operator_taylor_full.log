@@ -1,0 +1,8 @@
+[stage08-b02] operator=taylor entry=cpu:taylor_typed_cpu gpu:taylor_device
+[stage08-b02] config=test_all/final_prep/operators/windows/taylor/operator_scales.json config_sha256=dd634eb1053e365baebbee3ff5cf357f9e33ab88a54002ba58244e94c7a6e73e
+[stage08-b02] run_type=formal scale=taylor_fp16_10e4 dtype=FP16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=1.7056602299999994 gpu_mean_ms=0.45057302999999976 speedup=3.7855355656773337
+[stage08-b02] mse=2.6180198115830785e-15 rmse=5.1166588821056642e-08 relative_l2=7.3643988435790488e-08 relative_linf=1.4111954987905406e-07
+[stage08-b02] resources=available cuda_event_ms=0.47064000368118286
+[stage08-b02] status=PASS error_code=OK

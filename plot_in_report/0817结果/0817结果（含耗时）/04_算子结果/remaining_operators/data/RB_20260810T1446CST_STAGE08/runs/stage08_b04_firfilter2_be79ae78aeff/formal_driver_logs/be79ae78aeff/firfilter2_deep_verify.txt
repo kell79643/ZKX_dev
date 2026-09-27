@@ -1,0 +1,1 @@
+STAGE08_FORMAL_DEEP_VERIFY PASS batch=b04 operator=firfilter2 backend=not_applicable cases=15 warmup=20 measured=100 typed_inputs=x|b compute_dtype=FP32 output_dtype=FP32|FP64 padtype_coverage=odd|even|constant axis_coverage=0|1 request_variant_coverage=5x3

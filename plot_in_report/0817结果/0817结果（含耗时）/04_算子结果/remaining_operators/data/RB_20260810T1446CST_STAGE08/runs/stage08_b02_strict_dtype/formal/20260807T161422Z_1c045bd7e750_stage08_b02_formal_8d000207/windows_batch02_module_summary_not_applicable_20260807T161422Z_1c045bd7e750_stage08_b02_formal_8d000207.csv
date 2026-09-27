@@ -1,0 +1,2 @@
+run_id,case_id,operator_name,scale_id,dtype,sym,backend,warmup_runs,measured_runs,cpu_mean_ms,gpu_mean_ms,cpu_gpu_speedup,mse,rmse,relative_l2,relative_linf,cuda_event_ms,cuda_event_source,status,error_code
+20260807T161422Z_1c045bd7e750_stage08_b02_formal_8d000207,taylor__taylor_fp16_10e2__f2b474e4e4d5c878__periodic,taylor,taylor_fp16_10e2,FP16,false,not_applicable,20,100,0.019318850000000002,0.34006161999999984,0.056809851108749088,4.0313219051453759e-15,6.3492691745943299e-08,9.0990661037047512e-08,1.2564541629345172e-07,0.34713798761367798,cudaEvent,PASS,OK

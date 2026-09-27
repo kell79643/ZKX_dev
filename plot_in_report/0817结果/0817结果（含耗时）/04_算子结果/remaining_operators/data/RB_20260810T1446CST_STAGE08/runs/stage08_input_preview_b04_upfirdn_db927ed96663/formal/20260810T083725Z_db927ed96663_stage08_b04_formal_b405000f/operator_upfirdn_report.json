@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "run_id": "20260810T083725Z_db927ed96663_stage08_b04_formal_b405000f",
+  "case_id": "upfirdn__upfirdn_int8_10e4__5725102ba224e523",
+  "operator_name": "upfirdn",
+  "scale_id": "upfirdn_int8_10e4",
+  "requested_dtype": "INT8",
+  "dtype_semantics": "actual_same_dtype_h_x_arrays",
+  "typed_input_names": "h|x",
+  "compute_dtype": "FP32",
+  "fft_dtype": "not_applicable",
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "axis": 0,
+  "up": 2,
+  "down": 3,
+  "tap_count": 9,
+  "rank": 2,
+  "typed_input_count": 2,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "5725102ba224e523f32903abc76b65918dbf544b6639db260ac49f507312c17d",
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "h",
+      "shape": "[9]",
+      "dtype": "INT8",
+      "element_count": "9",
+      "generator": "upfirdn_modular(seed=84450004,integral=true)",
+      "preview_head4_tail2": "i=0:3;i=1:2;i=2:1;i=3:0;i=7:-4;i=8:4"
+    },
+    {
+      "input_name": "x",
+      "shape": "[100x100]",
+      "dtype": "INT8",
+      "element_count": "10000",
+      "generator": "upfirdn_modular(seed=84450003,integral=true)",
+      "preview_head4_tail2": "i=0:2;i=1:1;i=2:0;i=3:-1;i=9998:3;i=9999:2"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT8",
+    "rank": "2",
+    "rows": "100",
+    "cols": "100",
+    "taps": "9",
+    "axis": "0",
+    "up": "2",
+    "down": "3",
+    "seed": "84450003"
+  }
+}

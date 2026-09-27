@@ -1,0 +1,80 @@
+command=build_stage08_b04_correlate2d_e458c69972d3/stage08_convolution_correlate2d --dtype FP16 --rows1 100 --cols1 100 --rows2 7 --cols2 5 --mode valid --boundary symm --fillvalue 0 --seed 84020003 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006/correlate2d_probe_raw.json
+STAGE08_CORRELATE2D_PROBE PASS dtype=FP16 mode=valid boundary=symm backend=not_applicable
+{"actual_input_digest": "5a17f829a8b6498f7b1b02e6321bf9d44c9dae8f5ad8ab2ef03a7f997459622d", "backend": "not_applicable", "boundary": "symm", "boundary_effect": "ignored_by_valid", "case_id": "correlate2d__correlate2d_fp16_10e4__5a17f829a8b6498f", "compute_dtype": "FP32", "dtype_semantics": "actual_same_dtype_arrays_fp32_legal_extension", "error_code": "OK", "fft_dtype": "not_applicable", "measured_runs": 100, "metrics": {"exact_match": true, "mismatch_count": 0, "mse": 0, "relative_l2": 0, "relative_linf": 0, "rmse": 0}, "mode": "valid", "native_capability": "approved_legal_extension", "operator_name": "correlate2d", "output_dtype": "FP16", "requested_dtype": "FP16", "run_id": "20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006", "scale_id": "correlate2d_fp16_10e4", "schema_version": 1, "status": "PASS", "typed_input_count": 2, "typed_input_names": "in1|in2", "warmup_runs": 20}
+[stage08] identity and status
++-------------+-----------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| target      | scale_id              | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code |
++-------------+-----------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| correlate2d | correlate2d_fp16_10e4 | CPU    | not_applicable | FP16  | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| correlate2d | correlate2d_fp16_10e4 | GPU    | not_applicable | FP16  | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++-------------+-----------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage08] timing detail
++--------+---------------------+------------+---------------------+--------------------+---------------------+---------------------+----------------------+------------------------+--------------------+
+| device | mean_ms             | p50_ms     | p95_ms              | p99_ms             | min_ms              | max_ms              | std_ms               | cv                     | speedup            |
++--------+---------------------+------------+---------------------+--------------------+---------------------+---------------------+----------------------+------------------------+--------------------+
+| CPU    | 22.845397379999998  | 22.8421205 | 22.8659605          | 22.908694099999998 | 22.822575000000001  | 22.925336000000001  | 0.014308302083601654 | 0.00062631005473898454 | NA                 |
+| GPU    | 0.35751930999999998 | 0.355827   | 0.37532499999999996 | 0.42160269         | 0.33879199999999998 | 0.42355199999999998 | 0.012155781808419398 | 0.0340003503822476     | 63.899757973911953 |
++--------+---------------------+------------+---------------------+--------------------+---------------------+---------------------+----------------------+------------------------+--------------------+
+
+[stage08] accuracy detail
++-------------------------------------------+-----+------+-------------+---------------+-------------+----------------+-------------------------------------------------------------------------------------------------------------------------------+--------+
+| accuracy_reference                        | mse | rmse | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                                                                                                                | status |
++-------------------------------------------+-----+------+-------------+---------------+-------------+----------------+-------------------------------------------------------------------------------------------------------------------------------+--------+
+| cpu_independent_boundary_direct_reference | 0   | 0    | 0           | 0             | true        | 0              | approved_fp32_legal_path_shape_mode_boundary_and_fp16_output_match_cpu:mode=valid;boundary=symm;valid_boundary_effect=ignored | PASS   |
++-------------------------------------------+-----+------+-------------+---------------+-------------+----------------+-------------------------------------------------------------------------------------------------------------------------------+--------+
+
+[stage08] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1520352      | 1561712     | 1561712    | 41360       |
+| CPU    | rss        | 70033408     | 70033408    | 70033408   | 0           |
+| GPU    | cpu_heap   | 1561808      | 1583232     | 1583232    | 21424       |
+| GPU    | rss        | 70033408     | 70033408    | 70033408   | 0           |
+| GPU    | gpu_memory | 408322048    | 408322048   | 408322048  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage08] input/output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | 5a17f829a8b6498f7b1b02e6321bf9d44c9dae8f5ad8ab2ef03a7f997459622d | ec699bc5828d757937be9766faf3a32588df105fad955b4a73a3ae574c6f7cf2 |
+| GPU    | 5a17f829a8b6498f7b1b02e6321bf9d44c9dae8f5ad8ab2ef03a7f997459622d | ec699bc5828d757937be9766faf3a32588df105fad955b4a73a3ae574c6f7cf2 |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage08] input content
++------------+-----------+-------+----------+--------------------------------------------------------+----------------------------------------------------------+
+| input_name | shape     | dtype | elements | generator                                              | values(head4/tail2)                                      |
++------------+-----------+-------+----------+--------------------------------------------------------+----------------------------------------------------------+
+| in1        | [100x100] | FP16  | 10000    | correlate_modular(seed=84020003,salt=3,integral=false) | i=0:-0.25;i=1:1.25;i=2:0;i=3:-1.25;i=9998:1;i=9999:-0.25 |
+| in2        | [7x5]     | FP16  | 35       | correlate_modular(seed=84020003,salt=7,integral=false) | i=0:0.75;i=1:-0.5;i=2:1;i=3:-0.25;i=33:0.75;i=34:-0.5    |
++------------+-----------+-------+----------+--------------------------------------------------------+----------------------------------------------------------+
+
+[stage08] case parameters
++-----------------------------------------------------------------------------------------------------------------------------------------+
+| parameters                                                                                                                              |
++-----------------------------------------------------------------------------------------------------------------------------------------+
+| {"boundary":"symm","cols1":"100","cols2":"5","dtype":"FP16","fillvalue":"0","mode":"valid","rows1":"100","rows2":"7","seed":"84020003"} |
++-----------------------------------------------------------------------------------------------------------------------------------------+
+
+[stage08] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| FP16            | NA                 | FP16         | 5a17f829a8b6498f7b1b02e6321bf9d44c9dae8f5ad8ab2ef03a7f997459622d | PASS   |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+
+[stage08] evidence files
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind           | path                                                                                                                                                                                                                                                      |
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| probe_raw_json | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006/correlate2d_probe_raw.json                                                                                       |
+| memory_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006/operator_convolution_correlate2d_memory_trace_not_applicable.csv                                                 |
+| full_log       | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006/operator_correlate2d_full.log                                                                                    |
+| report_json    | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006/operator_correlate2d_report.json                                                                                 |
+| summary_txt    | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006/operator_correlate2d_summary.txt                                                                                 |
+| dtype_csv      | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006/operator_dtype_evidence_correlate2d_not_applicable_20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006.csv |
+| main_csv       | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006/operator_main_results_correlate2d_not_applicable_20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006.csv   |
+| timing_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006/operator_timing_samples_correlate2d_not_applicable_20260810T083653Z_db927ed96663_stage08_b04_formal_b4010006.csv |
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

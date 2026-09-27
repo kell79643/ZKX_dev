@@ -1,0 +1,22 @@
+{
+  "run_id": "20260809T163037Z_167aadba1745_stage08_b07_formal_8713f006",
+  "case_id": "morlet__morlet_int32_10e2__07c9154ea9267a98",
+  "operator_name": "morlet",
+  "scale_id": "morlet_int32_10e2",
+  "requested_dtype": "INT32",
+  "output_dtype": "ComplexFP64",
+  "backend": "not_applicable",
+  "n": 100,
+  "frequency": 5,
+  "scale": 1,
+  "complete": true,
+  "output_count": 100,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 9.05263e-15,
+  "rmse": 9.51453e-08,
+  "relative_l2": 4.79391e-07,
+  "relative_linf": 5.27908e-07,
+  "status": "PASS",
+  "error_code": "OK"
+}

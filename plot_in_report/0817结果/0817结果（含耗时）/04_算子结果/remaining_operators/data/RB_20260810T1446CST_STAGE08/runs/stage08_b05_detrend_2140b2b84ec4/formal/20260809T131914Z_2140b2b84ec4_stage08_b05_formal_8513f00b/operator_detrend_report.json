@@ -1,0 +1,25 @@
+{
+  "run_id": "20260809T131914Z_2140b2b84ec4_stage08_b05_formal_8513f00b",
+  "case_id": "detrend__detrend_int16_10e4__3165df9088207b1b",
+  "operator_name": "detrend",
+  "scale_id": "detrend_int16_10e4",
+  "requested_dtype": "INT16",
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "mode": "linear",
+  "axis": 0,
+  "breakpoints": [
+    25,
+    50,
+    75
+  ],
+  "rank": 2,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 1.15459e-10,
+  "rmse": 1.07452e-05,
+  "relative_l2": 1.53907e-05,
+  "relative_linf": 3.56205e-05,
+  "status": "PASS",
+  "error_code": "OK"
+}

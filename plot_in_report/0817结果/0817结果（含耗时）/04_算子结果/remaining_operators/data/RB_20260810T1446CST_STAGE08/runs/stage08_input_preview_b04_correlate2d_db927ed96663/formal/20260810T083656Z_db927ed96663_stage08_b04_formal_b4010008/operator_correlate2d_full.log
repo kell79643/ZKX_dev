@@ -1,0 +1,80 @@
+command=build_stage08_b04_correlate2d_e458c69972d3/stage08_convolution_correlate2d --dtype INT32 --rows1 32 --cols1 32 --rows2 5 --cols2 4 --mode full --boundary wrap --fillvalue 0 --seed 84030002 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008/correlate2d_probe_raw.json
+STAGE08_CORRELATE2D_PROBE PASS dtype=INT32 mode=full boundary=wrap backend=not_applicable
+{"actual_input_digest": "d149b62d9f292ba5fde68d91782aae765a69f78bfc4f1a4e134281b4ee07f1da", "backend": "not_applicable", "boundary": "wrap", "boundary_effect": "active", "case_id": "correlate2d__correlate2d_int32_10e3__d149b62d9f292ba5", "compute_dtype": "INT32_modular", "dtype_semantics": "actual_same_dtype_arrays_native_modular_direct", "error_code": "OK", "fft_dtype": "not_applicable", "measured_runs": 100, "metrics": {"exact_match": true, "mismatch_count": 0, "mse": 0, "relative_l2": 0, "relative_linf": 0, "rmse": 0}, "mode": "full", "native_capability": "native", "operator_name": "correlate2d", "output_dtype": "INT32", "requested_dtype": "INT32", "run_id": "20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008", "scale_id": "correlate2d_int32_10e3", "schema_version": 1, "status": "PASS", "typed_input_count": 2, "typed_input_names": "in1|in2", "warmup_runs": 20}
+[stage08] identity and status
++-------------+------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| target      | scale_id               | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code |
++-------------+------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| correlate2d | correlate2d_int32_10e3 | CPU    | not_applicable | INT32 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| correlate2d | correlate2d_int32_10e3 | GPU    | not_applicable | INT32 | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++-------------+------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage08] timing detail
++--------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+-----------------------+----------------------+--------------------+
+| device | mean_ms             | p50_ms              | p95_ms              | p99_ms              | min_ms              | max_ms              | std_ms                | cv                   | speedup            |
++--------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+-----------------------+----------------------+--------------------+
+| CPU    | 0.51389450999999997 | 0.51202300000000001 | 0.52179995000000001 | 0.53363620000000034 | 0.51058300000000001 | 0.59929299999999996 | 0.0093360799541295694 | 0.018167308216874258 | NA                 |
+| GPU    | 0.38764415999999996 | 0.3820615           | 0.41981199999999996 | 0.45570921000000003 | 0.373531            | 0.46731299999999998 | 0.01617189142414702   | 0.041718393033825199 | 1.3256861911707893 |
++--------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+-----------------------+----------------------+--------------------+
+
+[stage08] accuracy detail
++-------------------------------------------+-----+------+-------------+---------------+-------------+----------------+-------------------------------------------------------------------------------------------+--------+
+| accuracy_reference                        | mse | rmse | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                                                                            | status |
++-------------------------------------------+-----+------+-------------+---------------+-------------+----------------+-------------------------------------------------------------------------------------------+--------+
+| cpu_independent_boundary_direct_reference | 0   | 0    | 0           | 0             | true        | 0              | native_modular_int32_exact_match_cpu:mode=full;boundary=wrap;valid_boundary_effect=active | PASS   |
++-------------------------------------------+-----+------+-------------+---------------+-------------+----------------+-------------------------------------------------------------------------------------------+--------+
+
+[stage08] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1476720      | 1489264     | 1489264    | 12544       |
+| CPU    | rss        | 70037504     | 70037504    | 70037504   | 0           |
+| GPU    | cpu_heap   | 1489264      | 1497408     | 1497408    | 8144        |
+| GPU    | rss        | 70037504     | 70037504    | 70037504   | 0           |
+| GPU    | gpu_memory | 408322048    | 408322048   | 408322048  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage08] input/output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | d149b62d9f292ba5fde68d91782aae765a69f78bfc4f1a4e134281b4ee07f1da | 4ebea728e16525fd9e10337b45c94abbcb8724d935c6676f115a8e9a9542536b |
+| GPU    | d149b62d9f292ba5fde68d91782aae765a69f78bfc4f1a4e134281b4ee07f1da | 4ebea728e16525fd9e10337b45c94abbcb8724d935c6676f115a8e9a9542536b |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage08] input content
++------------+---------+-------+----------+-------------------------------------------------------+----------------------------------------------+
+| input_name | shape   | dtype | elements | generator                                             | values(head4/tail2)                          |
++------------+---------+-------+----------+-------------------------------------------------------+----------------------------------------------+
+| in1        | [32x32] | INT32 | 1024     | correlate_modular(seed=84030002,salt=3,integral=true) | i=0:-1;i=1:5;i=2:0;i=3:-5;i=1022:4;i=1023:-1 |
+| in2        | [5x4]   | INT32 | 20       | correlate_modular(seed=84030002,salt=7,integral=true) | i=0:3;i=1:-2;i=2:4;i=3:-1;i=18:1;i=19:-4     |
++------------+---------+-------+----------+-------------------------------------------------------+----------------------------------------------+
+
+[stage08] case parameters
++---------------------------------------------------------------------------------------------------------------------------------------+
+| parameters                                                                                                                            |
++---------------------------------------------------------------------------------------------------------------------------------------+
+| {"boundary":"wrap","cols1":"32","cols2":"4","dtype":"INT32","fillvalue":"0","mode":"full","rows1":"32","rows2":"5","seed":"84030002"} |
++---------------------------------------------------------------------------------------------------------------------------------------+
+
+[stage08] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| INT32           | NA                 | INT32        | d149b62d9f292ba5fde68d91782aae765a69f78bfc4f1a4e134281b4ee07f1da | PASS   |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+
+[stage08] evidence files
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind           | path                                                                                                                                                                                                                                                      |
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| probe_raw_json | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008/correlate2d_probe_raw.json                                                                                       |
+| memory_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008/operator_convolution_correlate2d_memory_trace_not_applicable.csv                                                 |
+| full_log       | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008/operator_correlate2d_full.log                                                                                    |
+| report_json    | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008/operator_correlate2d_report.json                                                                                 |
+| summary_txt    | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008/operator_correlate2d_summary.txt                                                                                 |
+| dtype_csv      | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008/operator_dtype_evidence_correlate2d_not_applicable_20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008.csv |
+| main_csv       | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008/operator_main_results_correlate2d_not_applicable_20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008.csv   |
+| timing_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b04_correlate2d_db927ed96663/formal/20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008/operator_timing_samples_correlate2d_not_applicable_20260810T083656Z_db927ed96663_stage08_b04_formal_b4010008.csv |
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

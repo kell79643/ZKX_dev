@@ -1,0 +1,61 @@
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/configs/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_int32_10e3 dtype=INT32 sym=false backend=not_applicable
+[stage08-b01] dtype_semantics=actual_typed_scalar_input typed_input_count=1 actual_input_digest=37f23fa8ed3d03ce9763cb2503ab889c11563a476e045e37fbdac4e591c37ccd
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.049061439999999977 gpu_mean_ms=0.25611306 speedup=0.19156164859378891
+[stage08-b01] mse=1.6053093309773665e-14 rmse=1.267008023249011e-07 relative_l2=2.2529066124187107e-07 relative_linf=5.8072872155534583e-07
+[stage08-b01] resources=available cuda_event_ms=0.27489998936653137
+[stage08-b01] status=PASS error_code=OK
+[stage08] identity and status
+target | scale_id          | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code
+kaiser | kaiser_int32_10e3 | CPU    | not_applicable | INT32 | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+kaiser | kaiser_int32_10e3 | GPU    | not_applicable | INT32 | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+
+[stage08] timing detail
+device | mean_ms              | p50_ms              | p95_ms               | p99_ms               | min_ms               | max_ms               | std_ms                | cv                   | speedup            
+CPU    | 0.049061439999999977 | 0.04904             | 0.049182450000000003 | 0.049357900000000059 | 0.048730000000000002 | 0.060040000000000003 | 0.0011131180828645273 | 0.022688247284721519 | NA                 
+GPU    | 0.25611306           | 0.25349100000000002 | 0.26535399999999998  | 0.31840628999999998  | 0.24399100000000001  | 0.31991999999999998  | 0.011385127078623228  | 0.044453520170440457 | 0.19156164859378891
+
+[stage08] accuracy detail
+accuracy_reference  | mse                    | rmse                  | relative_l2            | relative_linf          | exact_match | mismatch_count | semantic_check                                                                                     | status
+cpu_typed_reference | 1.6053093309773665e-14 | 1.267008023249011e-07 | 2.2529066124187107e-07 | 5.8072872155534583e-07 | NA          | NA             | finite_normalized_fp64_window_shape_beta_and_symmetry_match_cpu:shape=[1000];finite=true;sym=false | PASS  
+
+[stage08] resource detail
+device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes
+CPU    | cpu_heap   | 1463504      | 1466848     | 1473744    | 3344       
+CPU    | rss        | 70291456     | 70291456    | 70291456   | 0          
+GPU    | cpu_heap   | 1466848      | 1469600     | 1476640    | 2752       
+GPU    | rss        | 70291456     | 70291456    | 70291456   | 0          
+GPU    | gpu_memory | 357777408    | 357777408   | 357777408  | 0          
+
+[stage08] input/output identity
+device | input_digest                                                     | output_digest                                                   
+CPU    | 37f23fa8ed3d03ce9763cb2503ab889c11563a476e045e37fbdac4e591c37ccd | 8de68bd9a9e9ec55cb2742f48fd41e04e6c46545c68de4476a2c44fb6daecfc9
+GPU    | 37f23fa8ed3d03ce9763cb2503ab889c11563a476e045e37fbdac4e591c37ccd | 950b5635624bdefd061a188cb76f3f45eadfc8e75c3374016a170c62af7ed21b
+
+[stage08] input content
+input_name       | shape  | dtype       | elements | generator                                           | values(head4/tail2)                                                                              
+window_positions | [1000] | INDEX_INT64 | 1000     | implicit_window_index_domain(no_materialized_array) | i=0:position=0;i=1:position=1;i=2:position=2;i=3:position=3;i=998:position=998;i=999:position=999
+beta             | scalar | INT32       | 1        | exact_config_scalar                                 | value=8                                                                                          
+
+[stage08] case parameters
+parameters                                                    
+{"length":1000,"requested_dtype":"INT32","sym":false,"beta":8}
+
+[stage08] dtype evidence
+requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status
+INT32           | INT32              | FP64         | 37f23fa8ed3d03ce9763cb2503ab889c11563a476e045e37fbdac4e591c37ccd | PASS  
+
+[stage08] evidence files
+kind        | path                                                                                                                                                                                                                                           
+main_csv    | /tmp/ZKX_dev/results/stage08_input_preview_b01_kaiser_8b745f9a6864/formal/20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010/operator_main_results_kaiser_not_applicable_20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010.csv  
+timing_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b01_kaiser_8b745f9a6864/formal/20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010/operator_timing_samples_kaiser_not_applicable_20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010.csv
+memory_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b01_kaiser_8b745f9a6864/formal/20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010/operator_windows_kaiser_memory_trace_not_applicable.csv                                                    
+input_csv   | /tmp/ZKX_dev/results/stage08_input_preview_b01_kaiser_8b745f9a6864/formal/20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010/operator_input_evidence_kaiser_not_applicable_20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010.csv
+dtype_csv   | /tmp/ZKX_dev/results/stage08_input_preview_b01_kaiser_8b745f9a6864/formal/20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010/operator_dtype_evidence_kaiser_not_applicable_20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010.csv
+module_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b01_kaiser_8b745f9a6864/formal/20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010/windows_batch01_module_summary_not_applicable_20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010.csv
+report_json | /tmp/ZKX_dev/results/stage08_input_preview_b01_kaiser_8b745f9a6864/formal/20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010/operator_kaiser_report.json                                                                                
+summary_txt | /tmp/ZKX_dev/results/stage08_input_preview_b01_kaiser_8b745f9a6864/formal/20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010/operator_kaiser_summary.txt                                                                                
+full_log    | /tmp/ZKX_dev/results/stage08_input_preview_b01_kaiser_8b745f9a6864/formal/20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010/operator_kaiser_full.log                                                                                   
+results_dir | /tmp/ZKX_dev/results/stage08_input_preview_b01_kaiser_8b745f9a6864/formal/20260810T082129Z_8b745f9a6864_stage08_b01_formal_a1040010                                                                                                            

@@ -1,0 +1,2 @@
+run_id,case_id,operator_name,scale_id,dtype,sym,backend,warmup_runs,measured_runs,cpu_mean_ms,gpu_mean_ms,cpu_gpu_speedup,mse,rmse,relative_l2,relative_linf,cuda_event_ms,cuda_event_source,status,error_code
+20260810T082128Z_8b745f9a6864_stage08_b01_formal_a104000c,kaiser__kaiser_fp16_10e4__ea31d229d43c188c__periodic,kaiser,kaiser_fp16_10e4,FP16,false,not_applicable,20,100,0.48487703000000004,0.31627911999999997,1.5330668366599733,1.5666116859541735e-14,1.2516435938214095e-07,2.2255866392746574e-07,6.288099760887178e-07,0.34569999575614929,cudaEvent,PASS,OK

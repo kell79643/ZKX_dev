@@ -1,0 +1,1 @@
+STAGE08_FORMAL_DEEP_VERIFY PASS batch=b03 operator=resample backend=fft_thrust cases=15 warmup=20 measured=100 dtype_semantics=actual_typed_array_input_fp32_fft_resample_extension typed_inputs=x input_preview=head4_tail2 domain_coverage=time|frequency request_variant_coverage=5x3

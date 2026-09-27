@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "run_id": "20260810T083719Z_db927ed96663_stage08_b04_formal_b404000e",
+  "case_id": "resample_poly__resample_poly_int8_10e3__bd73f30d35a3eb3a",
+  "operator_name": "resample_poly",
+  "scale_id": "resample_poly_int8_10e3",
+  "requested_dtype": "INT8",
+  "dtype_semantics": "actual_typed_array_input",
+  "typed_input_names": "x",
+  "compute_dtype": "identity_copy",
+  "fft_dtype": "not_applicable",
+  "output_dtype": "INT8",
+  "backend": "not_applicable",
+  "filter_mode": "identity",
+  "axis": 1,
+  "up": 2,
+  "down": 2,
+  "typed_input_count": 1,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "bd73f30d35a3eb3a95e4e0106e182d77165d2eef8db25704f97d27127879eb2c",
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[32x32]",
+      "dtype": "INT8",
+      "element_count": "1024",
+      "generator": "resample_poly_modular(seed=84350002,integral=true)",
+      "preview_head4_tail2": "i=0:-5;i=1:1;i=2:-4;i=3:2;i=1022:0;i=1023:-5"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT8",
+    "rows": "32",
+    "cols": "32",
+    "axis": "1",
+    "up": "2",
+    "down": "2",
+    "filter-mode": "identity",
+    "seed": "84350002"
+  }
+}

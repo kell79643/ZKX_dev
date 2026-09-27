@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "run_id": "20260810T083718Z_db927ed96663_stage08_b04_formal_b4040007",
+  "case_id": "resample_poly__resample_poly_int32_10e2__e1190557ec63b579",
+  "operator_name": "resample_poly",
+  "scale_id": "resample_poly_int32_10e2",
+  "requested_dtype": "INT32",
+  "dtype_semantics": "actual_typed_array_input",
+  "typed_input_names": "x",
+  "compute_dtype": "FP32",
+  "fft_dtype": "not_applicable",
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "filter_mode": "default_kaiser",
+  "axis": 1,
+  "up": 2,
+  "down": 1,
+  "typed_input_count": 1,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "e1190557ec63b5798614318fcafda3ab4393a5471ebdaaf2db87c543f8061805",
+  "mse": 1.2472023302821315e-14,
+  "rmse": 1.116782131967615e-07,
+  "relative_l2": 3.921419433326648e-08,
+  "relative_linf": 7.966710139953386e-08,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[10x10]",
+      "dtype": "INT32",
+      "element_count": "100",
+      "generator": "resample_poly_modular(seed=84330001,integral=true)",
+      "preview_head4_tail2": "i=0:3;i=1:-2;i=2:4;i=3:-1;i=98:-3;i=99:3"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT32",
+    "rows": "10",
+    "cols": "10",
+    "axis": "1",
+    "up": "2",
+    "down": "1",
+    "filter-mode": "default_kaiser",
+    "seed": "84330001"
+  }
+}

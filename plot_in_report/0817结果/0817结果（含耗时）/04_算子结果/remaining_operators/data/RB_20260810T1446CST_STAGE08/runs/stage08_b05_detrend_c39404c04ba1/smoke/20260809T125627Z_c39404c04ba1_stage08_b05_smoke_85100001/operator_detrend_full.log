@@ -1,0 +1,2 @@
+command=build_stage08_b05_detrend_c39404c04ba1/stage08_filtering_detrend --dtype FP16 --mode constant --breakpoints  --rank 1 --rows 100 --cols 1 --axis 0 --seed 85120001 --warmup 1 --measured 1 --output /tmp/ZKX_dev/results/stage08_b05_detrend_c39404c04ba1/smoke/20260809T125627Z_c39404c04ba1_stage08_b05_smoke_85100001/detrend_probe_raw.json
+STAGE08_DETREND_PROBE PASS dtype=FP16 mode=constant

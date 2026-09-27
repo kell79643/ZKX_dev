@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "run_id": "20260809T110300Z_2c86271438dd_stage08_b04_smoke_84000001",
+  "case_id": "correlate2d__correlate2d_fp32_10e2__11d622e248c4eb6f",
+  "operator_name": "correlate2d",
+  "scale_id": "correlate2d_fp32_10e2",
+  "requested_dtype": "FP32",
+  "dtype_semantics": "actual_same_dtype_arrays_native_direct",
+  "typed_input_names": "in1|in2",
+  "compute_dtype": "FP32",
+  "fft_dtype": "not_applicable",
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "native_capability": "native",
+  "mode": "same",
+  "boundary": "fill",
+  "boundary_effect": "active",
+  "typed_input_count": 2,
+  "warmup_runs": 1,
+  "measured_runs": 1,
+  "actual_input_digest": "11d622e248c4eb6feb2d50c956b6ad821146c38d461e2f6ccc615e349c801118",
+  "metrics": {
+    "mse": 0,
+    "rmse": 0,
+    "relative_l2": 0,
+    "relative_linf": 0,
+    "exact_match": true,
+    "mismatch_count": 0
+  },
+  "status": "PASS",
+  "error_code": "OK"
+}

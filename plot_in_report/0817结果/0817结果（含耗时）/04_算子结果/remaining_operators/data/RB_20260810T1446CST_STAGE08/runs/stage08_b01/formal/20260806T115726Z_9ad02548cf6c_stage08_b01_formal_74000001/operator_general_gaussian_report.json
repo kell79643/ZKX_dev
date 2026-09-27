@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260806T115726Z_9ad02548cf6c_stage08_b01_formal_74000001",
+  "case_id": "general_gaussian__general_gaussian_fp32_10e2__eb69f955552f39df__periodic",
+  "operator_name": "general_gaussian",
+  "scale_id": "general_gaussian_fp32_10e2",
+  "dtype": "FP32",
+  "sym": false,
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "eb69f955552f39df5dff2039cee67c5645f7862c84314e19eb11f28e745d148c",
+  "cuda_event_auxiliary_ms": 0.28267401456832886,
+  "cuda_event_source": "cudaEvent",
+  "mse": 5.2599710079265365e-16,
+  "rmse": 2.2934626676548578e-08,
+  "relative_l2": 4.2584950246814619e-08,
+  "relative_linf": 6.7054922170406428e-08,
+  "status": "PASS",
+  "error_code": "OK"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260807T103307Z_ba0a42aa462d_stage08_b02_formal_8b000117",
+  "case_id": "parzen__parzen_int16_10e4__6b5ba6e184ff991a__periodic",
+  "operator_name": "parzen",
+  "scale_id": "parzen_int16_10e4",
+  "dtype": "INT16",
+  "sym": false,
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "6b5ba6e184ff991ac4ec8859312db3500abc35cea4dbb472ab6ec8785253b66b",
+  "cuda_event_auxiliary_ms": 0.32504400610923767,
+  "cuda_event_source": "cudaEvent",
+  "mse": 4.4763879250018581e-16,
+  "rmse": 2.1157476042765256e-08,
+  "relative_l2": 4.0742500917610931e-08,
+  "relative_linf": 9.6697271634305082e-08,
+  "status": "PASS",
+  "error_code": "OK"
+}

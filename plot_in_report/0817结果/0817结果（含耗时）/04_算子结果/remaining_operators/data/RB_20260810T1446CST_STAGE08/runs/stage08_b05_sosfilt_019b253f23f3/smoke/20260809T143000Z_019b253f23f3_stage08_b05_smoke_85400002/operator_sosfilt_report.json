@@ -1,0 +1,22 @@
+{
+  "run_id": "20260809T143000Z_019b253f23f3_stage08_b05_smoke_85400002",
+  "case_id": "sosfilt__sosfilt_fp16_10e2__68f94d88f9836102",
+  "operator_name": "sosfilt",
+  "scale_id": "sosfilt_fp16_10e2",
+  "requested_dtype": "FP16",
+  "output_dtype": "FP32",
+  "backend": "not_applicable",
+  "sections": 1,
+  "axis": 0,
+  "rank": 1,
+  "has_zi": false,
+  "has_zf": false,
+  "warmup_runs": 1,
+  "measured_runs": 1,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "status": "PASS",
+  "error_code": "OK"
+}

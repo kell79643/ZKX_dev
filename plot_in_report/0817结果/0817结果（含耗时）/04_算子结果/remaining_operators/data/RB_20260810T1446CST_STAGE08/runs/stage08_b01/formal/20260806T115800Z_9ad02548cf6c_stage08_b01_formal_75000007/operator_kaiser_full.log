@@ -1,0 +1,8 @@
+[stage08-b01] operator=kaiser entry=cpu:kaiser_typed_cpu gpu:kaiser_device
+[stage08-b01] config=test_all/final_prep/operators/windows/kaiser/operator_scales.json config_sha256=3c4c14a97768005f5dc56b0d0c17628fff55c481c5608f82bbef4fa7c495f9fe
+[stage08-b01] run_type=formal scale=kaiser_fp16_10e2 dtype=FP16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0057391699999999983 gpu_mean_ms=0.24723872999999996 speedup=0.023213070217598997
+[stage08-b01] mse=9.4177306276040361e-15 rmse=9.7044992800267839e-08 relative_l2=1.7255874147697642e-07 relative_linf=2.8263307960685324e-07
+[stage08-b01] resources=available cuda_event_ms=0.25079798698425293
+[stage08-b01] status=PASS error_code=OK

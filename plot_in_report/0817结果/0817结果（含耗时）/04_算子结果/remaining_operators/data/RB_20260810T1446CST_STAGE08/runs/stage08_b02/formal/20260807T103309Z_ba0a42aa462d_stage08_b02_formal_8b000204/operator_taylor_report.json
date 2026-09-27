@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260807T103309Z_ba0a42aa462d_stage08_b02_formal_8b000204",
+  "case_id": "taylor__taylor_fp32_10e4__46fb21e532f4906a__sym",
+  "operator_name": "taylor",
+  "scale_id": "taylor_fp32_10e4",
+  "dtype": "FP32",
+  "sym": true,
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "46fb21e532f4906a266aedff14b70cdd1f1a76ba5b837a000ef7bb362e6f8c3a",
+  "cuda_event_auxiliary_ms": 0.47709599137306213,
+  "cuda_event_source": "cudaEvent",
+  "mse": 1.9874606510359069e-15,
+  "rmse": 4.4580944932066065e-08,
+  "relative_l2": 6.4168097281163419e-08,
+  "relative_linf": 1.2873245750495576e-07,
+  "status": "PASS",
+  "error_code": "OK"
+}

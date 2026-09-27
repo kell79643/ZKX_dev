@@ -1,0 +1,1 @@
+STAGE08_FORMAL_DEEP_VERIFY PASS batch=b04 operator=correlate2d backend=not_applicable cases=15 warmup=20 measured=100 typed_inputs=in1|in2 native_dtypes=FP32|INT32 legal_extension_dtypes=FP16|INT16|INT8 mode_coverage=full|same|valid boundary_request_coverage=fill|wrap|symm valid_boundary_effect=ignored request_variant_coverage=5x3

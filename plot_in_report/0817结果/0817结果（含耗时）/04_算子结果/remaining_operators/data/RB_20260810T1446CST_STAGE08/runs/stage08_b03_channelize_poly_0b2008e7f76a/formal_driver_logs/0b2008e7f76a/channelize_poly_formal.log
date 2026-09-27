@@ -1,0 +1,46 @@
+[stage08-b03-formal] case=0 scale=channelize_poly_fp32_10e2 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_fp32_10e2 dtype=FP32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091033Z_0b2008e7f76a_stage08_b03_formal_8303f000
+[stage08-b03-formal] case=0 scale=channelize_poly_fp32_10e2 status=completed
+[stage08-b03-formal] case=1 scale=channelize_poly_fp32_10e3 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_fp32_10e3 dtype=FP32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091033Z_0b2008e7f76a_stage08_b03_formal_8303f001
+[stage08-b03-formal] case=1 scale=channelize_poly_fp32_10e3 status=completed
+[stage08-b03-formal] case=2 scale=channelize_poly_fp32_10e4 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_fp32_10e4 dtype=FP32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091034Z_0b2008e7f76a_stage08_b03_formal_8303f002
+[stage08-b03-formal] case=2 scale=channelize_poly_fp32_10e4 status=completed
+[stage08-b03-formal] case=3 scale=channelize_poly_fp16_10e2 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_fp16_10e2 dtype=FP16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091043Z_0b2008e7f76a_stage08_b03_formal_8303f003
+[stage08-b03-formal] case=3 scale=channelize_poly_fp16_10e2 status=completed
+[stage08-b03-formal] case=4 scale=channelize_poly_fp16_10e3 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_fp16_10e3 dtype=FP16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091043Z_0b2008e7f76a_stage08_b03_formal_8303f004
+[stage08-b03-formal] case=4 scale=channelize_poly_fp16_10e3 status=completed
+[stage08-b03-formal] case=5 scale=channelize_poly_fp16_10e4 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_fp16_10e4 dtype=FP16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091044Z_0b2008e7f76a_stage08_b03_formal_8303f005
+[stage08-b03-formal] case=5 scale=channelize_poly_fp16_10e4 status=completed
+[stage08-b03-formal] case=6 scale=channelize_poly_int32_10e2 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_int32_10e2 dtype=INT32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091111Z_0b2008e7f76a_stage08_b03_formal_8303f006
+[stage08-b03-formal] case=6 scale=channelize_poly_int32_10e2 status=completed
+[stage08-b03-formal] case=7 scale=channelize_poly_int32_10e3 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_int32_10e3 dtype=INT32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091111Z_0b2008e7f76a_stage08_b03_formal_8303f007
+[stage08-b03-formal] case=7 scale=channelize_poly_int32_10e3 status=completed
+[stage08-b03-formal] case=8 scale=channelize_poly_int32_10e4 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_int32_10e4 dtype=INT32 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091111Z_0b2008e7f76a_stage08_b03_formal_8303f008
+[stage08-b03-formal] case=8 scale=channelize_poly_int32_10e4 status=completed
+[stage08-b03-formal] case=9 scale=channelize_poly_int16_10e2 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_int16_10e2 dtype=INT16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091120Z_0b2008e7f76a_stage08_b03_formal_8303f009
+[stage08-b03-formal] case=9 scale=channelize_poly_int16_10e2 status=completed
+[stage08-b03-formal] case=10 scale=channelize_poly_int16_10e3 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_int16_10e3 dtype=INT16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091121Z_0b2008e7f76a_stage08_b03_formal_8303f00a
+[stage08-b03-formal] case=10 scale=channelize_poly_int16_10e3 status=completed
+[stage08-b03-formal] case=11 scale=channelize_poly_int16_10e4 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_int16_10e4 dtype=INT16 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091121Z_0b2008e7f76a_stage08_b03_formal_8303f00b
+[stage08-b03-formal] case=11 scale=channelize_poly_int16_10e4 status=completed
+[stage08-b03-formal] case=12 scale=channelize_poly_int8_10e2 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_int8_10e2 dtype=INT8 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091130Z_0b2008e7f76a_stage08_b03_formal_8303f00c
+[stage08-b03-formal] case=12 scale=channelize_poly_int8_10e2 status=completed
+[stage08-b03-formal] case=13 scale=channelize_poly_int8_10e3 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_int8_10e3 dtype=INT8 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091130Z_0b2008e7f76a_stage08_b03_formal_8303f00d
+[stage08-b03-formal] case=13 scale=channelize_poly_int8_10e3 status=completed
+[stage08-b03-formal] case=14 scale=channelize_poly_int8_10e4 status=starting
+STAGE08_CHANNELIZE_CASE PASS scale=channelize_poly_int8_10e4 dtype=INT8 backend=fft_thrust measured=100 results=/tmp/ZKX_dev/results/stage08_b03_channelize_poly_0b2008e7f76a/formal/20260809T091131Z_0b2008e7f76a_stage08_b03_formal_8303f00e
+[stage08-b03-formal] case=14 scale=channelize_poly_int8_10e4 status=completed
+[stage08-b03-formal] cases=15 status=completed

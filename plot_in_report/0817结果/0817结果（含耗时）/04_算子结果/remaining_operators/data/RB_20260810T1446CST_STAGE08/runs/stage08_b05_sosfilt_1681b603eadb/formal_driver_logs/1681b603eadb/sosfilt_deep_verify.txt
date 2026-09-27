@@ -1,0 +1,1 @@
+STAGE08_FORMAL_DEEP_VERIFY PASS batch=b05 operator=sosfilt backend=not_applicable cases=15 warmup=20 measured=100 dtype_semantics=actual_typed_sos_x_optional_zi_fp32_extension typed_inputs=sos|x|optional_zi sections_coverage=1|2|4 axis_coverage=0|1 rank_coverage=1|2 zi_coverage=false|true output_dtype=FP32 request_variant_coverage=5x3

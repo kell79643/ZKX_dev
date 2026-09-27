@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "run_id": "20260809T091130Z_0b2008e7f76a_stage08_b03_formal_8303f00c",
+  "case_id": "channelize_poly__channelize_poly_int8_10e2__630349d9c47b1bf9",
+  "operator_name": "channelize_poly",
+  "scale_id": "channelize_poly_int8_10e2",
+  "requested_dtype": "INT8",
+  "dtype_semantics": "actual_typed_array_inputs_fp32_compute_extension",
+  "typed_input_count": 2,
+  "compute_dtype": "FP32",
+  "fft_dtype": "ComplexFP32",
+  "output_dtype": "ComplexFP32",
+  "backend": "fft_thrust",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "630349d9c47b1bf9d98e1d65a49269ade37fd420f07651579646246ba3b65fff",
+  "metrics": {
+    "mse": 1.1040834912989794e-11,
+    "rmse": 3.3227751824325693e-06,
+    "relative_l2": 3.8476631806030484e-08,
+    "relative_linf": 5.3413827815786496e-08
+  },
+  "status": "PASS",
+  "error_code": "OK"
+}

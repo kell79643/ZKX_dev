@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "run_id": "20260809T094027Z_35406beea576_stage08_b03_formal_8333f00d",
+  "case_id": "resample__resample_int8_10e3__d7f6f34246c6d599",
+  "operator_name": "resample",
+  "scale_id": "resample_int8_10e3",
+  "requested_dtype": "INT8",
+  "dtype_semantics": "actual_typed_array_input_fp32_fft_resample_extension",
+  "typed_input_names": "x",
+  "compute_dtype": "FP32",
+  "fft_dtype": "ComplexFP32",
+  "output_dtype": "FP64",
+  "backend": "fft_thrust",
+  "domain": "time",
+  "axis": 1,
+  "output_sample_count": 24,
+  "typed_input_count": 1,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "d7f6f34246c6d599699efc0e69b861470f30dee8c380d05b56001f825ad372c4",
+  "metrics": {
+    "mse": 9.409315565875042e-13,
+    "rmse": 9.700162661458334e-07,
+    "relative_l2": 1.622907507700775e-07,
+    "relative_linf": 3.212019287122806e-07
+  },
+  "status": "PASS",
+  "error_code": "OK"
+}

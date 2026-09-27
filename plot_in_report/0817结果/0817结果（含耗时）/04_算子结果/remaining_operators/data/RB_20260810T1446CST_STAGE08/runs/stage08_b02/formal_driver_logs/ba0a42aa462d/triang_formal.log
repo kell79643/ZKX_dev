@@ -1,0 +1,271 @@
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp32_10e2 dtype=FP32 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.0016499299999999989 gpu_mean_ms=0.24604649999999992 speedup=0.0067057649671911591
+[stage08-b02] mse=1.6910361987476936e-16 rmse=1.3003984769091717e-08 relative_l2=2.2524688583505137e-08 relative_linf=2.8899221736194802e-08
+[stage08-b02] resources=available cuda_event_ms=0.26960200071334839
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103314Z_ba0a42aa462d_stage08_b02_formal_8b000300
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp32_10e2 dtype=FP32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.0016585299999999975 gpu_mean_ms=0.24470710000000001 speedup=0.0067776129094742135
+[stage08-b02] mse=1.7337183905004099e-16 rmse=1.3167074050450273e-08 relative_l2=2.2579303203325789e-08 relative_linf=2.9217963160022009e-08
+[stage08-b02] resources=available cuda_event_ms=0.2675279974937439
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103314Z_ba0a42aa462d_stage08_b02_formal_8b000301
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp32_10e3 dtype=FP32 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.010451259999999995 gpu_mean_ms=0.25457555999999981 speedup=0.0410536659528511
+[stage08-b02] mse=1.6915186893922353e-16 rmse=1.3005839801382437e-08 relative_l2=2.2526786594492018e-08 relative_linf=2.9593497266780682e-08
+[stage08-b02] resources=available cuda_event_ms=0.2726379930973053
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103314Z_ba0a42aa462d_stage08_b02_formal_8b000302
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp32_10e3 dtype=FP32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.010305059999999998 gpu_mean_ms=0.25298423000000009 speedup=0.040734001483017319
+[stage08-b02] mse=1.6915591490001333e-16 rmse=1.3005995344456083e-08 relative_l2=2.25045291486614e-08 relative_linf=2.9742836749058199e-08
+[stage08-b02] resources=available cuda_event_ms=0.27648600935935974
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103314Z_ba0a42aa462d_stage08_b02_formal_8b000303
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp32_10e4 dtype=FP32 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.097784090000000018 gpu_mean_ms=0.3287212699999999 speedup=0.29746809508249966
+[stage08-b02] mse=1.6917600126759456e-16 rmse=1.3006767518011327e-08 relative_l2=2.2528382296074068e-08 relative_linf=2.9757614403294899e-08
+[stage08-b02] resources=available cuda_event_ms=0.36563798785209656
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103315Z_ba0a42aa462d_stage08_b02_formal_8b000304
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp32_10e4 dtype=FP32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.095954139999999993 gpu_mean_ms=0.30779027000000014 speedup=0.31175170027304616
+[stage08-b02] mse=1.6917807930917966e-16 rmse=1.3006847400856969e-08 relative_l2=2.2526267805358978e-08 relative_linf=2.9796363154588335e-08
+[stage08-b02] resources=available cuda_event_ms=0.32566401362419128
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103315Z_ba0a42aa462d_stage08_b02_formal_8b000305
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp16_10e2 dtype=FP16 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.0016311300000000021 gpu_mean_ms=0.24628302999999999 speedup=0.0066229898178530701
+[stage08-b02] mse=1.6910361987476936e-16 rmse=1.3003984769091717e-08 relative_l2=2.2524688583505137e-08 relative_linf=2.8899221736194802e-08
+[stage08-b02] resources=available cuda_event_ms=0.271697998046875
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103315Z_ba0a42aa462d_stage08_b02_formal_8b000306
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp16_10e2 dtype=FP16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.0016643300000000005 gpu_mean_ms=0.2477050499999999 speedup=0.0067189990676411373
+[stage08-b02] mse=1.7337183905004099e-16 rmse=1.3167074050450273e-08 relative_l2=2.2579303203325789e-08 relative_linf=2.9217963160022009e-08
+[stage08-b02] resources=available cuda_event_ms=0.26594600081443787
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103315Z_ba0a42aa462d_stage08_b02_formal_8b000307
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp16_10e3 dtype=FP16 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.01029965 gpu_mean_ms=0.25998194000000013 speedup=0.039616790304741918
+[stage08-b02] mse=1.6915186893922353e-16 rmse=1.3005839801382437e-08 relative_l2=2.2526786594492018e-08 relative_linf=2.9593497266780682e-08
+[stage08-b02] resources=available cuda_event_ms=0.28885000944137573
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103315Z_ba0a42aa462d_stage08_b02_formal_8b000308
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp16_10e3 dtype=FP16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.010475959999999991 gpu_mean_ms=0.26236656000000008 speedup=0.039928716525459602
+[stage08-b02] mse=1.6915591490001333e-16 rmse=1.3005995344456083e-08 relative_l2=2.25045291486614e-08 relative_linf=2.9742836749058199e-08
+[stage08-b02] resources=available cuda_event_ms=0.29106199741363525
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103315Z_ba0a42aa462d_stage08_b02_formal_8b000309
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp16_10e4 dtype=FP16 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.096849370000000032 gpu_mean_ms=0.30986678999999984 speedup=0.31255162904033723
+[stage08-b02] mse=1.6917600126759456e-16 rmse=1.3006767518011327e-08 relative_l2=2.2528382296074068e-08 relative_linf=2.9757614403294899e-08
+[stage08-b02] resources=available cuda_event_ms=0.32541999220848083
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103315Z_ba0a42aa462d_stage08_b02_formal_8b00030a
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_fp16_10e4 dtype=FP16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.096576060000000033 gpu_mean_ms=0.30870755999999999 speedup=0.31283995766090095
+[stage08-b02] mse=1.6917807930917966e-16 rmse=1.3006847400856969e-08 relative_l2=2.2526267805358978e-08 relative_linf=2.9796363154588335e-08
+[stage08-b02] resources=available cuda_event_ms=0.33471199870109558
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103315Z_ba0a42aa462d_stage08_b02_formal_8b00030b
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int32_10e2 dtype=INT32 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.0016558299999999972 gpu_mean_ms=0.24849474999999996 speedup=0.0066634405757063182
+[stage08-b02] mse=1.6910361987476936e-16 rmse=1.3003984769091717e-08 relative_l2=2.2524688583505137e-08 relative_linf=2.8899221736194802e-08
+[stage08-b02] resources=available cuda_event_ms=0.26113799214363098
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103316Z_ba0a42aa462d_stage08_b02_formal_8b00030c
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int32_10e2 dtype=INT32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.0017199300000000006 gpu_mean_ms=0.25765871000000001 speedup=0.0066752255338078832
+[stage08-b02] mse=1.7337183905004099e-16 rmse=1.3167074050450273e-08 relative_l2=2.2579303203325789e-08 relative_linf=2.9217963160022009e-08
+[stage08-b02] resources=available cuda_event_ms=0.27442800998687744
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103316Z_ba0a42aa462d_stage08_b02_formal_8b00030d
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int32_10e3 dtype=INT32 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.010275960000000002 gpu_mean_ms=0.25305242999999999 speedup=0.040608027356228121
+[stage08-b02] mse=1.6915186893922353e-16 rmse=1.3005839801382437e-08 relative_l2=2.2526786594492018e-08 relative_linf=2.9593497266780682e-08
+[stage08-b02] resources=available cuda_event_ms=0.27926599979400635
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103316Z_ba0a42aa462d_stage08_b02_formal_8b00030e
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int32_10e3 dtype=INT32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.010122040000000001 gpu_mean_ms=0.24969867999999987 speedup=0.040537018457606606
+[stage08-b02] mse=1.6915591490001333e-16 rmse=1.3005995344456083e-08 relative_l2=2.25045291486614e-08 relative_linf=2.9742836749058199e-08
+[stage08-b02] resources=available cuda_event_ms=0.27066001296043396
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103316Z_ba0a42aa462d_stage08_b02_formal_8b00030f
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int32_10e4 dtype=INT32 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.09712847000000005 gpu_mean_ms=0.31147401000000008 speedup=0.31183491039910527
+[stage08-b02] mse=1.6917600126759456e-16 rmse=1.3006767518011327e-08 relative_l2=2.2528382296074068e-08 relative_linf=2.9757614403294899e-08
+[stage08-b02] resources=available cuda_event_ms=0.34058800339698792
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103316Z_ba0a42aa462d_stage08_b02_formal_8b000310
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int32_10e4 dtype=INT32 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.096797559999999963 gpu_mean_ms=0.30766065000000004 speedup=0.31462444092216524
+[stage08-b02] mse=1.6917807930917966e-16 rmse=1.3006847400856969e-08 relative_l2=2.2526267805358978e-08 relative_linf=2.9796363154588335e-08
+[stage08-b02] resources=available cuda_event_ms=0.32537999749183655
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103316Z_ba0a42aa462d_stage08_b02_formal_8b000311
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int16_10e2 dtype=INT16 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.0016575199999999967 gpu_mean_ms=0.2450119 speedup=0.0067650591665139393
+[stage08-b02] mse=1.6910361987476936e-16 rmse=1.3003984769091717e-08 relative_l2=2.2524688583505137e-08 relative_linf=2.8899221736194802e-08
+[stage08-b02] resources=available cuda_event_ms=0.26533600687980652
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103316Z_ba0a42aa462d_stage08_b02_formal_8b000312
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int16_10e2 dtype=INT16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.0016635299999999997 gpu_mean_ms=0.24587232000000012 speedup=0.0067658287032879459
+[stage08-b02] mse=1.7337183905004099e-16 rmse=1.3167074050450273e-08 relative_l2=2.2579303203325789e-08 relative_linf=2.9217963160022009e-08
+[stage08-b02] resources=available cuda_event_ms=0.26590999960899353
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103316Z_ba0a42aa462d_stage08_b02_formal_8b000313
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int16_10e3 dtype=INT16 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.010333660000000012 gpu_mean_ms=0.25224022000000001 speedup=0.040967534836434935
+[stage08-b02] mse=1.6915186893922353e-16 rmse=1.3005839801382437e-08 relative_l2=2.2526786594492018e-08 relative_linf=2.9593497266780682e-08
+[stage08-b02] resources=available cuda_event_ms=0.2766839861869812
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103316Z_ba0a42aa462d_stage08_b02_formal_8b000314
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int16_10e3 dtype=INT16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.010263959999999999 gpu_mean_ms=0.25325962000000007 speedup=0.040527423992818105
+[stage08-b02] mse=1.6915591490001333e-16 rmse=1.3005995344456083e-08 relative_l2=2.25045291486614e-08 relative_linf=2.9742836749058199e-08
+[stage08-b02] resources=available cuda_event_ms=0.27573999762535095
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103317Z_ba0a42aa462d_stage08_b02_formal_8b000315
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int16_10e4 dtype=INT16 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.097082370000000043 gpu_mean_ms=0.31023128999999988 speedup=0.3129354553501037
+[stage08-b02] mse=1.6917600126759456e-16 rmse=1.3006767518011327e-08 relative_l2=2.2528382296074068e-08 relative_linf=2.9757614403294899e-08
+[stage08-b02] resources=available cuda_event_ms=0.32827600836753845
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103317Z_ba0a42aa462d_stage08_b02_formal_8b000316
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int16_10e4 dtype=INT16 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.096838170000000001 gpu_mean_ms=0.31324941999999995 speedup=0.30914077989354305
+[stage08-b02] mse=1.6917807930917966e-16 rmse=1.3006847400856969e-08 relative_l2=2.2526267805358978e-08 relative_linf=2.9796363154588335e-08
+[stage08-b02] resources=available cuda_event_ms=0.32401600480079651
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103317Z_ba0a42aa462d_stage08_b02_formal_8b000317
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int8_10e2 dtype=INT8 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.0016879299999999989 gpu_mean_ms=0.24607231999999996 speedup=0.0068594874872557757
+[stage08-b02] mse=1.6910361987476936e-16 rmse=1.3003984769091717e-08 relative_l2=2.2524688583505137e-08 relative_linf=2.8899221736194802e-08
+[stage08-b02] resources=available cuda_event_ms=0.26714599132537842
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103317Z_ba0a42aa462d_stage08_b02_formal_8b000318
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int8_10e2 dtype=INT8 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.0017087199999999995 gpu_mean_ms=0.25035764999999999 speedup=0.0068251159890660405
+[stage08-b02] mse=1.7337183905004099e-16 rmse=1.3167074050450273e-08 relative_l2=2.2579303203325789e-08 relative_linf=2.9217963160022009e-08
+[stage08-b02] resources=available cuda_event_ms=0.27076199650764465
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103317Z_ba0a42aa462d_stage08_b02_formal_8b000319
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int8_10e3 dtype=INT8 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.01077615 gpu_mean_ms=0.2563793800000001 speedup=0.042032046414965184
+[stage08-b02] mse=1.6915186893922353e-16 rmse=1.3005839801382437e-08 relative_l2=2.2526786594492018e-08 relative_linf=2.9593497266780682e-08
+[stage08-b02] resources=available cuda_event_ms=0.28737801313400269
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103317Z_ba0a42aa462d_stage08_b02_formal_8b00031a
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int8_10e3 dtype=INT8 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.010373550000000007 gpu_mean_ms=0.25792489999999996 speedup=0.040219265375308892
+[stage08-b02] mse=1.6915591490001333e-16 rmse=1.3005995344456083e-08 relative_l2=2.25045291486614e-08 relative_linf=2.9742836749058199e-08
+[stage08-b02] resources=available cuda_event_ms=0.27470800280570984
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103317Z_ba0a42aa462d_stage08_b02_formal_8b00031b
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int8_10e4 dtype=INT8 sym=true backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.097458779999999995 gpu_mean_ms=0.31172511000000008 speedup=0.31264334143630573
+[stage08-b02] mse=1.6917600126759456e-16 rmse=1.3006767518011327e-08 relative_l2=2.2528382296074068e-08 relative_linf=2.9757614403294899e-08
+[stage08-b02] resources=available cuda_event_ms=0.30410599708557129
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103317Z_ba0a42aa462d_stage08_b02_formal_8b00031c
+[stage08-b02] operator=triang entry=cpu:triang_typed_cpu gpu:triang_device
+[stage08-b02] config=test_all/final_prep/operators/windows/triang/operator_scales.json config_sha256=da852ccde79ce347ac1e3342ea92da9be9089cc06f8719a562bc2d05c431b83f
+[stage08-b02] run_type=formal scale=triang_int8_10e4 dtype=INT8 sym=false backend=not_applicable
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.097070280000000023 gpu_mean_ms=0.32073534999999997 speedup=0.30264914671862653
+[stage08-b02] mse=1.6917807930917966e-16 rmse=1.3006847400856969e-08 relative_l2=2.2526267805358978e-08 relative_linf=2.9796363154588335e-08
+[stage08-b02] resources=available cuda_event_ms=0.36301401257514954
+[stage08-b02] status=PASS error_code=OK
+[stage08-b02] results=/tmp/ZKX_dev/results/stage08_b02/formal/20260807T103317Z_ba0a42aa462d_stage08_b02_formal_8b00031d
+[stage08-b02-formal] cases=30 status=completed

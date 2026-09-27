@@ -1,0 +1,80 @@
+command=build_stage08_b04_resample_poly_a6a399dddc61/stage08_filtering_resample_poly --dtype INT8 --rows 100 --cols 100 --axis 0 --up 2 --down 3 --filter-mode custom --seed 84350003 --warmup 20 --measured 100 --output /tmp/ZKX_dev/results/stage08_input_preview_b04_resample_poly_db927ed96663/formal/20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f/resample_poly_probe_raw.json
+STAGE08_RESAMPLE_POLY_PROBE PASS dtype=INT8 filter=custom backend=not_applicable
+{"actual_input_digest": "8a808a0597bd85617c1600d608a928d35b066ffb77856abf85be9e4c6b9f1883", "axis": 0, "backend": "not_applicable", "case_id": "resample_poly__resample_poly_int8_10e4__8a808a0597bd8561", "compute_dtype": "FP32", "down": 3, "dtype_semantics": "actual_typed_array_inputs", "error_code": "OK", "fft_dtype": "not_applicable", "filter_mode": "custom", "measured_runs": 100, "mse": 0, "operator_name": "resample_poly", "output_dtype": "FP32", "relative_l2": 0, "relative_linf": 0, "requested_dtype": "INT8", "rmse": 0, "run_id": "20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f", "scale_id": "resample_poly_int8_10e4", "schema_version": 1, "status": "PASS", "typed_input_count": 2, "typed_input_names": "x|h", "up": 2, "warmup_runs": 20}
+[stage08] identity and status
++---------------+-------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| target        | scale_id                | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code |
++---------------+-------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+| resample_poly | resample_poly_int8_10e4 | CPU    | not_applicable | INT8  | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
+| resample_poly | resample_poly_int8_10e4 | GPU    | not_applicable | INT8  | 20     | 100      | compatibility/end-to-end | PASS   | OK         |
++---------------+-------------------------+--------+----------------+-------+--------+----------+--------------------------+--------+------------+
+
+[stage08] timing detail
++--------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+-----------------------+----------------------+---------------------+
+| device | mean_ms             | p50_ms              | p95_ms              | p99_ms              | min_ms              | max_ms              | std_ms                | cv                   | speedup             |
++--------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+-----------------------+----------------------+---------------------+
+| CPU    | 0.40048662999999995 | 0.39904200000000001 | 0.40749905000000003 | 0.41977811000000032 | 0.39669199999999999 | 0.47681299999999999 | 0.0082595584744645997 | 0.020623805779645128 | NA                  |
+| GPU    | 0.68993258999999996 | 0.68174400000000002 | 0.72200904999999993 | 0.77311861000000115 | 0.67209300000000005 | 1.0002850000000001  | 0.035005687559908037  | 0.050737837387719344 | 0.58047211539898413 |
++--------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+-----------------------+----------------------+---------------------+
+
+[stage08] accuracy detail
++-----------------------------+-----+------+-------------+---------------+-------------+----------------+-----------------------------------------------------------------------------------+--------+
+| accuracy_reference          | mse | rmse | relative_l2 | relative_linf | exact_match | mismatch_count | semantic_check                                                                    | status |
++-----------------------------+-----+------+-------------+---------------+-------------+----------------+-----------------------------------------------------------------------------------+--------+
+| cpu_resample_poly_reference | 0   | 0    | 0           | 0             | NA          | NA             | shape_ratio_filter_mode_and_output_dtype_match_cpu:filter=custom;ratio=2/3;axis=0 | PASS   |
++-----------------------------+-----+------+-------------+---------------+-------------+----------------+-----------------------------------------------------------------------------------+--------+
+
+[stage08] resource detail
++--------+------------+--------------+-------------+------------+-------------+
+| device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes |
++--------+------------+--------------+-------------+------------+-------------+
+| CPU    | cpu_heap   | 1485424      | 1488160     | 1514976    | 2736        |
+| CPU    | rss        | 70668288     | 70668288    | 70668288   | 0           |
+| GPU    | cpu_heap   | 1489936      | 1547632     | 1547632    | 57696       |
+| GPU    | rss        | 70668288     | 70668288    | 70668288   | 0           |
+| GPU    | gpu_memory | 357777408    | 357777408   | 357777408  | 0           |
++--------+------------+--------------+-------------+------------+-------------+
+
+[stage08] input/output identity
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| device | input_digest                                                     | output_digest                                                    |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+| CPU    | 8a808a0597bd85617c1600d608a928d35b066ffb77856abf85be9e4c6b9f1883 | ef23be19c5d3fb21c5d281ec7f0e50de881375be23912a9b132b81f07ee26645 |
+| GPU    | 8a808a0597bd85617c1600d608a928d35b066ffb77856abf85be9e4c6b9f1883 | ef23be19c5d3fb21c5d281ec7f0e50de881375be23912a9b132b81f07ee26645 |
++--------+------------------------------------------------------------------+------------------------------------------------------------------+
+
+[stage08] input content
++------------+-----------+-------+----------+----------------------------------------------------+----------------------------------------------+
+| input_name | shape     | dtype | elements | generator                                          | values(head4/tail2)                          |
++------------+-----------+-------+----------+----------------------------------------------------+----------------------------------------------+
+| x          | [100x100] | INT8  | 10000    | resample_poly_modular(seed=84350003,integral=true) | i=0:-4;i=1:2;i=2:-3;i=3:3;i=9998:1;i=9999:-4 |
+| h          | [5]       | INT8  | 5        | fixed_custom_coefficients                          | i=0:1;i=1:2;i=2:3;i=3:2;i=4:1                |
++------------+-----------+-------+----------+----------------------------------------------------+----------------------------------------------+
+
+[stage08] case parameters
++--------------------------------------------------------------------------------------------------------------------+
+| parameters                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------+
+| {"axis":"0","cols":"100","down":"3","dtype":"INT8","filter-mode":"custom","rows":"100","seed":"84350003","up":"2"} |
++--------------------------------------------------------------------------------------------------------------------+
+
+[stage08] dtype evidence
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+| INT8            | NA                 | FP32         | 8a808a0597bd85617c1600d608a928d35b066ffb77856abf85be9e4c6b9f1883 | PASS   |
++-----------------+--------------------+--------------+------------------------------------------------------------------+--------+
+
+[stage08] evidence files
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| kind           | path                                                                                                                                                                                                                                                          |
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dtype_csv      | /tmp/ZKX_dev/results/stage08_input_preview_b04_resample_poly_db927ed96663/formal/20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f/operator_dtype_evidence_resample_poly_not_applicable_20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f.csv |
+| memory_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b04_resample_poly_db927ed96663/formal/20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f/operator_filtering_resample_poly_memory_trace_not_applicable.csv                                                   |
+| main_csv       | /tmp/ZKX_dev/results/stage08_input_preview_b04_resample_poly_db927ed96663/formal/20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f/operator_main_results_resample_poly_not_applicable_20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f.csv   |
+| full_log       | /tmp/ZKX_dev/results/stage08_input_preview_b04_resample_poly_db927ed96663/formal/20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f/operator_resample_poly_full.log                                                                                    |
+| report_json    | /tmp/ZKX_dev/results/stage08_input_preview_b04_resample_poly_db927ed96663/formal/20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f/operator_resample_poly_report.json                                                                                 |
+| summary_txt    | /tmp/ZKX_dev/results/stage08_input_preview_b04_resample_poly_db927ed96663/formal/20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f/operator_resample_poly_summary.txt                                                                                 |
+| timing_csv     | /tmp/ZKX_dev/results/stage08_input_preview_b04_resample_poly_db927ed96663/formal/20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f/operator_timing_samples_resample_poly_not_applicable_20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f.csv |
+| probe_raw_json | /tmp/ZKX_dev/results/stage08_input_preview_b04_resample_poly_db927ed96663/formal/20260810T083719Z_db927ed96663_stage08_b04_formal_b404000f/resample_poly_probe_raw.json                                                                                       |
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

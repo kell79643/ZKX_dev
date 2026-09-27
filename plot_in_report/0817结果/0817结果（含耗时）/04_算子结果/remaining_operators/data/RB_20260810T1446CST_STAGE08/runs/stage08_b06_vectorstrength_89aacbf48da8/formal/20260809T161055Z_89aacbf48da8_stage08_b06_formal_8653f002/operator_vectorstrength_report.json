@@ -1,0 +1,23 @@
+{
+  "run_id": "20260809T161055Z_89aacbf48da8_stage08_b06_formal_8653f002",
+  "case_id": "vectorstrength__vectorstrength_fp32_10e4__c27567c5a14a2678",
+  "operator_name": "vectorstrength",
+  "scale_id": "vectorstrength_fp32_10e4",
+  "requested_dtype": "FP32",
+  "output_dtype": "FP64_pair",
+  "backend": "not_applicable",
+  "event_count": 257,
+  "period_count": 40,
+  "period_mode": "array",
+  "scientific_work": 10280,
+  "output_count": 40,
+  "scalar_period": false,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 1.5457e-10,
+  "rmse": 1.24326e-05,
+  "relative_l2": 1.07652e-05,
+  "relative_linf": 3.33751e-05,
+  "status": "PASS",
+  "error_code": "OK"
+}

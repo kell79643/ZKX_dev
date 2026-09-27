@@ -1,0 +1,51 @@
+[stage08-b01] operator=general_cosine entry=cpu:general_cosine_typed_cpu gpu:general_cosine_device
+[stage08-b01] config=test_all/configs/operators/windows/general_cosine/operator_scales.json config_sha256=98e7d3d2716deaf919d8883f5caa73c3f61a1ce37bffff86a62a6be43aa66f64
+[stage08-b01] run_type=smoke scale=general_cosine_fp32_10e2 dtype=FP32 sym=true backend=not_applicable
+[stage08-b01] dtype_semantics=actual_typed_array_input typed_input_count=3 actual_input_digest=7aea9ce1217a052519180c6753897bccd990fec0c5b4981f1dfe2709bb981540
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=1 measured=1
+[stage08-b01] cpu_mean_ms=0.0094699999999999993 gpu_mean_ms=0.35439300000000001 speedup=0.026721746761363793
+[stage08-b01] mse=5.8853675548907073e-14 rmse=2.4259776492974349e-07 relative_l2=1.3032723333441223e-07 relative_linf=1.8001477704619689e-07
+[stage08-b01] resources=available cuda_event_ms=0.36741998791694641
+[stage08-b01] status=PASS error_code=OK
+[stage08] identity and status
+target         | scale_id                 | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code
+general_cosine | general_cosine_fp32_10e2 | CPU    | not_applicable | FP32  | 1      | 1        | compatibility/end-to-end | PASS   | OK        
+general_cosine | general_cosine_fp32_10e2 | GPU    | not_applicable | FP32  | 1      | 1        | compatibility/end-to-end | PASS   | OK        
+
+[stage08] timing detail
+device | mean_ms               | p50_ms                | p95_ms                | p99_ms                | min_ms                | max_ms                | std_ms | cv | speedup             
+CPU    | 0.0094699999999999993 | 0.0094699999999999993 | 0.0094699999999999993 | 0.0094699999999999993 | 0.0094699999999999993 | 0.0094699999999999993 | 0      | 0  | NA                  
+GPU    | 0.35439300000000001   | 0.35439300000000001   | 0.35439300000000001   | 0.35439300000000001   | 0.35439300000000001   | 0.35439300000000001   | 0      | 0  | 0.026721746761363793
+
+[stage08] accuracy detail
+accuracy_reference  | mse                    | rmse                   | relative_l2            | relative_linf          | exact_match | mismatch_count | semantic_check                                                                                | status
+cpu_typed_reference | 5.8853675548907073e-14 | 2.4259776492974349e-07 | 1.3032723333441223e-07 | 1.8001477704619689e-07 | NA          | NA             | finite_fp64_window_shape_coefficients_and_symmetry_match_cpu:shape=[100];finite=true;sym=true | PASS  
+
+[stage08] resource detail
+device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes
+CPU    | cpu_heap   | 1428544      | 1432112     | 1432112    | 3568       
+CPU    | rss        | 70463488     | 70463488    | 70463488   | 0          
+GPU    | cpu_heap   | 1432208      | 1435200     | 1435200    | 2992       
+GPU    | rss        | 70463488     | 70463488    | 70463488   | 0          
+GPU    | gpu_memory | 391544832    | 391544832   | 391544832  | 0          
+
+[stage08] input/output identity
+device | input_digest                                                     | output_digest                                                   
+CPU    | 7aea9ce1217a052519180c6753897bccd990fec0c5b4981f1dfe2709bb981540 | 1dbdadaaf8668ad13198bbf9f83eafd63f0a085bf8792035c4a755f51f175445
+GPU    | 7aea9ce1217a052519180c6753897bccd990fec0c5b4981f1dfe2709bb981540 | 8e87c8f9a107959dd1bf4392fd15e28217f4ea2c20a08768c4b7343ce59fadcc
+
+[stage08] dtype evidence
+requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status
+FP32            | FP32               | FP64         | 7aea9ce1217a052519180c6753897bccd990fec0c5b4981f1dfe2709bb981540 | PASS  
+
+[stage08] evidence files
+kind        | path                                                                                                                                                                                                                                             
+main_csv    | /tmp/ZKX_dev/results/stage08_csvread_windows_smoke_47ebe13410d3/smoke/20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004/operator_main_results_general_cosine_not_applicable_20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004.csv  
+timing_csv  | /tmp/ZKX_dev/results/stage08_csvread_windows_smoke_47ebe13410d3/smoke/20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004/operator_timing_samples_general_cosine_not_applicable_20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004.csv
+memory_csv  | /tmp/ZKX_dev/results/stage08_csvread_windows_smoke_47ebe13410d3/smoke/20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004/operator_windows_general_cosine_memory_trace_not_applicable.csv                                                   
+dtype_csv   | /tmp/ZKX_dev/results/stage08_csvread_windows_smoke_47ebe13410d3/smoke/20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004/operator_dtype_evidence_general_cosine_not_applicable_20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004.csv
+module_csv  | /tmp/ZKX_dev/results/stage08_csvread_windows_smoke_47ebe13410d3/smoke/20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004/windows_batch01_module_summary_not_applicable_20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004.csv        
+report_json | /tmp/ZKX_dev/results/stage08_csvread_windows_smoke_47ebe13410d3/smoke/20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004/operator_general_cosine_report.json                                                                               
+summary_txt | /tmp/ZKX_dev/results/stage08_csvread_windows_smoke_47ebe13410d3/smoke/20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004/operator_general_cosine_summary.txt                                                                               
+full_log    | /tmp/ZKX_dev/results/stage08_csvread_windows_smoke_47ebe13410d3/smoke/20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004/operator_general_cosine_full.log                                                                                  
+results_dir | /tmp/ZKX_dev/results/stage08_csvread_windows_smoke_47ebe13410d3/smoke/20260810T040000Z_47ebe13410d3_stage08_b01_smoke_88000004                                                                                                                   

@@ -1,0 +1,60 @@
+[stage08-b02] operator=parzen entry=cpu:parzen_typed_cpu gpu:parzen_device
+[stage08-b02] config=test_all/configs/operators/windows/parzen/operator_scales.json config_sha256=850768f4a5201ed3f8362fbec5ae59adbfd7b9af89bd07d4fb7c98383060c9ff
+[stage08-b02] run_type=formal scale=parzen_int16_10e4 dtype=INT16 sym=true backend=not_applicable
+[stage08-b02] dtype_semantics=request_variant_no_typed_data_input typed_input_count=0 actual_input_digest=cadad88e333e0a70670079f972e771752bdabf67365c62ae56f8a799cc6ee292
+[stage08-b02] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b02] cpu_mean_ms=0.21964980999999995 gpu_mean_ms=0.3050083999999999 speedup=0.72014347801568745
+[stage08-b02] mse=4.5339589084042754e-16 rmse=2.1293094909862858e-08 relative_l2=4.1005709412730799e-08 relative_linf=8.6133480741671434e-08
+[stage08-b02] resources=available cuda_event_ms=0.33963599801063538
+[stage08-b02] status=PASS error_code=OK
+[stage08] identity and status
+target | scale_id          | device | backend        | dtype | warmup | measured | timing_scope             | status | error_code
+parzen | parzen_int16_10e4 | CPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+parzen | parzen_int16_10e4 | GPU    | not_applicable | INT16 | 20     | 100      | compatibility/end-to-end | PASS   | OK        
+
+[stage08] timing detail
+device | mean_ms             | p50_ms              | p95_ms              | p99_ms              | min_ms              | max_ms   | std_ms                | cv                    | speedup            
+CPU    | 0.21964980999999995 | 0.219306            | 0.22189349999999997 | 0.2284756           | 0.21823100000000001 | 0.228931 | 0.0018726527157751382 | 0.0085256286621651928 | NA                 
+GPU    | 0.3050083999999999  | 0.30296099999999998 | 0.32018004999999999 | 0.32811970000000007 | 0.29725099999999999 | 0.343831 | 0.0068407176553341243 | 0.022427964788294771  | 0.72014347801568745
+
+[stage08] accuracy detail
+accuracy_reference  | mse                    | rmse                   | relative_l2            | relative_linf          | exact_match | mismatch_count | semantic_check                                                                            | status
+cpu_typed_reference | 4.5339589084042754e-16 | 2.1293094909862858e-08 | 4.1005709412730799e-08 | 8.6133480741671434e-08 | NA          | NA             | finite_fp64_parzen_window_shape_and_symmetry_match_cpu:shape=[10000];finite=true;sym=true | PASS  
+
+[stage08] resource detail
+device | metric     | before_bytes | after_bytes | peak_bytes | delta_bytes
+CPU    | cpu_heap   | 1559600      | 1562736     | 1641632    | 3136       
+CPU    | rss        | 70950912     | 70950912    | 70950912   | 0          
+GPU    | cpu_heap   | 1562736      | 1565936     | 1645040    | 3200       
+GPU    | rss        | 70950912     | 70950912    | 70950912   | 0          
+GPU    | gpu_memory | 391544832    | 391544832   | 391544832  | 0          
+
+[stage08] input/output identity
+device | input_digest                                                     | output_digest                                                   
+CPU    | cadad88e333e0a70670079f972e771752bdabf67365c62ae56f8a799cc6ee292 | 264a35da64956c39d952de9a84c898a4a5a029c2daf71e38ce85f576fba8fa82
+GPU    | cadad88e333e0a70670079f972e771752bdabf67365c62ae56f8a799cc6ee292 | ed5bbaf12a8fcd9261f760bd7380554d9a349345346f7cafd6b15cf738105809
+
+[stage08] input content
+input_name       | shape   | dtype       | elements | generator                                           | values(head4/tail2)                                                                                  
+window_positions | [10000] | INDEX_INT64 | 10000    | implicit_window_index_domain(no_materialized_array) | i=0:position=0;i=1:position=1;i=2:position=2;i=3:position=3;i=9998:position=9998;i=9999:position=9999
+
+[stage08] case parameters
+parameters                                                                                                                              
+{"length":10000,"requested_dtype":"INT16","sym":true,"dtype_semantics":"request_variant_no_typed_data_input","typed_input_names":"none"}
+
+[stage08] dtype evidence
+requested_dtype | config_input_dtype | output_dtype | actual_input_digest                                              | status
+INT16           | INT16              | FP64         | cadad88e333e0a70670079f972e771752bdabf67365c62ae56f8a799cc6ee292 | PASS  
+
+[stage08] evidence files
+kind        | path                                                                                                                                                                                                                                           
+main_csv    | /tmp/ZKX_dev/results/stage08_input_preview_b02_parzen_a64a65577ccc/formal/20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017/operator_main_results_parzen_not_applicable_20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017.csv  
+timing_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b02_parzen_a64a65577ccc/formal/20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017/operator_timing_samples_parzen_not_applicable_20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017.csv
+memory_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b02_parzen_a64a65577ccc/formal/20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017/operator_windows_parzen_memory_trace_not_applicable.csv                                                    
+input_csv   | /tmp/ZKX_dev/results/stage08_input_preview_b02_parzen_a64a65577ccc/formal/20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017/operator_input_evidence_parzen_not_applicable_20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017.csv
+dtype_csv   | /tmp/ZKX_dev/results/stage08_input_preview_b02_parzen_a64a65577ccc/formal/20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017/operator_dtype_evidence_parzen_not_applicable_20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017.csv
+module_csv  | /tmp/ZKX_dev/results/stage08_input_preview_b02_parzen_a64a65577ccc/formal/20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017/windows_batch02_module_summary_not_applicable_20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017.csv
+report_json | /tmp/ZKX_dev/results/stage08_input_preview_b02_parzen_a64a65577ccc/formal/20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017/operator_parzen_report.json                                                                                
+summary_txt | /tmp/ZKX_dev/results/stage08_input_preview_b02_parzen_a64a65577ccc/formal/20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017/operator_parzen_summary.txt                                                                                
+full_log    | /tmp/ZKX_dev/results/stage08_input_preview_b02_parzen_a64a65577ccc/formal/20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017/operator_parzen_full.log                                                                                   
+results_dir | /tmp/ZKX_dev/results/stage08_input_preview_b02_parzen_a64a65577ccc/formal/20260810T083035Z_a64a65577ccc_stage08_b02_formal_a2010017                                                                                                            

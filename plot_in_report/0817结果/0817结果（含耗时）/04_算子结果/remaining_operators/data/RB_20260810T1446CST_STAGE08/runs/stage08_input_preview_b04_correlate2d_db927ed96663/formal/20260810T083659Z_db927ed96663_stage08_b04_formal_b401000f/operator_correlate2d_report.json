@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "run_id": "20260810T083659Z_db927ed96663_stage08_b04_formal_b401000f",
+  "case_id": "correlate2d__correlate2d_int8_10e4__b361b9dc771bae74",
+  "operator_name": "correlate2d",
+  "scale_id": "correlate2d_int8_10e4",
+  "requested_dtype": "INT8",
+  "dtype_semantics": "actual_same_dtype_arrays_fp32_legal_extension",
+  "typed_input_names": "in1|in2",
+  "compute_dtype": "FP32",
+  "fft_dtype": "not_applicable",
+  "output_dtype": "INT8",
+  "backend": "not_applicable",
+  "native_capability": "approved_legal_extension",
+  "mode": "valid",
+  "boundary": "symm",
+  "boundary_effect": "ignored_by_valid",
+  "typed_input_count": 2,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "actual_input_digest": "b361b9dc771bae746987633403b968b62f069edaa329d47d3474e60bb294f7de",
+  "metrics": {
+    "mse": 0,
+    "rmse": 0,
+    "relative_l2": 0,
+    "relative_linf": 0,
+    "exact_match": true,
+    "mismatch_count": 0
+  },
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "in1",
+      "shape": "[100x100]",
+      "dtype": "INT8",
+      "element_count": "10000",
+      "generator": "correlate_modular(seed=84050003,salt=3,integral=true)",
+      "preview_head4_tail2": "i=0:2;i=1:-3;i=2:3;i=3:-2;i=9998:-4;i=9999:2"
+    },
+    {
+      "input_name": "in2",
+      "shape": "[7x5]",
+      "dtype": "INT8",
+      "element_count": "35",
+      "generator": "correlate_modular(seed=84050003,salt=7,integral=true)",
+      "preview_head4_tail2": "i=0:-5;i=1:1;i=2:-4;i=3:2;i=33:-5;i=34:1"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "INT8",
+    "rows1": "100",
+    "cols1": "100",
+    "rows2": "7",
+    "cols2": "5",
+    "mode": "valid",
+    "boundary": "symm",
+    "fillvalue": "0",
+    "seed": "84050003"
+  }
+}

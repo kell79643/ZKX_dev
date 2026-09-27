@@ -1,0 +1,271 @@
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_fp32_10e2 dtype=FP32 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0050664700000000087 gpu_mean_ms=0.25457156000000003 speedup=0.01990194819876976
+[stage08-b01] mse=4.573361880149296e-16 rmse=2.1385419986872588e-08 relative_l2=3.9708387626794139e-08 relative_linf=6.5979634131830085e-08
+[stage08-b01] resources=available cuda_event_ms=0.28281000256538391
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115726Z_9ad02548cf6c_stage08_b01_formal_74000000
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_fp32_10e2 dtype=FP32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0051039700000000011 gpu_mean_ms=0.25252305000000003 speedup=0.020211897488169893
+[stage08-b01] mse=5.2599710079265365e-16 rmse=2.2934626676548578e-08 relative_l2=4.2584950246814619e-08 relative_linf=6.7054922170406428e-08
+[stage08-b01] resources=available cuda_event_ms=0.28267401456832886
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115726Z_9ad02548cf6c_stage08_b01_formal_74000001
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_fp32_10e3 dtype=FP32 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.04322129000000003 gpu_mean_ms=0.26210096999999999 speedup=0.16490320505109168
+[stage08-b01] mse=5.2172072977120558e-16 rmse=2.2841206837012917e-08 relative_l2=4.7417485714348028e-08 relative_linf=1.0280114938285787e-07
+[stage08-b01] resources=available cuda_event_ms=0.28389599919319153
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115727Z_9ad02548cf6c_stage08_b01_formal_74000002
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_fp32_10e3 dtype=FP32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.042845279999999993 gpu_mean_ms=0.25983073000000018 speedup=0.16489689268086175
+[stage08-b01] mse=4.0917226538518746e-16 rmse=2.0228006955337627e-08 relative_l2=4.1992581113541994e-08 relative_linf=8.7916172009094851e-08
+[stage08-b01] resources=available cuda_event_ms=0.27961200475692749
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115727Z_9ad02548cf6c_stage08_b01_formal_74000003
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_fp32_10e4 dtype=FP32 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.43955648999999997 gpu_mean_ms=0.30968182999999999 speedup=1.4193809497961181
+[stage08-b01] mse=6.9879304845031007e-16 rmse=2.6434694029822061e-08 relative_l2=4.338441763749717e-08 relative_linf=1.136187538497426e-07
+[stage08-b01] resources=available cuda_event_ms=0.32693600654602051
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115727Z_9ad02548cf6c_stage08_b01_formal_74000004
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_fp32_10e4 dtype=FP32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.42235975000000003 gpu_mean_ms=0.31416407999999996 speedup=1.3443922360570313
+[stage08-b01] mse=6.9480704515078108e-16 rmse=2.6359192801578373e-08 relative_l2=4.3260505599227553e-08 relative_linf=1.1193314497504048e-07
+[stage08-b01] resources=available cuda_event_ms=0.33445200324058533
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115727Z_9ad02548cf6c_stage08_b01_formal_74000005
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_fp16_10e2 dtype=FP16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0053238799999999952 gpu_mean_ms=0.25242584999999995 speedup=0.021090866882294331
+[stage08-b01] mse=4.573361880149296e-16 rmse=2.1385419986872588e-08 relative_l2=3.9708387626794139e-08 relative_linf=6.5979634131830085e-08
+[stage08-b01] resources=available cuda_event_ms=0.26662200689315796
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115727Z_9ad02548cf6c_stage08_b01_formal_74000006
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_fp16_10e2 dtype=FP16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0051731700000000038 gpu_mean_ms=0.25291426 speedup=0.020454244058836397
+[stage08-b01] mse=5.2599710079265365e-16 rmse=2.2934626676548578e-08 relative_l2=4.2584950246814619e-08 relative_linf=6.7054922170406428e-08
+[stage08-b01] resources=available cuda_event_ms=0.26822799444198608
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115727Z_9ad02548cf6c_stage08_b01_formal_74000007
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_fp16_10e3 dtype=FP16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.043273079999999992 gpu_mean_ms=0.26080845000000002 speedup=0.16591901067622614
+[stage08-b01] mse=5.2172072977120558e-16 rmse=2.2841206837012917e-08 relative_l2=4.7417485714348028e-08 relative_linf=1.0280114938285787e-07
+[stage08-b01] resources=available cuda_event_ms=0.28401601314544678
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115727Z_9ad02548cf6c_stage08_b01_formal_74000008
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_fp16_10e3 dtype=FP16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.043319490000000009 gpu_mean_ms=0.26002524999999999 speedup=0.16659724392150382
+[stage08-b01] mse=4.0917226538518746e-16 rmse=2.0228006955337627e-08 relative_l2=4.1992581113541994e-08 relative_linf=8.7916172009094851e-08
+[stage08-b01] resources=available cuda_event_ms=0.27741599082946777
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115727Z_9ad02548cf6c_stage08_b01_formal_74000009
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_fp16_10e4 dtype=FP16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.42336756999999992 gpu_mean_ms=0.31558460000000005 speedup=1.3415343144120462
+[stage08-b01] mse=6.9879304845031007e-16 rmse=2.6434694029822061e-08 relative_l2=4.338441763749717e-08 relative_linf=1.136187538497426e-07
+[stage08-b01] resources=available cuda_event_ms=0.36685800552368164
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115727Z_9ad02548cf6c_stage08_b01_formal_7400000a
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_fp16_10e4 dtype=FP16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.4237956799999999 gpu_mean_ms=0.31418777999999992 speedup=1.3488611173865515
+[stage08-b01] mse=6.9480704515078108e-16 rmse=2.6359192801578373e-08 relative_l2=4.3260505599227553e-08 relative_linf=1.1193314497504048e-07
+[stage08-b01] resources=available cuda_event_ms=0.34126400947570801
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115728Z_9ad02548cf6c_stage08_b01_formal_7400000b
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int32_10e2 dtype=INT32 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0050474700000000009 gpu_mean_ms=0.25838782000000005 speedup=0.019534473412872171
+[stage08-b01] mse=4.573361880149296e-16 rmse=2.1385419986872588e-08 relative_l2=3.9708387626794139e-08 relative_linf=6.5979634131830085e-08
+[stage08-b01] resources=available cuda_event_ms=0.27428200840950012
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115728Z_9ad02548cf6c_stage08_b01_formal_7400000c
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int32_10e2 dtype=INT32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0050794699999999878 gpu_mean_ms=0.24961000000000003 speedup=0.020349625415648359
+[stage08-b01] mse=5.2599710079265365e-16 rmse=2.2934626676548578e-08 relative_l2=4.2584950246814619e-08 relative_linf=6.7054922170406428e-08
+[stage08-b01] resources=available cuda_event_ms=0.26993799209594727
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115728Z_9ad02548cf6c_stage08_b01_formal_7400000d
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int32_10e3 dtype=INT32 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.042897089999999964 gpu_mean_ms=0.26258846999999991 speedup=0.16336242790858249
+[stage08-b01] mse=5.2172072977120558e-16 rmse=2.2841206837012917e-08 relative_l2=4.7417485714348028e-08 relative_linf=1.0280114938285787e-07
+[stage08-b01] resources=available cuda_event_ms=0.2939859926700592
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115728Z_9ad02548cf6c_stage08_b01_formal_7400000e
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int32_10e3 dtype=INT32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.042918379999999992 gpu_mean_ms=0.2637215799999999 speedup=0.16274125158813324
+[stage08-b01] mse=4.0917226538518746e-16 rmse=2.0228006955337627e-08 relative_l2=4.1992581113541994e-08 relative_linf=8.7916172009094851e-08
+[stage08-b01] resources=available cuda_event_ms=0.29467999935150146
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115728Z_9ad02548cf6c_stage08_b01_formal_7400000f
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int32_10e4 dtype=INT32 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.42245106000000016 gpu_mean_ms=0.31300436999999998 speedup=1.3496650541971673
+[stage08-b01] mse=6.9879304845031007e-16 rmse=2.6434694029822061e-08 relative_l2=4.338441763749717e-08 relative_linf=1.136187538497426e-07
+[stage08-b01] resources=available cuda_event_ms=0.33169201016426086
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115728Z_9ad02548cf6c_stage08_b01_formal_74000010
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int32_10e4 dtype=INT32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.42368606999999997 gpu_mean_ms=0.32487630000000001 speedup=1.3041458241182873
+[stage08-b01] mse=6.9480704515078108e-16 rmse=2.6359192801578373e-08 relative_l2=4.3260505599227553e-08 relative_linf=1.1193314497504048e-07
+[stage08-b01] resources=available cuda_event_ms=0.33277198672294617
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115728Z_9ad02548cf6c_stage08_b01_formal_74000011
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int16_10e2 dtype=INT16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0050759699999999956 gpu_mean_ms=0.24610815999999999 speedup=0.020624956116855272
+[stage08-b01] mse=4.573361880149296e-16 rmse=2.1385419986872588e-08 relative_l2=3.9708387626794139e-08 relative_linf=6.5979634131830085e-08
+[stage08-b01] resources=available cuda_event_ms=0.28379398584365845
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115729Z_9ad02548cf6c_stage08_b01_formal_74000012
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int16_10e2 dtype=INT16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0051047699999999963 gpu_mean_ms=0.25304834999999992 speedup=0.020173101306528961
+[stage08-b01] mse=5.2599710079265365e-16 rmse=2.2934626676548578e-08 relative_l2=4.2584950246814619e-08 relative_linf=6.7054922170406428e-08
+[stage08-b01] resources=available cuda_event_ms=0.28005200624465942
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115729Z_9ad02548cf6c_stage08_b01_formal_74000013
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int16_10e3 dtype=INT16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.043161190000000058 gpu_mean_ms=0.26412610000000014 speedup=0.16341130240441984
+[stage08-b01] mse=5.2172072977120558e-16 rmse=2.2841206837012917e-08 relative_l2=4.7417485714348028e-08 relative_linf=1.0280114938285787e-07
+[stage08-b01] resources=available cuda_event_ms=0.27539399266242981
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115729Z_9ad02548cf6c_stage08_b01_formal_74000014
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int16_10e3 dtype=INT16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.043039179999999962 gpu_mean_ms=0.25797302 speedup=0.16683597377741269
+[stage08-b01] mse=4.0917226538518746e-16 rmse=2.0228006955337627e-08 relative_l2=4.1992581113541994e-08 relative_linf=8.7916172009094851e-08
+[stage08-b01] resources=available cuda_event_ms=0.26963800191879272
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115729Z_9ad02548cf6c_stage08_b01_formal_74000015
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int16_10e4 dtype=INT16 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.42517398000000006 gpu_mean_ms=0.30759249000000005 speedup=1.3822638517604899
+[stage08-b01] mse=6.9879304845031007e-16 rmse=2.6434694029822061e-08 relative_l2=4.338441763749717e-08 relative_linf=1.136187538497426e-07
+[stage08-b01] resources=available cuda_event_ms=0.32567998766899109
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115729Z_9ad02548cf6c_stage08_b01_formal_74000016
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int16_10e4 dtype=INT16 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.42234244999999981 gpu_mean_ms=0.30824140000000005 speedup=1.3701678294998652
+[stage08-b01] mse=6.9480704515078108e-16 rmse=2.6359192801578373e-08 relative_l2=4.3260505599227553e-08 relative_linf=1.1193314497504048e-07
+[stage08-b01] resources=available cuda_event_ms=0.32356798648834229
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115729Z_9ad02548cf6c_stage08_b01_formal_74000017
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int8_10e2 dtype=INT8 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0050222699999999901 gpu_mean_ms=0.24498162999999998 speedup=0.020500598350986523
+[stage08-b01] mse=4.573361880149296e-16 rmse=2.1385419986872588e-08 relative_l2=3.9708387626794139e-08 relative_linf=6.5979634131830085e-08
+[stage08-b01] resources=available cuda_event_ms=0.27012398838996887
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115729Z_9ad02548cf6c_stage08_b01_formal_74000018
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int8_10e2 dtype=INT8 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.0051871699999999901 gpu_mean_ms=0.25137662000000005 speedup=0.020635053490654736
+[stage08-b01] mse=5.2599710079265365e-16 rmse=2.2934626676548578e-08 relative_l2=4.2584950246814619e-08 relative_linf=6.7054922170406428e-08
+[stage08-b01] resources=available cuda_event_ms=0.26769599318504333
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115729Z_9ad02548cf6c_stage08_b01_formal_74000019
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int8_10e3 dtype=INT8 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.05352382999999996 gpu_mean_ms=0.26012724999999998 speedup=0.20576018083457218
+[stage08-b01] mse=2.093612794107234e-16 rmse=1.4469322009366003e-08 relative_l2=4.2479818756840769e-08 relative_linf=8.7916172172851479e-08
+[stage08-b01] resources=available cuda_event_ms=0.28181800246238708
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115730Z_9ad02548cf6c_stage08_b01_formal_7400001a
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int8_10e3 dtype=INT8 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.054112739999999999 gpu_mean_ms=0.26526071000000007 speedup=0.2039983230083339
+[stage08-b01] mse=1.9981098597446369e-16 rmse=1.4135451389130228e-08 relative_l2=4.1499623318058698e-08 relative_linf=8.0089309073549941e-08
+[stage08-b01] resources=available cuda_event_ms=0.28514799475669861
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115730Z_9ad02548cf6c_stage08_b01_formal_7400001b
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int8_10e4 dtype=INT8 sym=true backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.75197943999999994 gpu_mean_ms=0.32037104999999999 speedup=2.3472140819215719
+[stage08-b01] mse=2.0936127941072339e-17 rmse=4.5756013748000752e-09 relative_l2=4.2479818756840769e-08 relative_linf=8.7916172172851479e-08
+[stage08-b01] resources=available cuda_event_ms=0.3302919864654541
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115730Z_9ad02548cf6c_stage08_b01_formal_7400001c
+[stage08-b01] operator=general_gaussian entry=cpu:general_gaussian_typed_cpu gpu:general_gaussian_device
+[stage08-b01] config=test_all/final_prep/operators/windows/general_gaussian/operator_scales.json config_sha256=5d6f2dd75b763122028b82c7fc144e476d8fa07150cda991f6306e7007f350ee
+[stage08-b01] run_type=formal scale=general_gaussian_int8_10e4 dtype=INT8 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=0.72985893999999985 gpu_mean_ms=0.31290376000000014 speedup=2.3325348982703162
+[stage08-b01] mse=1.9981098597446371e-17 rmse=4.4700222144242607e-09 relative_l2=4.1499623318058698e-08 relative_linf=8.0089309073549941e-08
+[stage08-b01] resources=available cuda_event_ms=0.33583599328994751
+[stage08-b01] status=PASS error_code=OK
+[stage08-b01] results=/tmp/ZKX_dev/results/stage08_b01/formal/20260806T115730Z_9ad02548cf6c_stage08_b01_formal_7400001d
+[stage08-b01-formal] cases=30 status=completed

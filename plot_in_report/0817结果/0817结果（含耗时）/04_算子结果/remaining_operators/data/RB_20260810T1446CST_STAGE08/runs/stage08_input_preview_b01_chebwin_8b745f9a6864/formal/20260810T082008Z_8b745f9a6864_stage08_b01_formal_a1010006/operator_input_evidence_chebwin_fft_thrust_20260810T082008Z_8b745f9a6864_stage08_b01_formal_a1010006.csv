@@ -1,0 +1,3 @@
+run_id,case_id,operator_name,input_name,shape,dtype,element_count,generator,preview_head4_tail2,status,error_code
+20260810T082008Z_8b745f9a6864_stage08_b01_formal_a1010006,chebwin__chebwin_fp32_10e4__b9947a1e8fa67ec5__periodic,chebwin,window_positions,[10000],INDEX_INT64,10000,implicit_window_index_domain(no_materialized_array),i=0:position=0;i=1:position=1;i=2:position=2;i=3:position=3;i=9998:position=9998;i=9999:position=9999,PASS,OK
+20260810T082008Z_8b745f9a6864_stage08_b01_formal_a1010006,chebwin__chebwin_fp32_10e4__b9947a1e8fa67ec5__periodic,chebwin,attenuation_db,scalar,FP32,1,exact_config_scalar,value=80,PASS,OK

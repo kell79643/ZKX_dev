@@ -1,0 +1,15 @@
+status=PASS
+error_code=OK
+run_id=20260809T091121Z_0b2008e7f76a_stage08_b03_formal_8303f00b
+case_id=channelize_poly__channelize_poly_int16_10e4__808b2d4a7005878f
+scale_id=channelize_poly_int16_10e4
+dtype=INT16
+dtype_semantics=actual_typed_array_inputs_fp32_compute_extension
+typed_input_count=2
+compute_dtype=FP32
+fft_dtype=ComplexFP32
+output_dtype=ComplexFP32
+backend=fft_thrust
+warmup_runs=20
+measured_runs=100
+actual_input_digest=808b2d4a7005878fd57f7633044f7f3e94cd0c2c887c32c7f2ccf8c22f2f4f53

@@ -1,0 +1,22 @@
+{
+  "run_id": "20260809T153452Z_ab7484afd8df_stage08_b06_formal_8633f008",
+  "case_id": "lombscargle__lombscargle_int32_10e4__8f8817c2f072e581",
+  "operator_name": "lombscargle",
+  "scale_id": "lombscargle_int32_10e4",
+  "requested_dtype": "INT32",
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "sample_count": 257,
+  "frequency_count": 40,
+  "scientific_work": 10280,
+  "precenter": true,
+  "normalize": true,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 7.99595e-20,
+  "rmse": 2.82771e-10,
+  "relative_l2": 4.47718e-08,
+  "relative_linf": 2.74951e-08,
+  "status": "PASS",
+  "error_code": "OK"
+}

@@ -1,0 +1,21 @@
+{
+  "run_id": "20260809T135602Z_bb1a0e0e2788_stage08_b05_formal_8533f00a",
+  "case_id": "lfilter_zi__lfilter_zi_int16_10e3__50be503b393c8bde",
+  "operator_name": "lfilter_zi",
+  "scale_id": "lfilter_zi_int16_10e3",
+  "requested_dtype": "INT16",
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "state_order": 10,
+  "leading_denominator_zeros": 0,
+  "scientific_work_units": 1000,
+  "output_count": 10,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 0,
+  "rmse": 0,
+  "relative_l2": 0,
+  "relative_linf": 0,
+  "status": "PASS",
+  "error_code": "OK"
+}

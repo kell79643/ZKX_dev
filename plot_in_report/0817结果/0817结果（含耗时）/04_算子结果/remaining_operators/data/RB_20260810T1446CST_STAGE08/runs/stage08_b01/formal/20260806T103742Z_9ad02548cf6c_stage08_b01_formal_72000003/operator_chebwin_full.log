@@ -1,0 +1,8 @@
+[stage08-b01] operator=chebwin entry=cpu:chebwin_typed_cpu gpu:chebwin_device
+[stage08-b01] config=test_all/final_prep/operators/windows/chebwin/operator_scales.json config_sha256=7acfa10f463087d911cfc45d3dbcf0d9fbf434a48d44ef73332618d8fc85f1f0
+[stage08-b01] run_type=formal scale=chebwin_fp32_10e3 dtype=FP32 sym=false backend=not_applicable
+[stage08-b01] timing_scope=compatibility/end-to-end warmup=20 measured=100
+[stage08-b01] cpu_mean_ms=240.28292840999998 gpu_mean_ms=61.302273800000009 speedup=3.9196413691591312
+[stage08-b01] mse=6.2951318401769964e-06 rmse=0.0025090101315413207 relative_l2=0.0045870439139283382 relative_linf=0.0042541810526930263
+[stage08-b01] resources=available cuda_event_ms=61.515590667724609
+[stage08-b01] status=PASS error_code=OK

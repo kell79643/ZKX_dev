@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260806T115730Z_9ad02548cf6c_stage08_b01_formal_7400001d",
+  "case_id": "general_gaussian__general_gaussian_int8_10e4__78d6a6e1f33f39c9__periodic",
+  "operator_name": "general_gaussian",
+  "scale_id": "general_gaussian_int8_10e4",
+  "dtype": "INT8",
+  "sym": false,
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "78d6a6e1f33f39c97128760051f931c2057483cd1034b1fd1817bd5119077bbb",
+  "cuda_event_auxiliary_ms": 0.33583599328994751,
+  "cuda_event_source": "cudaEvent",
+  "mse": 1.9981098597446371e-17,
+  "rmse": 4.4700222144242607e-09,
+  "relative_l2": 4.1499623318058698e-08,
+  "relative_linf": 8.0089309073549941e-08,
+  "status": "PASS",
+  "error_code": "OK"
+}

@@ -1,0 +1,2 @@
+command=build_stage08_b04_resample_poly_6d43b8e8ac93/stage08_filtering_resample_poly --dtype FP16 --rows 10 --cols 10 --axis 1 --up 2 --down 1 --filter-mode default_kaiser --seed 84320001 --warmup 1 --measured 1 --output /tmp/ZKX_dev/results/stage08_b04_resample_poly_6d43b8e8ac93/smoke/20260809T115300Z_6d43b8e8ac93_stage08_b04_smoke_84300001/resample_poly_probe_raw.json
+STAGE08_RESAMPLE_POLY_PROBE PASS dtype=FP16 filter=default_kaiser backend=not_applicable

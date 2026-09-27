@@ -1,0 +1,45 @@
+{
+  "run_id": "20260810T084554Z_652061b694fc_stage08_b05_formal_85610005",
+  "case_id": "detrend__detrend_fp16_10e4__4482b588d1df34c8",
+  "operator_name": "detrend",
+  "scale_id": "detrend_fp16_10e4",
+  "requested_dtype": "FP16",
+  "output_dtype": "FP64",
+  "backend": "not_applicable",
+  "mode": "linear",
+  "axis": 0,
+  "breakpoints": [
+    25,
+    50,
+    75
+  ],
+  "rank": 2,
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "mse": 1.44072e-10,
+  "rmse": 1.2003e-05,
+  "relative_l2": 1.86857e-05,
+  "relative_linf": 3.85398e-05,
+  "status": "PASS",
+  "error_code": "OK",
+  "input_content": [
+    {
+      "input_name": "x",
+      "shape": "[100x100]",
+      "dtype": "FP16",
+      "element_count": "10000",
+      "generator": "trend_plus_modular_noise(seed=85120003,integral=false)",
+      "preview_head4_tail2": "i=0:-0.75;i=1:0.3;i=2:-0.9;i=3:0.15;i=9998:500.4;i=9999:499.2"
+    }
+  ],
+  "case_parameters": {
+    "dtype": "FP16",
+    "mode": "linear",
+    "breakpoints": "25|50|75",
+    "rank": "2",
+    "rows": "100",
+    "cols": "100",
+    "axis": "0",
+    "seed": "85120003"
+  }
+}

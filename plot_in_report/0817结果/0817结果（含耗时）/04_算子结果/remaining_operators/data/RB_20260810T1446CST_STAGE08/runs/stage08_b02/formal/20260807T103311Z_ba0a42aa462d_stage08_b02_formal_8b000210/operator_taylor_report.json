@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "run_id": "20260807T103311Z_ba0a42aa462d_stage08_b02_formal_8b000210",
+  "case_id": "taylor__taylor_int32_10e4__182712802b9cf2f7__sym",
+  "operator_name": "taylor",
+  "scale_id": "taylor_int32_10e4",
+  "dtype": "INT32",
+  "sym": true,
+  "backend": "not_applicable",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "input_digest": "182712802b9cf2f75142a4f3155ec784e2b0570f23e0d9a0003fbb2b138332c2",
+  "cuda_event_auxiliary_ms": 0.47284001111984253,
+  "cuda_event_source": "cudaEvent",
+  "mse": 1.9874606510359069e-15,
+  "rmse": 4.4580944932066065e-08,
+  "relative_l2": 6.4168097281163419e-08,
+  "relative_linf": 1.2873245750495576e-07,
+  "status": "PASS",
+  "error_code": "OK"
+}

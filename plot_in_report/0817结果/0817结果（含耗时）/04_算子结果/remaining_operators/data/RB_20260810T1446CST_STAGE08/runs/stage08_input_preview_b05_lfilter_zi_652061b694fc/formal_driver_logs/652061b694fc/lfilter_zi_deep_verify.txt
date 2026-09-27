@@ -1,0 +1,1 @@
+STAGE08_FORMAL_DEEP_VERIFY PASS batch=b05 operator=lfilter_zi backend=not_applicable cases=15 warmup=20 measured=100 dtype_semantics=actual_typed_b_a_arrays_fp32_solve_host_fp64_extension typed_inputs=b|a input_preview=head4_tail2 state_order_coverage=5|10|22 scientific_work_coverage=125|1000|10648 leading_zero_coverage=0|1 output_dtype=FP64 request_variant_coverage=5x3
