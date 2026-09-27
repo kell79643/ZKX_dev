@@ -1,0 +1,805 @@
+detection_mismatch_summary sample_index=0 total=1 valid=1 boundary=0
+detection_mismatch sample_index=0 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=0 step=step1 cpu_ms=2.4201 gpu_ms=1.09389 relative_l2=2.04338e-06 cpu_heap_peak=7098976 cpu_rss_peak=80211968 gpu_peak=357777408 status=PASS
+sample_index=0 step=step2 cpu_ms=135.607 gpu_ms=1.64507 relative_l2=2.0356e-07 cpu_heap_peak=7361296 cpu_rss_peak=80752640 gpu_peak=357777408 status=PASS
+sample_index=0 step=step3 cpu_ms=175.121 gpu_ms=1.13926 relative_l2=6.99589e-07 cpu_heap_peak=7623600 cpu_rss_peak=81563648 gpu_peak=357777408 status=PASS
+sample_index=0 step=step4 cpu_ms=3.51518 gpu_ms=1.11409 relative_l2=9.29687e-08 cpu_heap_peak=7951568 cpu_rss_peak=81563648 gpu_peak=357777408 status=PASS
+sample_index=0 step=step5 cpu_ms=417.021 gpu_ms=6.20259 relative_l2=2.43858e-07 cpu_heap_peak=8477968 cpu_rss_peak=82067456 gpu_peak=357777408 status=PASS
+sample_index=0 cpu_pipeline_ms=733.886 gpu_pipeline_ms=11.6693 cuda_event_aux_sum_ms=6.4243 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=1 total=1 valid=1 boundary=0
+detection_mismatch sample_index=1 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=1 step=step1 cpu_ms=2.42989 gpu_ms=0.932946 relative_l2=2.04338e-06 cpu_heap_peak=7107952 cpu_rss_peak=83697664 gpu_peak=357777408 status=PASS
+sample_index=1 step=step2 cpu_ms=135.54 gpu_ms=1.47927 relative_l2=2.0356e-07 cpu_heap_peak=7370288 cpu_rss_peak=83697664 gpu_peak=357777408 status=PASS
+sample_index=1 step=step3 cpu_ms=173.14 gpu_ms=1.15627 relative_l2=6.99589e-07 cpu_heap_peak=7632592 cpu_rss_peak=83697664 gpu_peak=357777408 status=PASS
+sample_index=1 step=step4 cpu_ms=3.51538 gpu_ms=1.12546 relative_l2=9.29687e-08 cpu_heap_peak=7960560 cpu_rss_peak=83697664 gpu_peak=357777408 status=PASS
+sample_index=1 step=step5 cpu_ms=416.156 gpu_ms=6.1873 relative_l2=2.43858e-07 cpu_heap_peak=8486960 cpu_rss_peak=83697664 gpu_peak=357777408 status=PASS
+sample_index=1 cpu_pipeline_ms=730.982 gpu_pipeline_ms=11.3606 cuda_event_aux_sum_ms=6.46035 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=2 total=1 valid=1 boundary=0
+detection_mismatch sample_index=2 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=2 step=step1 cpu_ms=2.42078 gpu_ms=0.946616 relative_l2=2.04338e-06 cpu_heap_peak=7110384 cpu_rss_peak=83922944 gpu_peak=357777408 status=PASS
+sample_index=2 step=step2 cpu_ms=135.638 gpu_ms=1.48401 relative_l2=2.0356e-07 cpu_heap_peak=7372704 cpu_rss_peak=83922944 gpu_peak=357777408 status=PASS
+sample_index=2 step=step3 cpu_ms=173.017 gpu_ms=1.05945 relative_l2=6.99589e-07 cpu_heap_peak=7635008 cpu_rss_peak=83922944 gpu_peak=357777408 status=PASS
+sample_index=2 step=step4 cpu_ms=3.53122 gpu_ms=1.22435 relative_l2=9.29687e-08 cpu_heap_peak=7962944 cpu_rss_peak=83922944 gpu_peak=357777408 status=PASS
+sample_index=2 step=step5 cpu_ms=415.892 gpu_ms=6.27443 relative_l2=2.43858e-07 cpu_heap_peak=8489392 cpu_rss_peak=83922944 gpu_peak=357777408 status=PASS
+sample_index=2 cpu_pipeline_ms=730.702 gpu_pipeline_ms=11.4765 cuda_event_aux_sum_ms=6.60853 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=3 total=1 valid=1 boundary=0
+detection_mismatch sample_index=3 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=3 step=step1 cpu_ms=2.4304 gpu_ms=0.903616 relative_l2=2.04338e-06 cpu_heap_peak=7113664 cpu_rss_peak=83861504 gpu_peak=357777408 status=PASS
+sample_index=3 step=step2 cpu_ms=135.698 gpu_ms=1.4319 relative_l2=2.0356e-07 cpu_heap_peak=7375920 cpu_rss_peak=83861504 gpu_peak=357777408 status=PASS
+sample_index=3 step=step3 cpu_ms=172.494 gpu_ms=1.0195 relative_l2=6.99589e-07 cpu_heap_peak=7638224 cpu_rss_peak=83861504 gpu_peak=357777408 status=PASS
+sample_index=3 step=step4 cpu_ms=3.52664 gpu_ms=1.08384 relative_l2=9.29687e-08 cpu_heap_peak=7966160 cpu_rss_peak=83861504 gpu_peak=357777408 status=PASS
+sample_index=3 step=step5 cpu_ms=415.903 gpu_ms=6.02867 relative_l2=2.43858e-07 cpu_heap_peak=8492624 cpu_rss_peak=83861504 gpu_peak=357777408 status=PASS
+sample_index=3 cpu_pipeline_ms=730.255 gpu_pipeline_ms=10.9492 cuda_event_aux_sum_ms=6.31909 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=4 total=1 valid=1 boundary=0
+detection_mismatch sample_index=4 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=4 step=step1 cpu_ms=2.43572 gpu_ms=0.930326 relative_l2=2.04338e-06 cpu_heap_peak=7114608 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=4 step=step2 cpu_ms=135.634 gpu_ms=1.43048 relative_l2=2.0356e-07 cpu_heap_peak=7376928 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=4 step=step3 cpu_ms=173 gpu_ms=1.025 relative_l2=6.99589e-07 cpu_heap_peak=7639216 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=4 step=step4 cpu_ms=3.51799 gpu_ms=1.08542 relative_l2=9.29687e-08 cpu_heap_peak=7967184 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=4 step=step5 cpu_ms=415.997 gpu_ms=5.93574 relative_l2=2.43858e-07 cpu_heap_peak=8493584 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=4 cpu_pipeline_ms=730.787 gpu_pipeline_ms=10.9474 cuda_event_aux_sum_ms=6.31067 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=5 total=1 valid=1 boundary=0
+detection_mismatch sample_index=5 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=5 step=step1 cpu_ms=2.4305 gpu_ms=0.896966 relative_l2=2.04338e-06 cpu_heap_peak=7118560 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=5 step=step2 cpu_ms=135.522 gpu_ms=1.42908 relative_l2=2.0356e-07 cpu_heap_peak=7380912 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=5 step=step3 cpu_ms=173.044 gpu_ms=1.05348 relative_l2=6.99589e-07 cpu_heap_peak=7643200 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=5 step=step4 cpu_ms=3.52994 gpu_ms=1.07257 relative_l2=9.29687e-08 cpu_heap_peak=7971184 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=5 step=step5 cpu_ms=416.253 gpu_ms=6.06756 relative_l2=2.43858e-07 cpu_heap_peak=8497600 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=5 cpu_pipeline_ms=730.982 gpu_pipeline_ms=10.9813 cuda_event_aux_sum_ms=6.31669 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=6 total=1 valid=1 boundary=0
+detection_mismatch sample_index=6 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=6 step=step1 cpu_ms=2.41254 gpu_ms=0.928106 relative_l2=2.04338e-06 cpu_heap_peak=7117712 cpu_rss_peak=83861504 gpu_peak=357777408 status=PASS
+sample_index=6 step=step2 cpu_ms=135.476 gpu_ms=1.43847 relative_l2=2.0356e-07 cpu_heap_peak=7380048 cpu_rss_peak=83861504 gpu_peak=357777408 status=PASS
+sample_index=6 step=step3 cpu_ms=172.865 gpu_ms=1.01326 relative_l2=6.99589e-07 cpu_heap_peak=7642304 cpu_rss_peak=83861504 gpu_peak=357777408 status=PASS
+sample_index=6 step=step4 cpu_ms=3.53127 gpu_ms=1.16569 relative_l2=9.29687e-08 cpu_heap_peak=7970288 cpu_rss_peak=83861504 gpu_peak=357777408 status=PASS
+sample_index=6 step=step5 cpu_ms=416.432 gpu_ms=6.08548 relative_l2=2.43858e-07 cpu_heap_peak=8496752 cpu_rss_peak=83861504 gpu_peak=357777408 status=PASS
+sample_index=6 cpu_pipeline_ms=730.919 gpu_pipeline_ms=11.1022 cuda_event_aux_sum_ms=6.39769 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=7 total=1 valid=1 boundary=0
+detection_mismatch sample_index=7 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=7 step=step1 cpu_ms=2.43112 gpu_ms=0.910016 relative_l2=2.04338e-06 cpu_heap_peak=7118624 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=7 step=step2 cpu_ms=146.498 gpu_ms=1.43322 relative_l2=2.0356e-07 cpu_heap_peak=7380912 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=7 step=step3 cpu_ms=173.063 gpu_ms=1.02323 relative_l2=6.99589e-07 cpu_heap_peak=7643200 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=7 step=step4 cpu_ms=3.51991 gpu_ms=1.15006 relative_l2=9.29687e-08 cpu_heap_peak=7971136 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=7 step=step5 cpu_ms=415.796 gpu_ms=6.20039 relative_l2=2.43858e-07 cpu_heap_peak=8497584 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=7 cpu_pipeline_ms=741.511 gpu_pipeline_ms=11.1887 cuda_event_aux_sum_ms=6.46753 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=8 total=1 valid=1 boundary=0
+detection_mismatch sample_index=8 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=8 step=step1 cpu_ms=2.43041 gpu_ms=0.903676 relative_l2=2.04338e-06 cpu_heap_peak=7120944 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=8 step=step2 cpu_ms=135.469 gpu_ms=1.43966 relative_l2=2.0356e-07 cpu_heap_peak=7383248 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=8 step=step3 cpu_ms=173.176 gpu_ms=1.01642 relative_l2=6.99589e-07 cpu_heap_peak=7645536 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=8 step=step4 cpu_ms=3.52653 gpu_ms=1.08039 relative_l2=9.29687e-08 cpu_heap_peak=7973504 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=8 step=step5 cpu_ms=415.956 gpu_ms=6.00263 relative_l2=2.43858e-07 cpu_heap_peak=8499920 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=8 cpu_pipeline_ms=730.76 gpu_pipeline_ms=10.9403 cuda_event_aux_sum_ms=6.30649 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=9 total=1 valid=1 boundary=0
+detection_mismatch sample_index=9 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=9 step=step1 cpu_ms=2.49705 gpu_ms=0.891236 relative_l2=2.04338e-06 cpu_heap_peak=7126864 cpu_rss_peak=83918848 gpu_peak=357777408 status=PASS
+sample_index=9 step=step2 cpu_ms=135.571 gpu_ms=1.42735 relative_l2=2.0356e-07 cpu_heap_peak=7389024 cpu_rss_peak=83918848 gpu_peak=357777408 status=PASS
+sample_index=9 step=step3 cpu_ms=172.858 gpu_ms=1.00645 relative_l2=6.99589e-07 cpu_heap_peak=7651312 cpu_rss_peak=83918848 gpu_peak=357777408 status=PASS
+sample_index=9 step=step4 cpu_ms=3.51907 gpu_ms=1.03209 relative_l2=9.29687e-08 cpu_heap_peak=7979248 cpu_rss_peak=83918848 gpu_peak=357777408 status=PASS
+sample_index=9 step=step5 cpu_ms=416.214 gpu_ms=6.0899 relative_l2=2.43858e-07 cpu_heap_peak=8505696 cpu_rss_peak=83918848 gpu_peak=357777408 status=PASS
+sample_index=9 cpu_pipeline_ms=730.871 gpu_pipeline_ms=10.9039 cuda_event_aux_sum_ms=6.37901 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=10 total=1 valid=1 boundary=0
+detection_mismatch sample_index=10 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=10 step=step1 cpu_ms=2.41323 gpu_ms=0.937596 relative_l2=2.04338e-06 cpu_heap_peak=7126960 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=10 step=step2 cpu_ms=135.485 gpu_ms=1.44263 relative_l2=2.0356e-07 cpu_heap_peak=7389216 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=10 step=step3 cpu_ms=172.988 gpu_ms=1.02032 relative_l2=6.99589e-07 cpu_heap_peak=7651520 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=10 step=step4 cpu_ms=3.5221 gpu_ms=1.0881 relative_l2=9.29687e-08 cpu_heap_peak=7979504 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=10 step=step5 cpu_ms=419.224 gpu_ms=6.10464 relative_l2=2.43858e-07 cpu_heap_peak=8505872 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=10 cpu_pipeline_ms=733.837 gpu_pipeline_ms=11.0854 cuda_event_aux_sum_ms=6.39428 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=11 total=1 valid=1 boundary=0
+detection_mismatch sample_index=11 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=11 step=step1 cpu_ms=2.43301 gpu_ms=0.901065 relative_l2=2.04338e-06 cpu_heap_peak=7127120 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=11 step=step2 cpu_ms=135.501 gpu_ms=1.44117 relative_l2=2.0356e-07 cpu_heap_peak=7389408 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=11 step=step3 cpu_ms=172.96 gpu_ms=1.01474 relative_l2=6.99589e-07 cpu_heap_peak=7651696 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=11 step=step4 cpu_ms=3.53084 gpu_ms=1.093 relative_l2=9.29687e-08 cpu_heap_peak=7979664 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=11 step=step5 cpu_ms=415.733 gpu_ms=6.04296 relative_l2=2.43858e-07 cpu_heap_peak=8506064 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=11 cpu_pipeline_ms=730.359 gpu_pipeline_ms=10.9714 cuda_event_aux_sum_ms=6.32809 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=12 total=1 valid=1 boundary=0
+detection_mismatch sample_index=12 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=12 step=step1 cpu_ms=2.41334 gpu_ms=0.914916 relative_l2=2.04338e-06 cpu_heap_peak=7127008 cpu_rss_peak=83906560 gpu_peak=357777408 status=PASS
+sample_index=12 step=step2 cpu_ms=135.579 gpu_ms=1.42982 relative_l2=2.0356e-07 cpu_heap_peak=7389296 cpu_rss_peak=83906560 gpu_peak=357777408 status=PASS
+sample_index=12 step=step3 cpu_ms=172.927 gpu_ms=1.01104 relative_l2=6.99589e-07 cpu_heap_peak=7651552 cpu_rss_peak=83906560 gpu_peak=357777408 status=PASS
+sample_index=12 step=step4 cpu_ms=3.5321 gpu_ms=1.08661 relative_l2=9.29687e-08 cpu_heap_peak=7979568 cpu_rss_peak=83906560 gpu_peak=357777408 status=PASS
+sample_index=12 step=step5 cpu_ms=416.017 gpu_ms=6.05562 relative_l2=2.43858e-07 cpu_heap_peak=8505968 cpu_rss_peak=83906560 gpu_peak=357777408 status=PASS
+sample_index=12 cpu_pipeline_ms=730.667 gpu_pipeline_ms=10.9663 cuda_event_aux_sum_ms=6.36162 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=13 total=1 valid=1 boundary=0
+detection_mismatch sample_index=13 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=13 step=step1 cpu_ms=2.41542 gpu_ms=0.909756 relative_l2=2.04338e-06 cpu_heap_peak=7127504 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=13 step=step2 cpu_ms=135.761 gpu_ms=1.42317 relative_l2=2.0356e-07 cpu_heap_peak=7389840 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=13 step=step3 cpu_ms=173.261 gpu_ms=1.00831 relative_l2=6.99589e-07 cpu_heap_peak=7652128 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=13 step=step4 cpu_ms=3.51798 gpu_ms=1.07599 relative_l2=9.29687e-08 cpu_heap_peak=7980064 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=13 step=step5 cpu_ms=416.189 gpu_ms=5.98605 relative_l2=2.43858e-07 cpu_heap_peak=8506528 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=13 cpu_pipeline_ms=731.346 gpu_pipeline_ms=10.8642 cuda_event_aux_sum_ms=6.27916 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=14 total=1 valid=1 boundary=0
+detection_mismatch sample_index=14 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=14 step=step1 cpu_ms=2.41181 gpu_ms=0.988246 relative_l2=2.04338e-06 cpu_heap_peak=7127904 cpu_rss_peak=83890176 gpu_peak=357777408 status=PASS
+sample_index=14 step=step2 cpu_ms=135.681 gpu_ms=1.43461 relative_l2=2.0356e-07 cpu_heap_peak=7390224 cpu_rss_peak=83890176 gpu_peak=357777408 status=PASS
+sample_index=14 step=step3 cpu_ms=172.577 gpu_ms=1.01011 relative_l2=6.99589e-07 cpu_heap_peak=7652512 cpu_rss_peak=83890176 gpu_peak=357777408 status=PASS
+sample_index=14 step=step4 cpu_ms=3.51904 gpu_ms=1.08186 relative_l2=9.29687e-08 cpu_heap_peak=7980448 cpu_rss_peak=83890176 gpu_peak=357777408 status=PASS
+sample_index=14 step=step5 cpu_ms=415.908 gpu_ms=5.99459 relative_l2=2.43858e-07 cpu_heap_peak=8506896 cpu_rss_peak=83890176 gpu_peak=357777408 status=PASS
+sample_index=14 cpu_pipeline_ms=730.299 gpu_pipeline_ms=10.9728 cuda_event_aux_sum_ms=6.32292 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=15 total=1 valid=1 boundary=0
+detection_mismatch sample_index=15 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=15 step=step1 cpu_ms=2.41301 gpu_ms=0.920116 relative_l2=2.04338e-06 cpu_heap_peak=7128208 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=15 step=step2 cpu_ms=135.531 gpu_ms=1.42617 relative_l2=2.0356e-07 cpu_heap_peak=7390496 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=15 step=step3 cpu_ms=172.885 gpu_ms=1.0138 relative_l2=6.99589e-07 cpu_heap_peak=7652784 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=15 step=step4 cpu_ms=3.51726 gpu_ms=1.09098 relative_l2=9.29687e-08 cpu_heap_peak=7980768 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=15 step=step5 cpu_ms=423.806 gpu_ms=6.08874 relative_l2=2.43858e-07 cpu_heap_peak=8507168 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=15 cpu_pipeline_ms=738.356 gpu_pipeline_ms=11.0116 cuda_event_aux_sum_ms=6.37391 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=16 total=1 valid=1 boundary=0
+detection_mismatch sample_index=16 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=16 step=step1 cpu_ms=2.4299 gpu_ms=0.908715 relative_l2=2.04338e-06 cpu_heap_peak=7127600 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=16 step=step2 cpu_ms=135.475 gpu_ms=1.42955 relative_l2=2.0356e-07 cpu_heap_peak=7389856 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=16 step=step3 cpu_ms=173.145 gpu_ms=1.01768 relative_l2=6.99589e-07 cpu_heap_peak=7652160 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=16 step=step4 cpu_ms=3.52402 gpu_ms=1.08506 relative_l2=9.29687e-08 cpu_heap_peak=7980144 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=16 step=step5 cpu_ms=416.077 gpu_ms=6.00088 relative_l2=2.43858e-07 cpu_heap_peak=8506512 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=16 cpu_pipeline_ms=730.854 gpu_pipeline_ms=10.9101 cuda_event_aux_sum_ms=6.31963 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=17 total=1 valid=1 boundary=0
+detection_mismatch sample_index=17 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=17 step=step1 cpu_ms=2.42795 gpu_ms=0.907446 relative_l2=2.04338e-06 cpu_heap_peak=7139408 cpu_rss_peak=83894272 gpu_peak=357777408 status=PASS
+sample_index=17 step=step2 cpu_ms=135.591 gpu_ms=1.42886 relative_l2=2.0356e-07 cpu_heap_peak=7401696 cpu_rss_peak=83894272 gpu_peak=357777408 status=PASS
+sample_index=17 step=step3 cpu_ms=172.777 gpu_ms=1.00783 relative_l2=6.99589e-07 cpu_heap_peak=7664032 cpu_rss_peak=83894272 gpu_peak=357777408 status=PASS
+sample_index=17 step=step4 cpu_ms=3.52228 gpu_ms=1.07452 relative_l2=9.29687e-08 cpu_heap_peak=7992016 cpu_rss_peak=83894272 gpu_peak=357777408 status=PASS
+sample_index=17 step=step5 cpu_ms=416.194 gpu_ms=6.03668 relative_l2=2.43858e-07 cpu_heap_peak=8518416 cpu_rss_peak=83894272 gpu_peak=357777408 status=PASS
+sample_index=17 cpu_pipeline_ms=730.716 gpu_pipeline_ms=10.9367 cuda_event_aux_sum_ms=6.34407 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=18 total=1 valid=1 boundary=0
+detection_mismatch sample_index=18 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=18 step=step1 cpu_ms=2.41498 gpu_ms=0.911166 relative_l2=2.04338e-06 cpu_heap_peak=7138016 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=18 step=step2 cpu_ms=135.551 gpu_ms=1.43512 relative_l2=2.0356e-07 cpu_heap_peak=7400240 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=18 step=step3 cpu_ms=173.939 gpu_ms=1.01396 relative_l2=6.99589e-07 cpu_heap_peak=7662528 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=18 step=step4 cpu_ms=3.50925 gpu_ms=1.09241 relative_l2=9.29687e-08 cpu_heap_peak=7990512 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=18 step=step5 cpu_ms=416.141 gpu_ms=5.99594 relative_l2=2.43858e-07 cpu_heap_peak=8516896 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=18 cpu_pipeline_ms=731.764 gpu_pipeline_ms=10.9185 cuda_event_aux_sum_ms=6.31808 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=19 total=1 valid=1 boundary=0
+detection_mismatch sample_index=19 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=19 step=step1 cpu_ms=2.41436 gpu_ms=0.927865 relative_l2=2.04338e-06 cpu_heap_peak=7138400 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=19 step=step2 cpu_ms=135.688 gpu_ms=1.5597 relative_l2=2.0356e-07 cpu_heap_peak=7400624 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=19 step=step3 cpu_ms=172.647 gpu_ms=1.07485 relative_l2=6.99589e-07 cpu_heap_peak=7662912 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=19 step=step4 cpu_ms=3.53376 gpu_ms=1.15063 relative_l2=9.29687e-08 cpu_heap_peak=7990896 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=19 step=step5 cpu_ms=416.176 gpu_ms=6.13418 relative_l2=2.43858e-07 cpu_heap_peak=8517328 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=19 cpu_pipeline_ms=730.663 gpu_pipeline_ms=11.3784 cuda_event_aux_sum_ms=6.45733 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=20 total=1 valid=1 boundary=0
+detection_mismatch sample_index=20 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=20 step=step1 cpu_ms=2.41606 gpu_ms=0.906405 relative_l2=2.04338e-06 cpu_heap_peak=7138432 cpu_rss_peak=83906560 gpu_peak=357777408 status=PASS
+sample_index=20 step=step2 cpu_ms=135.463 gpu_ms=1.44054 relative_l2=2.0356e-07 cpu_heap_peak=7400592 cpu_rss_peak=83906560 gpu_peak=357777408 status=PASS
+sample_index=20 step=step3 cpu_ms=173.038 gpu_ms=1.01051 relative_l2=6.99589e-07 cpu_heap_peak=7662848 cpu_rss_peak=83906560 gpu_peak=357777408 status=PASS
+sample_index=20 step=step4 cpu_ms=3.5254 gpu_ms=1.10062 relative_l2=9.29687e-08 cpu_heap_peak=7990816 cpu_rss_peak=83906560 gpu_peak=357777408 status=PASS
+sample_index=20 step=step5 cpu_ms=416.541 gpu_ms=6.07657 relative_l2=2.43858e-07 cpu_heap_peak=8517232 cpu_rss_peak=83906560 gpu_peak=357777408 status=PASS
+sample_index=20 cpu_pipeline_ms=731.186 gpu_pipeline_ms=11.0082 cuda_event_aux_sum_ms=6.33739 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=21 total=1 valid=1 boundary=0
+detection_mismatch sample_index=21 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=21 step=step1 cpu_ms=2.43227 gpu_ms=0.982856 relative_l2=2.04338e-06 cpu_heap_peak=7139936 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=21 step=step2 cpu_ms=135.589 gpu_ms=1.44205 relative_l2=2.0356e-07 cpu_heap_peak=7402096 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=21 step=step3 cpu_ms=173.108 gpu_ms=1.01185 relative_l2=6.99589e-07 cpu_heap_peak=7664352 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=21 step=step4 cpu_ms=3.5241 gpu_ms=1.08553 relative_l2=9.29687e-08 cpu_heap_peak=7992336 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=21 step=step5 cpu_ms=415.929 gpu_ms=6.02545 relative_l2=2.43858e-07 cpu_heap_peak=8518768 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=21 cpu_pipeline_ms=730.785 gpu_pipeline_ms=11.0204 cuda_event_aux_sum_ms=6.32429 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=22 total=1 valid=1 boundary=0
+detection_mismatch sample_index=22 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=22 step=step1 cpu_ms=2.42612 gpu_ms=0.900056 relative_l2=2.04338e-06 cpu_heap_peak=7140160 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=22 step=step2 cpu_ms=135.643 gpu_ms=1.42448 relative_l2=2.0356e-07 cpu_heap_peak=7402320 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=22 step=step3 cpu_ms=173.439 gpu_ms=1.01456 relative_l2=6.99589e-07 cpu_heap_peak=7664576 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=22 step=step4 cpu_ms=3.53838 gpu_ms=1.14017 relative_l2=9.29687e-08 cpu_heap_peak=7992544 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=22 step=step5 cpu_ms=416.087 gpu_ms=6.0774 relative_l2=2.43858e-07 cpu_heap_peak=8518944 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=22 cpu_pipeline_ms=731.336 gpu_pipeline_ms=11.0435 cuda_event_aux_sum_ms=6.35902 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=23 total=1 valid=1 boundary=0
+detection_mismatch sample_index=23 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=23 step=step1 cpu_ms=2.42726 gpu_ms=0.896466 relative_l2=2.04338e-06 cpu_heap_peak=7139264 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=23 step=step2 cpu_ms=135.646 gpu_ms=1.44445 relative_l2=2.0356e-07 cpu_heap_peak=7401424 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=23 step=step3 cpu_ms=172.627 gpu_ms=1.01314 relative_l2=6.99589e-07 cpu_heap_peak=7663680 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=23 step=step4 cpu_ms=3.52586 gpu_ms=1.07398 relative_l2=9.29687e-08 cpu_heap_peak=7991648 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=23 step=step5 cpu_ms=416.032 gpu_ms=5.99204 relative_l2=2.43858e-07 cpu_heap_peak=8518048 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=23 cpu_pipeline_ms=730.459 gpu_pipeline_ms=10.8789 cuda_event_aux_sum_ms=6.32108 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=24 total=1 valid=1 boundary=0
+detection_mismatch sample_index=24 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=24 step=step1 cpu_ms=2.42985 gpu_ms=0.905846 relative_l2=2.04338e-06 cpu_heap_peak=7139712 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=24 step=step2 cpu_ms=135.531 gpu_ms=1.4572 relative_l2=2.0356e-07 cpu_heap_peak=7401872 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=24 step=step3 cpu_ms=172.859 gpu_ms=1.00963 relative_l2=6.99589e-07 cpu_heap_peak=7664160 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=24 step=step4 cpu_ms=3.52204 gpu_ms=1.08556 relative_l2=9.29687e-08 cpu_heap_peak=7992096 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=24 step=step5 cpu_ms=415.926 gpu_ms=6.07073 relative_l2=2.43858e-07 cpu_heap_peak=8518496 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=24 cpu_pipeline_ms=730.471 gpu_pipeline_ms=11.0052 cuda_event_aux_sum_ms=6.34588 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=25 total=1 valid=1 boundary=0
+detection_mismatch sample_index=25 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=25 step=step1 cpu_ms=2.43036 gpu_ms=0.900816 relative_l2=2.04338e-06 cpu_heap_peak=7139760 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=25 step=step2 cpu_ms=135.742 gpu_ms=1.43766 relative_l2=2.0356e-07 cpu_heap_peak=7401920 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=25 step=step3 cpu_ms=173.274 gpu_ms=1.01245 relative_l2=6.99589e-07 cpu_heap_peak=7664272 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=25 step=step4 cpu_ms=3.53035 gpu_ms=1.07237 relative_l2=9.29687e-08 cpu_heap_peak=7992144 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=25 step=step5 cpu_ms=416.28 gpu_ms=6.02209 relative_l2=2.43858e-07 cpu_heap_peak=8518544 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=25 cpu_pipeline_ms=731.457 gpu_pipeline_ms=10.9115 cuda_event_aux_sum_ms=6.30759 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=26 total=1 valid=1 boundary=0
+detection_mismatch sample_index=26 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=26 step=step1 cpu_ms=2.43116 gpu_ms=0.900246 relative_l2=2.04338e-06 cpu_heap_peak=7139552 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=26 step=step2 cpu_ms=135.451 gpu_ms=1.43144 relative_l2=2.0356e-07 cpu_heap_peak=7401712 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=26 step=step3 cpu_ms=173.007 gpu_ms=1.03592 relative_l2=6.99589e-07 cpu_heap_peak=7664128 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=26 step=step4 cpu_ms=3.51697 gpu_ms=1.08933 relative_l2=9.29687e-08 cpu_heap_peak=7991936 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=26 step=step5 cpu_ms=415.974 gpu_ms=6.0414 relative_l2=2.43858e-07 cpu_heap_peak=8518336 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=26 cpu_pipeline_ms=730.579 gpu_pipeline_ms=10.979 cuda_event_aux_sum_ms=6.34177 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=27 total=1 valid=1 boundary=0
+detection_mismatch sample_index=27 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=27 step=step1 cpu_ms=2.51453 gpu_ms=0.927475 relative_l2=2.04338e-06 cpu_heap_peak=7139744 cpu_rss_peak=83849216 gpu_peak=357777408 status=PASS
+sample_index=27 step=step2 cpu_ms=137.828 gpu_ms=1.43268 relative_l2=2.0356e-07 cpu_heap_peak=7401904 cpu_rss_peak=83849216 gpu_peak=357777408 status=PASS
+sample_index=27 step=step3 cpu_ms=172.874 gpu_ms=1.01193 relative_l2=6.99589e-07 cpu_heap_peak=7664320 cpu_rss_peak=83849216 gpu_peak=357777408 status=PASS
+sample_index=27 step=step4 cpu_ms=3.5274 gpu_ms=1.03422 relative_l2=9.29687e-08 cpu_heap_peak=7992128 cpu_rss_peak=83849216 gpu_peak=357777408 status=PASS
+sample_index=27 step=step5 cpu_ms=415.975 gpu_ms=6.02214 relative_l2=2.43858e-07 cpu_heap_peak=8518544 cpu_rss_peak=83849216 gpu_peak=357777408 status=PASS
+sample_index=27 cpu_pipeline_ms=732.919 gpu_pipeline_ms=10.891 cuda_event_aux_sum_ms=6.33157 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=28 total=1 valid=1 boundary=0
+detection_mismatch sample_index=28 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=28 step=step1 cpu_ms=2.41509 gpu_ms=0.904605 relative_l2=2.04338e-06 cpu_heap_peak=7140368 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=28 step=step2 cpu_ms=135.623 gpu_ms=1.42439 relative_l2=2.0356e-07 cpu_heap_peak=7402528 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=28 step=step3 cpu_ms=172.822 gpu_ms=1.01191 relative_l2=6.99589e-07 cpu_heap_peak=7664784 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=28 step=step4 cpu_ms=3.52545 gpu_ms=1.04639 relative_l2=9.29687e-08 cpu_heap_peak=7992752 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=28 step=step5 cpu_ms=416.063 gpu_ms=6.01287 relative_l2=2.43858e-07 cpu_heap_peak=8519152 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=28 cpu_pipeline_ms=730.663 gpu_pipeline_ms=10.862 cuda_event_aux_sum_ms=6.30324 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=29 total=1 valid=1 boundary=0
+detection_mismatch sample_index=29 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=29 step=step1 cpu_ms=2.41517 gpu_ms=0.903985 relative_l2=2.04338e-06 cpu_heap_peak=7141776 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=29 step=step2 cpu_ms=135.584 gpu_ms=1.43616 relative_l2=2.0356e-07 cpu_heap_peak=7403936 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=29 step=step3 cpu_ms=172.992 gpu_ms=1.01367 relative_l2=6.99589e-07 cpu_heap_peak=7666352 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=29 step=step4 cpu_ms=3.54225 gpu_ms=1.08276 relative_l2=9.29687e-08 cpu_heap_peak=7994128 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=29 step=step5 cpu_ms=415.899 gpu_ms=6.00505 relative_l2=2.43858e-07 cpu_heap_peak=8520576 cpu_rss_peak=83910656 gpu_peak=357777408 status=PASS
+sample_index=29 cpu_pipeline_ms=730.633 gpu_pipeline_ms=10.9199 cuda_event_aux_sum_ms=6.30696 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=30 total=1 valid=1 boundary=0
+detection_mismatch sample_index=30 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=30 step=step1 cpu_ms=2.42462 gpu_ms=0.899246 relative_l2=2.04338e-06 cpu_heap_peak=7141408 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=30 step=step2 cpu_ms=135.499 gpu_ms=1.42854 relative_l2=2.0356e-07 cpu_heap_peak=7403568 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=30 step=step3 cpu_ms=172.92 gpu_ms=1.02419 relative_l2=6.99589e-07 cpu_heap_peak=7665952 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=30 step=step4 cpu_ms=3.54075 gpu_ms=1.0779 relative_l2=9.29687e-08 cpu_heap_peak=7993808 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=30 step=step5 cpu_ms=415.89 gpu_ms=5.95348 relative_l2=2.43858e-07 cpu_heap_peak=8520240 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=30 cpu_pipeline_ms=730.472 gpu_pipeline_ms=10.8446 cuda_event_aux_sum_ms=6.2819 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=31 total=1 valid=1 boundary=0
+detection_mismatch sample_index=31 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=31 step=step1 cpu_ms=2.42726 gpu_ms=0.907866 relative_l2=2.04338e-06 cpu_heap_peak=7141984 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=31 step=step2 cpu_ms=135.563 gpu_ms=1.44706 relative_l2=2.0356e-07 cpu_heap_peak=7404144 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=31 step=step3 cpu_ms=172.888 gpu_ms=1.01392 relative_l2=6.99589e-07 cpu_heap_peak=7666560 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=31 step=step4 cpu_ms=3.53924 gpu_ms=1.09258 relative_l2=9.29687e-08 cpu_heap_peak=7994400 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=31 step=step5 cpu_ms=415.751 gpu_ms=6.02828 relative_l2=2.43858e-07 cpu_heap_peak=8520768 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=31 cpu_pipeline_ms=730.366 gpu_pipeline_ms=10.9673 cuda_event_aux_sum_ms=6.31771 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=32 total=1 valid=1 boundary=0
+detection_mismatch sample_index=32 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=32 step=step1 cpu_ms=2.41528 gpu_ms=0.905936 relative_l2=2.04338e-06 cpu_heap_peak=7141824 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=32 step=step2 cpu_ms=135.505 gpu_ms=1.42306 relative_l2=2.0356e-07 cpu_heap_peak=7403984 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=32 step=step3 cpu_ms=172.972 gpu_ms=1.00994 relative_l2=6.99589e-07 cpu_heap_peak=7666400 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=32 step=step4 cpu_ms=3.53447 gpu_ms=1.07307 relative_l2=9.29687e-08 cpu_heap_peak=7994272 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=32 step=step5 cpu_ms=416.135 gpu_ms=6.07747 relative_l2=2.43858e-07 cpu_heap_peak=8520640 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=32 cpu_pipeline_ms=730.763 gpu_pipeline_ms=10.9477 cuda_event_aux_sum_ms=6.3633 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=33 total=1 valid=1 boundary=0
+detection_mismatch sample_index=33 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=33 step=step1 cpu_ms=2.43486 gpu_ms=0.916505 relative_l2=2.04338e-06 cpu_heap_peak=7164640 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=33 step=step2 cpu_ms=135.646 gpu_ms=1.48219 relative_l2=2.0356e-07 cpu_heap_peak=7426800 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=33 step=step3 cpu_ms=173.887 gpu_ms=1.01452 relative_l2=6.99589e-07 cpu_heap_peak=7689216 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=33 step=step4 cpu_ms=3.52957 gpu_ms=1.12944 relative_l2=9.29687e-08 cpu_heap_peak=8017024 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=33 step=step5 cpu_ms=415.991 gpu_ms=6.1236 relative_l2=2.43858e-07 cpu_heap_peak=8543440 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=33 cpu_pipeline_ms=731.692 gpu_pipeline_ms=11.1376 cuda_event_aux_sum_ms=6.45012 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=34 total=1 valid=1 boundary=0
+detection_mismatch sample_index=34 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=34 step=step1 cpu_ms=2.43322 gpu_ms=0.902516 relative_l2=2.04338e-06 cpu_heap_peak=7164992 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=34 step=step2 cpu_ms=135.555 gpu_ms=1.45614 relative_l2=2.0356e-07 cpu_heap_peak=7427152 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=34 step=step3 cpu_ms=172.966 gpu_ms=1.09555 relative_l2=6.99589e-07 cpu_heap_peak=7689568 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=34 step=step4 cpu_ms=3.53409 gpu_ms=1.09667 relative_l2=9.29687e-08 cpu_heap_peak=8017472 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=34 step=step5 cpu_ms=424.326 gpu_ms=6.12776 relative_l2=2.43858e-07 cpu_heap_peak=8543840 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=34 cpu_pipeline_ms=739.014 gpu_pipeline_ms=11.1513 cuda_event_aux_sum_ms=6.50056 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=35 total=1 valid=1 boundary=0
+detection_mismatch sample_index=35 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=35 step=step1 cpu_ms=2.41597 gpu_ms=0.898846 relative_l2=2.04338e-06 cpu_heap_peak=7164384 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=35 step=step2 cpu_ms=135.606 gpu_ms=1.44576 relative_l2=2.0356e-07 cpu_heap_peak=7426544 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=35 step=step3 cpu_ms=173.167 gpu_ms=1.01399 relative_l2=6.99589e-07 cpu_heap_peak=7688960 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=35 step=step4 cpu_ms=3.52736 gpu_ms=1.10174 relative_l2=9.29687e-08 cpu_heap_peak=8016864 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=35 step=step5 cpu_ms=426.411 gpu_ms=6.01552 relative_l2=2.43858e-07 cpu_heap_peak=8543232 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=35 cpu_pipeline_ms=741.331 gpu_pipeline_ms=10.9472 cuda_event_aux_sum_ms=6.29015 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=36 total=1 valid=1 boundary=0
+detection_mismatch sample_index=36 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=36 step=step1 cpu_ms=2.4132 gpu_ms=0.926946 relative_l2=2.04338e-06 cpu_heap_peak=7166064 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=36 step=step2 cpu_ms=138.314 gpu_ms=1.42734 relative_l2=2.0356e-07 cpu_heap_peak=7428224 cpu_rss_peak=83914752 gpu_peak=357777408 status=PASS
+sample_index=36 step=step3 cpu_ms=172.952 gpu_ms=1.01566 relative_l2=6.99589e-07 cpu_heap_peak=7690640 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=36 step=step4 cpu_ms=3.52905 gpu_ms=1.08088 relative_l2=9.29687e-08 cpu_heap_peak=8018512 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=36 step=step5 cpu_ms=416.277 gpu_ms=6.03104 relative_l2=2.43858e-07 cpu_heap_peak=8544896 cpu_rss_peak=84062208 gpu_peak=357777408 status=PASS
+sample_index=36 cpu_pipeline_ms=733.689 gpu_pipeline_ms=10.9448 cuda_event_aux_sum_ms=6.33846 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=37 total=1 valid=1 boundary=0
+detection_mismatch sample_index=37 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=37 step=step1 cpu_ms=2.5109 gpu_ms=0.893586 relative_l2=2.04338e-06 cpu_heap_peak=7165472 cpu_rss_peak=83996672 gpu_peak=357777408 status=PASS
+sample_index=37 step=step2 cpu_ms=135.591 gpu_ms=1.42732 relative_l2=2.0356e-07 cpu_heap_peak=7427632 cpu_rss_peak=83996672 gpu_peak=357777408 status=PASS
+sample_index=37 step=step3 cpu_ms=172.944 gpu_ms=1.0091 relative_l2=6.99589e-07 cpu_heap_peak=7690048 cpu_rss_peak=83996672 gpu_peak=357777408 status=PASS
+sample_index=37 step=step4 cpu_ms=3.52339 gpu_ms=1.08015 relative_l2=9.29687e-08 cpu_heap_peak=8017952 cpu_rss_peak=83996672 gpu_peak=357777408 status=PASS
+sample_index=37 step=step5 cpu_ms=415.946 gpu_ms=6.03202 relative_l2=2.43858e-07 cpu_heap_peak=8544336 cpu_rss_peak=83996672 gpu_peak=357777408 status=PASS
+sample_index=37 cpu_pipeline_ms=730.716 gpu_pipeline_ms=10.9577 cuda_event_aux_sum_ms=6.32794 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=38 total=1 valid=1 boundary=0
+detection_mismatch sample_index=38 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=38 step=step1 cpu_ms=2.41115 gpu_ms=0.893985 relative_l2=2.04338e-06 cpu_heap_peak=7165856 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=38 step=step2 cpu_ms=135.587 gpu_ms=1.42514 relative_l2=2.0356e-07 cpu_heap_peak=7428016 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=38 step=step3 cpu_ms=173.015 gpu_ms=1.02132 relative_l2=6.99589e-07 cpu_heap_peak=7690432 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=38 step=step4 cpu_ms=3.52251 gpu_ms=1.0713 relative_l2=9.29687e-08 cpu_heap_peak=8018336 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=38 step=step5 cpu_ms=432.358 gpu_ms=5.97958 relative_l2=2.43858e-07 cpu_heap_peak=8544704 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=38 cpu_pipeline_ms=747.097 gpu_pipeline_ms=10.8471 cuda_event_aux_sum_ms=6.26329 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=39 total=1 valid=1 boundary=0
+detection_mismatch sample_index=39 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=39 step=step1 cpu_ms=2.42952 gpu_ms=0.899556 relative_l2=2.04338e-06 cpu_heap_peak=7165648 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=39 step=step2 cpu_ms=135.779 gpu_ms=1.43449 relative_l2=2.0356e-07 cpu_heap_peak=7427808 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=39 step=step3 cpu_ms=172.484 gpu_ms=1.00831 relative_l2=6.99589e-07 cpu_heap_peak=7690224 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=39 step=step4 cpu_ms=3.53457 gpu_ms=1.06923 relative_l2=9.29687e-08 cpu_heap_peak=8018128 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=39 step=step5 cpu_ms=416.27 gpu_ms=5.94667 relative_l2=2.43858e-07 cpu_heap_peak=8544496 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=39 cpu_pipeline_ms=730.698 gpu_pipeline_ms=10.8117 cuda_event_aux_sum_ms=6.2613 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=40 total=1 valid=1 boundary=0
+detection_mismatch sample_index=40 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=40 step=step1 cpu_ms=2.43422 gpu_ms=0.892705 relative_l2=2.04338e-06 cpu_heap_peak=7165424 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=40 step=step2 cpu_ms=135.446 gpu_ms=1.42603 relative_l2=2.0356e-07 cpu_heap_peak=7427584 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=40 step=step3 cpu_ms=172.683 gpu_ms=1.02188 relative_l2=6.99589e-07 cpu_heap_peak=7690000 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=40 step=step4 cpu_ms=3.53033 gpu_ms=1.05878 relative_l2=9.29687e-08 cpu_heap_peak=8017904 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=40 step=step5 cpu_ms=415.798 gpu_ms=5.9772 relative_l2=2.43858e-07 cpu_heap_peak=8544272 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=40 cpu_pipeline_ms=730.09 gpu_pipeline_ms=10.8355 cuda_event_aux_sum_ms=6.26932 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=41 total=1 valid=1 boundary=0
+detection_mismatch sample_index=41 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=41 step=step1 cpu_ms=2.42766 gpu_ms=0.900156 relative_l2=2.04338e-06 cpu_heap_peak=7166352 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=41 step=step2 cpu_ms=135.739 gpu_ms=1.43666 relative_l2=2.0356e-07 cpu_heap_peak=7428512 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=41 step=step3 cpu_ms=172.657 gpu_ms=1.02054 relative_l2=6.99589e-07 cpu_heap_peak=7690928 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=41 step=step4 cpu_ms=3.52838 gpu_ms=1.06972 relative_l2=9.29687e-08 cpu_heap_peak=8018832 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=41 step=step5 cpu_ms=415.874 gpu_ms=6.03079 relative_l2=2.43858e-07 cpu_heap_peak=8545200 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=41 cpu_pipeline_ms=730.424 gpu_pipeline_ms=10.9299 cuda_event_aux_sum_ms=6.31664 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=42 total=1 valid=1 boundary=0
+detection_mismatch sample_index=42 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=42 step=step1 cpu_ms=2.43072 gpu_ms=0.911906 relative_l2=2.04338e-06 cpu_heap_peak=7166112 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=42 step=step2 cpu_ms=136.005 gpu_ms=1.42745 relative_l2=2.0356e-07 cpu_heap_peak=7428272 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=42 step=step3 cpu_ms=173.167 gpu_ms=1.01714 relative_l2=6.99589e-07 cpu_heap_peak=7690688 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=42 step=step4 cpu_ms=3.53256 gpu_ms=1.08441 relative_l2=9.29687e-08 cpu_heap_peak=8018592 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=42 step=step5 cpu_ms=416.461 gpu_ms=5.98346 relative_l2=2.43858e-07 cpu_heap_peak=8544960 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=42 cpu_pipeline_ms=731.795 gpu_pipeline_ms=10.8833 cuda_event_aux_sum_ms=6.29306 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=43 total=1 valid=1 boundary=0
+detection_mismatch sample_index=43 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=43 step=step1 cpu_ms=2.42887 gpu_ms=0.937916 relative_l2=2.04338e-06 cpu_heap_peak=7166192 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=43 step=step2 cpu_ms=135.546 gpu_ms=1.42785 relative_l2=2.0356e-07 cpu_heap_peak=7428352 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=43 step=step3 cpu_ms=172.749 gpu_ms=1.01505 relative_l2=6.99589e-07 cpu_heap_peak=7690768 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=43 step=step4 cpu_ms=3.52796 gpu_ms=1.06845 relative_l2=9.29687e-08 cpu_heap_peak=8018672 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=43 step=step5 cpu_ms=423.905 gpu_ms=6.04155 relative_l2=2.43858e-07 cpu_heap_peak=8545040 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=43 cpu_pipeline_ms=738.356 gpu_pipeline_ms=10.9756 cuda_event_aux_sum_ms=6.29879 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=44 total=1 valid=1 boundary=0
+detection_mismatch sample_index=44 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=44 step=step1 cpu_ms=2.41228 gpu_ms=0.918456 relative_l2=2.04338e-06 cpu_heap_peak=7165776 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=44 step=step2 cpu_ms=135.54 gpu_ms=1.42668 relative_l2=2.0356e-07 cpu_heap_peak=7427936 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=44 step=step3 cpu_ms=173.134 gpu_ms=1.00796 relative_l2=6.99589e-07 cpu_heap_peak=7690352 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=44 step=step4 cpu_ms=3.52823 gpu_ms=1.09289 relative_l2=9.29687e-08 cpu_heap_peak=8018256 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=44 step=step5 cpu_ms=415.899 gpu_ms=6.11589 relative_l2=2.43858e-07 cpu_heap_peak=8544624 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=44 cpu_pipeline_ms=730.711 gpu_pipeline_ms=11.0255 cuda_event_aux_sum_ms=6.40589 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=45 total=1 valid=1 boundary=0
+detection_mismatch sample_index=45 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=45 step=step1 cpu_ms=2.42805 gpu_ms=0.909395 relative_l2=2.04338e-06 cpu_heap_peak=7165856 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=45 step=step2 cpu_ms=135.557 gpu_ms=1.42431 relative_l2=2.0356e-07 cpu_heap_peak=7428016 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=45 step=step3 cpu_ms=172.801 gpu_ms=1.01833 relative_l2=6.99589e-07 cpu_heap_peak=7690432 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=45 step=step4 cpu_ms=3.5261 gpu_ms=1.07669 relative_l2=9.29687e-08 cpu_heap_peak=8018336 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=45 step=step5 cpu_ms=415.878 gpu_ms=5.98224 relative_l2=2.43858e-07 cpu_heap_peak=8544704 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=45 cpu_pipeline_ms=730.389 gpu_pipeline_ms=10.8753 cuda_event_aux_sum_ms=6.29157 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=46 total=1 valid=1 boundary=0
+detection_mismatch sample_index=46 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=46 step=step1 cpu_ms=2.42097 gpu_ms=0.908446 relative_l2=2.04338e-06 cpu_heap_peak=7166832 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=46 step=step2 cpu_ms=135.564 gpu_ms=1.43946 relative_l2=2.0356e-07 cpu_heap_peak=7428992 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=46 step=step3 cpu_ms=172.941 gpu_ms=1.01506 relative_l2=6.99589e-07 cpu_heap_peak=7691408 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=46 step=step4 cpu_ms=3.52688 gpu_ms=4.72232 relative_l2=9.29687e-08 cpu_heap_peak=8019312 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=46 step=step5 cpu_ms=416.255 gpu_ms=6.35906 relative_l2=2.43858e-07 cpu_heap_peak=8545680 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=46 cpu_pipeline_ms=730.906 gpu_pipeline_ms=16.1193 cuda_event_aux_sum_ms=6.68844 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=47 total=1 valid=1 boundary=0
+detection_mismatch sample_index=47 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=47 step=step1 cpu_ms=2.4272 gpu_ms=0.903226 relative_l2=2.04338e-06 cpu_heap_peak=7165856 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=47 step=step2 cpu_ms=135.622 gpu_ms=1.45107 relative_l2=2.0356e-07 cpu_heap_peak=7428016 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=47 step=step3 cpu_ms=173.129 gpu_ms=1.01436 relative_l2=6.99589e-07 cpu_heap_peak=7690432 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=47 step=step4 cpu_ms=3.51862 gpu_ms=1.08242 relative_l2=9.29687e-08 cpu_heap_peak=8018336 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=47 step=step5 cpu_ms=415.885 gpu_ms=6.02195 relative_l2=2.43858e-07 cpu_heap_peak=8544704 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=47 cpu_pipeline_ms=730.78 gpu_pipeline_ms=11.0047 cuda_event_aux_sum_ms=6.33781 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=48 total=1 valid=1 boundary=0
+detection_mismatch sample_index=48 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=48 step=step1 cpu_ms=2.43033 gpu_ms=0.910036 relative_l2=2.04338e-06 cpu_heap_peak=7166592 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=48 step=step2 cpu_ms=135.562 gpu_ms=1.42062 relative_l2=2.0356e-07 cpu_heap_peak=7428752 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=48 step=step3 cpu_ms=172.864 gpu_ms=1.00854 relative_l2=6.99589e-07 cpu_heap_peak=7691168 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=48 step=step4 cpu_ms=3.52514 gpu_ms=1.10183 relative_l2=9.29687e-08 cpu_heap_peak=8019072 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=48 step=step5 cpu_ms=415.808 gpu_ms=6.0002 relative_l2=2.43858e-07 cpu_heap_peak=8545440 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=48 cpu_pipeline_ms=730.401 gpu_pipeline_ms=10.9011 cuda_event_aux_sum_ms=6.30929 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=49 total=1 valid=1 boundary=0
+detection_mismatch sample_index=49 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=49 step=step1 cpu_ms=2.41406 gpu_ms=0.929106 relative_l2=2.04338e-06 cpu_heap_peak=7166784 cpu_rss_peak=84135936 gpu_peak=357777408 status=PASS
+sample_index=49 step=step2 cpu_ms=135.641 gpu_ms=1.43586 relative_l2=2.0356e-07 cpu_heap_peak=7428944 cpu_rss_peak=84135936 gpu_peak=357777408 status=PASS
+sample_index=49 step=step3 cpu_ms=172.795 gpu_ms=1.02715 relative_l2=6.99589e-07 cpu_heap_peak=7691360 cpu_rss_peak=84135936 gpu_peak=357777408 status=PASS
+sample_index=49 step=step4 cpu_ms=3.52509 gpu_ms=1.08207 relative_l2=9.29687e-08 cpu_heap_peak=8019264 cpu_rss_peak=84135936 gpu_peak=357777408 status=PASS
+sample_index=49 step=step5 cpu_ms=420.859 gpu_ms=5.99087 relative_l2=2.43858e-07 cpu_heap_peak=8545648 cpu_rss_peak=84135936 gpu_peak=357777408 status=PASS
+sample_index=49 cpu_pipeline_ms=735.435 gpu_pipeline_ms=10.9302 cuda_event_aux_sum_ms=6.29965 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=50 total=1 valid=1 boundary=0
+detection_mismatch sample_index=50 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=50 step=step1 cpu_ms=2.42556 gpu_ms=0.888146 relative_l2=2.04338e-06 cpu_heap_peak=7167184 cpu_rss_peak=83963904 gpu_peak=357777408 status=PASS
+sample_index=50 step=step2 cpu_ms=135.525 gpu_ms=1.43075 relative_l2=2.0356e-07 cpu_heap_peak=7429344 cpu_rss_peak=83963904 gpu_peak=357777408 status=PASS
+sample_index=50 step=step3 cpu_ms=172.956 gpu_ms=1.02409 relative_l2=6.99589e-07 cpu_heap_peak=7691760 cpu_rss_peak=83963904 gpu_peak=357777408 status=PASS
+sample_index=50 step=step4 cpu_ms=3.5238 gpu_ms=1.07854 relative_l2=9.29687e-08 cpu_heap_peak=8019664 cpu_rss_peak=83963904 gpu_peak=357777408 status=PASS
+sample_index=50 step=step5 cpu_ms=415.806 gpu_ms=6.09562 relative_l2=2.43858e-07 cpu_heap_peak=8546032 cpu_rss_peak=83963904 gpu_peak=357777408 status=PASS
+sample_index=50 cpu_pipeline_ms=730.435 gpu_pipeline_ms=10.9798 cuda_event_aux_sum_ms=6.38842 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=51 total=1 valid=1 boundary=0
+detection_mismatch sample_index=51 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=51 step=step1 cpu_ms=2.42773 gpu_ms=0.898896 relative_l2=2.04338e-06 cpu_heap_peak=7167360 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=51 step=step2 cpu_ms=135.552 gpu_ms=1.45453 relative_l2=2.0356e-07 cpu_heap_peak=7429520 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=51 step=step3 cpu_ms=172.734 gpu_ms=1.01331 relative_l2=6.99589e-07 cpu_heap_peak=7691936 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=51 step=step4 cpu_ms=3.53437 gpu_ms=1.07931 relative_l2=9.29687e-08 cpu_heap_peak=8019840 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=51 step=step5 cpu_ms=416.064 gpu_ms=6.00916 relative_l2=2.43858e-07 cpu_heap_peak=8546208 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=51 cpu_pipeline_ms=730.515 gpu_pipeline_ms=10.9243 cuda_event_aux_sum_ms=6.30788 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=52 total=1 valid=1 boundary=0
+detection_mismatch sample_index=52 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=52 step=step1 cpu_ms=2.41639 gpu_ms=0.903136 relative_l2=2.04338e-06 cpu_heap_peak=7167600 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=52 step=step2 cpu_ms=135.5 gpu_ms=1.43313 relative_l2=2.0356e-07 cpu_heap_peak=7429760 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=52 step=step3 cpu_ms=172.97 gpu_ms=1.00599 relative_l2=6.99589e-07 cpu_heap_peak=7692176 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=52 step=step4 cpu_ms=3.52106 gpu_ms=1.08593 relative_l2=9.29687e-08 cpu_heap_peak=8020080 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=52 step=step5 cpu_ms=415.948 gpu_ms=5.98964 relative_l2=2.43858e-07 cpu_heap_peak=8546448 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=52 cpu_pipeline_ms=730.553 gpu_pipeline_ms=10.872 cuda_event_aux_sum_ms=6.29445 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=53 total=1 valid=1 boundary=0
+detection_mismatch sample_index=53 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=53 step=step1 cpu_ms=2.43009 gpu_ms=0.950746 relative_l2=2.04338e-06 cpu_heap_peak=7169424 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=53 step=step2 cpu_ms=136.094 gpu_ms=1.44102 relative_l2=2.0356e-07 cpu_heap_peak=7431584 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=53 step=step3 cpu_ms=174.113 gpu_ms=1.00999 relative_l2=6.99589e-07 cpu_heap_peak=7694000 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=53 step=step4 cpu_ms=3.5247 gpu_ms=1.0698 relative_l2=9.29687e-08 cpu_heap_peak=8021904 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=53 step=step5 cpu_ms=418.034 gpu_ms=6.02778 relative_l2=2.43858e-07 cpu_heap_peak=8548272 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=53 cpu_pipeline_ms=734.399 gpu_pipeline_ms=10.9552 cuda_event_aux_sum_ms=6.30618 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=54 total=1 valid=1 boundary=0
+detection_mismatch sample_index=54 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=54 step=step1 cpu_ms=2.4137 gpu_ms=0.827246 relative_l2=2.04338e-06 cpu_heap_peak=7168736 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=54 step=step2 cpu_ms=135.603 gpu_ms=1.42887 relative_l2=2.0356e-07 cpu_heap_peak=7430896 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=54 step=step3 cpu_ms=172.972 gpu_ms=1.00843 relative_l2=6.99589e-07 cpu_heap_peak=7693312 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=54 step=step4 cpu_ms=3.51869 gpu_ms=1.08465 relative_l2=9.29687e-08 cpu_heap_peak=8021216 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=54 step=step5 cpu_ms=415.808 gpu_ms=6.00362 relative_l2=2.43858e-07 cpu_heap_peak=8547584 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=54 cpu_pipeline_ms=730.513 gpu_pipeline_ms=10.8114 cuda_event_aux_sum_ms=6.29478 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=55 total=1 valid=1 boundary=0
+detection_mismatch sample_index=55 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=55 step=step1 cpu_ms=2.42585 gpu_ms=0.898436 relative_l2=2.04338e-06 cpu_heap_peak=7168368 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=55 step=step2 cpu_ms=135.599 gpu_ms=1.49042 relative_l2=2.0356e-07 cpu_heap_peak=7430528 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=55 step=step3 cpu_ms=172.952 gpu_ms=1.01172 relative_l2=6.99589e-07 cpu_heap_peak=7692944 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=55 step=step4 cpu_ms=3.53691 gpu_ms=1.08615 relative_l2=9.29687e-08 cpu_heap_peak=8020848 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=55 step=step5 cpu_ms=415.999 gpu_ms=6.09365 relative_l2=2.43858e-07 cpu_heap_peak=8547216 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=55 cpu_pipeline_ms=730.712 gpu_pipeline_ms=11.0469 cuda_event_aux_sum_ms=6.37475 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=56 total=1 valid=1 boundary=0
+detection_mismatch sample_index=56 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=56 step=step1 cpu_ms=2.42194 gpu_ms=0.904916 relative_l2=2.04338e-06 cpu_heap_peak=7168240 cpu_rss_peak=83980288 gpu_peak=357777408 status=PASS
+sample_index=56 step=step2 cpu_ms=135.456 gpu_ms=1.43071 relative_l2=2.0356e-07 cpu_heap_peak=7430400 cpu_rss_peak=83980288 gpu_peak=357777408 status=PASS
+sample_index=56 step=step3 cpu_ms=172.949 gpu_ms=1.01172 relative_l2=6.99589e-07 cpu_heap_peak=7692816 cpu_rss_peak=83980288 gpu_peak=357777408 status=PASS
+sample_index=56 step=step4 cpu_ms=3.56422 gpu_ms=1.11705 relative_l2=9.29687e-08 cpu_heap_peak=8020720 cpu_rss_peak=83980288 gpu_peak=357777408 status=PASS
+sample_index=56 step=step5 cpu_ms=415.597 gpu_ms=6.08158 relative_l2=2.43858e-07 cpu_heap_peak=8547088 cpu_rss_peak=83980288 gpu_peak=357777408 status=PASS
+sample_index=56 cpu_pipeline_ms=730.188 gpu_pipeline_ms=11.011 cuda_event_aux_sum_ms=6.41686 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=57 total=1 valid=1 boundary=0
+detection_mismatch sample_index=57 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=57 step=step1 cpu_ms=2.41316 gpu_ms=0.894886 relative_l2=2.04338e-06 cpu_heap_peak=7168608 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=57 step=step2 cpu_ms=135.779 gpu_ms=1.42503 relative_l2=2.0356e-07 cpu_heap_peak=7430768 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=57 step=step3 cpu_ms=172.603 gpu_ms=1.01073 relative_l2=6.99589e-07 cpu_heap_peak=7693184 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=57 step=step4 cpu_ms=3.52653 gpu_ms=1.07981 relative_l2=9.29687e-08 cpu_heap_peak=8021088 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=57 step=step5 cpu_ms=415.808 gpu_ms=6.01475 relative_l2=2.43858e-07 cpu_heap_peak=8547456 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=57 cpu_pipeline_ms=730.33 gpu_pipeline_ms=10.8903 cuda_event_aux_sum_ms=6.31673 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=58 total=1 valid=1 boundary=0
+detection_mismatch sample_index=58 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=58 step=step1 cpu_ms=2.42075 gpu_ms=0.906496 relative_l2=2.04338e-06 cpu_heap_peak=7168704 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=58 step=step2 cpu_ms=135.421 gpu_ms=1.43397 relative_l2=2.0356e-07 cpu_heap_peak=7430864 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=58 step=step3 cpu_ms=173.132 gpu_ms=1.00636 relative_l2=6.99589e-07 cpu_heap_peak=7693280 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=58 step=step4 cpu_ms=3.52292 gpu_ms=1.07918 relative_l2=9.29687e-08 cpu_heap_peak=8021184 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=58 step=step5 cpu_ms=422.32 gpu_ms=6.00533 relative_l2=2.43858e-07 cpu_heap_peak=8547552 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=58 cpu_pipeline_ms=737.018 gpu_pipeline_ms=10.9028 cuda_event_aux_sum_ms=6.29548 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=59 total=1 valid=1 boundary=0
+detection_mismatch sample_index=59 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=59 step=step1 cpu_ms=2.42466 gpu_ms=0.940196 relative_l2=2.04338e-06 cpu_heap_peak=7168480 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=59 step=step2 cpu_ms=135.585 gpu_ms=1.43192 relative_l2=2.0356e-07 cpu_heap_peak=7430640 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=59 step=step3 cpu_ms=178.536 gpu_ms=1.01096 relative_l2=6.99589e-07 cpu_heap_peak=7693056 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=59 step=step4 cpu_ms=3.51621 gpu_ms=1.09001 relative_l2=9.29687e-08 cpu_heap_peak=8020960 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=59 step=step5 cpu_ms=416.029 gpu_ms=6.10381 relative_l2=2.43858e-07 cpu_heap_peak=8547344 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=59 cpu_pipeline_ms=736.289 gpu_pipeline_ms=11.0417 cuda_event_aux_sum_ms=6.39577 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=60 total=1 valid=1 boundary=0
+detection_mismatch sample_index=60 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=60 step=step1 cpu_ms=2.42792 gpu_ms=0.912576 relative_l2=2.04338e-06 cpu_heap_peak=7170656 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=60 step=step2 cpu_ms=135.561 gpu_ms=1.43028 relative_l2=2.0356e-07 cpu_heap_peak=7432816 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=60 step=step3 cpu_ms=172.717 gpu_ms=1.02553 relative_l2=6.99589e-07 cpu_heap_peak=7695232 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=60 step=step4 cpu_ms=3.52682 gpu_ms=1.07582 relative_l2=9.29687e-08 cpu_heap_peak=8023136 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=60 step=step5 cpu_ms=416.072 gpu_ms=6.08075 relative_l2=2.43858e-07 cpu_heap_peak=8549504 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=60 cpu_pipeline_ms=730.509 gpu_pipeline_ms=10.9979 cuda_event_aux_sum_ms=6.36962 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=61 total=1 valid=1 boundary=0
+detection_mismatch sample_index=61 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=61 step=step1 cpu_ms=2.41303 gpu_ms=0.909536 relative_l2=2.04338e-06 cpu_heap_peak=7170112 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=61 step=step2 cpu_ms=135.493 gpu_ms=1.43644 relative_l2=2.0356e-07 cpu_heap_peak=7432272 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=61 step=step3 cpu_ms=174.782 gpu_ms=1.03357 relative_l2=6.99589e-07 cpu_heap_peak=7694688 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=61 step=step4 cpu_ms=3.53081 gpu_ms=1.0858 relative_l2=9.29687e-08 cpu_heap_peak=8022592 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=61 step=step5 cpu_ms=415.765 gpu_ms=6.0047 relative_l2=2.43858e-07 cpu_heap_peak=8548960 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=61 cpu_pipeline_ms=732.187 gpu_pipeline_ms=10.9893 cuda_event_aux_sum_ms=6.33165 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=62 total=1 valid=1 boundary=0
+detection_mismatch sample_index=62 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=62 step=step1 cpu_ms=2.41109 gpu_ms=0.905226 relative_l2=2.04338e-06 cpu_heap_peak=7169792 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=62 step=step2 cpu_ms=135.557 gpu_ms=1.42087 relative_l2=2.0356e-07 cpu_heap_peak=7431952 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=62 step=step3 cpu_ms=172.678 gpu_ms=1.01183 relative_l2=6.99589e-07 cpu_heap_peak=7694368 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=62 step=step4 cpu_ms=3.52233 gpu_ms=1.08399 relative_l2=9.29687e-08 cpu_heap_peak=8022272 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=62 step=step5 cpu_ms=419.206 gpu_ms=6.0055 relative_l2=2.43858e-07 cpu_heap_peak=8548640 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=62 cpu_pipeline_ms=733.578 gpu_pipeline_ms=10.8933 cuda_event_aux_sum_ms=6.30635 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=63 total=1 valid=1 boundary=0
+detection_mismatch sample_index=63 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=63 step=step1 cpu_ms=2.41155 gpu_ms=0.909486 relative_l2=2.04338e-06 cpu_heap_peak=7170096 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=63 step=step2 cpu_ms=135.617 gpu_ms=1.43227 relative_l2=2.0356e-07 cpu_heap_peak=7432256 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=63 step=step3 cpu_ms=172.883 gpu_ms=1.0104 relative_l2=6.99589e-07 cpu_heap_peak=7694672 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=63 step=step4 cpu_ms=3.51269 gpu_ms=1.09082 relative_l2=9.29687e-08 cpu_heap_peak=8022576 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=63 step=step5 cpu_ms=416.204 gpu_ms=6.01773 relative_l2=2.43858e-07 cpu_heap_peak=8548944 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=63 cpu_pipeline_ms=730.832 gpu_pipeline_ms=10.9343 cuda_event_aux_sum_ms=6.31436 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=64 total=1 valid=1 boundary=0
+detection_mismatch sample_index=64 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=64 step=step1 cpu_ms=2.43009 gpu_ms=0.913556 relative_l2=2.04338e-06 cpu_heap_peak=7169344 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=64 step=step2 cpu_ms=135.555 gpu_ms=1.4449 relative_l2=2.0356e-07 cpu_heap_peak=7431504 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=64 step=step3 cpu_ms=173.167 gpu_ms=1.01396 relative_l2=6.99589e-07 cpu_heap_peak=7693920 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=64 step=step4 cpu_ms=3.52045 gpu_ms=1.07984 relative_l2=9.29687e-08 cpu_heap_peak=8021824 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=64 step=step5 cpu_ms=415.998 gpu_ms=6.00051 relative_l2=2.43858e-07 cpu_heap_peak=8548192 cpu_rss_peak=83988480 gpu_peak=357777408 status=PASS
+sample_index=64 cpu_pipeline_ms=730.869 gpu_pipeline_ms=10.9226 cuda_event_aux_sum_ms=6.31272 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=65 total=1 valid=1 boundary=0
+detection_mismatch sample_index=65 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=65 step=step1 cpu_ms=2.42708 gpu_ms=0.888916 relative_l2=2.04338e-06 cpu_heap_peak=7208608 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=65 step=step2 cpu_ms=135.687 gpu_ms=1.42976 relative_l2=2.0356e-07 cpu_heap_peak=7470768 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=65 step=step3 cpu_ms=173.011 gpu_ms=1.02125 relative_l2=6.99589e-07 cpu_heap_peak=7733184 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=65 step=step4 cpu_ms=3.52552 gpu_ms=1.08369 relative_l2=9.29687e-08 cpu_heap_peak=8061088 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=65 step=step5 cpu_ms=415.954 gpu_ms=6.04476 relative_l2=2.43858e-07 cpu_heap_peak=8587472 cpu_rss_peak=83984384 gpu_peak=357777408 status=PASS
+sample_index=65 cpu_pipeline_ms=730.805 gpu_pipeline_ms=10.9454 cuda_event_aux_sum_ms=6.32842 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=66 total=1 valid=1 boundary=0
+detection_mismatch sample_index=66 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=66 step=step1 cpu_ms=2.43846 gpu_ms=0.904805 relative_l2=2.04338e-06 cpu_heap_peak=7209824 cpu_rss_peak=84197376 gpu_peak=357777408 status=PASS
+sample_index=66 step=step2 cpu_ms=138.315 gpu_ms=1.43143 relative_l2=2.0356e-07 cpu_heap_peak=7471984 cpu_rss_peak=84197376 gpu_peak=357777408 status=PASS
+sample_index=66 step=step3 cpu_ms=172.881 gpu_ms=1.01673 relative_l2=6.99589e-07 cpu_heap_peak=7734400 cpu_rss_peak=84197376 gpu_peak=357777408 status=PASS
+sample_index=66 step=step4 cpu_ms=3.5089 gpu_ms=1.09193 relative_l2=9.29687e-08 cpu_heap_peak=8062304 cpu_rss_peak=84197376 gpu_peak=357777408 status=PASS
+sample_index=66 step=step5 cpu_ms=416.135 gpu_ms=6.03375 relative_l2=2.43858e-07 cpu_heap_peak=8588672 cpu_rss_peak=84197376 gpu_peak=357777408 status=PASS
+sample_index=66 cpu_pipeline_ms=733.486 gpu_pipeline_ms=10.9603 cuda_event_aux_sum_ms=6.32127 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=67 total=1 valid=1 boundary=0
+detection_mismatch sample_index=67 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=67 step=step1 cpu_ms=2.43559 gpu_ms=0.905556 relative_l2=2.04338e-06 cpu_heap_peak=7208176 cpu_rss_peak=84029440 gpu_peak=357777408 status=PASS
+sample_index=67 step=step2 cpu_ms=135.802 gpu_ms=1.44609 relative_l2=2.0356e-07 cpu_heap_peak=7470336 cpu_rss_peak=84029440 gpu_peak=357777408 status=PASS
+sample_index=67 step=step3 cpu_ms=172.939 gpu_ms=1.02674 relative_l2=6.99589e-07 cpu_heap_peak=7732752 cpu_rss_peak=84029440 gpu_peak=357777408 status=PASS
+sample_index=67 step=step4 cpu_ms=3.53182 gpu_ms=1.02176 relative_l2=9.29687e-08 cpu_heap_peak=8060656 cpu_rss_peak=84029440 gpu_peak=357777408 status=PASS
+sample_index=67 step=step5 cpu_ms=416.017 gpu_ms=6.04898 relative_l2=2.43858e-07 cpu_heap_peak=8587040 cpu_rss_peak=84029440 gpu_peak=357777408 status=PASS
+sample_index=67 cpu_pipeline_ms=730.924 gpu_pipeline_ms=10.9246 cuda_event_aux_sum_ms=6.36472 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=68 total=1 valid=1 boundary=0
+detection_mismatch sample_index=68 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=68 step=step1 cpu_ms=2.41239 gpu_ms=0.899646 relative_l2=2.04338e-06 cpu_heap_peak=7208736 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=68 step=step2 cpu_ms=135.5 gpu_ms=1.43279 relative_l2=2.0356e-07 cpu_heap_peak=7470896 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=68 step=step3 cpu_ms=172.853 gpu_ms=1.01289 relative_l2=6.99589e-07 cpu_heap_peak=7733312 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=68 step=step4 cpu_ms=3.53131 gpu_ms=1.0951 relative_l2=9.29687e-08 cpu_heap_peak=8061216 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=68 step=step5 cpu_ms=415.837 gpu_ms=6.03766 relative_l2=2.43858e-07 cpu_heap_peak=8587584 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=68 cpu_pipeline_ms=730.335 gpu_pipeline_ms=10.9693 cuda_event_aux_sum_ms=6.3524 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=69 total=1 valid=1 boundary=0
+detection_mismatch sample_index=69 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=69 step=step1 cpu_ms=2.43269 gpu_ms=0.982026 relative_l2=2.04338e-06 cpu_heap_peak=7208656 cpu_rss_peak=84045824 gpu_peak=357777408 status=PASS
+sample_index=69 step=step2 cpu_ms=135.546 gpu_ms=1.42765 relative_l2=2.0356e-07 cpu_heap_peak=7470816 cpu_rss_peak=84045824 gpu_peak=357777408 status=PASS
+sample_index=69 step=step3 cpu_ms=172.862 gpu_ms=1.01958 relative_l2=6.99589e-07 cpu_heap_peak=7733232 cpu_rss_peak=84045824 gpu_peak=357777408 status=PASS
+sample_index=69 step=step4 cpu_ms=3.54336 gpu_ms=1.08414 relative_l2=9.29687e-08 cpu_heap_peak=8061136 cpu_rss_peak=84045824 gpu_peak=357777408 status=PASS
+sample_index=69 step=step5 cpu_ms=415.857 gpu_ms=6.01504 relative_l2=2.43858e-07 cpu_heap_peak=8587520 cpu_rss_peak=84045824 gpu_peak=357777408 status=PASS
+sample_index=69 cpu_pipeline_ms=730.442 gpu_pipeline_ms=11.0051 cuda_event_aux_sum_ms=6.30771 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=70 total=1 valid=1 boundary=0
+detection_mismatch sample_index=70 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=70 step=step1 cpu_ms=2.41277 gpu_ms=0.903126 relative_l2=2.04338e-06 cpu_heap_peak=7208880 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=70 step=step2 cpu_ms=135.581 gpu_ms=1.44045 relative_l2=2.0356e-07 cpu_heap_peak=7471040 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=70 step=step3 cpu_ms=172.662 gpu_ms=1.01618 relative_l2=6.99589e-07 cpu_heap_peak=7733456 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=70 step=step4 cpu_ms=3.50924 gpu_ms=1.03381 relative_l2=9.29687e-08 cpu_heap_peak=8061360 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=70 step=step5 cpu_ms=415.98 gpu_ms=6.0207 relative_l2=2.43858e-07 cpu_heap_peak=8587744 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=70 cpu_pipeline_ms=730.347 gpu_pipeline_ms=10.9603 cuda_event_aux_sum_ms=6.33661 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=71 total=1 valid=1 boundary=0
+detection_mismatch sample_index=71 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=71 step=step1 cpu_ms=2.43486 gpu_ms=0.910736 relative_l2=2.04338e-06 cpu_heap_peak=7209952 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=71 step=step2 cpu_ms=135.475 gpu_ms=1.43228 relative_l2=2.0356e-07 cpu_heap_peak=7472112 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=71 step=step3 cpu_ms=173.196 gpu_ms=1.00962 relative_l2=6.99589e-07 cpu_heap_peak=7734528 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=71 step=step4 cpu_ms=3.52534 gpu_ms=1.09332 relative_l2=9.29687e-08 cpu_heap_peak=8062432 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=71 step=step5 cpu_ms=416.208 gpu_ms=6.00957 relative_l2=2.43858e-07 cpu_heap_peak=8588816 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=71 cpu_pipeline_ms=731.04 gpu_pipeline_ms=10.9226 cuda_event_aux_sum_ms=6.32138 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=72 total=1 valid=1 boundary=0
+detection_mismatch sample_index=72 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=72 step=step1 cpu_ms=2.42387 gpu_ms=0.904066 relative_l2=2.04338e-06 cpu_heap_peak=7209152 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=72 step=step2 cpu_ms=135.578 gpu_ms=1.43125 relative_l2=2.0356e-07 cpu_heap_peak=7471312 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=72 step=step3 cpu_ms=172.601 gpu_ms=1.00943 relative_l2=6.99589e-07 cpu_heap_peak=7733728 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=72 step=step4 cpu_ms=3.52831 gpu_ms=1.09264 relative_l2=9.29687e-08 cpu_heap_peak=8061632 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=72 step=step5 cpu_ms=415.807 gpu_ms=6.10355 relative_l2=2.43858e-07 cpu_heap_peak=8588016 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=72 cpu_pipeline_ms=730.136 gpu_pipeline_ms=11.0075 cuda_event_aux_sum_ms=6.40571 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=73 total=1 valid=1 boundary=0
+detection_mismatch sample_index=73 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=73 step=step1 cpu_ms=2.42776 gpu_ms=0.923966 relative_l2=2.04338e-06 cpu_heap_peak=7209520 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=73 step=step2 cpu_ms=135.555 gpu_ms=1.43101 relative_l2=2.0356e-07 cpu_heap_peak=7471680 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=73 step=step3 cpu_ms=172.872 gpu_ms=1.01067 relative_l2=6.99589e-07 cpu_heap_peak=7734096 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=73 step=step4 cpu_ms=3.51723 gpu_ms=1.08533 relative_l2=9.29687e-08 cpu_heap_peak=8062000 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=73 step=step5 cpu_ms=416.159 gpu_ms=6.00849 relative_l2=2.43858e-07 cpu_heap_peak=8588368 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=73 cpu_pipeline_ms=730.734 gpu_pipeline_ms=11.0007 cuda_event_aux_sum_ms=6.30656 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=74 total=1 valid=1 boundary=0
+detection_mismatch sample_index=74 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=74 step=step1 cpu_ms=2.42551 gpu_ms=0.900906 relative_l2=2.04338e-06 cpu_heap_peak=7210816 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=74 step=step2 cpu_ms=135.96 gpu_ms=1.44813 relative_l2=2.0356e-07 cpu_heap_peak=7472976 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=74 step=step3 cpu_ms=173.203 gpu_ms=1.01322 relative_l2=6.99589e-07 cpu_heap_peak=7735392 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=74 step=step4 cpu_ms=3.53466 gpu_ms=1.08956 relative_l2=9.29687e-08 cpu_heap_peak=8063296 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=74 step=step5 cpu_ms=415.944 gpu_ms=6.0383 relative_l2=2.43858e-07 cpu_heap_peak=8589664 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=74 cpu_pipeline_ms=731.269 gpu_pipeline_ms=11.0212 cuda_event_aux_sum_ms=6.33913 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=75 total=1 valid=1 boundary=0
+detection_mismatch sample_index=75 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=75 step=step1 cpu_ms=2.42668 gpu_ms=0.911465 relative_l2=2.04338e-06 cpu_heap_peak=7210624 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=75 step=step2 cpu_ms=135.615 gpu_ms=1.42572 relative_l2=2.0356e-07 cpu_heap_peak=7472784 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=75 step=step3 cpu_ms=173.247 gpu_ms=1.02262 relative_l2=6.99589e-07 cpu_heap_peak=7735200 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=75 step=step4 cpu_ms=3.51471 gpu_ms=1.08322 relative_l2=9.29687e-08 cpu_heap_peak=8063104 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=75 step=step5 cpu_ms=415.997 gpu_ms=6.09239 relative_l2=2.43858e-07 cpu_heap_peak=8589472 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=75 cpu_pipeline_ms=731.006 gpu_pipeline_ms=11.0035 cuda_event_aux_sum_ms=6.38029 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=76 total=1 valid=1 boundary=0
+detection_mismatch sample_index=76 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=76 step=step1 cpu_ms=2.43568 gpu_ms=0.899886 relative_l2=2.04338e-06 cpu_heap_peak=7210000 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=76 step=step2 cpu_ms=135.576 gpu_ms=1.43094 relative_l2=2.0356e-07 cpu_heap_peak=7472160 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=76 step=step3 cpu_ms=172.863 gpu_ms=1.01574 relative_l2=6.99589e-07 cpu_heap_peak=7734576 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=76 step=step4 cpu_ms=3.53522 gpu_ms=1.09397 relative_l2=9.29687e-08 cpu_heap_peak=8062480 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=76 step=step5 cpu_ms=415.845 gpu_ms=6.01749 relative_l2=2.43858e-07 cpu_heap_peak=8588848 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=76 cpu_pipeline_ms=730.454 gpu_pipeline_ms=10.9326 cuda_event_aux_sum_ms=6.34999 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=77 total=1 valid=1 boundary=0
+detection_mismatch sample_index=77 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=77 step=step1 cpu_ms=2.42874 gpu_ms=0.912686 relative_l2=2.04338e-06 cpu_heap_peak=7210016 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=77 step=step2 cpu_ms=135.808 gpu_ms=1.4321 relative_l2=2.0356e-07 cpu_heap_peak=7472176 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=77 step=step3 cpu_ms=172.746 gpu_ms=1.01395 relative_l2=6.99589e-07 cpu_heap_peak=7734592 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=77 step=step4 cpu_ms=3.52645 gpu_ms=1.08629 relative_l2=9.29687e-08 cpu_heap_peak=8062496 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=77 step=step5 cpu_ms=415.744 gpu_ms=6.02235 relative_l2=2.43858e-07 cpu_heap_peak=8588880 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=77 cpu_pipeline_ms=730.453 gpu_pipeline_ms=11.0353 cuda_event_aux_sum_ms=6.32366 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=78 total=1 valid=1 boundary=0
+detection_mismatch sample_index=78 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=78 step=step1 cpu_ms=2.43183 gpu_ms=0.918826 relative_l2=2.04338e-06 cpu_heap_peak=7210880 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=78 step=step2 cpu_ms=135.498 gpu_ms=1.46729 relative_l2=2.0356e-07 cpu_heap_peak=7473040 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=78 step=step3 cpu_ms=173.153 gpu_ms=1.01369 relative_l2=6.99589e-07 cpu_heap_peak=7735456 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=78 step=step4 cpu_ms=3.52731 gpu_ms=1.08393 relative_l2=9.29687e-08 cpu_heap_peak=8063360 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=78 step=step5 cpu_ms=416.038 gpu_ms=5.98828 relative_l2=2.43858e-07 cpu_heap_peak=8589728 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=78 cpu_pipeline_ms=730.852 gpu_pipeline_ms=10.9513 cuda_event_aux_sum_ms=6.31347 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=79 total=1 valid=1 boundary=0
+detection_mismatch sample_index=79 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=79 step=step1 cpu_ms=2.42424 gpu_ms=1.02944 relative_l2=2.04338e-06 cpu_heap_peak=7209904 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=79 step=step2 cpu_ms=135.56 gpu_ms=1.4345 relative_l2=2.0356e-07 cpu_heap_peak=7472064 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=79 step=step3 cpu_ms=172.983 gpu_ms=1.02384 relative_l2=6.99589e-07 cpu_heap_peak=7734480 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=79 step=step4 cpu_ms=3.52771 gpu_ms=1.0728 relative_l2=9.29687e-08 cpu_heap_peak=8062384 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=79 step=step5 cpu_ms=415.67 gpu_ms=6.01953 relative_l2=2.43858e-07 cpu_heap_peak=8588752 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=79 cpu_pipeline_ms=730.366 gpu_pipeline_ms=11.0708 cuda_event_aux_sum_ms=6.34744 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=80 total=1 valid=1 boundary=0
+detection_mismatch sample_index=80 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=80 step=step1 cpu_ms=2.41259 gpu_ms=0.914506 relative_l2=2.04338e-06 cpu_heap_peak=7210976 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=80 step=step2 cpu_ms=135.633 gpu_ms=1.4201 relative_l2=2.0356e-07 cpu_heap_peak=7473136 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=80 step=step3 cpu_ms=172.838 gpu_ms=1.00488 relative_l2=6.99589e-07 cpu_heap_peak=7735552 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=80 step=step4 cpu_ms=3.52948 gpu_ms=1.08607 relative_l2=9.29687e-08 cpu_heap_peak=8063456 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=80 step=step5 cpu_ms=415.711 gpu_ms=5.96756 relative_l2=2.43858e-07 cpu_heap_peak=8589824 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=80 cpu_pipeline_ms=730.323 gpu_pipeline_ms=10.8668 cuda_event_aux_sum_ms=6.27674 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=81 total=1 valid=1 boundary=0
+detection_mismatch sample_index=81 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=81 step=step1 cpu_ms=2.43293 gpu_ms=0.902916 relative_l2=2.04338e-06 cpu_heap_peak=7210992 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=81 step=step2 cpu_ms=135.665 gpu_ms=1.42456 relative_l2=2.0356e-07 cpu_heap_peak=7473152 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=81 step=step3 cpu_ms=173.081 gpu_ms=1.01027 relative_l2=6.99589e-07 cpu_heap_peak=7735568 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=81 step=step4 cpu_ms=3.53052 gpu_ms=1.06842 relative_l2=9.29687e-08 cpu_heap_peak=8063472 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=81 step=step5 cpu_ms=416.271 gpu_ms=6.00582 relative_l2=2.43858e-07 cpu_heap_peak=8589840 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=81 cpu_pipeline_ms=731.183 gpu_pipeline_ms=10.8818 cuda_event_aux_sum_ms=6.29359 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=82 total=1 valid=1 boundary=0
+detection_mismatch sample_index=82 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=82 step=step1 cpu_ms=2.41384 gpu_ms=0.920886 relative_l2=2.04338e-06 cpu_heap_peak=7211216 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=82 step=step2 cpu_ms=135.466 gpu_ms=1.42411 relative_l2=2.0356e-07 cpu_heap_peak=7473376 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=82 step=step3 cpu_ms=172.862 gpu_ms=1.00356 relative_l2=6.99589e-07 cpu_heap_peak=7735792 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=82 step=step4 cpu_ms=3.5274 gpu_ms=1.08964 relative_l2=9.29687e-08 cpu_heap_peak=8063696 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=82 step=step5 cpu_ms=415.866 gpu_ms=6.02948 relative_l2=2.43858e-07 cpu_heap_peak=8590064 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=82 cpu_pipeline_ms=730.337 gpu_pipeline_ms=10.9391 cuda_event_aux_sum_ms=6.3222 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=83 total=1 valid=1 boundary=0
+detection_mismatch sample_index=83 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=83 step=step1 cpu_ms=2.42946 gpu_ms=0.917926 relative_l2=2.04338e-06 cpu_heap_peak=7210944 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=83 step=step2 cpu_ms=135.562 gpu_ms=1.44012 relative_l2=2.0356e-07 cpu_heap_peak=7473104 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=83 step=step3 cpu_ms=172.836 gpu_ms=1.01406 relative_l2=6.99589e-07 cpu_heap_peak=7735520 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=83 step=step4 cpu_ms=3.52934 gpu_ms=1.06566 relative_l2=9.29687e-08 cpu_heap_peak=8063424 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=83 step=step5 cpu_ms=416.034 gpu_ms=6.03928 relative_l2=2.43858e-07 cpu_heap_peak=8589808 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=83 cpu_pipeline_ms=730.593 gpu_pipeline_ms=10.9658 cuda_event_aux_sum_ms=6.35102 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=84 total=1 valid=1 boundary=0
+detection_mismatch sample_index=84 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=84 step=step1 cpu_ms=2.41446 gpu_ms=0.914926 relative_l2=2.04338e-06 cpu_heap_peak=7211008 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=84 step=step2 cpu_ms=135.541 gpu_ms=1.43064 relative_l2=2.0356e-07 cpu_heap_peak=7473168 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=84 step=step3 cpu_ms=173.004 gpu_ms=1.01092 relative_l2=6.99589e-07 cpu_heap_peak=7735584 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=84 step=step4 cpu_ms=3.51987 gpu_ms=1.10005 relative_l2=9.29687e-08 cpu_heap_peak=8063488 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=84 step=step5 cpu_ms=416.179 gpu_ms=6.0228 relative_l2=2.43858e-07 cpu_heap_peak=8589856 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=84 cpu_pipeline_ms=730.862 gpu_pipeline_ms=11.1044 cuda_event_aux_sum_ms=6.33893 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=85 total=1 valid=1 boundary=0
+detection_mismatch sample_index=85 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=85 step=step1 cpu_ms=2.51183 gpu_ms=0.949386 relative_l2=2.04338e-06 cpu_heap_peak=7211744 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=85 step=step2 cpu_ms=135.624 gpu_ms=1.44192 relative_l2=2.0356e-07 cpu_heap_peak=7473904 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=85 step=step3 cpu_ms=172.969 gpu_ms=1.01108 relative_l2=6.99589e-07 cpu_heap_peak=7736320 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=85 step=step4 cpu_ms=3.52857 gpu_ms=1.08315 relative_l2=9.29687e-08 cpu_heap_peak=8064224 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=85 step=step5 cpu_ms=416.118 gpu_ms=6.09965 relative_l2=2.43858e-07 cpu_heap_peak=8590608 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=85 cpu_pipeline_ms=730.954 gpu_pipeline_ms=11.061 cuda_event_aux_sum_ms=6.4085 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=86 total=1 valid=1 boundary=0
+detection_mismatch sample_index=86 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=86 step=step1 cpu_ms=2.4273 gpu_ms=0.836486 relative_l2=2.04338e-06 cpu_heap_peak=7211712 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=86 step=step2 cpu_ms=135.457 gpu_ms=1.43311 relative_l2=2.0356e-07 cpu_heap_peak=7473872 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=86 step=step3 cpu_ms=172.958 gpu_ms=1.02542 relative_l2=6.99589e-07 cpu_heap_peak=7736288 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=86 step=step4 cpu_ms=3.5286 gpu_ms=1.02463 relative_l2=9.29687e-08 cpu_heap_peak=8064192 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=86 step=step5 cpu_ms=416.149 gpu_ms=6.02331 relative_l2=2.43858e-07 cpu_heap_peak=8590576 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=86 cpu_pipeline_ms=730.723 gpu_pipeline_ms=10.8144 cuda_event_aux_sum_ms=6.31376 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=87 total=1 valid=1 boundary=0
+detection_mismatch sample_index=87 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=87 step=step1 cpu_ms=2.43143 gpu_ms=0.962436 relative_l2=2.04338e-06 cpu_heap_peak=7211840 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=87 step=step2 cpu_ms=135.394 gpu_ms=1.55557 relative_l2=2.0356e-07 cpu_heap_peak=7474000 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=87 step=step3 cpu_ms=172.559 gpu_ms=1.12464 relative_l2=6.99589e-07 cpu_heap_peak=7736416 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=87 step=step4 cpu_ms=3.52193 gpu_ms=1.13062 relative_l2=9.29687e-08 cpu_heap_peak=8064320 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=87 step=step5 cpu_ms=415.987 gpu_ms=6.20981 relative_l2=2.43858e-07 cpu_heap_peak=8590704 cpu_rss_peak=84049920 gpu_peak=357777408 status=PASS
+sample_index=87 cpu_pipeline_ms=730.092 gpu_pipeline_ms=11.4909 cuda_event_aux_sum_ms=6.5346 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=88 total=1 valid=1 boundary=0
+detection_mismatch sample_index=88 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=88 step=step1 cpu_ms=2.42963 gpu_ms=0.929146 relative_l2=2.04338e-06 cpu_heap_peak=7211680 cpu_rss_peak=84205568 gpu_peak=357777408 status=PASS
+sample_index=88 step=step2 cpu_ms=135.834 gpu_ms=1.5349 relative_l2=2.0356e-07 cpu_heap_peak=7473840 cpu_rss_peak=84205568 gpu_peak=357777408 status=PASS
+sample_index=88 step=step3 cpu_ms=173.22 gpu_ms=1.07453 relative_l2=6.99589e-07 cpu_heap_peak=7736256 cpu_rss_peak=84205568 gpu_peak=357777408 status=PASS
+sample_index=88 step=step4 cpu_ms=3.62029 gpu_ms=1.10734 relative_l2=9.29687e-08 cpu_heap_peak=8064160 cpu_rss_peak=84205568 gpu_peak=357777408 status=PASS
+sample_index=88 step=step5 cpu_ms=419.67 gpu_ms=6.08516 relative_l2=2.43858e-07 cpu_heap_peak=8590544 cpu_rss_peak=84205568 gpu_peak=357777408 status=PASS
+sample_index=88 cpu_pipeline_ms=734.977 gpu_pipeline_ms=11.2022 cuda_event_aux_sum_ms=6.34599 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=89 total=1 valid=1 boundary=0
+detection_mismatch sample_index=89 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=89 step=step1 cpu_ms=2.41613 gpu_ms=0.902766 relative_l2=2.04338e-06 cpu_heap_peak=7211856 cpu_rss_peak=84054016 gpu_peak=357777408 status=PASS
+sample_index=89 step=step2 cpu_ms=135.442 gpu_ms=1.44749 relative_l2=2.0356e-07 cpu_heap_peak=7474016 cpu_rss_peak=84054016 gpu_peak=357777408 status=PASS
+sample_index=89 step=step3 cpu_ms=173.142 gpu_ms=1.00554 relative_l2=6.99589e-07 cpu_heap_peak=7736432 cpu_rss_peak=84054016 gpu_peak=357777408 status=PASS
+sample_index=89 step=step4 cpu_ms=3.51054 gpu_ms=1.05482 relative_l2=9.29687e-08 cpu_heap_peak=8064336 cpu_rss_peak=84054016 gpu_peak=357777408 status=PASS
+sample_index=89 step=step5 cpu_ms=415.922 gpu_ms=6.02525 relative_l2=2.43858e-07 cpu_heap_peak=8590720 cpu_rss_peak=84054016 gpu_peak=357777408 status=PASS
+sample_index=89 cpu_pipeline_ms=730.631 gpu_pipeline_ms=10.9587 cuda_event_aux_sum_ms=6.33085 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=90 total=1 valid=1 boundary=0
+detection_mismatch sample_index=90 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=90 step=step1 cpu_ms=2.43532 gpu_ms=0.916396 relative_l2=2.04338e-06 cpu_heap_peak=7211968 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=90 step=step2 cpu_ms=135.541 gpu_ms=1.42214 relative_l2=2.0356e-07 cpu_heap_peak=7474128 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=90 step=step3 cpu_ms=172.582 gpu_ms=1.00253 relative_l2=6.99589e-07 cpu_heap_peak=7736544 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=90 step=step4 cpu_ms=3.53265 gpu_ms=1.08639 relative_l2=9.29687e-08 cpu_heap_peak=8064448 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=90 step=step5 cpu_ms=415.723 gpu_ms=5.98929 relative_l2=2.43858e-07 cpu_heap_peak=8590832 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=90 cpu_pipeline_ms=730.022 gpu_pipeline_ms=10.8813 cuda_event_aux_sum_ms=6.29311 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=91 total=1 valid=1 boundary=0
+detection_mismatch sample_index=91 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=91 step=step1 cpu_ms=2.42606 gpu_ms=0.896246 relative_l2=2.04338e-06 cpu_heap_peak=7212656 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=91 step=step2 cpu_ms=135.708 gpu_ms=1.45265 relative_l2=2.0356e-07 cpu_heap_peak=7474816 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=91 step=step3 cpu_ms=172.89 gpu_ms=1.00531 relative_l2=6.99589e-07 cpu_heap_peak=7737232 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=91 step=step4 cpu_ms=3.52413 gpu_ms=1.07588 relative_l2=9.29687e-08 cpu_heap_peak=8065136 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=91 step=step5 cpu_ms=416.067 gpu_ms=6.01315 relative_l2=2.43858e-07 cpu_heap_peak=8591520 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=91 cpu_pipeline_ms=730.813 gpu_pipeline_ms=10.9059 cuda_event_aux_sum_ms=6.32234 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=92 total=1 valid=1 boundary=0
+detection_mismatch sample_index=92 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=92 step=step1 cpu_ms=2.43037 gpu_ms=0.910885 relative_l2=2.04338e-06 cpu_heap_peak=7212224 cpu_rss_peak=84054016 gpu_peak=357777408 status=PASS
+sample_index=92 step=step2 cpu_ms=135.541 gpu_ms=1.42749 relative_l2=2.0356e-07 cpu_heap_peak=7474384 cpu_rss_peak=84054016 gpu_peak=357777408 status=PASS
+sample_index=92 step=step3 cpu_ms=172.749 gpu_ms=1.02166 relative_l2=6.99589e-07 cpu_heap_peak=7736800 cpu_rss_peak=84054016 gpu_peak=357777408 status=PASS
+sample_index=92 step=step4 cpu_ms=3.52404 gpu_ms=1.08793 relative_l2=9.29687e-08 cpu_heap_peak=8064704 cpu_rss_peak=84054016 gpu_peak=357777408 status=PASS
+sample_index=92 step=step5 cpu_ms=415.988 gpu_ms=6.0155 relative_l2=2.43858e-07 cpu_heap_peak=8591072 cpu_rss_peak=84054016 gpu_peak=357777408 status=PASS
+sample_index=92 cpu_pipeline_ms=730.434 gpu_pipeline_ms=10.9413 cuda_event_aux_sum_ms=6.33899 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=93 total=1 valid=1 boundary=0
+detection_mismatch sample_index=93 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=93 step=step1 cpu_ms=2.43294 gpu_ms=0.896396 relative_l2=2.04338e-06 cpu_heap_peak=7212272 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=93 step=step2 cpu_ms=135.632 gpu_ms=1.43202 relative_l2=2.0356e-07 cpu_heap_peak=7474432 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=93 step=step3 cpu_ms=172.426 gpu_ms=1.01469 relative_l2=6.99589e-07 cpu_heap_peak=7736848 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=93 step=step4 cpu_ms=3.51713 gpu_ms=1.08643 relative_l2=9.29687e-08 cpu_heap_peak=8064752 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=93 step=step5 cpu_ms=415.966 gpu_ms=6.01614 relative_l2=2.43858e-07 cpu_heap_peak=8591136 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=93 cpu_pipeline_ms=730.175 gpu_pipeline_ms=10.9905 cuda_event_aux_sum_ms=6.3105 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=94 total=1 valid=1 boundary=0
+detection_mismatch sample_index=94 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=94 step=step1 cpu_ms=2.43365 gpu_ms=0.954716 relative_l2=2.04338e-06 cpu_heap_peak=7212624 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=94 step=step2 cpu_ms=135.567 gpu_ms=1.45268 relative_l2=2.0356e-07 cpu_heap_peak=7474784 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=94 step=step3 cpu_ms=178.751 gpu_ms=1.08266 relative_l2=6.99589e-07 cpu_heap_peak=7737200 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=94 step=step4 cpu_ms=3.52303 gpu_ms=1.10124 relative_l2=9.29687e-08 cpu_heap_peak=8065104 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=94 step=step5 cpu_ms=415.866 gpu_ms=6.0551 relative_l2=2.43858e-07 cpu_heap_peak=8591488 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=94 cpu_pipeline_ms=736.339 gpu_pipeline_ms=11.1558 cuda_event_aux_sum_ms=6.42075 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=95 total=1 valid=1 boundary=0
+detection_mismatch sample_index=95 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=95 step=step1 cpu_ms=2.41439 gpu_ms=0.912456 relative_l2=2.04338e-06 cpu_heap_peak=7213424 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=95 step=step2 cpu_ms=135.575 gpu_ms=1.43645 relative_l2=2.0356e-07 cpu_heap_peak=7475584 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=95 step=step3 cpu_ms=172.838 gpu_ms=1.00888 relative_l2=6.99589e-07 cpu_heap_peak=7738000 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=95 step=step4 cpu_ms=3.51796 gpu_ms=1.10397 relative_l2=9.29687e-08 cpu_heap_peak=8065904 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=95 step=step5 cpu_ms=416.047 gpu_ms=6.07577 relative_l2=2.43858e-07 cpu_heap_peak=8592288 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=95 cpu_pipeline_ms=730.59 gpu_pipeline_ms=11.0071 cuda_event_aux_sum_ms=6.3841 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=96 total=1 valid=1 boundary=0
+detection_mismatch sample_index=96 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=96 step=step1 cpu_ms=2.43377 gpu_ms=0.907816 relative_l2=2.04338e-06 cpu_heap_peak=7212256 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=96 step=step2 cpu_ms=135.623 gpu_ms=1.43511 relative_l2=2.0356e-07 cpu_heap_peak=7474416 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=96 step=step3 cpu_ms=172.928 gpu_ms=1.0215 relative_l2=6.99589e-07 cpu_heap_peak=7736832 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=96 step=step4 cpu_ms=3.52602 gpu_ms=1.06963 relative_l2=9.29687e-08 cpu_heap_peak=8064736 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=96 step=step5 cpu_ms=416.191 gpu_ms=6.02085 relative_l2=2.43858e-07 cpu_heap_peak=8591120 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=96 cpu_pipeline_ms=730.901 gpu_pipeline_ms=10.9306 cuda_event_aux_sum_ms=6.33308 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=97 total=1 valid=1 boundary=0
+detection_mismatch sample_index=97 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=97 step=step1 cpu_ms=2.41505 gpu_ms=0.895186 relative_l2=2.04338e-06 cpu_heap_peak=7212896 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=97 step=step2 cpu_ms=135.583 gpu_ms=1.43119 relative_l2=2.0356e-07 cpu_heap_peak=7475056 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=97 step=step3 cpu_ms=172.704 gpu_ms=1.00561 relative_l2=6.99589e-07 cpu_heap_peak=7737472 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=97 step=step4 cpu_ms=3.53542 gpu_ms=1.08921 relative_l2=9.29687e-08 cpu_heap_peak=8065376 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=97 step=step5 cpu_ms=415.819 gpu_ms=6.01685 relative_l2=2.43858e-07 cpu_heap_peak=8591760 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=97 cpu_pipeline_ms=730.255 gpu_pipeline_ms=10.9021 cuda_event_aux_sum_ms=6.32815 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=98 total=1 valid=1 boundary=0
+detection_mismatch sample_index=98 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=98 step=step1 cpu_ms=2.42582 gpu_ms=0.895856 relative_l2=2.04338e-06 cpu_heap_peak=7212992 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=98 step=step2 cpu_ms=135.703 gpu_ms=1.43041 relative_l2=2.0356e-07 cpu_heap_peak=7475152 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=98 step=step3 cpu_ms=172.923 gpu_ms=1.01223 relative_l2=6.99589e-07 cpu_heap_peak=7737568 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=98 step=step4 cpu_ms=3.52676 gpu_ms=1.09673 relative_l2=9.29687e-08 cpu_heap_peak=8065472 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=98 step=step5 cpu_ms=415.782 gpu_ms=6.03232 relative_l2=2.43858e-07 cpu_heap_peak=8591840 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=98 cpu_pipeline_ms=730.559 gpu_pipeline_ms=10.9413 cuda_event_aux_sum_ms=6.35381 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+detection_mismatch_summary sample_index=99 total=1 valid=1 boundary=0
+detection_mismatch sample_index=99 flat_index=15890 doppler=31 range=18 cfar_cell=valid gpu_detection=1 cpu_detection=0 gpu_power=0.139274 cpu_power=0.139271 gpu_threshold=0.137352 cpu_threshold=0.141645
+sample_index=99 step=step1 cpu_ms=2.42379 gpu_ms=0.920396 relative_l2=2.04338e-06 cpu_heap_peak=7213216 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=99 step=step2 cpu_ms=135.732 gpu_ms=1.49412 relative_l2=2.0356e-07 cpu_heap_peak=7475376 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=99 step=step3 cpu_ms=172.571 gpu_ms=1.01387 relative_l2=6.99589e-07 cpu_heap_peak=7737792 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=99 step=step4 cpu_ms=3.51087 gpu_ms=1.04405 relative_l2=9.29687e-08 cpu_heap_peak=8065696 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=99 step=step5 cpu_ms=415.725 gpu_ms=5.97928 relative_l2=2.43858e-07 cpu_heap_peak=8592080 cpu_rss_peak=84058112 gpu_peak=357777408 status=PASS
+sample_index=99 cpu_pipeline_ms=730.161 gpu_pipeline_ms=10.985 cuda_event_aux_sum_ms=6.37667 relative_l2=2.15808e-06 relative_linf=9.15765e-06 detection_mismatch_count=1 valid_detection_mismatch_count=1 boundary_detection_mismatch_count=0 mse=3.26797e-06 rmse=0.00180775 formal_relative_l2=2.15808e-06 formal_relative_linf=9.59053e-06 semantic_gates=5/5 accuracy_status=PASS
+function=Task1 frozen full pipeline
+call_chain=Step1->{Step2->Step3->Step4,Step5};Step5_source=Step1.waveform
+formal_operators=pulse_compression,pulse_doppler,cfar_alpha,ca_cfar,ambgfun
+timing=pipeline_total measured directly;not=sum(step timings)
+status=PASS return_code=0

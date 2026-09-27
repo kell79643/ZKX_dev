@@ -1,0 +1,8 @@
+status=PASS
+target=task1_pipeline_benchmark
+backend=fft_thrust
+cases=110
+warmup_runs=20
+measured_runs=100
+git_commit=d186f2993f4a5211c7662571e948fb6b6d4e8aab
+accuracy_thresholds_sha256=c98a7b36d7bcebc047838c9945f4a35b1dcc335762a1218b0e88f927a399cebc

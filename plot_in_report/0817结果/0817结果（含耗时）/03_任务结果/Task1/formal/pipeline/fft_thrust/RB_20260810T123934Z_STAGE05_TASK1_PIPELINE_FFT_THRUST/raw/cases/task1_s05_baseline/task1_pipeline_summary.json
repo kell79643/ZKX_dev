@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "run_id": "20260810T123934Z_d186f2993f4a_source_isolated_fft_thrust_task1_pipeline_benchmark_task1_s05_baseline",
+  "run_type": "formal",
+  "scale_id": "task1_s05_baseline",
+  "backend": "fft_thrust",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "accuracy_threshold_set_id": "task1_accuracy_formal_v1",
+  "accuracy_thresholds_sha256": "c98a7b36d7bcebc047838c9945f4a35b1dcc335762a1218b0e88f927a399cebc",
+  "mse": 6.74961e-09,
+  "rmse": 8.2156e-05,
+  "relative_l2": 1.0273e-06,
+  "relative_linf": 3.20981e-06,
+  "same_input_detection_exact_match": true,
+  "same_input_detection_mismatch_count": 0,
+  "independent_pipeline_detection_mismatch_count": 0,
+  "independent_pipeline_valid_mismatch_count": 0,
+  "independent_pipeline_boundary_mismatch_count": 0,
+  "input_digest": "c3356e83c65a178d8b4a5be4e9a4d7122eff2fbcdc6d809a700f7d8918290d42",
+  "semantic_gates_passed": 5
+}
